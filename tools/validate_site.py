@@ -19,6 +19,10 @@ DIST = ROOT / "dist"
 DATA = ROOT / "data"
 BASE_URL = "https://skysend.ru"
 EXPECT_EXTERNAL_ACCOUNTS = os.environ.get("SKYSEND_EXTERNAL_ACCOUNTS_VERIFIED") == "1"
+ROUTE_ALIASES = {
+    "/partners/": "/partners/agents/",
+    "/software/": "/software/terminal/",
+}
 
 
 class PageParser(HTMLParser):
@@ -100,6 +104,13 @@ def main() -> int:
         pages[route] = parser
         if parser.lang != "ru":
             fail(errors, f"{relative}: lang must be ru")
+        if route in ROUTE_ALIASES:
+            target = ROUTE_ALIASES[route]
+            if 'http-equiv="refresh"' not in text or f'url={target}' not in text:
+                fail(errors, f"{relative}: missing static redirect to {target}")
+            if f'href="{target}"' not in text:
+                fail(errors, f"{relative}: missing redirect fallback link to {target}")
+            continue
         if parser.h1 != 1:
             fail(errors, f"{relative}: expected one h1, found {parser.h1}")
         duplicates = sorted({value for value in parser.ids if parser.ids.count(value) > 1})
@@ -280,10 +291,10 @@ def main() -> int:
             fail(errors, f"home equipment showcase missing: {label}")
     if ">Оборудование<" in home_equipment:
         fail(errors, "home equipment section must not contain the generic equipment link")
-    if (DIST / "partners" / "index.html").exists():
-        fail(errors, "standalone partners index must not be generated")
-    if (DIST / "software" / "index.html").exists():
-        fail(errors, "standalone software index must not be generated")
+    for alias, target in ROUTE_ALIASES.items():
+        alias_file = html_path_for_route(alias)
+        if not alias_file.exists():
+            fail(errors, f"removed index {alias} must resolve to {target}")
     if 'href="/software/"' in public_text:
         fail(errors, "public links must not point to the removed software index")
     if home_text.count("data-nav-menu") != 2:

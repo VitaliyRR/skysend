@@ -26,6 +26,10 @@ SITE = ROOT / "site"
 DIST = ROOT / "dist"
 BASE_URL = "https://skysend.ru"
 EXTERNAL_ACCOUNTS_VERIFIED = os.environ.get("SKYSEND_EXTERNAL_ACCOUNTS_VERIFIED") == "1"
+ROUTE_ALIASES = {
+    "/partners/": "/partners/agents/",
+    "/software/": "/software/terminal/",
+}
 
 
 def load_json(name: str):
@@ -176,6 +180,26 @@ def route_output(path: str) -> Path:
     if path == "/":
         return DIST / "index.html"
     return DIST / path.strip("/") / "index.html"
+
+
+def redirect_page(target: str) -> str:
+    """Return a small static redirect for hosts that ignore ``_redirects``."""
+    return f'''<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="noindex">
+  <meta http-equiv="refresh" content="0; url={e(target)}">
+  <link rel="canonical" href="{e(BASE_URL + target)}">
+  <title>Переход | SkySend</title>
+</head>
+<body>
+  <p><a href="{e(target)}">Перейти в раздел SkySend</a></p>
+  <script>window.location.replace({json.dumps(target, ensure_ascii=False)});</script>
+</body>
+</html>
+'''
 
 
 def asset_url(path: str) -> str:
@@ -1152,6 +1176,11 @@ def build() -> dict:
         output.parent.mkdir(parents=True, exist_ok=True)
         output.write_text(render_equipment_product(product), encoding="utf-8")
         canonical_paths.append(product["path"])
+
+    for alias, target in ROUTE_ALIASES.items():
+        output = route_output(alias)
+        output.parent.mkdir(parents=True, exist_ok=True)
+        output.write_text(redirect_page(target), encoding="utf-8")
 
     (DIST / "404.html").write_text(error_page(404), encoding="utf-8")
     (DIST / "410.html").write_text(error_page(410), encoding="utf-8")
