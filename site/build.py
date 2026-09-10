@@ -616,19 +616,19 @@ def product_duo() -> str:
     }
     cards = []
     for product in EQUIPMENT["products"]:
-        facts = dict(product.get("facts", []))
-        fact_rows = "".join(
-            f'<div><dt>{e(label)}</dt><dd>{e(facts.get(label))}</dd></div>'
-            for label in ("Высота", "Сенсорная панель", "Потребляемая мощность")
-            if facts.get(label)
+        showcase = product["showcase"]
+        highlights = "".join(
+            f'<div><dt>{e(item["title"])}</dt><dd>{e(item["text"])}</dd></div>'
+            for item in showcase["highlights"]
         )
         cards.append(
             f'<a class="product-duo__item" href="{e(product["path"])}">'
             '<span class="product-duo__visual">'
             f'{image_tag(image_map[product["slug"]], product["title"], css="product-duo__image")}</span>'
             '<span class="product-duo__copy"><small>Для помещений</small>'
-            f'<strong>{e(product["title"])}</strong><span class="product-duo__lead">{e(product["lead"])}</span>'
-            f'<dl>{fact_rows}</dl><span class="product-duo__link">Характеристики ↗</span></span></a>'
+            f'<strong>{e(product["title"])}</strong><span class="product-duo__lead">{e(showcase["lead"])}</span>'
+            f'<dl class="product-duo__highlights">{highlights}</dl>'
+            '<span class="product-duo__link">Все характеристики и комплектация ↗</span></span></a>'
         )
     return f'<div class="product-duo">{"".join(cards)}</div>'
 

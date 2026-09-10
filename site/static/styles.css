@@ -1195,6 +1195,21 @@ address {
   fill: #20485f;
 }
 
+.partner-infographic .pg-box-front,
+.partner-infographic .pg-box-side {
+  stroke: #8fb7cd;
+  stroke-width: 1.2;
+  stroke-linejoin: round;
+}
+
+.partner-infographic .pg-box-front {
+  fill: #d7e9f3;
+}
+
+.partner-infographic .pg-box-side {
+  fill: #96bed4;
+}
+
 .partner-infographic .pg-white {
   fill: #f7fcff;
   stroke: #b6d1df;
@@ -1452,7 +1467,7 @@ address {
 
 .product-duo__copy > small,
 .product-duo__lead,
-.product-duo__copy dt {
+.product-duo__copy dd {
   color: var(--ss-color-muted);
 }
 
@@ -1462,21 +1477,21 @@ address {
 }
 
 .product-duo__lead {
-  min-height: 4.5rem;
   font-size: var(--ss-font-caption);
   line-height: 1.5;
 }
 
-.product-duo__copy dl {
-  margin: var(--ss-space-2) 0 0;
+.product-duo__highlights {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: var(--ss-space-5) var(--ss-space-4);
+  margin: var(--ss-space-3) 0 0;
 }
 
-.product-duo__copy dl > div {
-  display: flex;
-  justify-content: space-between;
-  gap: var(--ss-space-4);
+.product-duo__highlights > div {
+  min-width: 0;
   border-top: 1px solid var(--ss-color-line);
-  padding: var(--ss-space-2) 0;
+  padding-top: var(--ss-space-3);
 }
 
 .product-duo__copy dt,
@@ -1485,9 +1500,16 @@ address {
   font-size: var(--ss-font-caption);
 }
 
-.product-duo__copy dd {
+.product-duo__copy dt {
+  margin-bottom: var(--ss-space-2);
+  color: var(--ss-color-ink);
+  font-size: 1rem;
   font-weight: 600;
-  text-align: right;
+  line-height: 1.35;
+}
+
+.product-duo__copy dd {
+  line-height: 1.5;
 }
 
 .product-duo__link {
@@ -2559,6 +2581,10 @@ address {
 
   .product-duo__image {
     height: 16rem;
+  }
+
+  .product-duo__highlights {
+    grid-template-columns: 1fr;
   }
 }
 

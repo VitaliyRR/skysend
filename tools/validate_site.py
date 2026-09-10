@@ -342,7 +342,12 @@ def main() -> int:
             fail(errors, f"home partner infographic is missing: {kind}")
         if f'href="{href}"' not in home_partners or f"<strong>{label}</strong>" not in home_partners:
             fail(errors, f"home partner route is incomplete: {label}")
-    for label in ("FastPay Beauty II", "FastPay Simple", "Сенсорная панель", "Потребляемая мощность"):
+    for label in (
+        "FastPay Beauty II", "FastPay Simple", "Сенсорная панель 17″",
+        "4 сценария работы", "Комплектация под задачу", "доступны как опции",
+        "ПО предустановлено", "Приём наличных", "CashCode MVU1024 (б/у)",
+        "Монитор в комплектации б/у.",
+    ):
         if label not in home_equipment:
             fail(errors, f"home equipment showcase missing: {label}")
     if ">Оборудование<" in home_equipment:

@@ -44,20 +44,28 @@ DRAWINGS = {
         <path class="pg-white-line" d="m244 190 27-7"/>
       </g>''',
     "suppliers": '''
-      <ellipse class="pg-shadow" cx="178" cy="215" rx="111" ry="10"/>
+      <defs>
+        <clipPath id="partner-suppliers-interior">
+          <path d="M96 35h164v85l-82 42-82-43z"/>
+        </clipPath>
+      </defs>
+      <ellipse class="pg-shadow" cx="178" cy="218" rx="111" ry="10"/>
       <g class="pg-object">
-        <path class="pg-dark" d="m94 116 83-42 85 42-85 42z"/>
-        <path class="pg-glass" d="m94 116 83 42v60l-83-44z"/>
-        <path class="pg-side" d="m177 158 85-42v58l-85 44z"/>
-        <path class="pg-blue" d="m113 86 37-19 36 18v45l-36 20-37-20z"/>
-        <path class="pg-glint" d="m115 88 35 18 33-19m-33 19v38"/>
-        <path class="pg-glass" d="M192 59h42v76c0 16-42 16-42 0z"/>
-        <ellipse class="pg-white" cx="213" cy="59" rx="21" ry="9"/>
-        <path class="pg-glass" d="m94 116-29 24 83 42 29-24z"/>
-        <path class="pg-glass" d="m177 158 31 24 85-43-31-23z"/>
-        <path class="pg-glint" d="m98 173 69 36m20-1 65-34"/>
-      </g>
-      <path class="pg-detail pg-glass" d="m95 116-20-21 80-41 22 20zm82-42 23-20 84 42-22 20z"/>''',
+        <path class="pg-glass" d="m96 119-22-22 82-38 22 23zm82-37 23-22 81 38-22 22z"/>
+        <path class="pg-dark" d="m96 119 82-37 82 38-82 42z"/>
+        <g clip-path="url(#partner-suppliers-interior)">
+          <path class="pg-blue" d="m125 90 28-14 26 13v74l-26 14-28-13z"/>
+          <path class="pg-glint" d="m128 92 25 13 23-13m-23 13v64"/>
+          <path class="pg-glass" d="M196 87h37v89c0 14-37 14-37 0z"/>
+          <ellipse class="pg-white" cx="214.5" cy="87" rx="18.5" ry="8"/>
+          <path class="pg-glint" d="M203 100v49"/>
+        </g>
+        <path class="pg-box-front" d="m96 119 82 43v60l-82-43z"/>
+        <path class="pg-box-side" d="m178 162 82-42v60l-82 42z"/>
+        <path class="pg-glass" d="m96 119 82 43-25 22-82-43z"/>
+        <path class="pg-glass" d="m178 162 82-42 25 23-82 42z"/>
+        <path class="pg-glint" d="m102 179 68 35m17-1 66-34"/>
+      </g>''',
     "retail": '''
       <ellipse class="pg-shadow" cx="177" cy="214" rx="129" ry="10"/>
       <g class="pg-back">
