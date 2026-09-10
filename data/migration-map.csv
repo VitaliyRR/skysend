@@ -146,8 +146,8 @@ https://skysend.ru/buy/flash-drives/usb-2-0-drive-detail.html,/equipment/flash-d
 https://skysend.ru/buy/flash-drives/usb-drive-internal-detail.html,/equipment/flash-drives/#usb-drive-internal,301,category_row,Сохраняется строка исходного каталога; отдельная непроверенная карточка не создаётся
 https://skysend.ru/skanery-otpechatka.html,/equipment/fingerprint/#skanery-otpechatka.html,301,category_row,Сохраняется строка исходного каталога; отдельная непроверенная карточка не создаётся
 https://skysend.ru/buy/fiscal-server/fiscal-server-detail.html,/equipment/fiscal-server/#fiscal-server,301,category_row,Сохраняется строка исходного каталога; отдельная непроверенная карточка не создаётся
-https://skysend.ru/partners,/#partners,301,consolidate,Выбор направления перенесён в секцию главной
-https://skysend.ru/partners/,/#partners,301,consolidate,Выбор направления перенесён в секцию главной
+https://skysend.ru/partners,/partners/agents/,301,redirect,Страница-индекс партнёров удалена; выбор направления доступен в меню «Партнёрам»
+https://skysend.ru/partners/,/partners/agents/,301,redirect,Страница-индекс партнёров удалена; выбор направления доступен в меню «Партнёрам»
 https://skysend.ru/program,/software/terminal/,301,redirect,Страница-индекс ПО удалена; выбор продукта доступен в меню ПО
 https://skysend.ru/program/,/software/terminal/,301,redirect,Страница-индекс ПО удалена; выбор продукта доступен в меню ПО
 https://skysend.ru/software,/software/terminal/,301,redirect,Страница-индекс ПО удалена; выбор продукта доступен в меню ПО

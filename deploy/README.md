@@ -61,8 +61,9 @@ python site/build.py
 python tools/validate_site.py
 ```
 
-The expected production manifest contains 41 canonical routes, 43 HTML files,
-71 download records, 153 redirects and 13 gone routes. Treat any different
+The expected production manifest contains 41 canonical routes, 45 HTML files
+(including two redirect-only index documents), 71 download records, 153 redirects
+and 13 gone routes. Treat any different
 count as a release failure until the content sources, migration map and generated
 Nginx/static redirect files agree.
 
