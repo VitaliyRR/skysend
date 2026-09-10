@@ -132,7 +132,7 @@ for p in [ROOT/'README.md',*(ROOT/'docs').glob('*.md'),ROOT/'design/README.md']:
   target=unquote(target)
   if not (p.parent/target).exists():errors.append(f'Broken document link: {p.relative_to(ROOT)} -> {target}')
 
-report={'checked_at':'2026-09-10','scope':'Artifact integrity and editorial consistency; no frontend implementation exists yet',
+report={'checked_at':'2026-09-10','scope':'Artifact integrity, editorial consistency, and generated frontend source data',
          'status':'pass' if not errors else 'fail','checks':checks,'errors':errors,'warnings':warnings,
          'limitations':['Source existence does not establish current payment availability or product compatibility.',
                         'Accessibility and Core Web Vitals require testing the future implementation.',

@@ -524,7 +524,7 @@ infsysgroup
 | [/](https://skysend.ru/) | SkySend – система приема платежей, предоставляющая возможность совершения оплат в пользу более 5 000 поставщиков услуг | [TXT](../evidence/skysend/text/home.txt) | source_content | / |
 | [/allvend.html](https://skysend.ru/allvend.html) | ПО ALLVEND | [TXT](../evidence/skysend/text/allvend.txt) | source_content | /software/allvend/ |
 | [/autorally.html](https://skysend.ru/autorally.html) | Автопробег | [TXT](../evidence/skysend/text/autorally.txt) | source_content | 410 |
-| [/partners.html](https://skysend.ru/partners.html) | Партнерам | [TXT](../evidence/skysend/text/partners.txt) | source_content | /partners/ |
+| [/partners.html](https://skysend.ru/partners.html) | Партнерам | [TXT](../evidence/skysend/text/partners.txt) | source_content | /#partners |
 | [/partners/agent/information.html](https://skysend.ru/partners/agent/information.html) | Платежным агентам | [TXT](../evidence/skysend/text/partners__agent__information.txt) | source_content | /partners/agents/ |
 | [/partners/agent/stable-work.html](https://skysend.ru/partners/agent/stable-work.html) | Стабильная работа | [TXT](../evidence/skysend/text/partners__agent__stable-work.txt) | source_content | /partners/agents/#stable-work |
 | [/partners/agent/cost-reduction.html](https://skysend.ru/partners/agent/cost-reduction.html) | Снижение расходов | [TXT](../evidence/skysend/text/partners__agent__cost-reduction.txt) | source_content | /partners/agents/#cost-reduction |
@@ -596,7 +596,7 @@ infsysgroup
 | [/buy/flash-drives.html](https://skysend.ru/buy/flash-drives.html) | Flash накопители | [TXT](../evidence/skysend/text/buy__flash-drives.txt) | source_content | /equipment/flash-drives/ |
 | [/buy/fingerprint.html](https://skysend.ru/buy/fingerprint.html) | Сканеры отпечатка | [TXT](../evidence/skysend/text/buy__fingerprint.txt) | source_content | /equipment/fingerprint/ |
 | [/buy/fiscal-server.html](https://skysend.ru/buy/fiscal-server.html) | Фискальные серверы | [TXT](../evidence/skysend/text/buy__fiscal-server.txt) | source_content | /equipment/fiscal-server/ |
-| [/benefits.html](https://skysend.ru/benefits.html) | Преимущества | [TXT](../evidence/skysend/text/benefits.txt) | source_content | /partners/ |
+| [/benefits.html](https://skysend.ru/benefits.html) | Преимущества | [TXT](../evidence/skysend/text/benefits.txt) | source_content | /#partners |
 | [/benefits/highest-award.html](https://skysend.ru/benefits/highest-award.html) | Высокое вознаграждение | [TXT](../evidence/skysend/text/benefits__highest-award.txt) | source_content | /partners/agents/#income |
 | [/benefits/lower-costs.html](https://skysend.ru/benefits/lower-costs.html) | Низкие расходы | [TXT](../evidence/skysend/text/benefits__lower-costs.txt) | source_content | /partners/agents/#cost-reduction |
 | [/benefits/stable-job.html](https://skysend.ru/benefits/stable-job.html) | Стабильная работа | [TXT](../evidence/skysend/text/benefits__stable-job.txt) | source_content | /partners/agents/#stable-work |

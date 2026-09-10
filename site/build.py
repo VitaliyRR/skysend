@@ -45,9 +45,13 @@ ASSET_MANIFEST = load_json("assets-manifest.json")
 SORTED_PROVIDERS = sorted(PROVIDERS["providers"], key=lambda item: item["name"].casefold())
 
 PAGES = [
-    *SITE_CONTENT["pages"],
-    *SECONDARY_CONTENT["pages"],
-    *UTILITY_CONTENT["pages"],
+    page
+    for page in [
+        *SITE_CONTENT["pages"],
+        *SECONDARY_CONTENT["pages"],
+        *UTILITY_CONTENT["pages"],
+    ]
+    if page["path"] != "/partners/"
 ]
 PAGE_BY_PATH = {page["path"]: page for page in PAGES}
 SOFTWARE_PAGES = [
@@ -185,8 +189,7 @@ def figure_image(
         image = (
             f'<a class="media-open" href="{e(asset_url(path))}" data-lightbox-src="{e(asset_url(path))}" '
             f'data-lightbox-alt="{e(alt)}" data-lightbox-caption="{e(caption or alt)}" '
-            f'aria-label="Увеличить изображение: {e(caption or alt)}">{image}'
-            '<span class="media-open__label">Увеличить</span></a>'
+            f'aria-label="Открыть изображение: {e(caption or alt)}">{image}</a>'
         )
     figcaption = f'<figcaption>{e(caption)}</figcaption>' if caption else ""
     return f'<figure class="media-figure">{image}{figcaption}</figure>'
@@ -206,8 +209,7 @@ def picture_figure(paths: list[str], alt: str, *, caption: str | None = None, li
         image = (
             f'<a class="media-open" href="{e(asset_url(desktop))}" data-lightbox-src="{e(asset_url(desktop))}" '
             f'data-lightbox-alt="{e(alt)}" data-lightbox-caption="{e(caption or alt)}" '
-            f'aria-label="Увеличить изображение: {e(caption or alt)}">{image}'
-            '<span class="media-open__label">Увеличить</span></a>'
+            f'aria-label="Открыть изображение: {e(caption or alt)}">{image}</a>'
         )
     figcaption = f'<figcaption>{e(caption)}</figcaption>' if caption else ""
     return f'<figure class="media-figure">{image}{figcaption}</figure>'
@@ -223,8 +225,7 @@ def provider_wall() -> str:
         )
     return (
         '<figure class="provider-wall"><ul class="provider-wall__grid" '
-        f'aria-label="{e(BINDINGS["provider-logos"]["alt"])}">{"".join(items)}</ul>'
-        '<figcaption>Примеры из каталога SkySend. Доступность услуги уточняйте в поддержке.</figcaption></figure>'
+        f'aria-label="{e(BINDINGS["provider-logos"]["alt"])}">{"".join(items)}</ul></figure>'
     )
 
 
@@ -244,15 +245,12 @@ def process_visual(section) -> str:
     for edge in edges:
         outgoing.setdefault(edge.get("from"), []).append(edge)
     rows = []
-    for index, node in enumerate(nodes, 1):
+    for node in nodes:
         connectors = "".join(
             f'<span class="process-edge">{e(edge.get("label"))}<span aria-hidden="true"> →</span></span>'
             for edge in outgoing.get(node.get("id"), [])
         )
-        rows.append(
-            f'<li class="process-node"><span class="process-node__number">{index:02d}</span>'
-            f'<strong>{e(node.get("label"))}</strong>{connectors}</li>'
-        )
+        rows.append(f'<li class="process-node"><strong>{e(node.get("label"))}</strong>{connectors}</li>')
     return f'<ol class="process-list">{"".join(rows)}</ol>'
 
 
@@ -260,9 +258,9 @@ def contact_panel(section, page_path: str) -> str:
     contacts = NAVIGATION["contact_defaults"]
     if page_path == "/about/" and section.get("id") == "information":
         rows = []
-        for index, item in enumerate(section.get("links", []), 1):
+        for item in section.get("links", []):
             rows.append(
-                f'<a class="route-row" href="{e(item.get("href"))}"><span>{index:02d}</span>'
+                f'<a class="route-row" href="{e(item.get("href"))}">'
                 f'<strong>{e(item.get("label"))}</strong><span aria-hidden="true">↗</span></a>'
             )
         return f'<nav class="route-list" aria-label="Информация о компании">{"".join(rows)}</nav>'
@@ -332,13 +330,13 @@ def contact_panel(section, page_path: str) -> str:
 
 
 def partner_routes() -> str:
-    rows = []
-    for index, item in enumerate(NAVIGATION["partners"], 1):
-        rows.append(
-            f'<a class="route-row" href="{e(item["href"])}"><span>{index:02d}</span>'
+    tiles = []
+    for item in NAVIGATION["partners"]:
+        tiles.append(
+            f'<a class="partner-tile" href="{e(item["href"])}">'
             f'<strong>{e(item["label"])}</strong><span aria-hidden="true">↗</span></a>'
         )
-    return f'<nav class="route-list" aria-label="Направления для партнёров">{"".join(rows)}</nav>'
+    return f'<nav class="partner-grid" aria-label="Направления для партнёров">{"".join(tiles)}</nav>'
 
 
 def download_is_linkable(item) -> bool:
@@ -423,7 +421,7 @@ def software_catalog() -> str:
             )
         cards.append(
             f'<a class="software-card software-card--{index + 1}" href="{e(page["path"])}">'
-            f'<span class="software-card__index">0{index + 1} · {e(badge)}</span>'
+            f'<span class="software-card__index">{e(badge)}</span>'
             f'{media}<strong>{e(page["title"])}</strong><p>{e(text)}</p>'
             '<span class="software-card__arrow" aria-hidden="true">↗</span></a>'
         )
@@ -520,7 +518,7 @@ def render_media(visual_id: str, section, page_path: str, *, eager: bool = False
         if page_path == "/software/" and section.get("id") == "downloads":
             return (
                 '<nav class="route-list" aria-label="Материалы SkySend">'
-                '<a class="route-row" href="/downloads/"><span>01</span>'
+                '<a class="route-row" href="/downloads/">'
                 '<strong>Открыть каталог ПО и документации</strong><span aria-hidden="true">↗</span></a></nav>'
             )
         compact = page_path != "/downloads/" and page_path != "/system-rules/"
@@ -587,7 +585,10 @@ def alias_anchors(section) -> str:
 def render_section(section, page_path: str, index: int) -> str:
     visual_id = section_visual_id(section)
     dark = visual_id == "terminal-screen" and page_path == "/"
-    full = visual_id in {"software-catalog", "provider-catalog", "equipment-catalog", "download-list"}
+    full = (
+        visual_id in {"software-catalog", "provider-catalog", "equipment-catalog", "download-list", "partner-routes"}
+        or (page_path == "/" and section.get("id") == "equipment")
+    )
     reverse = index % 2 == 1 and not full
     motion = section.get("motion_alias") or section.get("motion") or "none"
     safe_reveal_visuals = {
@@ -610,10 +611,12 @@ def render_section(section, page_path: str, index: int) -> str:
         classes.append("evidence-section--reverse")
     if reveal:
         classes.append("reveal")
+    if page_path == "/" and section.get("id") in {"commerce", "partners", "equipment"}:
+        classes.append(f'evidence-section--{section["id"]}')
     media = render_media(visual_id, section, page_path)
     section_body = (
         '<div class="evidence-section__copy">'
-        f'<span class="section-index">{index + 1:02d}</span><h2>{e(section.get("title"))}</h2>'
+        f'<h2>{e(section.get("title"))}</h2>'
         f'{section_copy(section, include_links=not (page_path == "/about/" and section.get("id") == "information"))}</div>'
     )
     if media:
@@ -628,10 +631,9 @@ def home_hero(section) -> str:
     visual = render_media("terminal-product", section, "/", eager=True)
     return (
         '<section class="home-hero" id="hero"><div class="home-hero__shell">'
-        '<div class="home-hero__copy"><p class="eyebrow">Платёжная система SkySend</p>'
-        f'<h1>{e(section["title"])}</h1>{section_copy(section, primary_first=True)}</div>'
+        '<div class="home-hero__copy">'
+        f'<h1>{e(section["title"])}</h1>{action_links(section.get("cta", []), primary_first=True)}</div>'
         f'<div class="home-hero__visual">{visual}</div>'
-        '<a class="scroll-cue" href="#providers"><span>Далее</span><span aria-hidden="true">↓</span></a>'
         '</div></section>'
     )
 
@@ -707,17 +709,24 @@ def product_detail_hero(product, image_path: str) -> str:
 
 
 def header(path: str) -> str:
-    desktop_links = []
-    for item in NAVIGATION["primary"]:
-        active = path == item["href"] or (item["href"] != "/" and path.startswith(item["href"]))
-        current = ' aria-current="page"' if active else ""
-        desktop_links.append(f'<a href="{e(item["href"])}"{current}>{e(item["label"])}</a>')
     partner_submenu = "".join(
         f'<a href="{e(item["href"])}">{e(item["label"])}</a>' for item in NAVIGATION["partners"]
     )
+    desktop_links = []
+    for item in NAVIGATION["primary"]:
+        if item.get("children") == "partners":
+            current = ' aria-current="page"' if path.startswith("/partners/") else ""
+            desktop_links.append(
+                '<details class="nav-partners" data-partner-menu>'
+                f'<summary{current}>Партнёрам</summary><div class="nav-partners__panel">{partner_submenu}</div></details>'
+            )
+            continue
+        active = path == item["href"] or (item["href"] != "/" and path.startswith(item["href"]))
+        current = ' aria-current="page"' if active else ""
+        desktop_links.append(f'<a href="{e(item["href"])}"{current}>{e(item["label"])}</a>')
     mobile_primary = "".join(
         f'<a href="{e(item["href"])}">{e(item["label"])}</a>'
-        for item in NAVIGATION["primary"] if item["href"] != "/partners/"
+        for item in NAVIGATION["primary"] if item.get("children") != "partners"
     )
     mobile_extra = "".join(
         f'<a href="{e(item["href"])}">{e(item["label"])}</a>' for item in NAVIGATION["footer"][:4]
@@ -824,7 +833,7 @@ def render_content_page(page) -> str:
         sections = page["sections"]
         main = home_hero(sections[0])
         main += "".join(render_section(section, path, index) for index, section in enumerate(sections[1:], 1))
-        description = sections[0]["paragraphs"][0]
+        description = clean_text((sections[0].get("paragraphs") or [sections[0]["title"]])[0])
     elif page.get("template") == "software-detail":
         first, *rest = page["sections"]
         main = software_detail_hero(page, first)
@@ -863,7 +872,10 @@ def provider_card(provider) -> str:
 
 
 def provider_catalog_section(section) -> str:
-    categories = PROVIDERS["categories"]
+    present_categories = {provider["category_id"] for provider in PROVIDERS["providers"]}
+    categories = {
+        key: value for key, value in PROVIDERS["categories"].items() if key in present_categories
+    }
     chips = ['<button type="button" class="filter-chip is-active" data-provider-category="all" aria-pressed="true">Все</button>']
     chips.extend(
         f'<button type="button" class="filter-chip" data-provider-category="{e(key)}" aria-pressed="false">{e(value)}</button>'
@@ -874,7 +886,7 @@ def provider_catalog_section(section) -> str:
     return (
         f'<section class="provider-catalog" id="{e(section["id"])}" data-provider-app>'
         '<div class="provider-catalog__shell"><div class="provider-catalog__head">'
-        f'<span class="section-index">01</span><h2>{e(section["title"])}</h2>'
+        f'<h2>{e(section["title"])}</h2>'
         f'<p class="catalog-date">{e(section.get("body") or "Данные каталога SkySend от 10 сентября 2026 года.")}</p></div>'
         '<form class="provider-controls" data-provider-form role="search"><label for="provider-search">Поиск по названию</label>'
         '<div class="search-field"><input id="provider-search" name="q" type="search" autocomplete="off" '
@@ -926,10 +938,10 @@ def render_equipment_product(product) -> str:
     body = product_detail_hero(product, image_path)
     body += (
         '<section class="product-detail"><div class="product-detail__shell product-detail__shell--spec">'
-        f'<div class="product-detail__spec"><span class="section-index">01</span><h2>Характеристики</h2><table><tbody>{facts}</tbody></table>'
+        f'<div class="product-detail__spec"><h2>Характеристики</h2><table><tbody>{facts}</tbody></table>'
         f'<p class="caption">{e(product["specification_caption"])}</p></div></div></section>'
         '<section class="evidence-section"><div class="section-shell"><div class="evidence-section__copy">'
-        '<span class="section-index">02</span><h2>Базовая комплектация</h2><p>Перечень из материалов SkySend.</p>'
+        '<h2>Базовая комплектация</h2><p>Перечень из материалов SkySend.</p>'
         f'{action_links([product["cta"]])}</div><div class="evidence-section__visual"><ul class="spec-list">{config}</ul></div></div></section>'
         '<section class="product-notes"><div><h2>Уточнения по исходным данным</h2>'
         f'<ul>{limits}</ul></div></section>'

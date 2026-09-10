@@ -43,7 +43,7 @@ out={'audit_date':'2026-09-10','products':products,'categories':categories,'poli
 Path('data/equipment-content.json').write_text(json.dumps(out,ensure_ascii=False,indent=2),encoding='utf-8')
 with Path('data/migration-map.csv').open(encoding='utf-8-sig',newline='') as f:mp=list(csv.DictReader(f))
 for row in mp:
- if row['old_url'].endswith('/benefits.html'):row['new_url']='/partners/'
+ if row['old_url'].endswith('/benefits.html'):row['new_url']='/#partners'
  if row['old_url'].endswith('/pravila-sistemy.html'):row['new_url']='/system-rules/'
  if any(row['old_url'].endswith(x) for x in ['belyaeva-olga-konstantinovna.html','lifanova-natalya-vladimirovna.html','starodub-igor-vladimirovich.html']):row.update(new_url='/about/team/',content_action='soft_404_consolidation',reason='Источник содержит soft 404; не создавать отсутствующую биографию')
  if any(row['old_url'].endswith(x) for x in ['203-connecting-terminals.html','201-business-mission-az.html']):row.update(new_url='',http_action='410',content_action='exclude',reason='Промо подключения/поездки исключено из нового архива')

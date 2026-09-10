@@ -1,13 +1,13 @@
 {
   "checked_at": "2026-09-10",
-  "scope": "Artifact integrity and editorial consistency; no frontend implementation exists yet",
+  "scope": "Artifact integrity, editorial consistency, and generated frontend source data",
   "status": "pass",
   "checks": {
-    "json_files": 19,
+    "json_files": 20,
     "svg_files": 26,
     "asset_sha256_checked": 642,
-    "curated_pages": 29,
-    "curated_sections": 127,
+    "curated_pages": 28,
+    "curated_sections": 120,
     "primary_motion_aliases": [
       "none",
       "section-reveal",
@@ -17,7 +17,7 @@
     ],
     "audited_menu_pages": 125,
     "providers": 600,
-    "migration_rows": 147
+    "migration_rows": 149
   },
   "errors": [],
   "warnings": [],

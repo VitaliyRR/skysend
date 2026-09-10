@@ -229,6 +229,40 @@ def main() -> int:
     home_equipment = section_markup(html_path_for_route("/"), "equipment")
     if re.match(r'<section\b[^>]*\bdata-reveal\b', home_equipment):
         fail(errors, "home equipment links must not be hidden by reveal animation")
+    home_text = html_path_for_route("/").read_text(encoding="utf-8")
+    home_commerce = section_markup(html_path_for_route("/"), "commerce")
+    home_partners = section_markup(html_path_for_route("/"), "partners")
+    if '<span class="section-index">' in public_text:
+        fail(errors, "decorative section numbering must not be rendered")
+    if 'class="process-node__number"' in public_text:
+        fail(errors, "decorative process numbering must not be rendered")
+    for removed_copy in (
+        "Платёжная система SkySend",
+        "SkySend предоставляет возможность совершать оплаты в пользу более 5 000 поставщиков услуг.",
+        "Примеры из каталога SkySend. Доступность услуги уточняйте в поддержке.",
+        "Варианты интерфейса из материалов SkySend",
+    ):
+        if removed_copy in home_text:
+            fail(errors, f"removed home copy is still rendered: {removed_copy}")
+    if (
+        '<span class="media-open__label">' in public_text
+        or '>Увеличить</' in public_text
+        or '>Далее<' in public_text
+    ):
+        fail(errors, "visible enlarge controls must not be rendered")
+    if 'id="support"' in home_text:
+        fail(errors, "home support section must be removed")
+    if "<h2>SkyMarket</h2>" not in home_commerce:
+        fail(errors, "home commerce section must be titled SkyMarket")
+    for label in ("Загрузка справочника товаров", "Формирование заказов", "Оплата заказов"):
+        if label not in home_commerce:
+            fail(errors, f"SkyMarket feature missing: {label}")
+    if home_partners.count('class="partner-tile"') != 6:
+        fail(errors, "home partners section must contain six clickable tiles")
+    if ">Оборудование<" in home_equipment:
+        fail(errors, "home equipment section must not contain the generic equipment link")
+    if (DIST / "partners" / "index.html").exists():
+        fail(errors, "standalone partners index must not be generated")
     emitted_external_accounts = sum(public_text.count(href) for href in public_external_accounts)
     for href in public_external_accounts:
         present = href in public_text
@@ -309,7 +343,7 @@ def main() -> int:
             fail(errors, f"forbidden/review-only asset copied: {name}")
 
     manifest = json.loads((DIST / "build-manifest.json").read_text(encoding="utf-8"))
-    expected = {"routes": 43, "provider_rows": 600, "download_rows": 66, "redirects": 133, "gone": 13}
+    expected = {"routes": 42, "provider_rows": 600, "download_rows": 66, "redirects": 135, "gone": 13}
     for key, value in expected.items():
         if manifest.get(key) != value:
             fail(errors, f"manifest {key}: expected {value}, got {manifest.get(key)}")

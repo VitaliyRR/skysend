@@ -29,7 +29,11 @@
     {
       "id": "M00",
       "name": "Первый экран",
-      "components": ["Hero", "ProviderWall", "ContactBlock"],
+      "components": [
+        "Hero",
+        "ProviderWall",
+        "ContactBlock"
+      ],
       "trigger": "Первый HTML-render",
       "properties": [],
       "durationMs": 0,
@@ -43,9 +47,16 @@
     {
       "id": "M01",
       "name": "Появление содержимого секции",
-      "components": ["EvidenceSection", "SoftwareOverview", "HardwareOverview"],
+      "components": [
+        "EvidenceSection",
+        "SoftwareOverview",
+        "HardwareOverview"
+      ],
       "trigger": "IntersectionObserver: threshold 0.15, rootMargin '0px 0px -48px 0px'; только ниже первого экрана",
-      "properties": ["opacity", "transform"],
+      "properties": [
+        "opacity",
+        "transform"
+      ],
       "durationMs": 420,
       "delayMs": 0,
       "easing": "cubic-bezier(0.22, 1, 0.36, 1)",
@@ -58,9 +69,13 @@
     {
       "id": "M02",
       "name": "Появление этапов формирования заказа",
-      "components": ["CommerceFlow"],
+      "components": [
+        "CommerceFlow"
+      ],
       "trigger": "Тот же observer, что M01; один раз на вход всей схемы ниже первого экрана",
-      "properties": ["opacity"],
+      "properties": [
+        "opacity"
+      ],
       "durationMs": 420,
       "delayMs": 0,
       "staggerMs": 60,
@@ -74,9 +89,17 @@
     {
       "id": "M03",
       "name": "Ответ кнопки и ссылки",
-      "components": ["ActionLink", "Button", "NavLink"],
+      "components": [
+        "ActionLink",
+        "Button",
+        "NavLink"
+      ],
       "trigger": "pointer hover при '(hover: hover) and (pointer: fine)', focus-visible, active",
-      "properties": ["background-color", "color", "border-color"],
+      "properties": [
+        "background-color",
+        "color",
+        "border-color"
+      ],
       "durationMs": 160,
       "delayMs": 0,
       "easing": "cubic-bezier(0.2, 0, 0, 1)",
@@ -88,9 +111,14 @@
     {
       "id": "M04",
       "name": "Мобильное меню",
-      "components": ["MobileNavigation"],
+      "components": [
+        "MobileNavigation"
+      ],
       "trigger": "Активация кнопки Меню / Закрыть меню / Escape / переход по ссылке",
-      "properties": ["opacity", "transform"],
+      "properties": [
+        "opacity",
+        "transform"
+      ],
       "durationMs": 240,
       "exitDurationMs": 160,
       "delayMs": 0,
@@ -103,26 +131,37 @@
     },
     {
       "id": "M05",
-      "name": "Просмотр интерфейса ПО и ручная смена кадра",
-      "components": ["ScreenshotViewer", "ManualGallery"],
-      "trigger": "Кнопка Увеличить изображение; закрытие кнопкой или Escape; явная смена кадра кнопкой или подписанным переключателем",
-      "properties": ["opacity"],
+      "name": "Просмотр интерфейса и увеличение при наведении",
+      "components": [
+        "ScreenshotViewer",
+        "ManualGallery"
+      ],
+      "trigger": "Наведение мыши; нажатие или Enter открывают полноэкранный просмотр; закрытие кнопкой или Escape",
+      "properties": [
+        "opacity",
+        "transform"
+      ],
       "durationMs": 220,
       "delayMs": 0,
       "easing": "cubic-bezier(0.2, 0, 0, 1)",
-      "desktop": "Изображение и фон появляются через opacity, без перелета из карточки и масштабирования. В подготовленной галерее новый кадр появляется opacity 0 -> 1 за 220ms поверх предыдущего; предыдущий удаляется после завершения. Размер рамки сохраняется. Автоматической смены нет.",
-      "mobile": "Тот же fade; интерфейс занимает доступную ширину. Большая картинка не блокирует закрытие и системный zoom.",
-      "reducedMotion": "Мгновенное открытие/закрытие.",
-      "accessibility": "Нативный dialog либо эквивалентный паттерн: accessible name, фокус внутри, Escape, возврат на trigger, подпись с названием ПО.",
-      "galleryAccessibility": "Если отдельные кадры не подготовлены, показывать цельный исходник и только увеличение. Если подготовлены: именованные кнопки Назад/Далее и подпись 'Кадр N из M'; изменение подписи через aria-live polite после явного действия; скрытый кадр недоступен для чтения. На концах последовательности не зацикливать галерею.",
+      "desktop": "При наведении изображение масштабируется от 1 до 1.035 внутри обрезанной рамки. По нажатию полноэкранный просмотр появляется через opacity, без перелёта из карточки.",
+      "mobile": "Hover-масштабирование не применяется. По нажатию открывается полноэкранный просмотр; системный zoom и закрытие остаются доступны.",
+      "reducedMotion": "Масштабирование при наведении отключено; просмотр открывается и закрывается сразу.",
+      "accessibility": "Изображение остаётся обычной ссылкой на файл. Enter открывает диалог при доступном JavaScript; Escape закрывает его и возвращает фокус.",
+      "galleryAccessibility": "Автоматической и ручной смены кадров нет. Показывается только подготовленная цельная композиция.",
       "purpose": "Дать прочитать настоящий интерфейс, не имитируя его работоспособность."
     },
     {
       "id": "M06",
       "name": "Изменение шапки при прокрутке",
-      "components": ["Header"],
+      "components": [
+        "Header"
+      ],
       "trigger": "Верхний sentinel вышел из viewport; IntersectionObserver",
-      "properties": ["border-color", "box-shadow"],
+      "properties": [
+        "border-color",
+        "box-shadow"
+      ],
       "durationMs": 160,
       "delayMs": 0,
       "easing": "cubic-bezier(0.2, 0, 0, 1)",
@@ -134,7 +173,10 @@
     {
       "id": "M07",
       "name": "Переход к якорю",
-      "components": ["SectionLink", "SkipLink"],
+      "components": [
+        "SectionLink",
+        "SkipLink"
+      ],
       "trigger": "Активация внутренней ссылки",
       "properties": [],
       "durationMs": 0,

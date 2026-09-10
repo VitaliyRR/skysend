@@ -1235,140 +1235,6 @@
       ]
     },
     {
-      "path": "/partners/",
-      "title": "Партнёрам",
-      "lead": "Выберите направление работы с системой SkySend.",
-      "source_urls": [
-        "https://skysend.ru/about/our-goals.html"
-      ],
-      "primary_cta": {
-        "label": "Обсудить подключение",
-        "href": "/connect/"
-      },
-      "sections": [
-        {
-          "id": "agents",
-          "anchor_aliases": [],
-          "title": "Платёжным агентам",
-          "body": "Терминалы, операторские точки, приём платежей и удалённое управление.",
-          "source_urls": [
-            "https://skysend.ru/partners/agent/rma.html"
-          ],
-          "visual_id": "terminal-product",
-          "visual_description": "Подлинное фото устройства из исходника, на нейтральном фоне. Название модели только по источнику. Без людей, 3D-реконструкции и декора.",
-          "motion": "Содержимое доступно сразу в конечном состоянии. Все числа, easing, desktop/mobile и reduced-motion брать из data/motion-spec.json: contentAliases.none.",
-          "links": [
-            {
-              "label": "Платёжным агентам",
-              "href": "/partners/agents/"
-            }
-          ],
-          "motion_alias": "none",
-          "motion_intent": "Содержимое доступно сразу в конечном состоянии."
-        },
-        {
-          "id": "providers",
-          "anchor_aliases": [],
-          "title": "Провайдерам услуг",
-          "body": "Кнопки оплаты услуг, взаимодействие с биллингом и отчётность.",
-          "source_urls": [
-            "https://skysend.ru/partners/providers/free-connection.html"
-          ],
-          "visual_id": "provider-logos",
-          "visual_description": "Реальные логотипы и названия из providers-source.json. При отсутствии логотипа использовать название. Не подменять этот список вымышленными 5000 строками.",
-          "motion": "Содержимое доступно сразу в конечном состоянии. Все числа, easing, desktop/mobile и reduced-motion брать из data/motion-spec.json: contentAliases.none.",
-          "links": [
-            {
-              "label": "Провайдерам услуг",
-              "href": "/partners/providers/"
-            }
-          ],
-          "motion_alias": "none",
-          "motion_intent": "Содержимое доступно сразу в конечном состоянии."
-        },
-        {
-          "id": "suppliers",
-          "anchor_aliases": [],
-          "title": "Поставщикам товаров",
-          "body": "Каталог, заказы и продажи через SkyMarket.",
-          "source_urls": [
-            "https://skysend.ru/partners/suppliers/information.html"
-          ],
-          "visual_id": "commerce-flow",
-          "visual_description": "Реальные экраны каталога, карточки товара и оформления заказа из исходника; если нужного экрана нет, использовать явно подписанную схему процесса.",
-          "motion": "Один раз показать порядок статичных шагов; не имитировать выполнение заказа или платежа. Все числа, easing, desktop/mobile и reduced-motion брать из data/motion-spec.json: contentAliases.process-step.",
-          "links": [
-            {
-              "label": "Поставщикам товаров",
-              "href": "/partners/suppliers/"
-            }
-          ],
-          "motion_alias": "process-step",
-          "motion_intent": "Один раз показать порядок статичных шагов; не имитировать выполнение заказа или платежа."
-        },
-        {
-          "id": "retail",
-          "anchor_aliases": [],
-          "title": "Торговым сетям",
-          "body": "Устройства самообслуживания, заказы и информационные разделы.",
-          "source_urls": [
-            "https://skysend.ru/allvend.html"
-          ],
-          "visual_id": "terminal-product",
-          "visual_description": "Подлинное фото устройства из исходника, на нейтральном фоне. Название модели только по источнику. Без людей, 3D-реконструкции и декора.",
-          "motion": "Однократное появление содержимого секции ниже первого экрана. Все числа, easing, desktop/mobile и reduced-motion брать из data/motion-spec.json: contentAliases.section-reveal.",
-          "links": [
-            {
-              "label": "Торговым сетям",
-              "href": "/partners/retail/"
-            }
-          ],
-          "motion_alias": "section-reveal",
-          "motion_intent": "Однократное появление содержимого секции ниже первого экрана."
-        },
-        {
-          "id": "representatives",
-          "anchor_aliases": [],
-          "title": "Представителям",
-          "body": "Подключение участников и работа в регионе.",
-          "source_urls": [
-            "https://skysend.ru/partners/representatives/connecting-players.html"
-          ],
-          "visual_id": "payment-network",
-          "visual_description": "Плоская схема с подписанными участниками процесса из абзаца. Без выдуманной карты, координат и числа точек.",
-          "motion": "Однократное появление содержимого секции ниже первого экрана. Все числа, easing, desktop/mobile и reduced-motion брать из data/motion-spec.json: contentAliases.section-reveal.",
-          "links": [
-            {
-              "label": "Представителям",
-              "href": "/partners/representatives/"
-            }
-          ],
-          "motion_alias": "section-reveal",
-          "motion_intent": "Однократное появление содержимого секции ниже первого экрана."
-        },
-        {
-          "id": "gateways",
-          "anchor_aliases": [],
-          "title": "Шлюзовикам",
-          "body": "Приём платежей через XML-интеграцию.",
-          "source_urls": [
-            "https://skysend.ru/partners/gateway/xml.html"
-          ],
-          "visual_id": "xml-flow",
-          "visual_description": "Схема обмена с подписями типов данных из абзаца. Схема объясняет процесс; XML-теги и методы API не придумывать.",
-          "motion": "Однократное появление содержимого секции ниже первого экрана. Все числа, easing, desktop/mobile и reduced-motion брать из data/motion-spec.json: contentAliases.section-reveal.",
-          "links": [
-            {
-              "label": "Шлюзовикам",
-              "href": "/partners/gateways/"
-            }
-          ],
-          "motion_alias": "section-reveal",
-          "motion_intent": "Однократное появление содержимого секции ниже первого экрана."
-        }
-      ]
-    },
-    {
       "path": "/about/",
       "title": "О системе",
       "lead": "SkySend — система приёма платежей. Для работы с системой используются платёжные терминалы, программы для кассира и Android, POS-терминалы и XML-интеграция.",
@@ -1444,7 +1310,7 @@
           "links": [
             {
               "label": "Партнёрам",
-              "href": "/partners/"
+              "href": "/#partners"
             }
           ],
           "visual_nodes": [
@@ -1526,7 +1392,7 @@
       ],
       "primary_cta": {
         "label": "Партнёрам",
-        "href": "/partners/"
+        "href": "/#partners"
       },
       "sections": [
         {
@@ -2121,7 +1987,7 @@
           "links": [
             {
               "label": "Выбрать направление",
-              "href": "/partners/"
+              "href": "/#partners"
             }
           ],
           "motion_alias": "none",

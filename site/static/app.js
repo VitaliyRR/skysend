@@ -45,6 +45,31 @@
     });
   }
 
+  function setupPartnerDropdown() {
+    const hover = window.matchMedia("(hover: hover) and (pointer: fine)");
+    document.querySelectorAll("[data-partner-menu]").forEach((menu) => {
+      const summary = menu.querySelector("summary");
+      if (!summary) return;
+      menu.addEventListener("pointerenter", () => {
+        if (hover.matches) menu.open = true;
+      });
+      menu.addEventListener("pointerleave", () => {
+        if (!menu.contains(document.activeElement)) menu.open = false;
+      });
+      menu.addEventListener("focusout", () => {
+        window.setTimeout(() => {
+          if (!menu.contains(document.activeElement)) menu.open = false;
+        });
+      });
+      menu.addEventListener("keydown", (event) => {
+        if (event.key !== "Escape") return;
+        event.preventDefault();
+        menu.open = false;
+        summary.focus();
+      });
+    });
+  }
+
   function setupLightbox() {
     const dialog = document.getElementById("media-dialog");
     const image = dialog?.querySelector("[data-lightbox-image]");
@@ -286,6 +311,7 @@
 
   setupHeader();
   setupMenu();
+  setupPartnerDropdown();
   setupLightbox();
   setupReveals();
   setupProviderCatalog();

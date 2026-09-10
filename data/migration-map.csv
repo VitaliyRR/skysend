@@ -2,7 +2,7 @@
 https://skysend.ru/,/,200,restructure,"Новая главная без акций, рекламных баннеров и ленты новостей"
 https://skysend.ru/allvend.html,/software/allvend/,301,adapt,"Сохранить продукт и функции; исключить рекламные модули, акции, старые цены и обещания"
 https://skysend.ru/autorally.html,,410,exclude,"Акция, промо-кампания или рекламный раздел исключён по заданию"
-https://skysend.ru/partners.html,/partners/,301,adapt,Сохранить смысл; очистить оформление и промо
+https://skysend.ru/partners.html,/#partners,301,adapt,Сохранить смысл; очистить оформление и промо
 https://skysend.ru/partners/agent/information.html,/partners/agents/,301,adapt,Сохранить смысл; очистить оформление и промо
 https://skysend.ru/partners/agent/stable-work.html,/partners/agents/#stable-work,301,adapt,Сохранить смысл; очистить оформление и промо
 https://skysend.ru/partners/agent/cost-reduction.html,/partners/agents/#cost-reduction,301,adapt,Сохранить смысл; очистить оформление и промо
@@ -74,7 +74,7 @@ https://skysend.ru/buy/accessories/fiscal-registrars.html,/equipment/accessories
 https://skysend.ru/buy/flash-drives.html,/equipment/flash-drives/,301,adapt,Сохранить смысл; очистить оформление и промо
 https://skysend.ru/buy/fingerprint.html,/equipment/fingerprint/,301,adapt,Сохранить смысл; очистить оформление и промо
 https://skysend.ru/buy/fiscal-server.html,/equipment/fiscal-server/,301,adapt,Сохранить смысл; очистить оформление и промо
-https://skysend.ru/benefits.html,/partners/,301,consolidate,Преимущества разобрать по продуктовым механизмам в страницах партнёров
+https://skysend.ru/benefits.html,/#partners,301,consolidate,Преимущества разобрать по продуктовым механизмам в страницах партнёров
 https://skysend.ru/benefits/highest-award.html,/partners/agents/#income,301,consolidate,Дублирующую статью объединить с профильной секцией; снять абсолютные обещания
 https://skysend.ru/benefits/lower-costs.html,/partners/agents/#cost-reduction,301,consolidate,Дублирующую статью объединить с профильной секцией; снять абсолютные обещания
 https://skysend.ru/benefits/stable-job.html,/partners/agents/#stable-work,301,consolidate,Дублирующую статью объединить с профильной секцией; снять абсолютные обещания
@@ -146,3 +146,5 @@ https://skysend.ru/buy/flash-drives/usb-2-0-drive-detail.html,/equipment/flash-d
 https://skysend.ru/buy/flash-drives/usb-drive-internal-detail.html,/equipment/flash-drives/#usb-drive-internal,301,category_row,Сохраняется строка исходного каталога; отдельная непроверенная карточка не создаётся
 https://skysend.ru/skanery-otpechatka.html,/equipment/fingerprint/#skanery-otpechatka.html,301,category_row,Сохраняется строка исходного каталога; отдельная непроверенная карточка не создаётся
 https://skysend.ru/buy/fiscal-server/fiscal-server-detail.html,/equipment/fiscal-server/#fiscal-server,301,category_row,Сохраняется строка исходного каталога; отдельная непроверенная карточка не создаётся
+https://skysend.ru/partners,/#partners,301,consolidate,Выбор направления перенесён в секцию главной
+https://skysend.ru/partners/,/#partners,301,consolidate,Выбор направления перенесён в секцию главной

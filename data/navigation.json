@@ -1,8 +1,10 @@
 {
   "primary": [
     {
+      "id": "partners",
       "label": "Партнёрам",
-      "href": "/partners/"
+      "href": "/#partners",
+      "children": "partners"
     },
     {
       "label": "ПО",

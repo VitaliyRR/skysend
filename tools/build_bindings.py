@@ -43,7 +43,8 @@ out=dict(version=1,bindings=bindings,
                               image_pipeline='Use width/height attributes, srcset, contain; no AI upscale. Derive sizes no larger than source. SVG files are already editable source.'),
          authoring_notice='Illustrative diagrams do not assert measured service speed, financial returns, uptime, or current availability of pictured services.')
 (ROOT/'data/section-assets.json').write_text(json.dumps(out,ensure_ascii=False,indent=2)+'\n',encoding='utf-8')
-nav=dict(primary=[{'label':a,'href':b} for a,b in [('Партнёрам','/partners/'),('ПО','/software/'),('Оборудование','/equipment/'),('Провайдеры','/providers/'),('Поддержка','/support/')]],
+nav=dict(primary=[{'id':'partners','label':'Партнёрам','href':'/#partners','children':'partners'},
+                  *[{'label':a,'href':b} for a,b in [('ПО','/software/'),('Оборудование','/equipment/'),('Провайдеры','/providers/'),('Поддержка','/support/')]]],
     actions=[{'label':'Войти','href':'/connect/#existing'},{'label':'Подключиться','href':'/connect/'}],
     partners=[{'label':a,'href':b} for a,b in [('Платёжным агентам','/partners/agents/'),('Провайдерам услуг','/partners/providers/'),('Поставщикам товаров','/partners/suppliers/'),('Торговым сетям','/partners/retail/'),('Представителям','/partners/representatives/'),('Шлюзовикам','/partners/gateways/')]],
     footer=[{'label':a,'href':b} for a,b in [('ПО','/software/'),('Скачать','/downloads/'),('О системе','/about/'),('Контакты','/contacts/'),('Правила системы','/system-rules/')]],

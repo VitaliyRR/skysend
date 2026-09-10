@@ -47,7 +47,7 @@ location / {
 
 Copy `deploy/legacy-locations.inc` to
 `/etc/nginx/snippets/skysend-legacy-locations.inc`. The generated file contains
-133 exact `301` rules and 13 exact `410` rules. Its targets are already absolute
+135 exact `301` rules and 13 exact `410` rules. Its targets are already absolute
 canonical URLs.
 
 ## Release checks

@@ -9,7 +9,7 @@ python tools/validate_site.py
 python -m http.server 4173 --directory dist
 ```
 
-The build creates 43 canonical routes, the local provider catalogue, sitemap,
+The build creates 42 canonical routes, the local provider catalogue, sitemap,
 404 and 410 documents, and Nginx legacy rules. Only the curated production
 assets are copied into `dist/`.
 

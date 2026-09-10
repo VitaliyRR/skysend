@@ -15,7 +15,7 @@
 /about/our-goals.html /about/goals/ 301
 /about/providers.html /providers/ 301
 /allvend.html /software/allvend/ 301
-/benefits.html /partners/ 301
+/benefits.html /#partners 301
 /benefits/exclusive-innovations.html /partners/agents/#innovation 301
 /benefits/highest-award.html /partners/agents/#income 301
 /benefits/lower-costs.html /partners/agents/#cost-reduction 301
@@ -71,7 +71,9 @@
 /download/7.html /downloads/ 301
 /download/8.html /downloads/ 301
 /download/9.html /downloads/ 301
-/partners.html /partners/ 301
+/partners /#partners 301
+/partners.html /#partners 301
+/partners/ /#partners 301
 /partners/agent/buy-terminals.html /partners/agents/#buy-terminals 301
 /partners/agent/cost-reduction.html /partners/agents/#cost-reduction 301
 /partners/agent/fingerprint-scanner.html /partners/agents/#fingerprint-scanner 301
