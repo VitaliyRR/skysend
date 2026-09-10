@@ -91,11 +91,21 @@
   "external_accounts": {
     "registration": {
       "href": "https://cluster.skysend.ru:6716/#/",
-      "verification": "TLS verification failed during source audit"
+      "verification": "TLS verification failed during source audit",
+      "launch_enabled": false,
+      "fallback": {
+        "label": "Написать в отдел продаж",
+        "href": "mailto:sales@inf-sys.ru"
+      }
     },
     "login": {
       "href": "https://control.skysend.ru:6710",
-      "verification": "Source form action. DNS lookup failed during audit; GET login behavior not confirmed"
+      "verification": "Source form action. DNS lookup failed during audit; GET login behavior not confirmed",
+      "launch_enabled": false,
+      "fallback": {
+        "label": "Связаться с поддержкой",
+        "href": "/support/"
+      }
     },
     "source": "https://skysend.ru/exit.php?ml=1",
     "fallback": "Use /connect/#existing with support channels; no password form or proxy for credentials in this site."

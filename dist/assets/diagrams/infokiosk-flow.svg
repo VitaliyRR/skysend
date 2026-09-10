@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="380" viewBox="0 0 1000 380" role="img" aria-labelledby="title desc">
+  <title id="title">Платёжный и информационный терминал</title>
+  <desc id="desc">Схема возможностей ПО ALLVEND на основе описания skysend.ru: информационные разделы и приём платежей на одном устройстве. Это схема, а не снимок интерфейса.</desc>
+  <rect width="1000" height="380" fill="#F4F5F6"/>
+  <g font-family="Inter,Arial,sans-serif" fill="#111315">
+    <text x="40" y="55" font-size="25" font-weight="600">Режим инфокиоска</text>
+    <rect x="40" y="110" width="245" height="205" rx="8" fill="#fff" stroke="#D9DDE1"/>
+    <rect x="119" y="142" width="86" height="77" rx="5" fill="none" stroke="#111315" stroke-width="3"/>
+    <path d="M162 219v28m-22 0h44" fill="none" stroke="#111315" stroke-width="3"/>
+    <text x="95" y="282" font-size="20">Терминал</text>
+    <path d="M285 212h82m0 0v-43h53m-53 43v48h53" fill="none" stroke="#0066B3" stroke-width="2"/>
+    <rect x="420" y="130" width="535" height="80" rx="4" fill="#fff"/>
+    <rect x="420" y="237" width="535" height="80" rx="4" fill="#fff"/>
+    <text x="445" y="180" font-size="22">Информационные разделы</text>
+    <text x="445" y="287" font-size="22">Приём платежей</text>
+    <text x="40" y="358" font-size="14" fill="#5F6368">Схема возможностей ПО ALLVEND</text>
+  </g>
+</svg>
