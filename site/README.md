@@ -14,6 +14,10 @@ and two redirect-only index documents. It publishes 71 download records, the loc
 the sitemap, 153 legacy redirects, and 13 gone routes. Only the curated
 production assets are copied into `dist/`.
 
+`site/partner_art.py` contains the six geometric SVG navigation pictograms for
+the home partner tiles. Their glass surfaces and responsive layout are defined
+in `site/static/styles.css`; labels and destinations remain in `data/navigation.json`.
+
 `/software/` and `/partners/` are not public canonical pages. The header exposes
 their detail routes in dropdowns, while the index URLs use static fallback
 redirects for hosts that ignore `_redirects`. Product pages include their relevant verified or clearly
