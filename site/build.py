@@ -51,7 +51,7 @@ PAGES = [
         *SECONDARY_CONTENT["pages"],
         *UTILITY_CONTENT["pages"],
     ]
-    if page["path"] != "/partners/"
+    if page["path"] not in {"/partners/", "/software/"}
 ]
 PAGE_BY_PATH = {page["path"]: page for page in PAGES}
 SOFTWARE_PAGES = [
@@ -64,8 +64,39 @@ DOWNLOAD_BY_GROUP = {
 DOWNLOAD_BY_ID = {item["id"]: item for item in DOWNLOADS["items"]}
 EXPLICIT_DOWNLOAD_ITEMS = {
     ("/software/terminal/", "flash"): ("terminal-a65a6fe49e", "terminal-2dd1aa405f"),
-    ("/software/xml/", "protocol"): ("xml-f638411134",),
     ("/software/pos/", "start"): ("pos-9484f696f3",),
+    ("/software/rma-desktop/", "start"): (
+        "rma-b6571ae893",
+        "rma-43db850c95",
+        "rma-31138d54eb",
+        "rma-5a93447b3a",
+        "rma-5a8f6e28ea",
+    ),
+    ("/software/rma-android/", "start"): (
+        "rma-android-ce621f1edb",
+        "rma-android-0000f786b3",
+        "rma-android-2cb9964a52",
+    ),
+    ("/software/xml/", "protocol"): (
+        "xml-f638411134",
+        "xml-c6c9ba2e03",
+        "xml-f0a5f8f2b9",
+    ),
+    ("/software/terminal/", "materials"): (
+        "terminal-70c824af8d",
+        "terminal-d0e4ecb5da",
+        "terminal-ff4d241ea9",
+    ),
+    ("/software/allvend/", "materials"): (
+        "terminal-1bb6f63325",
+        "terminal-e52218da2f",
+        "terminal-eb533344a2",
+        "terminal-5d21d44a41",
+        "other-3108112eb9",
+        "other-f88c63f1dc",
+        "other-6ea292bd48",
+        "other-1664b62dca",
+    ),
     ("/support/", "downloads"): (
         "rma-b6571ae893",
         "rma-5a93447b3a",
@@ -332,9 +363,22 @@ def contact_panel(section, page_path: str) -> str:
 def partner_routes() -> str:
     tiles = []
     for item in NAVIGATION["partners"]:
+        visual = item.get("visual", "")
+        if visual == "provider-logos":
+            logo_items = PROVIDER_WALL.get("items", [])[:4]
+            media = '<span class="partner-tile__logos" aria-hidden="true">' + "".join(
+                image_tag(row["path"], "", css="partner-tile__logo") for row in logo_items
+            ) + "</span>"
+        else:
+            media = (
+                '<span class="partner-tile__media">'
+                f'{image_tag(visual, item.get("visual_alt", ""), css="partner-tile__image")}</span>'
+                if visual else ""
+            )
         tiles.append(
             f'<a class="partner-tile" href="{e(item["href"])}">'
-            f'<strong>{e(item["label"])}</strong><span aria-hidden="true">↗</span></a>'
+            f'{media}<span class="partner-tile__copy"><strong>{e(item["label"])}</strong>'
+            '<span class="partner-tile__arrow" aria-hidden="true">↗</span></span></a>'
         )
     return f'<nav class="partner-grid" aria-label="Направления для партнёров">{"".join(tiles)}</nav>'
 
@@ -365,7 +409,15 @@ def download_rows(items, *, compact: bool = False) -> str:
                 f'<a class="download-row__action" href="{e(target)}" target="_blank" '
                 f'rel="noopener noreferrer">{label}<span aria-hidden="true"> ↗</span></a>'
             )
-            state = "Источник доступен на дату проверки" if item.get("status") == "reachable_head" else "Ссылка из материалов SkySend"
+            flags = set(item.get("source_flags") or [])
+            if item.get("kind") in {"software", "software_demo", "software_image"} or flags & {
+                "version_requires_review", "compatibility_requires_review"
+            }:
+                state = "Архивная версия. Совместимость и актуальность уточняйте перед использованием"
+            elif item.get("status") == "reachable_head":
+                state = "Источник доступен на дату проверки"
+            else:
+                state = "Ссылка из материалов SkySend"
         else:
             fallback = item.get("fallback") or {}
             action = f'<a class="download-row__action" href="{e(fallback.get("href", "/support/"))}">Поддержка →</a>'
@@ -484,17 +536,27 @@ def fact_object(section) -> str:
 
 
 def product_duo() -> str:
-    items = [
-        ("assets/originals/beautyII4.png", "FastPay Beauty II"),
-        ("assets/originals/FastPay Simple.png", "FastPay Simple"),
-    ]
-    figures = []
-    for path, name in items:
-        figures.append(
-            f'<a class="product-duo__item" href="/equipment/payment-terminals/{"fastpay-beauty-ii" if "Beauty" in name else "fastpay-simple"}/">'
-            f'{image_tag(path, name, css="product-duo__image")}<strong>{e(name)}</strong><span>Характеристики ↗</span></a>'
+    image_map = {
+        "fastpay-beauty-ii": "assets/originals/beautyII4.png",
+        "fastpay-simple": "assets/originals/FastPay Simple.png",
+    }
+    cards = []
+    for product in EQUIPMENT["products"]:
+        facts = dict(product.get("facts", []))
+        fact_rows = "".join(
+            f'<div><dt>{e(label)}</dt><dd>{e(facts.get(label))}</dd></div>'
+            for label in ("Высота", "Сенсорная панель", "Потребляемая мощность")
+            if facts.get(label)
         )
-    return f'<div class="product-duo">{"".join(figures)}</div>'
+        cards.append(
+            f'<a class="product-duo__item" href="{e(product["path"])}">'
+            '<span class="product-duo__visual">'
+            f'{image_tag(image_map[product["slug"]], product["title"], css="product-duo__image")}</span>'
+            '<span class="product-duo__copy"><small>Для помещений</small>'
+            f'<strong>{e(product["title"])}</strong><span class="product-duo__lead">{e(product["lead"])}</span>'
+            f'<dl>{fact_rows}</dl><span class="product-duo__link">Характеристики ↗</span></span></a>'
+        )
+    return f'<div class="product-duo">{"".join(cards)}</div>'
 
 
 def render_media(visual_id: str, section, page_path: str, *, eager: bool = False) -> str:
@@ -515,13 +577,7 @@ def render_media(visual_id: str, section, page_path: str, *, eager: bool = False
     if visual_id == "equipment-catalog":
         return equipment_index(section.get("id", ""))
     if visual_id == "download-list":
-        if page_path == "/software/" and section.get("id") == "downloads":
-            return (
-                '<nav class="route-list" aria-label="Материалы SkySend">'
-                '<a class="route-row" href="/downloads/">'
-                '<strong>Открыть каталог ПО и документации</strong><span aria-hidden="true">↗</span></a></nav>'
-            )
-        compact = page_path != "/downloads/" and page_path != "/system-rules/"
+        compact = not (page_path in {"/downloads/", "/system-rules/"} or page_path.startswith("/software/"))
         return download_rows(section_downloads(section, page_path), compact=compact)
     if visual_id == "text-only":
         return fact_object(section)
@@ -542,7 +598,7 @@ def render_media(visual_id: str, section, page_path: str, *, eager: bool = False
     caption = section.get("caption")
     if visual_id in {"terminal-screen", "rma-desktop", "rma-android"}:
         caption = caption or "Интерфейс ПО SkySend"
-    lightbox = visual_id in {"terminal-screen", "rma-desktop", "rma-android", "interface-variants"}
+    lightbox = visual_id in {"terminal-screen", "rma-desktop", "rma-android", "interface-variants", "allvend-infokiosk", "infokiosk-screen"}
     if binding.get("kind") in {"svg", "html-and-svg"}:
         return picture_figure(paths, binding.get("alt", ""), caption=caption, lightbox=lightbox)
     return figure_image(
@@ -589,13 +645,13 @@ def render_section(section, page_path: str, index: int) -> str:
         visual_id in {"software-catalog", "provider-catalog", "equipment-catalog", "download-list", "partner-routes"}
         or (page_path == "/" and section.get("id") == "equipment")
     )
-    reverse = index % 2 == 1 and not full
+    reverse = index % 2 == 1 and not full and not (page_path == "/" and section.get("id") == "providers")
     motion = section.get("motion_alias") or section.get("motion") or "none"
     safe_reveal_visuals = {
         "fastpay-product", "commerce-flow", "supplier-exchange",
         "xml-flow", "payment-network", "pos-product", "finger-product", "infokiosk-screen",
         "html-report-fields", "html-feature-list", "html-process", "fingerprint-scanner",
-        "provider-logos",
+        "provider-logos", "allvend-brand",
     }
     reveal = (
         index > 0
@@ -611,7 +667,7 @@ def render_section(section, page_path: str, index: int) -> str:
         classes.append("evidence-section--reverse")
     if reveal:
         classes.append("reveal")
-    if page_path == "/" and section.get("id") in {"commerce", "partners", "equipment"}:
+    if page_path == "/":
         classes.append(f'evidence-section--{section["id"]}')
     media = render_media(visual_id, section, page_path)
     section_body = (
@@ -628,12 +684,10 @@ def render_section(section, page_path: str, index: int) -> str:
 
 
 def home_hero(section) -> str:
-    visual = render_media("terminal-product", section, "/", eager=True)
     return (
-        '<section class="home-hero" id="hero"><div class="home-hero__shell">'
+        '<section class="home-hero home-hero--text" id="hero"><div class="home-hero__shell">'
         '<div class="home-hero__copy">'
         f'<h1>{e(section["title"])}</h1>{action_links(section.get("cta", []), primary_first=True)}</div>'
-        f'<div class="home-hero__visual">{visual}</div>'
         '</div></section>'
     )
 
@@ -642,7 +696,7 @@ def family_label(path: str) -> str:
     if path.startswith("/partners/"):
         return "Партнёрам"
     if path.startswith("/software/"):
-        return "Программное обеспечение"
+        return "ПО"
     if path.startswith("/equipment/"):
         return "Оборудование"
     if path.startswith("/about/"):
@@ -679,7 +733,6 @@ def software_detail_hero(page, section) -> str:
     return (
         f'{alias_anchors(section)}<section class="{classes}" id="{e(section["id"])}">'
         '<div class="detail-hero__shell"><div class="detail-hero__copy">'
-        f'<p class="eyebrow">{e(page["title"])}</p>'
         f'<h1>{e(section.get("title") or page["title"])}</h1>'
         f'{section_copy(section, primary_first=True)}</div>'
         f'<div class="detail-hero__visual">{visual}</div></div></section>'
@@ -709,28 +762,40 @@ def product_detail_hero(product, image_path: str) -> str:
 
 
 def header(path: str) -> str:
-    partner_submenu = "".join(
-        f'<a href="{e(item["href"])}">{e(item["label"])}</a>' for item in NAVIGATION["partners"]
-    )
+    def submenu(name: str) -> str:
+        return "".join(
+            f'<a href="{e(item["href"])}">{e(item["label"])}</a>' for item in NAVIGATION[name]
+        )
+
+    def dropdown(item, *, mobile: bool = False) -> str:
+        group = item["children"]
+        current = ' aria-current="page"' if path.startswith(f'/{group}/') else ""
+        panel = submenu(group)
+        if mobile:
+            return f'<details><summary{current}>{e(item["label"])}</summary><div>{panel}</div></details>'
+        return (
+            '<details class="nav-dropdown" data-nav-menu>'
+            f'<summary{current}>{e(item["label"])}</summary>'
+            f'<div class="nav-dropdown__panel">{panel}</div></details>'
+        )
+
     desktop_links = []
     for item in NAVIGATION["primary"]:
-        if item.get("children") == "partners":
-            current = ' aria-current="page"' if path.startswith("/partners/") else ""
-            desktop_links.append(
-                '<details class="nav-partners" data-partner-menu>'
-                f'<summary{current}>Партнёрам</summary><div class="nav-partners__panel">{partner_submenu}</div></details>'
-            )
+        if item.get("children"):
+            desktop_links.append(dropdown(item))
             continue
         active = path == item["href"] or (item["href"] != "/" and path.startswith(item["href"]))
         current = ' aria-current="page"' if active else ""
         desktop_links.append(f'<a href="{e(item["href"])}"{current}>{e(item["label"])}</a>')
     mobile_primary = "".join(
+        dropdown(item, mobile=True) if item.get("children") else
         f'<a href="{e(item["href"])}">{e(item["label"])}</a>'
-        for item in NAVIGATION["primary"] if item.get("children") != "partners"
+        for item in NAVIGATION["primary"]
     )
+    primary_hrefs = {item["href"] for item in NAVIGATION["primary"]}
     mobile_extra = "".join(
         f'<a href="{e(item["href"])}">{e(item["label"])}</a>' for item in NAVIGATION["footer"][:4]
-        if item["label"] != "ПО"
+        if item["href"] not in primary_hrefs and item["label"] != "Терминальное ПО"
     )
     actions = NAVIGATION["actions"]
     fallback_links = "".join(
@@ -743,8 +808,7 @@ def header(path: str) -> str:
         '<img src="/assets/brand/skysend-logo.svg" width="100" height="64" alt="SkySend"></a>'
         f'<nav class="desktop-nav" aria-label="Основная навигация">{"".join(desktop_links)}</nav>'
         '<div class="header-actions">'
-        f'<a class="header-login" href="{e(actions[0]["href"])}">{e(actions[0]["label"])}</a>'
-        f'<a class="button button--primary button--compact" href="{e(actions[1]["href"])}">{e(actions[1]["label"])}</a>'
+        f'<a class="button button--primary button--compact" href="{e(actions[0]["href"])}">{e(actions[0]["label"])}</a>'
         '</div><button class="menu-trigger" type="button" data-menu-open aria-controls="site-menu" aria-expanded="false">'
         '<span>Меню</span><img src="/assets/icons/menu.svg" width="24" height="24" alt=""></button>'
         '</div></header>'
@@ -753,10 +817,9 @@ def header(path: str) -> str:
         '<div class="site-menu__head"><strong id="menu-title">Навигация</strong>'
         '<button type="button" class="icon-button" data-menu-close aria-label="Закрыть меню">'
         '<img src="/assets/icons/close.svg" width="24" height="24" alt=""></button></div>'
-        '<nav class="mobile-nav" aria-label="Мобильная навигация"><details><summary>Партнёрам</summary>'
-        f'<div>{partner_submenu}</div></details>{mobile_primary}<div class="mobile-nav__secondary">{mobile_extra}</div>'
-        f'<a href="{e(actions[0]["href"])}">{e(actions[0]["label"])}</a>'
-        f'<a class="button button--primary" href="{e(actions[1]["href"])}">{e(actions[1]["label"])}</a>'
+        '<nav class="mobile-nav" aria-label="Мобильная навигация">'
+        f'{mobile_primary}<div class="mobile-nav__secondary">{mobile_extra}</div>'
+        f'<a class="button button--primary" href="{e(actions[0]["href"])}">{e(actions[0]["label"])}</a>'
         '</nav></div></dialog>'
     )
 
@@ -786,7 +849,7 @@ def media_dialog() -> str:
         '<div class="media-dialog__bar"><p id="media-dialog-title">Просмотр изображения</p>'
         '<button class="icon-button icon-button--light" type="button" data-lightbox-close aria-label="Закрыть изображение">'
         '<img src="/assets/icons/close.svg" width="24" height="24" alt=""></button></div>'
-        '<div class="media-dialog__viewport"><img data-lightbox-image src="" alt=""></div>'
+        '<div class="media-dialog__viewport"><img data-lightbox-image alt=""></div>'
         '<p class="media-dialog__caption" data-lightbox-caption>Экран из материалов действующего сайта. Внешний вид зависит от версии и настроек ПО.</p>'
         '</dialog>'
     )
@@ -978,7 +1041,7 @@ def copy_production_assets() -> set[str]:
     copied.add("assets/design-tokens.css")
 
     originals = {
-        "beautyII4.png", "FastPay Simple.png", "RMA_android.jpg", "RMA_win_lin.png",
+        "beautyII4.png", "FastPay Simple.png", "RMA_android.jpg", "RMA_win_lin.png", "logotip_finger.png",
         "scaner.png", "17.png", "17bu.png", "apro.png", "atx_300.png", "CashCode_MVU_bu.png",
         "CashCode_MVU.png", "CashCode_SM.png", "CashCode_SM8.png", "ddr3.png", "fiskalniy-server.png",
         "ide.png", "keetouch.png", "mini_itx.png", "pay.png", "siemens.png", "term.png",

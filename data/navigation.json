@@ -3,12 +3,14 @@
     {
       "id": "partners",
       "label": "Партнёрам",
-      "href": "/#partners",
+      "href": "/partners/agents/",
       "children": "partners"
     },
     {
+      "id": "software",
       "label": "ПО",
-      "href": "/software/"
+      "href": "/software/terminal/",
+      "children": "software"
     },
     {
       "label": "Оборудование",
@@ -25,44 +27,82 @@
   ],
   "actions": [
     {
-      "label": "Войти",
-      "href": "/connect/#existing"
-    },
-    {
-      "label": "Подключиться",
+      "label": "Вход | Регистрация",
       "href": "/connect/"
     }
   ],
   "partners": [
     {
       "label": "Платёжным агентам",
-      "href": "/partners/agents/"
+      "href": "/partners/agents/",
+      "visual": "assets/originals/RMA_win_lin.png",
+      "visual_alt": "Рабочее место платёжного агента"
     },
     {
       "label": "Провайдерам услуг",
-      "href": "/partners/providers/"
+      "href": "/partners/providers/",
+      "visual": "provider-logos",
+      "visual_alt": "Логотипы провайдеров SkySend"
     },
     {
       "label": "Поставщикам товаров",
-      "href": "/partners/suppliers/"
+      "href": "/partners/suppliers/",
+      "visual": "assets/diagrams/supplier-exchange.svg",
+      "visual_alt": "Обмен справочником товаров и заказами"
     },
     {
       "label": "Торговым сетям",
-      "href": "/partners/retail/"
+      "href": "/partners/retail/",
+      "visual": "assets/originals/beautyII4.png",
+      "visual_alt": "Терминал самообслуживания в торговой точке"
     },
     {
       "label": "Представителям",
-      "href": "/partners/representatives/"
+      "href": "/partners/representatives/",
+      "visual": "assets/diagrams/payment-network.svg",
+      "visual_alt": "Сеть приёма платежей SkySend"
     },
     {
       "label": "Шлюзовикам",
-      "href": "/partners/gateways/"
+      "href": "/partners/gateways/",
+      "visual": "assets/diagrams/xml-flow.svg",
+      "visual_alt": "Подключение по XML-протоколу"
+    }
+  ],
+  "software": [
+    {
+      "label": "Терминальное ПО",
+      "href": "/software/terminal/"
+    },
+    {
+      "label": "РМА Windows / Linux",
+      "href": "/software/rma-desktop/"
+    },
+    {
+      "label": "РМА Android",
+      "href": "/software/rma-android/"
+    },
+    {
+      "label": "XML-шлюз",
+      "href": "/software/xml/"
+    },
+    {
+      "label": "ПО для POS-терминала",
+      "href": "/software/pos/"
+    },
+    {
+      "label": "Приложение FINGER",
+      "href": "/software/finger/"
+    },
+    {
+      "label": "ПО ALLVEND",
+      "href": "/software/allvend/"
     }
   ],
   "footer": [
     {
-      "label": "ПО",
-      "href": "/software/"
+      "label": "Терминальное ПО",
+      "href": "/software/terminal/"
     },
     {
       "label": "Скачать",
@@ -93,21 +133,11 @@
   "external_accounts": {
     "registration": {
       "href": "https://cluster.skysend.ru:6716/#/",
-      "verification": "TLS verification failed during source audit",
-      "launch_enabled": false,
-      "fallback": {
-        "label": "Написать в отдел продаж",
-        "href": "mailto:sales@inf-sys.ru"
-      }
+      "verification": "TLS verification failed during source audit"
     },
     "login": {
       "href": "https://control.skysend.ru:6710",
-      "verification": "Source form action. DNS lookup failed during audit; GET login behavior not confirmed",
-      "launch_enabled": false,
-      "fallback": {
-        "label": "Связаться с поддержкой",
-        "href": "/support/"
-      }
+      "verification": "Source form action. DNS lookup failed during audit; GET login behavior not confirmed"
     },
     "source": "https://skysend.ru/exit.php?ml=1",
     "fallback": "Use /connect/#existing with support channels; no password form or proxy for credentials in this site."

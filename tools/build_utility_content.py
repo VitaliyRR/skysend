@@ -7,9 +7,6 @@ def sec(id,title,body,visual,source,links=None,collection=None):
 def page(path,title,lead,sections):return dict(path=path,title=title,lead=lead,sections=sections)
 rules=next(x for x in downloads['items'] if x['source_title']=='Правила системы SkySend')
 pages=[
-page('/software/','ПО','Программное обеспечение SkySend для терминалов, компьютеров и мобильных устройств.',[
- sec('products','ПО SkySend','', 'software-catalog','https://skysend.ru/program.html',collection={'file':'data/site-content.json','filter':'template=software-detail','fields':['title','path','sections[0].paragraphs','sections[0].media']}),
- sec('downloads','Скачать ПО и документацию','', 'download-list','https://skysend.ru/download.html',[{'label':'Скачать','href':'/downloads/'}])]),
 page('/providers/','Провайдеры услуг','В каталоге представлены услуги федеральных и местных поставщиков.',[
  sec('catalog','Каталог провайдеров','Данные каталога SkySend от 10 сентября 2026 года.', 'provider-catalog','https://skysend.ru/providers.php',collection={'file':'data/providers-source.json','array':'providers','categories':'categories','filter':['name','category_id'],'countPolicy':'actual filtered array length'}),
  sec('support','Информация об услугах','Доступность услуги уточняйте в службе поддержки.', 'contact-panel','https://skysend.ru/about/feedback.html',[{'label':'Поддержка','href':'/support/'}])]),
@@ -24,4 +21,4 @@ page('/system-rules/','Правила системы SkySend','Откройте 
 ]
 data=dict(version=1,date='2026-09-10',pages=pages,ui={'providerSearchPlaceholder':'Название провайдера','allCategories':'Все категории','resultCount':'Найдено: {count}','emptyResults':'По вашему запросу ничего не найдено','resetFilters':'Сбросить фильтры'},policy='Administrative copy labels are new UI text; product facts remain source-based. Collection references identify the exact supplied data, not future APIs.')
 (ROOT/'data/utility-content.json').write_text(json.dumps(data,ensure_ascii=False,indent=2)+'\n',encoding='utf-8')
-print('Created 5 utility page contracts')
+print('Created 4 utility page contracts')

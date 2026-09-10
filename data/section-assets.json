@@ -234,9 +234,9 @@
     "infokiosk-screen": {
       "kind": "svg",
       "paths": [
-        "assets/diagrams/infokiosk-flow.svg"
+        "assets/diagrams/allvend-infokiosk.svg"
       ],
-      "alt": "Информационные разделы и приём платежей на одном терминале",
+      "alt": "Реальный архивный экран ALLVEND в режиме информационного киоска",
       "max_css_width": 640,
       "export_widths": [
         360,
@@ -244,12 +244,31 @@
         1280
       ],
       "fit": "contain",
-      "note": "Предметная схема из текста ALLVEND; не изображение действующего UI."
+      "note": "Композиция использует только экран инфокиоска из исходного 12_full.png. Это архивный пример интерфейса, а не обещание текущей темы."
+    },
+    "allvend-brand": {
+      "kind": "svg",
+      "paths": [
+        "assets/diagrams/allvend-brand.svg"
+      ],
+      "alt": "ALLVEND",
+      "max_css_width": 560,
+      "export_widths": [
+        320,
+        560
+      ],
+      "fit": "contain",
+      "note": "Оригинальный знак ALLVEND в SVG viewport с удалёнными пустыми полями исходного PNG."
     },
     "partner-routes": {
       "kind": "navigation",
       "paths": [
-        "assets/icons/arrow-right.svg"
+        "assets/icons/arrow-right.svg",
+        "assets/originals/RMA_win_lin.png",
+        "assets/diagrams/supplier-exchange.svg",
+        "assets/originals/beautyII4.png",
+        "assets/diagrams/payment-network.svg",
+        "assets/diagrams/xml-flow.svg"
       ],
       "alt": "",
       "max_css_width": 640,
@@ -259,7 +278,7 @@
         1280
       ],
       "fit": "contain",
-      "note": "Шесть ссылок из navigation.json; alt стрелки пустой. Нет общего растрового баннера."
+      "note": "Шесть ссылок из navigation.json. Каждая плитка использует связанный с направлением продукт, экран или схему; плитка провайдеров собирается из оригинальных логотипов."
     },
     "contact-panel": {
       "kind": "html-and-svg",
@@ -364,6 +383,20 @@
       ],
       "fit": "contain",
       "note": "Реальный логотип и схема функций, без выдуманного экрана."
+    },
+    "finger-brand": {
+      "kind": "image",
+      "paths": [
+        "assets/originals/logotip_finger.png"
+      ],
+      "alt": "FINGER",
+      "max_css_width": 260,
+      "export_widths": [
+        260,
+        520
+      ],
+      "fit": "contain",
+      "note": "Оригинальный логотип FINGER из материалов SkySend."
     },
     "download-list": {
       "kind": "data",

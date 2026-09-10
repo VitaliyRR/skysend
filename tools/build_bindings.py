@@ -25,8 +25,9 @@ bindings={
  'interface-variants':media('svg',['assets/diagrams/interface-customization.svg'],'Два варианта интерфейса ПО SkySend',max_css_width=720,sizes=[360,720,1200],note='Видны только два верхних кадра исходного 8_full.png. Не ссылаться на полный исходник в lightbox.'),
  'commerce-flow':media('svg',['assets/diagrams/commerce-flow.svg','assets/diagrams/commerce-flow-mobile.svg'],'Загрузка справочника товаров, формирование заказов, оплата заказов',note='Вторая версия для mobile. HTML список шагов обязателен.'),
  'commerce-screen':media('reference-only',[],'Последовательность заказа товаров из старого ПО',note='Основной готовый визуал commerce-flow. 11_full.png только в исследовательском архиве; не нужен для релиза. Готовый статический сценарий полностью покрывает смысл.'),
- 'infokiosk-screen':media('svg',['assets/diagrams/infokiosk-flow.svg'],'Информационные разделы и приём платежей на одном терминале',note='Предметная схема из текста ALLVEND; не изображение действующего UI.'),
- 'partner-routes':media('navigation',['assets/icons/arrow-right.svg'],'',note='Шесть ссылок из navigation.json; alt стрелки пустой. Нет общего растрового баннера.'),
+ 'infokiosk-screen':media('svg',['assets/diagrams/allvend-infokiosk.svg'],'Реальный архивный экран ALLVEND в режиме информационного киоска',note='Композиция использует только экран инфокиоска из исходного 12_full.png. Это архивный пример интерфейса, а не обещание текущей темы.'),
+ 'allvend-brand':media('svg',['assets/diagrams/allvend-brand.svg'],'ALLVEND',max_css_width=560,sizes=[320,560],note='Оригинальный знак ALLVEND в SVG viewport с удалёнными пустыми полями исходного PNG.'),
+ 'partner-routes':media('navigation',['assets/icons/arrow-right.svg','assets/originals/RMA_win_lin.png','assets/diagrams/supplier-exchange.svg','assets/originals/beautyII4.png','assets/diagrams/payment-network.svg','assets/diagrams/xml-flow.svg'],'',note='Шесть ссылок из navigation.json. Каждая плитка использует связанный с направлением продукт, экран или схему; плитка провайдеров собирается из оригинальных логотипов.'),
  'contact-panel':media('html-and-svg',['assets/diagrams/contact-panel.svg'],'Телефон, электронная почта и Telegram поддержки SkySend',note='В production контактные значения и ссылки выводить HTML, SVG иллюстрирует расположение. Телефон и email копируемые.'),
  'rma-desktop':media('image',['assets/originals/RMA_win_lin.png'],'Рабочее место Агента SkySend на компьютере',max_css_width=960,sizes=[480,960,1920]),
  'rma-android':media('image',['assets/originals/RMA_android.jpg'],'РМА SkySend для Android',max_css_width=260,sizes=[260,308],note='308×545 px. Только один экран, не выдумывать остальные состояния.'),
@@ -34,6 +35,7 @@ bindings={
  'payment-network':media('svg',['assets/diagrams/payment-network.svg'],'Терминалы, кассир и смартфон связаны с провайдерами через SkySend',note='Концептуальная схема, не карта фактических адресов и серверов.'),
  'pos-product':media('svg',['assets/diagrams/pos-capabilities.svg'],'Штрих-Mobile Pay PRO: аккумулятор и GPRS-модем',note='Условная схема возможностей. Фото POS отсутствует в источнике; не подставлять другую модель.'),
  'finger-product':media('svg',['assets/diagrams/finger-functions.svg'],'FINGER: платежи, шаблоны платежей и выписка',note='Реальный логотип и схема функций, без выдуманного экрана.'),
+ 'finger-brand':media('image',['assets/originals/logotip_finger.png'],'FINGER',max_css_width=260,sizes=[260,520],note='Оригинальный логотип FINGER из материалов SkySend.'),
  'download-list':media('data',['data/download-catalog.json','assets/icons/document.svg'],'',note='Названия файлов, форматы, версии и ссылки из каталога; оформление HTML-строками.'),
  'brand':media('svg',['assets/brand/skysend-logo.svg'],'SkySend',max_css_width=104,sizes=[],note='Исходные векторные пути и цвета, скорректирован только viewBox.'),
 }
@@ -43,11 +45,22 @@ out=dict(version=1,bindings=bindings,
                               image_pipeline='Use width/height attributes, srcset, contain; no AI upscale. Derive sizes no larger than source. SVG files are already editable source.'),
          authoring_notice='Illustrative diagrams do not assert measured service speed, financial returns, uptime, or current availability of pictured services.')
 (ROOT/'data/section-assets.json').write_text(json.dumps(out,ensure_ascii=False,indent=2)+'\n',encoding='utf-8')
-nav=dict(primary=[{'id':'partners','label':'Партнёрам','href':'/#partners','children':'partners'},
-                  *[{'label':a,'href':b} for a,b in [('ПО','/software/'),('Оборудование','/equipment/'),('Провайдеры','/providers/'),('Поддержка','/support/')]]],
-    actions=[{'label':'Войти','href':'/connect/#existing'},{'label':'Подключиться','href':'/connect/'}],
-    partners=[{'label':a,'href':b} for a,b in [('Платёжным агентам','/partners/agents/'),('Провайдерам услуг','/partners/providers/'),('Поставщикам товаров','/partners/suppliers/'),('Торговым сетям','/partners/retail/'),('Представителям','/partners/representatives/'),('Шлюзовикам','/partners/gateways/')]],
-    footer=[{'label':a,'href':b} for a,b in [('ПО','/software/'),('Скачать','/downloads/'),('О системе','/about/'),('Контакты','/contacts/'),('Правила системы','/system-rules/')]],
+software_links=[('Терминальное ПО','/software/terminal/'),('РМА Windows / Linux','/software/rma-desktop/'),('РМА Android','/software/rma-android/'),('XML-шлюз','/software/xml/'),('ПО для POS-терминала','/software/pos/'),('Приложение FINGER','/software/finger/'),('ПО ALLVEND','/software/allvend/')]
+partner_links=[
+ ('Платёжным агентам','/partners/agents/','assets/originals/RMA_win_lin.png','Рабочее место платёжного агента'),
+ ('Провайдерам услуг','/partners/providers/','provider-logos','Логотипы провайдеров SkySend'),
+ ('Поставщикам товаров','/partners/suppliers/','assets/diagrams/supplier-exchange.svg','Обмен справочником товаров и заказами'),
+ ('Торговым сетям','/partners/retail/','assets/originals/beautyII4.png','Терминал самообслуживания в торговой точке'),
+ ('Представителям','/partners/representatives/','assets/diagrams/payment-network.svg','Сеть приёма платежей SkySend'),
+ ('Шлюзовикам','/partners/gateways/','assets/diagrams/xml-flow.svg','Подключение по XML-протоколу'),
+]
+nav=dict(primary=[{'id':'partners','label':'Партнёрам','href':'/partners/agents/','children':'partners'},
+                  {'id':'software','label':'ПО','href':'/software/terminal/','children':'software'},
+                  *[{'label':a,'href':b} for a,b in [('Оборудование','/equipment/'),('Провайдеры','/providers/'),('Поддержка','/support/')]]],
+    actions=[{'label':'Вход | Регистрация','href':'/connect/'}],
+    partners=[{'label':a,'href':b,'visual':visual,'visual_alt':alt} for a,b,visual,alt in partner_links],
+    software=[{'label':a,'href':b} for a,b in software_links],
+    footer=[{'label':a,'href':b} for a,b in [('Терминальное ПО','/software/terminal/'),('Скачать','/downloads/'),('О системе','/about/'),('Контакты','/contacts/'),('Правила системы','/system-rules/')]],
     contact_defaults={'phone':'+7 (800) 555-25-36','phoneHref':'tel:+78005552536','officePhone':'+7 (861) 201-12-21','supportEmail':'support@inf-sys.ru','salesEmail':'sales@inf-sys.ru','telegram':'https://t.me/infsysgroup','addressText':'Адрес офиса уточняйте по телефону'},
     external_accounts={'registration':{'href':'https://cluster.skysend.ru:6716/#/','verification':'TLS verification failed during source audit'},'login':{'href':'https://control.skysend.ru:6710','verification':'Source form action. DNS lookup failed during audit; GET login behavior not confirmed'},'source':'https://skysend.ru/exit.php?ml=1','fallback':'Use /connect/#existing with support channels; no password form or proxy for credentials in this site.'})
 (ROOT/'data/navigation.json').write_text(json.dumps(nav,ensure_ascii=False,indent=2)+'\n',encoding='utf-8')

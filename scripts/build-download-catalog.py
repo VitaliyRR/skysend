@@ -34,9 +34,11 @@ GROUPS = [
 
 SOFTWARE = {
     "awp-5.24.zip": ("rma", "software"),
+    "awp-5.24.exe": ("rma", "software"),
     "awp-5.24_linux_x64.tar.gz": ("rma", "software"),
     "terminal_demo_5.45.2191.zip": ("terminal", "software_demo"),
     "MPProSkyConfig.zip": ("pos", "software"),
+    "fastsys5_allvend.iso.zip": ("terminal", "software_image"),
 }
 TECHNICAL_DOCS = {
     "scheme_fastsys_5.pdf", "technology_skysend_stack.pdf",
@@ -54,13 +56,60 @@ TERMINAL_DOCS = {
     "exploitation_terminal.pdf", "supported_devices.pdf",
     "instruction_programming_fw_writer.pdf", "instruction_service_mode.pdf",
     "instruction_setup_devices_kiosks.pdf", "instruction_downloads_logs.pdf",
-    "instruction_nanoprotech.pdf",
+    "instruction_nanoprotech.pdf", "instruction_installation_allvend.pdf",
+    "instruction_setup_and_service_mode_allvend.pdf",
 }
+RMA_DOCS = {"instruction_rma_w.pdf", "instruction_setup_awp_linux.pdf"}
+RMA_ANDROID_DOCS = {"instruction_rma_android.pdf", "instruction_setup_using_allvend_android.pdf"}
+KNOWN_MISSING_LINKS = {
+    "Установка и эксплуатация РМА Linux": "https://ftp.isg.dev/docs/instruction_setup_awp_linux.pdf",
+}
+KNOWN_UNAVAILABLE = {"scheme_fastsys_5.pdf"}
+SUPPLEMENTAL_ROWS = [
+    {
+        "title": "Установка ПО ALLVEND",
+        "source_page": "https://skysend.ru/allvend.html",
+        "direct_file_url": "https://ftp.isg.dev/docs/instruction_installation_allvend.pdf",
+        "links": ["https://ftp.isg.dev/docs/instruction_installation_allvend.pdf"],
+        "flags": ["version_requires_review"],
+    },
+    {
+        "title": "Настройка и сервисный режим ALLVEND",
+        "source_page": "https://skysend.ru/allvend.html",
+        "direct_file_url": "https://ftp.isg.dev/docs/instruction_setup_and_service_mode_allvend.pdf",
+        "links": ["https://ftp.isg.dev/docs/instruction_setup_and_service_mode_allvend.pdf"],
+        "flags": ["version_requires_review"],
+    },
+    {
+        "title": "ISO-образ ALLVEND",
+        "source_page": "https://skysend.ru/allvend.html",
+        "direct_file_url": "https://ftp.isg.dev/soft/allvend/fastsys5_allvend.iso.zip",
+        "links": ["https://ftp.isg.dev/soft/allvend/fastsys5_allvend.iso.zip"],
+        "flags": ["version_requires_review", "compatibility_requires_review"],
+    },
+    {
+        "title": "Приложение «Рабочее место Агента» для Windows, EXE",
+        "source_page": "https://skysend.ru/program/rma-pc.html",
+        "direct_file_url": "https://ftp.isg.dev/soft/awp/awp-5.24.exe",
+        "links": ["https://ftp.isg.dev/soft/awp/awp-5.24.exe"],
+        "flags": ["version_requires_review", "compatibility_requires_review"],
+    },
+    {
+        "title": "Установка и настройка ALLVEND для Android",
+        "source_page": "https://skysend.ru/program/rma-android.html",
+        "direct_file_url": "https://ftp.isg.dev/docs/instruction_setup_using_allvend_android.pdf",
+        "links": ["https://ftp.isg.dev/docs/instruction_setup_using_allvend_android.pdf"],
+        "flags": ["version_requires_review", "compatibility_requires_review"],
+    },
+]
 KEY_FILENAMES = {
     *SOFTWARE,
     "instruction_programming_fw_writer.pdf", "instruction_rma_w.pdf",
     "instruction_rma_android.pdf", "skysend_protocol_actual.pdf",
     "contract_agent_skysend.pdf", "rules_system_of_payments_skysend.pdf",
+    "instruction_setup_awp_linux.pdf", "instruction_installation_allvend.pdf",
+    "instruction_setup_and_service_mode_allvend.pdf", "fastsys5_allvend.iso.zip",
+    "awp-5.24.exe", "instruction_setup_using_allvend_android.pdf",
 }
 
 
@@ -89,9 +138,9 @@ def classify(row: dict) -> tuple[str | None, str]:
         return "rma", "instruction_missing_link"
     if name in SOFTWARE:
         return SOFTWARE[name]
-    if name == "instruction_rma_w.pdf":
+    if name in RMA_DOCS:
         return "rma", "instruction"
-    if name == "instruction_rma_android.pdf":
+    if name in RMA_ANDROID_DOCS:
         return "rma-android", "instruction"
     if name in {"skysend_protocol_actual.pdf", "example_C++.zip", "example_php.zip"}:
         return "xml", "protocol_or_code_example"
@@ -154,7 +203,14 @@ def main() -> None:
     seen: dict[str, dict] = {}
     excluded = []
     duplicates = 0
-    for row in raw["items"]:
+    source_rows = [*raw["items"], *SUPPLEMENTAL_ROWS]
+    for source_row in source_rows:
+        row = dict(source_row)
+        title = normalized_title(row["title"])
+        if not row.get("direct_file_url") and title in KNOWN_MISSING_LINKS:
+            row["direct_file_url"] = KNOWN_MISSING_LINKS[title]
+            row["links"] = [row["direct_file_url"]]
+            row["flags"] = [*row.get("flags", []), "recovered_from_source_audit"]
         group, kind = classify(row)
         if group is None:
             excluded.append({
@@ -200,12 +256,15 @@ def main() -> None:
             item["fallback"] = {"text": "Инструкция для Linux недоступна на сайте. Обратитесь в поддержку.", "href": "/support/"}
         elif status == "unsupported_browser_scheme":
             item["fallback"] = {"text": "Файл недоступен для скачивания в браузере. Обратитесь в поддержку.", "href": "/support/"}
+        if filename in KNOWN_UNAVAILABLE:
+            item["status"] = "unavailable_checked"
+            item["fallback"] = {"text": "Файл недоступен. Обратитесь в поддержку.", "href": "/support/"}
         previous = existing_items.get(item["id"])
         if previous and previous.get("target_url") == target and not args.check_key_links:
             for field in ("check", "confirmation_check", "fallback"):
                 if field in previous:
                     item[field] = previous[field]
-            if previous.get("check"):
+            if previous.get("check") and filename not in KNOWN_UNAVAILABLE:
                 item["status"] = previous["status"]
         seen[key] = item
     items = list(seen.values())
@@ -225,7 +284,7 @@ def main() -> None:
                         item["fallback"] = {"text": "Приложение недоступно по ссылке Google Play. Обратитесь в поддержку.", "href": "/support/"}
     catalog = {
         "schema_version": "1.0", "audit_date": raw["audit_date"],
-        "source_file": "data/downloads-source.json", "source_rows": len(raw["items"]),
+        "source_file": "data/downloads-source.json", "source_rows": len(source_rows),
         "included_items": len(items), "excluded_rows": len(excluded), "duplicate_rows_merged": duplicates,
         "scope": "ПО, инструкции, технические и системные документы. Акции, цены, рекламные предложения и обещания роста доходов исключены.",
         "groups": [{"id": key, "title": label, "anchor": f"/downloads/#{key}", "count": sum(item["group"] == key for item in items)} for key, label in GROUPS],

@@ -2,8 +2,8 @@
   "schema_version": "1.0",
   "audit_date": "2026-09-10",
   "source_file": "data/downloads-source.json",
-  "source_rows": 122,
-  "included_items": 66,
+  "source_rows": 127,
+  "included_items": 71,
   "excluded_rows": 56,
   "duplicate_rows_merged": 0,
   "scope": "ПО, инструкции, технические и системные документы. Акции, цены, рекламные предложения и обещания роста доходов исключены.",
@@ -12,19 +12,19 @@
       "id": "terminal",
       "title": "Терминальное ПО",
       "anchor": "/downloads/#terminal",
-      "count": 8
+      "count": 11
     },
     {
       "id": "rma",
       "title": "РМА Windows / Linux",
       "anchor": "/downloads/#rma",
-      "count": 4
+      "count": 5
     },
     {
       "id": "rma-android",
       "title": "РМА Android",
       "anchor": "/downloads/#rma-android",
-      "count": 2
+      "count": 3
     },
     {
       "id": "xml",
@@ -64,6 +64,46 @@
   },
   "items": [
     {
+      "id": "terminal-5d21d44a41",
+      "group": "terminal",
+      "kind": "software_image",
+      "source_title": "ISO-образ ALLVEND",
+      "display_title": "ISO-образ ALLVEND",
+      "source_page": "https://skysend.ru/allvend.html",
+      "direct_file_url": "https://ftp.isg.dev/soft/allvend/fastsys5_allvend.iso.zip",
+      "target_url": "https://ftp.isg.dev/soft/allvend/fastsys5_allvend.iso.zip",
+      "link_kind": "file",
+      "source_links": [
+        "https://ftp.isg.dev/soft/allvend/fastsys5_allvend.iso.zip"
+      ],
+      "source_occurrences": [
+        {
+          "title": "ISO-образ ALLVEND",
+          "page": "https://skysend.ru/allvend.html"
+        }
+      ],
+      "source_flags": [
+        "version_requires_review",
+        "compatibility_requires_review"
+      ],
+      "source_size_text": null,
+      "format_from_url": "zip",
+      "status": "reachable_head",
+      "version_policy": "Не обозначать архивную версию как актуальную и не заявлять совместимость с текущими ОС без проверки.",
+      "content_review": "Отбор по исходному названию и URL; содержимое бинарных файлов не скачивалось и не проверялось.",
+      "check": {
+        "checked_at": "2026-09-10T13:52:42+00:00",
+        "method": "HEAD",
+        "body_downloaded": false,
+        "status": "reachable_head",
+        "http_status": 200,
+        "final_url": "https://ftp.isg.dev/soft/allvend/fastsys5_allvend.iso.zip",
+        "content_type": "application/zip",
+        "content_length_header": "511908639",
+        "note": "HEAD подтверждает ответ сервера, но не целостность файла, версию или совместимость ПО."
+      }
+    },
+    {
       "id": "terminal-70c824af8d",
       "group": "terminal",
       "kind": "software_demo",
@@ -92,7 +132,7 @@
       "version_policy": "Не обозначать архивную версию как актуальную и не заявлять совместимость с текущими ОС без проверки.",
       "content_review": "Отбор по исходному названию и URL; содержимое бинарных файлов не скачивалось и не проверялось.",
       "check": {
-        "checked_at": "2026-09-10T09:41:19+00:00",
+        "checked_at": "2026-09-10T13:52:42+00:00",
         "method": "HEAD",
         "body_downloaded": false,
         "status": "reachable_head",
@@ -132,7 +172,7 @@
       "version_policy": "Не обозначать архивную версию как актуальную и не заявлять совместимость с текущими ОС без проверки.",
       "content_review": "Отбор по исходному названию и URL; содержимое бинарных файлов не скачивалось и не проверялось.",
       "check": {
-        "checked_at": "2026-09-10T09:41:19+00:00",
+        "checked_at": "2026-09-10T13:52:42+00:00",
         "method": "HEAD",
         "body_downloaded": false,
         "status": "reachable_head",
@@ -201,6 +241,45 @@
       "fallback": {
         "text": "Файл недоступен для скачивания в браузере. Обратитесь в поддержку.",
         "href": "/support/"
+      }
+    },
+    {
+      "id": "terminal-e52218da2f",
+      "group": "terminal",
+      "kind": "instruction",
+      "source_title": "Настройка и сервисный режим ALLVEND",
+      "display_title": "Настройка и сервисный режим ALLVEND",
+      "source_page": "https://skysend.ru/allvend.html",
+      "direct_file_url": "https://ftp.isg.dev/docs/instruction_setup_and_service_mode_allvend.pdf",
+      "target_url": "https://ftp.isg.dev/docs/instruction_setup_and_service_mode_allvend.pdf",
+      "link_kind": "file",
+      "source_links": [
+        "https://ftp.isg.dev/docs/instruction_setup_and_service_mode_allvend.pdf"
+      ],
+      "source_occurrences": [
+        {
+          "title": "Настройка и сервисный режим ALLVEND",
+          "page": "https://skysend.ru/allvend.html"
+        }
+      ],
+      "source_flags": [
+        "version_requires_review"
+      ],
+      "source_size_text": null,
+      "format_from_url": "pdf",
+      "status": "reachable_head",
+      "version_policy": "Не обозначать архивную версию как актуальную и не заявлять совместимость с текущими ОС без проверки.",
+      "content_review": "Отбор по исходному названию и URL; содержимое бинарных файлов не скачивалось и не проверялось.",
+      "check": {
+        "checked_at": "2026-09-10T13:52:42+00:00",
+        "method": "HEAD",
+        "body_downloaded": false,
+        "status": "reachable_head",
+        "http_status": 200,
+        "final_url": "https://ftp.isg.dev/docs/instruction_setup_and_service_mode_allvend.pdf",
+        "content_type": "application/pdf",
+        "content_length_header": "6460880",
+        "note": "HEAD подтверждает ответ сервера, но не целостность файла, версию или совместимость ПО."
       }
     },
     {
@@ -291,6 +370,45 @@
       "content_review": "Отбор по исходному названию и URL; содержимое бинарных файлов не скачивалось и не проверялось."
     },
     {
+      "id": "terminal-1bb6f63325",
+      "group": "terminal",
+      "kind": "instruction",
+      "source_title": "Установка ПО ALLVEND",
+      "display_title": "Установка ПО ALLVEND",
+      "source_page": "https://skysend.ru/allvend.html",
+      "direct_file_url": "https://ftp.isg.dev/docs/instruction_installation_allvend.pdf",
+      "target_url": "https://ftp.isg.dev/docs/instruction_installation_allvend.pdf",
+      "link_kind": "file",
+      "source_links": [
+        "https://ftp.isg.dev/docs/instruction_installation_allvend.pdf"
+      ],
+      "source_occurrences": [
+        {
+          "title": "Установка ПО ALLVEND",
+          "page": "https://skysend.ru/allvend.html"
+        }
+      ],
+      "source_flags": [
+        "version_requires_review"
+      ],
+      "source_size_text": null,
+      "format_from_url": "pdf",
+      "status": "reachable_head",
+      "version_policy": "Не обозначать архивную версию как актуальную и не заявлять совместимость с текущими ОС без проверки.",
+      "content_review": "Отбор по исходному названию и URL; содержимое бинарных файлов не скачивалось и не проверялось.",
+      "check": {
+        "checked_at": "2026-09-10T13:52:43+00:00",
+        "method": "HEAD",
+        "body_downloaded": false,
+        "status": "reachable_head",
+        "http_status": 200,
+        "final_url": "https://ftp.isg.dev/docs/instruction_installation_allvend.pdf",
+        "content_type": "application/pdf",
+        "content_length_header": "701189",
+        "note": "HEAD подтверждает ответ сервера, но не целостность файла, версию или совместимость ПО."
+      }
+    },
+    {
       "id": "terminal-ff4d241ea9",
       "group": "terminal",
       "kind": "instruction",
@@ -347,7 +465,7 @@
       "version_policy": "Не обозначать архивную версию как актуальную и не заявлять совместимость с текущими ОС без проверки.",
       "content_review": "Отбор по исходному названию и URL; содержимое бинарных файлов не скачивалось и не проверялось.",
       "check": {
-        "checked_at": "2026-09-10T09:41:19+00:00",
+        "checked_at": "2026-09-10T13:52:43+00:00",
         "method": "HEAD",
         "body_downloaded": false,
         "status": "reachable_head",
@@ -355,6 +473,46 @@
         "final_url": "https://ftp.isg.dev/soft/awp/awp-5.24.zip",
         "content_type": "application/zip",
         "content_length_header": "7179035",
+        "note": "HEAD подтверждает ответ сервера, но не целостность файла, версию или совместимость ПО."
+      }
+    },
+    {
+      "id": "rma-43db850c95",
+      "group": "rma",
+      "kind": "software",
+      "source_title": "Приложение «Рабочее место Агента» для Windows, EXE",
+      "display_title": "Приложение «Рабочее место Агента» для Windows, EXE",
+      "source_page": "https://skysend.ru/program/rma-pc.html",
+      "direct_file_url": "https://ftp.isg.dev/soft/awp/awp-5.24.exe",
+      "target_url": "https://ftp.isg.dev/soft/awp/awp-5.24.exe",
+      "link_kind": "file",
+      "source_links": [
+        "https://ftp.isg.dev/soft/awp/awp-5.24.exe"
+      ],
+      "source_occurrences": [
+        {
+          "title": "Приложение «Рабочее место Агента» для Windows, EXE",
+          "page": "https://skysend.ru/program/rma-pc.html"
+        }
+      ],
+      "source_flags": [
+        "version_requires_review",
+        "compatibility_requires_review"
+      ],
+      "source_size_text": null,
+      "format_from_url": "exe",
+      "status": "reachable_head",
+      "version_policy": "Не обозначать архивную версию как актуальную и не заявлять совместимость с текущими ОС без проверки.",
+      "content_review": "Отбор по исходному названию и URL; содержимое бинарных файлов не скачивалось и не проверялось.",
+      "check": {
+        "checked_at": "2026-09-10T13:52:43+00:00",
+        "method": "HEAD",
+        "body_downloaded": false,
+        "status": "reachable_head",
+        "http_status": 200,
+        "final_url": "https://ftp.isg.dev/soft/awp/awp-5.24.exe",
+        "content_type": "application/x-msdownload",
+        "content_length_header": "22527466",
         "note": "HEAD подтверждает ответ сервера, но не целостность файла, версию или совместимость ПО."
       }
     },
@@ -386,7 +544,7 @@
       "version_policy": "Не обозначать архивную версию как актуальную и не заявлять совместимость с текущими ОС без проверки.",
       "content_review": "Отбор по исходному названию и URL; содержимое бинарных файлов не скачивалось и не проверялось.",
       "check": {
-        "checked_at": "2026-09-10T09:41:19+00:00",
+        "checked_at": "2026-09-10T13:52:43+00:00",
         "method": "HEAD",
         "body_downloaded": false,
         "status": "reachable_head",
@@ -398,16 +556,18 @@
       }
     },
     {
-      "id": "rma-97a7322a7c",
+      "id": "rma-5a8f6e28ea",
       "group": "rma",
-      "kind": "instruction_missing_link",
+      "kind": "instruction",
       "source_title": "Установка и эксплуатация РМА Linux",
       "display_title": "Установка и эксплуатация РМА Linux",
       "source_page": "https://skysend.ru/download/8.html",
-      "direct_file_url": null,
-      "target_url": null,
+      "direct_file_url": "https://ftp.isg.dev/docs/instruction_setup_awp_linux.pdf",
+      "target_url": "https://ftp.isg.dev/docs/instruction_setup_awp_linux.pdf",
       "link_kind": "file",
-      "source_links": [],
+      "source_links": [
+        "https://ftp.isg.dev/docs/instruction_setup_awp_linux.pdf"
+      ],
       "source_occurrences": [
         {
           "title": "Установка и эксплуатация РМА Linux",
@@ -415,16 +575,24 @@
         }
       ],
       "source_flags": [
-        "no_download_url"
+        "no_download_url",
+        "recovered_from_source_audit"
       ],
       "source_size_text": null,
-      "format_from_url": null,
-      "status": "missing_url",
+      "format_from_url": "pdf",
+      "status": "reachable_head",
       "version_policy": "Не обозначать архивную версию как актуальную и не заявлять совместимость с текущими ОС без проверки.",
       "content_review": "Отбор по исходному названию и URL; содержимое бинарных файлов не скачивалось и не проверялось.",
-      "fallback": {
-        "text": "Инструкция для Linux недоступна на сайте. Обратитесь в поддержку.",
-        "href": "/support/"
+      "check": {
+        "checked_at": "2026-09-10T13:52:43+00:00",
+        "method": "HEAD",
+        "body_downloaded": false,
+        "status": "reachable_head",
+        "http_status": 200,
+        "final_url": "https://ftp.isg.dev/docs/instruction_setup_awp_linux.pdf",
+        "content_type": "application/pdf",
+        "content_length_header": "2623047",
+        "note": "HEAD подтверждает ответ сервера, но не целостность файла, версию или совместимость ПО."
       }
     },
     {
@@ -456,7 +624,7 @@
       "version_policy": "Не обозначать архивную версию как актуальную и не заявлять совместимость с текущими ОС без проверки.",
       "content_review": "Отбор по исходному названию и URL; содержимое бинарных файлов не скачивалось и не проверялось.",
       "check": {
-        "checked_at": "2026-09-10T09:41:19+00:00",
+        "checked_at": "2026-09-10T13:52:43+00:00",
         "method": "HEAD",
         "body_downloaded": false,
         "status": "reachable_head",
@@ -495,7 +663,7 @@
       "version_policy": "Не обозначать архивную версию как актуальную и не заявлять совместимость с текущими ОС без проверки.",
       "content_review": "Отбор по исходному названию и URL; содержимое бинарных файлов не скачивалось и не проверялось.",
       "check": {
-        "checked_at": "2026-09-10T09:41:20+00:00",
+        "checked_at": "2026-09-10T13:52:43+00:00",
         "method": "HEAD",
         "body_downloaded": false,
         "status": "head_http_error",
@@ -504,8 +672,8 @@
       },
       "confirmation_check": {
         "method": "GET_HEADERS_ONLY",
-        "checked_at": "2026-09-10T09:42:31+00:00",
         "body_downloaded": false,
+        "checked_at": "2026-09-10T13:52:43+00:00",
         "http_status": 404,
         "note": "HTTP Error 404: Not Found"
       },
@@ -543,7 +711,7 @@
       "version_policy": "Не обозначать архивную версию как актуальную и не заявлять совместимость с текущими ОС без проверки.",
       "content_review": "Отбор по исходному названию и URL; содержимое бинарных файлов не скачивалось и не проверялось.",
       "check": {
-        "checked_at": "2026-09-10T09:41:20+00:00",
+        "checked_at": "2026-09-10T13:52:43+00:00",
         "method": "HEAD",
         "body_downloaded": false,
         "status": "reachable_head",
@@ -551,6 +719,46 @@
         "final_url": "https://skysend.ru/images/downloads/instruction_rma_android.pdf",
         "content_type": "application/pdf",
         "content_length_header": "1431621",
+        "note": "HEAD подтверждает ответ сервера, но не целостность файла, версию или совместимость ПО."
+      }
+    },
+    {
+      "id": "rma-android-0000f786b3",
+      "group": "rma-android",
+      "kind": "instruction",
+      "source_title": "Установка и настройка ALLVEND для Android",
+      "display_title": "Установка и настройка ALLVEND для Android",
+      "source_page": "https://skysend.ru/program/rma-android.html",
+      "direct_file_url": "https://ftp.isg.dev/docs/instruction_setup_using_allvend_android.pdf",
+      "target_url": "https://ftp.isg.dev/docs/instruction_setup_using_allvend_android.pdf",
+      "link_kind": "file",
+      "source_links": [
+        "https://ftp.isg.dev/docs/instruction_setup_using_allvend_android.pdf"
+      ],
+      "source_occurrences": [
+        {
+          "title": "Установка и настройка ALLVEND для Android",
+          "page": "https://skysend.ru/program/rma-android.html"
+        }
+      ],
+      "source_flags": [
+        "version_requires_review",
+        "compatibility_requires_review"
+      ],
+      "source_size_text": null,
+      "format_from_url": "pdf",
+      "status": "reachable_head",
+      "version_policy": "Не обозначать архивную версию как актуальную и не заявлять совместимость с текущими ОС без проверки.",
+      "content_review": "Отбор по исходному названию и URL; содержимое бинарных файлов не скачивалось и не проверялось.",
+      "check": {
+        "checked_at": "2026-09-10T13:52:43+00:00",
+        "method": "HEAD",
+        "body_downloaded": false,
+        "status": "reachable_head",
+        "http_status": 200,
+        "final_url": "https://ftp.isg.dev/docs/instruction_setup_using_allvend_android.pdf",
+        "content_type": "application/pdf",
+        "content_length_header": "1608531",
         "note": "HEAD подтверждает ответ сервера, но не целостность файла, версию или совместимость ПО."
       }
     },
@@ -582,7 +790,7 @@
       "version_policy": "Не обозначать архивную версию как актуальную и не заявлять совместимость с текущими ОС без проверки.",
       "content_review": "Отбор по исходному названию и URL; содержимое бинарных файлов не скачивалось и не проверялось.",
       "check": {
-        "checked_at": "2026-09-10T09:41:20+00:00",
+        "checked_at": "2026-09-10T13:52:43+00:00",
         "method": "HEAD",
         "body_downloaded": false,
         "status": "reachable_head",
@@ -679,7 +887,7 @@
       "version_policy": "Не обозначать архивную версию как актуальную и не заявлять совместимость с текущими ОС без проверки.",
       "content_review": "Отбор по исходному названию и URL; содержимое бинарных файлов не скачивалось и не проверялось.",
       "check": {
-        "checked_at": "2026-09-10T09:41:20+00:00",
+        "checked_at": "2026-09-10T13:52:44+00:00",
         "method": "HEAD",
         "body_downloaded": false,
         "status": "reachable_head",
@@ -892,7 +1100,7 @@
       "version_policy": "Не обозначать архивную версию как актуальную и не заявлять совместимость с текущими ОС без проверки.",
       "content_review": "Отбор по исходному названию и URL; содержимое бинарных файлов не скачивалось и не проверялось.",
       "check": {
-        "checked_at": "2026-09-10T09:41:20+00:00",
+        "checked_at": "2026-09-10T13:52:44+00:00",
         "method": "HEAD",
         "body_downloaded": false,
         "status": "reachable_head",
@@ -1307,7 +1515,7 @@
       "version_policy": "Не обозначать архивную версию как актуальную и не заявлять совместимость с текущими ОС без проверки.",
       "content_review": "Отбор по исходному названию и URL; содержимое бинарных файлов не скачивалось и не проверялось.",
       "check": {
-        "checked_at": "2026-09-10T09:41:20+00:00",
+        "checked_at": "2026-09-10T13:52:44+00:00",
         "method": "HEAD",
         "body_downloaded": false,
         "status": "reachable_head",
@@ -2060,9 +2268,13 @@
       ],
       "source_size_text": null,
       "format_from_url": "pdf",
-      "status": "source_link_unverified",
+      "status": "unavailable_checked",
       "version_policy": "Не обозначать архивную версию как актуальную и не заявлять совместимость с текущими ОС без проверки.",
-      "content_review": "Отбор по исходному названию и URL; содержимое бинарных файлов не скачивалось и не проверялось."
+      "content_review": "Отбор по исходному названию и URL; содержимое бинарных файлов не скачивалось и не проверялось.",
+      "fallback": {
+        "text": "Файл недоступен. Обратитесь в поддержку.",
+        "href": "/support/"
+      }
     },
     {
       "id": "other-6906973769",

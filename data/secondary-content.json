@@ -1829,7 +1829,7 @@
           "id": "downloads",
           "anchor_aliases": [],
           "title": "ПО и руководства",
-          "body": "Программы, инструкции по установке и эксплуатации, документы системы собраны в разделе «Скачать».",
+          "body": "ПО, инструкции по установке и эксплуатации, документы системы собраны в разделе «Скачать».",
           "source_urls": [
             "https://skysend.ru/download.html"
           ],
@@ -1842,8 +1842,8 @@
               "href": "/downloads/"
             },
             {
-              "label": "ПО",
-              "href": "/software/"
+              "label": "Терминальное ПО",
+              "href": "/software/terminal/"
             }
           ],
           "motion_alias": "section-reveal",

@@ -36,7 +36,7 @@ for p in pages:
   if slug in ['income','high-reward','dealer-discounts','items-of-income','running-banks-fps','increase-sales']:reason='Убрать обещания процентов/скидок; сохранить только проверяемый механизм/формат работы'
  elif path=='/allvend.html':new='/software/allvend/';reason='Сохранить продукт и функции; исключить рекламные модули, акции, старые цены и обещания'
  elif path=='/trading.html' or '/component/k2/item/16.html' in path:new='/partners/retail/'
- elif path=='/program.html':new='/software/';reason='Программы переименовать в ПО'
+ elif path=='/program.html':new='/software/terminal/';reason='Индекс ПО заменён выпадающим меню; старый адрес ведёт к терминальному ПО'
  elif path.startswith('/program/'):new='/software/'+software[slug]+'/'
  elif path=='/buy.html':new='/equipment/'
  elif path.startswith('/buy/'):new='/equipment/'+path[5:].replace('.html','')+'/'

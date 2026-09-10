@@ -230,6 +230,9 @@ def main() -> int:
     if re.match(r'<section\b[^>]*\bdata-reveal\b', home_equipment):
         fail(errors, "home equipment links must not be hidden by reveal animation")
     home_text = html_path_for_route("/").read_text(encoding="utf-8")
+    home_hero = section_markup(html_path_for_route("/"), "hero")
+    home_providers = section_markup(html_path_for_route("/"), "providers")
+    home_customization = section_markup(html_path_for_route("/"), "customization")
     home_commerce = section_markup(html_path_for_route("/"), "commerce")
     home_partners = section_markup(html_path_for_route("/"), "partners")
     if '<span class="section-index">' in public_text:
@@ -241,6 +244,8 @@ def main() -> int:
         "SkySend предоставляет возможность совершать оплаты в пользу более 5 000 поставщиков услуг.",
         "Примеры из каталога SkySend. Доступность услуги уточняйте в поддержке.",
         "Варианты интерфейса из материалов SkySend",
+        "Изменяйте расположение, размеры и форму элементов экранов, а также логику работы ПО.",
+        "Настройка дизайна производится через онлайн-кабинет курирующим менеджером.",
     ):
         if removed_copy in home_text:
             fail(errors, f"removed home copy is still rendered: {removed_copy}")
@@ -252,6 +257,15 @@ def main() -> int:
         fail(errors, "visible enlarge controls must not be rendered")
     if 'id="support"' in home_text:
         fail(errors, "home support section must be removed")
+    if "media-object--terminal-product" in home_hero or "<img" in home_hero:
+        fail(errors, "home hero must remain text-only")
+    if "evidence-section--reverse" in home_providers:
+        fail(errors, "home provider logos must remain on the right")
+    if "<h2>Персонализация интерфейса</h2>" not in home_customization:
+        fail(errors, "home customization title is not updated")
+    interface_svg = (DIST / "assets" / "diagrams" / "interface-customization.svg").read_text(encoding="utf-8")
+    if ">Настройка интерфейса SkySend</text>" in interface_svg:
+        fail(errors, "interface image still contains the removed visible title")
     if "<h2>SkyMarket</h2>" not in home_commerce:
         fail(errors, "home commerce section must be titled SkyMarket")
     for label in ("Загрузка справочника товаров", "Формирование заказов", "Оплата заказов"):
@@ -259,10 +273,23 @@ def main() -> int:
             fail(errors, f"SkyMarket feature missing: {label}")
     if home_partners.count('class="partner-tile"') != 6:
         fail(errors, "home partners section must contain six clickable tiles")
+    if home_partners.count("<img") < 9:
+        fail(errors, "home partner tiles must include subject-specific visuals")
+    for label in ("FastPay Beauty II", "FastPay Simple", "Сенсорная панель", "Потребляемая мощность"):
+        if label not in home_equipment:
+            fail(errors, f"home equipment showcase missing: {label}")
     if ">Оборудование<" in home_equipment:
         fail(errors, "home equipment section must not contain the generic equipment link")
     if (DIST / "partners" / "index.html").exists():
         fail(errors, "standalone partners index must not be generated")
+    if (DIST / "software" / "index.html").exists():
+        fail(errors, "standalone software index must not be generated")
+    if 'href="/software/"' in public_text:
+        fail(errors, "public links must not point to the removed software index")
+    if home_text.count("data-nav-menu") != 2:
+        fail(errors, "desktop header must contain partner and software dropdowns")
+    if home_text.count("Вход | Регистрация") < 2:
+        fail(errors, "combined login and registration action is missing")
     emitted_external_accounts = sum(public_text.count(href) for href in public_external_accounts)
     for href in public_external_accounts:
         present = href in public_text
@@ -290,8 +317,39 @@ def main() -> int:
             "Инструкция по организации прошивочной системы и программированию накопителей для ОС Windows",
             "Совместимые накопители",
         ],
-        ("/software/xml/", "protocol"): ["Описание протокола SkyTransact"],
+        ("/software/terminal/", "materials"): [
+            "Виртуальная машина с ПО терминала - v. 5.45 (.zip 60.6 Mb)",
+            "Скачивание логов терминала usb-накопителем",
+            "Эксплуатация терминала",
+        ],
+        ("/software/rma-desktop/", "start"): [
+            'Приложение "Рабочее место Агента для ОС Windows"',
+            "Приложение «Рабочее место Агента» для Windows, EXE",
+            "Приложение для РМА для 64-битной версии OS Linux",
+            "Установка и эксплуатация РМА Windows",
+            "Установка и эксплуатация РМА Linux",
+        ],
+        ("/software/rma-android/", "start"): [
+            "Программа приема платежей на Android",
+            "Установка и настройка ALLVEND для Android",
+            "Приложение приема платежей для Android",
+        ],
+        ("/software/xml/", "protocol"): [
+            "Описание протокола SkyTransact",
+            "Пример для предпроцессинга C++",
+            "Пример для препроцессинга PHP",
+        ],
         ("/software/pos/", "start"): ["ПО для POS-терминала Штрих-Mobile Pay PRO - Версия 1.1 (7 Mb)"],
+        ("/software/allvend/", "materials"): [
+            "Установка ПО ALLVEND",
+            "Настройка и сервисный режим ALLVEND",
+            "Инструкция по подключению периферийного оборудования к устройствам самообслуживания ALLVEND",
+            "ISO-образ ALLVEND",
+            "Общее описание ОС FastSYS",
+            "Снимки экрана ОС FastSYS",
+            "Стек используемых технологий",
+            "Общее описание работы Системы SkySend",
+        ],
         ("/support/", "downloads"): [
             'Приложение "Рабочее место Агента для ОС Windows"',
             "Установка и эксплуатация РМА Windows",
@@ -343,7 +401,28 @@ def main() -> int:
             fail(errors, f"forbidden/review-only asset copied: {name}")
 
     manifest = json.loads((DIST / "build-manifest.json").read_text(encoding="utf-8"))
-    expected = {"routes": 42, "provider_rows": 600, "download_rows": 66, "redirects": 135, "gone": 13}
+    finger_text = html_path_for_route("/software/finger/").read_text(encoding="utf-8")
+    for phrase in (
+        "бескомиссионный онлайн-кошелёк",
+        "Отсутствие комиссии за оплату услуг",
+        "Отсутствие платы за содержание счёта кошелька",
+        "Простота регистрации и работы",
+        "Высокий уровень безопасности транзакций",
+        "Круглосуточная поддержка пользователей",
+        "Play Market",
+        "App Store",
+    ):
+        if phrase not in finger_text:
+            fail(errors, f"FINGER page missing source content: {phrase}")
+
+    allvend_text = html_path_for_route("/software/allvend/").read_text(encoding="utf-8")
+    for section_id in ("audiences", "capabilities", "interface", "payments", "orders", "infokiosk", "cashdesk", "management", "network", "fastsys", "materials"):
+        if f'id="{section_id}"' not in allvend_text:
+            fail(errors, f"ALLVEND page missing section: {section_id}")
+    if "allvend-infokiosk.svg" not in allvend_text:
+        fail(errors, "ALLVEND infokiosk must use the source-screen composition")
+
+    expected = {"routes": 41, "provider_rows": 600, "download_rows": 71, "redirects": 153, "gone": 13}
     for key, value in expected.items():
         if manifest.get(key) != value:
             fail(errors, f"manifest {key}: expected {value}, got {manifest.get(key)}")

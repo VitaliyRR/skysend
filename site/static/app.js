@@ -45,9 +45,9 @@
     });
   }
 
-  function setupPartnerDropdown() {
+  function setupDropdowns() {
     const hover = window.matchMedia("(hover: hover) and (pointer: fine)");
-    document.querySelectorAll("[data-partner-menu]").forEach((menu) => {
+    document.querySelectorAll("[data-nav-menu]").forEach((menu) => {
       const summary = menu.querySelector("summary");
       if (!summary) return;
       menu.addEventListener("pointerenter", () => {
@@ -311,7 +311,7 @@
 
   setupHeader();
   setupMenu();
-  setupPartnerDropdown();
+  setupDropdowns();
   setupLightbox();
   setupReveals();
   setupProviderCatalog();

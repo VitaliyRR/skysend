@@ -1,12 +1,12 @@
 {
-  "routes": 42,
-  "html_files": 44,
+  "routes": 41,
+  "html_files": 43,
   "provider_rows": 600,
-  "download_rows": 66,
-  "copied_assets": 583,
+  "download_rows": 71,
+  "copied_assets": 586,
   "external_accounts_verified": false,
   "external_account_links_emitted": 0,
-  "redirects": 135,
+  "redirects": 153,
   "gone": 13,
-  "sha256": "f33c6697d743bb253665062769669de964567017292854108aa025f1a356d646"
+  "sha256": "d6edbd4ed523bd0632b0191309a4ddb4b5e58e8554b904e1b9486670c4961b37"
 }

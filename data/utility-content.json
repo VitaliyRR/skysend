@@ -3,51 +3,6 @@
   "date": "2026-09-10",
   "pages": [
     {
-      "path": "/software/",
-      "title": "ПО",
-      "lead": "Программное обеспечение SkySend для терминалов, компьютеров и мобильных устройств.",
-      "sections": [
-        {
-          "id": "products",
-          "title": "ПО SkySend",
-          "body": "",
-          "visual_id": "software-catalog",
-          "source_urls": [
-            "https://skysend.ru/program.html"
-          ],
-          "links": [],
-          "motion_alias": "none",
-          "collection": {
-            "file": "data/site-content.json",
-            "filter": "template=software-detail",
-            "fields": [
-              "title",
-              "path",
-              "sections[0].paragraphs",
-              "sections[0].media"
-            ]
-          }
-        },
-        {
-          "id": "downloads",
-          "title": "Скачать ПО и документацию",
-          "body": "",
-          "visual_id": "download-list",
-          "source_urls": [
-            "https://skysend.ru/download.html"
-          ],
-          "links": [
-            {
-              "label": "Скачать",
-              "href": "/downloads/"
-            }
-          ],
-          "motion_alias": "none",
-          "collection": null
-        }
-      ]
-    },
-    {
       "path": "/providers/",
       "title": "Провайдеры услуг",
       "lead": "В каталоге представлены услуги федеральных и местных поставщиков.",
