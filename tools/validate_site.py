@@ -268,8 +268,41 @@ def main() -> int:
         fail(errors, "visible enlarge controls must not be rendered")
     if 'id="support"' in home_text:
         fail(errors, "home support section must be removed")
-    if "media-object--terminal-product" in home_hero or "<img" in home_hero:
-        fail(errors, "home hero must remain text-only")
+    if "media-object--terminal-product" in home_hero:
+        fail(errors, "home hero must not contain a payment terminal")
+    if "home-hero--provider-led" not in home_hero:
+        fail(errors, "home hero must use the approved provider-led composition")
+    if 'id="providers"' not in home_hero:
+        fail(errors, "home providers must be integrated into the hero")
+    if len(re.findall(r'class="provider-row"', home_providers)) != 3:
+        fail(errors, "home provider showcase must contain three labelled rows")
+    if len(re.findall(r'class="provider-strip__item"', home_providers)) != 15:
+        fail(errors, "home provider showcase must contain 15 approved logos")
+    expected_home_provider_assets = (
+        "provider-359.png",
+        "provider-6581.png",
+        "provider-7.png",
+        "provider-258.png",
+        "provider-1134.png",
+        "provider-631.png",
+        "provider-241.png",
+        "provider-168.png",
+        "provider-9858.png",
+        "provider-9849.png",
+        "provider-4819.png",
+        "provider-4816.png",
+        "provider-4675.png",
+        "provider-252.png",
+        "provider-876.png",
+    )
+    for asset in expected_home_provider_assets:
+        if home_providers.count(f"/{asset}") != 1:
+            fail(errors, f"home provider showcase must contain approved asset once: {asset}")
+    for label in ("Связь и ТВ", "Банки", "Сервисы и игры"):
+        if f'<h3 class="provider-row__title">{label}</h3>' not in home_providers:
+            fail(errors, f"home provider row is missing: {label}")
+    if "evidence-section--providers" in home_text:
+        fail(errors, "home providers must not be rendered as a separate evidence section")
     if "evidence-section--reverse" in home_providers:
         fail(errors, "home provider logos must remain on the right")
     if "<h2>Персонализация интерфейса</h2>" not in home_customization:

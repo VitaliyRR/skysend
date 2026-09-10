@@ -284,6 +284,64 @@ def provider_wall() -> str:
     )
 
 
+def home_provider_wall() -> str:
+    items_by_path = {item["path"]: item for item in PROVIDER_WALL["items"]}
+    groups = (
+        (
+            "Связь и ТВ",
+            (
+                "assets/originals/providers/provider-359.png",
+                "assets/originals/providers/provider-6581.png",
+                "assets/originals/providers/provider-7.png",
+                "assets/originals/providers/provider-258.png",
+                "assets/originals/providers/provider-1134.png",
+            ),
+        ),
+        (
+            "Банки",
+            (
+                "assets/originals/providers/provider-631.png",
+                "assets/originals/providers/provider-241.png",
+                "assets/originals/providers/provider-168.png",
+                "assets/originals/providers/provider-9858.png",
+                "assets/originals/providers/provider-9849.png",
+            ),
+        ),
+        (
+            "Сервисы и игры",
+            (
+                "assets/originals/providers/provider-4819.png",
+                "assets/originals/providers/provider-4816.png",
+                "assets/originals/providers/provider-4675.png",
+                "assets/originals/providers/provider-252.png",
+                "assets/originals/providers/provider-876.png",
+            ),
+        ),
+    )
+    rows = []
+    for group_index, (label, paths) in enumerate(groups):
+        logos = "".join(
+            '<li class="provider-strip__item">'
+            + image_tag(
+                items_by_path[path]["path"],
+                items_by_path[path]["provider_name"],
+                css="provider-strip__image",
+                eager=group_index == 0,
+            )
+            + '</li>'
+            for path in paths
+        )
+        rows.append(
+            '<div class="provider-row">'
+            f'<h3 class="provider-row__title">{e(label)}</h3>'
+            f'<ul class="provider-strip" aria-label="{e(label)}">{logos}</ul></div>'
+        )
+    return (
+        '<div class="home-provider-wall" '
+        f'aria-label="{e(BINDINGS["provider-logos"]["alt"])}">{"".join(rows)}</div>'
+    )
+
+
 def feature_list(section) -> str:
     rows = []
     for field in section.get("visual_fields", []):
@@ -707,12 +765,18 @@ def render_section(section, page_path: str, index: int) -> str:
     )
 
 
-def home_hero(section) -> str:
+def home_hero(section, providers) -> str:
     return (
-        '<section class="home-hero home-hero--text" id="hero"><div class="home-hero__shell">'
+        '<section class="home-hero home-hero--provider-led" id="hero"><div class="home-hero__shell">'
         '<div class="home-hero__copy">'
         f'<h1>{e(section["title"])}</h1>{action_links(section.get("cta", []), primary_first=True)}</div>'
-        '</div></section>'
+        f'<section class="home-provider" id="{e(providers["id"])}" aria-labelledby="home-provider-title">'
+        '<div class="home-provider__head">'
+        f'<h2 id="home-provider-title">{e(providers["title"])}</h2>'
+        f'{section_copy(providers, include_links=False)}</div>'
+        f'{home_provider_wall()}'
+        f'{action_links(providers.get("cta", []), css="home-provider__actions")}'
+        '</section></div></section>'
     )
 
 
@@ -918,8 +982,8 @@ def render_content_page(page) -> str:
     path = page["path"]
     if path == "/":
         sections = page["sections"]
-        main = home_hero(sections[0])
-        main += "".join(render_section(section, path, index) for index, section in enumerate(sections[1:], 1))
+        main = home_hero(sections[0], sections[1])
+        main += "".join(render_section(section, path, index) for index, section in enumerate(sections[2:], 2))
         description = clean_text((sections[0].get("paragraphs") or [sections[0]["title"]])[0])
     elif page.get("template") == "software-detail":
         first, *rest = page["sections"]

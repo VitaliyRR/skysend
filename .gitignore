@@ -7,3 +7,6 @@ node_modules/
 *.log
 .DS_Store
 data/*-partial.json
+
+# Generated SVG mockups embed raster images and are not production assets.
+design/hero-variants/*.svg

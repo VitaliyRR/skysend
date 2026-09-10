@@ -452,6 +452,56 @@ address {
   line-height: var(--ss-line-lead);
 }
 
+.home-hero--provider-led {
+  border-bottom: 1px solid var(--ss-color-line);
+}
+
+.home-hero--provider-led .home-hero__shell {
+  align-items: start;
+  gap: var(--ss-space-12);
+}
+
+.home-provider {
+  min-width: 0;
+  border-top: 1px solid var(--ss-color-line);
+  padding-top: var(--ss-space-8);
+}
+
+.home-provider__head {
+  position: relative;
+  max-width: 46rem;
+  padding-left: var(--ss-space-5);
+}
+
+.home-provider__head::before {
+  position: absolute;
+  top: 0.2rem;
+  bottom: 0.15rem;
+  left: 0;
+  width: 0.1875rem;
+  background: var(--ss-color-link);
+  content: "";
+}
+
+.home-provider__head h2 {
+  margin-bottom: var(--ss-space-4);
+  font-size: clamp(2rem, 7vw, 3.25rem);
+  line-height: 1.02;
+}
+
+.home-provider__head p {
+  margin-bottom: 0;
+  color: var(--ss-color-muted);
+  font-size: var(--ss-font-body);
+  line-height: var(--ss-line-body);
+}
+
+.home-provider__actions {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: var(--ss-space-6);
+}
+
 .home-hero__visual {
   display: grid;
   min-height: 22.5rem;
@@ -843,6 +893,66 @@ address {
 
 .provider-logo--4 .provider-logo__image {
   width: min(100%, 6.25rem);
+}
+
+.home-provider-wall {
+  margin-top: var(--ss-space-8);
+  border-bottom: 1px solid var(--ss-color-line);
+}
+
+.provider-row {
+  min-width: 0;
+  border-top: 1px solid var(--ss-color-line);
+  padding-top: var(--ss-space-4);
+}
+
+.provider-row__title {
+  margin: 0 0 var(--ss-space-3);
+  color: var(--ss-color-muted);
+  font-size: 0.6875rem;
+  font-weight: 700;
+  letter-spacing: 0.09em;
+  line-height: 1.3;
+  text-transform: uppercase;
+}
+
+.provider-strip {
+  display: grid;
+  grid-template-columns: repeat(6, minmax(0, 1fr));
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.provider-strip__item {
+  display: grid;
+  min-width: 0;
+  min-height: 5.5rem;
+  grid-column: span 2;
+  place-items: center;
+  border-right: 1px solid var(--ss-color-line);
+  padding: var(--ss-space-2);
+  background: #fff;
+}
+
+.provider-strip__item:nth-child(4) {
+  grid-column: 2 / span 2;
+  border-top: 1px solid var(--ss-color-line);
+}
+
+.provider-strip__item:nth-child(5) {
+  grid-column: 4 / span 2;
+  border-top: 1px solid var(--ss-color-line);
+}
+
+.provider-strip__item:last-child {
+  border-right: 0;
+}
+
+.provider-strip__image {
+  width: min(100%, 6.25rem);
+  max-height: 4.75rem;
+  object-fit: contain;
 }
 
 .feature-list {
@@ -1847,6 +1957,10 @@ address {
     gap: 0;
   }
 
+  .home-hero--provider-led .home-hero__shell {
+    gap: var(--ss-space-16);
+  }
+
   .detail-hero__shell,
   .product-hero__shell {
     min-height: 38rem;
@@ -1896,12 +2010,45 @@ address {
     grid-column: 1 / -1;
   }
 
+  .provider-row {
+    display: grid;
+    grid-template-columns: 7.5rem minmax(0, 1fr);
+    align-items: stretch;
+    padding-top: 0;
+  }
+
   .provider-wall__grid {
     grid-template-columns: repeat(4, 1fr);
   }
 
   .provider-logo {
     min-height: 8.5rem;
+  }
+
+  .provider-row__title {
+    display: flex;
+    align-items: center;
+    margin: 0;
+    padding: var(--ss-space-4) var(--ss-space-4) var(--ss-space-4) 0;
+  }
+
+  .provider-strip {
+    display: grid;
+    grid-template-columns: repeat(5, minmax(0, 1fr));
+    overflow: visible;
+  }
+
+  .provider-strip__item {
+    min-width: 0;
+    min-height: 7.25rem;
+    grid-column: auto;
+    border-top: 0;
+  }
+
+  .provider-strip__item:nth-child(4),
+  .provider-strip__item:nth-child(5) {
+    grid-column: auto;
+    border-top: 0;
   }
 
   .feature-list {
@@ -2109,6 +2256,27 @@ address {
     grid-column: 1 / span 8;
   }
 
+  .home-hero--provider-led .home-hero__shell {
+    min-height: 45rem;
+    align-items: start;
+    padding-top: var(--ss-space-16);
+    padding-bottom: var(--ss-space-16);
+  }
+
+  .home-hero--provider-led .home-hero__copy {
+    grid-column: 1 / span 4;
+    padding-top: var(--ss-space-10);
+  }
+
+  .home-provider {
+    grid-column: 6 / -1;
+    grid-row: 1;
+    border-top: 0;
+    border-left: 1px solid var(--ss-color-line);
+    padding-top: 0;
+    padding-left: var(--ss-space-10);
+  }
+
   .home-hero__visual {
     height: 31.875rem;
     grid-column: 7 / -1;
@@ -2165,6 +2333,10 @@ address {
 
   .provider-logo {
     min-height: 7.75rem;
+  }
+
+  .provider-strip__item {
+    min-height: 7.5rem;
   }
 
   .process-list {
