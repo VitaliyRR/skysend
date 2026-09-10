@@ -1,0 +1,44 @@
+{
+  "source": "visual inspection of original images",
+  "date": "2026-09-10",
+  "items": [
+    {
+      "source_url": "https://skysend.ru/images/Sky/slaider/banf.png",
+      "text": [
+        "БОЛЕЕ 5 000 ПРОВАЙДЕРОВ УСЛУГ"
+      ]
+    },
+    {
+      "source_url": "https://skysend.ru/images/banners/po5.jpg",
+      "text": [
+        "ТРАНСФОРМАЦИЯ ТЕРМИНАЛЬНОГО БИЗНЕСА",
+        "УНИВЕРСАЛЬНОЕ ПРОГРАММНОЕ ОБЕСПЕЧЕНИЕ ДЛЯ ПЛАТЕЖНЫХ И ИНФОРМАЦИОННЫХ ТЕРМИНАЛОВ",
+        "ИЗМЕНЕНИЕ ДИЗАЙНА • ПРОДАЖА ТОВАРОВ И УСЛУГ • РЕЖИМ ИНФОКИОСКА • ОПЛАТА НАЛИЧНЫМИ И КАРТОЙ • ПОКАЗ РЕКЛАМЫ • ПОЛНОЕ УДАЛЕННОЕ УПРАВЛЕНИЕ"
+      ]
+    },
+    {
+      "source_url": "https://skysend.ru/images/banners/design.jpeg",
+      "text": [
+        "СМЕНА ДИЗАЙНА ПРОГРАММНОГО ОБЕСПЕЧЕНИЯ ПОД ВАШ СТИЛЬ"
+      ]
+    },
+    {
+      "source_url": "https://skysend.ru/images/banners/pomarket.jpeg",
+      "text": [
+        "АВТОМАТИЗАЦИЯ ЗАКАЗА И ОПЛАТЫ ПРОДУКЦИИ"
+      ]
+    },
+    {
+      "source_url": "https://skysend.ru/images/banners/terminal_pr.jpeg",
+      "text": [
+        "ТРАНСЛЯЦИЯ РЕКЛАМЫ ВАШИХ УСЛУГ И ПРОДУКЦИИ"
+      ]
+    },
+    {
+      "source_url": "https://skysend.ru/images/banners/v.png",
+      "text": [
+        "ЗАБЕРИ СВОЙ ПОДАРОК"
+      ]
+    }
+  ]
+}

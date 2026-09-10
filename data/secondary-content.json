@@ -1,0 +1,2215 @@
+{
+  "version": 1,
+  "date": "2026-09-10",
+  "scope": "Готовые тексты 16 вторичных страниц с источниками и описанием визуала",
+  "public_copy_policy": "Публиковать title/lead/body/links. Source, visual_description, motion и editorial_decisions служебные.",
+  "motion_authority": "data/motion-spec.json contentAliases; числовые параметры только оттуда. Первый экран всегда none.",
+  "reduced_motion": "Все блоки видны сразу, transform и анимация линий выключены, переключения мгновенные.",
+  "pages": [
+    {
+      "path": "/partners/agents/",
+      "title": "Платёжным агентам",
+      "lead": "Принимайте платежи на терминалах, компьютерах и устройствах Android. Управляйте точками через личный интернет-кабинет SkySend.",
+      "source_urls": [
+        "https://skysend.ru/partners/agent/rma.html",
+        "https://skysend.ru/partners/agent/remote-control.html"
+      ],
+      "primary_cta": {
+        "label": "Обсудить подключение",
+        "href": "/connect/"
+      },
+      "sections": [
+        {
+          "id": "stable-work",
+          "anchor_aliases": [],
+          "title": "Работа терминала",
+          "body": "Терминалы SkySend работают на базе операционной системы FastSYS, построенной на ядре Linux. ПО анализирует работу устройств, устраняет ошибки купюроприёмника, модема и фискального регистратора, поддерживает удалённые бинарные обновления.",
+          "source_urls": [
+            "https://skysend.ru/partners/agent/stable-work.html"
+          ],
+          "visual_id": "terminal-product",
+          "visual_description": "Подлинное фото устройства из исходника, на нейтральном фоне. Название модели только по источнику. Без людей, 3D-реконструкции и декора.",
+          "motion": "Содержимое доступно сразу в конечном состоянии. Все числа, easing, desktop/mobile и reduced-motion брать из data/motion-spec.json: contentAliases.none.",
+          "links": [],
+          "motion_alias": "none",
+          "motion_intent": "Содержимое доступно сразу в конечном состоянии."
+        },
+        {
+          "id": "cost-reduction",
+          "anchor_aliases": [],
+          "title": "Обслуживание терминалов",
+          "body": "Автоматическое устранение ошибок и удалённые обновления позволяют решать часть задач обслуживания на самом терминале, без выезда технического специалиста.",
+          "source_urls": [
+            "https://skysend.ru/partners/agent/cost-reduction.html"
+          ],
+          "visual_id": "html-feature-list",
+          "visual_description": "HTML definition list с названиями возможностей: Купюроприёмник, Модем, Удалённые обновления. Значения, суммы, данные клиентов и фиктивные состояния не выводить. Это перечень функций, не скриншот кабинета.",
+          "motion": "Однократное появление содержимого секции ниже первого экрана. Все числа, easing, desktop/mobile и reduced-motion брать из data/motion-spec.json: contentAliases.section-reveal.",
+          "links": [],
+          "visual_fields": [
+            {
+              "label": "Купюроприёмник",
+              "value": null
+            },
+            {
+              "label": "Модем",
+              "value": null
+            },
+            {
+              "label": "Удалённые обновления",
+              "value": null
+            }
+          ],
+          "motion_alias": "section-reveal",
+          "motion_intent": "Однократное появление содержимого секции ниже первого экрана."
+        },
+        {
+          "id": "remote-control",
+          "anchor_aliases": [
+            "income"
+          ],
+          "title": "Удалённое управление",
+          "body": "В личном кабинете агент настраивает комиссии, наценки и уведомления, контролирует терминалы и инкассации, отслеживает платежи и финансовые движения. Здесь же можно регистрировать терминалы и менять порядок кнопок оплаты услуг.",
+          "source_urls": [
+            "https://skysend.ru/partners/agent/remote-control.html"
+          ],
+          "visual_id": "html-feature-list",
+          "visual_description": "HTML definition list с названиями возможностей: Комиссии и наценки, Уведомления, Терминалы и инкассации, Платежи и движения средств, Регистрация терминалов, Порядок кнопок услуг. Значения, суммы, данные клиентов и фиктивные состояния не выводить. Это перечень функций, не скриншот кабинета.",
+          "motion": "Однократное появление содержимого секции ниже первого экрана. Все числа, easing, desktop/mobile и reduced-motion брать из data/motion-spec.json: contentAliases.section-reveal.",
+          "links": [],
+          "visual_fields": [
+            {
+              "label": "Комиссии и наценки",
+              "value": null
+            },
+            {
+              "label": "Уведомления",
+              "value": null
+            },
+            {
+              "label": "Терминалы и инкассации",
+              "value": null
+            },
+            {
+              "label": "Платежи и движения средств",
+              "value": null
+            },
+            {
+              "label": "Регистрация терминалов",
+              "value": null
+            },
+            {
+              "label": "Порядок кнопок услуг",
+              "value": null
+            }
+          ],
+          "motion_alias": "section-reveal",
+          "motion_intent": "Однократное появление содержимого секции ниже первого экрана."
+        },
+        {
+          "id": "innovation",
+          "anchor_aliases": [],
+          "title": "Кошелёк, товары и настройка экрана",
+          "body": "В терминальном ПО предусмотрены кошелёк FINGER и модуль заказа товаров SkyMarket. Агент может менять дизайн экрана и положение кнопок оплаты услуг.",
+          "source_urls": [
+            "https://skysend.ru/partners/agent/innovation.html"
+          ],
+          "visual_id": "html-feature-list",
+          "visual_description": "HTML definition list с названиями возможностей: Кошелёк FINGER, Заказ товаров SkyMarket, Дизайн экрана, Порядок кнопок. Значения, суммы, данные клиентов и фиктивные состояния не выводить. Это перечень функций, не скриншот кабинета.",
+          "motion": "Однократное появление содержимого секции ниже первого экрана. Все числа, easing, desktop/mobile и reduced-motion брать из data/motion-spec.json: contentAliases.section-reveal.",
+          "links": [
+            {
+              "label": "ПО ALLVEND",
+              "href": "/software/allvend/"
+            },
+            {
+              "label": "Приложение FINGER",
+              "href": "/software/finger/"
+            }
+          ],
+          "visual_fields": [
+            {
+              "label": "Кошелёк FINGER",
+              "value": null
+            },
+            {
+              "label": "Заказ товаров SkyMarket",
+              "value": null
+            },
+            {
+              "label": "Дизайн экрана",
+              "value": null
+            },
+            {
+              "label": "Порядок кнопок",
+              "value": null
+            }
+          ],
+          "motion_alias": "section-reveal",
+          "motion_intent": "Однократное появление содержимого секции ниже первого экрана."
+        },
+        {
+          "id": "transfer-terminal",
+          "anchor_aliases": [],
+          "title": "Перевести терминалы на SkySend",
+          "body": "Для работы с системой SkySend можно настроить уже имеющиеся платёжные терминалы. Управление подключёнными устройствами доступно через интернет-кабинет.",
+          "source_urls": [
+            "https://skysend.ru/partners/agent/transfer-terminal.html"
+          ],
+          "visual_id": "terminal-product",
+          "visual_description": "Подлинное фото устройства из исходника, на нейтральном фоне. Название модели только по источнику. Без людей, 3D-реконструкции и декора.",
+          "motion": "Однократное появление содержимого секции ниже первого экрана. Все числа, easing, desktop/mobile и reduced-motion брать из data/motion-spec.json: contentAliases.section-reveal.",
+          "links": [
+            {
+              "label": "Терминальное ПО",
+              "href": "/software/terminal/"
+            }
+          ],
+          "motion_alias": "section-reveal",
+          "motion_intent": "Однократное появление содержимого секции ниже первого экрана."
+        },
+        {
+          "id": "buy-terminals",
+          "anchor_aliases": [],
+          "title": "Терминалы для разных мест установки",
+          "body": "В исходном каталоге представлены терминалы для помещений, уличные и встраиваемые модели. Операционная система и ПО терминала размещаются на flash-накопителе.",
+          "source_urls": [
+            "https://skysend.ru/partners/agent/buy-terminals.html"
+          ],
+          "visual_id": "terminal-product",
+          "visual_description": "Подлинное фото устройства из исходника, на нейтральном фоне. Название модели только по источнику. Без людей, 3D-реконструкции и декора.",
+          "motion": "Однократное появление содержимого секции ниже первого экрана. Все числа, easing, desktop/mobile и reduced-motion брать из data/motion-spec.json: contentAliases.section-reveal.",
+          "links": [
+            {
+              "label": "Платёжные терминалы",
+              "href": "/equipment/payment-terminals/"
+            }
+          ],
+          "motion_alias": "section-reveal",
+          "motion_intent": "Однократное появление содержимого секции ниже первого экрана."
+        },
+        {
+          "id": "rma",
+          "anchor_aliases": [],
+          "title": "Операторские точки",
+          "body": "Приём платежей можно организовать на компьютере или ноутбуке с Windows или Linux, а также на устройстве Android. Для этого используется программа «Рабочее место агента»; управление точками доступно в личном кабинете.",
+          "source_urls": [
+            "https://skysend.ru/partners/agent/rma.html"
+          ],
+          "visual_id": "rma-desktop",
+          "visual_description": "Реальный экран соответствующей программы из исходника. Если нужного экрана нет, схема возможностей с явной подписью; не рисовать фиктивный кабинет, суммы, графики и статусы.",
+          "motion": "Увеличение подлинного изображения по явному действию; галерея только при наличии отдельных реальных кадров, без автопрокрутки. Все числа, easing, desktop/mobile и reduced-motion брать из data/motion-spec.json: contentAliases.gallery-change.",
+          "links": [
+            {
+              "label": "РМА Windows / Linux",
+              "href": "/software/rma-desktop/"
+            },
+            {
+              "label": "РМА Android",
+              "href": "/software/rma-android/"
+            }
+          ],
+          "motion_alias": "gallery-change",
+          "motion_intent": "Увеличение подлинного изображения по явному действию; галерея только при наличии отдельных реальных кадров, без автопрокрутки."
+        },
+        {
+          "id": "fingerprint-scanner",
+          "anchor_aliases": [],
+          "title": "Работа с FINGER через сканер",
+          "body": "В материалах SkySend описана идентификация в кошельке FINGER и оплата касанием сканера отпечатка пальца на терминале.",
+          "source_urls": [
+            "https://skysend.ru/partners/agent/fingerprint-scanner.html"
+          ],
+          "visual_id": "fingerprint-scanner",
+          "visual_description": "Подлинное изображение сканера отпечатка из исходного каталога (scaner.png). Не подменять его общим терминалом или вымышленным устройством; не анимировать считывание биометрии.",
+          "motion": "Однократное появление содержимого секции ниже первого экрана. Все числа, easing, desktop/mobile и reduced-motion брать из data/motion-spec.json: contentAliases.section-reveal.",
+          "links": [
+            {
+              "label": "Сканеры отпечатка",
+              "href": "/equipment/fingerprint/"
+            }
+          ],
+          "motion_alias": "section-reveal",
+          "motion_intent": "Однократное появление содержимого секции ниже первого экрана."
+        }
+      ]
+    },
+    {
+      "path": "/partners/providers/",
+      "title": "Провайдерам услуг",
+      "lead": "Разместите кнопку оплаты ваших услуг на платёжных терминалах SkySend. Клиенты смогут оплачивать услуги через сеть системы.",
+      "source_urls": [
+        "https://skysend.ru/partners/providers/information.html"
+      ],
+      "primary_cta": {
+        "label": "Обсудить подключение",
+        "href": "/connect/"
+      },
+      "sections": [
+        {
+          "id": "payment-collection",
+          "anchor_aliases": [],
+          "title": "Точки оплаты ваших услуг",
+          "body": "Кнопки оплаты услуг провайдера могут размещаться на терминалах SkySend и в онлайн-кошельке FINGER. На экране оплаты размещается описание услуги.",
+          "source_urls": [
+            "https://skysend.ru/partners/providers/payment-collection.html"
+          ],
+          "visual_id": "provider-logos",
+          "visual_description": "Реальные логотипы и названия из providers-source.json. При отсутствии логотипа использовать название. Не подменять этот список вымышленными 5000 строками.",
+          "motion": "Содержимое доступно сразу в конечном состоянии. Все числа, easing, desktop/mobile и reduced-motion брать из data/motion-spec.json: contentAliases.none.",
+          "links": [],
+          "motion_alias": "none",
+          "motion_intent": "Содержимое доступно сразу в конечном состоянии."
+        },
+        {
+          "id": "connecting-to-skysend",
+          "anchor_aliases": [
+            "free-connection"
+          ],
+          "title": "Подключение к SkySend",
+          "body": "Подключение начинается с договора о приёме платежей. Специалисты организуют взаимодействие с биллингом, настраивают кнопки оплаты услуг и проверяют проведение платежей. Если провайдер работает без протокола, ему предоставляют кабинет и настраивают отправку реестров на электронную почту.",
+          "source_urls": [
+            "https://skysend.ru/partners/providers/free-connection.html"
+          ],
+          "visual_id": "html-process",
+          "visual_description": "HTML-схема: Биллинг провайдера → SkySend → Кнопка услуги → Тестовый платёж. Подписи связей: Интеграция, Настройка, Проверка. Показывает принцип процесса; не имитирует живую операцию и фактическую топологию.",
+          "motion": "Однократное появление содержимого секции ниже первого экрана. Все числа, easing, desktop/mobile и reduced-motion брать из data/motion-spec.json: contentAliases.section-reveal.",
+          "links": [],
+          "visual_nodes": [
+            {
+              "id": "n1",
+              "label": "Биллинг провайдера"
+            },
+            {
+              "id": "n2",
+              "label": "SkySend"
+            },
+            {
+              "id": "n3",
+              "label": "Кнопка услуги"
+            },
+            {
+              "id": "n4",
+              "label": "Тестовый платёж"
+            }
+          ],
+          "visual_edges": [
+            {
+              "from": "n1",
+              "to": "n2",
+              "label": "Интеграция"
+            },
+            {
+              "from": "n2",
+              "to": "n3",
+              "label": "Настройка"
+            },
+            {
+              "from": "n3",
+              "to": "n4",
+              "label": "Проверка"
+            }
+          ],
+          "motion_alias": "section-reveal",
+          "motion_intent": "Однократное появление содержимого секции ниже первого экрана."
+        },
+        {
+          "id": "privacy-policy",
+          "anchor_aliases": [],
+          "title": "Передача и проверка данных",
+          "body": "В исходном описании SkySend указаны шифрованные каналы передачи данных и электронная цифровая подпись для проверки отправителя и получателя транзакции.",
+          "source_urls": [
+            "https://skysend.ru/partners/providers/privacy-policy.html"
+          ],
+          "visual_id": "html-process",
+          "visual_description": "HTML-схема: Точка оплаты → SkySend → Провайдер. Подписи связей: Шифрованный канал, Проверка электронной подписи. Показывает принцип процесса; не имитирует живую операцию и фактическую топологию.",
+          "motion": "Однократное появление содержимого секции ниже первого экрана. Все числа, easing, desktop/mobile и reduced-motion брать из data/motion-spec.json: contentAliases.section-reveal.",
+          "links": [],
+          "visual_nodes": [
+            {
+              "id": "n1",
+              "label": "Точка оплаты"
+            },
+            {
+              "id": "n2",
+              "label": "SkySend"
+            },
+            {
+              "id": "n3",
+              "label": "Провайдер"
+            }
+          ],
+          "visual_edges": [
+            {
+              "from": "n1",
+              "to": "n2",
+              "label": "Шифрованный канал"
+            },
+            {
+              "from": "n2",
+              "to": "n3",
+              "label": "Проверка электронной подписи"
+            }
+          ],
+          "motion_alias": "section-reveal",
+          "motion_intent": "Однократное появление содержимого секции ниже первого экрана."
+        },
+        {
+          "id": "high-speed",
+          "anchor_aliases": [],
+          "title": "Обработка платежей",
+          "body": "Серверы SkySend синхронизируют данные и распределяют поступающую нагрузку. В исходном описании указана распределённая архитектура процессингового центра.",
+          "source_urls": [
+            "https://skysend.ru/partners/providers/high-speed.html"
+          ],
+          "visual_id": "html-process",
+          "visual_description": "HTML-схема: Серверный узел → Серверный узел. Подписи связей: Синхронизация данных. Показывает принцип процесса; не имитирует живую операцию и фактическую топологию.",
+          "motion": "Однократное появление содержимого секции ниже первого экрана. Все числа, easing, desktop/mobile и reduced-motion брать из data/motion-spec.json: contentAliases.section-reveal.",
+          "links": [],
+          "visual_nodes": [
+            {
+              "id": "n1",
+              "label": "Серверный узел"
+            },
+            {
+              "id": "n2",
+              "label": "Серверный узел"
+            }
+          ],
+          "visual_edges": [
+            {
+              "from": "n1",
+              "to": "n2",
+              "label": "Синхронизация данных"
+            }
+          ],
+          "motion_alias": "section-reveal",
+          "motion_intent": "Однократное появление содержимого секции ниже первого экрана."
+        },
+        {
+          "id": "automate-reporting",
+          "anchor_aliases": [],
+          "title": "Автоматизация отчётности",
+          "body": "В личном кабинете провайдер отслеживает платежи за выбранный период, выгружает реестры в систему учёта и формирует отчёты. Отчётность можно сверять с реестрами проведённых платежей.",
+          "source_urls": [
+            "https://skysend.ru/partners/providers/automate-reporting.html"
+          ],
+          "visual_id": "html-report-fields",
+          "visual_description": "HTML definition list с названиями возможностей: Период отчёта, Реестр платежей, Выгрузка в систему учёта, Сверка отчётности. Значения, суммы, данные клиентов и фиктивные состояния не выводить. Это перечень функций, не скриншот кабинета.",
+          "motion": "Содержимое доступно сразу в конечном состоянии. Все числа, easing, desktop/mobile и reduced-motion брать из data/motion-spec.json: contentAliases.none.",
+          "links": [],
+          "visual_fields": [
+            {
+              "label": "Период отчёта",
+              "value": null
+            },
+            {
+              "label": "Реестр платежей",
+              "value": null
+            },
+            {
+              "label": "Выгрузка в систему учёта",
+              "value": null
+            },
+            {
+              "label": "Сверка отчётности",
+              "value": null
+            }
+          ],
+          "motion_alias": "none",
+          "motion_intent": "Содержимое доступно сразу в конечном состоянии."
+        },
+        {
+          "id": "connecting-to-finger",
+          "anchor_aliases": [],
+          "title": "Оплата через FINGER",
+          "body": "Услуги провайдера можно добавить в онлайн-кошелёк FINGER. В исходном описании предусмотрена работа через браузер на компьютере, телефоне и планшете, а также через сканер отпечатка на терминале.",
+          "source_urls": [
+            "https://skysend.ru/partners/providers/connecting-to-finger.html"
+          ],
+          "visual_id": "finger-product",
+          "visual_description": "Подлинный экран или знак FINGER из исходника. Показать связь с браузерным кошельком; не добавлять неподтверждённые функции приложения.",
+          "motion": "Увеличение подлинного изображения по явному действию; галерея только при наличии отдельных реальных кадров, без автопрокрутки. Все числа, easing, desktop/mobile и reduced-motion брать из data/motion-spec.json: contentAliases.gallery-change.",
+          "links": [
+            {
+              "label": "Приложение FINGER",
+              "href": "/software/finger/"
+            }
+          ],
+          "motion_alias": "gallery-change",
+          "motion_intent": "Увеличение подлинного изображения по явному действию; галерея только при наличии отдельных реальных кадров, без автопрокрутки."
+        },
+        {
+          "id": "partnership",
+          "anchor_aliases": [],
+          "title": "Предпроцессинг для провайдера",
+          "body": "SkySend может выступать предпроцессинговым центром организации: организовать техническое взаимодействие с платёжными агентами, сопровождение расчётов и отчётности, информационную и техническую поддержку.",
+          "source_urls": [
+            "https://skysend.ru/partners/providers/partnership.html"
+          ],
+          "visual_id": "html-process",
+          "visual_description": "HTML-схема: Платёжные агенты → SkySend → Провайдер. Подписи связей: Интеграция и поддержка, Расчёты и отчётность. Показывает принцип процесса; не имитирует живую операцию и фактическую топологию.",
+          "motion": "Однократное появление содержимого секции ниже первого экрана. Все числа, easing, desktop/mobile и reduced-motion брать из data/motion-spec.json: contentAliases.section-reveal.",
+          "links": [],
+          "visual_nodes": [
+            {
+              "id": "n1",
+              "label": "Платёжные агенты"
+            },
+            {
+              "id": "n2",
+              "label": "SkySend"
+            },
+            {
+              "id": "n3",
+              "label": "Провайдер"
+            }
+          ],
+          "visual_edges": [
+            {
+              "from": "n1",
+              "to": "n2",
+              "label": "Интеграция и поддержка"
+            },
+            {
+              "from": "n2",
+              "to": "n3",
+              "label": "Расчёты и отчётность"
+            }
+          ],
+          "motion_alias": "section-reveal",
+          "motion_intent": "Однократное появление содержимого секции ниже первого экрана."
+        },
+        {
+          "id": "placing-terminals",
+          "anchor_aliases": [],
+          "title": "Терминалы в офисах провайдера",
+          "body": "Терминалы можно разместить в офисах подключения абонентов и продажи услуг. Исходный сайт описывает два варианта: собственные терминалы и размещение по договору аренды.",
+          "source_urls": [
+            "https://skysend.ru/partners/providers/placing-terminals.html"
+          ],
+          "visual_id": "terminal-product",
+          "visual_description": "Подлинное фото устройства из исходника, на нейтральном фоне. Название модели только по источнику. Без людей, 3D-реконструкции и декора.",
+          "motion": "Однократное появление содержимого секции ниже первого экрана. Все числа, easing, desktop/mobile и reduced-motion брать из data/motion-spec.json: contentAliases.section-reveal.",
+          "links": [
+            {
+              "label": "Обсудить размещение",
+              "href": "/contacts/"
+            }
+          ],
+          "motion_alias": "section-reveal",
+          "motion_intent": "Однократное появление содержимого секции ниже первого экрана."
+        }
+      ]
+    },
+    {
+      "path": "/partners/suppliers/",
+      "title": "Поставщикам товаров",
+      "lead": "SkyMarket позволяет размещать товары для заказа на терминалах SkySend и в онлайн-кошельке FINGER. Справочником и заказами поставщик управляет через личный кабинет или XML-протокол.",
+      "source_urls": [
+        "https://skysend.ru/partners/suppliers/information.html",
+        "https://skysend.ru/partners/suppliers/integration-in-xml.html"
+      ],
+      "primary_cta": {
+        "label": "Обсудить подключение",
+        "href": "/connect/"
+      },
+      "sections": [
+        {
+          "id": "sales-network-products",
+          "anchor_aliases": [
+            "connectingto-skysend",
+            "connectingto-finger",
+            "increase-sales"
+          ],
+          "title": "Товары на терминалах и в FINGER",
+          "body": "На терминале покупатель открывает каталог поставщика, знакомится с фотографией и описанием товара и оформляет заказ. Второй канал заказа товаров, описанный на сайте, — онлайн-кошелёк FINGER.",
+          "source_urls": [
+            "https://skysend.ru/partners/suppliers/sales-network-products.html"
+          ],
+          "visual_id": "commerce-flow",
+          "visual_description": "Реальные экраны каталога, карточки товара и оформления заказа из исходника; если нужного экрана нет, использовать явно подписанную схему процесса.",
+          "motion": "Содержимое доступно сразу в конечном состоянии. Все числа, easing, desktop/mobile и reduced-motion брать из data/motion-spec.json: contentAliases.none.",
+          "links": [],
+          "motion_alias": "none",
+          "motion_intent": "Содержимое доступно сразу в конечном состоянии."
+        },
+        {
+          "id": "directory-of-products",
+          "anchor_aliases": [],
+          "title": "Справочник товаров",
+          "body": "Поставщик задаёт категории и подкатегории, добавляет фотографии, описания, цены и условия доставки. В карточке товара покупатель видит подробные сведения перед заказом.",
+          "source_urls": [
+            "https://skysend.ru/partners/suppliers/directory-of-products.html"
+          ],
+          "visual_id": "commerce-flow",
+          "visual_description": "Подлинные экраны категорий и карточки товара SkyMarket. Не добавлять отсутствующие в источнике отзывы, рейтинги и остатки.",
+          "motion": "Один раз показать порядок статичных шагов; не имитировать выполнение заказа или платежа. Все числа, easing, desktop/mobile и reduced-motion брать из data/motion-spec.json: contentAliases.process-step.",
+          "links": [],
+          "motion_alias": "process-step",
+          "motion_intent": "Один раз показать порядок статичных шагов; не имитировать выполнение заказа или платежа."
+        },
+        {
+          "id": "work-in-the-office",
+          "anchor_aliases": [],
+          "title": "Работа в кабинете поставщика",
+          "body": "Кабинет SkyMarket позволяет формировать справочник, отслеживать и принимать заказы, контролировать доставку и выгружать данные в систему бухгалтерского учёта.",
+          "source_urls": [
+            "https://skysend.ru/partners/suppliers/work-in-the-office.html"
+          ],
+          "visual_id": "html-feature-list",
+          "visual_description": "HTML definition list с названиями возможностей: Справочник товаров, Поступление заказов, Принятие заказов, Контроль доставки, Выгрузка в систему учёта. Значения, суммы, данные клиентов и фиктивные состояния не выводить. Это перечень функций, не скриншот кабинета.",
+          "motion": "Однократное появление содержимого секции ниже первого экрана. Все числа, easing, desktop/mobile и reduced-motion брать из data/motion-spec.json: contentAliases.section-reveal.",
+          "links": [],
+          "visual_fields": [
+            {
+              "label": "Справочник товаров",
+              "value": null
+            },
+            {
+              "label": "Поступление заказов",
+              "value": null
+            },
+            {
+              "label": "Принятие заказов",
+              "value": null
+            },
+            {
+              "label": "Контроль доставки",
+              "value": null
+            },
+            {
+              "label": "Выгрузка в систему учёта",
+              "value": null
+            }
+          ],
+          "motion_alias": "section-reveal",
+          "motion_intent": "Однократное появление содержимого секции ниже первого экрана."
+        },
+        {
+          "id": "integration-in-xml",
+          "anchor_aliases": [],
+          "title": "Интеграция по XML",
+          "body": "Готовый справочник с сервера поставщика можно передавать в SkyMarket по XML. Через протокол также предусмотрен обмен данными о поступлении и принятии заказов и контроле доставки.",
+          "source_urls": [
+            "https://skysend.ru/partners/suppliers/integration-in-xml.html"
+          ],
+          "visual_id": "supplier-exchange",
+          "visual_description": "Схема «Система поставщика ↔ SkyMarket → терминалы SkySend / FINGER». Данные: справочник товаров, изменения, поступление и принятие заказов, контроль доставки. Использовать специальную supplier-exchange, не схему агентского XML-шлюза.",
+          "motion": "Один раз показать порядок статичных шагов; не имитировать выполнение заказа или платежа. Все числа, easing, desktop/mobile и reduced-motion брать из data/motion-spec.json: contentAliases.process-step.",
+          "links": [],
+          "motion_alias": "process-step",
+          "motion_intent": "Один раз показать порядок статичных шагов; не имитировать выполнение заказа или платежа."
+        },
+        {
+          "id": "ease-of-interaction",
+          "anchor_aliases": [],
+          "title": "Обновление информации",
+          "body": "Изменения, внесённые поставщиком в справочник через кабинет или XML, автоматически передаются на терминалы SkySend и в FINGER.",
+          "source_urls": [
+            "https://skysend.ru/partners/suppliers/ease-of-interaction.html"
+          ],
+          "visual_id": "supplier-exchange",
+          "visual_description": "Схема «Система поставщика ↔ SkyMarket → терминалы SkySend / FINGER». Данные: справочник товаров, изменения, поступление и принятие заказов, контроль доставки. Использовать специальную supplier-exchange, не схему агентского XML-шлюза.",
+          "motion": "Один раз показать порядок статичных шагов; не имитировать выполнение заказа или платежа. Все числа, easing, desktop/mobile и reduced-motion брать из data/motion-spec.json: contentAliases.process-step.",
+          "links": [],
+          "motion_alias": "process-step",
+          "motion_intent": "Один раз показать порядок статичных шагов; не имитировать выполнение заказа или платежа."
+        },
+        {
+          "id": "freeconnection",
+          "anchor_aliases": [],
+          "title": "Подключение поставщика",
+          "body": "Для начала работы поставщик присоединяется к правилам проекта SkyMarket и заполняет справочник товаров. Каталог можно вести вручную в кабинете или передавать из собственной системы по XML.",
+          "source_urls": [
+            "https://skysend.ru/partners/suppliers/freeconnection.html"
+          ],
+          "visual_id": "commerce-flow",
+          "visual_description": "Реальные экраны каталога, карточки товара и оформления заказа из исходника; если нужного экрана нет, использовать явно подписанную схему процесса.",
+          "motion": "Один раз показать порядок статичных шагов; не имитировать выполнение заказа или платежа. Все числа, easing, desktop/mobile и reduced-motion брать из data/motion-spec.json: contentAliases.process-step.",
+          "links": [],
+          "motion_alias": "process-step",
+          "motion_intent": "Один раз показать порядок статичных шагов; не имитировать выполнение заказа или платежа."
+        }
+      ]
+    },
+    {
+      "path": "/partners/representatives/",
+      "title": "Представителям",
+      "lead": "Представитель развивает направления SkySend в своём регионе: подключает агентов, провайдеров услуг и поставщиков товаров, помогает существующим партнёрам и организует обслуживание точек.",
+      "source_urls": [
+        "https://skysend.ru/partners/representatives/predstavitelyam.html",
+        "https://skysend.ru/partners/representatives/connecting-players.html",
+        "https://skysend.ru/partners/representatives/mastering-directions.html"
+      ],
+      "primary_cta": {
+        "label": "Обсудить подключение",
+        "href": "/connect/"
+      },
+      "sections": [
+        {
+          "id": "connecting-players",
+          "anchor_aliases": [],
+          "title": "Подключение участников",
+          "body": "Представитель подключает владельцев терминалов и операторских точек, поставщиков услуг и поставщиков товаров. Для каждого направления на сайте описаны отдельный формат работы и договорные отношения.",
+          "source_urls": [
+            "https://skysend.ru/partners/representatives/connecting-players.html"
+          ],
+          "visual_id": "html-process",
+          "visual_description": "HTML-схема: Представитель → Агенты / провайдеры / поставщики → SkySend. Подписи связей: Подключение участников, Взаимодействие с системой. Показывает принцип процесса; не имитирует живую операцию и фактическую топологию.",
+          "motion": "Содержимое доступно сразу в конечном состоянии. Все числа, easing, desktop/mobile и reduced-motion брать из data/motion-spec.json: contentAliases.none.",
+          "links": [],
+          "visual_nodes": [
+            {
+              "id": "n1",
+              "label": "Представитель"
+            },
+            {
+              "id": "n2",
+              "label": "Агенты / провайдеры / поставщики"
+            },
+            {
+              "id": "n3",
+              "label": "SkySend"
+            }
+          ],
+          "visual_edges": [
+            {
+              "from": "n1",
+              "to": "n2",
+              "label": "Подключение участников"
+            },
+            {
+              "from": "n2",
+              "to": "n3",
+              "label": "Взаимодействие с системой"
+            }
+          ],
+          "motion_alias": "none",
+          "motion_intent": "Содержимое доступно сразу в конечном состоянии."
+        },
+        {
+          "id": "mastering-directions",
+          "anchor_aliases": [
+            "items-of-income"
+          ],
+          "title": "Направления работы",
+          "body": "Представитель может развивать подключение участников, обслуживание и инкассацию терминалов, реализацию оборудования и работу региональной кассы.",
+          "source_urls": [
+            "https://skysend.ru/partners/representatives/mastering-directions.html"
+          ],
+          "visual_id": "html-feature-list",
+          "visual_description": "HTML definition list с названиями возможностей: Подключение участников, Обслуживание терминалов, Инкассация, Реализация оборудования, Региональная касса. Значения, суммы, данные клиентов и фиктивные состояния не выводить. Это перечень функций, не скриншот кабинета.",
+          "motion": "Однократное появление содержимого секции ниже первого экрана. Все числа, easing, desktop/mobile и reduced-motion брать из data/motion-spec.json: contentAliases.section-reveal.",
+          "links": [],
+          "visual_fields": [
+            {
+              "label": "Подключение участников",
+              "value": null
+            },
+            {
+              "label": "Обслуживание терминалов",
+              "value": null
+            },
+            {
+              "label": "Инкассация",
+              "value": null
+            },
+            {
+              "label": "Реализация оборудования",
+              "value": null
+            },
+            {
+              "label": "Региональная касса",
+              "value": null
+            }
+          ],
+          "motion_alias": "section-reveal",
+          "motion_intent": "Однократное появление содержимого секции ниже первого экрана."
+        },
+        {
+          "id": "publication-of-information",
+          "anchor_aliases": [],
+          "title": "Контакты представительства",
+          "body": "Исходный сайт предусматривает размещение контактов представительства рядом с контактами центрального офиса. Обращения клиентов соответствующего региона передаются представителю.",
+          "source_urls": [
+            "https://skysend.ru/partners/representatives/publication-of-information.html"
+          ],
+          "visual_id": "contact-panel",
+          "visual_description": "Кликабельные текстовые контакты с простыми SVG-иконками. Без стокового оператора, карты с неподтверждённым адресом и декоративной фотографии.",
+          "motion": "Содержимое доступно сразу в конечном состоянии. Все числа, easing, desktop/mobile и reduced-motion брать из data/motion-spec.json: contentAliases.none.",
+          "links": [],
+          "motion_alias": "none",
+          "motion_intent": "Содержимое доступно сразу в конечном состоянии."
+        },
+        {
+          "id": "exclusivity-in-the-region",
+          "anchor_aliases": [],
+          "title": "Работа в регионе",
+          "body": "Представительство может заниматься подключением новых участников, поддержкой партнёров, реализацией оборудования и оказанием услуг. Отдельный формат эксклюзивного представительства предусмотрен в правилах SkySend.",
+          "source_urls": [
+            "https://skysend.ru/partners/representatives/exclusivity-in-the-region.html"
+          ],
+          "visual_id": "html-feature-list",
+          "visual_description": "HTML definition list с названиями возможностей: Подключение участников, Поддержка партнёров, Оборудование, Услуги клиентам. Значения, суммы, данные клиентов и фиктивные состояния не выводить. Это перечень функций, не скриншот кабинета.",
+          "motion": "Однократное появление содержимого секции ниже первого экрана. Все числа, easing, desktop/mobile и reduced-motion брать из data/motion-spec.json: contentAliases.section-reveal.",
+          "links": [
+            {
+              "label": "Обсудить формат представительства",
+              "href": "/contacts/"
+            }
+          ],
+          "visual_fields": [
+            {
+              "label": "Подключение участников",
+              "value": null
+            },
+            {
+              "label": "Поддержка партнёров",
+              "value": null
+            },
+            {
+              "label": "Оборудование",
+              "value": null
+            },
+            {
+              "label": "Услуги клиентам",
+              "value": null
+            }
+          ],
+          "motion_alias": "section-reveal",
+          "motion_intent": "Однократное появление содержимого секции ниже первого экрана."
+        },
+        {
+          "id": "dealer-discounts",
+          "anchor_aliases": [],
+          "title": "Закупка оборудования",
+          "body": "Представитель может закупать платёжные терминалы FastPay, фискальные серверы, кассы FPS и другую продукцию, а также работать с поставщиками SkySend.",
+          "source_urls": [
+            "https://skysend.ru/partners/representatives/dealer-discounts.html"
+          ],
+          "visual_id": "terminal-product",
+          "visual_description": "Подлинное фото устройства из исходника, на нейтральном фоне. Название модели только по источнику. Без людей, 3D-реконструкции и декора.",
+          "motion": "Однократное появление содержимого секции ниже первого экрана. Все числа, easing, desktop/mobile и reduced-motion брать из data/motion-spec.json: contentAliases.section-reveal.",
+          "links": [
+            {
+              "label": "Оборудование",
+              "href": "/equipment/"
+            }
+          ],
+          "motion_alias": "section-reveal",
+          "motion_intent": "Однократное появление содержимого секции ниже первого экрана."
+        },
+        {
+          "id": "cashier-in-the-region",
+          "anchor_aliases": [],
+          "title": "Касса в регионе",
+          "body": "Региональная касса принимает авансовые платежи агентов для пополнения их счетов в SkySend. В исходном описании для организации кассы предусмотрены договор и рабочее место кассира.",
+          "source_urls": [
+            "https://skysend.ru/partners/representatives/cashier-in-the-region.html"
+          ],
+          "visual_id": "html-process",
+          "visual_description": "HTML-схема: Агент → Касса представителя → Авансовый счёт SkySend. Подписи связей: Авансовый платёж, Пополнение счёта. Показывает принцип процесса; не имитирует живую операцию и фактическую топологию.",
+          "motion": "Однократное появление содержимого секции ниже первого экрана. Все числа, easing, desktop/mobile и reduced-motion брать из data/motion-spec.json: contentAliases.section-reveal.",
+          "links": [],
+          "visual_nodes": [
+            {
+              "id": "n1",
+              "label": "Агент"
+            },
+            {
+              "id": "n2",
+              "label": "Касса представителя"
+            },
+            {
+              "id": "n3",
+              "label": "Авансовый счёт SkySend"
+            }
+          ],
+          "visual_edges": [
+            {
+              "from": "n1",
+              "to": "n2",
+              "label": "Авансовый платёж"
+            },
+            {
+              "from": "n2",
+              "to": "n3",
+              "label": "Пополнение счёта"
+            }
+          ],
+          "motion_alias": "section-reveal",
+          "motion_intent": "Однократное появление содержимого секции ниже первого экрана."
+        },
+        {
+          "id": "running-banks-fps",
+          "anchor_aliases": [],
+          "title": "Кассы FPS",
+          "body": "Одно из описанных направлений представительства — установка модулей расчётов за товары и услуги в магазинах и других местах обслуживания. В материалах SkySend эти кассы обозначены как FPS и используют расчёты отпечатком пальца.",
+          "source_urls": [
+            "https://skysend.ru/partners/representatives/running-banks-fps.html"
+          ],
+          "visual_id": "fingerprint-scanner",
+          "visual_description": "Подлинное изображение сканера отпечатка из исходного каталога (scaner.png). Не подменять его общим терминалом или вымышленным устройством; не анимировать считывание биометрии.",
+          "motion": "Однократное появление содержимого секции ниже первого экрана. Все числа, easing, desktop/mobile и reduced-motion брать из data/motion-spec.json: contentAliases.section-reveal.",
+          "links": [],
+          "motion_alias": "section-reveal",
+          "motion_intent": "Однократное появление содержимого секции ниже первого экрана."
+        }
+      ]
+    },
+    {
+      "path": "/partners/gateways/",
+      "title": "Шлюзовикам",
+      "lead": "Подключите собственную предпроцессинговую систему к SkySend по XML-протоколу для приёма платежей в пользу провайдеров системы.",
+      "source_urls": [
+        "https://skysend.ru/partners/gateway/xml.html"
+      ],
+      "primary_cta": {
+        "label": "Обсудить подключение",
+        "href": "/connect/"
+      },
+      "sections": [
+        {
+          "id": "xml",
+          "anchor_aliases": [],
+          "title": "Обмен по XML",
+          "body": "XML-протокол позволяет получать информацию о провайдерах и условиях их работы, а также передавать сведения о платежах. Для интеграции используется протокол SkyTransact.",
+          "source_urls": [
+            "https://skysend.ru/partners/gateway/xml.html",
+            "https://skysend.ru/program/xml-gateway.html"
+          ],
+          "visual_id": "xml-flow",
+          "visual_description": "Схема обмена с подписями типов данных из абзаца. Схема объясняет процесс; XML-теги и методы API не придумывать.",
+          "motion": "Содержимое доступно сразу в конечном состоянии. Все числа, easing, desktop/mobile и reduced-motion брать из data/motion-spec.json: contentAliases.none.",
+          "links": [
+            {
+              "label": "XML-шлюз",
+              "href": "/software/xml/"
+            },
+            {
+              "label": "Документация",
+              "href": "/downloads/"
+            }
+          ],
+          "motion_alias": "none",
+          "motion_intent": "Содержимое доступно сразу в конечном состоянии."
+        },
+        {
+          "id": "quick-start",
+          "anchor_aliases": [],
+          "title": "Этапы подключения",
+          "body": "После заключения договора специалисты консультируют по интеграции, запускают XML-точку в системе SkySend и проверяют проведение платежей.",
+          "source_urls": [
+            "https://skysend.ru/partners/gateway/quick-start.html"
+          ],
+          "visual_id": "html-process",
+          "visual_description": "HTML-схема: Договор → Интеграция → XML-точка → Тестовые платежи. Подписи связей: Согласование, Настройка, Проверка. Показывает принцип процесса; не имитирует живую операцию и фактическую топологию.",
+          "motion": "Однократное появление содержимого секции ниже первого экрана. Все числа, easing, desktop/mobile и reduced-motion брать из data/motion-spec.json: contentAliases.section-reveal.",
+          "links": [],
+          "visual_nodes": [
+            {
+              "id": "n1",
+              "label": "Договор"
+            },
+            {
+              "id": "n2",
+              "label": "Интеграция"
+            },
+            {
+              "id": "n3",
+              "label": "XML-точка"
+            },
+            {
+              "id": "n4",
+              "label": "Тестовые платежи"
+            }
+          ],
+          "visual_edges": [
+            {
+              "from": "n1",
+              "to": "n2",
+              "label": "Согласование"
+            },
+            {
+              "from": "n2",
+              "to": "n3",
+              "label": "Настройка"
+            },
+            {
+              "from": "n3",
+              "to": "n4",
+              "label": "Проверка"
+            }
+          ],
+          "motion_alias": "section-reveal",
+          "motion_intent": "Однократное появление содержимого секции ниже первого экрана."
+        },
+        {
+          "id": "connect-providers",
+          "anchor_aliases": [],
+          "title": "Приём платежей провайдерам",
+          "body": "Через шлюз SkySend можно организовать приём платежей в пользу провайдеров системы. Состав доступных услуг представлен в каталоге провайдеров.",
+          "source_urls": [
+            "https://skysend.ru/partners/gateway/connect-providers.html"
+          ],
+          "visual_id": "provider-logos",
+          "visual_description": "Реальные логотипы и названия из providers-source.json. При отсутствии логотипа использовать название. Не подменять этот список вымышленными 5000 строками.",
+          "motion": "Содержимое доступно сразу в конечном состоянии. Все числа, easing, desktop/mobile и reduced-motion брать из data/motion-spec.json: contentAliases.none.",
+          "links": [
+            {
+              "label": "Провайдеры услуг",
+              "href": "/providers/"
+            }
+          ],
+          "motion_alias": "none",
+          "motion_intent": "Содержимое доступно сразу в конечном состоянии."
+        },
+        {
+          "id": "highspeed",
+          "anchor_aliases": [],
+          "title": "Распределённая обработка",
+          "body": "В исходном описании сервера SkySend размещены в разных центрах обработки данных, синхронизируют данные и распределяют поступающую нагрузку.",
+          "source_urls": [
+            "https://skysend.ru/partners/gateway/highspeed.html"
+          ],
+          "visual_id": "html-process",
+          "visual_description": "HTML-схема: Сервер в ЦОД → Сервер в ЦОД. Подписи связей: Синхронизация данных. Показывает принцип процесса; не имитирует живую операцию и фактическую топологию.",
+          "motion": "Однократное появление содержимого секции ниже первого экрана. Все числа, easing, desktop/mobile и reduced-motion брать из data/motion-spec.json: contentAliases.section-reveal.",
+          "links": [],
+          "visual_nodes": [
+            {
+              "id": "n1",
+              "label": "Сервер в ЦОД"
+            },
+            {
+              "id": "n2",
+              "label": "Сервер в ЦОД"
+            }
+          ],
+          "visual_edges": [
+            {
+              "from": "n1",
+              "to": "n2",
+              "label": "Синхронизация данных"
+            }
+          ],
+          "motion_alias": "section-reveal",
+          "motion_intent": "Однократное появление содержимого секции ниже первого экрана."
+        },
+        {
+          "id": "high-reward",
+          "anchor_aliases": [],
+          "title": "Контроль операций",
+          "body": "В личном кабинете агента доступна развёрнутая информация о совершённых операциях.",
+          "source_urls": [
+            "https://skysend.ru/partners/gateway/high-reward.html"
+          ],
+          "visual_id": "html-feature-list",
+          "visual_description": "HTML definition list с названиями возможностей: Совершённые операции. Значения, суммы, данные клиентов и фиктивные состояния не выводить. Это перечень функций, не скриншот кабинета.",
+          "motion": "Однократное появление содержимого секции ниже первого экрана. Все числа, easing, desktop/mobile и reduced-motion брать из data/motion-spec.json: contentAliases.section-reveal.",
+          "links": [],
+          "visual_fields": [
+            {
+              "label": "Совершённые операции",
+              "value": null
+            }
+          ],
+          "motion_alias": "section-reveal",
+          "motion_intent": "Однократное появление содержимого секции ниже первого экрана."
+        },
+        {
+          "id": "round-the-clock-support",
+          "anchor_aliases": [],
+          "title": "Техническая поддержка",
+          "body": "Служба поддержки консультирует по проведению платежей, техническому взаимодействию и финансовым расчётам.",
+          "source_urls": [
+            "https://skysend.ru/partners/gateway/round-the-clock-support.html"
+          ],
+          "visual_id": "contact-panel",
+          "visual_description": "Кликабельные текстовые контакты с простыми SVG-иконками. Без стокового оператора, карты с неподтверждённым адресом и декоративной фотографии.",
+          "motion": "Содержимое доступно сразу в конечном состоянии. Все числа, easing, desktop/mobile и reduced-motion брать из data/motion-spec.json: contentAliases.none.",
+          "links": [
+            {
+              "label": "Связаться с поддержкой",
+              "href": "/support/"
+            }
+          ],
+          "motion_alias": "none",
+          "motion_intent": "Содержимое доступно сразу в конечном состоянии."
+        },
+        {
+          "id": "operator-point",
+          "anchor_aliases": [
+            "translate-terminal",
+            "buy-terminal"
+          ],
+          "title": "Точки приёма платежей",
+          "body": "Операторские точки могут работать через РМА на компьютерах с Windows или Linux и устройствах Android. Существующие терминалы можно перевести на SkySend; оборудование представлено в отдельном каталоге.",
+          "source_urls": [
+            "https://skysend.ru/partners/gateway/operator-point.html",
+            "https://skysend.ru/partners/gateway/translate-terminal.html",
+            "https://skysend.ru/partners/gateway/buy-terminal.html"
+          ],
+          "visual_id": "terminal-product",
+          "visual_description": "Подлинное фото устройства из исходника, на нейтральном фоне. Название модели только по источнику. Без людей, 3D-реконструкции и декора.",
+          "motion": "Однократное появление содержимого секции ниже первого экрана. Все числа, easing, desktop/mobile и reduced-motion брать из data/motion-spec.json: contentAliases.section-reveal.",
+          "links": [
+            {
+              "label": "РМА Windows / Linux",
+              "href": "/software/rma-desktop/"
+            },
+            {
+              "label": "Оборудование",
+              "href": "/equipment/"
+            }
+          ],
+          "motion_alias": "section-reveal",
+          "motion_intent": "Однократное появление содержимого секции ниже первого экрана."
+        }
+      ]
+    },
+    {
+      "path": "/partners/retail/",
+      "title": "Торговым сетям",
+      "lead": "ПО ALLVEND позволяет использовать устройства самообслуживания для заказа и оплаты товаров, предоставления информации и приёма платежей.",
+      "source_urls": [
+        "https://skysend.ru/allvend.html"
+      ],
+      "primary_cta": {
+        "label": "Обсудить подключение",
+        "href": "/connect/"
+      },
+      "sections": [
+        {
+          "id": "self-service",
+          "anchor_aliases": [],
+          "title": "Устройства самообслуживания",
+          "body": "В исходном описании ALLVEND предусмотрены информационные киоски, кассы самообслуживания и платёжные терминалы. ПО настраивается под задачи торговой точки.",
+          "source_urls": [
+            "https://skysend.ru/allvend.html"
+          ],
+          "visual_id": "terminal-product",
+          "visual_description": "Подлинное фото устройства из исходника, на нейтральном фоне. Название модели только по источнику. Без людей, 3D-реконструкции и декора.",
+          "motion": "Содержимое доступно сразу в конечном состоянии. Все числа, easing, desktop/mobile и reduced-motion брать из data/motion-spec.json: contentAliases.none.",
+          "links": [
+            {
+              "label": "ПО ALLVEND",
+              "href": "/software/allvend/"
+            }
+          ],
+          "motion_alias": "none",
+          "motion_intent": "Содержимое доступно сразу в конечном состоянии."
+        },
+        {
+          "id": "design",
+          "anchor_aliases": [],
+          "title": "Интерфейс в стиле вашей сети",
+          "body": "В ALLVEND можно менять цвета, фон, положение, размеры и форму элементов экрана, а также логику работы ПО. Настройка выполняется через онлайн-кабинет.",
+          "source_urls": [
+            "https://skysend.ru/allvend.html"
+          ],
+          "visual_id": "interface-variants",
+          "visual_description": "Два реальных варианта оформления из design.jpeg или /images/downloads/po/8_full.png. Подписи: «Цвета и фон», «Расположение элементов».",
+          "motion": "Увеличение подлинного изображения по явному действию; галерея только при наличии отдельных реальных кадров, без автопрокрутки. Все числа, easing, desktop/mobile и reduced-motion брать из data/motion-spec.json: contentAliases.gallery-change.",
+          "links": [],
+          "motion_alias": "gallery-change",
+          "motion_intent": "Увеличение подлинного изображения по явному действию; галерея только при наличии отдельных реальных кадров, без автопрокрутки."
+        },
+        {
+          "id": "orders",
+          "anchor_aliases": [],
+          "title": "Каталог, заказ и оплата",
+          "body": "Модуль заказа товаров включает загрузку справочника, формирование и оплату заказов на устройстве самообслуживания.",
+          "source_urls": [
+            "https://skysend.ru/allvend.html"
+          ],
+          "visual_id": "commerce-flow",
+          "visual_description": "Реальные экраны каталога, карточки товара и оформления заказа из исходника; если нужного экрана нет, использовать явно подписанную схему процесса.",
+          "motion": "Один раз показать порядок статичных шагов; не имитировать выполнение заказа или платежа. Все числа, easing, desktop/mobile и reduced-motion брать из data/motion-spec.json: contentAliases.process-step.",
+          "links": [],
+          "motion_alias": "process-step",
+          "motion_intent": "Один раз показать порядок статичных шагов; не имитировать выполнение заказа или платежа."
+        },
+        {
+          "id": "infokiosk",
+          "anchor_aliases": [],
+          "title": "Информационный киоск",
+          "body": "В ПО можно добавлять информационные разделы, например навигацию по отделам магазина и сведения о товарах. Информационные функции можно совмещать с платёжными.",
+          "source_urls": [
+            "https://skysend.ru/allvend.html"
+          ],
+          "visual_id": "infokiosk-screen",
+          "visual_description": "Подлинный экран информационного раздела /images/downloads/po/12_full.png, без условий акций.",
+          "motion": "Увеличение подлинного изображения по явному действию; галерея только при наличии отдельных реальных кадров, без автопрокрутки. Все числа, easing, desktop/mobile и reduced-motion брать из data/motion-spec.json: contentAliases.gallery-change.",
+          "links": [],
+          "motion_alias": "gallery-change",
+          "motion_intent": "Увеличение подлинного изображения по явному действию; галерея только при наличии отдельных реальных кадров, без автопрокрутки."
+        },
+        {
+          "id": "cash",
+          "anchor_aliases": [],
+          "title": "Приём наличных за заказы",
+          "body": "Устройства самообслуживания могут использоваться как кассы для приёма наличной оплаты за товары и услуги. Принятые средства инкассируются по аналогии с кассами магазина.",
+          "source_urls": [
+            "https://skysend.ru/allvend.html"
+          ],
+          "visual_id": "terminal-product",
+          "visual_description": "Реальный купюроприёмник и схема «Заказ → оплата наличными → инкассация». Без обещания поддержки устаревших платёжных методов.",
+          "motion": "Однократное появление содержимого секции ниже первого экрана. Все числа, easing, desktop/mobile и reduced-motion брать из data/motion-spec.json: contentAliases.section-reveal.",
+          "links": [],
+          "motion_alias": "section-reveal",
+          "motion_intent": "Однократное появление содержимого секции ниже первого экрана."
+        },
+        {
+          "id": "management",
+          "anchor_aliases": [],
+          "title": "Управление сетью",
+          "body": "Через онлайн-кабинет можно контролировать обороты точек и инкассации, отслеживать работу устройств и платежи, получать финансовые отчёты и менять оформление экранов.",
+          "source_urls": [
+            "https://skysend.ru/allvend.html"
+          ],
+          "visual_id": "html-feature-list",
+          "visual_description": "HTML definition list с названиями возможностей: Обороты точек, Инкассации, Устройства и платежи, Финансовые отчёты, Оформление экранов. Значения, суммы, данные клиентов и фиктивные состояния не выводить. Это перечень функций, не скриншот кабинета.",
+          "motion": "Однократное появление содержимого секции ниже первого экрана. Все числа, easing, desktop/mobile и reduced-motion брать из data/motion-spec.json: contentAliases.section-reveal.",
+          "links": [],
+          "visual_fields": [
+            {
+              "label": "Обороты точек",
+              "value": null
+            },
+            {
+              "label": "Инкассации",
+              "value": null
+            },
+            {
+              "label": "Устройства и платежи",
+              "value": null
+            },
+            {
+              "label": "Финансовые отчёты",
+              "value": null
+            },
+            {
+              "label": "Оформление экранов",
+              "value": null
+            }
+          ],
+          "motion_alias": "section-reveal",
+          "motion_intent": "Однократное появление содержимого секции ниже первого экрана."
+        },
+        {
+          "id": "deployment",
+          "anchor_aliases": [],
+          "title": "Варианты запуска",
+          "body": "В исходном описании предусмотрены приобретение устройств, перевод партнёрских устройств на ALLVEND и размещение устройств группы компаний на торговых площадях.",
+          "source_urls": [
+            "https://skysend.ru/allvend.html"
+          ],
+          "visual_id": "html-feature-list",
+          "visual_description": "HTML definition list с названиями возможностей: Приобретение устройств, Перевод партнёрских устройств, Размещение устройств группы. Значения, суммы, данные клиентов и фиктивные состояния не выводить. Это перечень функций, не скриншот кабинета.",
+          "motion": "Однократное появление содержимого секции ниже первого экрана. Все числа, easing, desktop/mobile и reduced-motion брать из data/motion-spec.json: contentAliases.section-reveal.",
+          "links": [
+            {
+              "label": "Обсудить запуск",
+              "href": "/contacts/"
+            }
+          ],
+          "visual_fields": [
+            {
+              "label": "Приобретение устройств",
+              "value": null
+            },
+            {
+              "label": "Перевод партнёрских устройств",
+              "value": null
+            },
+            {
+              "label": "Размещение устройств группы",
+              "value": null
+            }
+          ],
+          "motion_alias": "section-reveal",
+          "motion_intent": "Однократное появление содержимого секции ниже первого экрана."
+        }
+      ]
+    },
+    {
+      "path": "/partners/",
+      "title": "Партнёрам",
+      "lead": "Выберите направление работы с системой SkySend.",
+      "source_urls": [
+        "https://skysend.ru/about/our-goals.html"
+      ],
+      "primary_cta": {
+        "label": "Обсудить подключение",
+        "href": "/connect/"
+      },
+      "sections": [
+        {
+          "id": "agents",
+          "anchor_aliases": [],
+          "title": "Платёжным агентам",
+          "body": "Терминалы, операторские точки, приём платежей и удалённое управление.",
+          "source_urls": [
+            "https://skysend.ru/partners/agent/rma.html"
+          ],
+          "visual_id": "terminal-product",
+          "visual_description": "Подлинное фото устройства из исходника, на нейтральном фоне. Название модели только по источнику. Без людей, 3D-реконструкции и декора.",
+          "motion": "Содержимое доступно сразу в конечном состоянии. Все числа, easing, desktop/mobile и reduced-motion брать из data/motion-spec.json: contentAliases.none.",
+          "links": [
+            {
+              "label": "Платёжным агентам",
+              "href": "/partners/agents/"
+            }
+          ],
+          "motion_alias": "none",
+          "motion_intent": "Содержимое доступно сразу в конечном состоянии."
+        },
+        {
+          "id": "providers",
+          "anchor_aliases": [],
+          "title": "Провайдерам услуг",
+          "body": "Кнопки оплаты услуг, взаимодействие с биллингом и отчётность.",
+          "source_urls": [
+            "https://skysend.ru/partners/providers/free-connection.html"
+          ],
+          "visual_id": "provider-logos",
+          "visual_description": "Реальные логотипы и названия из providers-source.json. При отсутствии логотипа использовать название. Не подменять этот список вымышленными 5000 строками.",
+          "motion": "Содержимое доступно сразу в конечном состоянии. Все числа, easing, desktop/mobile и reduced-motion брать из data/motion-spec.json: contentAliases.none.",
+          "links": [
+            {
+              "label": "Провайдерам услуг",
+              "href": "/partners/providers/"
+            }
+          ],
+          "motion_alias": "none",
+          "motion_intent": "Содержимое доступно сразу в конечном состоянии."
+        },
+        {
+          "id": "suppliers",
+          "anchor_aliases": [],
+          "title": "Поставщикам товаров",
+          "body": "Каталог, заказы и продажи через SkyMarket.",
+          "source_urls": [
+            "https://skysend.ru/partners/suppliers/information.html"
+          ],
+          "visual_id": "commerce-flow",
+          "visual_description": "Реальные экраны каталога, карточки товара и оформления заказа из исходника; если нужного экрана нет, использовать явно подписанную схему процесса.",
+          "motion": "Один раз показать порядок статичных шагов; не имитировать выполнение заказа или платежа. Все числа, easing, desktop/mobile и reduced-motion брать из data/motion-spec.json: contentAliases.process-step.",
+          "links": [
+            {
+              "label": "Поставщикам товаров",
+              "href": "/partners/suppliers/"
+            }
+          ],
+          "motion_alias": "process-step",
+          "motion_intent": "Один раз показать порядок статичных шагов; не имитировать выполнение заказа или платежа."
+        },
+        {
+          "id": "retail",
+          "anchor_aliases": [],
+          "title": "Торговым сетям",
+          "body": "Устройства самообслуживания, заказы и информационные разделы.",
+          "source_urls": [
+            "https://skysend.ru/allvend.html"
+          ],
+          "visual_id": "terminal-product",
+          "visual_description": "Подлинное фото устройства из исходника, на нейтральном фоне. Название модели только по источнику. Без людей, 3D-реконструкции и декора.",
+          "motion": "Однократное появление содержимого секции ниже первого экрана. Все числа, easing, desktop/mobile и reduced-motion брать из data/motion-spec.json: contentAliases.section-reveal.",
+          "links": [
+            {
+              "label": "Торговым сетям",
+              "href": "/partners/retail/"
+            }
+          ],
+          "motion_alias": "section-reveal",
+          "motion_intent": "Однократное появление содержимого секции ниже первого экрана."
+        },
+        {
+          "id": "representatives",
+          "anchor_aliases": [],
+          "title": "Представителям",
+          "body": "Подключение участников и работа в регионе.",
+          "source_urls": [
+            "https://skysend.ru/partners/representatives/connecting-players.html"
+          ],
+          "visual_id": "payment-network",
+          "visual_description": "Плоская схема с подписанными участниками процесса из абзаца. Без выдуманной карты, координат и числа точек.",
+          "motion": "Однократное появление содержимого секции ниже первого экрана. Все числа, easing, desktop/mobile и reduced-motion брать из data/motion-spec.json: contentAliases.section-reveal.",
+          "links": [
+            {
+              "label": "Представителям",
+              "href": "/partners/representatives/"
+            }
+          ],
+          "motion_alias": "section-reveal",
+          "motion_intent": "Однократное появление содержимого секции ниже первого экрана."
+        },
+        {
+          "id": "gateways",
+          "anchor_aliases": [],
+          "title": "Шлюзовикам",
+          "body": "Приём платежей через XML-интеграцию.",
+          "source_urls": [
+            "https://skysend.ru/partners/gateway/xml.html"
+          ],
+          "visual_id": "xml-flow",
+          "visual_description": "Схема обмена с подписями типов данных из абзаца. Схема объясняет процесс; XML-теги и методы API не придумывать.",
+          "motion": "Однократное появление содержимого секции ниже первого экрана. Все числа, easing, desktop/mobile и reduced-motion брать из data/motion-spec.json: contentAliases.section-reveal.",
+          "links": [
+            {
+              "label": "Шлюзовикам",
+              "href": "/partners/gateways/"
+            }
+          ],
+          "motion_alias": "section-reveal",
+          "motion_intent": "Однократное появление содержимого секции ниже первого экрана."
+        }
+      ]
+    },
+    {
+      "path": "/about/",
+      "title": "О системе",
+      "lead": "SkySend — система приёма платежей. Для работы с системой используются платёжные терминалы, программы для кассира и Android, POS-терминалы и XML-интеграция.",
+      "source_urls": [
+        "https://skysend.ru/about/our-goals.html"
+      ],
+      "primary_cta": {
+        "label": "Связаться с компанией",
+        "href": "/contacts/"
+      },
+      "sections": [
+        {
+          "id": "system",
+          "anchor_aliases": [],
+          "title": "Как работает SkySend",
+          "body": "SkySend обеспечивает взаимодействие между поставщиками услуг и плательщиками через программное обеспечение и точки приёма платежей.",
+          "source_urls": [
+            "https://skysend.ru/"
+          ],
+          "visual_id": "html-process",
+          "visual_description": "HTML-схема: Плательщик → Терминал / РМА / XML → SkySend → Провайдер. Подписи связей: Платёж, Передача данных, Информация об оплате. Показывает принцип процесса; не имитирует живую операцию и фактическую топологию.",
+          "motion": "Содержимое доступно сразу в конечном состоянии. Все числа, easing, desktop/mobile и reduced-motion брать из data/motion-spec.json: contentAliases.none.",
+          "links": [],
+          "visual_nodes": [
+            {
+              "id": "n1",
+              "label": "Плательщик"
+            },
+            {
+              "id": "n2",
+              "label": "Терминал / РМА / XML"
+            },
+            {
+              "id": "n3",
+              "label": "SkySend"
+            },
+            {
+              "id": "n4",
+              "label": "Провайдер"
+            }
+          ],
+          "visual_edges": [
+            {
+              "from": "n1",
+              "to": "n2",
+              "label": "Платёж"
+            },
+            {
+              "from": "n2",
+              "to": "n3",
+              "label": "Передача данных"
+            },
+            {
+              "from": "n3",
+              "to": "n4",
+              "label": "Информация об оплате"
+            }
+          ],
+          "motion_alias": "none",
+          "motion_intent": "Содержимое доступно сразу в конечном состоянии."
+        },
+        {
+          "id": "directions",
+          "anchor_aliases": [],
+          "title": "Направления работы",
+          "body": "Система предлагает сотрудничество платёжным агентам, провайдерам услуг, поставщикам товаров, торговым сетям и представителям.",
+          "source_urls": [
+            "https://skysend.ru/about/our-goals.html"
+          ],
+          "visual_id": "html-process",
+          "visual_description": "HTML-схема: Агент / провайдер / поставщик / торговая сеть / представитель → SkySend. Подписи связей: Партнёрство. Показывает принцип процесса; не имитирует живую операцию и фактическую топологию.",
+          "motion": "Однократное появление содержимого секции ниже первого экрана. Все числа, easing, desktop/mobile и reduced-motion брать из data/motion-spec.json: contentAliases.section-reveal.",
+          "links": [
+            {
+              "label": "Партнёрам",
+              "href": "/partners/"
+            }
+          ],
+          "visual_nodes": [
+            {
+              "id": "n1",
+              "label": "Агент / провайдер / поставщик / торговая сеть / представитель"
+            },
+            {
+              "id": "n2",
+              "label": "SkySend"
+            }
+          ],
+          "visual_edges": [
+            {
+              "from": "n1",
+              "to": "n2",
+              "label": "Партнёрство"
+            }
+          ],
+          "motion_alias": "section-reveal",
+          "motion_intent": "Однократное появление содержимого секции ниже первого экрана."
+        },
+        {
+          "id": "history",
+          "anchor_aliases": [],
+          "title": "История",
+          "body": "Компания начала работу в мае 2006 года с производства платёжных терминалов FastPay и разработки собственного ПО и операционной системы.",
+          "source_urls": [
+            "https://skysend.ru/about/history.html"
+          ],
+          "visual_id": "terminal-product",
+          "visual_description": "Подлинное фото устройства из исходника, на нейтральном фоне. Название модели только по источнику. Без людей, 3D-реконструкции и декора.",
+          "motion": "Однократное появление содержимого секции ниже первого экрана. Все числа, easing, desktop/mobile и reduced-motion брать из data/motion-spec.json: contentAliases.section-reveal.",
+          "links": [
+            {
+              "label": "История SkySend",
+              "href": "/about/history/"
+            }
+          ],
+          "motion_alias": "section-reveal",
+          "motion_intent": "Однократное появление содержимого секции ниже первого экрана."
+        },
+        {
+          "id": "information",
+          "anchor_aliases": [],
+          "title": "Информация о компании",
+          "body": "Цели, история, руководство и контакты SkySend.",
+          "source_urls": [
+            "https://skysend.ru/about.html"
+          ],
+          "visual_id": "contact-panel",
+          "visual_description": "Кликабельные текстовые контакты с простыми SVG-иконками. Без стокового оператора, карты с неподтверждённым адресом и декоративной фотографии.",
+          "motion": "Содержимое доступно сразу в конечном состоянии. Все числа, easing, desktop/mobile и reduced-motion брать из data/motion-spec.json: contentAliases.none.",
+          "links": [
+            {
+              "label": "Наши цели",
+              "href": "/about/goals/"
+            },
+            {
+              "label": "Руководство",
+              "href": "/about/team/"
+            },
+            {
+              "label": "Контакты",
+              "href": "/contacts/"
+            }
+          ],
+          "motion_alias": "none",
+          "motion_intent": "Содержимое доступно сразу в конечном состоянии."
+        }
+      ]
+    },
+    {
+      "path": "/about/goals/",
+      "title": "Наши цели",
+      "lead": "Развитие SkySend связано с партнёрской сетью, приёмом платежей и заказом товаров. Ниже приведены направления, сформулированные на исходном сайте.",
+      "source_urls": [
+        "https://skysend.ru/about/our-goals.html"
+      ],
+      "primary_cta": {
+        "label": "Партнёрам",
+        "href": "/partners/"
+      },
+      "sections": [
+        {
+          "id": "partners",
+          "anchor_aliases": [],
+          "title": "Партнёрская сеть",
+          "body": "Развитие партнёрства в других странах и представительства SkySend в регионах России.",
+          "source_urls": [
+            "https://skysend.ru/about/our-goals.html"
+          ],
+          "visual_id": "html-process",
+          "visual_description": "HTML-схема: Партнёр / представитель → SkySend. Подписи связей: Развитие направлений. Показывает принцип процесса; не имитирует живую операцию и фактическую топологию.",
+          "motion": "Содержимое доступно сразу в конечном состоянии. Все числа, easing, desktop/mobile и reduced-motion брать из data/motion-spec.json: contentAliases.none.",
+          "links": [],
+          "visual_nodes": [
+            {
+              "id": "n1",
+              "label": "Партнёр / представитель"
+            },
+            {
+              "id": "n2",
+              "label": "SkySend"
+            }
+          ],
+          "visual_edges": [
+            {
+              "from": "n1",
+              "to": "n2",
+              "label": "Развитие направлений"
+            }
+          ],
+          "motion_alias": "none",
+          "motion_intent": "Содержимое доступно сразу в конечном состоянии."
+        },
+        {
+          "id": "skymarket",
+          "anchor_aliases": [],
+          "title": "Заказ товаров",
+          "body": "Развитие SkyMarket и подключение поставщиков товаров в городах присутствия.",
+          "source_urls": [
+            "https://skysend.ru/about/our-goals.html"
+          ],
+          "visual_id": "commerce-flow",
+          "visual_description": "Реальные экраны каталога, карточки товара и оформления заказа из исходника; если нужного экрана нет, использовать явно подписанную схему процесса.",
+          "motion": "Один раз показать порядок статичных шагов; не имитировать выполнение заказа или платежа. Все числа, easing, desktop/mobile и reduced-motion брать из data/motion-spec.json: contentAliases.process-step.",
+          "links": [],
+          "motion_alias": "process-step",
+          "motion_intent": "Один раз показать порядок статичных шагов; не имитировать выполнение заказа или платежа."
+        },
+        {
+          "id": "finger",
+          "anchor_aliases": [],
+          "title": "Кошелёк FINGER",
+          "body": "Развитие онлайн-кошелька FINGER и его использования для оплаты услуг.",
+          "source_urls": [
+            "https://skysend.ru/about/our-goals.html"
+          ],
+          "visual_id": "finger-product",
+          "visual_description": "Подлинный экран или знак FINGER из исходника. Показать связь с браузерным кошельком; не добавлять неподтверждённые функции приложения.",
+          "motion": "Увеличение подлинного изображения по явному действию; галерея только при наличии отдельных реальных кадров, без автопрокрутки. Все числа, easing, desktop/mobile и reduced-motion брать из data/motion-spec.json: contentAliases.gallery-change.",
+          "links": [
+            {
+              "label": "Приложение FINGER",
+              "href": "/software/finger/"
+            }
+          ],
+          "motion_alias": "gallery-change",
+          "motion_intent": "Увеличение подлинного изображения по явному действию; галерея только при наличии отдельных реальных кадров, без автопрокрутки."
+        }
+      ]
+    },
+    {
+      "path": "/about/history/",
+      "title": "История SkySend",
+      "lead": "Основные этапы из истории компании и продуктов.",
+      "source_urls": [
+        "https://skysend.ru/about/history.html"
+      ],
+      "primary_cta": {
+        "label": "О системе",
+        "href": "/about/"
+      },
+      "sections": [
+        {
+          "id": "2006",
+          "anchor_aliases": [],
+          "title": "Май 2006. Производство терминалов FastPay",
+          "body": "Началось производство платёжных терминалов FastPay и разработка собственного ПО и ОС FastSYS. Первые терминалы поступили в продажу к концу августа 2006 года.",
+          "source_urls": [
+            "https://skysend.ru/about/history.html"
+          ],
+          "visual_id": "terminal-product",
+          "visual_description": "Изображение продукта использовать только как иллюстрацию типа устройства. Не подписывать современный исходный кадр как фотографию указанного исторического года. При отсутствии подходящего архивного фото оставить типографическую строку события.",
+          "motion": "Содержимое доступно сразу в конечном состоянии. Все числа, easing, desktop/mobile и reduced-motion брать из data/motion-spec.json: contentAliases.none.",
+          "links": [],
+          "motion_alias": "none",
+          "motion_intent": "Содержимое доступно сразу в конечном состоянии."
+        },
+        {
+          "id": "2007-2008",
+          "anchor_aliases": [],
+          "title": "2007–2008. Запуск SkySend",
+          "body": "Разработана и запущена система приёма платежей под брендом SkySend. В терминалах FastPay появилась оплата местных и региональных провайдеров.",
+          "source_urls": [
+            "https://skysend.ru/about/history.html"
+          ],
+          "visual_id": "payment-network",
+          "visual_description": "Плоская схема с подписанными участниками процесса из абзаца. Без выдуманной карты, координат и числа точек.",
+          "motion": "Однократное появление содержимого секции ниже первого экрана. Все числа, easing, desktop/mobile и reduced-motion брать из data/motion-spec.json: contentAliases.section-reveal.",
+          "links": [],
+          "motion_alias": "section-reveal",
+          "motion_intent": "Однократное появление содержимого секции ниже первого экрана."
+        },
+        {
+          "id": "2009",
+          "anchor_aliases": [],
+          "title": "2009. Терминалы FastPay Beauty",
+          "body": "Организовано производство платёжных терминалов FastPay Beauty.",
+          "source_urls": [
+            "https://skysend.ru/about/history.html"
+          ],
+          "visual_id": "terminal-product",
+          "visual_description": "Изображение продукта использовать только как иллюстрацию типа устройства. Не подписывать современный исходный кадр как фотографию указанного исторического года. При отсутствии подходящего архивного фото оставить типографическую строку события.",
+          "motion": "Однократное появление содержимого секции ниже первого экрана. Все числа, easing, desktop/mobile и reduced-motion брать из data/motion-spec.json: contentAliases.section-reveal.",
+          "links": [],
+          "motion_alias": "section-reveal",
+          "motion_intent": "Однократное появление содержимого секции ниже первого экрана."
+        },
+        {
+          "id": "2012-fastsys",
+          "anchor_aliases": [],
+          "title": "Март 2012. FastSYS4",
+          "body": "Разработана встроенная операционная система FastSYS4 на базе ядра Linux.",
+          "source_urls": [
+            "https://skysend.ru/about/history.html"
+          ],
+          "visual_id": "terminal-product",
+          "visual_description": "Изображение продукта использовать только как иллюстрацию типа устройства. Не подписывать современный исходный кадр как фотографию указанного исторического года. При отсутствии подходящего архивного фото оставить типографическую строку события.",
+          "motion": "Однократное появление содержимого секции ниже первого экрана. Все числа, easing, desktop/mobile и reduced-motion брать из data/motion-spec.json: contentAliases.section-reveal.",
+          "links": [],
+          "motion_alias": "section-reveal",
+          "motion_intent": "Однократное появление содержимого секции ниже первого экрана."
+        },
+        {
+          "id": "2012-skymarket",
+          "anchor_aliases": [],
+          "title": "Ноябрь 2012. SkyMarket",
+          "body": "Разработан и запущен модуль заказа товаров на платёжных терминалах.",
+          "source_urls": [
+            "https://skysend.ru/about/history.html"
+          ],
+          "visual_id": "commerce-flow",
+          "visual_description": "Реальные экраны каталога, карточки товара и оформления заказа из исходника; если нужного экрана нет, использовать явно подписанную схему процесса.",
+          "motion": "Один раз показать порядок статичных шагов; не имитировать выполнение заказа или платежа. Все числа, easing, desktop/mobile и reduced-motion брать из data/motion-spec.json: contentAliases.process-step.",
+          "links": [],
+          "motion_alias": "process-step",
+          "motion_intent": "Один раз показать порядок статичных шагов; не имитировать выполнение заказа или платежа."
+        },
+        {
+          "id": "2013",
+          "anchor_aliases": [],
+          "title": "Май 2013. Внедрение в Туркменистане",
+          "body": "Технологии группы внедрены совместно с компанией SAZ HYZMAT в Республике Туркменистан.",
+          "source_urls": [
+            "https://skysend.ru/about/history.html"
+          ],
+          "visual_id": "payment-network",
+          "visual_description": "Плоская схема с подписанными участниками процесса из абзаца. Без выдуманной карты, координат и числа точек.",
+          "motion": "Однократное появление содержимого секции ниже первого экрана. Все числа, easing, desktop/mobile и reduced-motion брать из data/motion-spec.json: contentAliases.section-reveal.",
+          "links": [],
+          "motion_alias": "section-reveal",
+          "motion_intent": "Однократное появление содержимого секции ниже первого экрана."
+        },
+        {
+          "id": "2014-po",
+          "anchor_aliases": [],
+          "title": "Март 2014. ПО пятого поколения",
+          "body": "Завершена разработка ПО платёжных терминалов пятого поколения с настройкой оформления и положения кнопок.",
+          "source_urls": [
+            "https://skysend.ru/about/history.html"
+          ],
+          "visual_id": "terminal-screen",
+          "visual_description": "Реальный экран соответствующей программы из исходника. Если нужного экрана нет, схема возможностей с явной подписью; не рисовать фиктивный кабинет, суммы, графики и статусы.",
+          "motion": "Увеличение подлинного изображения по явному действию; галерея только при наличии отдельных реальных кадров, без автопрокрутки. Все числа, easing, desktop/mobile и reduced-motion брать из data/motion-spec.json: contentAliases.gallery-change.",
+          "links": [],
+          "motion_alias": "gallery-change",
+          "motion_intent": "Увеличение подлинного изображения по явному действию; галерея только при наличии отдельных реальных кадров, без автопрокрутки."
+        },
+        {
+          "id": "2014-finger",
+          "anchor_aliases": [],
+          "title": "Май 2014. Онлайн-кошелёк FINGER",
+          "body": "На терминалах внедрён модуль онлайн-кошелька FINGER, включая идентификацию и расчёты отпечатком пальца.",
+          "source_urls": [
+            "https://skysend.ru/about/history.html"
+          ],
+          "visual_id": "terminal-product",
+          "visual_description": "Изображение продукта использовать только как иллюстрацию типа устройства. Не подписывать современный исходный кадр как фотографию указанного исторического года. При отсутствии подходящего архивного фото оставить типографическую строку события.",
+          "motion": "Однократное появление содержимого секции ниже первого экрана. Все числа, easing, desktop/mobile и reduced-motion брать из data/motion-spec.json: contentAliases.section-reveal.",
+          "links": [],
+          "motion_alias": "section-reveal",
+          "motion_intent": "Однократное появление содержимого секции ниже первого экрана."
+        }
+      ]
+    },
+    {
+      "path": "/about/team/",
+      "title": "Руководство",
+      "lead": "В этом разделе сохранены сведения о руководстве из исходных материалов SkySend. По вопросам сотрудничества обращайтесь в центральный офис.",
+      "source_urls": [
+        "https://skysend.ru/about/leaders.html",
+        "https://skysend.ru/about/geografiy.html"
+      ],
+      "primary_cta": {
+        "label": "Контакты",
+        "href": "/contacts/"
+      },
+      "sections": [
+        {
+          "id": "stepina-anna-anatolevna",
+          "anchor_aliases": [],
+          "title": "Степина Анна Анатольевна",
+          "body": "Главный бухгалтер ООО «СкайСенд». Сведения из исходной страницы руководства.",
+          "source_urls": [
+            "https://skysend.ru/about/leaders/stepina-anna-anatolevna.html"
+          ],
+          "visual_id": "text-only",
+          "visual_description": "Открытый типографический блок имени/должности или датированного сообщения. Без случайного портрета, контактной иллюстрации и декоративного изображения.",
+          "motion": "Содержимое доступно сразу в конечном состоянии. Все числа, easing, desktop/mobile и reduced-motion брать из data/motion-spec.json: contentAliases.none.",
+          "links": [],
+          "motion_alias": "none",
+          "motion_intent": "Содержимое доступно сразу в конечном состоянии."
+        },
+        {
+          "id": "ignatev-alexey-nikolaevich",
+          "anchor_aliases": [],
+          "title": "Игнатьев Алексей Николаевич",
+          "body": "Основатель системы приёма платежей SkySend. В исходной странице указан как председатель совета директоров группы компаний «Информ-Системы».",
+          "source_urls": [
+            "https://skysend.ru/about/leaders/ignatev-alexey-nikolaevich.html"
+          ],
+          "visual_id": "text-only",
+          "visual_description": "Открытый типографический блок имени/должности или датированного сообщения. Без случайного портрета, контактной иллюстрации и декоративного изображения.",
+          "motion": "Содержимое доступно сразу в конечном состоянии. Все числа, easing, desktop/mobile и reduced-motion брать из data/motion-spec.json: contentAliases.none.",
+          "links": [],
+          "motion_alias": "none",
+          "motion_intent": "Содержимое доступно сразу в конечном состоянии."
+        },
+        {
+          "id": "office",
+          "anchor_aliases": [],
+          "title": "Центральный офис",
+          "body": "По вопросам сотрудничества: +7 (861) 201-12-21.",
+          "source_urls": [
+            "https://skysend.ru/about/geografiy.html"
+          ],
+          "visual_id": "contact-panel",
+          "visual_description": "Кликабельные текстовые контакты с простыми SVG-иконками. Без стокового оператора, карты с неподтверждённым адресом и декоративной фотографии.",
+          "motion": "Содержимое доступно сразу в конечном состоянии. Все числа, easing, desktop/mobile и reduced-motion брать из data/motion-spec.json: contentAliases.none.",
+          "links": [
+            {
+              "label": "+7 (861) 201-12-21",
+              "href": "tel:+78612011221"
+            },
+            {
+              "label": "Контакты",
+              "href": "/contacts/"
+            }
+          ],
+          "motion_alias": "none",
+          "motion_intent": "Содержимое доступно сразу в конечном состоянии."
+        }
+      ]
+    },
+    {
+      "path": "/about/careers/",
+      "title": "Работа в компании",
+      "lead": "Если вас интересует работа в компании, свяжитесь с отделом по работе с персоналом, чтобы уточнить вакансии и способ отправки резюме.",
+      "source_urls": [
+        "https://skysend.ru/about/jobs.html"
+      ],
+      "primary_cta": {
+        "label": "Позвонить",
+        "href": "tel:+78612011221"
+      },
+      "sections": [
+        {
+          "id": "hr",
+          "anchor_aliases": [],
+          "title": "Отдел по работе с персоналом",
+          "body": "Телефон: +7 (861) 201-12-21.",
+          "source_urls": [
+            "https://skysend.ru/about/jobs.html"
+          ],
+          "visual_id": "contact-panel",
+          "visual_description": "Кликабельные текстовые контакты с простыми SVG-иконками. Без стокового оператора, карты с неподтверждённым адресом и декоративной фотографии.",
+          "motion": "Содержимое доступно сразу в конечном состоянии. Все числа, easing, desktop/mobile и reduced-motion брать из data/motion-spec.json: contentAliases.none.",
+          "links": [
+            {
+              "label": "Позвонить",
+              "href": "tel:+78612011221"
+            }
+          ],
+          "motion_alias": "none",
+          "motion_intent": "Содержимое доступно сразу в конечном состоянии."
+        },
+        {
+          "id": "resume",
+          "anchor_aliases": [],
+          "title": "Резюме",
+          "body": "На исходном сайте предусмотрена отправка готового резюме или заявки на интересующую должность. Текущий способ отправки уточняйте по телефону.",
+          "source_urls": [
+            "https://skysend.ru/about/jobs.html"
+          ],
+          "visual_id": "contact-panel",
+          "visual_description": "Кликабельные текстовые контакты с простыми SVG-иконками. Без стокового оператора, карты с неподтверждённым адресом и декоративной фотографии.",
+          "motion": "Содержимое доступно сразу в конечном состоянии. Все числа, easing, desktop/mobile и reduced-motion брать из data/motion-spec.json: contentAliases.none.",
+          "links": [],
+          "motion_alias": "none",
+          "motion_intent": "Содержимое доступно сразу в конечном состоянии."
+        }
+      ]
+    },
+    {
+      "path": "/about/news/",
+      "title": "Новости",
+      "lead": "Архив информационных сообщений SkySend.",
+      "source_urls": [
+        "https://skysend.ru/about/news.html"
+      ],
+      "primary_cta": {
+        "label": "Поддержка",
+        "href": "/support/"
+      },
+      "sections": [
+        {
+          "id": "205-18",
+          "anchor_aliases": [],
+          "title": "15 мая 2024. Компании исполняется 18 лет",
+          "body": "15 мая 2024 года группа компаний «Информ-Системы» отметила 18-летие.",
+          "source_urls": [
+            "https://skysend.ru/about/news/205-18.html"
+          ],
+          "visual_id": "text-only",
+          "visual_description": "Открытый типографический блок имени/должности или датированного сообщения. Без случайного портрета, контактной иллюстрации и декоративного изображения.",
+          "motion": "Содержимое доступно сразу в конечном состоянии. Все числа, easing, desktop/mobile и reduced-motion брать из data/motion-spec.json: contentAliases.none.",
+          "links": [],
+          "motion_alias": "none",
+          "motion_intent": "Содержимое доступно сразу в конечном состоянии."
+        },
+        {
+          "id": "202-support-older-versions",
+          "anchor_aliases": [],
+          "title": "10 октября 2022. Поддержка старых версий ПО",
+          "body": "В сообщении от 10 октября 2022 года компания сообщила о завершении поддержки ПО пятого поколения 10 декабря 2020 года и рекомендовала переход на ALLVEND.",
+          "source_urls": [
+            "https://skysend.ru/about/news/202-support-older-versions.html"
+          ],
+          "visual_id": "text-only",
+          "visual_description": "Открытый типографический блок имени/должности или датированного сообщения. Без случайного портрета, контактной иллюстрации и декоративного изображения.",
+          "motion": "Содержимое доступно сразу в конечном состоянии. Все числа, easing, desktop/mobile и reduced-motion брать из data/motion-spec.json: contentAliases.none.",
+          "links": [
+            {
+              "label": "ПО ALLVEND",
+              "href": "/software/allvend/"
+            },
+            {
+              "label": "Поддержка",
+              "href": "/support/"
+            }
+          ],
+          "motion_alias": "none",
+          "motion_intent": "Содержимое доступно сразу в конечном состоянии."
+        }
+      ]
+    },
+    {
+      "path": "/support/",
+      "title": "Поддержка SkySend",
+      "lead": "Сведения о продуктах, руководства и помощь по работе с системой SkySend.",
+      "source_urls": [
+        "https://skysend.ru/about/feedback.html"
+      ],
+      "primary_cta": {
+        "label": "Написать в Telegram",
+        "href": "https://t.me/infsysgroup"
+      },
+      "sections": [
+        {
+          "id": "contacts",
+          "anchor_aliases": [],
+          "title": "Связаться с поддержкой",
+          "body": "Telegram: @infsysgroup. Электронная почта: support@inf-sys.ru. Общий телефон: +7 (800) 555-25-36.",
+          "source_urls": [
+            "https://skysend.ru/about/feedback.html",
+            "https://skysend.ru/about/geografiy.html"
+          ],
+          "visual_id": "contact-panel",
+          "visual_description": "Кликабельные текстовые контакты с простыми SVG-иконками. Без стокового оператора, карты с неподтверждённым адресом и декоративной фотографии.",
+          "motion": "Содержимое доступно сразу в конечном состоянии. Все числа, easing, desktop/mobile и reduced-motion брать из data/motion-spec.json: contentAliases.none.",
+          "links": [
+            {
+              "label": "Написать в Telegram",
+              "href": "https://t.me/infsysgroup"
+            },
+            {
+              "label": "Написать по почте",
+              "href": "mailto:support@inf-sys.ru"
+            },
+            {
+              "label": "Позвонить",
+              "href": "tel:+78005552536"
+            }
+          ],
+          "motion_alias": "none",
+          "motion_intent": "Содержимое доступно сразу в конечном состоянии."
+        },
+        {
+          "id": "questions",
+          "anchor_aliases": [],
+          "title": "Помощь в работе",
+          "body": "Специалисты консультируют по проведению платежей, техническому взаимодействию и финансовым расчётам.",
+          "source_urls": [
+            "https://skysend.ru/partners/gateway/round-the-clock-support.html"
+          ],
+          "visual_id": "contact-panel",
+          "visual_description": "Кликабельные текстовые контакты с простыми SVG-иконками. Без стокового оператора, карты с неподтверждённым адресом и декоративной фотографии.",
+          "motion": "Содержимое доступно сразу в конечном состоянии. Все числа, easing, desktop/mobile и reduced-motion брать из data/motion-spec.json: contentAliases.none.",
+          "links": [],
+          "motion_alias": "none",
+          "motion_intent": "Содержимое доступно сразу в конечном состоянии."
+        },
+        {
+          "id": "downloads",
+          "anchor_aliases": [],
+          "title": "ПО и руководства",
+          "body": "Программы, инструкции по установке и эксплуатации, документы системы собраны в разделе «Скачать».",
+          "source_urls": [
+            "https://skysend.ru/download.html"
+          ],
+          "visual_id": "download-list",
+          "visual_description": "HTML-реестр из data/download-catalog.json: название материала, формат, ссылка. Никакого изображения РМА или декоративного документа. Если у материала нет URL, показывать контакт поддержки вместо кнопки скачивания.",
+          "motion": "Однократное появление содержимого секции ниже первого экрана. Все числа, easing, desktop/mobile и reduced-motion брать из data/motion-spec.json: contentAliases.section-reveal.",
+          "links": [
+            {
+              "label": "Скачать",
+              "href": "/downloads/"
+            },
+            {
+              "label": "ПО",
+              "href": "/software/"
+            }
+          ],
+          "motion_alias": "section-reveal",
+          "motion_intent": "Однократное появление содержимого секции ниже первого экрана."
+        }
+      ]
+    },
+    {
+      "path": "/contacts/",
+      "title": "Контакты",
+      "lead": "Центральный офис и служба поддержки SkySend.",
+      "source_urls": [
+        "https://skysend.ru/about/geografiy.html"
+      ],
+      "primary_cta": {
+        "label": "Написать в отдел продаж",
+        "href": "mailto:sales@inf-sys.ru"
+      },
+      "sections": [
+        {
+          "id": "office",
+          "anchor_aliases": [],
+          "title": "Центральный офис",
+          "body": "ООО «СкайСенд». Телефон: +7 (861) 201-12-21. Отдел продаж: +7 (800) 555-25-36, sales@inf-sys.ru.",
+          "source_urls": [
+            "https://skysend.ru/about/geografiy.html"
+          ],
+          "visual_id": "contact-panel",
+          "visual_description": "Кликабельные текстовые контакты с простыми SVG-иконками. Без стокового оператора, карты с неподтверждённым адресом и декоративной фотографии.",
+          "motion": "Содержимое доступно сразу в конечном состоянии. Все числа, easing, desktop/mobile и reduced-motion брать из data/motion-spec.json: contentAliases.none.",
+          "links": [
+            {
+              "label": "+7 (861) 201-12-21",
+              "href": "tel:+78612011221"
+            },
+            {
+              "label": "+7 (800) 555-25-36",
+              "href": "tel:+78005552536"
+            },
+            {
+              "label": "sales@inf-sys.ru",
+              "href": "mailto:sales@inf-sys.ru"
+            }
+          ],
+          "motion_alias": "none",
+          "motion_intent": "Содержимое доступно сразу в конечном состоянии."
+        },
+        {
+          "id": "support",
+          "anchor_aliases": [],
+          "title": "Служба поддержки",
+          "body": "Электронная почта: support@inf-sys.ru. Telegram: @infsysgroup.",
+          "source_urls": [
+            "https://skysend.ru/about/geografiy.html",
+            "https://skysend.ru/about/feedback.html"
+          ],
+          "visual_id": "contact-panel",
+          "visual_description": "Кликабельные текстовые контакты с простыми SVG-иконками. Без стокового оператора, карты с неподтверждённым адресом и декоративной фотографии.",
+          "motion": "Содержимое доступно сразу в конечном состоянии. Все числа, easing, desktop/mobile и reduced-motion брать из data/motion-spec.json: contentAliases.none.",
+          "links": [
+            {
+              "label": "support@inf-sys.ru",
+              "href": "mailto:support@inf-sys.ru"
+            },
+            {
+              "label": "@infsysgroup",
+              "href": "https://t.me/infsysgroup"
+            }
+          ],
+          "motion_alias": "none",
+          "motion_intent": "Содержимое доступно сразу в конечном состоянии."
+        },
+        {
+          "id": "address",
+          "anchor_aliases": [],
+          "title": "Адрес офиса",
+          "body": "Адрес офиса уточняйте по телефону.",
+          "source_urls": [
+            "https://skysend.ru/",
+            "https://skysend.ru/about/geografiy.html"
+          ],
+          "visual_id": "contact-panel",
+          "visual_description": "Телефон и текст. Карта и маркер адреса не выводятся, пока не получен единый проверенный адрес.",
+          "motion": "Содержимое доступно сразу в конечном состоянии. Все числа, easing, desktop/mobile и reduced-motion брать из data/motion-spec.json: contentAliases.none.",
+          "links": [
+            {
+              "label": "Уточнить адрес",
+              "href": "tel:+78612011221"
+            }
+          ],
+          "motion_alias": "none",
+          "motion_intent": "Содержимое доступно сразу в конечном состоянии."
+        },
+        {
+          "id": "regional",
+          "anchor_aliases": [],
+          "title": "Региональные контакты",
+          "body": "Контакт представителя в вашем регионе уточняйте в центральном офисе.",
+          "source_urls": [
+            "https://skysend.ru/about/geografiy.html"
+          ],
+          "visual_id": "contact-panel",
+          "visual_description": "Кликабельные текстовые контакты с простыми SVG-иконками. Без стокового оператора, карты с неподтверждённым адресом и декоративной фотографии.",
+          "motion": "Содержимое доступно сразу в конечном состоянии. Все числа, easing, desktop/mobile и reduced-motion брать из data/motion-spec.json: contentAliases.none.",
+          "links": [
+            {
+              "label": "Позвонить в центральный офис",
+              "href": "tel:+78612011221"
+            }
+          ],
+          "motion_alias": "none",
+          "motion_intent": "Содержимое доступно сразу в конечном состоянии."
+        }
+      ]
+    },
+    {
+      "path": "/connect/",
+      "title": "Подключение к SkySend",
+      "lead": "Выберите направление работы с системой SkySend или свяжитесь с отделом продаж.",
+      "source_urls": [
+        "https://skysend.ru/partners.html",
+        "https://skysend.ru/about/geografiy.html"
+      ],
+      "primary_cta": {
+        "label": "Перейти к регистрации",
+        "href": "https://cluster.skysend.ru:6716/#/"
+      },
+      "sections": [
+        {
+          "id": "role",
+          "anchor_aliases": [],
+          "title": "Направление работы",
+          "body": "Платёжные агенты, провайдеры услуг, поставщики товаров, торговые сети, представители и шлюзовики.",
+          "source_urls": [
+            "https://skysend.ru/partners.html",
+            "https://skysend.ru/"
+          ],
+          "visual_id": "payment-network",
+          "visual_description": "Плоская схема с подписанными участниками процесса из абзаца. Без выдуманной карты, координат и числа точек.",
+          "motion": "Содержимое доступно сразу в конечном состоянии. Все числа, easing, desktop/mobile и reduced-motion брать из data/motion-spec.json: contentAliases.none.",
+          "links": [
+            {
+              "label": "Выбрать направление",
+              "href": "/partners/"
+            }
+          ],
+          "motion_alias": "none",
+          "motion_intent": "Содержимое доступно сразу в конечном состоянии."
+        },
+        {
+          "id": "registration",
+          "anchor_aliases": [],
+          "title": "Регистрация",
+          "body": "Регистрация участника выполняется в системе SkySend. Если страница регистрации не открывается, обратитесь в отдел продаж.",
+          "source_urls": [
+            "https://skysend.ru/exit.php?ml=1"
+          ],
+          "visual_id": "contact-panel",
+          "visual_description": "Кликабельные текстовые контакты с простыми SVG-иконками. Без стокового оператора, карты с неподтверждённым адресом и декоративной фотографии.",
+          "motion": "Содержимое доступно сразу в конечном состоянии. Все числа, easing, desktop/mobile и reduced-motion брать из data/motion-spec.json: contentAliases.none.",
+          "links": [
+            {
+              "label": "Перейти к регистрации",
+              "href": "https://cluster.skysend.ru:6716/#/"
+            },
+            {
+              "label": "Отдел продаж",
+              "href": "mailto:sales@inf-sys.ru"
+            },
+            {
+              "label": "Позвонить",
+              "href": "tel:+78005552536"
+            }
+          ],
+          "motion_alias": "none",
+          "motion_intent": "Содержимое доступно сразу в конечном состоянии."
+        },
+        {
+          "id": "existing",
+          "anchor_aliases": [],
+          "title": "Вход для участников",
+          "body": "Для входа используйте существующий кабинет SkySend. Если кабинет не открывается, обратитесь в службу поддержки.",
+          "source_urls": [
+            "https://skysend.ru/exit.php?ml=1"
+          ],
+          "visual_id": "contact-panel",
+          "visual_description": "Кликабельные текстовые контакты с простыми SVG-иконками. Без стокового оператора, карты с неподтверждённым адресом и декоративной фотографии.",
+          "motion": "Содержимое доступно сразу в конечном состоянии. Все числа, easing, desktop/mobile и reduced-motion брать из data/motion-spec.json: contentAliases.none.",
+          "links": [
+            {
+              "label": "Открыть кабинет SkySend",
+              "href": "https://control.skysend.ru:6710"
+            },
+            {
+              "label": "Связаться с поддержкой",
+              "href": "/support/"
+            }
+          ],
+          "motion_alias": "none",
+          "motion_intent": "Содержимое доступно сразу в конечном состоянии."
+        },
+        {
+          "id": "documents",
+          "anchor_aliases": [],
+          "title": "Документы",
+          "body": "Договоры и правила системы доступны в разделе «Скачать».",
+          "source_urls": [
+            "https://skysend.ru/download.html"
+          ],
+          "visual_id": "download-list",
+          "visual_description": "HTML-реестр из data/download-catalog.json: название материала, формат, ссылка. Никакого изображения РМА или декоративного документа. Если у материала нет URL, показывать контакт поддержки вместо кнопки скачивания.",
+          "motion": "Однократное появление содержимого секции ниже первого экрана. Все числа, easing, desktop/mobile и reduced-motion брать из data/motion-spec.json: contentAliases.section-reveal.",
+          "links": [
+            {
+              "label": "Документы",
+              "href": "/downloads/#system-documents"
+            }
+          ],
+          "motion_alias": "section-reveal",
+          "motion_intent": "Однократное появление содержимого секции ниже первого экрана."
+        }
+      ]
+    }
+  ],
+  "editorial_decisions": [
+    "Адрес по умолчанию: «Адрес офиса уточняйте по телефону». Главная указывает Монтажников 1/4, контакты Красных Партизан 218; индексы также расходятся.",
+    "Публичная копия использует support@inf-sys.ru из контактов, @infsysgroup из поддержки и +78005552536 из шапки. /about/feedback.html содержит support@isg.dev; старые POS/шлюзовые статьи другой телефон. Альтернативы сохранены в аудите.",
+    "Состав руководства не подтверждён на 2026. Доступны две биографии с атрибуцией источнику; три других URL имеют soft 404.",
+    "Публикуется контакт отдела кадров. Старые должности не выдаются за открытые вакансии.",
+    "Юридические сведения и банковские реквизиты сохранены в архиве; их актуальность не установлена. Не обновлять догадками.",
+    "В новостях сохраняются юбилей 2024 и техническое уведомление 2022. Подключение терминалов 2024 и бизнес-миссия 2022 исключены как промо; в истории убраны автопробег, «Сладкие условия», рекламная платформа и проект «0%».",
+    "В /exit.php?ml=1 обнаружены регистрационная ссылка https://cluster.skysend.ru:6716/#/ и POST action формы https://control.skysend.ru:6710. Регистрация дала ошибку TLS в среде аудита, кабинет ошибку DNS. GET кабинета не подтверждён; ссылки сопровождены работающим fallback поддержки. Пароли/формы не отправлялись, проверка сертификата не отключалась.",
+    "Промо-части статей удалены: гарантии дохода, скидки, бесплатность, абсолютные обещания, неподтверждённые сроки. Функциональные механизмы сохранены с source URL. Противоречивые 1000/10000 транзакций в секунду в публичную копию не переносятся."
+  ]
+}

@@ -1,0 +1,151 @@
+{
+  "source": "https://skysend.ru/providers.php",
+  "retrieved_date": "2026-09-10",
+  "note": "16 examples from source catalogue; not a claim of current service availability. No Steam in current source catalogue snapshot; do not invent its entry.",
+  "items": [
+    {
+      "id": "asset-7702a70a732d",
+      "source_url": "http://cluster.skysend.ru:6721/image.php?provider=359",
+      "path": "assets/originals/providers/provider-359.png",
+      "width": 150,
+      "height": 150,
+      "provider_name": "МТС Оплата по лицевому счёту",
+      "provider_category": "Сотовая связь"
+    },
+    {
+      "id": "asset-739f765f9206",
+      "source_url": "http://cluster.skysend.ru:6721/image.php?provider=6581",
+      "path": "assets/originals/providers/provider-6581.png",
+      "width": 150,
+      "height": 150,
+      "provider_name": "Билайн ТВ",
+      "provider_category": "Кабельное ТВ"
+    },
+    {
+      "id": "asset-8bef0ad96944",
+      "source_url": "http://cluster.skysend.ru:6721/image.php?provider=7",
+      "path": "assets/originals/providers/provider-7.png",
+      "width": 150,
+      "height": 150,
+      "provider_name": "НТВ-Плюс",
+      "provider_category": "Кабельное ТВ"
+    },
+    {
+      "id": "asset-5f23a0b51050",
+      "source_url": "http://cluster.skysend.ru:6721/image.php?provider=258",
+      "path": "assets/originals/providers/provider-258.png",
+      "width": 150,
+      "height": 150,
+      "provider_name": "Триколор Пополнить лицевой счет",
+      "provider_category": "Кабельное ТВ"
+    },
+    {
+      "id": "asset-37763ed07c7f",
+      "source_url": "http://cluster.skysend.ru:6721/image.php?provider=1134",
+      "path": "assets/originals/providers/provider-1134.png",
+      "width": 150,
+      "height": 150,
+      "provider_name": "Win Mobile (К-телеком)",
+      "provider_category": "Сотовая связь"
+    },
+    {
+      "id": "asset-0f133b1e5560",
+      "source_url": "http://cluster.skysend.ru:6721/image.php?provider=631",
+      "path": "assets/originals/providers/provider-631.png",
+      "width": 210,
+      "height": 33,
+      "provider_name": "Сбербанк",
+      "provider_category": "Банки и кредиты"
+    },
+    {
+      "id": "asset-748a60447633",
+      "source_url": "http://cluster.skysend.ru:6721/image.php?provider=241",
+      "path": "assets/originals/providers/provider-241.png",
+      "width": 149,
+      "height": 51,
+      "provider_name": "Т-Банк",
+      "provider_category": "Банки и кредиты"
+    },
+    {
+      "id": "asset-694964e07b26",
+      "source_url": "http://cluster.skysend.ru:6721/image.php?provider=168",
+      "path": "assets/originals/providers/provider-168.png",
+      "width": 170,
+      "height": 103,
+      "provider_name": "Альфа-Банк",
+      "provider_category": "Банки и кредиты"
+    },
+    {
+      "id": "asset-02fa399310cf",
+      "source_url": "http://cluster.skysend.ru:6721/image.php?provider=9858",
+      "path": "assets/originals/providers/provider-9858.png",
+      "width": 150,
+      "height": 150,
+      "provider_name": "Озон Банк (Ozon)",
+      "provider_category": "Банки и кредиты"
+    },
+    {
+      "id": "asset-f1239fe22754",
+      "source_url": "http://cluster.skysend.ru:6721/image.php?provider=9849",
+      "path": "assets/originals/providers/provider-9849.png",
+      "width": 150,
+      "height": 150,
+      "provider_name": "Wildberries (Вайлдберриз Банк) WB",
+      "provider_category": "Банки и кредиты"
+    },
+    {
+      "id": "asset-3f3b1da57e42",
+      "source_url": "http://cluster.skysend.ru:6721/image.php?provider=4819",
+      "path": "assets/originals/providers/provider-4819.png",
+      "width": 150,
+      "height": 150,
+      "provider_name": "Вконтакте",
+      "provider_category": "Социальные сети"
+    },
+    {
+      "id": "asset-790a20d6eddd",
+      "source_url": "http://cluster.skysend.ru:6721/image.php?provider=4816",
+      "path": "assets/originals/providers/provider-4816.png",
+      "width": 150,
+      "height": 150,
+      "provider_name": "Одноклассники. Купить ОКи",
+      "provider_category": "Социальные сети"
+    },
+    {
+      "id": "asset-b4a645a59535",
+      "source_url": "http://cluster.skysend.ru:6721/image.php?provider=4675",
+      "path": "assets/originals/providers/provider-4675.png",
+      "width": 150,
+      "height": 150,
+      "provider_name": "Warface. Mail.ru",
+      "provider_category": "Игры"
+    },
+    {
+      "id": "asset-71c502e3242d",
+      "source_url": "http://cluster.skysend.ru:6721/image.php?provider=252",
+      "path": "assets/originals/providers/provider-252.png",
+      "width": 150,
+      "height": 150,
+      "provider_name": "Xsolla",
+      "provider_category": "Игры"
+    },
+    {
+      "id": "asset-21b46d8b734a",
+      "source_url": "http://cluster.skysend.ru:6721/image.php?provider=876",
+      "path": "assets/originals/providers/provider-876.png",
+      "width": 170,
+      "height": 103,
+      "provider_name": "Xsolla. War Thunder",
+      "provider_category": "Игры"
+    },
+    {
+      "id": "asset-e97aff2e7207",
+      "source_url": "http://cluster.skysend.ru:6721/image.php?provider=4754",
+      "path": "assets/originals/providers/provider-4754.png",
+      "width": 170,
+      "height": 103,
+      "provider_name": "Аллоды онлайн Mail.ru",
+      "provider_category": "Игры"
+    }
+  ]
+}

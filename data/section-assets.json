@@ -1,0 +1,416 @@
+{
+  "version": 1,
+  "bindings": {
+    "software-catalog": {
+      "kind": "data",
+      "paths": [
+        "data/site-content.json"
+      ],
+      "alt": "",
+      "max_css_width": 640,
+      "export_widths": [
+        360,
+        720,
+        1280
+      ],
+      "fit": "contain",
+      "note": "HTML индекс семи страниц ПО; title/path, первый абзац и первый media из software-detail."
+    },
+    "provider-catalog": {
+      "kind": "data",
+      "paths": [
+        "data/providers-source.json",
+        "data/assets-manifest.json"
+      ],
+      "alt": "",
+      "max_css_width": 640,
+      "export_widths": [
+        360,
+        720,
+        1280
+      ],
+      "fit": "contain",
+      "note": "Поиск по 600 исходным строкам и 13 категориям; labels и состояния из utility-content.json. Не считать логотипы услугами."
+    },
+    "equipment-catalog": {
+      "kind": "data",
+      "paths": [
+        "data/equipment-content.json"
+      ],
+      "alt": "",
+      "max_css_width": 640,
+      "export_widths": [
+        360,
+        720,
+        1280
+      ],
+      "fit": "contain",
+      "note": "Две реальные модели и 24 строки категорий, без неподтверждённых цен и наличия."
+    },
+    "fingerprint-scanner": {
+      "kind": "image",
+      "paths": [
+        "assets/originals/scaner.png"
+      ],
+      "alt": "Сканер отпечатка из каталога оборудования SkySend",
+      "max_css_width": 330,
+      "export_widths": [
+        330,
+        503
+      ],
+      "fit": "contain",
+      "note": ""
+    },
+    "html-feature-list": {
+      "kind": "html",
+      "paths": [],
+      "alt": "",
+      "max_css_width": 640,
+      "export_widths": [
+        360,
+        720,
+        1280
+      ],
+      "fit": "contain",
+      "note": "Definition list по visual_fields секции. Только реальные названия функций; без выдуманных показателей, строк транзакций и вида личного кабинета. Контракт в docs/08-content-components.md."
+    },
+    "html-process": {
+      "kind": "html",
+      "paths": [],
+      "alt": "",
+      "max_css_width": 640,
+      "export_widths": [
+        360,
+        720,
+        1280
+      ],
+      "fit": "contain",
+      "note": "Отдельные подписанные узлы и связи из visual_nodes/visual_edges. Порядок и значения уже заданы секцией; не подставлять общую картинку. Контракт в docs08."
+    },
+    "html-report-fields": {
+      "kind": "html-and-svg",
+      "paths": [
+        "assets/diagrams/report-flow.svg"
+      ],
+      "alt": "Платежи за период, реестр, отчёт",
+      "max_css_width": 640,
+      "export_widths": [
+        360,
+        720,
+        1280
+      ],
+      "fit": "contain",
+      "note": "HTML последовательность либо готовая схема. Не имитировать реальные суммы/платежи."
+    },
+    "text-only": {
+      "kind": "html",
+      "paths": [],
+      "alt": "",
+      "max_css_width": 640,
+      "export_widths": [
+        360,
+        720,
+        1280
+      ],
+      "fit": "contain",
+      "note": "Наборный информационный блок: дата, имя, должность или источник. Не добавлять картинку другого предмета. Контент является самим визуальным элементом."
+    },
+    "supplier-exchange": {
+      "kind": "svg",
+      "paths": [
+        "assets/diagrams/supplier-exchange.svg",
+        "assets/diagrams/supplier-exchange-mobile.svg"
+      ],
+      "alt": "Обмен справочником и заказами между поставщиком, SkyMarket и терминалами или FINGER",
+      "max_css_width": 640,
+      "export_widths": [
+        360,
+        720,
+        1280
+      ],
+      "fit": "contain",
+      "note": "Вторая версия для мобильной колонки. Не путать с XML-шлюзом оплаты провайдерам."
+    },
+    "terminal-product": {
+      "kind": "image",
+      "paths": [
+        "assets/originals/beautyII4.png"
+      ],
+      "alt": "Платёжный терминал FastPay Beauty II",
+      "max_css_width": 260,
+      "export_widths": [
+        260,
+        355
+      ],
+      "fit": "contain",
+      "note": "355×858 px. Без увеличения по пикселям; DPR2 ограничен исходником. Маркировка корпуса является частью исходной фотографии."
+    },
+    "fastpay-product": {
+      "kind": "image",
+      "paths": [
+        "assets/originals/FastPay Simple.png"
+      ],
+      "alt": "Платёжный терминал FastPay Simple",
+      "max_css_width": 270,
+      "export_widths": [
+        270,
+        425
+      ],
+      "fit": "contain",
+      "note": ""
+    },
+    "terminal-screen": {
+      "kind": "image",
+      "paths": [
+        "assets/ready/terminal-screen.png"
+      ],
+      "alt": "Экран выбора услуг в терминальном ПО SkySend",
+      "max_css_width": 803,
+      "export_widths": [
+        480,
+        800,
+        1440
+      ],
+      "fit": "contain",
+      "note": "Исходный .jpg содержит PNG bytes. Использовать MIME image/png; готовая копия имеет расширение png. Архивный экран, без новых обещаний о брендах."
+    },
+    "provider-logos": {
+      "kind": "collection",
+      "paths": [
+        "data/provider-wall-selection.json"
+      ],
+      "alt": "Примеры провайдеров из каталога SkySend",
+      "max_css_width": 108,
+      "export_widths": [
+        150
+      ],
+      "fit": "contain",
+      "note": "Точный alt каждого логотипа = provider_name из selection. Сами файлы берутся по items[].path; независимая сетка, без движения."
+    },
+    "interface-variants": {
+      "kind": "svg",
+      "paths": [
+        "assets/diagrams/interface-customization.svg"
+      ],
+      "alt": "Два варианта интерфейса ПО SkySend",
+      "max_css_width": 720,
+      "export_widths": [
+        360,
+        720,
+        1200
+      ],
+      "fit": "contain",
+      "note": "Видны только два верхних кадра исходного 8_full.png. Не ссылаться на полный исходник в lightbox."
+    },
+    "commerce-flow": {
+      "kind": "svg",
+      "paths": [
+        "assets/diagrams/commerce-flow.svg",
+        "assets/diagrams/commerce-flow-mobile.svg"
+      ],
+      "alt": "Загрузка справочника товаров, формирование заказов, оплата заказов",
+      "max_css_width": 640,
+      "export_widths": [
+        360,
+        720,
+        1280
+      ],
+      "fit": "contain",
+      "note": "Вторая версия для mobile. HTML список шагов обязателен."
+    },
+    "commerce-screen": {
+      "kind": "reference-only",
+      "paths": [],
+      "alt": "Последовательность заказа товаров из старого ПО",
+      "max_css_width": 640,
+      "export_widths": [
+        360,
+        720,
+        1280
+      ],
+      "fit": "contain",
+      "note": "Основной готовый визуал commerce-flow. 11_full.png только в исследовательском архиве; не нужен для релиза. Готовый статический сценарий полностью покрывает смысл."
+    },
+    "infokiosk-screen": {
+      "kind": "svg",
+      "paths": [
+        "assets/diagrams/infokiosk-flow.svg"
+      ],
+      "alt": "Информационные разделы и приём платежей на одном терминале",
+      "max_css_width": 640,
+      "export_widths": [
+        360,
+        720,
+        1280
+      ],
+      "fit": "contain",
+      "note": "Предметная схема из текста ALLVEND; не изображение действующего UI."
+    },
+    "partner-routes": {
+      "kind": "navigation",
+      "paths": [
+        "assets/icons/arrow-right.svg"
+      ],
+      "alt": "",
+      "max_css_width": 640,
+      "export_widths": [
+        360,
+        720,
+        1280
+      ],
+      "fit": "contain",
+      "note": "Шесть ссылок из navigation.json; alt стрелки пустой. Нет общего растрового баннера."
+    },
+    "contact-panel": {
+      "kind": "html-and-svg",
+      "paths": [
+        "assets/diagrams/contact-panel.svg"
+      ],
+      "alt": "Телефон, электронная почта и Telegram поддержки SkySend",
+      "max_css_width": 640,
+      "export_widths": [
+        360,
+        720,
+        1280
+      ],
+      "fit": "contain",
+      "note": "В production контактные значения и ссылки выводить HTML, SVG иллюстрирует расположение. Телефон и email копируемые."
+    },
+    "rma-desktop": {
+      "kind": "image",
+      "paths": [
+        "assets/originals/RMA_win_lin.png"
+      ],
+      "alt": "Рабочее место Агента SkySend на компьютере",
+      "max_css_width": 960,
+      "export_widths": [
+        480,
+        960,
+        1920
+      ],
+      "fit": "contain",
+      "note": ""
+    },
+    "rma-android": {
+      "kind": "image",
+      "paths": [
+        "assets/originals/RMA_android.jpg"
+      ],
+      "alt": "РМА SkySend для Android",
+      "max_css_width": 260,
+      "export_widths": [
+        260,
+        308
+      ],
+      "fit": "contain",
+      "note": "308×545 px. Только один экран, не выдумывать остальные состояния."
+    },
+    "xml-flow": {
+      "kind": "svg",
+      "paths": [
+        "assets/diagrams/xml-flow.svg"
+      ],
+      "alt": "Обмен между системой Агента, SkySend и провайдерами",
+      "max_css_width": 640,
+      "export_widths": [
+        360,
+        720,
+        1280
+      ],
+      "fit": "contain",
+      "note": "Схема направления обмена, не backend topology и не образец wire payload."
+    },
+    "payment-network": {
+      "kind": "svg",
+      "paths": [
+        "assets/diagrams/payment-network.svg"
+      ],
+      "alt": "Терминалы, кассир и смартфон связаны с провайдерами через SkySend",
+      "max_css_width": 640,
+      "export_widths": [
+        360,
+        720,
+        1280
+      ],
+      "fit": "contain",
+      "note": "Концептуальная схема, не карта фактических адресов и серверов."
+    },
+    "pos-product": {
+      "kind": "svg",
+      "paths": [
+        "assets/diagrams/pos-capabilities.svg"
+      ],
+      "alt": "Штрих-Mobile Pay PRO: аккумулятор и GPRS-модем",
+      "max_css_width": 640,
+      "export_widths": [
+        360,
+        720,
+        1280
+      ],
+      "fit": "contain",
+      "note": "Условная схема возможностей. Фото POS отсутствует в источнике; не подставлять другую модель."
+    },
+    "finger-product": {
+      "kind": "svg",
+      "paths": [
+        "assets/diagrams/finger-functions.svg"
+      ],
+      "alt": "FINGER: платежи, шаблоны платежей и выписка",
+      "max_css_width": 640,
+      "export_widths": [
+        360,
+        720,
+        1280
+      ],
+      "fit": "contain",
+      "note": "Реальный логотип и схема функций, без выдуманного экрана."
+    },
+    "download-list": {
+      "kind": "data",
+      "paths": [
+        "data/download-catalog.json",
+        "assets/icons/document.svg"
+      ],
+      "alt": "",
+      "max_css_width": 640,
+      "export_widths": [
+        360,
+        720,
+        1280
+      ],
+      "fit": "contain",
+      "note": "Названия файлов, форматы, версии и ссылки из каталога; оформление HTML-строками."
+    },
+    "brand": {
+      "kind": "svg",
+      "paths": [
+        "assets/brand/skysend-logo.svg"
+      ],
+      "alt": "SkySend",
+      "max_css_width": 104,
+      "export_widths": [
+        360,
+        720,
+        1280
+      ],
+      "fit": "contain",
+      "note": "Исходные векторные пути и цвета, скорректирован только viewBox."
+    }
+  },
+  "policy": "Only resolved bindings and approved manifest items enter production. Never recursively publish assets/, evidence/ or data/ as a public directory.",
+  "layout_contract": {
+    "hero": {
+      "desktop": {
+        "imageHeight": 510,
+        "textColumns": 5,
+        "gapColumns": 1,
+        "imageColumns": 6
+      },
+      "mobile": {
+        "imageHeight": 360
+      }
+    },
+    "image_pipeline": "Use width/height attributes, srcset, contain; no AI upscale. Derive sizes no larger than source. SVG files are already editable source."
+  },
+  "authoring_notice": "Illustrative diagrams do not assert measured service speed, financial returns, uptime, or current availability of pictured services."
+}

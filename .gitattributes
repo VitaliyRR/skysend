@@ -1,0 +1,9 @@
+# Text authored for this handoff uses LF; downloaded evidence stays byte-identical.
+* text=auto eol=lf
+assets/** -text -diff
+evidence/** -text -diff
+design/*.svg -text -diff
+design/*.png -text -diff
+design/*.jpg -text -diff
+# Keep authored tokens reviewable.
+assets/design-tokens.css text eol=lf diff

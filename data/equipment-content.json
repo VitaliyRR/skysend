@@ -1,0 +1,513 @@
+{
+  "audit_date": "2026-09-10",
+  "products": [
+    {
+      "slug": "fastpay-beauty-ii",
+      "title": "FastPay Beauty II",
+      "source_url": "https://skysend.ru/buy/payment-terminals/fastpay-beauty-1-detail.html",
+      "lead": "Киоск для помещений. Используется как информационный терминал, терминал заказа товаров, касса оплаты заказов и услуг или платёжный терминал.",
+      "facts": [
+        [
+          "Назначение",
+          "Для помещений"
+        ],
+        [
+          "Ширина",
+          "50 см"
+        ],
+        [
+          "Высота",
+          "145 см"
+        ],
+        [
+          "Масса",
+          "75 кг"
+        ],
+        [
+          "Электропитание",
+          "220 В, 50 Гц"
+        ],
+        [
+          "Потребляемая мощность",
+          "120 Вт"
+        ],
+        [
+          "Сенсорная панель",
+          "17″"
+        ]
+      ],
+      "base_configuration": [
+        "Модем GPRS",
+        "Накопитель USB 2.0",
+        "Материнская плата Mini-ITX с процессором Intel",
+        "Блок питания ATX 300–350 W",
+        "Сенсорный экран KeeToutch 17″ USB",
+        "Монитор 17″"
+      ],
+      "source_limits": [
+        "Глубина не указана в исходнике.",
+        "Купюроприёмник и термопринтер перечислены в конфигураторе как опции.",
+        "Возможности применения устройства не означают, что все лицензии и периферия входят в базовую поставку."
+      ],
+      "path": "/equipment/payment-terminals/fastpay-beauty-ii/",
+      "specification_caption": "Характеристики и комплектация из материалов SkySend. Комплектацию и условия поставки уточняйте у менеджера.",
+      "cta": {
+        "label": "Обсудить оборудование",
+        "href": "/contacts/"
+      },
+      "image_urls": [
+        "https://skysend.ru/images/stories/virtuemart/product/beautyII4.png"
+      ],
+      "visual": "Подлинное фото именно этой модели и размерные стрелки ширины/высоты. Глубину Beauty не дорисовывать. Таблица характеристик статична, галерея переключается вручную."
+    },
+    {
+      "slug": "fastpay-simple",
+      "title": "FastPay Simple",
+      "source_url": "https://skysend.ru/buy/payment-terminals/fastpay-simple-detail.html",
+      "lead": "Платёжный терминал для помещений с сенсорным экраном. Поставляется с предустановленным программным обеспечением.",
+      "facts": [
+        [
+          "Назначение",
+          "Для помещений"
+        ],
+        [
+          "Ширина",
+          "50 см"
+        ],
+        [
+          "Высота",
+          "144 см"
+        ],
+        [
+          "Глубина",
+          "38 см"
+        ],
+        [
+          "Масса",
+          "80 кг"
+        ],
+        [
+          "Электропитание",
+          "220 В, 50 Гц"
+        ],
+        [
+          "Потребляемая мощность",
+          "120 Вт"
+        ],
+        [
+          "Сенсорная панель",
+          "17″"
+        ]
+      ],
+      "base_configuration": [
+        "Купюроприёмник CashCode MVU1024 (б/у)",
+        "Модем 3G",
+        "Накопитель Pretec USB 2.0",
+        "Материнская плата Mini-ITX с процессором Intel",
+        "Блок питания ATX 300–350 W",
+        "Сенсорный экран KeeToutch 17″ USB",
+        "Монитор 17″ (б/у)",
+        "Citizen CTS-2000 (б/у)"
+      ],
+      "source_limits": [
+        "Пометки «б/у» входят в исходную комплектацию и не удаляются.",
+        "В основном описании модем 3G, а в конфигураторе GPRS. Для таблицы используется основное описание; расхождение требует проверки."
+      ],
+      "path": "/equipment/payment-terminals/fastpay-simple/",
+      "specification_caption": "Характеристики и комплектация из материалов SkySend. Комплектацию и условия поставки уточняйте у менеджера.",
+      "cta": {
+        "label": "Обсудить оборудование",
+        "href": "/contacts/"
+      },
+      "image_urls": [
+        "https://skysend.ru/images/stories/virtuemart/product/FastPay Simple.png"
+      ],
+      "visual": "Подлинное фото именно этой модели и размерные стрелки ширины/высоты. Глубину Beauty не дорисовывать. Таблица характеристик статична, галерея переключается вручную."
+    }
+  ],
+  "categories": [
+    {
+      "path": "/equipment/payment-terminals/",
+      "title": "Платежные терминалы",
+      "source_url": "https://skysend.ru/buy/payment-terminals.html",
+      "rows": [
+        {
+          "id": "fastpay-beauty-1",
+          "name": "FastPay Beauty II",
+          "description": "Универсальниый киоск Beauty - лидер линейки терминалов для помещений.",
+          "image_url": "https://skysend.ru/images/stories/virtuemart/product/resized/beautyII4_200x.png",
+          "source_url": "https://skysend.ru/buy/payment-terminals/fastpay-beauty-1-detail.html",
+          "category_source_url": "https://skysend.ru/buy/payment-terminals.html",
+          "public_cta": {
+            "label": "Обсудить оборудование",
+            "href": "/contacts/"
+          }
+        },
+        {
+          "id": "fastpay-simple",
+          "name": "FastPay Simple",
+          "description": "Терминал FastPay Simple предназначен для эксплуатации в помещении.",
+          "image_url": "https://skysend.ru/images/stories/virtuemart/product/resized/FastPay Simple_200x.png",
+          "source_url": "https://skysend.ru/buy/payment-terminals/fastpay-simple-detail.html",
+          "category_source_url": "https://skysend.ru/buy/payment-terminals.html",
+          "public_cta": {
+            "label": "Обсудить оборудование",
+            "href": "/contacts/"
+          }
+        }
+      ],
+      "empty_copy": null
+    },
+    {
+      "path": "/equipment/accessories/",
+      "title": "Комплектующие терминалов",
+      "source_url": "https://skysend.ru/buy/accessories.html",
+      "rows": [],
+      "empty_copy": "Состав и условия поставки уточняйте у менеджера."
+    },
+    {
+      "path": "/equipment/accessories/hardware/",
+      "title": "Компьютерные комплектующие",
+      "source_url": "https://skysend.ru/buy/accessories/hardware.html",
+      "rows": [
+        {
+          "id": "motherboard-with-integrated-processor-intel",
+          "name": "Материнская плата со встроенным процессором Intel.",
+          "description": "Материнская плата Mini-ITX с четырехъядерным процессором Intel Dual-Core J1800",
+          "image_url": "https://skysend.ru/images/stories/virtuemart/product/resized/mini_itx_200x.png",
+          "source_url": "https://skysend.ru/buy/accessories/hardware/motherboard-with-integrated-processor-intel-detail.html",
+          "category_source_url": "https://skysend.ru/buy/accessories/hardware.html",
+          "public_cta": {
+            "label": "Обсудить оборудование",
+            "href": "/contacts/"
+          }
+        },
+        {
+          "id": "ram-memory-module-ddr3",
+          "name": "Оперативная память (модуль памяти) DDR3",
+          "description": "Оперативная память (модуль памяти) DDR3 1600MHz – 2Gb.",
+          "image_url": "https://skysend.ru/images/stories/virtuemart/product/resized/ddr3_200x.png",
+          "source_url": "https://skysend.ru/buy/accessories/hardware/ram-memory-module-ddr3-detail.html",
+          "category_source_url": "https://skysend.ru/buy/accessories/hardware.html",
+          "public_cta": {
+            "label": "Обсудить оборудование",
+            "href": "/contacts/"
+          }
+        },
+        {
+          "id": "power-supply-atx-300w",
+          "name": "Блок питания ATX 300-350W",
+          "description": "Блок питания терминала ATX 300W",
+          "image_url": "https://skysend.ru/images/stories/virtuemart/product/resized/atx_300_200x.png",
+          "source_url": "https://skysend.ru/buy/accessories/hardware/power-supply-atx-300w-detail.html",
+          "category_source_url": "https://skysend.ru/buy/accessories/hardware.html",
+          "public_cta": {
+            "label": "Обсудить оборудование",
+            "href": "/contacts/"
+          }
+        }
+      ],
+      "empty_copy": null
+    },
+    {
+      "path": "/equipment/accessories/acceptor/",
+      "title": "Купюроприемники",
+      "source_url": "https://skysend.ru/buy/accessories/acceptor.html",
+      "rows": [
+        {
+          "id": "cashcode-mvu",
+          "name": "Купюроприёмник CashCode MVU",
+          "description": "Универсальный валидатор CashCode MVU",
+          "image_url": "https://skysend.ru/images/stories/virtuemart/product/resized/CashCode_MVU_200x.png",
+          "source_url": "https://skysend.ru/buy/accessories/acceptor/cashcode-mvu-detail.html",
+          "category_source_url": "https://skysend.ru/buy/accessories/acceptor.html",
+          "public_cta": {
+            "label": "Обсудить оборудование",
+            "href": "/contacts/"
+          }
+        },
+        {
+          "id": "cashcode-mvu-bu",
+          "name": "Купюроприёмник CashCode MVU б/у",
+          "description": "Универсальный валидатор CashCode MVU б/у",
+          "image_url": "https://skysend.ru/images/stories/virtuemart/product/resized/CashCode_MVU_bu_200x.png",
+          "source_url": "https://skysend.ru/buy/accessories/acceptor/cashcode-mvu-bu-detail.html",
+          "category_source_url": "https://skysend.ru/buy/accessories/acceptor.html",
+          "public_cta": {
+            "label": "Обсудить оборудование",
+            "href": "/contacts/"
+          }
+        },
+        {
+          "id": "cashcode-sm",
+          "name": "Купюроприёмник CashCode SM",
+          "description": "Валидатор купюр CashCode SM разработан для банкнот шириной от 67 до 71 мм.",
+          "image_url": "https://skysend.ru/images/stories/virtuemart/product/resized/CashCode_SM_200x.png",
+          "source_url": "https://skysend.ru/buy/accessories/acceptor/cashcode-sm-detail.html",
+          "category_source_url": "https://skysend.ru/buy/accessories/acceptor.html",
+          "public_cta": {
+            "label": "Обсудить оборудование",
+            "href": "/contacts/"
+          }
+        },
+        {
+          "id": "cashcode-sm-bu",
+          "name": "Купюроприёмник CashCode SM б/у",
+          "description": "Валидатор купюр CashCode SM разработан для банкнот шириной от 67 до 71 мм.",
+          "image_url": "https://skysend.ru/images/stories/virtuemart/product/resized/CashCode_SM8_200x.png",
+          "source_url": "https://skysend.ru/buy/accessories/acceptor/cashcode-sm-bu-detail.html",
+          "category_source_url": "https://skysend.ru/buy/accessories/acceptor.html",
+          "public_cta": {
+            "label": "Обсудить оборудование",
+            "href": "/contacts/"
+          }
+        }
+      ],
+      "empty_copy": null
+    },
+    {
+      "path": "/equipment/accessories/modems/",
+      "title": "Модемы",
+      "source_url": "https://skysend.ru/buy/accessories/modems.html",
+      "rows": [
+        {
+          "id": "siemens-cinterion-mc52i-terminal",
+          "name": "GPRS модем+антена",
+          "description": "Siemens MC52i Terminal - двухдиапазонный GSM/GPRS-модем",
+          "image_url": "https://skysend.ru/images/stories/virtuemart/product/resized/siemens_200x.png",
+          "source_url": "https://skysend.ru/buy/accessories/modems/siemens-cinterion-mc52i-terminal-detail.html",
+          "category_source_url": "https://skysend.ru/buy/accessories/modems.html",
+          "public_cta": {
+            "label": "Обсудить оборудование",
+            "href": "/contacts/"
+          }
+        }
+      ],
+      "empty_copy": null
+    },
+    {
+      "path": "/equipment/accessories/printers/",
+      "title": "Принтеры",
+      "source_url": "https://skysend.ru/buy/accessories/printers.html",
+      "rows": [
+        {
+          "id": "custom-vkp-80ii",
+          "name": "Термопринтер Custom VKP 80II",
+          "description": "Термопринтер Custom VKP80II – представитель последнего поколения термопринтеров",
+          "image_url": "https://skysend.ru/images/stories/virtuemart/product/resized/termoprinter_200x.png",
+          "source_url": "https://skysend.ru/buy/accessories/printers/custom-vkp-80ii-detail.html",
+          "category_source_url": "https://skysend.ru/buy/accessories/printers.html",
+          "public_cta": {
+            "label": "Обсудить оборудование",
+            "href": "/contacts/"
+          }
+        },
+        {
+          "id": "custom-vkp-80ii-bu",
+          "name": "Термопринтер Custom VKP 80II б/у",
+          "description": "Термопринтер Custom VKP80II – представитель последнего поколения термопринтеров",
+          "image_url": "https://skysend.ru/images/stories/virtuemart/product/resized/termoprinter_200x.png",
+          "source_url": "https://skysend.ru/buy/accessories/printers/custom-vkp-80ii-bu-detail.html",
+          "category_source_url": "https://skysend.ru/buy/accessories/printers.html",
+          "public_cta": {
+            "label": "Обсудить оборудование",
+            "href": "/contacts/"
+          }
+        },
+        {
+          "id": "power-supply-for-thermal-printer-custom-vkp",
+          "name": "Блок питания для термопринтера Custom VKP 80II (б/у)",
+          "description": "Блок питания GST-H150S24-EX",
+          "image_url": "https://skysend.ru/images/stories/virtuemart/product/resized/vkp_pow_200x.png",
+          "source_url": "https://skysend.ru/buy/accessories/printers/power-supply-for-thermal-printer-custom-vkp-detail.html",
+          "category_source_url": "https://skysend.ru/buy/accessories/printers.html",
+          "public_cta": {
+            "label": "Обсудить оборудование",
+            "href": "/contacts/"
+          }
+        }
+      ],
+      "empty_copy": null
+    },
+    {
+      "path": "/equipment/accessories/other-parts/",
+      "title": "Прочие комплектующие",
+      "source_url": "https://skysend.ru/buy/accessories/other-parts.html",
+      "rows": [],
+      "empty_copy": "Состав и условия поставки уточняйте у менеджера."
+    },
+    {
+      "path": "/equipment/accessories/touch-screens-and-monitors/",
+      "title": "Сенсорные Экраны И Мониторы",
+      "source_url": "https://skysend.ru/buy/accessories/touch-screens-and-monitors.html",
+      "rows": [
+        {
+          "id": "monitor-terminal-with-auto-power-17",
+          "name": "Монитор для терминала с автовключением 17\"",
+          "description": "ЖК-монитор с диагональю 17\" в открытой рамке",
+          "image_url": "https://skysend.ru/images/stories/virtuemart/product/resized/17_200x.png",
+          "source_url": "https://skysend.ru/buy/accessories/touch-screens-and-monitors/monitor-terminal-with-auto-power-17-detail.html",
+          "category_source_url": "https://skysend.ru/buy/accessories/touch-screens-and-monitors.html",
+          "public_cta": {
+            "label": "Обсудить оборудование",
+            "href": "/contacts/"
+          }
+        },
+        {
+          "id": "monitor-terminal-with-auto-power-17-bu",
+          "name": "Монитор для терминала с автовключением 17\" б/у",
+          "description": "ЖК-монитор с диагональю 17\" в открытой рамке",
+          "image_url": "https://skysend.ru/images/stories/virtuemart/product/resized/17bu_200x.png",
+          "source_url": "https://skysend.ru/buy/accessories/touch-screens-and-monitors/monitor-terminal-with-auto-power-17-bu-detail.html",
+          "category_source_url": "https://skysend.ru/buy/accessories/touch-screens-and-monitors.html",
+          "public_cta": {
+            "label": "Обсудить оборудование",
+            "href": "/contacts/"
+          }
+        },
+        {
+          "id": "kee-touch-touchscreen-17",
+          "name": "Сенсорный экран Kee Touch 17”",
+          "description": "Сенсорный экран KeeTouch 17” (Touch Screen ПАВ)",
+          "image_url": "https://skysend.ru/images/stories/virtuemart/product/resized/keetouch_200x.png",
+          "source_url": "https://skysend.ru/buy/accessories/touch-screens-and-monitors/kee-touch-touchscreen-17-detail.html",
+          "category_source_url": "https://skysend.ru/buy/accessories/touch-screens-and-monitors.html",
+          "public_cta": {
+            "label": "Обсудить оборудование",
+            "href": "/contacts/"
+          }
+        }
+      ],
+      "empty_copy": null
+    },
+    {
+      "path": "/equipment/accessories/fiscal-registrars/",
+      "title": "Фискальные регистраторы",
+      "source_url": "https://skysend.ru/buy/accessories/fiscal-registrars.html",
+      "rows": [
+        {
+          "id": "completion-set-for-ptc-tier-01k-without-eklz",
+          "name": "Онлайн-касса Терминал-ФА",
+          "description": "Комплект доработки (фискальный блок) «ПТК «ЯРУС-01К»",
+          "image_url": "https://skysend.ru/images/stories/virtuemart/product/resized/term_200x.png",
+          "source_url": "https://skysend.ru/buy/accessories/fiscal-registrars/completion-set-for-ptc-tier-01k-without-eklz-detail.html",
+          "category_source_url": "https://skysend.ru/buy/accessories/fiscal-registrars.html",
+          "public_cta": {
+            "label": "Обсудить оборудование",
+            "href": "/contacts/"
+          }
+        },
+        {
+          "id": "fiscal-registrar-ptc-tier-01k-without-eklz-28",
+          "name": "Онлайн-касса PayOnline-01ФА",
+          "description": "программно-технический комплекс для работы в составе платежного терминала",
+          "image_url": "https://skysend.ru/images/stories/virtuemart/product/resized/pay_200x.png",
+          "source_url": "https://skysend.ru/buy/accessories/fiscal-registrars/fiscal-registrar-ptc-tier-01k-without-eklz-28-detail.html",
+          "category_source_url": "https://skysend.ru/buy/accessories/fiscal-registrars.html",
+          "public_cta": {
+            "label": "Обсудить оборудование",
+            "href": "/contacts/"
+          }
+        },
+        {
+          "id": "fiscal-server",
+          "name": "Фискальный сервер",
+          "description": "Агенты обязаны устанавливать в платежные терминалы контрольно-кассовую технику",
+          "image_url": "https://skysend.ru/images/stories/virtuemart/product/resized/fiskalniy-server_200x.png",
+          "source_url": "https://skysend.ru/buy/accessories/fiscal-registrars/fiscal-server-detail.html",
+          "category_source_url": "https://skysend.ru/buy/accessories/fiscal-registrars.html",
+          "public_cta": {
+            "label": "Обсудить оборудование",
+            "href": "/contacts/"
+          }
+        }
+      ],
+      "empty_copy": null
+    },
+    {
+      "path": "/equipment/flash-drives/",
+      "title": "Flash накопители",
+      "source_url": "https://skysend.ru/buy/flash-drives.html",
+      "rows": [
+        {
+          "id": "ide-drive",
+          "name": "Накопитель IDE",
+          "description": "IDE Flash – надежный накопитель, который дублирует стандартный жесткий диск.",
+          "image_url": "https://skysend.ru/images/stories/virtuemart/product/resized/ide_200x.png",
+          "source_url": "https://skysend.ru/buy/flash-drives/ide-drive-detail.html",
+          "category_source_url": "https://skysend.ru/buy/flash-drives.html",
+          "public_cta": {
+            "label": "Обсудить оборудование",
+            "href": "/contacts/"
+          }
+        },
+        {
+          "id": "usb-2-0-drive",
+          "name": "Накопитель USB 2.0",
+          "description": "Накопитель USB миниатюрный и легкий",
+          "image_url": "https://skysend.ru/images/stories/virtuemart/product/resized/usb_200x.png",
+          "source_url": "https://skysend.ru/buy/flash-drives/usb-2-0-drive-detail.html",
+          "category_source_url": "https://skysend.ru/buy/flash-drives.html",
+          "public_cta": {
+            "label": "Обсудить оборудование",
+            "href": "/contacts/"
+          }
+        },
+        {
+          "id": "usb-drive-internal",
+          "name": "Накопитель USB внутренний",
+          "description": "Внутренний USB-накопитель",
+          "image_url": "https://skysend.ru/images/stories/virtuemart/product/resized/apro_200x.png",
+          "source_url": "https://skysend.ru/buy/flash-drives/usb-drive-internal-detail.html",
+          "category_source_url": "https://skysend.ru/buy/flash-drives.html",
+          "public_cta": {
+            "label": "Обсудить оборудование",
+            "href": "/contacts/"
+          }
+        }
+      ],
+      "empty_copy": null
+    },
+    {
+      "path": "/equipment/fingerprint/",
+      "title": "Сканеры отпечатка",
+      "source_url": "https://skysend.ru/buy/fingerprint.html",
+      "rows": [
+        {
+          "id": "skanery-otpechatka.html",
+          "name": "Сканеры отпечатков пальцев",
+          "description": "Для осуществления расчетов отпечатком пальца в онлайн-кошельке FINGER",
+          "image_url": "https://skysend.ru/images/stories/virtuemart/product/resized/scaner_200x.png",
+          "source_url": "https://skysend.ru/skanery-otpechatka.html",
+          "category_source_url": "https://skysend.ru/buy/fingerprint.html",
+          "public_cta": {
+            "label": "Обсудить оборудование",
+            "href": "/contacts/"
+          }
+        }
+      ],
+      "empty_copy": null
+    },
+    {
+      "path": "/equipment/fiscal-server/",
+      "title": "Фискальные серверы",
+      "source_url": "https://skysend.ru/buy/fiscal-server.html",
+      "rows": [
+        {
+          "id": "fiscal-server",
+          "name": "Фискальный сервер",
+          "description": "Агенты обязаны устанавливать в платежные терминалы контрольно-кассовую технику",
+          "image_url": "https://skysend.ru/images/stories/virtuemart/product/resized/fiskalniy-server_200x.png",
+          "source_url": "https://skysend.ru/buy/fiscal-server/fiscal-server-detail.html",
+          "category_source_url": "https://skysend.ru/buy/fiscal-server.html",
+          "public_cta": {
+            "label": "Обсудить оборудование",
+            "href": "/contacts/"
+          }
+        }
+      ],
+      "empty_copy": null
+    }
+  ],
+  "policy": "Две полные карточки терминалов. Остальные компоненты как строки каталогов с названиями и описаниями из источника. Цены, наличие, корзина и конфигуратор не публикуются без актуальных коммерческих данных. Потребляемая мощность 120 Вт из спецификаций, без попытки согласовать старые рекламные месячные цифры."
+}

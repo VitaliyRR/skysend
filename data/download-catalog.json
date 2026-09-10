@@ -1,0 +1,2698 @@
+{
+  "schema_version": "1.0",
+  "audit_date": "2026-09-10",
+  "source_file": "data/downloads-source.json",
+  "source_rows": 122,
+  "included_items": 66,
+  "excluded_rows": 56,
+  "duplicate_rows_merged": 0,
+  "scope": "ПО, инструкции, технические и системные документы. Акции, цены, рекламные предложения и обещания роста доходов исключены.",
+  "groups": [
+    {
+      "id": "terminal",
+      "title": "Терминальное ПО",
+      "anchor": "/downloads/#terminal",
+      "count": 8
+    },
+    {
+      "id": "rma",
+      "title": "РМА Windows / Linux",
+      "anchor": "/downloads/#rma",
+      "count": 4
+    },
+    {
+      "id": "rma-android",
+      "title": "РМА Android",
+      "anchor": "/downloads/#rma-android",
+      "count": 2
+    },
+    {
+      "id": "xml",
+      "title": "XML",
+      "anchor": "/downloads/#xml",
+      "count": 3
+    },
+    {
+      "id": "pos",
+      "title": "POS",
+      "anchor": "/downloads/#pos",
+      "count": 1
+    },
+    {
+      "id": "system-documents",
+      "title": "Документы системы",
+      "anchor": "/downloads/#system-documents",
+      "count": 36
+    },
+    {
+      "id": "other",
+      "title": "Технические материалы",
+      "anchor": "/downloads/#other",
+      "count": 12
+    }
+  ],
+  "render_policy": {
+    "reachable_head": "Можно показать исходную ссылку. HEAD не подтверждает актуальность, содержимое или целостность документа.",
+    "source_link_unverified": "Исходная ссылка сохранена; проверить до выпуска. Не показывать значок проверки или гарантировать актуальность.",
+    "head_http_error": "Проверка HEAD не прошла; не объявлять файл удалённым по одному HEAD. Перед выпуском проверить ссылку безопасным обычным запросом без исполнения; при неудаче показать текст Файл недоступен. Обратитесь в поддержку.",
+    "head_network_error": "Доступ не подтверждён из окружения аудита. Перед выпуском проверить; не обходить проверку TLS. Если проблема сохраняется, показать fallback поддержки.",
+    "unavailable_checked": "Недоступность подтверждена HEAD и запросом GET без чтения тела. В строке не показывать кнопку скачивания; вывести заданный fallback поддержки.",
+    "missing_url": "Не создавать кнопку скачивания и не угадывать адрес. Показать заданный fallback.",
+    "unsupported_browser_scheme": "Сохранить исходный FTP URL в аудите; на публичной странице показать fallback поддержки, не придумывать HTTPS-замену.",
+    "store": "Для магазина приложений подпись Открыть в Google Play, не Скачать APK. Наличие карточки не подтверждает совместимость приложения.",
+    "excluded": "Не импортировать excluded_records в публичную страницу, поиск, sitemap или связанные материалы."
+  },
+  "items": [
+    {
+      "id": "terminal-70c824af8d",
+      "group": "terminal",
+      "kind": "software_demo",
+      "source_title": "Виртуальная машина с ПО терминала - v. 5.45 (.zip 60.6 Mb)",
+      "display_title": "Виртуальная машина с ПО терминала - v. 5.45 (.zip 60.6 Mb)",
+      "source_page": "https://skysend.ru/download/8.html",
+      "direct_file_url": "https://ftp.isg.dev/soft/demo/old/terminal_demo_5.45.2191.zip",
+      "target_url": "https://ftp.isg.dev/soft/demo/old/terminal_demo_5.45.2191.zip",
+      "link_kind": "file",
+      "source_links": [
+        "https://ftp.isg.dev/soft/demo/old/terminal_demo_5.45.2191.zip"
+      ],
+      "source_occurrences": [
+        {
+          "title": "Виртуальная машина с ПО терминала - v. 5.45 (.zip 60.6 Mb)",
+          "page": "https://skysend.ru/download/8.html"
+        }
+      ],
+      "source_flags": [
+        "legacy_version",
+        "version_requires_review"
+      ],
+      "source_size_text": null,
+      "format_from_url": "zip",
+      "status": "reachable_head",
+      "version_policy": "Не обозначать архивную версию как актуальную и не заявлять совместимость с текущими ОС без проверки.",
+      "content_review": "Отбор по исходному названию и URL; содержимое бинарных файлов не скачивалось и не проверялось.",
+      "check": {
+        "checked_at": "2026-09-10T09:41:19+00:00",
+        "method": "HEAD",
+        "body_downloaded": false,
+        "status": "reachable_head",
+        "http_status": 200,
+        "final_url": "https://ftp.isg.dev/soft/demo/old/terminal_demo_5.45.2191.zip",
+        "content_type": "application/zip",
+        "content_length_header": "63545242",
+        "note": "HEAD подтверждает ответ сервера, но не целостность файла, версию или совместимость ПО."
+      }
+    },
+    {
+      "id": "terminal-a65a6fe49e",
+      "group": "terminal",
+      "kind": "instruction",
+      "source_title": "Инструкция по организации прошивочной системы и программированию накопителей для ОС Windows \n 519.18 KB",
+      "display_title": "Инструкция по организации прошивочной системы и программированию накопителей для ОС Windows",
+      "source_page": "https://skysend.ru/download.html",
+      "direct_file_url": "https://skysend.ru/images/downloads/instruction_programming_fw_writer.pdf",
+      "target_url": "https://skysend.ru/images/downloads/instruction_programming_fw_writer.pdf",
+      "link_kind": "file",
+      "source_links": [
+        "https://skysend.ru/download.raw?task=callelement&item_id=381&element=f85c494b-2b32-4109-b8c1-083cca2b7db6&method=download&args[0]=8fb77104eb3745622181d532b5ead7a8",
+        "https://skysend.ru/images/downloads/instruction_programming_fw_writer.pdf"
+      ],
+      "source_occurrences": [
+        {
+          "title": "Инструкция по организации прошивочной системы и программированию накопителей для ОС Windows \n 519.18 KB",
+          "page": "https://skysend.ru/download.html"
+        }
+      ],
+      "source_flags": [
+        "verify_before_publish"
+      ],
+      "source_size_text": "519.18 KB",
+      "format_from_url": "pdf",
+      "status": "reachable_head",
+      "version_policy": "Не обозначать архивную версию как актуальную и не заявлять совместимость с текущими ОС без проверки.",
+      "content_review": "Отбор по исходному названию и URL; содержимое бинарных файлов не скачивалось и не проверялось.",
+      "check": {
+        "checked_at": "2026-09-10T09:41:19+00:00",
+        "method": "HEAD",
+        "body_downloaded": false,
+        "status": "reachable_head",
+        "http_status": 200,
+        "final_url": "https://skysend.ru/images/downloads/instruction_programming_fw_writer.pdf",
+        "content_type": "application/pdf",
+        "content_length_header": "130374",
+        "note": "HEAD подтверждает ответ сервера, но не целостность файла, версию или совместимость ПО."
+      }
+    },
+    {
+      "id": "terminal-eb533344a2",
+      "group": "terminal",
+      "kind": "instruction",
+      "source_title": "Инструкция по подключению периферийного оборудования к устройствам самообслуживания ALLVEND",
+      "display_title": "Инструкция по подключению периферийного оборудования к устройствам самообслуживания ALLVEND",
+      "source_page": "https://skysend.ru/download/4.html",
+      "direct_file_url": "https://ftp.isg.dev/docs/instruction_setup_devices_kiosks.pdf",
+      "target_url": "https://ftp.isg.dev/docs/instruction_setup_devices_kiosks.pdf",
+      "link_kind": "file",
+      "source_links": [
+        "https://ftp.isg.dev/docs/instruction_setup_devices_kiosks.pdf"
+      ],
+      "source_occurrences": [
+        {
+          "title": "Инструкция по подключению периферийного оборудования к устройствам самообслуживания ALLVEND",
+          "page": "https://skysend.ru/download/4.html"
+        }
+      ],
+      "source_flags": [
+        "verify_before_publish"
+      ],
+      "source_size_text": null,
+      "format_from_url": "pdf",
+      "status": "source_link_unverified",
+      "version_policy": "Не обозначать архивную версию как актуальную и не заявлять совместимость с текущими ОС без проверки.",
+      "content_review": "Отбор по исходному названию и URL; содержимое бинарных файлов не скачивалось и не проверялось."
+    },
+    {
+      "id": "terminal-5252535b01",
+      "group": "terminal",
+      "kind": "instruction",
+      "source_title": "Инструкция по работе в сервисном режиме терминала",
+      "display_title": "Инструкция по работе в сервисном режиме терминала",
+      "source_page": "https://skysend.ru/download/2.html",
+      "direct_file_url": "ftp://ftp.isg.dev/docs/instruction_service_mode.pdf",
+      "target_url": "ftp://ftp.isg.dev/docs/instruction_service_mode.pdf",
+      "link_kind": "file",
+      "source_links": [
+        "ftp://ftp.isg.dev/docs/instruction_service_mode.pdf"
+      ],
+      "source_occurrences": [
+        {
+          "title": "Инструкция по работе в сервисном режиме терминала",
+          "page": "https://skysend.ru/download/2.html"
+        }
+      ],
+      "source_flags": [
+        "verify_before_publish"
+      ],
+      "source_size_text": null,
+      "format_from_url": "pdf",
+      "status": "unsupported_browser_scheme",
+      "version_policy": "Не обозначать архивную версию как актуальную и не заявлять совместимость с текущими ОС без проверки.",
+      "content_review": "Отбор по исходному названию и URL; содержимое бинарных файлов не скачивалось и не проверялось.",
+      "fallback": {
+        "text": "Файл недоступен для скачивания в браузере. Обратитесь в поддержку.",
+        "href": "/support/"
+      }
+    },
+    {
+      "id": "terminal-73b277ff83",
+      "group": "terminal",
+      "kind": "instruction",
+      "source_title": "Обработка терминала антикоррозийным защитным покрытием \n 107.10 KB",
+      "display_title": "Обработка терминала антикоррозийным защитным покрытием",
+      "source_page": "https://skysend.ru/download/6.html",
+      "direct_file_url": "https://skysend.ru/images/downloads/instruction_nanoprotech.pdf",
+      "target_url": "https://skysend.ru/images/downloads/instruction_nanoprotech.pdf",
+      "link_kind": "file",
+      "source_links": [
+        "https://skysend.ru/download.raw?task=callelement&item_id=248&element=f85c494b-2b32-4109-b8c1-083cca2b7db6&method=download&args[0]=d88e4f9a9af278f91809289b2eb15b24",
+        "https://skysend.ru/images/downloads/instruction_nanoprotech.pdf"
+      ],
+      "source_occurrences": [
+        {
+          "title": "Обработка терминала антикоррозийным защитным покрытием \n 107.10 KB",
+          "page": "https://skysend.ru/download/6.html"
+        }
+      ],
+      "source_flags": [
+        "verify_before_publish"
+      ],
+      "source_size_text": "107.10 KB",
+      "format_from_url": "pdf",
+      "status": "source_link_unverified",
+      "version_policy": "Не обозначать архивную версию как актуальную и не заявлять совместимость с текущими ОС без проверки.",
+      "content_review": "Отбор по исходному названию и URL; содержимое бинарных файлов не скачивалось и не проверялось."
+    },
+    {
+      "id": "terminal-d0e4ecb5da",
+      "group": "terminal",
+      "kind": "instruction",
+      "source_title": "Скачивание логов терминала usb-накопителем \n 106.60 KB",
+      "display_title": "Скачивание логов терминала usb-накопителем",
+      "source_page": "https://skysend.ru/download/2.html",
+      "direct_file_url": "https://skysend.ru/images/downloads/instruction_downloads_logs.pdf",
+      "target_url": "https://skysend.ru/images/downloads/instruction_downloads_logs.pdf",
+      "link_kind": "file",
+      "source_links": [
+        "https://skysend.ru/download.raw?task=callelement&item_id=244&element=f85c494b-2b32-4109-b8c1-083cca2b7db6&method=download&args[0]=fcb842cebb7ba172d7cdc027d9817634",
+        "https://skysend.ru/images/downloads/instruction_downloads_logs.pdf"
+      ],
+      "source_occurrences": [
+        {
+          "title": "Скачивание логов терминала usb-накопителем \n 106.60 KB",
+          "page": "https://skysend.ru/download/2.html"
+        }
+      ],
+      "source_flags": [
+        "verify_before_publish"
+      ],
+      "source_size_text": "106.60 KB",
+      "format_from_url": "pdf",
+      "status": "source_link_unverified",
+      "version_policy": "Не обозначать архивную версию как актуальную и не заявлять совместимость с текущими ОС без проверки.",
+      "content_review": "Отбор по исходному названию и URL; содержимое бинарных файлов не скачивалось и не проверялось."
+    },
+    {
+      "id": "terminal-2dd1aa405f",
+      "group": "terminal",
+      "kind": "instruction",
+      "source_title": "Совместимые накопители \n 462.63 KB",
+      "display_title": "Совместимые накопители",
+      "source_page": "https://skysend.ru/download/6.html",
+      "direct_file_url": "https://skysend.ru/images/downloads/supported_devices.pdf",
+      "target_url": "https://skysend.ru/images/downloads/supported_devices.pdf",
+      "link_kind": "file",
+      "source_links": [
+        "https://skysend.ru/download.raw?task=callelement&item_id=231&element=f85c494b-2b32-4109-b8c1-083cca2b7db6&method=download&args[0]=139996c3c917468b28541ccf2732d16a",
+        "https://skysend.ru/images/downloads/supported_devices.pdf"
+      ],
+      "source_occurrences": [
+        {
+          "title": "Совместимые накопители \n 462.63 KB",
+          "page": "https://skysend.ru/download/6.html"
+        }
+      ],
+      "source_flags": [
+        "verify_before_publish"
+      ],
+      "source_size_text": "462.63 KB",
+      "format_from_url": "pdf",
+      "status": "source_link_unverified",
+      "version_policy": "Не обозначать архивную версию как актуальную и не заявлять совместимость с текущими ОС без проверки.",
+      "content_review": "Отбор по исходному названию и URL; содержимое бинарных файлов не скачивалось и не проверялось."
+    },
+    {
+      "id": "terminal-ff4d241ea9",
+      "group": "terminal",
+      "kind": "instruction",
+      "source_title": "Эксплуатация терминала \n 1.63 MB",
+      "display_title": "Эксплуатация терминала",
+      "source_page": "https://skysend.ru/download/8.html",
+      "direct_file_url": "https://skysend.ru/images/downloads/exploitation_terminal.pdf",
+      "target_url": "https://skysend.ru/images/downloads/exploitation_terminal.pdf",
+      "link_kind": "file",
+      "source_links": [
+        "https://skysend.ru/download.raw?task=callelement&item_id=247&element=f85c494b-2b32-4109-b8c1-083cca2b7db6&method=download&args[0]=169772a630bf624c748a2eb1e3fef9c1",
+        "https://skysend.ru/images/downloads/exploitation_terminal.pdf"
+      ],
+      "source_occurrences": [
+        {
+          "title": "Эксплуатация терминала \n 1.63 MB",
+          "page": "https://skysend.ru/download/8.html"
+        }
+      ],
+      "source_flags": [
+        "verify_before_publish"
+      ],
+      "source_size_text": "1.63 MB",
+      "format_from_url": "pdf",
+      "status": "source_link_unverified",
+      "version_policy": "Не обозначать архивную версию как актуальную и не заявлять совместимость с текущими ОС без проверки.",
+      "content_review": "Отбор по исходному названию и URL; содержимое бинарных файлов не скачивалось и не проверялось."
+    },
+    {
+      "id": "rma-b6571ae893",
+      "group": "rma",
+      "kind": "software",
+      "source_title": "Приложение \"Рабочее место Агента для ОС Windows\"",
+      "display_title": "Приложение \"Рабочее место Агента для ОС Windows\"",
+      "source_page": "https://skysend.ru/download.html",
+      "direct_file_url": "https://ftp.isg.dev/soft/awp/awp-5.24.zip",
+      "target_url": "https://ftp.isg.dev/soft/awp/awp-5.24.zip",
+      "link_kind": "file",
+      "source_links": [
+        "https://ftp.isg.dev/soft/awp/awp-5.24.zip"
+      ],
+      "source_occurrences": [
+        {
+          "title": "Приложение \"Рабочее место Агента для ОС Windows\"",
+          "page": "https://skysend.ru/download.html"
+        }
+      ],
+      "source_flags": [
+        "verify_before_publish"
+      ],
+      "source_size_text": null,
+      "format_from_url": "zip",
+      "status": "reachable_head",
+      "version_policy": "Не обозначать архивную версию как актуальную и не заявлять совместимость с текущими ОС без проверки.",
+      "content_review": "Отбор по исходному названию и URL; содержимое бинарных файлов не скачивалось и не проверялось.",
+      "check": {
+        "checked_at": "2026-09-10T09:41:19+00:00",
+        "method": "HEAD",
+        "body_downloaded": false,
+        "status": "reachable_head",
+        "http_status": 200,
+        "final_url": "https://ftp.isg.dev/soft/awp/awp-5.24.zip",
+        "content_type": "application/zip",
+        "content_length_header": "7179035",
+        "note": "HEAD подтверждает ответ сервера, но не целостность файла, версию или совместимость ПО."
+      }
+    },
+    {
+      "id": "rma-31138d54eb",
+      "group": "rma",
+      "kind": "software",
+      "source_title": "Приложение для РМА для 64-битной версии OS Linux",
+      "display_title": "Приложение для РМА для 64-битной версии OS Linux",
+      "source_page": "https://skysend.ru/download.html",
+      "direct_file_url": "https://ftp.isg.dev/soft/awp/awp-5.24_linux_x64.tar.gz",
+      "target_url": "https://ftp.isg.dev/soft/awp/awp-5.24_linux_x64.tar.gz",
+      "link_kind": "file",
+      "source_links": [
+        "https://ftp.isg.dev/soft/awp/awp-5.24_linux_x64.tar.gz"
+      ],
+      "source_occurrences": [
+        {
+          "title": "Приложение для РМА для 64-битной версии OS Linux",
+          "page": "https://skysend.ru/download.html"
+        }
+      ],
+      "source_flags": [
+        "version_requires_review"
+      ],
+      "source_size_text": null,
+      "format_from_url": "tar.gz",
+      "status": "reachable_head",
+      "version_policy": "Не обозначать архивную версию как актуальную и не заявлять совместимость с текущими ОС без проверки.",
+      "content_review": "Отбор по исходному названию и URL; содержимое бинарных файлов не скачивалось и не проверялось.",
+      "check": {
+        "checked_at": "2026-09-10T09:41:19+00:00",
+        "method": "HEAD",
+        "body_downloaded": false,
+        "status": "reachable_head",
+        "http_status": 200,
+        "final_url": "https://ftp.isg.dev/soft/awp/awp-5.24_linux_x64.tar.gz",
+        "content_type": "application/x-gzip",
+        "content_length_header": "1344391",
+        "note": "HEAD подтверждает ответ сервера, но не целостность файла, версию или совместимость ПО."
+      }
+    },
+    {
+      "id": "rma-97a7322a7c",
+      "group": "rma",
+      "kind": "instruction_missing_link",
+      "source_title": "Установка и эксплуатация РМА Linux",
+      "display_title": "Установка и эксплуатация РМА Linux",
+      "source_page": "https://skysend.ru/download/8.html",
+      "direct_file_url": null,
+      "target_url": null,
+      "link_kind": "file",
+      "source_links": [],
+      "source_occurrences": [
+        {
+          "title": "Установка и эксплуатация РМА Linux",
+          "page": "https://skysend.ru/download/8.html"
+        }
+      ],
+      "source_flags": [
+        "no_download_url"
+      ],
+      "source_size_text": null,
+      "format_from_url": null,
+      "status": "missing_url",
+      "version_policy": "Не обозначать архивную версию как актуальную и не заявлять совместимость с текущими ОС без проверки.",
+      "content_review": "Отбор по исходному названию и URL; содержимое бинарных файлов не скачивалось и не проверялось.",
+      "fallback": {
+        "text": "Инструкция для Linux недоступна на сайте. Обратитесь в поддержку.",
+        "href": "/support/"
+      }
+    },
+    {
+      "id": "rma-5a93447b3a",
+      "group": "rma",
+      "kind": "instruction",
+      "source_title": "Установка и эксплуатация РМА Windows \n 2.16 MB",
+      "display_title": "Установка и эксплуатация РМА Windows",
+      "source_page": "https://skysend.ru/download/8.html",
+      "direct_file_url": "https://skysend.ru/images/downloads/instruction_rma_w.pdf",
+      "target_url": "https://skysend.ru/images/downloads/instruction_rma_w.pdf",
+      "link_kind": "file",
+      "source_links": [
+        "https://skysend.ru/download.raw?task=callelement&item_id=246&element=f85c494b-2b32-4109-b8c1-083cca2b7db6&method=download&args[0]=d2ebd26ba2204043bf0c152fdcd81a91",
+        "https://skysend.ru/images/downloads/instruction_rma_w.pdf"
+      ],
+      "source_occurrences": [
+        {
+          "title": "Установка и эксплуатация РМА Windows \n 2.16 MB",
+          "page": "https://skysend.ru/download/8.html"
+        }
+      ],
+      "source_flags": [
+        "verify_before_publish"
+      ],
+      "source_size_text": "2.16 MB",
+      "format_from_url": "pdf",
+      "status": "reachable_head",
+      "version_policy": "Не обозначать архивную версию как актуальную и не заявлять совместимость с текущими ОС без проверки.",
+      "content_review": "Отбор по исходному названию и URL; содержимое бинарных файлов не скачивалось и не проверялось.",
+      "check": {
+        "checked_at": "2026-09-10T09:41:19+00:00",
+        "method": "HEAD",
+        "body_downloaded": false,
+        "status": "reachable_head",
+        "http_status": 200,
+        "final_url": "https://skysend.ru/images/downloads/instruction_rma_w.pdf",
+        "content_type": "application/pdf",
+        "content_length_header": "2263638",
+        "note": "HEAD подтверждает ответ сервера, но не целостность файла, версию или совместимость ПО."
+      }
+    },
+    {
+      "id": "rma-android-2cb9964a52",
+      "group": "rma-android",
+      "kind": "external_store",
+      "source_title": "Приложение приема платежей для Android",
+      "display_title": "Приложение приема платежей для Android",
+      "source_page": "https://skysend.ru/download.html",
+      "direct_file_url": null,
+      "target_url": "https://play.google.com/store/apps/details?id=com.infsys.AWPSmartphone",
+      "link_kind": "store",
+      "source_links": [
+        "https://play.google.com/store/apps/details?id=com.infsys.AWPSmartphone"
+      ],
+      "source_occurrences": [
+        {
+          "title": "Приложение приема платежей для Android",
+          "page": "https://skysend.ru/download.html"
+        }
+      ],
+      "source_flags": [
+        "verify_before_publish"
+      ],
+      "source_size_text": null,
+      "format_from_url": null,
+      "status": "unavailable_checked",
+      "version_policy": "Не обозначать архивную версию как актуальную и не заявлять совместимость с текущими ОС без проверки.",
+      "content_review": "Отбор по исходному названию и URL; содержимое бинарных файлов не скачивалось и не проверялось.",
+      "check": {
+        "checked_at": "2026-09-10T09:41:20+00:00",
+        "method": "HEAD",
+        "body_downloaded": false,
+        "status": "head_http_error",
+        "http_status": 404,
+        "note": "HTTP Error 404: Not Found"
+      },
+      "confirmation_check": {
+        "method": "GET_HEADERS_ONLY",
+        "checked_at": "2026-09-10T09:42:31+00:00",
+        "body_downloaded": false,
+        "http_status": 404,
+        "note": "HTTP Error 404: Not Found"
+      },
+      "fallback": {
+        "text": "Приложение недоступно по ссылке Google Play. Обратитесь в поддержку.",
+        "href": "/support/"
+      }
+    },
+    {
+      "id": "rma-android-ce621f1edb",
+      "group": "rma-android",
+      "kind": "instruction",
+      "source_title": "Программа приема платежей на Android \n 1.37 MB",
+      "display_title": "Программа приема платежей на Android",
+      "source_page": "https://skysend.ru/download/4.html",
+      "direct_file_url": "https://skysend.ru/images/downloads/instruction_rma_android.pdf",
+      "target_url": "https://skysend.ru/images/downloads/instruction_rma_android.pdf",
+      "link_kind": "file",
+      "source_links": [
+        "https://skysend.ru/download.raw?task=callelement&item_id=242&element=f85c494b-2b32-4109-b8c1-083cca2b7db6&method=download&args[0]=dadbb9122508334788925b2e990a904b",
+        "https://skysend.ru/images/downloads/instruction_rma_android.pdf"
+      ],
+      "source_occurrences": [
+        {
+          "title": "Программа приема платежей на Android \n 1.37 MB",
+          "page": "https://skysend.ru/download/4.html"
+        }
+      ],
+      "source_flags": [
+        "verify_before_publish"
+      ],
+      "source_size_text": "1.37 MB",
+      "format_from_url": "pdf",
+      "status": "reachable_head",
+      "version_policy": "Не обозначать архивную версию как актуальную и не заявлять совместимость с текущими ОС без проверки.",
+      "content_review": "Отбор по исходному названию и URL; содержимое бинарных файлов не скачивалось и не проверялось.",
+      "check": {
+        "checked_at": "2026-09-10T09:41:20+00:00",
+        "method": "HEAD",
+        "body_downloaded": false,
+        "status": "reachable_head",
+        "http_status": 200,
+        "final_url": "https://skysend.ru/images/downloads/instruction_rma_android.pdf",
+        "content_type": "application/pdf",
+        "content_length_header": "1431621",
+        "note": "HEAD подтверждает ответ сервера, но не целостность файла, версию или совместимость ПО."
+      }
+    },
+    {
+      "id": "xml-f638411134",
+      "group": "xml",
+      "kind": "protocol_or_code_example",
+      "source_title": "Описание протокола SkyTransact",
+      "display_title": "Описание протокола SkyTransact",
+      "source_page": "https://skysend.ru/download/4.html",
+      "direct_file_url": "http://cluster.skysend.ru:6722/skysend_protocol_actual.pdf",
+      "target_url": "http://cluster.skysend.ru:6722/skysend_protocol_actual.pdf",
+      "link_kind": "file",
+      "source_links": [
+        "http://cluster.skysend.ru:6722/skysend_protocol_actual.pdf"
+      ],
+      "source_occurrences": [
+        {
+          "title": "Описание протокола SkyTransact",
+          "page": "https://skysend.ru/download/4.html"
+        }
+      ],
+      "source_flags": [
+        "verify_before_publish"
+      ],
+      "source_size_text": null,
+      "format_from_url": "pdf",
+      "status": "reachable_head",
+      "version_policy": "Не обозначать архивную версию как актуальную и не заявлять совместимость с текущими ОС без проверки.",
+      "content_review": "Отбор по исходному названию и URL; содержимое бинарных файлов не скачивалось и не проверялось.",
+      "check": {
+        "checked_at": "2026-09-10T09:41:20+00:00",
+        "method": "HEAD",
+        "body_downloaded": false,
+        "status": "reachable_head",
+        "http_status": 200,
+        "final_url": "http://cluster.skysend.ru:6722/skysend_protocol_actual.pdf",
+        "content_type": "application/pdf",
+        "content_length_header": "2819926",
+        "note": "HEAD подтверждает ответ сервера, но не целостность файла, версию или совместимость ПО."
+      }
+    },
+    {
+      "id": "xml-c6c9ba2e03",
+      "group": "xml",
+      "kind": "protocol_or_code_example",
+      "source_title": "Пример для предпроцессинга C++ \n 16.28 KB",
+      "display_title": "Пример для предпроцессинга C++",
+      "source_page": "https://skysend.ru/download/3.html",
+      "direct_file_url": "https://skysend.ru/images/downloads/example_C++.zip",
+      "target_url": "https://skysend.ru/images/downloads/example_C++.zip",
+      "link_kind": "file",
+      "source_links": [
+        "https://skysend.ru/download.raw?task=callelement&item_id=300&element=f85c494b-2b32-4109-b8c1-083cca2b7db6&method=download&args[0]=a276e4fa9a1b5e163a963102c301522b",
+        "https://skysend.ru/images/downloads/example_C++.zip"
+      ],
+      "source_occurrences": [
+        {
+          "title": "Пример для предпроцессинга C++ \n 16.28 KB",
+          "page": "https://skysend.ru/download/3.html"
+        }
+      ],
+      "source_flags": [
+        "verify_before_publish"
+      ],
+      "source_size_text": "16.28 KB",
+      "format_from_url": "zip",
+      "status": "source_link_unverified",
+      "version_policy": "Не обозначать архивную версию как актуальную и не заявлять совместимость с текущими ОС без проверки.",
+      "content_review": "Отбор по исходному названию и URL; содержимое бинарных файлов не скачивалось и не проверялось."
+    },
+    {
+      "id": "xml-f0a5f8f2b9",
+      "group": "xml",
+      "kind": "protocol_or_code_example",
+      "source_title": "Пример для препроцессинга PHP \n 9.82 KB",
+      "display_title": "Пример для препроцессинга PHP",
+      "source_page": "https://skysend.ru/download/6.html",
+      "direct_file_url": "https://skysend.ru/images/downloads/example_php.zip",
+      "target_url": "https://skysend.ru/images/downloads/example_php.zip",
+      "link_kind": "file",
+      "source_links": [
+        "https://skysend.ru/download.raw?task=callelement&item_id=299&element=f85c494b-2b32-4109-b8c1-083cca2b7db6&method=download&args[0]=8c770d55c38fd76cc7b94baacdf0b912",
+        "https://skysend.ru/images/downloads/example_php.zip"
+      ],
+      "source_occurrences": [
+        {
+          "title": "Пример для препроцессинга PHP \n 9.82 KB",
+          "page": "https://skysend.ru/download/6.html"
+        }
+      ],
+      "source_flags": [
+        "verify_before_publish"
+      ],
+      "source_size_text": "9.82 KB",
+      "format_from_url": "zip",
+      "status": "source_link_unverified",
+      "version_policy": "Не обозначать архивную версию как актуальную и не заявлять совместимость с текущими ОС без проверки.",
+      "content_review": "Отбор по исходному названию и URL; содержимое бинарных файлов не скачивалось и не проверялось."
+    },
+    {
+      "id": "pos-9484f696f3",
+      "group": "pos",
+      "kind": "software",
+      "source_title": "ПО для POS-терминала Штрих-Mobile Pay PRO - Версия 1.1 (7 Mb)",
+      "display_title": "ПО для POS-терминала Штрих-Mobile Pay PRO - Версия 1.1 (7 Mb)",
+      "source_page": "https://skysend.ru/download/10.html",
+      "direct_file_url": "https://ftp.isg.dev/soft/pos_terminal/MPProSkyConfig.zip",
+      "target_url": "https://ftp.isg.dev/soft/pos_terminal/MPProSkyConfig.zip",
+      "link_kind": "file",
+      "source_links": [
+        "https://ftp.isg.dev/soft/pos_terminal/MPProSkyConfig.zip"
+      ],
+      "source_occurrences": [
+        {
+          "title": "ПО для POS-терминала Штрих-Mobile Pay PRO - Версия 1.1 (7 Mb)",
+          "page": "https://skysend.ru/download/10.html"
+        }
+      ],
+      "source_flags": [
+        "version_requires_review"
+      ],
+      "source_size_text": null,
+      "format_from_url": "zip",
+      "status": "reachable_head",
+      "version_policy": "Не обозначать архивную версию как актуальную и не заявлять совместимость с текущими ОС без проверки.",
+      "content_review": "Отбор по исходному названию и URL; содержимое бинарных файлов не скачивалось и не проверялось.",
+      "check": {
+        "checked_at": "2026-09-10T09:41:20+00:00",
+        "method": "HEAD",
+        "body_downloaded": false,
+        "status": "reachable_head",
+        "http_status": 200,
+        "final_url": "https://ftp.isg.dev/soft/pos_terminal/MPProSkyConfig.zip",
+        "content_type": "application/zip",
+        "content_length_header": "7333227",
+        "note": "HEAD подтверждает ответ сервера, но не целостность файла, версию или совместимость ПО."
+      }
+    },
+    {
+      "id": "system-documents-7dcaef90f3",
+      "group": "system-documents",
+      "kind": "system_document",
+      "source_title": "Анализ работы терминала \n 51.03 KB",
+      "display_title": "Анализ работы терминала",
+      "source_page": "https://skysend.ru/download/6.html",
+      "direct_file_url": "https://skysend.ru/images/downloads/statement_technical_analysis.docx",
+      "target_url": "https://skysend.ru/images/downloads/statement_technical_analysis.docx",
+      "link_kind": "file",
+      "source_links": [
+        "https://skysend.ru/download.raw?task=callelement&item_id=249&element=f85c494b-2b32-4109-b8c1-083cca2b7db6&method=download&args[0]=07fccab4641906542c34c0fae2b340da",
+        "https://skysend.ru/images/downloads/statement_technical_analysis.docx"
+      ],
+      "source_occurrences": [
+        {
+          "title": "Анализ работы терминала \n 51.03 KB",
+          "page": "https://skysend.ru/download/6.html"
+        }
+      ],
+      "source_flags": [
+        "verify_before_publish"
+      ],
+      "source_size_text": "51.03 KB",
+      "format_from_url": "docx",
+      "status": "source_link_unverified",
+      "version_policy": "Не обозначать архивную версию как актуальную и не заявлять совместимость с текущими ОС без проверки.",
+      "content_review": "Отбор по исходному названию и URL; содержимое бинарных файлов не скачивалось и не проверялось."
+    },
+    {
+      "id": "system-documents-6bba42d030",
+      "group": "system-documents",
+      "kind": "system_document",
+      "source_title": "Аналитическая справка \n 51.41 KB",
+      "display_title": "Аналитическая справка",
+      "source_page": "https://skysend.ru/download/9.html",
+      "direct_file_url": "https://skysend.ru/images/downloads/statement_analytical_reference.docx",
+      "target_url": "https://skysend.ru/images/downloads/statement_analytical_reference.docx",
+      "link_kind": "file",
+      "source_links": [
+        "https://skysend.ru/download.raw?task=callelement&item_id=250&element=f85c494b-2b32-4109-b8c1-083cca2b7db6&method=download&args[0]=93bd63cbcb7d53572b732c470b3c36c7",
+        "https://skysend.ru/images/downloads/statement_analytical_reference.docx"
+      ],
+      "source_occurrences": [
+        {
+          "title": "Аналитическая справка \n 51.41 KB",
+          "page": "https://skysend.ru/download/9.html"
+        }
+      ],
+      "source_flags": [
+        "verify_before_publish"
+      ],
+      "source_size_text": "51.41 KB",
+      "format_from_url": "docx",
+      "status": "source_link_unverified",
+      "version_policy": "Не обозначать архивную версию как актуальную и не заявлять совместимость с текущими ОС без проверки.",
+      "content_review": "Отбор по исходному названию и URL; содержимое бинарных файлов не скачивалось и не проверялось."
+    },
+    {
+      "id": "system-documents-e5e6e93e7a",
+      "group": "system-documents",
+      "kind": "system_document",
+      "source_title": "Виды деятельности для приема платежей (ОКВЭД) \n 65.09 KB",
+      "display_title": "Виды деятельности для приема платежей (ОКВЭД)",
+      "source_page": "https://skysend.ru/download/8.html",
+      "direct_file_url": "https://skysend.ru/images/downloads/activities.pdf",
+      "target_url": "https://skysend.ru/images/downloads/activities.pdf",
+      "link_kind": "file",
+      "source_links": [
+        "https://skysend.ru/download.raw?task=callelement&item_id=405&element=f85c494b-2b32-4109-b8c1-083cca2b7db6&method=download&args[0]=fd2f3c008480887d6b6b0fa411e47da7",
+        "https://skysend.ru/images/downloads/activities.pdf"
+      ],
+      "source_occurrences": [
+        {
+          "title": "Виды деятельности для приема платежей (ОКВЭД) \n 65.09 KB",
+          "page": "https://skysend.ru/download/8.html"
+        }
+      ],
+      "source_flags": [
+        "legal_financial_document_requires_current_revision"
+      ],
+      "source_size_text": "65.09 KB",
+      "format_from_url": "pdf",
+      "status": "source_link_unverified",
+      "version_policy": "Не обозначать архивную версию как актуальную и не заявлять совместимость с текущими ОС без проверки.",
+      "content_review": "Отбор по исходному названию и URL; содержимое бинарных файлов не скачивалось и не проверялось."
+    },
+    {
+      "id": "system-documents-1f4786dae1",
+      "group": "system-documents",
+      "kind": "system_document",
+      "source_title": "Договор аренды терминалов (оплата процентами от оборота) \n 251.06 KB",
+      "display_title": "Договор аренды терминалов (оплата процентами от оборота)",
+      "source_page": "https://skysend.ru/download/10.html",
+      "direct_file_url": "https://skysend.ru/images/downloads/contract_rent_dynamic.docx",
+      "target_url": "https://skysend.ru/images/downloads/contract_rent_dynamic.docx",
+      "link_kind": "file",
+      "source_links": [
+        "https://skysend.ru/download.raw?task=callelement&item_id=328&element=f85c494b-2b32-4109-b8c1-083cca2b7db6&method=download&args[0]=6b343f851aa6042afbb5777000f037fc",
+        "https://skysend.ru/images/downloads/contract_rent_dynamic.docx"
+      ],
+      "source_occurrences": [
+        {
+          "title": "Договор аренды терминалов (оплата процентами от оборота) \n 251.06 KB",
+          "page": "https://skysend.ru/download/10.html"
+        }
+      ],
+      "source_flags": [
+        "legal_financial_document_requires_current_revision"
+      ],
+      "source_size_text": "251.06 KB",
+      "format_from_url": "docx",
+      "status": "source_link_unverified",
+      "version_policy": "Не обозначать архивную версию как актуальную и не заявлять совместимость с текущими ОС без проверки.",
+      "content_review": "Отбор по исходному названию и URL; содержимое бинарных файлов не скачивалось и не проверялось."
+    },
+    {
+      "id": "system-documents-9304071ba8",
+      "group": "system-documents",
+      "kind": "system_document",
+      "source_title": "Договор аренды терминалов (статичная оплата) \n 196.92 KB",
+      "display_title": "Договор аренды терминалов (статичная оплата)",
+      "source_page": "https://skysend.ru/download/7.html",
+      "direct_file_url": "https://skysend.ru/images/downloads/contract_rent_static.docx",
+      "target_url": "https://skysend.ru/images/downloads/contract_rent_static.docx",
+      "link_kind": "file",
+      "source_links": [
+        "https://skysend.ru/download.raw?task=callelement&item_id=213&element=f85c494b-2b32-4109-b8c1-083cca2b7db6&method=download&args[0]=e74cd55c8bd17c812e0eb3c8190cfb1f",
+        "https://skysend.ru/images/downloads/contract_rent_static.docx"
+      ],
+      "source_occurrences": [
+        {
+          "title": "Договор аренды терминалов (статичная оплата) \n 196.92 KB",
+          "page": "https://skysend.ru/download/7.html"
+        }
+      ],
+      "source_flags": [
+        "legal_financial_document_requires_current_revision"
+      ],
+      "source_size_text": "196.92 KB",
+      "format_from_url": "docx",
+      "status": "source_link_unverified",
+      "version_policy": "Не обозначать архивную версию как актуальную и не заявлять совместимость с текущими ОС без проверки.",
+      "content_review": "Отбор по исходному названию и URL; содержимое бинарных файлов не скачивалось и не проверялось."
+    },
+    {
+      "id": "system-documents-baea132af4",
+      "group": "system-documents",
+      "kind": "system_document",
+      "source_title": "Договор поручительства \n 80.00 KB",
+      "display_title": "Договор поручительства",
+      "source_page": "https://skysend.ru/download/7.html",
+      "direct_file_url": "https://skysend.ru/images/downloads/contract_guarantor.doc",
+      "target_url": "https://skysend.ru/images/downloads/contract_guarantor.doc",
+      "link_kind": "file",
+      "source_links": [
+        "https://skysend.ru/download.raw?task=callelement&item_id=225&element=f85c494b-2b32-4109-b8c1-083cca2b7db6&method=download&args[0]=d05934737e5d9835b7f34dc771157986",
+        "https://skysend.ru/images/downloads/contract_guarantor.doc"
+      ],
+      "source_occurrences": [
+        {
+          "title": "Договор поручительства \n 80.00 KB",
+          "page": "https://skysend.ru/download/7.html"
+        }
+      ],
+      "source_flags": [
+        "legal_financial_document_requires_current_revision"
+      ],
+      "source_size_text": "80.00 KB",
+      "format_from_url": "doc",
+      "status": "source_link_unverified",
+      "version_policy": "Не обозначать архивную версию как актуальную и не заявлять совместимость с текущими ОС без проверки.",
+      "content_review": "Отбор по исходному названию и URL; содержимое бинарных файлов не скачивалось и не проверялось."
+    },
+    {
+      "id": "system-documents-715b844cf0",
+      "group": "system-documents",
+      "kind": "system_document",
+      "source_title": "Договор присоединения Агента к системе SkySend",
+      "display_title": "Договор присоединения Агента к системе SkySend",
+      "source_page": "https://skysend.ru/download/10.html",
+      "direct_file_url": "https://ftp.isg.dev/docs/contract_agent_skysend.pdf",
+      "target_url": "https://ftp.isg.dev/docs/contract_agent_skysend.pdf",
+      "link_kind": "file",
+      "source_links": [
+        "https://ftp.isg.dev/docs/contract_agent_skysend.pdf"
+      ],
+      "source_occurrences": [
+        {
+          "title": "Договор присоединения Агента к системе SkySend",
+          "page": "https://skysend.ru/download/10.html"
+        }
+      ],
+      "source_flags": [
+        "legal_financial_document_requires_current_revision"
+      ],
+      "source_size_text": null,
+      "format_from_url": "pdf",
+      "status": "reachable_head",
+      "version_policy": "Не обозначать архивную версию как актуальную и не заявлять совместимость с текущими ОС без проверки.",
+      "content_review": "Отбор по исходному названию и URL; содержимое бинарных файлов не скачивалось и не проверялось.",
+      "check": {
+        "checked_at": "2026-09-10T09:41:20+00:00",
+        "method": "HEAD",
+        "body_downloaded": false,
+        "status": "reachable_head",
+        "http_status": 200,
+        "final_url": "https://ftp.isg.dev/docs/contract_agent_skysend.pdf",
+        "content_type": "application/pdf",
+        "content_length_header": "551757",
+        "note": "HEAD подтверждает ответ сервера, но не целостность файла, версию или совместимость ПО."
+      }
+    },
+    {
+      "id": "system-documents-697f74f8d7",
+      "group": "system-documents",
+      "kind": "system_document",
+      "source_title": "Договор присоединения к поставщику услуг",
+      "display_title": "Договор присоединения к поставщику услуг",
+      "source_page": "https://skysend.ru/download/10.html",
+      "direct_file_url": "https://ftp.isg.dev/docs/contract_agent_skysend_with_supplier.pdf",
+      "target_url": "https://ftp.isg.dev/docs/contract_agent_skysend_with_supplier.pdf",
+      "link_kind": "file",
+      "source_links": [
+        "https://ftp.isg.dev/docs/contract_agent_skysend_with_supplier.pdf"
+      ],
+      "source_occurrences": [
+        {
+          "title": "Договор присоединения к поставщику услуг",
+          "page": "https://skysend.ru/download/10.html"
+        }
+      ],
+      "source_flags": [
+        "legal_financial_document_requires_current_revision"
+      ],
+      "source_size_text": null,
+      "format_from_url": "pdf",
+      "status": "source_link_unverified",
+      "version_policy": "Не обозначать архивную версию как актуальную и не заявлять совместимость с текущими ОС без проверки.",
+      "content_review": "Отбор по исходному названию и URL; содержимое бинарных файлов не скачивалось и не проверялось."
+    },
+    {
+      "id": "system-documents-14271642aa",
+      "group": "system-documents",
+      "kind": "system_document",
+      "source_title": "Договор присоединения поставщика товаров к системе SkySend \n 120.50 KB",
+      "display_title": "Договор присоединения поставщика товаров к системе SkySend",
+      "source_page": "https://skysend.ru/download/10.html",
+      "direct_file_url": "https://skysend.ru/images/downloads/contract_shipper.doc",
+      "target_url": "https://skysend.ru/images/downloads/contract_shipper.doc",
+      "link_kind": "file",
+      "source_links": [
+        "https://skysend.ru/download.raw?task=callelement&item_id=228&element=f85c494b-2b32-4109-b8c1-083cca2b7db6&method=download&args[0]=768ccc36790383e38c6edc104785e9e8",
+        "https://skysend.ru/images/downloads/contract_shipper.doc"
+      ],
+      "source_occurrences": [
+        {
+          "title": "Договор присоединения поставщика товаров к системе SkySend \n 120.50 KB",
+          "page": "https://skysend.ru/download/10.html"
+        }
+      ],
+      "source_flags": [
+        "legal_financial_document_requires_current_revision"
+      ],
+      "source_size_text": "120.50 KB",
+      "format_from_url": "doc",
+      "status": "source_link_unverified",
+      "version_policy": "Не обозначать архивную версию как актуальную и не заявлять совместимость с текущими ОС без проверки.",
+      "content_review": "Отбор по исходному названию и URL; содержимое бинарных файлов не скачивалось и не проверялось."
+    },
+    {
+      "id": "system-documents-6401295691",
+      "group": "system-documents",
+      "kind": "system_document",
+      "source_title": "Договор присоединения Представителя к системе SkySend \n 358.52 KB",
+      "display_title": "Договор присоединения Представителя к системе SkySend",
+      "source_page": "https://skysend.ru/download/9.html",
+      "direct_file_url": "https://skysend.ru/images/downloads/contract_dealer.pdf",
+      "target_url": "https://skysend.ru/images/downloads/contract_dealer.pdf",
+      "link_kind": "file",
+      "source_links": [
+        "https://skysend.ru/download.raw?task=callelement&item_id=223&element=f85c494b-2b32-4109-b8c1-083cca2b7db6&method=download&args[0]=33e7b36ba3596dbfc3acdb5ccc4b8bf7",
+        "https://skysend.ru/images/downloads/contract_dealer.pdf"
+      ],
+      "source_occurrences": [
+        {
+          "title": "Договор присоединения Представителя к системе SkySend \n 358.52 KB",
+          "page": "https://skysend.ru/download/9.html"
+        }
+      ],
+      "source_flags": [
+        "legal_financial_document_requires_current_revision"
+      ],
+      "source_size_text": "358.52 KB",
+      "format_from_url": "pdf",
+      "status": "source_link_unverified",
+      "version_policy": "Не обозначать архивную версию как актуальную и не заявлять совместимость с текущими ОС без проверки.",
+      "content_review": "Отбор по исходному названию и URL; содержимое бинарных файлов не скачивалось и не проверялось."
+    },
+    {
+      "id": "system-documents-44d1acf427",
+      "group": "system-documents",
+      "kind": "system_document",
+      "source_title": "Договор с Провайдером \n 72.93 KB",
+      "display_title": "Договор с Провайдером",
+      "source_page": "https://skysend.ru/download/4.html",
+      "direct_file_url": "https://skysend.ru/images/downloads/contract_provider.docx",
+      "target_url": "https://skysend.ru/images/downloads/contract_provider.docx",
+      "link_kind": "file",
+      "source_links": [
+        "https://skysend.ru/download.raw?task=callelement&item_id=227&element=f85c494b-2b32-4109-b8c1-083cca2b7db6&method=download&args[0]=6ee215442f3e048da318175366da6454",
+        "https://skysend.ru/images/downloads/contract_provider.docx"
+      ],
+      "source_occurrences": [
+        {
+          "title": "Договор с Провайдером \n 72.93 KB",
+          "page": "https://skysend.ru/download/4.html"
+        }
+      ],
+      "source_flags": [
+        "legal_financial_document_requires_current_revision"
+      ],
+      "source_size_text": "72.93 KB",
+      "format_from_url": "docx",
+      "status": "source_link_unverified",
+      "version_policy": "Не обозначать архивную версию как актуальную и не заявлять совместимость с текущими ОС без проверки.",
+      "content_review": "Отбор по исходному названию и URL; содержимое бинарных файлов не скачивалось и не проверялось."
+    },
+    {
+      "id": "system-documents-ba9a7c7100",
+      "group": "system-documents",
+      "kind": "system_document",
+      "source_title": "Дополнительное соглашение овердрафт \n 66.00 KB",
+      "display_title": "Дополнительное соглашение овердрафт",
+      "source_page": "https://skysend.ru/download/9.html",
+      "direct_file_url": "https://skysend.ru/images/downloads/agreement_overdraft.doc",
+      "target_url": "https://skysend.ru/images/downloads/agreement_overdraft.doc",
+      "link_kind": "file",
+      "source_links": [
+        "https://skysend.ru/download.raw?task=callelement&item_id=224&element=f85c494b-2b32-4109-b8c1-083cca2b7db6&method=download&args[0]=bd3237b0c382cb61ce3789349a58dea2",
+        "https://skysend.ru/images/downloads/agreement_overdraft.doc"
+      ],
+      "source_occurrences": [
+        {
+          "title": "Дополнительное соглашение овердрафт \n 66.00 KB",
+          "page": "https://skysend.ru/download/9.html"
+        }
+      ],
+      "source_flags": [
+        "legal_financial_document_requires_current_revision"
+      ],
+      "source_size_text": "66.00 KB",
+      "format_from_url": "doc",
+      "status": "source_link_unverified",
+      "version_policy": "Не обозначать архивную версию как актуальную и не заявлять совместимость с текущими ОС без проверки.",
+      "content_review": "Отбор по исходному названию и URL; содержимое бинарных файлов не скачивалось и не проверялось."
+    },
+    {
+      "id": "system-documents-4fe0b6f2c0",
+      "group": "system-documents",
+      "kind": "system_document",
+      "source_title": "Заявка на получение овердрафта \n 52.71 KB",
+      "display_title": "Заявка на получение овердрафта",
+      "source_page": "https://skysend.ru/download/7.html",
+      "direct_file_url": "https://skysend.ru/images/downloads/overdraft_application.docx",
+      "target_url": "https://skysend.ru/images/downloads/overdraft_application.docx",
+      "link_kind": "file",
+      "source_links": [
+        "https://skysend.ru/download.raw?task=callelement&item_id=251&element=f85c494b-2b32-4109-b8c1-083cca2b7db6&method=download&args[0]=84401160d56cba28c0f5e576c78a2f55",
+        "https://skysend.ru/images/downloads/overdraft_application.docx"
+      ],
+      "source_occurrences": [
+        {
+          "title": "Заявка на получение овердрафта \n 52.71 KB",
+          "page": "https://skysend.ru/download/7.html"
+        }
+      ],
+      "source_flags": [
+        "legal_financial_document_requires_current_revision"
+      ],
+      "source_size_text": "52.71 KB",
+      "format_from_url": "docx",
+      "status": "source_link_unverified",
+      "version_policy": "Не обозначать архивную версию как актуальную и не заявлять совместимость с текущими ОС без проверки.",
+      "content_review": "Отбор по исходному названию и URL; содержимое бинарных файлов не скачивалось и не проверялось."
+    },
+    {
+      "id": "system-documents-0f5d401d4b",
+      "group": "system-documents",
+      "kind": "system_document",
+      "source_title": "Заявление тех. поддержка 2-го уровня (SLM) \n 50.55 KB",
+      "display_title": "Заявление тех. поддержка 2-го уровня (SLM)",
+      "source_page": "https://skysend.ru/download/2.html",
+      "direct_file_url": "https://skysend.ru/images/downloads/statement_SLM.docx",
+      "target_url": "https://skysend.ru/images/downloads/statement_SLM.docx",
+      "link_kind": "file",
+      "source_links": [
+        "https://skysend.ru/download.raw?task=callelement&item_id=420&element=f85c494b-2b32-4109-b8c1-083cca2b7db6&method=download&args[0]=8f6bc1c1446e45a853144781c0a8429a",
+        "https://skysend.ru/images/downloads/statement_SLM.docx"
+      ],
+      "source_occurrences": [
+        {
+          "title": "Заявление тех. поддержка 2-го уровня (SLM) \n 50.55 KB",
+          "page": "https://skysend.ru/download/2.html"
+        }
+      ],
+      "source_flags": [
+        "verify_before_publish"
+      ],
+      "source_size_text": "50.55 KB",
+      "format_from_url": "docx",
+      "status": "source_link_unverified",
+      "version_policy": "Не обозначать архивную версию как актуальную и не заявлять совместимость с текущими ОС без проверки.",
+      "content_review": "Отбор по исходному названию и URL; содержимое бинарных файлов не скачивалось и не проверялось."
+    },
+    {
+      "id": "system-documents-13d950a012",
+      "group": "system-documents",
+      "kind": "system_document",
+      "source_title": "Заявление Тех.поддержка 1-го уровня (FLM) \n 50.57 KB",
+      "display_title": "Заявление Тех.поддержка 1-го уровня (FLM)",
+      "source_page": "https://skysend.ru/download/2.html",
+      "direct_file_url": "https://skysend.ru/images/downloads/statement_FLM.docx",
+      "target_url": "https://skysend.ru/images/downloads/statement_FLM.docx",
+      "link_kind": "file",
+      "source_links": [
+        "https://skysend.ru/download.raw?task=callelement&item_id=419&element=f85c494b-2b32-4109-b8c1-083cca2b7db6&method=download&args[0]=c9f8abaa56f425b3c7e9cff3af32b218",
+        "https://skysend.ru/images/downloads/statement_FLM.docx"
+      ],
+      "source_occurrences": [
+        {
+          "title": "Заявление Тех.поддержка 1-го уровня (FLM) \n 50.57 KB",
+          "page": "https://skysend.ru/download/2.html"
+        }
+      ],
+      "source_flags": [
+        "verify_before_publish"
+      ],
+      "source_size_text": "50.57 KB",
+      "format_from_url": "docx",
+      "status": "source_link_unverified",
+      "version_policy": "Не обозначать архивную версию как актуальную и не заявлять совместимость с текущими ОС без проверки.",
+      "content_review": "Отбор по исходному названию и URL; содержимое бинарных файлов не скачивалось и не проверялось."
+    },
+    {
+      "id": "system-documents-4d11e9213c",
+      "group": "system-documents",
+      "kind": "system_document",
+      "source_title": "Корректировка ошибочного банковского платежа \n 50.82 KB",
+      "display_title": "Корректировка ошибочного банковского платежа",
+      "source_page": "https://skysend.ru/download/8.html",
+      "direct_file_url": "https://skysend.ru/images/downloads/statement_correction.docx",
+      "target_url": "https://skysend.ru/images/downloads/statement_correction.docx",
+      "link_kind": "file",
+      "source_links": [
+        "https://skysend.ru/download.raw?task=callelement&item_id=252&element=f85c494b-2b32-4109-b8c1-083cca2b7db6&method=download&args[0]=30f196e1233f8881eb169f7ca703761c",
+        "https://skysend.ru/images/downloads/statement_correction.docx"
+      ],
+      "source_occurrences": [
+        {
+          "title": "Корректировка ошибочного банковского платежа \n 50.82 KB",
+          "page": "https://skysend.ru/download/8.html"
+        }
+      ],
+      "source_flags": [
+        "verify_before_publish"
+      ],
+      "source_size_text": "50.82 KB",
+      "format_from_url": "docx",
+      "status": "source_link_unverified",
+      "version_policy": "Не обозначать архивную версию как актуальную и не заявлять совместимость с текущими ОС без проверки.",
+      "content_review": "Отбор по исходному названию и URL; содержимое бинарных файлов не скачивалось и не проверялось."
+    },
+    {
+      "id": "system-documents-73aaaf374a",
+      "group": "system-documents",
+      "kind": "system_document",
+      "source_title": "Памятка о доходах Агентов для предъявления в гос. органы \n 124.92 KB",
+      "display_title": "Памятка о доходах Агентов для предъявления в гос. органы",
+      "source_page": "https://skysend.ru/download/9.html",
+      "direct_file_url": "https://skysend.ru/images/downloads/memo_income_agent.pdf",
+      "target_url": "https://skysend.ru/images/downloads/memo_income_agent.pdf",
+      "link_kind": "file",
+      "source_links": [
+        "https://skysend.ru/download.raw?task=callelement&item_id=240&element=f85c494b-2b32-4109-b8c1-083cca2b7db6&method=download&args[0]=c6c45e47f6d005da63f8ac0cc88cb74e",
+        "https://skysend.ru/images/downloads/memo_income_agent.pdf"
+      ],
+      "source_occurrences": [
+        {
+          "title": "Памятка о доходах Агентов для предъявления в гос. органы \n 124.92 KB",
+          "page": "https://skysend.ru/download/9.html"
+        }
+      ],
+      "source_flags": [
+        "verify_before_publish"
+      ],
+      "source_size_text": "124.92 KB",
+      "format_from_url": "pdf",
+      "status": "source_link_unverified",
+      "version_policy": "Не обозначать архивную версию как актуальную и не заявлять совместимость с текущими ОС без проверки.",
+      "content_review": "Отбор по исходному названию и URL; содержимое бинарных файлов не скачивалось и не проверялось."
+    },
+    {
+      "id": "system-documents-cd9ac7403b",
+      "group": "system-documents",
+      "kind": "system_document",
+      "source_title": "Памятка по фискализации терминалов \n 81.91 KB",
+      "display_title": "Памятка по фискализации терминалов",
+      "source_page": "https://skysend.ru/download/8.html",
+      "direct_file_url": "https://skysend.ru/images/downloads/fisk_memo.pdf",
+      "target_url": "https://skysend.ru/images/downloads/fisk_memo.pdf",
+      "link_kind": "file",
+      "source_links": [
+        "https://skysend.ru/download.raw?task=callelement&item_id=435&element=f85c494b-2b32-4109-b8c1-083cca2b7db6&method=download&args[0]=154c3184bf81e242aae003ba466725ea",
+        "https://skysend.ru/images/downloads/fisk_memo.pdf"
+      ],
+      "source_occurrences": [
+        {
+          "title": "Памятка по фискализации терминалов \n 81.91 KB",
+          "page": "https://skysend.ru/download/8.html"
+        }
+      ],
+      "source_flags": [
+        "legal_financial_document_requires_current_revision"
+      ],
+      "source_size_text": "81.91 KB",
+      "format_from_url": "pdf",
+      "status": "source_link_unverified",
+      "version_policy": "Не обозначать архивную версию как актуальную и не заявлять совместимость с текущими ОС без проверки.",
+      "content_review": "Отбор по исходному названию и URL; содержимое бинарных файлов не скачивалось и не проверялось."
+    },
+    {
+      "id": "system-documents-11cb020702",
+      "group": "system-documents",
+      "kind": "system_document",
+      "source_title": "Подключение к фискальному регистратору агента \n 50.60 KB",
+      "display_title": "Подключение к фискальному регистратору агента",
+      "source_page": "https://skysend.ru/download/7.html",
+      "direct_file_url": "https://skysend.ru/images/downloads/statement_fiscal_register agent.docx",
+      "target_url": "https://skysend.ru/images/downloads/statement_fiscal_register agent.docx",
+      "link_kind": "file",
+      "source_links": [
+        "https://skysend.ru/download.raw?task=callelement&item_id=253&element=f85c494b-2b32-4109-b8c1-083cca2b7db6&method=download&args[0]=1e1210ce70a2a4b0f8e2ac281bbdbe04",
+        "https://skysend.ru/images/downloads/statement_fiscal_register agent.docx"
+      ],
+      "source_occurrences": [
+        {
+          "title": "Подключение к фискальному регистратору агента \n 50.60 KB",
+          "page": "https://skysend.ru/download/7.html"
+        }
+      ],
+      "source_flags": [
+        "legal_financial_document_requires_current_revision"
+      ],
+      "source_size_text": "50.60 KB",
+      "format_from_url": "docx",
+      "status": "source_link_unverified",
+      "version_policy": "Не обозначать архивную версию как актуальную и не заявлять совместимость с текущими ОС без проверки.",
+      "content_review": "Отбор по исходному названию и URL; содержимое бинарных файлов не скачивалось и не проверялось."
+    },
+    {
+      "id": "system-documents-c45e565945",
+      "group": "system-documents",
+      "kind": "system_document",
+      "source_title": "Подключение к фискальному регистратору системы \n 50.53 KB",
+      "display_title": "Подключение к фискальному регистратору системы",
+      "source_page": "https://skysend.ru/download/7.html",
+      "direct_file_url": "https://skysend.ru/images/downloads/statement_fiscal_register SkySend.docx",
+      "target_url": "https://skysend.ru/images/downloads/statement_fiscal_register SkySend.docx",
+      "link_kind": "file",
+      "source_links": [
+        "https://skysend.ru/download.raw?task=callelement&item_id=482&element=f85c494b-2b32-4109-b8c1-083cca2b7db6&method=download&args[0]=fa81ad41604129899d9a8e76a07010ba",
+        "https://skysend.ru/images/downloads/statement_fiscal_register SkySend.docx"
+      ],
+      "source_occurrences": [
+        {
+          "title": "Подключение к фискальному регистратору системы \n 50.53 KB",
+          "page": "https://skysend.ru/download/7.html"
+        }
+      ],
+      "source_flags": [
+        "legal_financial_document_requires_current_revision"
+      ],
+      "source_size_text": "50.53 KB",
+      "format_from_url": "docx",
+      "status": "source_link_unverified",
+      "version_policy": "Не обозначать архивную версию как актуальную и не заявлять совместимость с текущими ОС без проверки.",
+      "content_review": "Отбор по исходному названию и URL; содержимое бинарных файлов не скачивалось и не проверялось."
+    },
+    {
+      "id": "system-documents-9d640ab884",
+      "group": "system-documents",
+      "kind": "system_document",
+      "source_title": "Правила системы SkySend",
+      "display_title": "Правила системы SkySend",
+      "source_page": "https://skysend.ru/download/11.html",
+      "direct_file_url": "https://ftp.isg.dev/rules/rules_system_of_payments_skysend.pdf",
+      "target_url": "https://ftp.isg.dev/rules/rules_system_of_payments_skysend.pdf",
+      "link_kind": "file",
+      "source_links": [
+        "https://ftp.isg.dev/rules/rules_system_of_payments_skysend.pdf"
+      ],
+      "source_occurrences": [
+        {
+          "title": "Правила системы SkySend",
+          "page": "https://skysend.ru/download/11.html"
+        }
+      ],
+      "source_flags": [
+        "legal_financial_document_requires_current_revision"
+      ],
+      "source_size_text": null,
+      "format_from_url": "pdf",
+      "status": "reachable_head",
+      "version_policy": "Не обозначать архивную версию как актуальную и не заявлять совместимость с текущими ОС без проверки.",
+      "content_review": "Отбор по исходному названию и URL; содержимое бинарных файлов не скачивалось и не проверялось.",
+      "check": {
+        "checked_at": "2026-09-10T09:41:20+00:00",
+        "method": "HEAD",
+        "body_downloaded": false,
+        "status": "reachable_head",
+        "http_status": 200,
+        "final_url": "https://ftp.isg.dev/rules/rules_system_of_payments_skysend.pdf",
+        "content_type": "application/pdf",
+        "content_length_header": "2467223",
+        "note": "HEAD подтверждает ответ сервера, но не целостность файла, версию или совместимость ПО."
+      }
+    },
+    {
+      "id": "system-documents-59d168c4a3",
+      "group": "system-documents",
+      "kind": "system_document",
+      "source_title": "Приказ о внесении ОС FastSYS в ЕРРП",
+      "display_title": "Приказ о внесении ОС FastSYS в ЕРРП",
+      "source_page": "https://skysend.ru/download/9.html",
+      "direct_file_url": "http://inf-sys.ru/wp-content/uploads/2018/12/act_ERRP.pdf",
+      "target_url": "http://inf-sys.ru/wp-content/uploads/2018/12/act_ERRP.pdf",
+      "link_kind": "file",
+      "source_links": [
+        "http://inf-sys.ru/wp-content/uploads/2018/12/act_ERRP.pdf"
+      ],
+      "source_occurrences": [
+        {
+          "title": "Приказ о внесении ОС FastSYS в ЕРРП",
+          "page": "https://skysend.ru/download/9.html"
+        }
+      ],
+      "source_flags": [
+        "legal_financial_document_requires_current_revision"
+      ],
+      "source_size_text": null,
+      "format_from_url": "pdf",
+      "status": "source_link_unverified",
+      "version_policy": "Не обозначать архивную версию как актуальную и не заявлять совместимость с текущими ОС без проверки.",
+      "content_review": "Отбор по исходному названию и URL; содержимое бинарных файлов не скачивалось и не проверялось."
+    },
+    {
+      "id": "system-documents-792962abf9",
+      "group": "system-documents",
+      "kind": "system_document",
+      "source_title": "Приказ о внесении ПО ALLVEND в ЕРРП",
+      "display_title": "Приказ о внесении ПО ALLVEND в ЕРРП",
+      "source_page": "https://skysend.ru/download/10.html",
+      "direct_file_url": "http://inf-sys.ru/wp-content/uploads/2018/06/act_ERRP_AV.pdf",
+      "target_url": "http://inf-sys.ru/wp-content/uploads/2018/06/act_ERRP_AV.pdf",
+      "link_kind": "file",
+      "source_links": [
+        "http://inf-sys.ru/wp-content/uploads/2018/06/act_ERRP_AV.pdf"
+      ],
+      "source_occurrences": [
+        {
+          "title": "Приказ о внесении ПО ALLVEND в ЕРРП",
+          "page": "https://skysend.ru/download/10.html"
+        }
+      ],
+      "source_flags": [
+        "legal_financial_document_requires_current_revision"
+      ],
+      "source_size_text": null,
+      "format_from_url": "pdf",
+      "status": "source_link_unverified",
+      "version_policy": "Не обозначать архивную версию как актуальную и не заявлять совместимость с текущими ОС без проверки.",
+      "content_review": "Отбор по исходному названию и URL; содержимое бинарных файлов не скачивалось и не проверялось."
+    },
+    {
+      "id": "system-documents-3197a581f3",
+      "group": "system-documents",
+      "kind": "system_document",
+      "source_title": "Приказ об утверждении правил Системы SkySend \n 171.90 KB",
+      "display_title": "Приказ об утверждении правил Системы SkySend",
+      "source_page": "https://skysend.ru/download/11.html",
+      "direct_file_url": "https://skysend.ru/images/downloads/decree_rules.pdf",
+      "target_url": "https://skysend.ru/images/downloads/decree_rules.pdf",
+      "link_kind": "file",
+      "source_links": [
+        "https://skysend.ru/download.raw?task=callelement&item_id=476&element=f85c494b-2b32-4109-b8c1-083cca2b7db6&method=download&args[0]=1b65e0d110452e2f8d6251b2a7feb618",
+        "https://skysend.ru/images/downloads/decree_rules.pdf"
+      ],
+      "source_occurrences": [
+        {
+          "title": "Приказ об утверждении правил Системы SkySend \n 171.90 KB",
+          "page": "https://skysend.ru/download/11.html"
+        }
+      ],
+      "source_flags": [
+        "legal_financial_document_requires_current_revision"
+      ],
+      "source_size_text": "171.90 KB",
+      "format_from_url": "pdf",
+      "status": "source_link_unverified",
+      "version_policy": "Не обозначать архивную версию как актуальную и не заявлять совместимость с текущими ОС без проверки.",
+      "content_review": "Отбор по исходному названию и URL; содержимое бинарных файлов не скачивалось и не проверялось."
+    },
+    {
+      "id": "system-documents-7e681f731a",
+      "group": "system-documents",
+      "kind": "system_document",
+      "source_title": "Проведение проверки на соответствие регламенту \n 50.15 KB",
+      "display_title": "Проведение проверки на соответствие регламенту",
+      "source_page": "https://skysend.ru/download/7.html",
+      "direct_file_url": "https://skysend.ru/images/downloads/statement_check.docx",
+      "target_url": "https://skysend.ru/images/downloads/statement_check.docx",
+      "link_kind": "file",
+      "source_links": [
+        "https://skysend.ru/download.raw?task=callelement&item_id=254&element=f85c494b-2b32-4109-b8c1-083cca2b7db6&method=download&args[0]=0699ad0e9dd4be57717afaa1d97aa991",
+        "https://skysend.ru/images/downloads/statement_check.docx"
+      ],
+      "source_occurrences": [
+        {
+          "title": "Проведение проверки на соответствие регламенту \n 50.15 KB",
+          "page": "https://skysend.ru/download/7.html"
+        }
+      ],
+      "source_flags": [
+        "verify_before_publish"
+      ],
+      "source_size_text": "50.15 KB",
+      "format_from_url": "docx",
+      "status": "source_link_unverified",
+      "version_policy": "Не обозначать архивную версию как актуальную и не заявлять совместимость с текущими ОС без проверки.",
+      "content_review": "Отбор по исходному названию и URL; содержимое бинарных файлов не скачивалось и не проверялось."
+    },
+    {
+      "id": "system-documents-9c47a19c08",
+      "group": "system-documents",
+      "kind": "system_document",
+      "source_title": "Публичная оферта с физическим лицом (плательщиком) \n 146.76 KB",
+      "display_title": "Публичная оферта с физическим лицом (плательщиком)",
+      "source_page": "https://skysend.ru/download/6.html",
+      "direct_file_url": "https://skysend.ru/images/downloads/license_agreement.pdf",
+      "target_url": "https://skysend.ru/images/downloads/license_agreement.pdf",
+      "link_kind": "file",
+      "source_links": [
+        "https://skysend.ru/download.raw?task=callelement&item_id=421&element=f85c494b-2b32-4109-b8c1-083cca2b7db6&method=download&args[0]=948bbc845ad7c1893ba5e3d007a0879d",
+        "https://skysend.ru/images/downloads/license_agreement.pdf"
+      ],
+      "source_occurrences": [
+        {
+          "title": "Публичная оферта с физическим лицом (плательщиком) \n 146.76 KB",
+          "page": "https://skysend.ru/download/6.html"
+        }
+      ],
+      "source_flags": [
+        "verify_before_publish"
+      ],
+      "source_size_text": "146.76 KB",
+      "format_from_url": "pdf",
+      "status": "source_link_unverified",
+      "version_policy": "Не обозначать архивную версию как актуальную и не заявлять совместимость с текущими ОС без проверки.",
+      "content_review": "Отбор по исходному названию и URL; содержимое бинарных файлов не скачивалось и не проверялось."
+    },
+    {
+      "id": "system-documents-43b5c65086",
+      "group": "system-documents",
+      "kind": "system_document",
+      "source_title": "Регламент корпоративного этикета",
+      "display_title": "Регламент корпоративного этикета",
+      "source_page": "https://skysend.ru/download/5.html",
+      "direct_file_url": "https://ftp.isg.dev/rules/regulations_corporate_etiquette.pdf",
+      "target_url": "https://ftp.isg.dev/rules/regulations_corporate_etiquette.pdf",
+      "link_kind": "file",
+      "source_links": [
+        "https://ftp.isg.dev/rules/regulations_corporate_etiquette.pdf"
+      ],
+      "source_occurrences": [
+        {
+          "title": "Регламент корпоративного этикета",
+          "page": "https://skysend.ru/download/5.html"
+        }
+      ],
+      "source_flags": [
+        "verify_before_publish"
+      ],
+      "source_size_text": null,
+      "format_from_url": "pdf",
+      "status": "source_link_unverified",
+      "version_policy": "Не обозначать архивную версию как актуальную и не заявлять совместимость с текущими ОС без проверки.",
+      "content_review": "Отбор по исходному названию и URL; содержимое бинарных файлов не скачивалось и не проверялось."
+    },
+    {
+      "id": "system-documents-3fa81f54b4",
+      "group": "system-documents",
+      "kind": "system_document",
+      "source_title": "Регламент о карьерном росте",
+      "display_title": "Регламент о карьерном росте",
+      "source_page": "https://skysend.ru/download/5.html",
+      "direct_file_url": "https://ftp.isg.dev/rules/regulations_career.pdf",
+      "target_url": "https://ftp.isg.dev/rules/regulations_career.pdf",
+      "link_kind": "file",
+      "source_links": [
+        "https://ftp.isg.dev/rules/regulations_career.pdf"
+      ],
+      "source_occurrences": [
+        {
+          "title": "Регламент о карьерном росте",
+          "page": "https://skysend.ru/download/5.html"
+        }
+      ],
+      "source_flags": [
+        "verify_before_publish"
+      ],
+      "source_size_text": null,
+      "format_from_url": "pdf",
+      "status": "source_link_unverified",
+      "version_policy": "Не обозначать архивную версию как актуальную и не заявлять совместимость с текущими ОС без проверки.",
+      "content_review": "Отбор по исходному названию и URL; содержимое бинарных файлов не скачивалось и не проверялось."
+    },
+    {
+      "id": "system-documents-69c60b3f73",
+      "group": "system-documents",
+      "kind": "system_document",
+      "source_title": "Регламент о Представителях SkySend \n 875.57 KB",
+      "display_title": "Регламент о Представителях SkySend",
+      "source_page": "https://skysend.ru/download/4.html",
+      "direct_file_url": "https://skysend.ru/images/downloads/regulations_dealer.pdf",
+      "target_url": "https://skysend.ru/images/downloads/regulations_dealer.pdf",
+      "link_kind": "file",
+      "source_links": [
+        "https://skysend.ru/download.raw?task=callelement&item_id=275&element=f85c494b-2b32-4109-b8c1-083cca2b7db6&method=download&args[0]=e6dc446453d81aad2110996c434f6d63",
+        "https://skysend.ru/images/downloads/regulations_dealer.pdf"
+      ],
+      "source_occurrences": [
+        {
+          "title": "Регламент о Представителях SkySend \n 875.57 KB",
+          "page": "https://skysend.ru/download/4.html"
+        }
+      ],
+      "source_flags": [
+        "verify_before_publish"
+      ],
+      "source_size_text": "875.57 KB",
+      "format_from_url": "pdf",
+      "status": "source_link_unverified",
+      "version_policy": "Не обозначать архивную версию как актуальную и не заявлять совместимость с текущими ОС без проверки.",
+      "content_review": "Отбор по исходному названию и URL; содержимое бинарных файлов не скачивалось и не проверялось."
+    },
+    {
+      "id": "system-documents-1c59f5fa50",
+      "group": "system-documents",
+      "kind": "system_document",
+      "source_title": "Регламент обучения Представителя \n 2.28 MB",
+      "display_title": "Регламент обучения Представителя",
+      "source_page": "https://skysend.ru/download/5.html",
+      "direct_file_url": "https://skysend.ru/images/downloads/regulations_training_dealer.pdf",
+      "target_url": "https://skysend.ru/images/downloads/regulations_training_dealer.pdf",
+      "link_kind": "file",
+      "source_links": [
+        "https://skysend.ru/download.raw?task=callelement&item_id=276&element=f85c494b-2b32-4109-b8c1-083cca2b7db6&method=download&args[0]=9bd21e1799a0b84e668ed2b70c24de61",
+        "https://skysend.ru/images/downloads/regulations_training_dealer.pdf"
+      ],
+      "source_occurrences": [
+        {
+          "title": "Регламент обучения Представителя \n 2.28 MB",
+          "page": "https://skysend.ru/download/5.html"
+        }
+      ],
+      "source_flags": [
+        "verify_before_publish"
+      ],
+      "source_size_text": "2.28 MB",
+      "format_from_url": "pdf",
+      "status": "source_link_unverified",
+      "version_policy": "Не обозначать архивную версию как актуальную и не заявлять совместимость с текущими ОС без проверки.",
+      "content_review": "Отбор по исходному названию и URL; содержимое бинарных файлов не скачивалось и не проверялось."
+    },
+    {
+      "id": "system-documents-d7aa6f83af",
+      "group": "system-documents",
+      "kind": "system_document",
+      "source_title": "Регламент работы службы поддержки \n 2.60 MB",
+      "display_title": "Регламент работы службы поддержки",
+      "source_page": "https://skysend.ru/download/5.html",
+      "direct_file_url": "https://skysend.ru/images/downloads/regulations_support.pdf",
+      "target_url": "https://skysend.ru/images/downloads/regulations_support.pdf",
+      "link_kind": "file",
+      "source_links": [
+        "https://skysend.ru/download.raw?task=callelement&item_id=278&element=f85c494b-2b32-4109-b8c1-083cca2b7db6&method=download&args[0]=3320756d9659d49790613397998749ca",
+        "https://skysend.ru/images/downloads/regulations_support.pdf"
+      ],
+      "source_occurrences": [
+        {
+          "title": "Регламент работы службы поддержки \n 2.60 MB",
+          "page": "https://skysend.ru/download/5.html"
+        }
+      ],
+      "source_flags": [
+        "verify_before_publish"
+      ],
+      "source_size_text": "2.60 MB",
+      "format_from_url": "pdf",
+      "status": "source_link_unverified",
+      "version_policy": "Не обозначать архивную версию как актуальную и не заявлять совместимость с текущими ОС без проверки.",
+      "content_review": "Отбор по исходному названию и URL; содержимое бинарных файлов не скачивалось и не проверялось."
+    },
+    {
+      "id": "system-documents-57e65f6a75",
+      "group": "system-documents",
+      "kind": "system_document",
+      "source_title": "Регламент формата документов",
+      "display_title": "Регламент формата документов",
+      "source_page": "https://skysend.ru/download/5.html",
+      "direct_file_url": "https://ftp.isg.dev/rules/regulations_format_document.pdf",
+      "target_url": "https://ftp.isg.dev/rules/regulations_format_document.pdf",
+      "link_kind": "file",
+      "source_links": [
+        "https://ftp.isg.dev/rules/regulations_format_document.pdf"
+      ],
+      "source_occurrences": [
+        {
+          "title": "Регламент формата документов",
+          "page": "https://skysend.ru/download/5.html"
+        }
+      ],
+      "source_flags": [
+        "verify_before_publish"
+      ],
+      "source_size_text": null,
+      "format_from_url": "pdf",
+      "status": "source_link_unverified",
+      "version_policy": "Не обозначать архивную версию как актуальную и не заявлять совместимость с текущими ОС без проверки.",
+      "content_review": "Отбор по исходному названию и URL; содержимое бинарных файлов не скачивалось и не проверялось."
+    },
+    {
+      "id": "system-documents-d5cbe525f5",
+      "group": "system-documents",
+      "kind": "system_document",
+      "source_title": "Соглашение о присоединении к Договору с Представителем \n 75.80 KB",
+      "display_title": "Соглашение о присоединении к Договору с Представителем",
+      "source_page": "https://skysend.ru/download/8.html",
+      "direct_file_url": "https://skysend.ru/images/downloads/agreement_dealer.pdf",
+      "target_url": "https://skysend.ru/images/downloads/agreement_dealer.pdf",
+      "link_kind": "file",
+      "source_links": [
+        "https://skysend.ru/download.raw?task=callelement&item_id=425&element=f85c494b-2b32-4109-b8c1-083cca2b7db6&method=download&args[0]=9280b6e9900c9b6827644d37e91003c8",
+        "https://skysend.ru/images/downloads/agreement_dealer.pdf"
+      ],
+      "source_occurrences": [
+        {
+          "title": "Соглашение о присоединении к Договору с Представителем \n 75.80 KB",
+          "page": "https://skysend.ru/download/8.html"
+        }
+      ],
+      "source_flags": [
+        "legal_financial_document_requires_current_revision"
+      ],
+      "source_size_text": "75.80 KB",
+      "format_from_url": "pdf",
+      "status": "source_link_unverified",
+      "version_policy": "Не обозначать архивную версию как актуальную и не заявлять совместимость с текущими ОС без проверки.",
+      "content_review": "Отбор по исходному названию и URL; содержимое бинарных файлов не скачивалось и не проверялось."
+    },
+    {
+      "id": "system-documents-a8a0e48b44",
+      "group": "system-documents",
+      "kind": "system_document",
+      "source_title": "Соглашение об эксклюзивности Представителя \n 173.97 KB",
+      "display_title": "Соглашение об эксклюзивности Представителя",
+      "source_page": "https://skysend.ru/download/7.html",
+      "direct_file_url": "https://skysend.ru/images/downloads/exclusive_dealer.pdf",
+      "target_url": "https://skysend.ru/images/downloads/exclusive_dealer.pdf",
+      "link_kind": "file",
+      "source_links": [
+        "https://skysend.ru/download.raw?task=callelement&item_id=424&element=f85c494b-2b32-4109-b8c1-083cca2b7db6&method=download&args[0]=4f3c5021db3273b8ab8c3f8ba09f3441",
+        "https://skysend.ru/images/downloads/exclusive_dealer.pdf"
+      ],
+      "source_occurrences": [
+        {
+          "title": "Соглашение об эксклюзивности Представителя \n 173.97 KB",
+          "page": "https://skysend.ru/download/7.html"
+        }
+      ],
+      "source_flags": [
+        "legal_financial_document_requires_current_revision"
+      ],
+      "source_size_text": "173.97 KB",
+      "format_from_url": "pdf",
+      "status": "source_link_unverified",
+      "version_policy": "Не обозначать архивную версию как актуальную и не заявлять совместимость с текущими ОС без проверки.",
+      "content_review": "Отбор по исходному названию и URL; содержимое бинарных файлов не скачивалось и не проверялось."
+    },
+    {
+      "id": "system-documents-927d878016",
+      "group": "system-documents",
+      "kind": "system_document",
+      "source_title": "Условия предоставления овердрафта \n 262.37 KB",
+      "display_title": "Условия предоставления овердрафта",
+      "source_page": "https://skysend.ru/download/10.html",
+      "direct_file_url": "https://skysend.ru/images/downloads/conditions_overdraft.pdf",
+      "target_url": "https://skysend.ru/images/downloads/conditions_overdraft.pdf",
+      "link_kind": "file",
+      "source_links": [
+        "https://skysend.ru/download.raw?task=callelement&item_id=235&element=f85c494b-2b32-4109-b8c1-083cca2b7db6&method=download&args[0]=d34ac3d54ecc4cee353a2c4dd4c127c2",
+        "https://skysend.ru/images/downloads/conditions_overdraft.pdf"
+      ],
+      "source_occurrences": [
+        {
+          "title": "Условия предоставления овердрафта \n 262.37 KB",
+          "page": "https://skysend.ru/download/10.html"
+        }
+      ],
+      "source_flags": [
+        "legal_financial_document_requires_current_revision"
+      ],
+      "source_size_text": "262.37 KB",
+      "format_from_url": "pdf",
+      "status": "source_link_unverified",
+      "version_policy": "Не обозначать архивную версию как актуальную и не заявлять совместимость с текущими ОС без проверки.",
+      "content_review": "Отбор по исходному названию и URL; содержимое бинарных файлов не скачивалось и не проверялось."
+    },
+    {
+      "id": "system-documents-ffb71f66ec",
+      "group": "system-documents",
+      "kind": "system_document",
+      "source_title": "Услуга увеличения лимита \n 57.00 KB",
+      "display_title": "Услуга увеличения лимита",
+      "source_page": "https://skysend.ru/download.html",
+      "direct_file_url": "https://skysend.ru/images/downloads/statement_credit.doc",
+      "target_url": "https://skysend.ru/images/downloads/statement_credit.doc",
+      "link_kind": "file",
+      "source_links": [
+        "https://skysend.ru/download.raw?task=callelement&item_id=261&element=f85c494b-2b32-4109-b8c1-083cca2b7db6&method=download&args[0]=4fca86d7a32ef19a4920389120906e6c",
+        "https://skysend.ru/images/downloads/statement_credit.doc"
+      ],
+      "source_occurrences": [
+        {
+          "title": "Услуга увеличения лимита \n 57.00 KB",
+          "page": "https://skysend.ru/download.html"
+        }
+      ],
+      "source_flags": [
+        "verify_before_publish"
+      ],
+      "source_size_text": "57.00 KB",
+      "format_from_url": "doc",
+      "status": "source_link_unverified",
+      "version_policy": "Не обозначать архивную версию как актуальную и не заявлять совместимость с текущими ОС без проверки.",
+      "content_review": "Отбор по исходному названию и URL; содержимое бинарных файлов не скачивалось и не проверялось."
+    },
+    {
+      "id": "other-aec7c0b5be",
+      "group": "other",
+      "kind": "technical_document",
+      "source_title": "Cхема кластерной системы SkySend \n 856.33 KB",
+      "display_title": "Cхема кластерной системы SkySend",
+      "source_page": "https://skysend.ru/download/3.html",
+      "direct_file_url": null,
+      "target_url": "https://skysend.ru/images/downloads/cluster_skysend.jpeg",
+      "link_kind": "file",
+      "source_links": [
+        "https://skysend.ru/download.raw?task=callelement&item_id=230&element=f85c494b-2b32-4109-b8c1-083cca2b7db6&method=download&args[0]=429c6d646a0f8940dc2c55c32f36155a",
+        "https://skysend.ru/images/downloads/cluster_skysend.jpeg"
+      ],
+      "source_occurrences": [
+        {
+          "title": "Cхема кластерной системы SkySend \n 856.33 KB",
+          "page": "https://skysend.ru/download/3.html"
+        }
+      ],
+      "source_flags": [
+        "verify_before_publish"
+      ],
+      "source_size_text": "856.33 KB",
+      "format_from_url": "jpeg",
+      "status": "source_link_unverified",
+      "version_policy": "Не обозначать архивную версию как актуальную и не заявлять совместимость с текущими ОС без проверки.",
+      "content_review": "Отбор по исходному названию и URL; содержимое бинарных файлов не скачивалось и не проверялось."
+    },
+    {
+      "id": "other-5829d78462",
+      "group": "other",
+      "kind": "instruction",
+      "source_title": "Заполнение справочника товаров \n 150.19 KB",
+      "display_title": "Заполнение справочника товаров",
+      "source_page": "https://skysend.ru/download/4.html",
+      "direct_file_url": "https://skysend.ru/images/downloads/instruction_fill_reference.pdf",
+      "target_url": "https://skysend.ru/images/downloads/instruction_fill_reference.pdf",
+      "link_kind": "file",
+      "source_links": [
+        "https://skysend.ru/download.raw?task=callelement&item_id=236&element=f85c494b-2b32-4109-b8c1-083cca2b7db6&method=download&args[0]=2155956761090f60a85b0cf55804cb81",
+        "https://skysend.ru/images/downloads/instruction_fill_reference.pdf"
+      ],
+      "source_occurrences": [
+        {
+          "title": "Заполнение справочника товаров \n 150.19 KB",
+          "page": "https://skysend.ru/download/4.html"
+        }
+      ],
+      "source_flags": [
+        "verify_before_publish"
+      ],
+      "source_size_text": "150.19 KB",
+      "format_from_url": "pdf",
+      "status": "source_link_unverified",
+      "version_policy": "Не обозначать архивную версию как актуальную и не заявлять совместимость с текущими ОС без проверки.",
+      "content_review": "Отбор по исходному названию и URL; содержимое бинарных файлов не скачивалось и не проверялось."
+    },
+    {
+      "id": "other-d42ad2d4b8",
+      "group": "other",
+      "kind": "instruction",
+      "source_title": "Инструкция по настройке отправки уведомлений SkySend в Telegram",
+      "display_title": "Инструкция по настройке отправки уведомлений SkySend в Telegram",
+      "source_page": "https://skysend.ru/download/7.html",
+      "direct_file_url": "https://ftp.isg.dev//docs/instruction_setting_telegram-notifications_skysend.pdf",
+      "target_url": "https://ftp.isg.dev//docs/instruction_setting_telegram-notifications_skysend.pdf",
+      "link_kind": "file",
+      "source_links": [
+        "https://ftp.isg.dev//docs/instruction_setting_telegram-notifications_skysend.pdf"
+      ],
+      "source_occurrences": [
+        {
+          "title": "Инструкция по настройке отправки уведомлений SkySend в Telegram",
+          "page": "https://skysend.ru/download/7.html"
+        }
+      ],
+      "source_flags": [
+        "verify_before_publish"
+      ],
+      "source_size_text": null,
+      "format_from_url": "pdf",
+      "status": "source_link_unverified",
+      "version_policy": "Не обозначать архивную версию как актуальную и не заявлять совместимость с текущими ОС без проверки.",
+      "content_review": "Отбор по исходному названию и URL; содержимое бинарных файлов не скачивалось и не проверялось."
+    },
+    {
+      "id": "other-3c9d9afe02",
+      "group": "other",
+      "kind": "instruction",
+      "source_title": "Настройка фискального сервера \n 416.61 KB",
+      "display_title": "Настройка фискального сервера",
+      "source_page": "https://skysend.ru/download/7.html",
+      "direct_file_url": "https://skysend.ru/images/downloads/instruction_fiscal_server.pdf",
+      "target_url": "https://skysend.ru/images/downloads/instruction_fiscal_server.pdf",
+      "link_kind": "file",
+      "source_links": [
+        "https://skysend.ru/download.raw?task=callelement&item_id=238&element=f85c494b-2b32-4109-b8c1-083cca2b7db6&method=download&args[0]=a4c31ecfe0da5ebb49875cd84a44b99d",
+        "https://skysend.ru/images/downloads/instruction_fiscal_server.pdf"
+      ],
+      "source_occurrences": [
+        {
+          "title": "Настройка фискального сервера \n 416.61 KB",
+          "page": "https://skysend.ru/download/7.html"
+        }
+      ],
+      "source_flags": [
+        "legal_financial_document_requires_current_revision"
+      ],
+      "source_size_text": "416.61 KB",
+      "format_from_url": "pdf",
+      "status": "source_link_unverified",
+      "version_policy": "Не обозначать архивную версию как актуальную и не заявлять совместимость с текущими ОС без проверки.",
+      "content_review": "Отбор по исходному названию и URL; содержимое бинарных файлов не скачивалось и не проверялось."
+    },
+    {
+      "id": "other-86557470ee",
+      "group": "other",
+      "kind": "technical_document",
+      "source_title": "Область деятельности представителя \n 171.97 KB",
+      "display_title": "Область деятельности представителя",
+      "source_page": "https://skysend.ru/download/5.html",
+      "direct_file_url": "https://skysend.ru/images/downloads/sphere_of_activity_dealer.pdf",
+      "target_url": "https://skysend.ru/images/downloads/sphere_of_activity_dealer.pdf",
+      "link_kind": "file",
+      "source_links": [
+        "https://skysend.ru/download.raw?task=callelement&item_id=285&element=f85c494b-2b32-4109-b8c1-083cca2b7db6&method=download&args[0]=f11c4108b504e77839ed224cc2029340",
+        "https://skysend.ru/images/downloads/sphere_of_activity_dealer.pdf"
+      ],
+      "source_occurrences": [
+        {
+          "title": "Область деятельности представителя \n 171.97 KB",
+          "page": "https://skysend.ru/download/5.html"
+        }
+      ],
+      "source_flags": [
+        "verify_before_publish"
+      ],
+      "source_size_text": "171.97 KB",
+      "format_from_url": "pdf",
+      "status": "source_link_unverified",
+      "version_policy": "Не обозначать архивную версию как актуальную и не заявлять совместимость с текущими ОС без проверки.",
+      "content_review": "Отбор по исходному названию и URL; содержимое бинарных файлов не скачивалось и не проверялось."
+    },
+    {
+      "id": "other-3108112eb9",
+      "group": "other",
+      "kind": "technical_document",
+      "source_title": "Общее описание ОС FastSYS \n 3.65 MB",
+      "display_title": "Общее описание ОС FastSYS",
+      "source_page": "https://skysend.ru/download/10.html",
+      "direct_file_url": "https://skysend.ru/images/downloads/presentation_fastsys.pdf",
+      "target_url": "https://skysend.ru/images/downloads/presentation_fastsys.pdf",
+      "link_kind": "file",
+      "source_links": [
+        "https://skysend.ru/download.raw?task=callelement&item_id=319&element=f85c494b-2b32-4109-b8c1-083cca2b7db6&method=download&args[0]=a7c07f5c2af8c6bb0967e48a14a92ac6",
+        "https://skysend.ru/images/downloads/presentation_fastsys.pdf"
+      ],
+      "source_occurrences": [
+        {
+          "title": "Общее описание ОС FastSYS \n 3.65 MB",
+          "page": "https://skysend.ru/download/10.html"
+        }
+      ],
+      "source_flags": [
+        "verify_before_publish"
+      ],
+      "source_size_text": "3.65 MB",
+      "format_from_url": "pdf",
+      "status": "source_link_unverified",
+      "version_policy": "Не обозначать архивную версию как актуальную и не заявлять совместимость с текущими ОС без проверки.",
+      "content_review": "Отбор по исходному названию и URL; содержимое бинарных файлов не скачивалось и не проверялось."
+    },
+    {
+      "id": "other-1664b62dca",
+      "group": "other",
+      "kind": "technical_document",
+      "source_title": "Общее описание работы Системы SkySend \n 666.94 KB",
+      "display_title": "Общее описание работы Системы SkySend",
+      "source_page": "https://skysend.ru/download/3.html",
+      "direct_file_url": "https://skysend.ru/images/downloads/description_skysend.pdf",
+      "target_url": "https://skysend.ru/images/downloads/description_skysend.pdf",
+      "link_kind": "file",
+      "source_links": [
+        "https://skysend.ru/download.raw?task=callelement&item_id=318&element=f85c494b-2b32-4109-b8c1-083cca2b7db6&method=download&args[0]=b5fbc8275674baa793fde69e9f9c480d",
+        "https://skysend.ru/images/downloads/description_skysend.pdf"
+      ],
+      "source_occurrences": [
+        {
+          "title": "Общее описание работы Системы SkySend \n 666.94 KB",
+          "page": "https://skysend.ru/download/3.html"
+        }
+      ],
+      "source_flags": [
+        "verify_before_publish"
+      ],
+      "source_size_text": "666.94 KB",
+      "format_from_url": "pdf",
+      "status": "source_link_unverified",
+      "version_policy": "Не обозначать архивную версию как актуальную и не заявлять совместимость с текущими ОС без проверки.",
+      "content_review": "Отбор по исходному названию и URL; содержимое бинарных файлов не скачивалось и не проверялось."
+    },
+    {
+      "id": "other-dd18a39aba",
+      "group": "other",
+      "kind": "instruction",
+      "source_title": "Принятие заказа поставщиком \n 97.43 KB",
+      "display_title": "Принятие заказа поставщиком",
+      "source_page": "https://skysend.ru/download/4.html",
+      "direct_file_url": "https://skysend.ru/images/downloads/instruction_order_sale.pdf",
+      "target_url": "https://skysend.ru/images/downloads/instruction_order_sale.pdf",
+      "link_kind": "file",
+      "source_links": [
+        "https://skysend.ru/download.raw?task=callelement&item_id=241&element=f85c494b-2b32-4109-b8c1-083cca2b7db6&method=download&args[0]=18e82e9db3fc6802ec13b7d77e5054bb",
+        "https://skysend.ru/images/downloads/instruction_order_sale.pdf"
+      ],
+      "source_occurrences": [
+        {
+          "title": "Принятие заказа поставщиком \n 97.43 KB",
+          "page": "https://skysend.ru/download/4.html"
+        }
+      ],
+      "source_flags": [
+        "verify_before_publish"
+      ],
+      "source_size_text": "97.43 KB",
+      "format_from_url": "pdf",
+      "status": "source_link_unverified",
+      "version_policy": "Не обозначать архивную версию как актуальную и не заявлять совместимость с текущими ОС без проверки.",
+      "content_review": "Отбор по исходному названию и URL; содержимое бинарных файлов не скачивалось и не проверялось."
+    },
+    {
+      "id": "other-f88c63f1dc",
+      "group": "other",
+      "kind": "technical_document",
+      "source_title": "Снимки экрана ОС FastSYS \n 968.82 KB",
+      "display_title": "Снимки экрана ОС FastSYS",
+      "source_page": "https://skysend.ru/download/8.html",
+      "direct_file_url": "https://skysend.ru/images/downloads/screenshots_fastsys.pdf",
+      "target_url": "https://skysend.ru/images/downloads/screenshots_fastsys.pdf",
+      "link_kind": "file",
+      "source_links": [
+        "https://skysend.ru/download.raw?task=callelement&item_id=320&element=f85c494b-2b32-4109-b8c1-083cca2b7db6&method=download&args[0]=87de969ffa670bd9ced1e8645763d76e",
+        "https://skysend.ru/images/downloads/screenshots_fastsys.pdf"
+      ],
+      "source_occurrences": [
+        {
+          "title": "Снимки экрана ОС FastSYS \n 968.82 KB",
+          "page": "https://skysend.ru/download/8.html"
+        }
+      ],
+      "source_flags": [
+        "verify_before_publish"
+      ],
+      "source_size_text": "968.82 KB",
+      "format_from_url": "pdf",
+      "status": "source_link_unverified",
+      "version_policy": "Не обозначать архивную версию как актуальную и не заявлять совместимость с текущими ОС без проверки.",
+      "content_review": "Отбор по исходному названию и URL; содержимое бинарных файлов не скачивалось и не проверялось."
+    },
+    {
+      "id": "other-6ea292bd48",
+      "group": "other",
+      "kind": "technical_document",
+      "source_title": "Стек используемых технологий",
+      "display_title": "Стек используемых технологий",
+      "source_page": "https://skysend.ru/download/2.html",
+      "direct_file_url": "https://ftp.isg.dev/docs/technology_skysend_stack.pdf",
+      "target_url": "https://ftp.isg.dev/docs/technology_skysend_stack.pdf",
+      "link_kind": "file",
+      "source_links": [
+        "https://ftp.isg.dev/docs/technology_skysend_stack.pdf"
+      ],
+      "source_occurrences": [
+        {
+          "title": "Стек используемых технологий",
+          "page": "https://skysend.ru/download/2.html"
+        }
+      ],
+      "source_flags": [
+        "verify_before_publish"
+      ],
+      "source_size_text": null,
+      "format_from_url": "pdf",
+      "status": "source_link_unverified",
+      "version_policy": "Не обозначать архивную версию как актуальную и не заявлять совместимость с текущими ОС без проверки.",
+      "content_review": "Отбор по исходному названию и URL; содержимое бинарных файлов не скачивалось и не проверялось."
+    },
+    {
+      "id": "other-2d6c83934c",
+      "group": "other",
+      "kind": "technical_document",
+      "source_title": "Схема операционной системы FastSYS",
+      "display_title": "Схема операционной системы FastSYS",
+      "source_page": "https://skysend.ru/download/7.html",
+      "direct_file_url": "https://ftp.isg.dev/docs/scheme_fastsys_5.pdf",
+      "target_url": "https://ftp.isg.dev/docs/scheme_fastsys_5.pdf",
+      "link_kind": "file",
+      "source_links": [
+        "https://ftp.isg.dev/docs/scheme_fastsys_5.pdf"
+      ],
+      "source_occurrences": [
+        {
+          "title": "Схема операционной системы FastSYS",
+          "page": "https://skysend.ru/download/7.html"
+        }
+      ],
+      "source_flags": [
+        "verify_before_publish"
+      ],
+      "source_size_text": null,
+      "format_from_url": "pdf",
+      "status": "source_link_unverified",
+      "version_policy": "Не обозначать архивную версию как актуальную и не заявлять совместимость с текущими ОС без проверки.",
+      "content_review": "Отбор по исходному названию и URL; содержимое бинарных файлов не скачивалось и не проверялось."
+    },
+    {
+      "id": "other-6906973769",
+      "group": "other",
+      "kind": "technical_document",
+      "source_title": "Функции представителя \n 169.49 KB",
+      "display_title": "Функции представителя",
+      "source_page": "https://skysend.ru/download/3.html",
+      "direct_file_url": "https://skysend.ru/images/downloads/functions_dealer.pdf",
+      "target_url": "https://skysend.ru/images/downloads/functions_dealer.pdf",
+      "link_kind": "file",
+      "source_links": [
+        "https://skysend.ru/download.raw?task=callelement&item_id=294&element=f85c494b-2b32-4109-b8c1-083cca2b7db6&method=download&args[0]=a5fc9baff04630dbd65bc90978d098df",
+        "https://skysend.ru/images/downloads/functions_dealer.pdf"
+      ],
+      "source_occurrences": [
+        {
+          "title": "Функции представителя \n 169.49 KB",
+          "page": "https://skysend.ru/download/3.html"
+        }
+      ],
+      "source_flags": [
+        "verify_before_publish"
+      ],
+      "source_size_text": "169.49 KB",
+      "format_from_url": "pdf",
+      "status": "source_link_unverified",
+      "version_policy": "Не обозначать архивную версию как актуальную и не заявлять совместимость с текущими ОС без проверки.",
+      "content_review": "Отбор по исходному названию и URL; содержимое бинарных файлов не скачивалось и не проверялось."
+    }
+  ],
+  "excluded_records": [
+    {
+      "source_title": "Макеты наклеек для оформления терминалов SKYSEND",
+      "source_page": "https://skysend.ru/download.html",
+      "direct_file_url": "https://ftp.isg.dev/graphic/stickers/skysend_kiosk_stickers.psd",
+      "source_links": [
+        "https://ftp.isg.dev/graphic/stickers/skysend_kiosk_stickers.psd"
+      ],
+      "decision": "exclude_brand_assets_from_downloads",
+      "publish": false
+    },
+    {
+      "source_title": "Как увеличить доходность терминалов \n 396.62 KB",
+      "source_page": "https://skysend.ru/download.html",
+      "direct_file_url": "https://skysend.ru/images/downloads/profit.pdf",
+      "source_links": [
+        "https://skysend.ru/download.raw?task=callelement&item_id=475&element=f85c494b-2b32-4109-b8c1-083cca2b7db6&method=download&args[0]=12e32e1082802be5c894f6e309a3720c",
+        "https://skysend.ru/images/downloads/profit.pdf"
+      ],
+      "decision": "exclude_promotion",
+      "publish": false
+    },
+    {
+      "source_title": "Макеты наклеек для оформления терминалов FINGER",
+      "source_page": "https://skysend.ru/download.html",
+      "direct_file_url": "https://ftp.isg.dev/graphic/stickers/finger_kiosk_stickers.psd",
+      "source_links": [
+        "https://ftp.isg.dev/graphic/stickers/finger_kiosk_stickers.psd"
+      ],
+      "decision": "exclude_brand_assets_from_downloads",
+      "publish": false
+    },
+    {
+      "source_title": "Макеты оформления кассовых зон с оплатой со счета Finger",
+      "source_page": "https://skysend.ru/download.html",
+      "direct_file_url": "https://ftp.isg.dev/graphic/stickers/finger_cashbox_stickers.psd",
+      "source_links": [
+        "https://ftp.isg.dev/graphic/stickers/finger_cashbox_stickers.psd"
+      ],
+      "decision": "exclude_brand_assets_from_downloads",
+      "publish": false
+    },
+    {
+      "source_title": "Предложение Рекламодателям \n 232.27 KB",
+      "source_page": "https://skysend.ru/download.html",
+      "direct_file_url": "https://skysend.ru/images/downloads/offer_advertiser.pdf",
+      "source_links": [
+        "https://skysend.ru/download.raw?task=callelement&item_id=292&element=f85c494b-2b32-4109-b8c1-083cca2b7db6&method=download&args[0]=8933d650ee00f5c8c6a587d0d04267c1",
+        "https://skysend.ru/images/downloads/offer_advertiser.pdf"
+      ],
+      "decision": "exclude_promotion",
+      "publish": false
+    },
+    {
+      "source_title": "Предложение по шлюзованию платежей \n 684.35 KB",
+      "source_page": "https://skysend.ru/download.html",
+      "direct_file_url": "https://skysend.ru/images/downloads/gateway_payment.pdf",
+      "source_links": [
+        "https://skysend.ru/download.raw?task=callelement&item_id=295&element=f85c494b-2b32-4109-b8c1-083cca2b7db6&method=download&args[0]=56bf8990a2a7e7c71c401fe09c5e9c0c",
+        "https://skysend.ru/images/downloads/gateway_payment.pdf"
+      ],
+      "decision": "exclude_promotion",
+      "publish": false
+    },
+    {
+      "source_title": "Техническая поддержка 1-го уровня (FLM)",
+      "source_page": "https://skysend.ru/download.html",
+      "direct_file_url": "https://ftp.isg.dev/offer/skysend/technical_support_flm.pdf",
+      "source_links": [
+        "https://ftp.isg.dev/offer/skysend/technical_support_flm.pdf"
+      ],
+      "decision": "exclude_commercial_material",
+      "publish": false
+    },
+    {
+      "source_title": "Техническая поддержка 2-го уровня (SLM)",
+      "source_page": "https://skysend.ru/download/2.html",
+      "direct_file_url": "https://ftp.isg.dev/offer/skysend/technical_support_slm.pdf",
+      "source_links": [
+        "https://ftp.isg.dev/offer/skysend/technical_support_slm.pdf"
+      ],
+      "decision": "exclude_commercial_material",
+      "publish": false
+    },
+    {
+      "source_title": "Предложение по использованию ПО ALLVEND \n 422.58 KB",
+      "source_page": "https://skysend.ru/download/2.html",
+      "direct_file_url": "https://skysend.ru/images/downloads/offer_po.pdf",
+      "source_links": [
+        "https://skysend.ru/download.raw?task=callelement&item_id=433&element=f85c494b-2b32-4109-b8c1-083cca2b7db6&method=download&args[0]=3c06b7d712a5d3cf71e2baeb7e9d3435",
+        "https://skysend.ru/images/downloads/offer_po.pdf"
+      ],
+      "decision": "exclude_promotion",
+      "publish": false
+    },
+    {
+      "source_title": "Предложение Представителю по дополнительному доходу \n 139.28 KB",
+      "source_page": "https://skysend.ru/download/2.html",
+      "direct_file_url": "https://skysend.ru/images/downloads/additional_income.pdf",
+      "source_links": [
+        "https://skysend.ru/download.raw?task=callelement&item_id=283&element=f85c494b-2b32-4109-b8c1-083cca2b7db6&method=download&args[0]=289477c71a70392e68959d52c964b6d2",
+        "https://skysend.ru/images/downloads/additional_income.pdf"
+      ],
+      "decision": "exclude_promotion",
+      "publish": false
+    },
+    {
+      "source_title": "Подробное предложение Агенту \n 331.30 KB",
+      "source_page": "https://skysend.ru/download/2.html",
+      "direct_file_url": "https://skysend.ru/images/downloads/full_offer_agent.pdf",
+      "source_links": [
+        "https://skysend.ru/download.raw?task=callelement&item_id=288&element=f85c494b-2b32-4109-b8c1-083cca2b7db6&method=download&args[0]=e427280f335e084187a4139e3251743c",
+        "https://skysend.ru/images/downloads/full_offer_agent.pdf"
+      ],
+      "decision": "exclude_promotion",
+      "publish": false
+    },
+    {
+      "source_title": "Логотип SkyMarket 3x1 \n 88.42 KB",
+      "source_page": "https://skysend.ru/download/2.html",
+      "direct_file_url": "https://skysend.ru/images/downloads/logotip_skymarket_3x1.png",
+      "source_links": [
+        "https://skysend.ru/download.raw?task=callelement&item_id=307&element=f85c494b-2b32-4109-b8c1-083cca2b7db6&method=download&args[0]=e4be2770110da8b24eaa6fc90035f1fe",
+        "https://skysend.ru/images/downloads/logotip_skymarket_3x1.png"
+      ],
+      "decision": "exclude_brand_assets_from_downloads",
+      "publish": false
+    },
+    {
+      "source_title": "Логотип SkyMarket (CorelDRAW) \n 16.96 KB",
+      "source_page": "https://skysend.ru/download/2.html",
+      "direct_file_url": null,
+      "source_links": [
+        "https://skysend.ru/download.raw?task=callelement&item_id=308&element=f85c494b-2b32-4109-b8c1-083cca2b7db6&method=download&args[0]=7929129a44d9cd824fac329238828a17",
+        "https://skysend.ru/images/downloads/logotip_skymarket_cdr.cdr"
+      ],
+      "decision": "exclude_brand_assets_from_downloads",
+      "publish": false
+    },
+    {
+      "source_title": "Прайс-лиcт Комплектующие",
+      "source_page": "https://skysend.ru/download/2.html",
+      "direct_file_url": null,
+      "source_links": [
+        "https://skysend.ru/buy/accessories.html"
+      ],
+      "decision": "exclude_promotion",
+      "publish": false
+    },
+    {
+      "source_title": "Облачный сервер \n 411.27 KB",
+      "source_page": "https://skysend.ru/download/3.html",
+      "direct_file_url": "https://skysend.ru/images/downloads/cloud_server.pdf",
+      "source_links": [
+        "https://skysend.ru/download.raw?task=callelement&item_id=296&element=f85c494b-2b32-4109-b8c1-083cca2b7db6&method=download&args[0]=6c66b268b8d93079a7120a0d6d104d4e",
+        "https://skysend.ru/images/downloads/cloud_server.pdf"
+      ],
+      "decision": "exclude_commercial_material",
+      "publish": false
+    },
+    {
+      "source_title": "Логотип кошелька FINGER \n 166.61 KB",
+      "source_page": "https://skysend.ru/download/3.html",
+      "direct_file_url": "https://skysend.ru/images/downloads/logotip_finger.png",
+      "source_links": [
+        "https://skysend.ru/download.raw?task=callelement&item_id=303&element=f85c494b-2b32-4109-b8c1-083cca2b7db6&method=download&args[0]=348909fbf6b5a31e938ff58941a7b7f6",
+        "https://skysend.ru/images/downloads/logotip_finger.png"
+      ],
+      "decision": "exclude_brand_assets_from_downloads",
+      "publish": false
+    },
+    {
+      "source_title": "Логотип SkyMarket 1,5x1 \n 100.25 KB",
+      "source_page": "https://skysend.ru/download/3.html",
+      "direct_file_url": "https://skysend.ru/images/downloads/logotip_skymarket_1,5x1.png",
+      "source_links": [
+        "https://skysend.ru/download.raw?task=callelement&item_id=306&element=f85c494b-2b32-4109-b8c1-083cca2b7db6&method=download&args[0]=b45114554b673808f681a19424c43460",
+        "https://skysend.ru/images/downloads/logotip_skymarket_1,5x1.png"
+      ],
+      "decision": "exclude_brand_assets_from_downloads",
+      "publish": false
+    },
+    {
+      "source_title": "Презентация АВТОПРОБЕГА \n 3.32 MB",
+      "source_page": "https://skysend.ru/download/3.html",
+      "direct_file_url": "https://skysend.ru/images/downloads/presentation.pdf",
+      "source_links": [
+        "https://skysend.ru/download.raw?task=callelement&item_id=415&element=f85c494b-2b32-4109-b8c1-083cca2b7db6&method=download&args[0]=26d3c98836b116dd77e9869e3834c6c5",
+        "https://skysend.ru/images/downloads/presentation.pdf"
+      ],
+      "decision": "exclude_promotion",
+      "publish": false
+    },
+    {
+      "source_title": "Информация о ГК \"Информ-Системы\"",
+      "source_page": "https://skysend.ru/download/3.html",
+      "direct_file_url": "https://ftp.isg.dev/offer/company/about_company.pdf",
+      "source_links": [
+        "https://ftp.isg.dev/offer/company/about_company.pdf"
+      ],
+      "decision": "exclude_commercial_material",
+      "publish": false
+    },
+    {
+      "source_title": "Презентация рекламной платформы SkySend \n 67.26 MB",
+      "source_page": "https://skysend.ru/download/3.html",
+      "direct_file_url": "https://skysend.ru/images/downloads/presentation_advertising.ppsx",
+      "source_links": [
+        "https://skysend.ru/download.raw?task=callelement&item_id=323&element=f85c494b-2b32-4109-b8c1-083cca2b7db6&method=download&args[0]=9a4dfbdb88d06114700c63aa9f30e2a0",
+        "https://skysend.ru/images/downloads/presentation_advertising.ppsx"
+      ],
+      "decision": "exclude_promotion",
+      "publish": false
+    },
+    {
+      "source_title": "ПО для устройств самообслуживания и мультимедийных систем",
+      "source_page": "https://skysend.ru/download/3.html",
+      "direct_file_url": "https://ftp.isg.dev/offer/allvend/presentation_software_for_kiosks.pdf",
+      "source_links": [
+        "https://ftp.isg.dev/offer/allvend/presentation_software_for_kiosks.pdf"
+      ],
+      "decision": "exclude_commercial_material",
+      "publish": false
+    },
+    {
+      "source_title": "Автоматизация заказов в ресторанах быстрого питания",
+      "source_page": "https://skysend.ru/download/3.html",
+      "direct_file_url": "https://ftp.isg.dev/offer/allvend/presentation_self-order_kiosks.pdf",
+      "source_links": [
+        "https://ftp.isg.dev/offer/allvend/presentation_self-order_kiosks.pdf"
+      ],
+      "decision": "exclude_commercial_material",
+      "publish": false
+    },
+    {
+      "source_title": "Предложение по ключевому партнерству с Провайдером \n 293.26 KB",
+      "source_page": "https://skysend.ru/download/4.html",
+      "direct_file_url": "https://skysend.ru/images/downloads/partnership_provider.pdf",
+      "source_links": [
+        "https://skysend.ru/download.raw?task=callelement&item_id=284&element=f85c494b-2b32-4109-b8c1-083cca2b7db6&method=download&args[0]=43f272adb9390c2cc7f89bbc6f198c6e",
+        "https://skysend.ru/images/downloads/partnership_provider.pdf"
+      ],
+      "decision": "exclude_promotion",
+      "publish": false
+    },
+    {
+      "source_title": "Внедрение комплекса разработок для приема платежей \n 4.91 MB",
+      "source_page": "https://skysend.ru/download/4.html",
+      "direct_file_url": "https://skysend.ru/images/downloads/soft.pdf",
+      "source_links": [
+        "https://skysend.ru/download.raw?task=callelement&item_id=416&element=f85c494b-2b32-4109-b8c1-083cca2b7db6&method=download&args[0]=86c71fc0fed84198e09719e95231837c",
+        "https://skysend.ru/images/downloads/soft.pdf"
+      ],
+      "decision": "exclude_commercial_material",
+      "publish": false
+    },
+    {
+      "source_title": "Предложение Агентам по подключению услуга \"Всегда на связи\" \n 345.53 KB",
+      "source_page": "https://skysend.ru/download/4.html",
+      "direct_file_url": "https://skysend.ru/images/downloads/always_connected.pdf",
+      "source_links": [
+        "https://skysend.ru/download.raw?task=callelement&item_id=293&element=f85c494b-2b32-4109-b8c1-083cca2b7db6&method=download&args[0]=8ffcb3108eff1728971cbe1b091b0531",
+        "https://skysend.ru/images/downloads/always_connected.pdf"
+      ],
+      "decision": "exclude_promotion",
+      "publish": false
+    },
+    {
+      "source_title": "Логотип SkySend SVG \n 6.97 KB",
+      "source_page": "https://skysend.ru/download/4.html",
+      "direct_file_url": "https://skysend.ru/images/downloads/logotip_skysend.svg",
+      "source_links": [
+        "https://skysend.ru/download.raw?task=callelement&item_id=441&element=f85c494b-2b32-4109-b8c1-083cca2b7db6&method=download&args[0]=ca5a86faa3a2fad21c40e4d7525158ec",
+        "https://skysend.ru/images/downloads/logotip_skysend.svg"
+      ],
+      "decision": "exclude_brand_assets_from_downloads",
+      "publish": false
+    },
+    {
+      "source_title": "Схема развития Представительства \n 145.38 KB",
+      "source_page": "https://skysend.ru/download/4.html",
+      "direct_file_url": "https://skysend.ru/images/downloads/start_dealer.pdf",
+      "source_links": [
+        "https://skysend.ru/download.raw?task=callelement&item_id=233&element=f85c494b-2b32-4109-b8c1-083cca2b7db6&method=download&args[0]=a74b2c5b8b896c5be31dd69d1f7cd765",
+        "https://skysend.ru/images/downloads/start_dealer.pdf"
+      ],
+      "decision": "exclude_commercial_material",
+      "publish": false
+    },
+    {
+      "source_title": "Регламент рекламы на терминалах \n 860.65 KB",
+      "source_page": "https://skysend.ru/download/5.html",
+      "direct_file_url": "https://skysend.ru/images/downloads/regulations_advertising.pdf",
+      "source_links": [
+        "https://skysend.ru/download.raw?task=callelement&item_id=279&element=f85c494b-2b32-4109-b8c1-083cca2b7db6&method=download&args[0]=2c3e9d80c2602544469e20b652d5f0ed",
+        "https://skysend.ru/images/downloads/regulations_advertising.pdf"
+      ],
+      "decision": "exclude_promotion",
+      "publish": false
+    },
+    {
+      "source_title": "Предложение по влагозащитному покрытию терминала \n 1014.61 KB",
+      "source_page": "https://skysend.ru/download/5.html",
+      "direct_file_url": "https://skysend.ru/images/downloads/nanoprotech.pdf",
+      "source_links": [
+        "https://skysend.ru/download.raw?task=callelement&item_id=280&element=f85c494b-2b32-4109-b8c1-083cca2b7db6&method=download&args[0]=2d0472661af51bf175fddc61f95ac0dd",
+        "https://skysend.ru/images/downloads/nanoprotech.pdf"
+      ],
+      "decision": "exclude_promotion",
+      "publish": false
+    },
+    {
+      "source_title": "Предложение владельцу терминалов \n 122.26 KB",
+      "source_page": "https://skysend.ru/download/5.html",
+      "direct_file_url": "https://skysend.ru/images/downloads/offer_agent.pdf",
+      "source_links": [
+        "https://skysend.ru/download.raw?task=callelement&item_id=281&element=f85c494b-2b32-4109-b8c1-083cca2b7db6&method=download&args[0]=40a6a671bf5b38ea44f74194d4c1cee8",
+        "https://skysend.ru/images/downloads/offer_agent.pdf"
+      ],
+      "decision": "exclude_promotion",
+      "publish": false
+    },
+    {
+      "source_title": "Предложение партнерам по рекламе \n 184.68 KB",
+      "source_page": "https://skysend.ru/download/5.html",
+      "direct_file_url": "https://skysend.ru/images/downloads/partner_advertising.pdf",
+      "source_links": [
+        "https://skysend.ru/download.raw?task=callelement&item_id=286&element=f85c494b-2b32-4109-b8c1-083cca2b7db6&method=download&args[0]=0a8ac485a72ce9104ac2bc38bf3134f1",
+        "https://skysend.ru/images/downloads/partner_advertising.pdf"
+      ],
+      "decision": "exclude_promotion",
+      "publish": false
+    },
+    {
+      "source_title": "Предложение Провайдерам по добавлению кнопок оплаты услуг на терминалы \n 119.38 KB",
+      "source_page": "https://skysend.ru/download/5.html",
+      "direct_file_url": "https://skysend.ru/images/downloads/connection_provider.pdf",
+      "source_links": [
+        "https://skysend.ru/download.raw?task=callelement&item_id=287&element=f85c494b-2b32-4109-b8c1-083cca2b7db6&method=download&args[0]=1a5836cbf1c3e10c4d2c8b2da93766bc",
+        "https://skysend.ru/images/downloads/connection_provider.pdf"
+      ],
+      "decision": "exclude_promotion",
+      "publish": false
+    },
+    {
+      "source_title": "Предложение Представителю SkySend \n 735.46 KB",
+      "source_page": "https://skysend.ru/download/5.html",
+      "direct_file_url": "https://skysend.ru/images/downloads/offer_dealer.pdf",
+      "source_links": [
+        "https://skysend.ru/download.raw?task=callelement&item_id=289&element=f85c494b-2b32-4109-b8c1-083cca2b7db6&method=download&args[0]=1205e8d8a7a791a2d856203f21ad3f7a",
+        "https://skysend.ru/images/downloads/offer_dealer.pdf"
+      ],
+      "decision": "exclude_promotion",
+      "publish": false
+    },
+    {
+      "source_title": "Предложение по размещению терминалов в торговых сетях \n 107.47 KB",
+      "source_page": "https://skysend.ru/download/6.html",
+      "direct_file_url": "https://skysend.ru/images/downloads/buy_terminal_chain.pdf",
+      "source_links": [
+        "https://skysend.ru/download.raw?task=callelement&item_id=290&element=f85c494b-2b32-4109-b8c1-083cca2b7db6&method=download&args[0]=bb8a0e138b4790fff5ce23c1e64e58ab",
+        "https://skysend.ru/images/downloads/buy_terminal_chain.pdf"
+      ],
+      "decision": "exclude_promotion",
+      "publish": false
+    },
+    {
+      "source_title": "Предложение владельцу терминалов по разработке предпроцессинговой системы \n 984.71 KB",
+      "source_page": "https://skysend.ru/download/6.html",
+      "direct_file_url": "https://skysend.ru/images/downloads/preprocessing.pdf",
+      "source_links": [
+        "https://skysend.ru/download.raw?task=callelement&item_id=291&element=f85c494b-2b32-4109-b8c1-083cca2b7db6&method=download&args[0]=17d02cf38020134b8df0fd8cc5dbe98e",
+        "https://skysend.ru/images/downloads/preprocessing.pdf"
+      ],
+      "decision": "exclude_promotion",
+      "publish": false
+    },
+    {
+      "source_title": "Сравнение видов рекламы \n 123.15 KB",
+      "source_page": "https://skysend.ru/download/6.html",
+      "direct_file_url": "https://skysend.ru/images/downloads/comparison_types_advertising.pdf",
+      "source_links": [
+        "https://skysend.ru/download.raw?task=callelement&item_id=316&element=f85c494b-2b32-4109-b8c1-083cca2b7db6&method=download&args[0]=3f41ea078e9f65e0cc18fd6a38d7a69b",
+        "https://skysend.ru/images/downloads/comparison_types_advertising.pdf"
+      ],
+      "decision": "exclude_promotion",
+      "publish": false
+    },
+    {
+      "source_title": "Сравнение эффективности рекламы \n 332.93 KB",
+      "source_page": "https://skysend.ru/download/6.html",
+      "direct_file_url": "https://skysend.ru/images/downloads/comparison_advertising.pdf",
+      "source_links": [
+        "https://skysend.ru/download.raw?task=callelement&item_id=317&element=f85c494b-2b32-4109-b8c1-083cca2b7db6&method=download&args[0]=61961710b8f4e89fd56950822aaf725d",
+        "https://skysend.ru/images/downloads/comparison_advertising.pdf"
+      ],
+      "decision": "exclude_promotion",
+      "publish": false
+    },
+    {
+      "source_title": "Презентация видеорекламы \n 984.13 KB",
+      "source_page": "https://skysend.ru/download/6.html",
+      "direct_file_url": "https://skysend.ru/images/downloads/presentation_videoadvertising.pdf",
+      "source_links": [
+        "https://skysend.ru/download.raw?task=callelement&item_id=324&element=f85c494b-2b32-4109-b8c1-083cca2b7db6&method=download&args[0]=8c845392eb0e54b46b7640b8c3440f47",
+        "https://skysend.ru/images/downloads/presentation_videoadvertising.pdf"
+      ],
+      "decision": "exclude_promotion",
+      "publish": false
+    },
+    {
+      "source_title": "Предложение по внедрению процессинга Провайдеру \n 780.46 KB",
+      "source_page": "https://skysend.ru/download/6.html",
+      "direct_file_url": "https://skysend.ru/images/downloads/processing_providers.pdf",
+      "source_links": [
+        "https://skysend.ru/download.raw?task=callelement&item_id=282&element=f85c494b-2b32-4109-b8c1-083cca2b7db6&method=download&args[0]=d65834b5399d02b97b23ddf9edc93b20",
+        "https://skysend.ru/images/downloads/processing_providers.pdf"
+      ],
+      "decision": "exclude_promotion",
+      "publish": false
+    },
+    {
+      "source_title": "Прайс-лист Реклама на терминалах",
+      "source_page": "https://skysend.ru/download/6.html",
+      "direct_file_url": "https://ftp.isg.dev/price/price_advertising.pdf",
+      "source_links": [
+        "https://ftp.isg.dev/price/price_advertising.pdf"
+      ],
+      "decision": "exclude_promotion",
+      "publish": false
+    },
+    {
+      "source_title": "Процесс заказа товара в магазине SkyMarket на терминалах \n 3.22 MB",
+      "source_page": "https://skysend.ru/download/7.html",
+      "direct_file_url": "https://skysend.ru/images/downloads/buy_goods.ppsx",
+      "source_links": [
+        "https://skysend.ru/download.raw?task=callelement&item_id=325&element=f85c494b-2b32-4109-b8c1-083cca2b7db6&method=download&args[0]=a00f22805710a9016d1248a0747bb553",
+        "https://skysend.ru/images/downloads/buy_goods.ppsx"
+      ],
+      "decision": "exclude_not_in_documentation_whitelist",
+      "publish": false
+    },
+    {
+      "source_title": "Прайс-лист Терминалы FastPay",
+      "source_page": "https://skysend.ru/download/7.html",
+      "direct_file_url": null,
+      "source_links": [
+        "https://skysend.ru/buy/payment-terminals.html"
+      ],
+      "decision": "exclude_promotion",
+      "publish": false
+    },
+    {
+      "source_title": "Презентация Универсального ПО ALLVEND",
+      "source_page": "https://skysend.ru/download/8.html",
+      "direct_file_url": "https://ftp.isg.dev/offer/allvend/presentation_allvend.pdf",
+      "source_links": [
+        "https://ftp.isg.dev/offer/allvend/presentation_allvend.pdf"
+      ],
+      "decision": "exclude_promotion",
+      "publish": false
+    },
+    {
+      "source_title": "Логотип ALLVEND PNG \n 230.33 KB",
+      "source_page": "https://skysend.ru/download/8.html",
+      "direct_file_url": "https://skysend.ru/images/downloads/allvend.png",
+      "source_links": [
+        "https://skysend.ru/download.raw?task=callelement&item_id=443&element=f85c494b-2b32-4109-b8c1-083cca2b7db6&method=download&args[0]=d2f1db5b575a0c319393045e4f54e19e",
+        "https://skysend.ru/images/downloads/allvend.png"
+      ],
+      "decision": "exclude_brand_assets_from_downloads",
+      "publish": false
+    },
+    {
+      "source_title": "Преимущества Универсального ПО ALLVEND \n 124.30 KB",
+      "source_page": "https://skysend.ru/download/8.html",
+      "direct_file_url": "https://skysend.ru/images/downloads/advantages_po.pdf",
+      "source_links": [
+        "https://skysend.ru/download.raw?task=callelement&item_id=426&element=f85c494b-2b32-4109-b8c1-083cca2b7db6&method=download&args[0]=7f938f923fb583dacc2f815406916904",
+        "https://skysend.ru/images/downloads/advantages_po.pdf"
+      ],
+      "decision": "exclude_promotion",
+      "publish": false
+    },
+    {
+      "source_title": "Логотип Группы компаний Информ-Системы SVG \n 13.09 KB",
+      "source_page": "https://skysend.ru/download/9.html",
+      "direct_file_url": "https://skysend.ru/images/downloads/logotip_gk_svg.svg",
+      "source_links": [
+        "https://skysend.ru/download.raw?task=callelement&item_id=302&element=f85c494b-2b32-4109-b8c1-083cca2b7db6&method=download&args[0]=1edff5d701f59a51fb0cb1769b96ba93",
+        "https://skysend.ru/images/downloads/logotip_gk_svg.svg"
+      ],
+      "decision": "exclude_brand_assets_from_downloads",
+      "publish": false
+    },
+    {
+      "source_title": "Логотип SkySend PNG \n 30.14 KB",
+      "source_page": "https://skysend.ru/download/9.html",
+      "direct_file_url": "https://skysend.ru/images/downloads/logotip_skysend.png",
+      "source_links": [
+        "https://skysend.ru/download.raw?task=callelement&item_id=309&element=f85c494b-2b32-4109-b8c1-083cca2b7db6&method=download&args[0]=f7cdd394be00f8088bf830e0dbaadd41",
+        "https://skysend.ru/images/downloads/logotip_skysend.png"
+      ],
+      "decision": "exclude_brand_assets_from_downloads",
+      "publish": false
+    },
+    {
+      "source_title": "Прайс-лист Услуги и лицензии",
+      "source_page": "https://skysend.ru/download/9.html",
+      "direct_file_url": "https://ftp.isg.dev/price/price_services_and_licenses.pdf",
+      "source_links": [
+        "https://ftp.isg.dev/price/price_services_and_licenses.pdf"
+      ],
+      "decision": "exclude_promotion",
+      "publish": false
+    },
+    {
+      "source_title": "Презентация системы расчетов отпечатком пальца FINGER",
+      "source_page": "https://skysend.ru/download/9.html",
+      "direct_file_url": "https://ftp.isg.dev/offer/finger/presentation_biometric_system_finger.pdf",
+      "source_links": [
+        "https://ftp.isg.dev/offer/finger/presentation_biometric_system_finger.pdf"
+      ],
+      "decision": "exclude_promotion",
+      "publish": false
+    },
+    {
+      "source_title": "Сравнение комплекса ПО с существующими решениями",
+      "source_page": "https://skysend.ru/download/9.html",
+      "direct_file_url": "http://inf-sys.ru/wp-content/uploads/2018/06/comparison.pdf",
+      "source_links": [
+        "http://inf-sys.ru/wp-content/uploads/2018/06/comparison.pdf"
+      ],
+      "decision": "exclude_promotion",
+      "publish": false
+    },
+    {
+      "source_title": "Сравнение ОС FastSyS с существующими ОС для терминалов \n 70.91 KB",
+      "source_page": "https://skysend.ru/download/9.html",
+      "direct_file_url": "https://skysend.ru/images/downloads/comparison_fastsys.pdf",
+      "source_links": [
+        "https://skysend.ru/download.raw?task=callelement&item_id=428&element=f85c494b-2b32-4109-b8c1-083cca2b7db6&method=download&args[0]=03cb0d2417d743826e04901ad98e7686",
+        "https://skysend.ru/images/downloads/comparison_fastsys.pdf"
+      ],
+      "decision": "exclude_promotion",
+      "publish": false
+    },
+    {
+      "source_title": "Сравнение сборок процессингового комплекса SkySend",
+      "source_page": "https://skysend.ru/download/9.html",
+      "direct_file_url": "https://ftp.isg.dev/offer/skysend/comparison_assembly_processing_skysend.pdf",
+      "source_links": [
+        "https://ftp.isg.dev/offer/skysend/comparison_assembly_processing_skysend.pdf"
+      ],
+      "decision": "exclude_promotion",
+      "publish": false
+    },
+    {
+      "source_title": "Прайс-лист Системы SkySend",
+      "source_page": "https://skysend.ru/download/10.html",
+      "direct_file_url": "https://ftp.isg.dev/price/price_skysend.pdf",
+      "source_links": [
+        "https://ftp.isg.dev/price/price_skysend.pdf"
+      ],
+      "decision": "exclude_promotion",
+      "publish": false
+    },
+    {
+      "source_title": "Логотип Группы компаний Информ-Системы PDF \n 98.83 KB",
+      "source_page": "https://skysend.ru/download/10.html",
+      "direct_file_url": "https://skysend.ru/images/downloads/logotip_gk.pdf",
+      "source_links": [
+        "https://skysend.ru/download.raw?task=callelement&item_id=301&element=f85c494b-2b32-4109-b8c1-083cca2b7db6&method=download&args[0]=8e02e733d3ccde37be3e545c07ddec0a",
+        "https://skysend.ru/images/downloads/logotip_gk.pdf"
+      ],
+      "decision": "exclude_brand_assets_from_downloads",
+      "publish": false
+    },
+    {
+      "source_title": "Договор на проведение рекламной кампании \n 131.50 KB",
+      "source_page": "https://skysend.ru/download/10.html",
+      "direct_file_url": "https://skysend.ru/images/downloads/contract_advertising.doc",
+      "source_links": [
+        "https://skysend.ru/download.raw?task=callelement&item_id=226&element=f85c494b-2b32-4109-b8c1-083cca2b7db6&method=download&args[0]=46d624f0bde775b30b8b5ca5265ff92c",
+        "https://skysend.ru/images/downloads/contract_advertising.doc"
+      ],
+      "decision": "exclude_promotion",
+      "publish": false
+    },
+    {
+      "source_title": "Сравнение финансовых условий \n 148.36 KB",
+      "source_page": "https://skysend.ru/download/10.html",
+      "direct_file_url": "https://skysend.ru/images/downloads/comparison_conditions.pdf",
+      "source_links": [
+        "https://skysend.ru/download.raw?task=callelement&item_id=315&element=f85c494b-2b32-4109-b8c1-083cca2b7db6&method=download&args[0]=85df1dc3093b45e3542e405eae9927ea",
+        "https://skysend.ru/images/downloads/comparison_conditions.pdf"
+      ],
+      "decision": "exclude_promotion",
+      "publish": false
+    }
+  ]
+}

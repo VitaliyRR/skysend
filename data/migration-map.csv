@@ -1,0 +1,148 @@
+﻿old_url,new_url,http_action,content_action,reason
+https://skysend.ru/,/,200,restructure,"Новая главная без акций, рекламных баннеров и ленты новостей"
+https://skysend.ru/allvend.html,/software/allvend/,301,adapt,"Сохранить продукт и функции; исключить рекламные модули, акции, старые цены и обещания"
+https://skysend.ru/autorally.html,,410,exclude,"Акция, промо-кампания или рекламный раздел исключён по заданию"
+https://skysend.ru/partners.html,/partners/,301,adapt,Сохранить смысл; очистить оформление и промо
+https://skysend.ru/partners/agent/information.html,/partners/agents/,301,adapt,Сохранить смысл; очистить оформление и промо
+https://skysend.ru/partners/agent/stable-work.html,/partners/agents/#stable-work,301,adapt,Сохранить смысл; очистить оформление и промо
+https://skysend.ru/partners/agent/cost-reduction.html,/partners/agents/#cost-reduction,301,adapt,Сохранить смысл; очистить оформление и промо
+https://skysend.ru/partners/agent/remote-control.html,/partners/agents/#remote-control,301,adapt,Сохранить смысл; очистить оформление и промо
+https://skysend.ru/partners/agent/income.html,/partners/agents/#income,301,adapt,Убрать обещания процентов/скидок; сохранить только проверяемый механизм/формат работы
+https://skysend.ru/partners/agent/innovation.html,/partners/agents/#innovation,301,adapt,Сохранить смысл; очистить оформление и промо
+https://skysend.ru/partners/agent/transfer-terminal.html,/partners/agents/#transfer-terminal,301,adapt,Сохранить смысл; очистить оформление и промо
+https://skysend.ru/partners/agent/buy-terminals.html,/partners/agents/#buy-terminals,301,adapt,Сохранить смысл; очистить оформление и промо
+https://skysend.ru/partners/agent/rma.html,/partners/agents/#rma,301,adapt,Сохранить смысл; очистить оформление и промо
+https://skysend.ru/partners/agent/fingerprint-scanner.html,/partners/agents/#fingerprint-scanner,301,adapt,Сохранить смысл; очистить оформление и промо
+https://skysend.ru/partners/providers/information.html,/partners/providers/,301,adapt,Сохранить смысл; очистить оформление и промо
+https://skysend.ru/partners/providers/payment-collection.html,/partners/providers/#payment-collection,301,adapt,Сохранить смысл; очистить оформление и промо
+https://skysend.ru/partners/providers/free-connection.html,/partners/providers/#free-connection,301,adapt,Сохранить смысл; очистить оформление и промо
+https://skysend.ru/partners/providers/privacy-policy.html,/partners/providers/#privacy-policy,301,adapt,Сохранить смысл; очистить оформление и промо
+https://skysend.ru/partners/providers/high-speed.html,/partners/providers/#high-speed,301,adapt,Сохранить смысл; очистить оформление и промо
+https://skysend.ru/partners/providers/automate-reporting.html,/partners/providers/#automate-reporting,301,adapt,Сохранить смысл; очистить оформление и промо
+https://skysend.ru/partners/providers/connecting-to-skysend.html,/partners/providers/#connecting-to-skysend,301,adapt,Сохранить смысл; очистить оформление и промо
+https://skysend.ru/partners/providers/connecting-to-finger.html,/partners/providers/#connecting-to-finger,301,adapt,Сохранить смысл; очистить оформление и промо
+https://skysend.ru/partners/providers/partnership.html,/partners/providers/#partnership,301,adapt,Сохранить смысл; очистить оформление и промо
+https://skysend.ru/partners/providers/placing-terminals.html,/partners/providers/#placing-terminals,301,adapt,Сохранить смысл; очистить оформление и промо
+https://skysend.ru/partners/suppliers/information.html,/partners/suppliers/,301,adapt,Сохранить смысл; очистить оформление и промо
+https://skysend.ru/partners/suppliers/freeconnection.html,/partners/suppliers/#freeconnection,301,adapt,Сохранить смысл; очистить оформление и промо
+https://skysend.ru/partners/suppliers/sales-network-products.html,/partners/suppliers/#sales-network-products,301,adapt,Сохранить смысл; очистить оформление и промо
+https://skysend.ru/partners/suppliers/ease-of-interaction.html,/partners/suppliers/#ease-of-interaction,301,adapt,Сохранить смысл; очистить оформление и промо
+https://skysend.ru/partners/suppliers/increase-sales.html,/partners/suppliers/#increase-sales,301,adapt,Убрать обещания процентов/скидок; сохранить только проверяемый механизм/формат работы
+https://skysend.ru/partners/suppliers/directory-of-products.html,/partners/suppliers/#directory-of-products,301,adapt,Сохранить смысл; очистить оформление и промо
+https://skysend.ru/partners/suppliers/connectingto-skysend.html,/partners/suppliers/#connectingto-skysend,301,adapt,Сохранить смысл; очистить оформление и промо
+https://skysend.ru/partners/suppliers/connectingto-finger.html,/partners/suppliers/#connectingto-finger,301,adapt,Сохранить смысл; очистить оформление и промо
+https://skysend.ru/partners/suppliers/work-in-the-office.html,/partners/suppliers/#work-in-the-office,301,adapt,Сохранить смысл; очистить оформление и промо
+https://skysend.ru/partners/suppliers/integration-in-xml.html,/partners/suppliers/#integration-in-xml,301,adapt,Сохранить смысл; очистить оформление и промо
+https://skysend.ru/partners/representatives/predstavitelyam.html,/partners/representatives/,301,adapt,Сохранить смысл; очистить оформление и промо
+https://skysend.ru/partners/representatives/items-of-income.html,/partners/representatives/#items-of-income,301,adapt,Убрать обещания процентов/скидок; сохранить только проверяемый механизм/формат работы
+https://skysend.ru/partners/representatives/dealer-discounts.html,/partners/representatives/#dealer-discounts,301,adapt,Убрать обещания процентов/скидок; сохранить только проверяемый механизм/формат работы
+https://skysend.ru/partners/representatives/publication-of-information.html,/partners/representatives/#publication-of-information,301,adapt,Сохранить смысл; очистить оформление и промо
+https://skysend.ru/partners/representatives/exclusivity-in-the-region.html,/partners/representatives/#exclusivity-in-the-region,301,adapt,Сохранить смысл; очистить оформление и промо
+https://skysend.ru/partners/representatives/connecting-players.html,/partners/representatives/#connecting-players,301,adapt,Сохранить смысл; очистить оформление и промо
+https://skysend.ru/partners/representatives/cashier-in-the-region.html,/partners/representatives/#cashier-in-the-region,301,adapt,Сохранить смысл; очистить оформление и промо
+https://skysend.ru/partners/representatives/running-banks-fps.html,/partners/representatives/#running-banks-fps,301,adapt,Убрать обещания процентов/скидок; сохранить только проверяемый механизм/формат работы
+https://skysend.ru/partners/representatives/mastering-directions.html,/partners/representatives/#mastering-directions,301,adapt,Сохранить смысл; очистить оформление и промо
+https://skysend.ru/partners/gateway/information.html,/partners/gateways/,301,adapt,Сохранить смысл; очистить оформление и промо
+https://skysend.ru/partners/gateway/high-reward.html,/partners/gateways/#high-reward,301,adapt,Убрать обещания процентов/скидок; сохранить только проверяемый механизм/формат работы
+https://skysend.ru/partners/gateway/round-the-clock-support.html,/partners/gateways/#round-the-clock-support,301,adapt,Сохранить смысл; очистить оформление и промо
+https://skysend.ru/partners/gateway/xml.html,/partners/gateways/#xml,301,adapt,Сохранить смысл; очистить оформление и промо
+https://skysend.ru/partners/gateway/highspeed.html,/partners/gateways/#highspeed,301,adapt,Сохранить смысл; очистить оформление и промо
+https://skysend.ru/partners/gateway/quick-start.html,/partners/gateways/#quick-start,301,adapt,Сохранить смысл; очистить оформление и промо
+https://skysend.ru/partners/gateway/connect-providers.html,/partners/gateways/#connect-providers,301,adapt,Сохранить смысл; очистить оформление и промо
+https://skysend.ru/partners/gateway/buy-terminal.html,/partners/gateways/#buy-terminal,301,adapt,Сохранить смысл; очистить оформление и промо
+https://skysend.ru/partners/gateway/operator-point.html,/partners/gateways/#operator-point,301,adapt,Сохранить смысл; очистить оформление и промо
+https://skysend.ru/partners/gateway/translate-terminal.html,/partners/gateways/#translate-terminal,301,adapt,Сохранить смысл; очистить оформление и промо
+https://skysend.ru/partners/advertisers/information.html,,410,exclude,"Акция, промо-кампания или рекламный раздел исключён по заданию"
+https://skysend.ru/partners/advertisers/videoadvertising.html,,410,exclude,"Акция, промо-кампания или рекламный раздел исключён по заданию"
+https://skysend.ru/partners/advertisers/partnerships.html,,410,exclude,"Акция, промо-кампания или рекламный раздел исключён по заданию"
+https://skysend.ru/partners/advertisers/targeting.html,,410,exclude,"Акция, промо-кампания или рекламный раздел исключён по заданию"
+https://skysend.ru/partners/advertisers/efficiency.html,,410,exclude,"Акция, промо-кампания или рекламный раздел исключён по заданию"
+https://skysend.ru/partners/advertisers/price.html,,410,exclude,"Акция, промо-кампания или рекламный раздел исключён по заданию"
+https://skysend.ru/partners/advertisers/statistics-shows.html,,410,exclude,"Акция, промо-кампания или рекламный раздел исключён по заданию"
+https://skysend.ru/partners/advertisers/advertising-on-the-check.html,,410,exclude,"Акция, промо-кампания или рекламный раздел исключён по заданию"
+https://skysend.ru/partners/advertisers/online-sms-delivery.html,,410,exclude,"Акция, промо-кампания или рекламный раздел исключён по заданию"
+https://skysend.ru/buy.html,/equipment/,301,adapt,Сохранить смысл; очистить оформление и промо
+https://skysend.ru/buy/payment-terminals.html,/equipment/payment-terminals/,301,adapt,Сохранить смысл; очистить оформление и промо
+https://skysend.ru/buy/accessories.html,/equipment/accessories/,301,adapt,Сохранить смысл; очистить оформление и промо
+https://skysend.ru/buy/accessories/hardware.html,/equipment/accessories/hardware/,301,adapt,Сохранить смысл; очистить оформление и промо
+https://skysend.ru/buy/accessories/acceptor.html,/equipment/accessories/acceptor/,301,adapt,Сохранить смысл; очистить оформление и промо
+https://skysend.ru/buy/accessories/modems.html,/equipment/accessories/modems/,301,adapt,Сохранить смысл; очистить оформление и промо
+https://skysend.ru/buy/accessories/printers.html,/equipment/accessories/printers/,301,adapt,Сохранить смысл; очистить оформление и промо
+https://skysend.ru/buy/accessories/other-parts.html,/equipment/accessories/other-parts/,301,adapt,Сохранить смысл; очистить оформление и промо
+https://skysend.ru/buy/accessories/touch-screens-and-monitors.html,/equipment/accessories/touch-screens-and-monitors/,301,adapt,Сохранить смысл; очистить оформление и промо
+https://skysend.ru/buy/accessories/fiscal-registrars.html,/equipment/accessories/fiscal-registrars/,301,adapt,Сохранить смысл; очистить оформление и промо
+https://skysend.ru/buy/flash-drives.html,/equipment/flash-drives/,301,adapt,Сохранить смысл; очистить оформление и промо
+https://skysend.ru/buy/fingerprint.html,/equipment/fingerprint/,301,adapt,Сохранить смысл; очистить оформление и промо
+https://skysend.ru/buy/fiscal-server.html,/equipment/fiscal-server/,301,adapt,Сохранить смысл; очистить оформление и промо
+https://skysend.ru/benefits.html,/partners/,301,consolidate,Преимущества разобрать по продуктовым механизмам в страницах партнёров
+https://skysend.ru/benefits/highest-award.html,/partners/agents/#income,301,consolidate,Дублирующую статью объединить с профильной секцией; снять абсолютные обещания
+https://skysend.ru/benefits/lower-costs.html,/partners/agents/#cost-reduction,301,consolidate,Дублирующую статью объединить с профильной секцией; снять абсолютные обещания
+https://skysend.ru/benefits/stable-job.html,/partners/agents/#stable-work,301,consolidate,Дублирующую статью объединить с профильной секцией; снять абсолютные обещания
+https://skysend.ru/benefits/exclusive-innovations.html,/partners/agents/#innovation,301,consolidate,Дублирующую статью объединить с профильной секцией; снять абсолютные обещания
+https://skysend.ru/benefits/the-high-speed.html,/partners/gateways/#highspeed,301,consolidate,Дублирующую статью объединить с профильной секцией; снять абсолютные обещания
+https://skysend.ru/benefits/protection-of-data.html,/partners/providers/#privacy-policy,301,consolidate,Дублирующую статью объединить с профильной секцией; снять абсолютные обещания
+https://skysend.ru/benefits/online-support.html,/support/,301,consolidate,Дублирующую статью объединить с профильной секцией; снять абсолютные обещания
+https://skysend.ru/program.html,/software/,301,adapt,Программы переименовать в ПО
+https://skysend.ru/program/terminal-software.html,/software/terminal/,301,adapt,Сохранить смысл; очистить оформление и промо
+https://skysend.ru/program/rma-pc.html,/software/rma-desktop/,301,adapt,Сохранить смысл; очистить оформление и промо
+https://skysend.ru/program/rma-android.html,/software/rma-android/,301,adapt,Сохранить смысл; очистить оформление и промо
+https://skysend.ru/program/xml-gateway.html,/software/xml/,301,adapt,Сохранить смысл; очистить оформление и промо
+https://skysend.ru/program/software-for-pos-terminal.html,/software/pos/,301,adapt,Сохранить смысл; очистить оформление и промо
+https://skysend.ru/program/finger.html,/software/finger/,301,adapt,Сохранить смысл; очистить оформление и промо
+https://skysend.ru/download.html,/downloads/,301,consolidate,"Единый реестр 122 материалов, фильтры; убрать промо, проверить версии и ссылки"
+https://skysend.ru/about.html,/about/,301,adapt,Сохранить смысл; очистить оформление и промо
+https://skysend.ru/about/our-goals.html,/about/goals/,301,adapt,Сохранить смысл; очистить оформление и промо
+https://skysend.ru/about/history.html,/about/history/,301,adapt,Сохранить смысл; очистить оформление и промо
+https://skysend.ru/about/geografiy.html,/contacts/,301,adapt,Сохранить смысл; очистить оформление и промо
+https://skysend.ru/about/providers.html,/providers/,301,adapt,Сохранить смысл; очистить оформление и промо
+https://skysend.ru/about/news.html,/about/news/,301,adapt,Сохранить смысл; очистить оформление и промо
+https://skysend.ru/about/feedback.html,/support/,301,adapt,Сохранить смысл; очистить оформление и промо
+https://skysend.ru/about/leaders.html,/about/team/,301,adapt,Сохранить смысл; очистить оформление и промо
+https://skysend.ru/about/leaders/belyaeva-olga-konstantinovna.html,/about/team/,301,soft_404_consolidation,Источник содержит soft 404; не создавать отсутствующую биографию
+https://skysend.ru/about/leaders/lifanova-natalya-vladimirovna.html,/about/team/,301,soft_404_consolidation,Источник содержит soft 404; не создавать отсутствующую биографию
+https://skysend.ru/about/leaders/stepina-anna-anatolevna.html,/about/team/#stepina-anna-anatolevna,301,adapt,Сохранить в архиве; должности и биографии не выдавать за актуальные без проверки
+https://skysend.ru/about/leaders/starodub-igor-vladimirovich.html,/about/team/,301,soft_404_consolidation,Источник содержит soft 404; не создавать отсутствующую биографию
+https://skysend.ru/about/leaders/ignatev-alexey-nikolaevich.html,/about/team/#ignatev-alexey-nikolaevich,301,adapt,Сохранить в архиве; должности и биографии не выдавать за актуальные без проверки
+https://skysend.ru/about/jobs.html,/about/careers/,301,adapt,Сохранить смысл; очистить оформление и промо
+https://skysend.ru/trading.html,/partners/retail/,301,adapt,Сохранить смысл; очистить оформление и промо
+https://skysend.ru/about/news/76-sweetstock.html,,410,exclude,"Акция, промо-кампания или рекламный раздел исключён по заданию"
+https://skysend.ru/component/k2/item/16.html?Itemid=520,/partners/retail/,301,adapt,Сохранить смысл; очистить оформление и промо
+https://skysend.ru/about/news/205-18.html,/about/news/#205-18,301,dated_archive,Сохранить исходную дату и факт; не выводить в главную и промо-ленты
+https://skysend.ru/about/news/203-connecting-terminals.html,,410,exclude,Промо подключения/поездки исключено из нового архива
+https://skysend.ru/about/news/202-support-older-versions.html,/about/news/#202-support-older-versions,301,dated_archive,Сохранить исходную дату и факт; не выводить в главную и промо-ленты
+https://skysend.ru/about/news/201-business-mission-az.html,,410,exclude,Промо подключения/поездки исключено из нового архива
+https://skysend.ru/pravila-sistemy.html,/system-rules/,301,adapt,Юридический документ; актуальную редакцию публиковать после проверки
+https://skysend.ru/download/2.html,/downloads/,301,consolidate,"Единый реестр 122 материалов, фильтры; убрать промо, проверить версии и ссылки"
+https://skysend.ru/download/3.html,/downloads/,301,consolidate,"Единый реестр 122 материалов, фильтры; убрать промо, проверить версии и ссылки"
+https://skysend.ru/download/4.html,/downloads/,301,consolidate,"Единый реестр 122 материалов, фильтры; убрать промо, проверить версии и ссылки"
+https://skysend.ru/download/5.html,/downloads/,301,consolidate,"Единый реестр 122 материалов, фильтры; убрать промо, проверить версии и ссылки"
+https://skysend.ru/download/6.html,/downloads/,301,consolidate,"Единый реестр 122 материалов, фильтры; убрать промо, проверить версии и ссылки"
+https://skysend.ru/download/7.html,/downloads/,301,consolidate,"Единый реестр 122 материалов, фильтры; убрать промо, проверить версии и ссылки"
+https://skysend.ru/download/8.html,/downloads/,301,consolidate,"Единый реестр 122 материалов, фильтры; убрать промо, проверить версии и ссылки"
+https://skysend.ru/download/9.html,/downloads/,301,consolidate,"Единый реестр 122 материалов, фильтры; убрать промо, проверить версии и ссылки"
+https://skysend.ru/download/10.html,/downloads/,301,consolidate,"Единый реестр 122 материалов, фильтры; убрать промо, проверить версии и ссылки"
+https://skysend.ru/download/11.html,/downloads/,301,consolidate,"Единый реестр 122 материалов, фильтры; убрать промо, проверить версии и ссылки"
+https://skysend.ru/buy/payment-terminals/fastpay-beauty-1-detail.html,/equipment/payment-terminals/fastpay-beauty-ii/,301,adapt_product,Точная карточка товара: характеристики и комплектация; цены только в evidence
+https://skysend.ru/buy/payment-terminals/fastpay-simple-detail.html,/equipment/payment-terminals/fastpay-simple/,301,adapt_product,Точная карточка товара: характеристики и комплектация; цены только в evidence
+https://skysend.ru/buy/accessories/hardware/motherboard-with-integrated-processor-intel-detail.html,/equipment/accessories/hardware/#motherboard-with-integrated-processor-intel,301,category_row,Сохраняется строка исходного каталога; отдельная непроверенная карточка не создаётся
+https://skysend.ru/buy/accessories/hardware/ram-memory-module-ddr3-detail.html,/equipment/accessories/hardware/#ram-memory-module-ddr3,301,category_row,Сохраняется строка исходного каталога; отдельная непроверенная карточка не создаётся
+https://skysend.ru/buy/accessories/hardware/power-supply-atx-300w-detail.html,/equipment/accessories/hardware/#power-supply-atx-300w,301,category_row,Сохраняется строка исходного каталога; отдельная непроверенная карточка не создаётся
+https://skysend.ru/buy/accessories/acceptor/cashcode-mvu-detail.html,/equipment/accessories/acceptor/#cashcode-mvu,301,category_row,Сохраняется строка исходного каталога; отдельная непроверенная карточка не создаётся
+https://skysend.ru/buy/accessories/acceptor/cashcode-mvu-bu-detail.html,/equipment/accessories/acceptor/#cashcode-mvu-bu,301,category_row,Сохраняется строка исходного каталога; отдельная непроверенная карточка не создаётся
+https://skysend.ru/buy/accessories/acceptor/cashcode-sm-detail.html,/equipment/accessories/acceptor/#cashcode-sm,301,category_row,Сохраняется строка исходного каталога; отдельная непроверенная карточка не создаётся
+https://skysend.ru/buy/accessories/acceptor/cashcode-sm-bu-detail.html,/equipment/accessories/acceptor/#cashcode-sm-bu,301,category_row,Сохраняется строка исходного каталога; отдельная непроверенная карточка не создаётся
+https://skysend.ru/buy/accessories/modems/siemens-cinterion-mc52i-terminal-detail.html,/equipment/accessories/modems/#siemens-cinterion-mc52i-terminal,301,category_row,Сохраняется строка исходного каталога; отдельная непроверенная карточка не создаётся
+https://skysend.ru/buy/accessories/printers/custom-vkp-80ii-detail.html,/equipment/accessories/printers/#custom-vkp-80ii,301,category_row,Сохраняется строка исходного каталога; отдельная непроверенная карточка не создаётся
+https://skysend.ru/buy/accessories/printers/custom-vkp-80ii-bu-detail.html,/equipment/accessories/printers/#custom-vkp-80ii-bu,301,category_row,Сохраняется строка исходного каталога; отдельная непроверенная карточка не создаётся
+https://skysend.ru/buy/accessories/printers/power-supply-for-thermal-printer-custom-vkp-detail.html,/equipment/accessories/printers/#power-supply-for-thermal-printer-custom-vkp,301,category_row,Сохраняется строка исходного каталога; отдельная непроверенная карточка не создаётся
+https://skysend.ru/buy/accessories/touch-screens-and-monitors/monitor-terminal-with-auto-power-17-detail.html,/equipment/accessories/touch-screens-and-monitors/#monitor-terminal-with-auto-power-17,301,category_row,Сохраняется строка исходного каталога; отдельная непроверенная карточка не создаётся
+https://skysend.ru/buy/accessories/touch-screens-and-monitors/monitor-terminal-with-auto-power-17-bu-detail.html,/equipment/accessories/touch-screens-and-monitors/#monitor-terminal-with-auto-power-17-bu,301,category_row,Сохраняется строка исходного каталога; отдельная непроверенная карточка не создаётся
+https://skysend.ru/buy/accessories/touch-screens-and-monitors/kee-touch-touchscreen-17-detail.html,/equipment/accessories/touch-screens-and-monitors/#kee-touch-touchscreen-17,301,category_row,Сохраняется строка исходного каталога; отдельная непроверенная карточка не создаётся
+https://skysend.ru/buy/accessories/fiscal-registrars/completion-set-for-ptc-tier-01k-without-eklz-detail.html,/equipment/accessories/fiscal-registrars/#completion-set-for-ptc-tier-01k-without-eklz,301,category_row,Сохраняется строка исходного каталога; отдельная непроверенная карточка не создаётся
+https://skysend.ru/buy/accessories/fiscal-registrars/fiscal-registrar-ptc-tier-01k-without-eklz-28-detail.html,/equipment/accessories/fiscal-registrars/#fiscal-registrar-ptc-tier-01k-without-eklz-28,301,category_row,Сохраняется строка исходного каталога; отдельная непроверенная карточка не создаётся
+https://skysend.ru/buy/accessories/fiscal-registrars/fiscal-server-detail.html,/equipment/accessories/fiscal-registrars/#fiscal-server,301,category_row,Сохраняется строка исходного каталога; отдельная непроверенная карточка не создаётся
+https://skysend.ru/buy/flash-drives/ide-drive-detail.html,/equipment/flash-drives/#ide-drive,301,category_row,Сохраняется строка исходного каталога; отдельная непроверенная карточка не создаётся
+https://skysend.ru/buy/flash-drives/usb-2-0-drive-detail.html,/equipment/flash-drives/#usb-2-0-drive,301,category_row,Сохраняется строка исходного каталога; отдельная непроверенная карточка не создаётся
+https://skysend.ru/buy/flash-drives/usb-drive-internal-detail.html,/equipment/flash-drives/#usb-drive-internal,301,category_row,Сохраняется строка исходного каталога; отдельная непроверенная карточка не создаётся
+https://skysend.ru/skanery-otpechatka.html,/equipment/fingerprint/#skanery-otpechatka.html,301,category_row,Сохраняется строка исходного каталога; отдельная непроверенная карточка не создаётся
+https://skysend.ru/buy/fiscal-server/fiscal-server-detail.html,/equipment/fiscal-server/#fiscal-server,301,category_row,Сохраняется строка исходного каталога; отдельная непроверенная карточка не создаётся

@@ -1,0 +1,29 @@
+{
+  "checked_at": "2026-09-10",
+  "scope": "Artifact integrity and editorial consistency; no frontend implementation exists yet",
+  "status": "pass",
+  "checks": {
+    "json_files": 19,
+    "svg_files": 26,
+    "asset_sha256_checked": 642,
+    "curated_pages": 29,
+    "curated_sections": 127,
+    "primary_motion_aliases": [
+      "none",
+      "section-reveal",
+      "gallery-change",
+      "process-step",
+      "link-feedback"
+    ],
+    "audited_menu_pages": 125,
+    "providers": 600,
+    "migration_rows": 147
+  },
+  "errors": [],
+  "warnings": [],
+  "limitations": [
+    "Source existence does not establish current payment availability or product compatibility.",
+    "Accessibility and Core Web Vitals require testing the future implementation.",
+    "Visual design boards were reviewed separately; SVG/PNG are static artifacts."
+  ]
+}

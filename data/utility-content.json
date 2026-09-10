@@ -1,0 +1,309 @@
+{
+  "version": 1,
+  "date": "2026-09-10",
+  "pages": [
+    {
+      "path": "/software/",
+      "title": "ПО",
+      "lead": "Программное обеспечение SkySend для терминалов, компьютеров и мобильных устройств.",
+      "sections": [
+        {
+          "id": "products",
+          "title": "ПО SkySend",
+          "body": "",
+          "visual_id": "software-catalog",
+          "source_urls": [
+            "https://skysend.ru/program.html"
+          ],
+          "links": [],
+          "motion_alias": "none",
+          "collection": {
+            "file": "data/site-content.json",
+            "filter": "template=software-detail",
+            "fields": [
+              "title",
+              "path",
+              "sections[0].paragraphs",
+              "sections[0].media"
+            ]
+          }
+        },
+        {
+          "id": "downloads",
+          "title": "Скачать ПО и документацию",
+          "body": "",
+          "visual_id": "download-list",
+          "source_urls": [
+            "https://skysend.ru/download.html"
+          ],
+          "links": [
+            {
+              "label": "Скачать",
+              "href": "/downloads/"
+            }
+          ],
+          "motion_alias": "none",
+          "collection": null
+        }
+      ]
+    },
+    {
+      "path": "/providers/",
+      "title": "Провайдеры услуг",
+      "lead": "В каталоге представлены услуги федеральных и местных поставщиков.",
+      "sections": [
+        {
+          "id": "catalog",
+          "title": "Каталог провайдеров",
+          "body": "Данные каталога SkySend от 10 сентября 2026 года.",
+          "visual_id": "provider-catalog",
+          "source_urls": [
+            "https://skysend.ru/providers.php"
+          ],
+          "links": [],
+          "motion_alias": "none",
+          "collection": {
+            "file": "data/providers-source.json",
+            "array": "providers",
+            "categories": "categories",
+            "filter": [
+              "name",
+              "category_id"
+            ],
+            "countPolicy": "actual filtered array length"
+          }
+        },
+        {
+          "id": "support",
+          "title": "Информация об услугах",
+          "body": "Доступность услуги уточняйте в службе поддержки.",
+          "visual_id": "contact-panel",
+          "source_urls": [
+            "https://skysend.ru/about/feedback.html"
+          ],
+          "links": [
+            {
+              "label": "Поддержка",
+              "href": "/support/"
+            }
+          ],
+          "motion_alias": "none",
+          "collection": null
+        }
+      ]
+    },
+    {
+      "path": "/downloads/",
+      "title": "Скачать",
+      "lead": "ПО, инструкции и документы системы SkySend.",
+      "sections": [
+        {
+          "id": "terminal",
+          "title": "Терминальное ПО",
+          "body": "",
+          "visual_id": "download-list",
+          "source_urls": [
+            "https://skysend.ru/download.html"
+          ],
+          "links": [],
+          "motion_alias": "none",
+          "collection": {
+            "file": "data/download-catalog.json",
+            "array": "items",
+            "filter": "group=terminal"
+          }
+        },
+        {
+          "id": "rma",
+          "title": "РМА Windows / Linux",
+          "body": "",
+          "visual_id": "download-list",
+          "source_urls": [
+            "https://skysend.ru/download.html"
+          ],
+          "links": [],
+          "motion_alias": "none",
+          "collection": {
+            "file": "data/download-catalog.json",
+            "array": "items",
+            "filter": "group=rma"
+          }
+        },
+        {
+          "id": "rma-android",
+          "title": "РМА Android",
+          "body": "",
+          "visual_id": "download-list",
+          "source_urls": [
+            "https://skysend.ru/download.html"
+          ],
+          "links": [],
+          "motion_alias": "none",
+          "collection": {
+            "file": "data/download-catalog.json",
+            "array": "items",
+            "filter": "group=rma-android"
+          }
+        },
+        {
+          "id": "xml",
+          "title": "XML",
+          "body": "",
+          "visual_id": "download-list",
+          "source_urls": [
+            "https://skysend.ru/download.html"
+          ],
+          "links": [],
+          "motion_alias": "none",
+          "collection": {
+            "file": "data/download-catalog.json",
+            "array": "items",
+            "filter": "group=xml"
+          }
+        },
+        {
+          "id": "pos",
+          "title": "POS",
+          "body": "",
+          "visual_id": "download-list",
+          "source_urls": [
+            "https://skysend.ru/download.html"
+          ],
+          "links": [],
+          "motion_alias": "none",
+          "collection": {
+            "file": "data/download-catalog.json",
+            "array": "items",
+            "filter": "group=pos"
+          }
+        },
+        {
+          "id": "system-documents",
+          "title": "Документы системы",
+          "body": "",
+          "visual_id": "download-list",
+          "source_urls": [
+            "https://skysend.ru/download.html"
+          ],
+          "links": [],
+          "motion_alias": "none",
+          "collection": {
+            "file": "data/download-catalog.json",
+            "array": "items",
+            "filter": "group=system-documents"
+          }
+        },
+        {
+          "id": "other",
+          "title": "Технические материалы",
+          "body": "",
+          "visual_id": "download-list",
+          "source_urls": [
+            "https://skysend.ru/download.html"
+          ],
+          "links": [],
+          "motion_alias": "none",
+          "collection": {
+            "file": "data/download-catalog.json",
+            "array": "items",
+            "filter": "group=other"
+          }
+        }
+      ]
+    },
+    {
+      "path": "/equipment/",
+      "title": "Оборудование",
+      "lead": "Платёжные терминалы и комплектующие.",
+      "sections": [
+        {
+          "id": "terminals",
+          "title": "Платёжные терминалы",
+          "body": "",
+          "visual_id": "equipment-catalog",
+          "source_urls": [
+            "https://skysend.ru/buy/payment-terminals.html"
+          ],
+          "links": [],
+          "motion_alias": "none",
+          "collection": {
+            "file": "data/equipment-content.json",
+            "display": "Named product photographs and exact source characteristics. No unverified price/stock."
+          }
+        },
+        {
+          "id": "accessories",
+          "title": "Комплектующие терминалов",
+          "body": "",
+          "visual_id": "equipment-catalog",
+          "source_urls": [
+            "https://skysend.ru/buy/accessories.html"
+          ],
+          "links": [],
+          "motion_alias": "none",
+          "collection": {
+            "file": "data/equipment-content.json",
+            "display": "Category rows; one exact source product per row, preserve used-part flags."
+          }
+        },
+        {
+          "id": "contact",
+          "title": "Обсудить оборудование",
+          "body": "Свяжитесь с SkySend по вопросам оборудования.",
+          "visual_id": "contact-panel",
+          "source_urls": [
+            "https://skysend.ru/about/geografiy.html"
+          ],
+          "links": [
+            {
+              "label": "Контакты",
+              "href": "/contacts/"
+            }
+          ],
+          "motion_alias": "none",
+          "collection": null
+        }
+      ]
+    },
+    {
+      "path": "/system-rules/",
+      "title": "Правила системы SkySend",
+      "lead": "Откройте документ с правилами системы SkySend.",
+      "sections": [
+        {
+          "id": "document",
+          "title": "Правила системы SkySend",
+          "body": "PDF-документ из раздела загрузок SkySend.",
+          "visual_id": "download-list",
+          "source_urls": [
+            "https://skysend.ru/download/11.html"
+          ],
+          "links": [
+            {
+              "label": "Открыть PDF",
+              "href": "https://ftp.isg.dev/rules/rules_system_of_payments_skysend.pdf"
+            },
+            {
+              "label": "Все документы системы",
+              "href": "/downloads/#system-documents"
+            }
+          ],
+          "motion_alias": "none",
+          "collection": {
+            "file": "data/download-catalog.json",
+            "itemId": "system-documents-9d640ab884",
+            "statusPolicy": "Do not state current legal revision; preserve source file without rewriting."
+          }
+        }
+      ]
+    }
+  ],
+  "ui": {
+    "providerSearchPlaceholder": "Название провайдера",
+    "allCategories": "Все категории",
+    "resultCount": "Найдено: {count}",
+    "emptyResults": "По вашему запросу ничего не найдено",
+    "resetFilters": "Сбросить фильтры"
+  },
+  "policy": "Administrative copy labels are new UI text; product facts remain source-based. Collection references identify the exact supplied data, not future APIs."
+}

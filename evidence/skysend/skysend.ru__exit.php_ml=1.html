@@ -1,0 +1,103 @@
+
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Вход & Регистрация</title>
+<style type="text/css">
+.creat {
+	display: inline-block;
+	line-height: 30px;
+	background: #E12121;
+	color: white;
+	font-size: 14px;
+	padding: 0 60px;
+	margin-right: 0px;
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	border-radius: 3px;
+	text-align: center;
+	text-decoration: none;
+	margin-bottom: 20px;
+margin-top: 10px;
+}
+.loginpanel input[type=submit]{
+display: inline-block;
+line-height: 30px;
+background: #E12121;
+color: white;
+font-size: 14px;
+padding: 0 10px;
+margin-right: 5px;
+-webkit-border-radius: 3px;
+-moz-border-radius: 3px;
+border-radius: 3px;
+border: 0;
+vertical-align: top;
+height: 30px;
+}
+.loginpanel .inputbox {
+width: 100px;
+margin: 0 4px 0 0;
+vertical-align: top;
+border-style: solid;
+border-width: 1px;
+border-color: rgb(238, 50, 50) rgb(240, 80, 80) rgb(240, 80, 80);
+box-shadow: rgb(250, 230, 230) 1px 1px inset;
+-webkit-box-shadow: rgb(250, 230, 230) 1px 1px inset;
+background-color: #ffffff;
+-webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+-moz-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+-webkit-transition: border linear 0.2s, box-shadow linear 0.2s;
+-moz-transition: border linear 0.2s, box-shadow linear 0.2s;
+-o-transition: border linear 0.2s, box-shadow linear 0.2s;
+transition: border linear 0.2s, box-shadow linear 0.2s;
+display: inline-block;
+height: 20px;
+padding: 4px 6px;
+margin-bottom: 10px;
+font-size: 14px;
+line-height: 20px;
+color: #555555;
+vertical-align: middle;
+-webkit-border-radius: 4px;
+-moz-border-radius: 4px;
+border-radius: 4px;
+}
+.loginpanel td {
+	padding:10px;
+	margin:10px;
+		
+	}
+.exit
+{
+margin-top: -9px;
+margin-bottom: 20px;
+		
+	}
+.exit_form{	}
+</style>
+
+</head>
+
+
+
+<body>
+<table border="0" align="center" cellpadding="0" cellspacing="0" class="loginpanel">
+  <tr>
+    <td width="330" style="text-align: center; border-right: thin dotted #FF0004; font-size: 14px;"><p>Регистрация в системе SkySend</p><a href="https://cluster.skysend.ru:6716/#/" class="creat">РЕГИСТРАЦИЯ</a>
+    <p>Регистрация в системе SkySend новых участников системы. Для регистрации вам понадобятся реквизиты вашей организации, либо ИП.</p></td>
+    <td width="330" style="text-align: center; font-size: 14px;"><p class="exit">Войти в систему SkySend</p>
+    	<form action="https://control.skysend.ru:6710" method="post" name="login_form" class="exit_form" id="login_form" onsubmit="selectUser(this);" sourceindex="0">
+	      <input type="text" id="username" name="username" class="inputbox" placeholder="Ваше имя" required="required">
+	      <input type="password" id="password" name="password" class="inputbox" placeholder="Пароль" required="required">
+	      <input type="submit" id="loginBtn" name="Submit" value="ВОЙТИ" sourceindex="4">
+	      <br>
+  		</form>
+      <p>Для входа в систему SkySend введите пароль и логин участника (к примеру: SU00001, SR00001, SD00001)</p>
+    </td>
+  </tr>
+</table>
+</body>
+</html>

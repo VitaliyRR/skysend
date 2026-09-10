@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>SkySend</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<script src="//api-maps.yandex.ru/2.1/?lang=ru-RU" type="text/javascript"></script>
+<script type="text/javascript">
+
+function init()
+{
+ var myMap;
+ var geolocation = ymaps.geolocation;
+ geolocation.get({provider: 'yandex', mapStateAutoApply: false}).then(
+  function (result)
+  {
+   var coords = result.geoObjects.position;
+   createMap ({center: coords, zoom: 14});
+  }, function (e)
+  {
+   createMap({center: [45.061484,38.962202], zoom: 11});
+  }
+ );
+
+}
+
+function createMap(state)
+{
+ map = new ymaps.Map('map', state, {searchControlProvider: 'yandex#search'});
+
+ searchControl = map.controls.get('searchControl');
+ searchControl.options.set('noPopup', true);
+ searchControl.options.set('noCentering', true);
+ searchControl.options.set('useMapBounds', false);
+// searchControl.options.set ('resultsPerPage', '300');
+ searchControl.search('skysend');
+
+ placemark = new ymaps.Placemark(state.center, {}, { preset: 'islands#circleDotIcon', iconColor: '#FF0000'});
+ map.geoObjects.add(placemark);
+}
+
+ymaps.ready(init);
+
+</script>
+  <style>
+        html, body, #map {
+            width: 100%; height: 100%; padding: 0; margin: 0;
+        }
+    </style>
+</head>
+<body>
+<div id="map"></div>
+</body>
+</html>

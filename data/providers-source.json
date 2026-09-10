@@ -1,0 +1,4823 @@
+{
+  "source_url": "https://skysend.ru/providers.php",
+  "retrieved_date": "2026-09-10",
+  "status": "source_snapshot_not_verified_active_catalog",
+  "categories": {
+    "group1": "Сотовая связь",
+    "group2": "Интернет",
+    "group3": "Кабельное ТВ",
+    "group4": "Кошельки",
+    "group6": "Банки и кредиты",
+    "group7": "Игры",
+    "group8": "Социальные сети",
+    "group10": "ЖКХ",
+    "group11": "Штрафы, пошлины",
+    "group12": "Другие услуги",
+    "group13": "SkyMarket",
+    "group15": "Страхование",
+    "group16": "Добрые дела"
+  },
+  "count": 600,
+  "providers": [
+    {
+      "name": "МТС Оплата по лицевому счёту",
+      "category_id": "group1",
+      "category": "Сотовая связь",
+      "logo_url": "http://cluster.skysend.ru:6721/image.php?provider=359",
+      "website": "http://www.mts.ru",
+      "source_text": "www.mts.ru\n+78002500890\nМТС Оплата по лицевому счёту"
+    },
+    {
+      "name": "Win Mobile (К-телеком)",
+      "category_id": "group1",
+      "category": "Сотовая связь",
+      "logo_url": "http://cluster.skysend.ru:6721/image.php?provider=1134",
+      "website": "http://",
+      "source_text": "+79789090545, 0545\nWin Mobile (К-телеком)"
+    },
+    {
+      "name": "БиЛайн интернет",
+      "category_id": "group1",
+      "category": "Сотовая связь",
+      "logo_url": "",
+      "website": "http://mobile.beeline.ru",
+      "source_text": "mobile.beeline.ru\n0611\nБиЛайн интернет"
+    },
+    {
+      "name": "Билайн ТВ (связь)",
+      "category_id": "group1",
+      "category": "Сотовая связь",
+      "logo_url": "",
+      "website": "http://mobile.beeline.ru",
+      "source_text": "mobile.beeline.ru\n0611\nБилайн ТВ (связь)"
+    },
+    {
+      "name": "КМВТелеком",
+      "category_id": "group1",
+      "category": "Сотовая связь",
+      "logo_url": "http://cluster.skysend.ru:6721/image.php?provider=8450",
+      "website": "http://",
+      "source_text": "+7(8793)404027\nКМВТелеком"
+    },
+    {
+      "name": "Вайнах Телеком. Интернет",
+      "category_id": "group2",
+      "category": "Интернет",
+      "logo_url": "http://cluster.skysend.ru:6721/image.php?provider=956",
+      "website": "http://",
+      "source_text": "+78002002536\nВайнах Телеком. Интернет"
+    },
+    {
+      "name": "Эрлайн",
+      "category_id": "group2",
+      "category": "Интернет",
+      "logo_url": "http://cluster.skysend.ru:6721/image.php?provider=914",
+      "website": "http://www.r-line.ru",
+      "source_text": "www.r-line.ru\n+78722560101\nЭрлайн"
+    },
+    {
+      "name": "BelNet (Крым)",
+      "category_id": "group2",
+      "category": "Интернет",
+      "logo_url": "http://cluster.skysend.ru:6721/image.php?provider=6232",
+      "website": "http://bel.net.ru/",
+      "source_text": "bel.net.ru/\n+7 (978) 833-14-64\nBelNet (Крым)"
+    },
+    {
+      "name": "ITSNET",
+      "category_id": "group2",
+      "category": "Интернет",
+      "logo_url": "http://cluster.skysend.ru:6721/image.php?provider=9126",
+      "website": "http://its.net.ru",
+      "source_text": "its.net.ru\n9885255536\nITSNET"
+    },
+    {
+      "name": "Optilink. Ореховские телекоммуникационные услуги. (Крым)",
+      "category_id": "group2",
+      "category": "Интернет",
+      "logo_url": "http://cluster.skysend.ru:6721/image.php?provider=6435",
+      "website": "http://optilink.com.ru/",
+      "source_text": "optilink.com.ru/\n+7 (978) 720-84-97\nOptilink. Ореховские телекоммуникационные услуги. (Крым)"
+    },
+    {
+      "name": "sipnet",
+      "category_id": "group2",
+      "category": "Интернет",
+      "logo_url": "http://cluster.skysend.ru:6721/image.php?provider=9253",
+      "website": "http://www.sipnet.ru/",
+      "source_text": "www.sipnet.ru/\n+7 (800) 333-14-01\nsipnet"
+    },
+    {
+      "name": "SuperSky Крым",
+      "category_id": "group2",
+      "category": "Интернет",
+      "logo_url": "http://cluster.skysend.ru:6721/image.php?provider=3286",
+      "website": "http://www.supersky.su",
+      "source_text": "www.supersky.su\n8-978-848-21-50\nSuperSky Крым"
+    },
+    {
+      "name": "Вист он Лайн. Volgaspot",
+      "category_id": "group2",
+      "category": "Интернет",
+      "logo_url": "http://cluster.skysend.ru:6721/image.php?provider=24",
+      "website": "http://volgaspot.ru",
+      "source_text": "volgaspot.ru\n+78442319393\nВист он Лайн. Volgaspot"
+    },
+    {
+      "name": "Город-ТВ. Первое цифровое телевидение Ставрополь",
+      "category_id": "group2",
+      "category": "Интернет",
+      "logo_url": "http://cluster.skysend.ru:6721/image.php?provider=6902",
+      "website": "http://gorodtv.net/",
+      "source_text": "gorodtv.net/\n+7 (8652) 99-15-15\nГород-ТВ. Первое цифровое телевидение Ставрополь"
+    },
+    {
+      "name": "Даймохк Телеком",
+      "category_id": "group2",
+      "category": "Интернет",
+      "logo_url": "http://cluster.skysend.ru:6721/image.php?provider=9640",
+      "website": "http://dtk95.ru/",
+      "source_text": "dtk95.ru/\n+79287818788\nДаймохк Телеком"
+    },
+    {
+      "name": "ДОМ.RU",
+      "category_id": "group2",
+      "category": "Интернет",
+      "logo_url": "http://cluster.skysend.ru:6721/image.php?provider=4074",
+      "website": "http://",
+      "source_text": "ДОМ.RU"
+    },
+    {
+      "name": "Зеленая точка (Невинномысск)",
+      "category_id": "group2",
+      "category": "Интернет",
+      "logo_url": "http://cluster.skysend.ru:6721/image.php?provider=6871",
+      "website": "http://www.zelenaya.net",
+      "source_text": "www.zelenaya.net\n+ 7 (86554) 2-88-88\nЗеленая точка (Невинномысск)"
+    },
+    {
+      "name": "Зеленая точка Ставрополь",
+      "category_id": "group2",
+      "category": "Интернет",
+      "logo_url": "http://cluster.skysend.ru:6721/image.php?provider=7590",
+      "website": "http://www.zelenaya.net",
+      "source_text": "www.zelenaya.net\n+78652333333\nЗеленая точка Ставрополь"
+    },
+    {
+      "name": "Крыминфоком (Крым)",
+      "category_id": "group2",
+      "category": "Интернет",
+      "logo_url": "http://cluster.skysend.ru:6721/image.php?provider=6397",
+      "website": "http://www.crimeainfo.com/",
+      "source_text": "www.crimeainfo.com/\n+7 (978) 838-37-73\nКрыминфоком (Крым)"
+    },
+    {
+      "name": "МТС. Домашний интернет, телефония 11 или 13 знаков",
+      "category_id": "group2",
+      "category": "Интернет",
+      "logo_url": "http://cluster.skysend.ru:6721/image.php?provider=1082",
+      "website": "http://www.mts.ru",
+      "source_text": "www.mts.ru\n+78002500890\nМТС. Домашний интернет, телефония 11 или 13 знаков"
+    },
+    {
+      "name": "МТС. Домашний интернет, телефония 12-значный",
+      "category_id": "group2",
+      "category": "Интернет",
+      "logo_url": "http://cluster.skysend.ru:6721/image.php?provider=9315",
+      "website": "http://www.mts.ru",
+      "source_text": "www.mts.ru\n+78002500890\nМТС. Домашний интернет, телефония 12-значный"
+    },
+    {
+      "name": "Оргтехсервис",
+      "category_id": "group2",
+      "category": "Интернет",
+      "logo_url": "http://cluster.skysend.ru:6721/image.php?provider=3319",
+      "website": "http://mkpnet.ru/",
+      "source_text": "mkpnet.ru/\n8(8772)55-13-19\nОргтехсервис"
+    },
+    {
+      "name": "Ридлан (Интернет). Крым",
+      "category_id": "group2",
+      "category": "Интернет",
+      "logo_url": "http://cluster.skysend.ru:6721/image.php?provider=2250",
+      "website": "http://www.reedlan.com",
+      "source_text": "www.reedlan.com\n7-978-778-66-28\nРидлан (Интернет). Крым"
+    },
+    {
+      "name": "Ридлан (Телевидение). Крым",
+      "category_id": "group2",
+      "category": "Интернет",
+      "logo_url": "http://cluster.skysend.ru:6721/image.php?provider=2249",
+      "website": "http://www.reedlan.com",
+      "source_text": "www.reedlan.com\n7-978-778-66-28\nРидлан (Телевидение). Крым"
+    },
+    {
+      "name": "Твинго Телеком RT",
+      "category_id": "group2",
+      "category": "Интернет",
+      "logo_url": "http://cluster.skysend.ru:6721/image.php?provider=9426",
+      "website": "http://www.rt.ru/",
+      "source_text": "www.rt.ru/\n+78003020800\nТвинго Телеком RT"
+    },
+    {
+      "name": "ТЕЛКО-интернет",
+      "category_id": "group2",
+      "category": "Интернет",
+      "logo_url": "http://cluster.skysend.ru:6721/image.php?provider=813",
+      "website": "http://www.telko.ru",
+      "source_text": "www.telko.ru\n+78652990009\nТЕЛКО-интернет"
+    },
+    {
+      "name": "ТЕЛКО-телефон",
+      "category_id": "group2",
+      "category": "Интернет",
+      "logo_url": "http://cluster.skysend.ru:6721/image.php?provider=812",
+      "website": "http://www.telko.ru",
+      "source_text": "www.telko.ru\n+78652990009\nТЕЛКО-телефон"
+    },
+    {
+      "name": "Тонус ТРК. Ваш провайдер - ИНТЕРНЕТ (Крым)",
+      "category_id": "group2",
+      "category": "Интернет",
+      "logo_url": "http://cluster.skysend.ru:6721/image.php?provider=6404",
+      "website": "http://",
+      "source_text": "3-13-95\nТонус ТРК. Ваш провайдер - ИНТЕРНЕТ (Крым)"
+    },
+    {
+      "name": "ТЦ Электрон (Интернет)",
+      "category_id": "group2",
+      "category": "Интернет",
+      "logo_url": "http://cluster.skysend.ru:6721/image.php?provider=7330",
+      "website": "http://www.armelektron.ru",
+      "source_text": "www.armelektron.ru\n+7 (86137) 2-82-02\nТЦ Электрон (Интернет)"
+    },
+    {
+      "name": "ТЦ Электрон (Кабельное ТВ)",
+      "category_id": "group2",
+      "category": "Интернет",
+      "logo_url": "http://cluster.skysend.ru:6721/image.php?provider=7331",
+      "website": "http://www.armelektron.ru",
+      "source_text": "www.armelektron.ru\n+7 (86137) 2-82-02\nТЦ Электрон (Кабельное ТВ)"
+    },
+    {
+      "name": "Формула Связи",
+      "category_id": "group2",
+      "category": "Интернет",
+      "logo_url": "http://cluster.skysend.ru:6721/image.php?provider=713",
+      "website": "http://www.iformula.ru",
+      "source_text": "www.iformula.ru\n+78652990202\nФормула Связи"
+    },
+    {
+      "name": "НТВ-Плюс",
+      "category_id": "group3",
+      "category": "Кабельное ТВ",
+      "logo_url": "http://cluster.skysend.ru:6721/image.php?provider=7",
+      "website": "http://www.ntvplus.ru/",
+      "source_text": "www.ntvplus.ru/\n+74957556789\nНТВ-Плюс"
+    },
+    {
+      "name": "Билайн ТВ",
+      "category_id": "group3",
+      "category": "Кабельное ТВ",
+      "logo_url": "http://cluster.skysend.ru:6721/image.php?provider=6581",
+      "website": "http://mobile.beeline.ru",
+      "source_text": "mobile.beeline.ru\n0611\nБилайн ТВ"
+    },
+    {
+      "name": "Город-ТВ. Первое цифровое телевидение Ставрополь",
+      "category_id": "group3",
+      "category": "Кабельное ТВ",
+      "logo_url": "http://cluster.skysend.ru:6721/image.php?provider=4323",
+      "website": "http://gorodtv.net/",
+      "source_text": "gorodtv.net/\n+7 (8652) 99-15-15\nГород-ТВ. Первое цифровое телевидение Ставрополь"
+    },
+    {
+      "name": "Триколор Premier (месяц)",
+      "category_id": "group3",
+      "category": "Кабельное ТВ",
+      "logo_url": "http://cluster.skysend.ru:6721/image.php?provider=9790",
+      "website": "http://www.tricolor.tv/",
+      "source_text": "www.tricolor.tv/\n+78005000123\nТриколор Premier (месяц)"
+    },
+    {
+      "name": "Триколор Ultra (год)",
+      "category_id": "group3",
+      "category": "Кабельное ТВ",
+      "logo_url": "http://cluster.skysend.ru:6721/image.php?provider=9788",
+      "website": "http://www.tricolor.tv/",
+      "source_text": "www.tricolor.tv/\n+78005000123\nТриколор Ultra (год)"
+    },
+    {
+      "name": "Триколор Взрослый (3 месяца)",
+      "category_id": "group3",
+      "category": "Кабельное ТВ",
+      "logo_url": "http://cluster.skysend.ru:6721/image.php?provider=9783",
+      "website": "http://www.tricolor.tv/",
+      "source_text": "www.tricolor.tv/\n+78005000123\nТриколор Взрослый (3 месяца)"
+    },
+    {
+      "name": "Триколор Взрослый (год)",
+      "category_id": "group3",
+      "category": "Кабельное ТВ",
+      "logo_url": "http://cluster.skysend.ru:6721/image.php?provider=9781",
+      "website": "http://www.tricolor.tv/",
+      "source_text": "www.tricolor.tv/\n+78005000123\nТриколор Взрослый (год)"
+    },
+    {
+      "name": "Триколор Взрослый (месяц)",
+      "category_id": "group3",
+      "category": "Кабельное ТВ",
+      "logo_url": "http://cluster.skysend.ru:6721/image.php?provider=9782",
+      "website": "http://www.tricolor.tv/",
+      "source_text": "www.tricolor.tv/\n+78005000123\nТриколор Взрослый (месяц)"
+    },
+    {
+      "name": "Триколор Детский (год)",
+      "category_id": "group3",
+      "category": "Кабельное ТВ",
+      "logo_url": "http://cluster.skysend.ru:6721/image.php?provider=9784",
+      "website": "http://www.tricolor.tv/",
+      "source_text": "www.tricolor.tv/\n+78005000123\nТриколор Детский (год)"
+    },
+    {
+      "name": "Триколор Детский (месяц)",
+      "category_id": "group3",
+      "category": "Кабельное ТВ",
+      "logo_url": "http://cluster.skysend.ru:6721/image.php?provider=9785",
+      "website": "http://www.tricolor.tv/",
+      "source_text": "www.tricolor.tv/\n+78005000123\nТриколор Детский (месяц)"
+    },
+    {
+      "name": "Триколор Добавь Кино (месяц)",
+      "category_id": "group3",
+      "category": "Кабельное ТВ",
+      "logo_url": "http://cluster.skysend.ru:6721/image.php?provider=9797",
+      "website": "http://www.tricolor.tv/",
+      "source_text": "www.tricolor.tv/\n+78005000123\nТриколор Добавь Кино (месяц)"
+    },
+    {
+      "name": "Триколор Добавь Кино и 4К (месяц)",
+      "category_id": "group3",
+      "category": "Кабельное ТВ",
+      "logo_url": "http://cluster.skysend.ru:6721/image.php?provider=9791",
+      "website": "http://www.tricolor.tv/",
+      "source_text": "www.tricolor.tv/\n+78005000123\nТриколор Добавь Кино и 4К (месяц)"
+    },
+    {
+      "name": "Триколор Единый / Единый Онлайн (год)",
+      "category_id": "group3",
+      "category": "Кабельное ТВ",
+      "logo_url": "http://cluster.skysend.ru:6721/image.php?provider=9786",
+      "website": "http://www.tricolor.tv/",
+      "source_text": "www.tricolor.tv/\n+78005000123\nТриколор Единый / Единый Онлайн (год)"
+    },
+    {
+      "name": "Триколор Единый Ultra / Единый Ultra Онлайн (год)",
+      "category_id": "group3",
+      "category": "Кабельное ТВ",
+      "logo_url": "http://cluster.skysend.ru:6721/image.php?provider=9789",
+      "website": "http://www.tricolor.tv/",
+      "source_text": "www.tricolor.tv/\n+78005000123\nТриколор Единый Ultra / Единый Ultra Онлайн (год)"
+    },
+    {
+      "name": "Триколор Единый Мульти / Экстра (год)",
+      "category_id": "group3",
+      "category": "Кабельное ТВ",
+      "logo_url": "http://cluster.skysend.ru:6721/image.php?provider=9796",
+      "website": "http://www.tricolor.tv/",
+      "source_text": "www.tricolor.tv/\n+78005000123\nТриколор Единый Мульти / Экстра (год)"
+    },
+    {
+      "name": "Триколор Максимум (год)",
+      "category_id": "group3",
+      "category": "Кабельное ТВ",
+      "logo_url": "http://cluster.skysend.ru:6721/image.php?provider=9794",
+      "website": "http://www.tricolor.tv/",
+      "source_text": "www.tricolor.tv/\n+78005000123\nТриколор Максимум (год)"
+    },
+    {
+      "name": "Триколор Мультирум (год)",
+      "category_id": "group3",
+      "category": "Кабельное ТВ",
+      "logo_url": "http://cluster.skysend.ru:6721/image.php?provider=9787",
+      "website": "http://www.tricolor.tv/",
+      "source_text": "www.tricolor.tv/\n+78005000123\nТриколор Мультирум (год)"
+    },
+    {
+      "name": "Триколор Пополнить лицевой счет",
+      "category_id": "group3",
+      "category": "Кабельное ТВ",
+      "logo_url": "http://cluster.skysend.ru:6721/image.php?provider=258",
+      "website": "http://www.tricolor.tv/",
+      "source_text": "www.tricolor.tv/\n+78005000123\nТриколор Пополнить лицевой счет"
+    },
+    {
+      "name": "Триколор Премиум (год)",
+      "category_id": "group3",
+      "category": "Кабельное ТВ",
+      "logo_url": "http://cluster.skysend.ru:6721/image.php?provider=9795",
+      "website": "http://www.tricolor.tv/",
+      "source_text": "www.tricolor.tv/\n+78005000123\nТриколор Премиум (год)"
+    },
+    {
+      "name": "Триколор Спутниковый интернет",
+      "category_id": "group3",
+      "category": "Кабельное ТВ",
+      "logo_url": "http://cluster.skysend.ru:6721/image.php?provider=9798",
+      "website": "http://www.tricolor.tv/",
+      "source_text": "www.tricolor.tv/\n+78005000123\nТриколор Спутниковый интернет"
+    },
+    {
+      "name": "Триколор Супер Ultra Взрослый (год)",
+      "category_id": "group3",
+      "category": "Кабельное ТВ",
+      "logo_url": "http://cluster.skysend.ru:6721/image.php?provider=9793",
+      "website": "http://www.tricolor.tv/",
+      "source_text": "www.tricolor.tv/\n+78005000123\nТриколор Супер Ultra Взрослый (год)"
+    },
+    {
+      "name": "Триколор Супер Ultra Детский (год)",
+      "category_id": "group3",
+      "category": "Кабельное ТВ",
+      "logo_url": "http://cluster.skysend.ru:6721/image.php?provider=9792",
+      "website": "http://www.tricolor.tv/",
+      "source_text": "www.tricolor.tv/\n+78005000123\nТриколор Супер Ultra Детский (год)"
+    },
+    {
+      "name": "МОНЕТА.РУ",
+      "category_id": "group4",
+      "category": "Кошельки",
+      "logo_url": "http://cluster.skysend.ru:6721/image.php?provider=144",
+      "website": "http://www.moneta.ru/",
+      "source_text": "www.moneta.ru/\n+74957434985\nМОНЕТА.РУ"
+    },
+    {
+      "name": "Он-Лайн Партнер",
+      "category_id": "group4",
+      "category": "Кошельки",
+      "logo_url": "http://cluster.skysend.ru:6721/image.php?provider=274",
+      "website": "http://онлайн-партнёр.рф",
+      "source_text": "онлайн-партнёр.рф\n+73452202462\nОн-Лайн Партнер"
+    },
+    {
+      "name": "Сбербанк",
+      "category_id": "group6",
+      "category": "Банки и кредиты",
+      "logo_url": "http://cluster.skysend.ru:6721/image.php?provider=631",
+      "website": "http://www.sbrf.ru",
+      "source_text": "www.sbrf.ru\nСбербанк"
+    },
+    {
+      "name": "Т-Банк",
+      "category_id": "group6",
+      "category": "Банки и кредиты",
+      "logo_url": "http://cluster.skysend.ru:6721/image.php?provider=241",
+      "website": "http://www.tbank.ru",
+      "source_text": "www.tbank.ru\nТ-Банк"
+    },
+    {
+      "name": "Озон Банк (Ozon)",
+      "category_id": "group6",
+      "category": "Банки и кредиты",
+      "logo_url": "http://cluster.skysend.ru:6721/image.php?provider=9858",
+      "website": "http://www.sbrf.ru",
+      "source_text": "www.sbrf.ru\nОзон Банк (Ozon)"
+    },
+    {
+      "name": "Альфа-Банк",
+      "category_id": "group6",
+      "category": "Банки и кредиты",
+      "logo_url": "http://cluster.skysend.ru:6721/image.php?provider=168",
+      "website": "http://alfabank.ru/",
+      "source_text": "alfabank.ru/\nАльфа-Банк"
+    },
+    {
+      "name": "ЮМани",
+      "category_id": "group6",
+      "category": "Банки и кредиты",
+      "logo_url": "",
+      "website": "http://www.sbrf.ru",
+      "source_text": "www.sbrf.ru\nЮМани"
+    },
+    {
+      "name": "Банк ВТБ Северо-Запад",
+      "category_id": "group6",
+      "category": "Банки и кредиты",
+      "logo_url": "http://cluster.skysend.ru:6721/image.php?provider=191",
+      "website": "http://www.szrc.vtb.ru/",
+      "source_text": "www.szrc.vtb.ru/\nБанк ВТБ Северо-Запад"
+    },
+    {
+      "name": "Кошелек ЦУПИС (Мобильная карта)",
+      "category_id": "group6",
+      "category": "Банки и кредиты",
+      "logo_url": "",
+      "website": "http://www.sbrf.ru",
+      "source_text": "www.sbrf.ru\nКошелек ЦУПИС (Мобильная карта)"
+    },
+    {
+      "name": "Россельхозбанк",
+      "category_id": "group6",
+      "category": "Банки и кредиты",
+      "logo_url": "http://cluster.skysend.ru:6721/image.php?provider=232",
+      "website": "http://www.rshb.ru/",
+      "source_text": "www.rshb.ru/\nРоссельхозбанк"
+    },
+    {
+      "name": "ОТП Банк",
+      "category_id": "group6",
+      "category": "Банки и кредиты",
+      "logo_url": "http://cluster.skysend.ru:6721/image.php?provider=226",
+      "website": "http://www.otpbank.ru/",
+      "source_text": "www.otpbank.ru/\nОТП Банк"
+    },
+    {
+      "name": "Совкомбанк",
+      "category_id": "group6",
+      "category": "Банки и кредиты",
+      "logo_url": "http://cluster.skysend.ru:6721/image.php?provider=1098",
+      "website": "http://",
+      "source_text": "Совкомбанк"
+    },
+    {
+      "name": "Яндекс",
+      "category_id": "group6",
+      "category": "Банки и кредиты",
+      "logo_url": "",
+      "website": "http://www.sbrf.ru",
+      "source_text": "www.sbrf.ru\nЯндекс"
+    },
+    {
+      "name": "Wildberries (Вайлдберриз Банк) WB",
+      "category_id": "group6",
+      "category": "Банки и кредиты",
+      "logo_url": "http://cluster.skysend.ru:6721/image.php?provider=9849",
+      "website": "http://www.sbrf.ru",
+      "source_text": "www.sbrf.ru\nWildberries (Вайлдберриз Банк) WB"
+    },
+    {
+      "name": "ГАЗПРОМБАНК (АО)",
+      "category_id": "group6",
+      "category": "Банки и кредиты",
+      "logo_url": "http://cluster.skysend.ru:6721/image.php?provider=2776",
+      "website": "http://",
+      "source_text": "ГАЗПРОМБАНК (АО)"
+    },
+    {
+      "name": "Промсвязьбанк",
+      "category_id": "group6",
+      "category": "Банки и кредиты",
+      "logo_url": "http://cluster.skysend.ru:6721/image.php?provider=180",
+      "website": "http://www.psbank.ru/",
+      "source_text": "www.psbank.ru/\nПромсвязьбанк"
+    },
+    {
+      "name": "Райффайзенбанк (ЗАО)",
+      "category_id": "group6",
+      "category": "Банки и кредиты",
+      "logo_url": "http://cluster.skysend.ru:6721/image.php?provider=209",
+      "website": "http://www.raiffeisen.ru/",
+      "source_text": "www.raiffeisen.ru/\nРайффайзенбанк (ЗАО)"
+    },
+    {
+      "name": "Абсолют Банк",
+      "category_id": "group6",
+      "category": "Банки и кредиты",
+      "logo_url": "http://cluster.skysend.ru:6721/image.php?provider=175",
+      "website": "http://www.absolutbank.ru/",
+      "source_text": "www.absolutbank.ru/\nАбсолют Банк"
+    },
+    {
+      "name": "Авангард",
+      "category_id": "group6",
+      "category": "Банки и кредиты",
+      "logo_url": "http://cluster.skysend.ru:6721/image.php?provider=176",
+      "website": "http://www.avangard.ru",
+      "source_text": "www.avangard.ru\nАвангард"
+    },
+    {
+      "name": "АВЕРС (ООО)",
+      "category_id": "group6",
+      "category": "Банки и кредиты",
+      "logo_url": "http://cluster.skysend.ru:6721/image.php?provider=2617",
+      "website": "http://",
+      "source_text": "АВЕРС (ООО)"
+    },
+    {
+      "name": "АВТОТОРГБАНК (ООО)",
+      "category_id": "group6",
+      "category": "Банки и кредиты",
+      "logo_url": "http://cluster.skysend.ru:6721/image.php?provider=2621",
+      "website": "http://",
+      "source_text": "АВТОТОРГБАНК (ООО)"
+    },
+    {
+      "name": "Агропромкредит",
+      "category_id": "group6",
+      "category": "Банки и кредиты",
+      "logo_url": "http://cluster.skysend.ru:6721/image.php?provider=178",
+      "website": "http://apkbank.ru",
+      "source_text": "apkbank.ru\nАгропромкредит"
+    },
+    {
+      "name": "АГРОРОС (ЗАО)",
+      "category_id": "group6",
+      "category": "Банки и кредиты",
+      "logo_url": "http://cluster.skysend.ru:6721/image.php?provider=2623",
+      "website": "http://",
+      "source_text": "АГРОРОС (ЗАО)"
+    },
+    {
+      "name": "Азиатско-Тихоокеанский банк",
+      "category_id": "group6",
+      "category": "Банки и кредиты",
+      "logo_url": "http://cluster.skysend.ru:6721/image.php?provider=661",
+      "website": "http://www.atb.su/glavnaya.html",
+      "source_text": "www.atb.su/glavnaya.html\nАзиатско-Тихоокеанский банк"
+    },
+    {
+      "name": "АК Барс Банк",
+      "category_id": "group6",
+      "category": "Банки и кредиты",
+      "logo_url": "http://cluster.skysend.ru:6721/image.php?provider=179",
+      "website": "http://www.akbars.ru/",
+      "source_text": "www.akbars.ru/\nАК Барс Банк"
+    },
+    {
+      "name": "АКБ ЕВРОФИНАНС МОСНАРБАНК",
+      "category_id": "group6",
+      "category": "Банки и кредиты",
+      "logo_url": "",
+      "website": "http://www.sbrf.ru",
+      "source_text": "www.sbrf.ru\nАКБ ЕВРОФИНАНС МОСНАРБАНК"
+    },
+    {
+      "name": "АКБ Ланта Банк",
+      "category_id": "group6",
+      "category": "Банки и кредиты",
+      "logo_url": "",
+      "website": "http://www.sbrf.ru",
+      "source_text": "www.sbrf.ru\nАКБ Ланта Банк"
+    },
+    {
+      "name": "АКБ НРБанк",
+      "category_id": "group6",
+      "category": "Банки и кредиты",
+      "logo_url": "",
+      "website": "http://www.sbrf.ru",
+      "source_text": "www.sbrf.ru\nАКБ НРБанк"
+    },
+    {
+      "name": "АКБ СЛАВИЯ",
+      "category_id": "group6",
+      "category": "Банки и кредиты",
+      "logo_url": "",
+      "website": "http://www.sbrf.ru",
+      "source_text": "www.sbrf.ru\nАКБ СЛАВИЯ"
+    },
+    {
+      "name": "АКИБАНК (ОАО)",
+      "category_id": "group6",
+      "category": "Банки и кредиты",
+      "logo_url": "http://cluster.skysend.ru:6721/image.php?provider=2629",
+      "website": "http://",
+      "source_text": "АКИБАНК (ОАО)"
+    },
+    {
+      "name": "АКЦЕПТ (ОАО)",
+      "category_id": "group6",
+      "category": "Банки и кредиты",
+      "logo_url": "http://cluster.skysend.ru:6721/image.php?provider=2667",
+      "website": "http://",
+      "source_text": "АКЦЕПТ (ОАО)"
+    },
+    {
+      "name": "Акционерный Банк РОССИЯ",
+      "category_id": "group6",
+      "category": "Банки и кредиты",
+      "logo_url": "http://cluster.skysend.ru:6721/image.php?provider=187",
+      "website": "http://web.abr.ru",
+      "source_text": "web.abr.ru\nАкционерный Банк РОССИЯ"
+    },
+    {
+      "name": "АЛЕКСАНДРОВСКИЙ (ПАО)",
+      "category_id": "group6",
+      "category": "Банки и кредиты",
+      "logo_url": "http://cluster.skysend.ru:6721/image.php?provider=2669",
+      "website": "http://",
+      "source_text": "АЛЕКСАНДРОВСКИЙ (ПАО)"
+    },
+    {
+      "name": "АЛЕФ-БАНК (ЗАО)",
+      "category_id": "group6",
+      "category": "Банки и кредиты",
+      "logo_url": "http://cluster.skysend.ru:6721/image.php?provider=2670",
+      "website": "http://",
+      "source_text": "АЛЕФ-БАНК (ЗАО)"
+    },
+    {
+      "name": "АЛМАЗЭРГИЭНБАНК (АО)",
+      "category_id": "group6",
+      "category": "Банки и кредиты",
+      "logo_url": "http://cluster.skysend.ru:6721/image.php?provider=2672",
+      "website": "http://",
+      "source_text": "АЛМАЗЭРГИЭНБАНК (АО)"
+    },
+    {
+      "name": "АРЕСБАНК (ООО)",
+      "category_id": "group6",
+      "category": "Банки и кредиты",
+      "logo_url": "http://cluster.skysend.ru:6721/image.php?provider=2684",
+      "website": "http://",
+      "source_text": "АРЕСБАНК (ООО)"
+    },
+    {
+      "name": "БАЛАКОВО-БАНК",
+      "category_id": "group6",
+      "category": "Банки и кредиты",
+      "logo_url": "",
+      "website": "http://www.sbrf.ru",
+      "source_text": "www.sbrf.ru\nБАЛАКОВО-БАНК"
+    },
+    {
+      "name": "Банк 131",
+      "category_id": "group6",
+      "category": "Банки и кредиты",
+      "logo_url": "",
+      "website": "http://www.sbrf.ru",
+      "source_text": "www.sbrf.ru\nБанк 131"
+    },
+    {
+      "name": "Банк БЖФ",
+      "category_id": "group6",
+      "category": "Банки и кредиты",
+      "logo_url": "",
+      "website": "http://www.sbrf.ru",
+      "source_text": "www.sbrf.ru\nБанк БЖФ"
+    },
+    {
+      "name": "Банк Вологжанин",
+      "category_id": "group6",
+      "category": "Банки и кредиты",
+      "logo_url": "",
+      "website": "http://www.sbrf.ru",
+      "source_text": "www.sbrf.ru\nБанк Вологжанин"
+    },
+    {
+      "name": "Банк ЗЕНИТ",
+      "category_id": "group6",
+      "category": "Банки и кредиты",
+      "logo_url": "http://cluster.skysend.ru:6721/image.php?provider=193",
+      "website": "http://www.zenit.ru/",
+      "source_text": "www.zenit.ru/\nБанк ЗЕНИТ"
+    },
+    {
+      "name": "Банк Интеза",
+      "category_id": "group6",
+      "category": "Банки и кредиты",
+      "logo_url": "http://cluster.skysend.ru:6721/image.php?provider=946",
+      "website": "http://",
+      "source_text": "Банк Интеза"
+    },
+    {
+      "name": "БАНК КАЗАНИ (ООО)",
+      "category_id": "group6",
+      "category": "Банки и кредиты",
+      "logo_url": "http://cluster.skysend.ru:6721/image.php?provider=2704",
+      "website": "http://",
+      "source_text": "БАНК КАЗАНИ (ООО)"
+    },
+    {
+      "name": "Банк Кузнецкий",
+      "category_id": "group6",
+      "category": "Банки и кредиты",
+      "logo_url": "",
+      "website": "http://www.sbrf.ru",
+      "source_text": "www.sbrf.ru\nБанк Кузнецкий"
+    },
+    {
+      "name": "Банк МБА МОСКВА",
+      "category_id": "group6",
+      "category": "Банки и кредиты",
+      "logo_url": "",
+      "website": "http://www.sbrf.ru",
+      "source_text": "www.sbrf.ru\nБанк МБА МОСКВА"
+    },
+    {
+      "name": "БАНК МОСКВА СИТИ",
+      "category_id": "group6",
+      "category": "Банки и кредиты",
+      "logo_url": "",
+      "website": "http://www.sbrf.ru",
+      "source_text": "www.sbrf.ru\nБАНК МОСКВА СИТИ"
+    },
+    {
+      "name": "БАНК МСКБ",
+      "category_id": "group6",
+      "category": "Банки и кредиты",
+      "logo_url": "",
+      "website": "http://www.sbrf.ru",
+      "source_text": "www.sbrf.ru\nБАНК МСКБ"
+    },
+    {
+      "name": "БАНК ОРЕНБУРГ (ОАО)",
+      "category_id": "group6",
+      "category": "Банки и кредиты",
+      "logo_url": "http://cluster.skysend.ru:6721/image.php?provider=2710",
+      "website": "http://",
+      "source_text": "БАНК ОРЕНБУРГ (ОАО)"
+    },
+    {
+      "name": "Банк Пэйджин",
+      "category_id": "group6",
+      "category": "Банки и кредиты",
+      "logo_url": "",
+      "website": "http://www.sbrf.ru",
+      "source_text": "www.sbrf.ru\nБанк Пэйджин"
+    },
+    {
+      "name": "БАНК РАУНД (ООО)",
+      "category_id": "group6",
+      "category": "Банки и кредиты",
+      "logo_url": "http://cluster.skysend.ru:6721/image.php?provider=2715",
+      "website": "http://",
+      "source_text": "БАНК РАУНД (ООО)"
+    },
+    {
+      "name": "Банк Ресо Кредит",
+      "category_id": "group6",
+      "category": "Банки и кредиты",
+      "logo_url": "http://cluster.skysend.ru:6721/image.php?provider=948",
+      "website": "http://",
+      "source_text": "Банк Ресо Кредит"
+    },
+    {
+      "name": "Банк РСИ",
+      "category_id": "group6",
+      "category": "Банки и кредиты",
+      "logo_url": "",
+      "website": "http://www.sbrf.ru",
+      "source_text": "www.sbrf.ru\nБанк РСИ"
+    },
+    {
+      "name": "Банк Русский Стандарт (по номеру договора, онлайн)",
+      "category_id": "group6",
+      "category": "Банки и кредиты",
+      "logo_url": "http://cluster.skysend.ru:6721/image.php?provider=194",
+      "website": "http://www.rs.ru/",
+      "source_text": "www.rs.ru/\nБанк Русский Стандарт (по номеру договора, онлайн)"
+    },
+    {
+      "name": "Банк Санкт-Петербург",
+      "category_id": "group6",
+      "category": "Банки и кредиты",
+      "logo_url": "http://cluster.skysend.ru:6721/image.php?provider=195",
+      "website": "http://www.bspb.ru/",
+      "source_text": "www.bspb.ru/\nБанк Санкт-Петербург"
+    },
+    {
+      "name": "БАНК СГБ (ПАО)",
+      "category_id": "group6",
+      "category": "Банки и кредиты",
+      "logo_url": "http://cluster.skysend.ru:6721/image.php?provider=2718",
+      "website": "http://",
+      "source_text": "БАНК СГБ (ПАО)"
+    },
+    {
+      "name": "Банк Ставр",
+      "category_id": "group6",
+      "category": "Банки и кредиты",
+      "logo_url": "",
+      "website": "http://www.sbrf.ru",
+      "source_text": "www.sbrf.ru\nБанк Ставр"
+    },
+    {
+      "name": "Банк Уралфинанс",
+      "category_id": "group6",
+      "category": "Банки и кредиты",
+      "logo_url": "",
+      "website": "http://www.sbrf.ru",
+      "source_text": "www.sbrf.ru\nБанк Уралфинанс"
+    },
+    {
+      "name": "БАНК ФИНАМ (ЗАО)",
+      "category_id": "group6",
+      "category": "Банки и кредиты",
+      "logo_url": "http://cluster.skysend.ru:6721/image.php?provider=2720",
+      "website": "http://",
+      "source_text": "БАНК ФИНАМ (ЗАО)"
+    },
+    {
+      "name": "Банк Финсервис",
+      "category_id": "group6",
+      "category": "Банки и кредиты",
+      "logo_url": "",
+      "website": "http://www.sbrf.ru",
+      "source_text": "www.sbrf.ru\nБанк Финсервис"
+    },
+    {
+      "name": "Банк ЧБРР",
+      "category_id": "group6",
+      "category": "Банки и кредиты",
+      "logo_url": "",
+      "website": "http://www.sbrf.ru",
+      "source_text": "www.sbrf.ru\nБанк ЧБРР"
+    },
+    {
+      "name": "банк Элита",
+      "category_id": "group6",
+      "category": "Банки и кредиты",
+      "logo_url": "",
+      "website": "http://www.sbrf.ru",
+      "source_text": "www.sbrf.ru\nбанк Элита"
+    },
+    {
+      "name": "ББР Банк",
+      "category_id": "group6",
+      "category": "Банки и кредиты",
+      "logo_url": "",
+      "website": "http://www.sbrf.ru",
+      "source_text": "www.sbrf.ru\nББР Банк"
+    },
+    {
+      "name": "БЕЛГОРОДСОЦБАНК (ПАО)",
+      "category_id": "group6",
+      "category": "Банки и кредиты",
+      "logo_url": "http://cluster.skysend.ru:6721/image.php?provider=2727",
+      "website": "http://",
+      "source_text": "БЕЛГОРОДСОЦБАНК (ПАО)"
+    },
+    {
+      "name": "БКС Банк",
+      "category_id": "group6",
+      "category": "Банки и кредиты",
+      "logo_url": "",
+      "website": "http://www.sbrf.ru",
+      "source_text": "www.sbrf.ru\nБКС Банк"
+    },
+    {
+      "name": "БЫСТРОБАНК (ПАО)",
+      "category_id": "group6",
+      "category": "Банки и кредиты",
+      "logo_url": "http://cluster.skysend.ru:6721/image.php?provider=2744",
+      "website": "http://",
+      "source_text": "БЫСТРОБАНК (ПАО)"
+    },
+    {
+      "name": "ВБРР Банк",
+      "category_id": "group6",
+      "category": "Банки и кредиты",
+      "logo_url": "http://cluster.skysend.ru:6721/image.php?provider=3145",
+      "website": "http://",
+      "source_text": "ВБРР Банк"
+    },
+    {
+      "name": "ВЕНЕЦ (АО)",
+      "category_id": "group6",
+      "category": "Банки и кредиты",
+      "logo_url": "http://cluster.skysend.ru:6721/image.php?provider=2750",
+      "website": "http://",
+      "source_text": "ВЕНЕЦ (АО)"
+    },
+    {
+      "name": "ВЛАДБИЗНЕСБАНК (ЗАО)",
+      "category_id": "group6",
+      "category": "Банки и кредиты",
+      "logo_url": "http://cluster.skysend.ru:6721/image.php?provider=2759",
+      "website": "http://",
+      "source_text": "ВЛАДБИЗНЕСБАНК (ЗАО)"
+    },
+    {
+      "name": "ВНЕШФИНБАНК (ООО)",
+      "category_id": "group6",
+      "category": "Банки и кредиты",
+      "logo_url": "http://cluster.skysend.ru:6721/image.php?provider=2762",
+      "website": "http://",
+      "source_text": "ВНЕШФИНБАНК (ООО)"
+    },
+    {
+      "name": "ГАЗТРАНСБАНК (ГТ Банк)",
+      "category_id": "group6",
+      "category": "Банки и кредиты",
+      "logo_url": "http://cluster.skysend.ru:6721/image.php?provider=2778",
+      "website": "http://",
+      "source_text": "ГАЗТРАНСБАНК (ГТ Банк)"
+    },
+    {
+      "name": "ГАЗЭНЕРГОБАНК (ОАО)",
+      "category_id": "group6",
+      "category": "Банки и кредиты",
+      "logo_url": "http://cluster.skysend.ru:6721/image.php?provider=2779",
+      "website": "http://",
+      "source_text": "ГАЗЭНЕРГОБАНК (ОАО)"
+    },
+    {
+      "name": "ГЕНБАНК (АО)",
+      "category_id": "group6",
+      "category": "Банки и кредиты",
+      "logo_url": "http://cluster.skysend.ru:6721/image.php?provider=2782",
+      "website": "http://",
+      "source_text": "ГЕНБАНК (АО)"
+    },
+    {
+      "name": "ГОРБАНК (АО)",
+      "category_id": "group6",
+      "category": "Банки и кредиты",
+      "logo_url": "http://cluster.skysend.ru:6721/image.php?provider=2787",
+      "website": "http://",
+      "source_text": "ГОРБАНК (АО)"
+    },
+    {
+      "name": "ГУТА-БАНК",
+      "category_id": "group6",
+      "category": "Банки и кредиты",
+      "logo_url": "",
+      "website": "http://www.sbrf.ru",
+      "source_text": "www.sbrf.ru\nГУТА-БАНК"
+    },
+    {
+      "name": "Далена Банк",
+      "category_id": "group6",
+      "category": "Банки и кредиты",
+      "logo_url": "",
+      "website": "http://www.sbrf.ru",
+      "source_text": "www.sbrf.ru\nДалена Банк"
+    },
+    {
+      "name": "ДАЛЬНЕВОСТОЧНЫЙ БАНК (ПАО)",
+      "category_id": "group6",
+      "category": "Банки и кредиты",
+      "logo_url": "http://cluster.skysend.ru:6721/image.php?provider=2794",
+      "website": "http://",
+      "source_text": "ДАЛЬНЕВОСТОЧНЫЙ БАНК (ПАО)"
+    },
+    {
+      "name": "Датабанк",
+      "category_id": "group6",
+      "category": "Банки и кредиты",
+      "logo_url": "http://cluster.skysend.ru:6721/image.php?provider=6773",
+      "website": "http://",
+      "source_text": "Датабанк"
+    },
+    {
+      "name": "ДЕРЖАВА (ПАО)",
+      "category_id": "group6",
+      "category": "Банки и кредиты",
+      "logo_url": "http://cluster.skysend.ru:6721/image.php?provider=2798",
+      "website": "http://",
+      "source_text": "ДЕРЖАВА (ПАО)"
+    },
+    {
+      "name": "ДОМ.РФ Банк",
+      "category_id": "group6",
+      "category": "Банки и кредиты",
+      "logo_url": "http://cluster.skysend.ru:6721/image.php?provider=2805",
+      "website": "http://",
+      "source_text": "ДОМ.РФ Банк"
+    },
+    {
+      "name": "ЕКАТЕРИНБУРГ (ОАО)",
+      "category_id": "group6",
+      "category": "Банки и кредиты",
+      "logo_url": "http://cluster.skysend.ru:6721/image.php?provider=2823",
+      "website": "http://",
+      "source_text": "ЕКАТЕРИНБУРГ (ОАО)"
+    },
+    {
+      "name": "ЕНИСЕЙСКИЙ ОБЪЕДИНЕННЫЙ БАНК (ЗАО)",
+      "category_id": "group6",
+      "category": "Банки и кредиты",
+      "logo_url": "http://cluster.skysend.ru:6721/image.php?provider=2826",
+      "website": "http://",
+      "source_text": "ЕНИСЕЙСКИЙ ОБЪЕДИНЕННЫЙ БАНК (ЗАО)"
+    },
+    {
+      "name": "ЖИВАГО БАНК",
+      "category_id": "group6",
+      "category": "Банки и кредиты",
+      "logo_url": "",
+      "website": "http://www.sbrf.ru",
+      "source_text": "www.sbrf.ru\nЖИВАГО БАНК"
+    },
+    {
+      "name": "ЗАРЕЧЬЕ (ОАО)",
+      "category_id": "group6",
+      "category": "Банки и кредиты",
+      "logo_url": "http://cluster.skysend.ru:6721/image.php?provider=2830",
+      "website": "http://",
+      "source_text": "ЗАРЕЧЬЕ (ОАО)"
+    },
+    {
+      "name": "ЗЕМСКИЙ БАНК (ООО)",
+      "category_id": "group6",
+      "category": "Банки и кредиты",
+      "logo_url": "http://cluster.skysend.ru:6721/image.php?provider=2833",
+      "website": "http://",
+      "source_text": "ЗЕМСКИЙ БАНК (ООО)"
+    },
+    {
+      "name": "ИК БАНК (АО)",
+      "category_id": "group6",
+      "category": "Банки и кредиты",
+      "logo_url": "http://cluster.skysend.ru:6721/image.php?provider=2840",
+      "website": "http://",
+      "source_text": "ИК БАНК (АО)"
+    },
+    {
+      "name": "Инбанк",
+      "category_id": "group6",
+      "category": "Банки и кредиты",
+      "logo_url": "",
+      "website": "http://www.sbrf.ru",
+      "source_text": "www.sbrf.ru\nИнбанк"
+    },
+    {
+      "name": "ИНТЕРПРОГРЕСС БАНК (ИБП Банк)",
+      "category_id": "group6",
+      "category": "Банки и кредиты",
+      "logo_url": "",
+      "website": "http://",
+      "source_text": "ИНТЕРПРОГРЕСС БАНК (ИБП Банк)"
+    },
+    {
+      "name": "ИТУРУП (ООО)",
+      "category_id": "group6",
+      "category": "Банки и кредиты",
+      "logo_url": "http://cluster.skysend.ru:6721/image.php?provider=2862",
+      "website": "http://",
+      "source_text": "ИТУРУП (ООО)"
+    },
+    {
+      "name": "ИШБАНК (АО)",
+      "category_id": "group6",
+      "category": "Банки и кредиты",
+      "logo_url": "http://cluster.skysend.ru:6721/image.php?provider=2863",
+      "website": "http://",
+      "source_text": "ИШБАНК (АО)"
+    },
+    {
+      "name": "КБ Долинск",
+      "category_id": "group6",
+      "category": "Банки и кредиты",
+      "logo_url": "",
+      "website": "http://www.sbrf.ru",
+      "source_text": "www.sbrf.ru\nКБ Долинск"
+    },
+    {
+      "name": "КБ Локо-Банк",
+      "category_id": "group6",
+      "category": "Банки и кредиты",
+      "logo_url": "http://cluster.skysend.ru:6721/image.php?provider=953",
+      "website": "http://",
+      "source_text": "КБ Локо-Банк"
+    },
+    {
+      "name": "КБ Москоммерцбанк",
+      "category_id": "group6",
+      "category": "Банки и кредиты",
+      "logo_url": "http://cluster.skysend.ru:6721/image.php?provider=211",
+      "website": "http://www.moskb.ru/",
+      "source_text": "www.moskb.ru/\nКБ Москоммерцбанк"
+    },
+    {
+      "name": "КБ Пойдём",
+      "category_id": "group6",
+      "category": "Банки и кредиты",
+      "logo_url": "",
+      "website": "http://www.sbrf.ru",
+      "source_text": "www.sbrf.ru\nКБ Пойдём"
+    },
+    {
+      "name": "КОШЕЛЕВ-БАНК (АО)",
+      "category_id": "group6",
+      "category": "Банки и кредиты",
+      "logo_url": "http://cluster.skysend.ru:6721/image.php?provider=2889",
+      "website": "http://",
+      "source_text": "КОШЕЛЕВ-БАНК (АО)"
+    },
+    {
+      "name": "Кредит Европа Банк (Россия)",
+      "category_id": "group6",
+      "category": "Банки и кредиты",
+      "logo_url": "http://cluster.skysend.ru:6721/image.php?provider=216",
+      "website": "http://www.crediteurope.ru",
+      "source_text": "www.crediteurope.ru\nКредит Европа Банк (Россия)"
+    },
+    {
+      "name": "КРЕДИТ УРАЛ БАНК (АО)",
+      "category_id": "group6",
+      "category": "Банки и кредиты",
+      "logo_url": "http://cluster.skysend.ru:6721/image.php?provider=2892",
+      "website": "http://",
+      "source_text": "КРЕДИТ УРАЛ БАНК (АО)"
+    },
+    {
+      "name": "КРЕМЛЕВСКИЙ (ООО)",
+      "category_id": "group6",
+      "category": "Банки и кредиты",
+      "logo_url": "http://cluster.skysend.ru:6721/image.php?provider=2898",
+      "website": "http://",
+      "source_text": "КРЕМЛЕВСКИЙ (ООО)"
+    },
+    {
+      "name": "КРОКУС-БАНК (ООО)",
+      "category_id": "group6",
+      "category": "Банки и кредиты",
+      "logo_url": "http://cluster.skysend.ru:6721/image.php?provider=2899",
+      "website": "http://",
+      "source_text": "КРОКУС-БАНК (ООО)"
+    },
+    {
+      "name": "Кубань Кредит",
+      "category_id": "group6",
+      "category": "Банки и кредиты",
+      "logo_url": "",
+      "website": "http://www.sbrf.ru",
+      "source_text": "www.sbrf.ru\nКубань Кредит"
+    },
+    {
+      "name": "КУБАНЬТОРГБАНК (АО)",
+      "category_id": "group6",
+      "category": "Банки и кредиты",
+      "logo_url": "http://cluster.skysend.ru:6721/image.php?provider=2907",
+      "website": "http://",
+      "source_text": "КУБАНЬТОРГБАНК (АО)"
+    },
+    {
+      "name": "КУЗНЕЦКБИЗНЕСБАНК (ОАО)",
+      "category_id": "group6",
+      "category": "Банки и кредиты",
+      "logo_url": "http://cluster.skysend.ru:6721/image.php?provider=2909",
+      "website": "http://",
+      "source_text": "КУЗНЕЦКБИЗНЕСБАНК (ОАО)"
+    },
+    {
+      "name": "ЛЕВОБЕРЕЖНЫЙ (ПАО)",
+      "category_id": "group6",
+      "category": "Банки и кредиты",
+      "logo_url": "http://cluster.skysend.ru:6721/image.php?provider=2918",
+      "website": "http://",
+      "source_text": "ЛЕВОБЕРЕЖНЫЙ (ПАО)"
+    },
+    {
+      "name": "МБ Банк (МИР БИЗНЕС БАНК)",
+      "category_id": "group6",
+      "category": "Банки и кредиты",
+      "logo_url": "http://cluster.skysend.ru:6721/image.php?provider=2955",
+      "website": "http://",
+      "source_text": "МБ Банк (МИР БИЗНЕС БАНК)"
+    },
+    {
+      "name": "МЕЖДУНАРОДНЫЙ ФИНАНСОВЫЙ КЛУБ (ОАО)",
+      "category_id": "group6",
+      "category": "Банки и кредиты",
+      "logo_url": "http://cluster.skysend.ru:6721/image.php?provider=2938",
+      "website": "http://",
+      "source_text": "МЕЖДУНАРОДНЫЙ ФИНАНСОВЫЙ КЛУБ (ОАО)"
+    },
+    {
+      "name": "МЕТАЛЛИНВЕСТБАНК (ПАО)",
+      "category_id": "group6",
+      "category": "Банки и кредиты",
+      "logo_url": "http://cluster.skysend.ru:6721/image.php?provider=2946",
+      "website": "http://",
+      "source_text": "МЕТАЛЛИНВЕСТБАНК (ПАО)"
+    },
+    {
+      "name": "МЕТКОМБАНК (ПАО)",
+      "category_id": "group6",
+      "category": "Банки и кредиты",
+      "logo_url": "http://cluster.skysend.ru:6721/image.php?provider=2949",
+      "website": "http://",
+      "source_text": "МЕТКОМБАНК (ПАО)"
+    },
+    {
+      "name": "Мир Привилегий (МП Банк)",
+      "category_id": "group6",
+      "category": "Банки и кредиты",
+      "logo_url": "",
+      "website": "http://www.sbrf.ru",
+      "source_text": "www.sbrf.ru\nМир Привилегий (МП Банк)"
+    },
+    {
+      "name": "МКБ (Московский кредитный банк)",
+      "category_id": "group6",
+      "category": "Банки и кредиты",
+      "logo_url": "http://cluster.skysend.ru:6721/image.php?provider=2969",
+      "website": "http://",
+      "source_text": "МКБ (Московский кредитный банк)"
+    },
+    {
+      "name": "Модульбанк КБ",
+      "category_id": "group6",
+      "category": "Банки и кредиты",
+      "logo_url": "http://cluster.skysend.ru:6721/image.php?provider=6775",
+      "website": "http://www.vtb24.ru",
+      "source_text": "www.vtb24.ru\nМодульбанк КБ"
+    },
+    {
+      "name": "МОРСКОЙ БАНК (ОАО)",
+      "category_id": "group6",
+      "category": "Банки и кредиты",
+      "logo_url": "http://cluster.skysend.ru:6721/image.php?provider=2963",
+      "website": "http://",
+      "source_text": "МОРСКОЙ БАНК (ОАО)"
+    },
+    {
+      "name": "МОСКОМБАНК (МОСКОВСКИЙ КОММЕРЧЕСКИЙ БАНК)",
+      "category_id": "group6",
+      "category": "Банки и кредиты",
+      "logo_url": "http://cluster.skysend.ru:6721/image.php?provider=2968",
+      "website": "http://",
+      "source_text": "МОСКОМБАНК (МОСКОВСКИЙ КОММЕРЧЕСКИЙ БАНК)"
+    },
+    {
+      "name": "МС БАНК РУС (АО)",
+      "category_id": "group6",
+      "category": "Банки и кредиты",
+      "logo_url": "http://cluster.skysend.ru:6721/image.php?provider=2977",
+      "website": "http://",
+      "source_text": "МС БАНК РУС (АО)"
+    },
+    {
+      "name": "МТС Деньги (ЭКСИ Банк)",
+      "category_id": "group6",
+      "category": "Банки и кредиты",
+      "logo_url": "",
+      "website": "http://www.sbrf.ru",
+      "source_text": "www.sbrf.ru\nМТС Деньги (ЭКСИ Банк)"
+    },
+    {
+      "name": "МТС-Банк.",
+      "category_id": "group6",
+      "category": "Банки и кредиты",
+      "logo_url": "http://cluster.skysend.ru:6721/image.php?provider=4007",
+      "website": "http://",
+      "source_text": "МТС-Банк."
+    },
+    {
+      "name": "Нацинвестпромбанк",
+      "category_id": "group6",
+      "category": "Банки и кредиты",
+      "logo_url": "http://cluster.skysend.ru:6721/image.php?provider=6396",
+      "website": "http://www.ardinvest.net/",
+      "source_text": "www.ardinvest.net/\nНацинвестпромбанк"
+    },
+    {
+      "name": "НАЦИОНАЛЬНЫЙ СТАНДАРТ (АО)",
+      "category_id": "group6",
+      "category": "Банки и кредиты",
+      "logo_url": "http://cluster.skysend.ru:6721/image.php?provider=2993",
+      "website": "http://",
+      "source_text": "НАЦИОНАЛЬНЫЙ СТАНДАРТ (АО)"
+    },
+    {
+      "name": "НБД-БАНК (ПАО)",
+      "category_id": "group6",
+      "category": "Банки и кредиты",
+      "logo_url": "http://cluster.skysend.ru:6721/image.php?provider=2997",
+      "website": "http://",
+      "source_text": "НБД-БАНК (ПАО)"
+    },
+    {
+      "name": "НИКО-БАНК (ПАО)",
+      "category_id": "group6",
+      "category": "Банки и кредиты",
+      "logo_url": "http://cluster.skysend.ru:6721/image.php?provider=3007",
+      "website": "http://",
+      "source_text": "НИКО-БАНК (ПАО)"
+    },
+    {
+      "name": "НК БАНК (ОАО)",
+      "category_id": "group6",
+      "category": "Банки и кредиты",
+      "logo_url": "http://cluster.skysend.ru:6721/image.php?provider=3008",
+      "website": "http://",
+      "source_text": "НК БАНК (ОАО)"
+    },
+    {
+      "name": "НКО ЭЛЕКСИР",
+      "category_id": "group6",
+      "category": "Банки и кредиты",
+      "logo_url": "",
+      "website": "http://www.sbrf.ru",
+      "source_text": "www.sbrf.ru\nНКО ЭЛЕКСИР"
+    },
+    {
+      "name": "НОВИКОМБАНК (АО)",
+      "category_id": "group6",
+      "category": "Банки и кредиты",
+      "logo_url": "http://cluster.skysend.ru:6721/image.php?provider=3012",
+      "website": "http://",
+      "source_text": "НОВИКОМБАНК (АО)"
+    },
+    {
+      "name": "НОВОБАНК (ОАО)",
+      "category_id": "group6",
+      "category": "Банки и кредиты",
+      "logo_url": "http://cluster.skysend.ru:6721/image.php?provider=3013",
+      "website": "http://",
+      "source_text": "НОВОБАНК (ОАО)"
+    },
+    {
+      "name": "Новый век",
+      "category_id": "group6",
+      "category": "Банки и кредиты",
+      "logo_url": "",
+      "website": "http://www.sbrf.ru",
+      "source_text": "www.sbrf.ru\nНовый век"
+    },
+    {
+      "name": "НОКССБАНК (ПАО)",
+      "category_id": "group6",
+      "category": "Банки и кредиты",
+      "logo_url": "http://cluster.skysend.ru:6721/image.php?provider=3022",
+      "website": "http://",
+      "source_text": "НОКССБАНК (ПАО)"
+    },
+    {
+      "name": "НООСФЕРА",
+      "category_id": "group6",
+      "category": "Банки и кредиты",
+      "logo_url": "",
+      "website": "http://www.sbrf.ru",
+      "source_text": "www.sbrf.ru\nНООСФЕРА"
+    },
+    {
+      "name": "НОРВИК БАНК (ПАО)",
+      "category_id": "group6",
+      "category": "Банки и кредиты",
+      "logo_url": "http://cluster.skysend.ru:6721/image.php?provider=3024",
+      "website": "http://",
+      "source_text": "НОРВИК БАНК (ПАО)"
+    },
+    {
+      "name": "НС БАНК",
+      "category_id": "group6",
+      "category": "Банки и кредиты",
+      "logo_url": "http://cluster.skysend.ru:6721/image.php?provider=3027",
+      "website": "http://",
+      "source_text": "НС БАНК"
+    },
+    {
+      "name": "ОБЪЕДИНЕННЫЙ КАПИТАЛ (ОАО)",
+      "category_id": "group6",
+      "category": "Банки и кредиты",
+      "logo_url": "http://cluster.skysend.ru:6721/image.php?provider=3033",
+      "website": "http://",
+      "source_text": "ОБЪЕДИНЕННЫЙ КАПИТАЛ (ОАО)"
+    },
+    {
+      "name": "ООО Промсельхозбанк",
+      "category_id": "group6",
+      "category": "Банки и кредиты",
+      "logo_url": "",
+      "website": "http://www.sbrf.ru",
+      "source_text": "www.sbrf.ru\nООО Промсельхозбанк"
+    },
+    {
+      "name": "ПЕРВОУРАЛЬСКБАНК",
+      "category_id": "group6",
+      "category": "Банки и кредиты",
+      "logo_url": "",
+      "website": "http://www.sbrf.ru",
+      "source_text": "www.sbrf.ru\nПЕРВОУРАЛЬСКБАНК"
+    },
+    {
+      "name": "Первый Дортрансбанк",
+      "category_id": "group6",
+      "category": "Банки и кредиты",
+      "logo_url": "",
+      "website": "http://www.sbrf.ru",
+      "source_text": "www.sbrf.ru\nПервый Дортрансбанк"
+    },
+    {
+      "name": "ПЕРВЫЙ ИНВЕСТИЦИОННЫЙ (ЗАО)",
+      "category_id": "group6",
+      "category": "Банки и кредиты",
+      "logo_url": "http://cluster.skysend.ru:6721/image.php?provider=3046",
+      "website": "http://",
+      "source_text": "ПЕРВЫЙ ИНВЕСТИЦИОННЫЙ (ЗАО)"
+    },
+    {
+      "name": "ПРИМОРЬЕ (ОАО)",
+      "category_id": "group6",
+      "category": "Банки и кредиты",
+      "logo_url": "http://cluster.skysend.ru:6721/image.php?provider=3060",
+      "website": "http://",
+      "source_text": "ПРИМОРЬЕ (ОАО)"
+    },
+    {
+      "name": "ПРИМСОЦБАНК (ПАО)",
+      "category_id": "group6",
+      "category": "Банки и кредиты",
+      "logo_url": "http://cluster.skysend.ru:6721/image.php?provider=3061",
+      "website": "http://",
+      "source_text": "ПРИМСОЦБАНК (ПАО)"
+    },
+    {
+      "name": "ПРИО-ВНЕШТОРГБАНК (ОАО)",
+      "category_id": "group6",
+      "category": "Банки и кредиты",
+      "logo_url": "http://cluster.skysend.ru:6721/image.php?provider=3062",
+      "website": "http://",
+      "source_text": "ПРИО-ВНЕШТОРГБАНК (ОАО)"
+    },
+    {
+      "name": "ПроБанк",
+      "category_id": "group6",
+      "category": "Банки и кредиты",
+      "logo_url": "http://cluster.skysend.ru:6721/image.php?provider=3072",
+      "website": "http://",
+      "source_text": "ПроБанк"
+    },
+    {
+      "name": "ПСКБ Банк",
+      "category_id": "group6",
+      "category": "Банки и кредиты",
+      "logo_url": "http://cluster.skysend.ru:6721/image.php?provider=6807",
+      "website": "http://sobinbank.ru",
+      "source_text": "sobinbank.ru\nПСКБ Банк"
+    },
+    {
+      "name": "РАЗВИТИЕ-СТОЛИЦА (АО)",
+      "category_id": "group6",
+      "category": "Банки и кредиты",
+      "logo_url": "http://cluster.skysend.ru:6721/image.php?provider=3077",
+      "website": "http://",
+      "source_text": "РАЗВИТИЕ-СТОЛИЦА (АО)"
+    },
+    {
+      "name": "Реалист Банк",
+      "category_id": "group6",
+      "category": "Банки и кредиты",
+      "logo_url": "http://cluster.skysend.ru:6721/image.php?provider=6774",
+      "website": "http://",
+      "source_text": "Реалист Банк"
+    },
+    {
+      "name": "Ренессанс Кредит Банк",
+      "category_id": "group6",
+      "category": "Банки и кредиты",
+      "logo_url": "http://cluster.skysend.ru:6721/image.php?provider=944",
+      "website": "http://",
+      "source_text": "Ренессанс Кредит Банк"
+    },
+    {
+      "name": "РН БАНК (АО)",
+      "category_id": "group6",
+      "category": "Банки и кредиты",
+      "logo_url": "http://cluster.skysend.ru:6721/image.php?provider=3093",
+      "website": "http://",
+      "source_text": "РН БАНК (АО)"
+    },
+    {
+      "name": "Рокетбанк",
+      "category_id": "group6",
+      "category": "Банки и кредиты",
+      "logo_url": "",
+      "website": "http://www.sbrf.ru",
+      "source_text": "www.sbrf.ru\nРокетбанк"
+    },
+    {
+      "name": "РОСДОРБАНК (ПАО)",
+      "category_id": "group6",
+      "category": "Банки и кредиты",
+      "logo_url": "http://cluster.skysend.ru:6721/image.php?provider=3097",
+      "website": "http://",
+      "source_text": "РОСДОРБАНК (ПАО)"
+    },
+    {
+      "name": "РОСТФИНАНС (ООО)",
+      "category_id": "group6",
+      "category": "Банки и кредиты",
+      "logo_url": "http://cluster.skysend.ru:6721/image.php?provider=3105",
+      "website": "http://",
+      "source_text": "РОСТФИНАНС (ООО)"
+    },
+    {
+      "name": "Роял Кредит Банк",
+      "category_id": "group6",
+      "category": "Банки и кредиты",
+      "logo_url": "",
+      "website": "http://www.sbrf.ru",
+      "source_text": "www.sbrf.ru\nРоял Кредит Банк"
+    },
+    {
+      "name": "РУСНАРБАНК (ЗАО)",
+      "category_id": "group6",
+      "category": "Банки и кредиты",
+      "logo_url": "http://cluster.skysend.ru:6721/image.php?provider=3114",
+      "website": "http://",
+      "source_text": "РУСНАРБАНК (ЗАО)"
+    },
+    {
+      "name": "РУСЬУНИВЕРСАЛБАНК (ООО)",
+      "category_id": "group6",
+      "category": "Банки и кредиты",
+      "logo_url": "http://cluster.skysend.ru:6721/image.php?provider=3127",
+      "website": "http://",
+      "source_text": "РУСЬУНИВЕРСАЛБАНК (ООО)"
+    },
+    {
+      "name": "САРАТОВ (ООО)",
+      "category_id": "group6",
+      "category": "Банки и кредиты",
+      "logo_url": "http://cluster.skysend.ru:6721/image.php?provider=3133",
+      "website": "http://",
+      "source_text": "САРАТОВ (ООО)"
+    },
+    {
+      "name": "СДМ-БАНК",
+      "category_id": "group6",
+      "category": "Банки и кредиты",
+      "logo_url": "http://cluster.skysend.ru:6721/image.php?provider=236",
+      "website": "http://www.sdm.ru/",
+      "source_text": "www.sdm.ru/\nСДМ-БАНК"
+    },
+    {
+      "name": "СЕВЕРНЫЙ НАРОДНЫЙ БАНК (ПАО)",
+      "category_id": "group6",
+      "category": "Банки и кредиты",
+      "logo_url": "http://cluster.skysend.ru:6721/image.php?provider=3137",
+      "website": "http://",
+      "source_text": "СЕВЕРНЫЙ НАРОДНЫЙ БАНК (ПАО)"
+    },
+    {
+      "name": "СИБСОЦБАНК (ООО)",
+      "category_id": "group6",
+      "category": "Банки и кредиты",
+      "logo_url": "http://cluster.skysend.ru:6721/image.php?provider=3146",
+      "website": "http://",
+      "source_text": "СИБСОЦБАНК (ООО)"
+    },
+    {
+      "name": "Синара Банк",
+      "category_id": "group6",
+      "category": "Банки и кредиты",
+      "logo_url": "http://cluster.skysend.ru:6721/image.php?provider=223",
+      "website": "http://www.skbbank.ru/",
+      "source_text": "www.skbbank.ru/\nСинара Банк"
+    },
+    {
+      "name": "СИНКО-БАНК (ООО)",
+      "category_id": "group6",
+      "category": "Банки и кредиты",
+      "logo_url": "http://cluster.skysend.ru:6721/image.php?provider=3149",
+      "website": "http://",
+      "source_text": "СИНКО-БАНК (ООО)"
+    },
+    {
+      "name": "СНГБ БАНК (СУРГУТНЕФТЕГАЗБАНК)",
+      "category_id": "group6",
+      "category": "Банки и кредиты",
+      "logo_url": "http://cluster.skysend.ru:6721/image.php?provider=3183",
+      "website": "http://",
+      "source_text": "СНГБ БАНК (СУРГУТНЕФТЕГАЗБАНК)"
+    },
+    {
+      "name": "СНЕЖИНСКИЙ (ПАО)",
+      "category_id": "group6",
+      "category": "Банки и кредиты",
+      "logo_url": "http://cluster.skysend.ru:6721/image.php?provider=3158",
+      "website": "http://",
+      "source_text": "СНЕЖИНСКИЙ (ПАО)"
+    },
+    {
+      "name": "СОЛИД БАНК (ЗАО)",
+      "category_id": "group6",
+      "category": "Банки и кредиты",
+      "logo_url": "http://cluster.skysend.ru:6721/image.php?provider=3163",
+      "website": "http://",
+      "source_text": "СОЛИД БАНК (ЗАО)"
+    },
+    {
+      "name": "СОЛИДАРНОСТЬ (АО)",
+      "category_id": "group6",
+      "category": "Банки и кредиты",
+      "logo_url": "http://cluster.skysend.ru:6721/image.php?provider=3164",
+      "website": "http://",
+      "source_text": "СОЛИДАРНОСТЬ (АО)"
+    },
+    {
+      "name": "СОЦИУМ-БАНК (ООО)",
+      "category_id": "group6",
+      "category": "Банки и кредиты",
+      "logo_url": "http://cluster.skysend.ru:6721/image.php?provider=3167",
+      "website": "http://",
+      "source_text": "СОЦИУМ-БАНК (ООО)"
+    },
+    {
+      "name": "СОЮЗ",
+      "category_id": "group6",
+      "category": "Банки и кредиты",
+      "logo_url": "http://cluster.skysend.ru:6721/image.php?provider=240",
+      "website": "http://www.is.ru",
+      "source_text": "www.is.ru\nСОЮЗ"
+    },
+    {
+      "name": "СТРОЙЛЕСБАНК (ООО)",
+      "category_id": "group6",
+      "category": "Банки и кредиты",
+      "logo_url": "http://cluster.skysend.ru:6721/image.php?provider=3181",
+      "website": "http://",
+      "source_text": "СТРОЙЛЕСБАНК (ООО)"
+    },
+    {
+      "name": "ТАТСОЦБАНК (АО)",
+      "category_id": "group6",
+      "category": "Банки и кредиты",
+      "logo_url": "http://cluster.skysend.ru:6721/image.php?provider=3193",
+      "website": "http://",
+      "source_text": "ТАТСОЦБАНК (АО)"
+    },
+    {
+      "name": "ТЕНДЕР-БАНК (АО)",
+      "category_id": "group6",
+      "category": "Банки и кредиты",
+      "logo_url": "http://cluster.skysend.ru:6721/image.php?provider=3196",
+      "website": "http://",
+      "source_text": "ТЕНДЕР-БАНК (АО)"
+    },
+    {
+      "name": "ТИМЕР БАНК (ПАО)",
+      "category_id": "group6",
+      "category": "Банки и кредиты",
+      "logo_url": "http://cluster.skysend.ru:6721/image.php?provider=3199",
+      "website": "http://",
+      "source_text": "ТИМЕР БАНК (ПАО)"
+    },
+    {
+      "name": "ТОЙОТА БАНК (АО)",
+      "category_id": "group6",
+      "category": "Банки и кредиты",
+      "logo_url": "http://cluster.skysend.ru:6721/image.php?provider=3200",
+      "website": "http://",
+      "source_text": "ТОЙОТА БАНК (АО)"
+    },
+    {
+      "name": "ТОЛЬЯТТИХИМБАНК (АО)",
+      "category_id": "group6",
+      "category": "Банки и кредиты",
+      "logo_url": "http://cluster.skysend.ru:6721/image.php?provider=3201",
+      "website": "http://",
+      "source_text": "ТОЛЬЯТТИХИМБАНК (АО)"
+    },
+    {
+      "name": "ТОМСКПРОМСТРОЙБАНК (ОАО)",
+      "category_id": "group6",
+      "category": "Банки и кредиты",
+      "logo_url": "http://cluster.skysend.ru:6721/image.php?provider=3202",
+      "website": "http://",
+      "source_text": "ТОМСКПРОМСТРОЙБАНК (ОАО)"
+    },
+    {
+      "name": "Точка Банк",
+      "category_id": "group6",
+      "category": "Банки и кредиты",
+      "logo_url": "",
+      "website": "http://www.sbrf.ru",
+      "source_text": "www.sbrf.ru\nТочка Банк"
+    },
+    {
+      "name": "ТРАНСКАПИТАЛБАНК",
+      "category_id": "group6",
+      "category": "Банки и кредиты",
+      "logo_url": "http://cluster.skysend.ru:6721/image.php?provider=242",
+      "website": "http://www.transcapital.com/",
+      "source_text": "www.transcapital.com/\nТРАНСКАПИТАЛБАНК"
+    },
+    {
+      "name": "ТРАНССТРОЙБАНК (АО)",
+      "category_id": "group6",
+      "category": "Банки и кредиты",
+      "logo_url": "http://cluster.skysend.ru:6721/image.php?provider=3205",
+      "website": "http://",
+      "source_text": "ТРАНССТРОЙБАНК (АО)"
+    },
+    {
+      "name": "УБРиР (ОАО)",
+      "category_id": "group6",
+      "category": "Банки и кредиты",
+      "logo_url": "http://cluster.skysend.ru:6721/image.php?provider=224",
+      "website": "http://www.ubrr.ru/",
+      "source_text": "www.ubrr.ru/\nУБРиР (ОАО)"
+    },
+    {
+      "name": "УГЛЕМЕТБАНК (АО)",
+      "category_id": "group6",
+      "category": "Банки и кредиты",
+      "logo_url": "http://cluster.skysend.ru:6721/image.php?provider=3211",
+      "website": "http://",
+      "source_text": "УГЛЕМЕТБАНК (АО)"
+    },
+    {
+      "name": "Урал ФД Банк",
+      "category_id": "group6",
+      "category": "Банки и кредиты",
+      "logo_url": "http://cluster.skysend.ru:6721/image.php?provider=3220",
+      "website": "http://",
+      "source_text": "Урал ФД Банк"
+    },
+    {
+      "name": "УРАЛПРОМБАНК (ОАО)",
+      "category_id": "group6",
+      "category": "Банки и кредиты",
+      "logo_url": "http://cluster.skysend.ru:6721/image.php?provider=3215",
+      "website": "http://",
+      "source_text": "УРАЛПРОМБАНК (ОАО)"
+    },
+    {
+      "name": "Уралсиб",
+      "category_id": "group6",
+      "category": "Банки и кредиты",
+      "logo_url": "http://cluster.skysend.ru:6721/image.php?provider=246",
+      "website": "http://www.bankuralsib.ru",
+      "source_text": "www.bankuralsib.ru\nУралсиб"
+    },
+    {
+      "name": "ФИНСТАР БАНК",
+      "category_id": "group6",
+      "category": "Банки и кредиты",
+      "logo_url": "",
+      "website": "http://www.sbrf.ru",
+      "source_text": "www.sbrf.ru\nФИНСТАР БАНК"
+    },
+    {
+      "name": "ФОРА-БАНК (АО)",
+      "category_id": "group6",
+      "category": "Банки и кредиты",
+      "logo_url": "http://cluster.skysend.ru:6721/image.php?provider=3237",
+      "website": "http://",
+      "source_text": "ФОРА-БАНК (АО)"
+    },
+    {
+      "name": "ФОРШТАДТ (АО)",
+      "category_id": "group6",
+      "category": "Банки и кредиты",
+      "logo_url": "http://cluster.skysend.ru:6721/image.php?provider=3240",
+      "website": "http://",
+      "source_text": "ФОРШТАДТ (АО)"
+    },
+    {
+      "name": "Хайс Банк",
+      "category_id": "group6",
+      "category": "Банки и кредиты",
+      "logo_url": "http://cluster.skysend.ru:6721/image.php?provider=6802",
+      "website": "http://www.rosbank.ru",
+      "source_text": "www.rosbank.ru\nХайс Банк"
+    },
+    {
+      "name": "ХАКАССКИЙ МУНИЦИПАЛЬНЫЙ БАНК (ООО)",
+      "category_id": "group6",
+      "category": "Банки и кредиты",
+      "logo_url": "http://cluster.skysend.ru:6721/image.php?provider=3241",
+      "website": "http://",
+      "source_text": "ХАКАССКИЙ МУНИЦИПАЛЬНЫЙ БАНК (ООО)"
+    },
+    {
+      "name": "ХЛЫНОВ (ОАО)",
+      "category_id": "group6",
+      "category": "Банки и кредиты",
+      "logo_url": "http://cluster.skysend.ru:6721/image.php?provider=3244",
+      "website": "http://",
+      "source_text": "ХЛЫНОВ (ОАО)"
+    },
+    {
+      "name": "ЦЕНТР-ИНВЕСТ",
+      "category_id": "group6",
+      "category": "Банки и кредиты",
+      "logo_url": "http://cluster.skysend.ru:6721/image.php?provider=248",
+      "website": "http://www.centrinvest.ru",
+      "source_text": "www.centrinvest.ru\nЦЕНТР-ИНВЕСТ"
+    },
+    {
+      "name": "ЦЕНТРОКРЕДИТ (АО)",
+      "category_id": "group6",
+      "category": "Банки и кредиты",
+      "logo_url": "http://cluster.skysend.ru:6721/image.php?provider=3251",
+      "website": "http://",
+      "source_text": "ЦЕНТРОКРЕДИТ (АО)"
+    },
+    {
+      "name": "Цифра банк",
+      "category_id": "group6",
+      "category": "Банки и кредиты",
+      "logo_url": "",
+      "website": "http://www.sbrf.ru",
+      "source_text": "www.sbrf.ru\nЦифра банк"
+    },
+    {
+      "name": "ЦМРБанк",
+      "category_id": "group6",
+      "category": "Банки и кредиты",
+      "logo_url": "",
+      "website": "http://www.sbrf.ru",
+      "source_text": "www.sbrf.ru\nЦМРБанк"
+    },
+    {
+      "name": "ЧЕЛИНДБАНК (ОАО)",
+      "category_id": "group6",
+      "category": "Банки и кредиты",
+      "logo_url": "http://cluster.skysend.ru:6721/image.php?provider=3255",
+      "website": "http://",
+      "source_text": "ЧЕЛИНДБАНК (ОАО)"
+    },
+    {
+      "name": "ЧЕЛЯБИНВЕСТБАНК (ОАО)",
+      "category_id": "group6",
+      "category": "Банки и кредиты",
+      "logo_url": "http://cluster.skysend.ru:6721/image.php?provider=3256",
+      "website": "http://",
+      "source_text": "ЧЕЛЯБИНВЕСТБАНК (ОАО)"
+    },
+    {
+      "name": "Экономбанк",
+      "category_id": "group6",
+      "category": "Банки и кредиты",
+      "logo_url": "",
+      "website": "http://www.sbrf.ru",
+      "source_text": "www.sbrf.ru\nЭкономбанк"
+    },
+    {
+      "name": "ЭКСПОБАНК (ООО)",
+      "category_id": "group6",
+      "category": "Банки и кредиты",
+      "logo_url": "http://cluster.skysend.ru:6721/image.php?provider=3265",
+      "website": "http://",
+      "source_text": "ЭКСПОБАНК (ООО)"
+    },
+    {
+      "name": "ЭЛПЛАТ ПНКО (Электронные платежи)",
+      "category_id": "group6",
+      "category": "Банки и кредиты",
+      "logo_url": "http://cluster.skysend.ru:6721/image.php?provider=6805",
+      "website": "http://www.sbrf.ru",
+      "source_text": "www.sbrf.ru\nЭЛПЛАТ ПНКО (Электронные платежи)"
+    },
+    {
+      "name": "Энергобанк",
+      "category_id": "group6",
+      "category": "Банки и кредиты",
+      "logo_url": "http://cluster.skysend.ru:6721/image.php?provider=3271",
+      "website": "http://",
+      "source_text": "Энергобанк"
+    },
+    {
+      "name": "ЭНЕРГОТРАНСБАНК (ОАО)",
+      "category_id": "group6",
+      "category": "Банки и кредиты",
+      "logo_url": "http://cluster.skysend.ru:6721/image.php?provider=3273",
+      "website": "http://",
+      "source_text": "ЭНЕРГОТРАНСБАНК (ОАО)"
+    },
+    {
+      "name": "Эс-Би-Ай Банк",
+      "category_id": "group6",
+      "category": "Банки и кредиты",
+      "logo_url": "http://cluster.skysend.ru:6721/image.php?provider=3254",
+      "website": "http://",
+      "source_text": "Эс-Би-Ай Банк"
+    },
+    {
+      "name": "ЮГ-Инвестбанк",
+      "category_id": "group6",
+      "category": "Банки и кредиты",
+      "logo_url": "http://cluster.skysend.ru:6721/image.php?provider=3259",
+      "website": "http://",
+      "source_text": "ЮГ-Инвестбанк"
+    },
+    {
+      "name": "ЮниКредит Банк",
+      "category_id": "group6",
+      "category": "Банки и кредиты",
+      "logo_url": "http://cluster.skysend.ru:6721/image.php?provider=250",
+      "website": "http://www.unicreditbank.ru",
+      "source_text": "www.unicreditbank.ru\nЮниКредит Банк"
+    },
+    {
+      "name": "ЮНИСТРИМ БАНК",
+      "category_id": "group6",
+      "category": "Банки и кредиты",
+      "logo_url": "",
+      "website": "http://www.sbrf.ru",
+      "source_text": "www.sbrf.ru\nЮНИСТРИМ БАНК"
+    },
+    {
+      "name": "ЯРИНТЕРБАНК",
+      "category_id": "group6",
+      "category": "Банки и кредиты",
+      "logo_url": "",
+      "website": "http://www.sbrf.ru",
+      "source_text": "www.sbrf.ru\nЯРИНТЕРБАНК"
+    },
+    {
+      "name": "ArcheAge Mail.ru.",
+      "category_id": "group7",
+      "category": "Игры",
+      "logo_url": "http://cluster.skysend.ru:6721/image.php?provider=4755",
+      "website": "http://archeage.ru/",
+      "source_text": "archeage.ru/\n+74957256357\nArcheAge Mail.ru."
+    },
+    {
+      "name": "Bloody World Mail.ru",
+      "category_id": "group7",
+      "category": "Игры",
+      "logo_url": "http://cluster.skysend.ru:6721/image.php?provider=4733",
+      "website": "http://",
+      "source_text": "+74957256357\nBloody World Mail.ru"
+    },
+    {
+      "name": "Cross Fire Mail.ru",
+      "category_id": "group7",
+      "category": "Игры",
+      "logo_url": "http://cluster.skysend.ru:6721/image.php?provider=4757",
+      "website": "http://",
+      "source_text": "+74957256357\nCross Fire Mail.ru"
+    },
+    {
+      "name": "Ground War: Tanks Mail.ru",
+      "category_id": "group7",
+      "category": "Игры",
+      "logo_url": "http://cluster.skysend.ru:6721/image.php?provider=4814",
+      "website": "http://",
+      "source_text": "+74957256357\nGround War: Tanks Mail.ru"
+    },
+    {
+      "name": "Jade Dynasty Mail.ru",
+      "category_id": "group7",
+      "category": "Игры",
+      "logo_url": "http://cluster.skysend.ru:6721/image.php?provider=4782",
+      "website": "http://",
+      "source_text": "+74957256357\nJade Dynasty Mail.ru"
+    },
+    {
+      "name": "Jade Dynasty Mail.ru",
+      "category_id": "group7",
+      "category": "Игры",
+      "logo_url": "http://cluster.skysend.ru:6721/image.php?provider=4730",
+      "website": "http://",
+      "source_text": "+74957256357\nJade Dynasty Mail.ru"
+    },
+    {
+      "name": "Perfect World Mail.ru",
+      "category_id": "group7",
+      "category": "Игры",
+      "logo_url": "http://cluster.skysend.ru:6721/image.php?provider=4729",
+      "website": "http://pwonline.ru/",
+      "source_text": "pwonline.ru/\n+74957256357\nPerfect World Mail.ru"
+    },
+    {
+      "name": "Revelation Mail.ru",
+      "category_id": "group7",
+      "category": "Игры",
+      "logo_url": "http://cluster.skysend.ru:6721/image.php?provider=7499",
+      "website": "http://",
+      "source_text": "+74957256357\nRevelation Mail.ru"
+    },
+    {
+      "name": "Warface. Mail.ru",
+      "category_id": "group7",
+      "category": "Игры",
+      "logo_url": "http://cluster.skysend.ru:6721/image.php?provider=4675",
+      "website": "http://ru.warface.com/",
+      "source_text": "ru.warface.com/\n+74957256357\nWarface. Mail.ru"
+    },
+    {
+      "name": "Xsolla",
+      "category_id": "group7",
+      "category": "Игры",
+      "logo_url": "http://cluster.skysend.ru:6721/image.php?provider=252",
+      "website": "http://xsolla.ru/",
+      "source_text": "xsolla.ru/\n+78002002729\nXsolla"
+    },
+    {
+      "name": "Xsolla. 101XP.com",
+      "category_id": "group7",
+      "category": "Игры",
+      "logo_url": "http://cluster.skysend.ru:6721/image.php?provider=1341",
+      "website": "http://xsolla.ru/",
+      "source_text": "xsolla.ru/\n+78002002729\nXsolla. 101XP.com"
+    },
+    {
+      "name": "Xsolla. 11x11",
+      "category_id": "group7",
+      "category": "Игры",
+      "logo_url": "http://cluster.skysend.ru:6721/image.php?provider=503",
+      "website": "http://xsolla.ru/",
+      "source_text": "xsolla.ru/\n+78002002729\nXsolla. 11x11"
+    },
+    {
+      "name": "Xsolla. 9 Драконов",
+      "category_id": "group7",
+      "category": "Игры",
+      "logo_url": "http://cluster.skysend.ru:6721/image.php?provider=1035",
+      "website": "http://xsolla.ru/",
+      "source_text": "xsolla.ru/\n88002002536\nXsolla. 9 Драконов"
+    },
+    {
+      "name": "Xsolla. Arena",
+      "category_id": "group7",
+      "category": "Игры",
+      "logo_url": "http://cluster.skysend.ru:6721/image.php?provider=536",
+      "website": "http://xsolla.ru/",
+      "source_text": "xsolla.ru/\n+78002002729\nXsolla. Arena"
+    },
+    {
+      "name": "Xsolla. AtomFishing Возвращение",
+      "category_id": "group7",
+      "category": "Игры",
+      "logo_url": "http://cluster.skysend.ru:6721/image.php?provider=910",
+      "website": "http://xsolla.ru/",
+      "source_text": "xsolla.ru/\n+78002002729\nXsolla. AtomFishing Возвращение"
+    },
+    {
+      "name": "Xsolla. AtomFishing Экстрим",
+      "category_id": "group7",
+      "category": "Игры",
+      "logo_url": "http://cluster.skysend.ru:6721/image.php?provider=911",
+      "website": "http://xsolla.ru/",
+      "source_text": "xsolla.ru/\n+78002002729\nXsolla. AtomFishing Экстрим"
+    },
+    {
+      "name": "Xsolla. BananaWars",
+      "category_id": "group7",
+      "category": "Игры",
+      "logo_url": "http://cluster.skysend.ru:6721/image.php?provider=541",
+      "website": "http://xsolla.ru/",
+      "source_text": "xsolla.ru/\n+78002002729\nXsolla. BananaWars"
+    },
+    {
+      "name": "Xsolla. Encounter",
+      "category_id": "group7",
+      "category": "Игры",
+      "logo_url": "http://cluster.skysend.ru:6721/image.php?provider=589",
+      "website": "http://xsolla.ru/",
+      "source_text": "xsolla.ru/\n+78002002729\nXsolla. Encounter"
+    },
+    {
+      "name": "Xsolla. Fantastic Fishing",
+      "category_id": "group7",
+      "category": "Игры",
+      "logo_url": "http://cluster.skysend.ru:6721/image.php?provider=1025",
+      "website": "http://xsolla.ru/",
+      "source_text": "xsolla.ru/\n88002002536\nXsolla. Fantastic Fishing"
+    },
+    {
+      "name": "Xsolla. Gladiators",
+      "category_id": "group7",
+      "category": "Игры",
+      "logo_url": "http://cluster.skysend.ru:6721/image.php?provider=504",
+      "website": "http://xsolla.ru/",
+      "source_text": "xsolla.ru/\n+78002002729\nXsolla. Gladiators"
+    },
+    {
+      "name": "Xsolla. Haddan",
+      "category_id": "group7",
+      "category": "Игры",
+      "logo_url": "http://cluster.skysend.ru:6721/image.php?provider=509",
+      "website": "http://xsolla.ru/",
+      "source_text": "xsolla.ru/\n+78002002729\nXsolla. Haddan"
+    },
+    {
+      "name": "Xsolla. Lost Magic",
+      "category_id": "group7",
+      "category": "Игры",
+      "logo_url": "http://cluster.skysend.ru:6721/image.php?provider=2643",
+      "website": "http://xsolla.ru/",
+      "source_text": "xsolla.ru/\n+78002002729\nXsolla. Lost Magic"
+    },
+    {
+      "name": "Xsolla. My Lands: Black Gem Hunting",
+      "category_id": "group7",
+      "category": "Игры",
+      "logo_url": "http://cluster.skysend.ru:6721/image.php?provider=477",
+      "website": "http://xsolla.ru/",
+      "source_text": "xsolla.ru/\n+78002002729\nXsolla. My Lands: Black Gem Hunting"
+    },
+    {
+      "name": "Xsolla. Neverlands",
+      "category_id": "group7",
+      "category": "Игры",
+      "logo_url": "http://cluster.skysend.ru:6721/image.php?provider=494",
+      "website": "http://xsolla.ru/",
+      "source_text": "xsolla.ru/\n+78002002729\nXsolla. Neverlands"
+    },
+    {
+      "name": "Xsolla. PANZAR.RU",
+      "category_id": "group7",
+      "category": "Игры",
+      "logo_url": "http://cluster.skysend.ru:6721/image.php?provider=1026",
+      "website": "http://xsolla.ru/",
+      "source_text": "xsolla.ru/\n+78002002729\nXsolla. PANZAR.RU"
+    },
+    {
+      "name": "Xsolla. Sky2Fly",
+      "category_id": "group7",
+      "category": "Игры",
+      "logo_url": "http://cluster.skysend.ru:6721/image.php?provider=498",
+      "website": "http://xsolla.ru/",
+      "source_text": "xsolla.ru/\n+78002002729\nXsolla. Sky2Fly"
+    },
+    {
+      "name": "Xsolla. spases.ru",
+      "category_id": "group7",
+      "category": "Игры",
+      "logo_url": "http://cluster.skysend.ru:6721/image.php?provider=485",
+      "website": "http://xsolla.ru/",
+      "source_text": "xsolla.ru/\n+78002002729\nXsolla. spases.ru"
+    },
+    {
+      "name": "Xsolla. Stalker Online",
+      "category_id": "group7",
+      "category": "Игры",
+      "logo_url": "http://cluster.skysend.ru:6721/image.php?provider=2634",
+      "website": "http://xsolla.ru/",
+      "source_text": "xsolla.ru/\n+78002002729\nXsolla. Stalker Online"
+    },
+    {
+      "name": "Xsolla. UNIT",
+      "category_id": "group7",
+      "category": "Игры",
+      "logo_url": "http://cluster.skysend.ru:6721/image.php?provider=500",
+      "website": "http://xsolla.ru/",
+      "source_text": "xsolla.ru/\n+78002002729\nXsolla. UNIT"
+    },
+    {
+      "name": "Xsolla. War Thunder",
+      "category_id": "group7",
+      "category": "Игры",
+      "logo_url": "http://cluster.skysend.ru:6721/image.php?provider=876",
+      "website": "http://xsolla.ru/",
+      "source_text": "xsolla.ru/\n+78002002729\nXsolla. War Thunder"
+    },
+    {
+      "name": "Xsolla. XNOVA 2.0",
+      "category_id": "group7",
+      "category": "Игры",
+      "logo_url": "http://cluster.skysend.ru:6721/image.php?provider=587",
+      "website": "http://xsolla.ru/",
+      "source_text": "xsolla.ru/\n+78002002729\nXsolla. XNOVA 2.0"
+    },
+    {
+      "name": "Xsolla. Z-WAR",
+      "category_id": "group7",
+      "category": "Игры",
+      "logo_url": "http://cluster.skysend.ru:6721/image.php?provider=550",
+      "website": "http://xsolla.ru/",
+      "source_text": "xsolla.ru/\n+78002002729\nXsolla. Z-WAR"
+    },
+    {
+      "name": "Xsolla. Битва Титанов",
+      "category_id": "group7",
+      "category": "Игры",
+      "logo_url": "http://cluster.skysend.ru:6721/image.php?provider=2604",
+      "website": "http://xsolla.ru/",
+      "source_text": "xsolla.ru/\n+78002002729\nXsolla. Битва Титанов"
+    },
+    {
+      "name": "Xsolla. Варвары",
+      "category_id": "group7",
+      "category": "Игры",
+      "logo_url": "http://cluster.skysend.ru:6721/image.php?provider=483",
+      "website": "http://xsolla.ru/",
+      "source_text": "xsolla.ru/\n+78002002729\nXsolla. Варвары"
+    },
+    {
+      "name": "Xsolla. Викинги",
+      "category_id": "group7",
+      "category": "Игры",
+      "logo_url": "http://cluster.skysend.ru:6721/image.php?provider=476",
+      "website": "http://xsolla.ru/",
+      "source_text": "xsolla.ru/\n+78002002729\nXsolla. Викинги"
+    },
+    {
+      "name": "Xsolla. Виртуальная Россия",
+      "category_id": "group7",
+      "category": "Игры",
+      "logo_url": "http://cluster.skysend.ru:6721/image.php?provider=577",
+      "website": "http://xsolla.ru/",
+      "source_text": "xsolla.ru/\n+78002002729\nXsolla. Виртуальная Россия"
+    },
+    {
+      "name": "Xsolla. Виртуальная Футбольная Лига",
+      "category_id": "group7",
+      "category": "Игры",
+      "logo_url": "http://cluster.skysend.ru:6721/image.php?provider=578",
+      "website": "http://xsolla.ru/",
+      "source_text": "xsolla.ru/\n+78002002729\nXsolla. Виртуальная Футбольная Лига"
+    },
+    {
+      "name": "Xsolla. Война:Ангелы и Демоны",
+      "category_id": "group7",
+      "category": "Игры",
+      "logo_url": "http://cluster.skysend.ru:6721/image.php?provider=491",
+      "website": "http://xsolla.ru/",
+      "source_text": "xsolla.ru/\n+78002002729\nXsolla. Война:Ангелы и Демоны"
+    },
+    {
+      "name": "Xsolla. Герои войны и денег",
+      "category_id": "group7",
+      "category": "Игры",
+      "logo_url": "http://cluster.skysend.ru:6721/image.php?provider=479",
+      "website": "http://xsolla.ru/",
+      "source_text": "xsolla.ru/\n+78002002729\nXsolla. Герои войны и денег"
+    },
+    {
+      "name": "Xsolla. Годвилль",
+      "category_id": "group7",
+      "category": "Игры",
+      "logo_url": "http://cluster.skysend.ru:6721/image.php?provider=499",
+      "website": "http://xsolla.ru/",
+      "source_text": "xsolla.ru/\n+78002002729\nXsolla. Годвилль"
+    },
+    {
+      "name": "Xsolla. Дозоры",
+      "category_id": "group7",
+      "category": "Игры",
+      "logo_url": "http://cluster.skysend.ru:6721/image.php?provider=502",
+      "website": "http://xsolla.ru/",
+      "source_text": "xsolla.ru/\n+78002002729\nXsolla. Дозоры"
+    },
+    {
+      "name": "Xsolla. Доценты",
+      "category_id": "group7",
+      "category": "Игры",
+      "logo_url": "http://cluster.skysend.ru:6721/image.php?provider=2608",
+      "website": "http://xsolla.ru/",
+      "source_text": "xsolla.ru/\n+78002002729\nXsolla. Доценты"
+    },
+    {
+      "name": "Xsolla. Золотая Бутса",
+      "category_id": "group7",
+      "category": "Игры",
+      "logo_url": "http://cluster.skysend.ru:6721/image.php?provider=548",
+      "website": "http://xsolla.ru/",
+      "source_text": "xsolla.ru/\n+78002002729\nXsolla. Золотая Бутса"
+    },
+    {
+      "name": "Xsolla. Край Мира",
+      "category_id": "group7",
+      "category": "Игры",
+      "logo_url": "http://cluster.skysend.ru:6721/image.php?provider=528",
+      "website": "http://xsolla.ru/",
+      "source_text": "xsolla.ru/\n+78002002729\nXsolla. Край Мира"
+    },
+    {
+      "name": "Xsolla. Моя Собака",
+      "category_id": "group7",
+      "category": "Игры",
+      "logo_url": "http://cluster.skysend.ru:6721/image.php?provider=2636",
+      "website": "http://xsolla.ru/",
+      "source_text": "xsolla.ru/\n+78002002729\nXsolla. Моя Собака"
+    },
+    {
+      "name": "Xsolla. Моя ферма",
+      "category_id": "group7",
+      "category": "Игры",
+      "logo_url": "http://cluster.skysend.ru:6721/image.php?provider=1033",
+      "website": "http://xsolla.ru/",
+      "source_text": "xsolla.ru/\n88002002536\nXsolla. Моя ферма"
+    },
+    {
+      "name": "Xsolla. Наемники",
+      "category_id": "group7",
+      "category": "Игры",
+      "logo_url": "http://cluster.skysend.ru:6721/image.php?provider=2637",
+      "website": "http://xsolla.ru/",
+      "source_text": "xsolla.ru/\n+78002002729\nXsolla. Наемники"
+    },
+    {
+      "name": "Xsolla. Наследие Древних",
+      "category_id": "group7",
+      "category": "Игры",
+      "logo_url": "http://cluster.skysend.ru:6721/image.php?provider=2638",
+      "website": "http://xsolla.ru/",
+      "source_text": "xsolla.ru/\n+78002002729\nXsolla. Наследие Древних"
+    },
+    {
+      "name": "Xsolla. Небоскребы",
+      "category_id": "group7",
+      "category": "Игры",
+      "logo_url": "http://cluster.skysend.ru:6721/image.php?provider=2640",
+      "website": "http://xsolla.ru/",
+      "source_text": "xsolla.ru/\n+78002002729\nXsolla. Небоскребы"
+    },
+    {
+      "name": "Xsolla. Передовая",
+      "category_id": "group7",
+      "category": "Игры",
+      "logo_url": "http://cluster.skysend.ru:6721/image.php?provider=535",
+      "website": "http://xsolla.ru/",
+      "source_text": "xsolla.ru/\n+78002002729\nXsolla. Передовая"
+    },
+    {
+      "name": "Xsolla. Пути Истории",
+      "category_id": "group7",
+      "category": "Игры",
+      "logo_url": "http://cluster.skysend.ru:6721/image.php?provider=588",
+      "website": "http://xsolla.ru/",
+      "source_text": "xsolla.ru/\n+78002002729\nXsolla. Пути Истории"
+    },
+    {
+      "name": "Xsolla. Рашка",
+      "category_id": "group7",
+      "category": "Игры",
+      "logo_url": "http://cluster.skysend.ru:6721/image.php?provider=527",
+      "website": "http://xsolla.ru/",
+      "source_text": "xsolla.ru/\n+78002002729\nXsolla. Рашка"
+    },
+    {
+      "name": "Xsolla. Стальной легион",
+      "category_id": "group7",
+      "category": "Игры",
+      "logo_url": "http://cluster.skysend.ru:6721/image.php?provider=1038",
+      "website": "http://xsolla.ru/",
+      "source_text": "xsolla.ru/\n88002002536\nXsolla. Стальной легион"
+    },
+    {
+      "name": "Xsolla. Супер гонки",
+      "category_id": "group7",
+      "category": "Игры",
+      "logo_url": "http://cluster.skysend.ru:6721/image.php?provider=2633",
+      "website": "http://xsolla.ru/",
+      "source_text": "xsolla.ru/\n+78002002729\nXsolla. Супер гонки"
+    },
+    {
+      "name": "Xsolla. Техномагия",
+      "category_id": "group7",
+      "category": "Игры",
+      "logo_url": "http://cluster.skysend.ru:6721/image.php?provider=2613",
+      "website": "http://xsolla.ru/",
+      "source_text": "xsolla.ru/\n+78002002729\nXsolla. Техномагия"
+    },
+    {
+      "name": "Xsolla. Тюрьма. Новый срок",
+      "category_id": "group7",
+      "category": "Игры",
+      "logo_url": "http://cluster.skysend.ru:6721/image.php?provider=482",
+      "website": "http://xsolla.ru/",
+      "source_text": "xsolla.ru/\n+78002002729\nXsolla. Тюрьма. Новый срок"
+    },
+    {
+      "name": "Xsolla. Удивительный колхоз",
+      "category_id": "group7",
+      "category": "Игры",
+      "logo_url": "http://cluster.skysend.ru:6721/image.php?provider=487",
+      "website": "http://xsolla.ru/",
+      "source_text": "xsolla.ru/\n+78002002729\nXsolla. Удивительный колхоз"
+    },
+    {
+      "name": "Xsolla. Футбольный менеджер онлайн",
+      "category_id": "group7",
+      "category": "Игры",
+      "logo_url": "http://cluster.skysend.ru:6721/image.php?provider=551",
+      "website": "http://xsolla.ru/",
+      "source_text": "xsolla.ru/\n+78002002729\nXsolla. Футбольный менеджер онлайн"
+    },
+    {
+      "name": "Аллоды онлайн Mail.ru",
+      "category_id": "group7",
+      "category": "Игры",
+      "logo_url": "http://cluster.skysend.ru:6721/image.php?provider=4754",
+      "website": "http://allods.mail.ru/",
+      "source_text": "allods.mail.ru/\n+74957256357\nАллоды онлайн Mail.ru"
+    },
+    {
+      "name": "БУМЗ (DDT) Mail.ru",
+      "category_id": "group7",
+      "category": "Игры",
+      "logo_url": "http://cluster.skysend.ru:6721/image.php?provider=4727",
+      "website": "http://",
+      "source_text": "+74957256357\nБУМЗ (DDT) Mail.ru"
+    },
+    {
+      "name": "Вконтакте реклама",
+      "category_id": "group7",
+      "category": "Игры",
+      "logo_url": "http://cluster.skysend.ru:6721/image.php?provider=4879",
+      "website": "http://",
+      "source_text": "+74957256357\nВконтакте реклама"
+    },
+    {
+      "name": "Войны престолов Mail.ru",
+      "category_id": "group7",
+      "category": "Игры",
+      "logo_url": "http://cluster.skysend.ru:6721/image.php?provider=4758",
+      "website": "http://",
+      "source_text": "+74957256357\nВойны престолов Mail.ru"
+    },
+    {
+      "name": "Джаггернаут Mail.ru",
+      "category_id": "group7",
+      "category": "Игры",
+      "logo_url": "http://cluster.skysend.ru:6721/image.php?provider=4815",
+      "website": "http://s1.jugger.ru/",
+      "source_text": "s1.jugger.ru/\n+74957256357\nДжаггернаут Mail.ru"
+    },
+    {
+      "name": "Кодекс пирата Mail.ru",
+      "category_id": "group7",
+      "category": "Игры",
+      "logo_url": "http://cluster.skysend.ru:6721/image.php?provider=4732",
+      "website": "http://",
+      "source_text": "+74957256357\nКодекс пирата Mail.ru"
+    },
+    {
+      "name": "Легенда : Наследие драконов. Сервер: Фэо-минор Mail.ru",
+      "category_id": "group7",
+      "category": "Игры",
+      "logo_url": "http://cluster.skysend.ru:6721/image.php?provider=4731",
+      "website": "http://w1.dwar.ru/",
+      "source_text": "w1.dwar.ru/\n+74957256357\nЛегенда : Наследие драконов. Сервер: Фэо-минор Mail.ru"
+    },
+    {
+      "name": "Легенда : Наследие драконов. Сервер: Фэо-прайм Mail.ru",
+      "category_id": "group7",
+      "category": "Игры",
+      "logo_url": "http://cluster.skysend.ru:6721/image.php?provider=4735",
+      "website": "http://w1.dwar.ru/",
+      "source_text": "w1.dwar.ru/\n+74957256357\nЛегенда : Наследие драконов. Сервер: Фэо-прайм Mail.ru"
+    },
+    {
+      "name": "ПараПа: Город танцев Mail.ru",
+      "category_id": "group7",
+      "category": "Игры",
+      "logo_url": "http://cluster.skysend.ru:6721/image.php?provider=4756",
+      "website": "http://parapa.ru/",
+      "source_text": "parapa.ru/\n+74957256357\nПараПа: Город танцев Mail.ru"
+    },
+    {
+      "name": "Спарта Mail.ru",
+      "category_id": "group7",
+      "category": "Игры",
+      "logo_url": "http://cluster.skysend.ru:6721/image.php?provider=4759",
+      "website": "http://",
+      "source_text": "+74957256357\nСпарта Mail.ru"
+    },
+    {
+      "name": "Троецарствие Mail.ru",
+      "category_id": "group7",
+      "category": "Игры",
+      "logo_url": "http://cluster.skysend.ru:6721/image.php?provider=4736",
+      "website": "http://3kingdoms.ru/",
+      "source_text": "3kingdoms.ru/\n+74957256357\nТроецарствие Mail.ru"
+    },
+    {
+      "name": "Одноклассники. Купить ОКи",
+      "category_id": "group8",
+      "category": "Социальные сети",
+      "logo_url": "http://cluster.skysend.ru:6721/image.php?provider=4816",
+      "website": "http://",
+      "source_text": "+74957256357\nОдноклассники. Купить ОКи"
+    },
+    {
+      "name": "Вконтакте",
+      "category_id": "group8",
+      "category": "Социальные сети",
+      "logo_url": "http://cluster.skysend.ru:6721/image.php?provider=4819",
+      "website": "http://",
+      "source_text": "+74957256357\nВконтакте"
+    },
+    {
+      "name": "Галактика знакомств. Galaxy",
+      "category_id": "group8",
+      "category": "Социальные сети",
+      "logo_url": "http://cluster.skysend.ru:6721/image.php?provider=1074",
+      "website": "http://www.javagala.ru",
+      "source_text": "www.javagala.ru\n+73912206401\nГалактика знакомств. Galaxy"
+    },
+    {
+      "name": "Мой Мир",
+      "category_id": "group8",
+      "category": "Социальные сети",
+      "logo_url": "http://cluster.skysend.ru:6721/image.php?provider=4820",
+      "website": "http://",
+      "source_text": "+74957256357\nМой Мир"
+    },
+    {
+      "name": "Волгоградэнергосбыт ПАО",
+      "category_id": "group10",
+      "category": "ЖКХ",
+      "logo_url": "http://cluster.skysend.ru:6721/image.php?provider=9416",
+      "website": "http://energosale34.ru/",
+      "source_text": "energosale34.ru/\n+7 (8442) 26-26-26\nВолгоградэнергосбыт ПАО"
+    },
+    {
+      "name": "ГарантСтрой-Юг УК",
+      "category_id": "group10",
+      "category": "ЖКХ",
+      "logo_url": "http://cluster.skysend.ru:6721/image.php?provider=1152",
+      "website": "http://www.garantstroy-yug.ru",
+      "source_text": "www.garantstroy-yug.ru\nГарантСтрой-Юг УК"
+    },
+    {
+      "name": "Градострой ООО",
+      "category_id": "group10",
+      "category": "ЖКХ",
+      "logo_url": "http://cluster.skysend.ru:6721/image.php?provider=1148",
+      "website": "http://www.gradostroy.jfservice.ru",
+      "source_text": "www.gradostroy.jfservice.ru\n8861-227-83-03\nГрадострой ООО"
+    },
+    {
+      "name": "Детский сад с. Фрунзе \"Сказка\"",
+      "category_id": "group10",
+      "category": "ЖКХ",
+      "logo_url": "http://cluster.skysend.ru:6721/image.php?provider=8270",
+      "website": "http://",
+      "source_text": "Детский сад с. Фрунзе \"Сказка\""
+    },
+    {
+      "name": "Крымская Водная Компания ООО (Первомайский район)",
+      "category_id": "group10",
+      "category": "ЖКХ",
+      "logo_url": "http://cluster.skysend.ru:6721/image.php?provider=8271",
+      "website": "http://aqua-crimea.ru",
+      "source_text": "aqua-crimea.ru\n+78002002536\nКрымская Водная Компания ООО (Первомайский район)"
+    },
+    {
+      "name": "Крымская Водная Компания ООО (Раздольненский район)",
+      "category_id": "group10",
+      "category": "ЖКХ",
+      "logo_url": "http://cluster.skysend.ru:6721/image.php?provider=8325",
+      "website": "http://aqua-crimea.ru",
+      "source_text": "aqua-crimea.ru\n+78002002536\nКрымская Водная Компания ООО (Раздольненский район)"
+    },
+    {
+      "name": "Крымская Водная Компания ООО (Сакский район)",
+      "category_id": "group10",
+      "category": "ЖКХ",
+      "logo_url": "http://cluster.skysend.ru:6721/image.php?provider=8257",
+      "website": "http://aqua-crimea.ru",
+      "source_text": "aqua-crimea.ru\n+78002002536\nКрымская Водная Компания ООО (Сакский район)"
+    },
+    {
+      "name": "Лорис ТСЖ",
+      "category_id": "group10",
+      "category": "ЖКХ",
+      "logo_url": "http://cluster.skysend.ru:6721/image.php?provider=678",
+      "website": "http://tovloris.eskirf.ru",
+      "source_text": "tovloris.eskirf.ru\n+78612515595\nЛорис ТСЖ"
+    },
+    {
+      "name": "ООО \"УК N 99\" оплата ЖКУ (ИНН 2623804155)",
+      "category_id": "group10",
+      "category": "ЖКХ",
+      "logo_url": "http://cluster.skysend.ru:6721/image.php?provider=8652",
+      "website": "http://sev-eirc.ru/",
+      "source_text": "sev-eirc.ru/\n+78002002536\nООО \"УК N 99\" оплата ЖКУ (ИНН 2623804155)"
+    },
+    {
+      "name": "Оплата ЖКУ по ИНН (ГИС ЖКХ)",
+      "category_id": "group10",
+      "category": "ЖКХ",
+      "logo_url": "http://cluster.skysend.ru:6721/image.php?provider=8640",
+      "website": "http://sev-eirc.ru/",
+      "source_text": "sev-eirc.ru/\n+78002002536\nОплата ЖКУ по ИНН (ГИС ЖКХ)"
+    },
+    {
+      "name": "Расчеты пайщика с СКПК Черкасофф сбережения",
+      "category_id": "group10",
+      "category": "ЖКХ",
+      "logo_url": "http://cluster.skysend.ru:6721/image.php?provider=9362",
+      "website": "http://черкасофф.рф",
+      "source_text": "черкасофф.рф\n+7 (383) 235-91-01\nРасчеты пайщика с СКПК Черкасофф сбережения"
+    },
+    {
+      "name": "ТНС энерго Кубань (Ранее Кубаньэнергосбыт)",
+      "category_id": "group10",
+      "category": "ЖКХ",
+      "logo_url": "http://cluster.skysend.ru:6721/image.php?provider=253",
+      "website": "http://www.kubansbyt.ru/",
+      "source_text": "www.kubansbyt.ru/\n+78612980170\nТНС энерго Кубань (Ранее Кубаньэнергосбыт)"
+    },
+    {
+      "name": "УК \"Управдом\" ООО",
+      "category_id": "group10",
+      "category": "ЖКХ",
+      "logo_url": "http://cluster.skysend.ru:6721/image.php?provider=1160",
+      "website": "http://www.ук-управдом.рф",
+      "source_text": "www.ук-управдом.рф\n88002002536\nУК \"Управдом\" ООО"
+    },
+    {
+      "name": "УК Екатеринодар",
+      "category_id": "group10",
+      "category": "ЖКХ",
+      "logo_url": "http://cluster.skysend.ru:6721/image.php?provider=1164",
+      "website": "http://",
+      "source_text": "УК Екатеринодар"
+    },
+    {
+      "name": "УО \"Адмирал\"",
+      "category_id": "group10",
+      "category": "ЖКХ",
+      "logo_url": "http://cluster.skysend.ru:6721/image.php?provider=1229",
+      "website": "http://",
+      "source_text": "2780210\nУО \"Адмирал\""
+    },
+    {
+      "name": "Управляющая компания ООО",
+      "category_id": "group10",
+      "category": "ЖКХ",
+      "logo_url": "http://cluster.skysend.ru:6721/image.php?provider=1159",
+      "website": "http://ukbuh80@mail.ru",
+      "source_text": "ukbuh80@mail.ru\nУправляющая компания ООО"
+    },
+    {
+      "name": "Цветущий сад СНТ (без запроса суммы)",
+      "category_id": "group10",
+      "category": "ЖКХ",
+      "logo_url": "http://cluster.skysend.ru:6721/image.php?provider=8933",
+      "website": "http://",
+      "source_text": "Цветущий сад СНТ (без запроса суммы)"
+    },
+    {
+      "name": "Цветущий сад СНТ (запрос суммы)",
+      "category_id": "group10",
+      "category": "ЖКХ",
+      "logo_url": "http://cluster.skysend.ru:6721/image.php?provider=8739",
+      "website": "http://",
+      "source_text": "Цветущий сад СНТ (запрос суммы)"
+    },
+    {
+      "name": "Чеченэнерго (АО)",
+      "category_id": "group10",
+      "category": "ЖКХ",
+      "logo_url": "http://cluster.skysend.ru:6721/image.php?provider=6688",
+      "website": "http://",
+      "source_text": "+78002002536\nЧеченэнерго (АО)"
+    },
+    {
+      "name": "Чистый Мир ООО",
+      "category_id": "group10",
+      "category": "ЖКХ",
+      "logo_url": "http://cluster.skysend.ru:6721/image.php?provider=7750",
+      "website": "http://regreestr.com/region06/firms/4633716",
+      "source_text": "regreestr.com/region06/firms/4633716\n8 800 200 25 36\nЧистый Мир ООО"
+    },
+    {
+      "name": "Госпошлина УФК (КБР) Постановка по месту пребывания",
+      "category_id": "group11",
+      "category": "Штрафы, пошлины",
+      "logo_url": "http://cluster.skysend.ru:6721/image.php?provider=9816",
+      "website": "http://",
+      "source_text": "78002002536\nГоспошлина УФК (КБР) Постановка по месту пребывания"
+    },
+    {
+      "name": "Госпошлины ГИБДД. ГУ МВД России по Нижегородской обл.",
+      "category_id": "group11",
+      "category": "Штрафы, пошлины",
+      "logo_url": "http://cluster.skysend.ru:6721/image.php?provider=9288",
+      "website": "http://гувм.мвд.рф",
+      "source_text": "гувм.мвд.рф\nГоспошлины ГИБДД. ГУ МВД России по Нижегородской обл."
+    },
+    {
+      "name": "Госпошлина ГИБДД КЧР",
+      "category_id": "group11",
+      "category": "Штрафы, пошлины",
+      "logo_url": "http://cluster.skysend.ru:6721/image.php?provider=8937",
+      "website": "http://гувм.мвд.рф",
+      "source_text": "гувм.мвд.рф\n+7 (87822) 3-95-44\nГоспошлина ГИБДД КЧР"
+    },
+    {
+      "name": "Пошлина ГИБДД Гусь-Хрустальный",
+      "category_id": "group11",
+      "category": "Штрафы, пошлины",
+      "logo_url": "http://cluster.skysend.ru:6721/image.php?provider=9326",
+      "website": "http://гибдд.рф",
+      "source_text": "гибдд.рф\nПошлина ГИБДД Гусь-Хрустальный"
+    },
+    {
+      "name": "Госпошлина ГИБДД по Белгородской области",
+      "category_id": "group11",
+      "category": "Штрафы, пошлины",
+      "logo_url": "http://cluster.skysend.ru:6721/image.php?provider=8229",
+      "website": "http://гувм.мвд.рф",
+      "source_text": "гувм.мвд.рф\nГоспошлина ГИБДД по Белгородской области"
+    },
+    {
+      "name": "Госпошлина УФК (КБР) Продление срока ВП",
+      "category_id": "group11",
+      "category": "Штрафы, пошлины",
+      "logo_url": "http://cluster.skysend.ru:6721/image.php?provider=9814",
+      "website": "http://",
+      "source_text": "78002002536\nГоспошлина УФК (КБР) Продление срока ВП"
+    },
+    {
+      "name": "Госпошлина УФК (КБР) ЗП Нов. обр. взрослый",
+      "category_id": "group11",
+      "category": "Штрафы, пошлины",
+      "logo_url": "http://cluster.skysend.ru:6721/image.php?provider=9711",
+      "website": "http://",
+      "source_text": "78002002536\nГоспошлина УФК (КБР) ЗП Нов. обр. взрослый"
+    },
+    {
+      "name": "Госпошлина за загран.паспорт нового образца - взрослый (г. Краснодар)",
+      "category_id": "group11",
+      "category": "Штрафы, пошлины",
+      "logo_url": "http://cluster.skysend.ru:6721/image.php?provider=9322",
+      "website": "http://",
+      "source_text": "Госпошлина за загран.паспорт нового образца - взрослый (г. Краснодар)"
+    },
+    {
+      "name": "Госпошлина УФК (КБР) ЗП Ст. обр. взрослый",
+      "category_id": "group11",
+      "category": "Штрафы, пошлины",
+      "logo_url": "http://cluster.skysend.ru:6721/image.php?provider=9710",
+      "website": "http://",
+      "source_text": "78002002536\nГоспошлина УФК (КБР) ЗП Ст. обр. взрослый"
+    },
+    {
+      "name": "Госпошлина за загран.паспорт нового образца - детский (г. Краснодар)",
+      "category_id": "group11",
+      "category": "Штрафы, пошлины",
+      "logo_url": "http://cluster.skysend.ru:6721/image.php?provider=8309",
+      "website": "http://",
+      "source_text": "78002002536\nГоспошлина за загран.паспорт нового образца - детский (г. Краснодар)"
+    },
+    {
+      "name": "Госпошлина УФК (КБР) ЗП Ст. обр. детский",
+      "category_id": "group11",
+      "category": "Штрафы, пошлины",
+      "logo_url": "http://cluster.skysend.ru:6721/image.php?provider=9712",
+      "website": "http://",
+      "source_text": "78002002536\nГоспошлина УФК (КБР) ЗП Ст. обр. детский"
+    },
+    {
+      "name": "Госпошлина УФК (КБР) за выдачу паспорта",
+      "category_id": "group11",
+      "category": "Штрафы, пошлины",
+      "logo_url": "http://cluster.skysend.ru:6721/image.php?provider=9724",
+      "website": "http://",
+      "source_text": "78002002536\nГоспошлина УФК (КБР) за выдачу паспорта"
+    },
+    {
+      "name": "10.1. Консультативная услуга по порядку выдачи РВП в РФ (г. Ростов-на-Дону)",
+      "category_id": "group11",
+      "category": "Штрафы, пошлины",
+      "logo_url": "http://cluster.skysend.ru:6721/image.php?provider=9579",
+      "website": "http://-",
+      "source_text": "-\n10.1. Консультативная услуга по порядку выдачи РВП в РФ (г. Ростов-на-Дону)"
+    },
+    {
+      "name": "10.2. Подготовка документов для выдачи РВР в РФ (г. Ростов-на-Дону)",
+      "category_id": "group11",
+      "category": "Штрафы, пошлины",
+      "logo_url": "http://cluster.skysend.ru:6721/image.php?provider=9580",
+      "website": "http://-",
+      "source_text": "-\n10.2. Подготовка документов для выдачи РВР в РФ (г. Ростов-на-Дону)"
+    },
+    {
+      "name": "10.3. Подготовка документов для выдачи РВП в РФ НЕСОВЕРШЕННОЛЕТНЕМУ  (г. Ростов-на-Дону)",
+      "category_id": "group11",
+      "category": "Штрафы, пошлины",
+      "logo_url": "http://cluster.skysend.ru:6721/image.php?provider=9581",
+      "website": "http://-",
+      "source_text": "-\n10.3. Подготовка документов для выдачи РВП в РФ НЕСОВЕРШЕННОЛЕТНЕМУ  (г. Ростов-на-Дону)"
+    },
+    {
+      "name": "10.4. Комплексное обслуживание по вопросу выдачи РВП в РФ (г. Ростов-на-Дону)",
+      "category_id": "group11",
+      "category": "Штрафы, пошлины",
+      "logo_url": "http://cluster.skysend.ru:6721/image.php?provider=9582",
+      "website": "http://-",
+      "source_text": "-\n10.4. Комплексное обслуживание по вопросу выдачи РВП в РФ (г. Ростов-на-Дону)"
+    },
+    {
+      "name": "10.5. Комплексное обслуживание по вопросу выдачи РВП в РФ НЕСОВЕРШЕННОЛЕТНЕМУ (г. Ростов-на-Дону)",
+      "category_id": "group11",
+      "category": "Штрафы, пошлины",
+      "logo_url": "http://cluster.skysend.ru:6721/image.php?provider=9583",
+      "website": "http://-",
+      "source_text": "-\n10.5. Комплексное обслуживание по вопросу выдачи РВП в РФ НЕСОВЕРШЕННОЛЕТНЕМУ (г. Ростов-на-Дону)"
+    },
+    {
+      "name": "10.6. Заполнение анкеты на выделение квоты на выдачу РВП в РФ (г. Ростов-на-Дону)",
+      "category_id": "group11",
+      "category": "Штрафы, пошлины",
+      "logo_url": "http://cluster.skysend.ru:6721/image.php?provider=9584",
+      "website": "http://-",
+      "source_text": "-\n10.6. Заполнение анкеты на выделение квоты на выдачу РВП в РФ (г. Ростов-на-Дону)"
+    },
+    {
+      "name": "11.1. Консультационная услуга по порядку выдачи/замены ВНЖ в РФ (г. Ростов-на-Дону)",
+      "category_id": "group11",
+      "category": "Штрафы, пошлины",
+      "logo_url": "http://cluster.skysend.ru:6721/image.php?provider=9585",
+      "website": "http://-",
+      "source_text": "-\n11.1. Консультационная услуга по порядку выдачи/замены ВНЖ в РФ (г. Ростов-на-Дону)"
+    },
+    {
+      "name": "11.2. Подготовка документов для выдачи ВНЖ в РФ (г. Ростов-на-Дону)",
+      "category_id": "group11",
+      "category": "Штрафы, пошлины",
+      "logo_url": "http://cluster.skysend.ru:6721/image.php?provider=9586",
+      "website": "http://-",
+      "source_text": "-\n11.2. Подготовка документов для выдачи ВНЖ в РФ (г. Ростов-на-Дону)"
+    },
+    {
+      "name": "11.3. Подготовка документов для выдачи ВНЖ в РФ НЕСОВЕРШЕННОЛЕТНЕМУ (г. Ростов-на-Дону)",
+      "category_id": "group11",
+      "category": "Штрафы, пошлины",
+      "logo_url": "http://cluster.skysend.ru:6721/image.php?provider=9587",
+      "website": "http://-",
+      "source_text": "-\n11.3. Подготовка документов для выдачи ВНЖ в РФ НЕСОВЕРШЕННОЛЕТНЕМУ (г. Ростов-на-Дону)"
+    },
+    {
+      "name": "11.4. Комплексное обслуживание по вопросу выдачи ВНЖ в РФ (г. Ростов-на-Дону)",
+      "category_id": "group11",
+      "category": "Штрафы, пошлины",
+      "logo_url": "http://cluster.skysend.ru:6721/image.php?provider=9588",
+      "website": "http://-",
+      "source_text": "-\n11.4. Комплексное обслуживание по вопросу выдачи ВНЖ в РФ (г. Ростов-на-Дону)"
+    },
+    {
+      "name": "11.5. Комплексное обслуживание по вопросу выдачи ВНЖ в РФ НЕСОВЕРШЕННОЛЕТНЕМУ (г. Ростов-на-Дону)",
+      "category_id": "group11",
+      "category": "Штрафы, пошлины",
+      "logo_url": "http://cluster.skysend.ru:6721/image.php?provider=9589",
+      "website": "http://-",
+      "source_text": "-\n11.5. Комплексное обслуживание по вопросу выдачи ВНЖ в РФ НЕСОВЕРШЕННОЛЕТНЕМУ (г. Ростов-на-Дону)"
+    },
+    {
+      "name": "11.6. Подготовка документов для замены ВНЖ в РФ (г. Ростов-на-Дону)",
+      "category_id": "group11",
+      "category": "Штрафы, пошлины",
+      "logo_url": "http://cluster.skysend.ru:6721/image.php?provider=9590",
+      "website": "http://-",
+      "source_text": "-\n11.6. Подготовка документов для замены ВНЖ в РФ (г. Ростов-на-Дону)"
+    },
+    {
+      "name": "11.7. Комплексное обслуживание по вопросу замены ВНЖ в РФ (г. Ростов-на-Дону)",
+      "category_id": "group11",
+      "category": "Штрафы, пошлины",
+      "logo_url": "http://cluster.skysend.ru:6721/image.php?provider=9591",
+      "website": "http://-",
+      "source_text": "-\n11.7. Комплексное обслуживание по вопросу замены ВНЖ в РФ (г. Ростов-на-Дону)"
+    },
+    {
+      "name": "13.3. Заполнение заявления о приеме в гражданство РФ НЕСОВЕРШЕННОЛЕТНЕГО (г. Ростов-на-Дону)",
+      "category_id": "group11",
+      "category": "Штрафы, пошлины",
+      "logo_url": "http://cluster.skysend.ru:6721/image.php?provider=9592",
+      "website": "http://-",
+      "source_text": "-\n13.3. Заполнение заявления о приеме в гражданство РФ НЕСОВЕРШЕННОЛЕТНЕГО (г. Ростов-на-Дону)"
+    },
+    {
+      "name": "13.4. Подготовка документов для подачи заявления о приеме в гражданство РФ (г. Ростов-на-Дону)",
+      "category_id": "group11",
+      "category": "Штрафы, пошлины",
+      "logo_url": "http://cluster.skysend.ru:6721/image.php?provider=9574",
+      "website": "http://-",
+      "source_text": "-\n13.4. Подготовка документов для подачи заявления о приеме в гражданство РФ (г. Ростов-на-Дону)"
+    },
+    {
+      "name": "13.6. Комплексное обслуживание по вопросу приобретения гражданства РФ (г. Ростов-на-Дону)",
+      "category_id": "group11",
+      "category": "Штрафы, пошлины",
+      "logo_url": "http://cluster.skysend.ru:6721/image.php?provider=9575",
+      "website": "http://-",
+      "source_text": "-\n13.6. Комплексное обслуживание по вопросу приобретения гражданства РФ (г. Ростов-на-Дону)"
+    },
+    {
+      "name": "13.7. Комплексное обслуживание по вопросу приобретения гражданства РФ НЕСОВЕРШЕННОЛЕТНЕМУ (г. Ростов-на-Дону)",
+      "category_id": "group11",
+      "category": "Штрафы, пошлины",
+      "logo_url": "http://cluster.skysend.ru:6721/image.php?provider=9576",
+      "website": "http://-",
+      "source_text": "-\n13.7. Комплексное обслуживание по вопросу приобретения гражданства РФ НЕСОВЕРШЕННОЛЕТНЕМУ (г. Ростов-на-Дону)"
+    },
+    {
+      "name": "14.2. Подготовка заявления о признании иностранного гражданина НРЯ (г. Ростов-на-Дону)",
+      "category_id": "group11",
+      "category": "Штрафы, пошлины",
+      "logo_url": "http://cluster.skysend.ru:6721/image.php?provider=9577",
+      "website": "http://-",
+      "source_text": "-\n14.2. Подготовка заявления о признании иностранного гражданина НРЯ (г. Ростов-на-Дону)"
+    },
+    {
+      "name": "17.19. Организация экзамена по русскому языку для оформления патента (г. Ростов-на-Дону)",
+      "category_id": "group11",
+      "category": "Штрафы, пошлины",
+      "logo_url": "",
+      "website": "http://-",
+      "source_text": "-\n17.19. Организация экзамена по русскому языку для оформления патента (г. Ростов-на-Дону)"
+    },
+    {
+      "name": "17.2. Фотографирование (ПВС г. Ростов-на-Дону)",
+      "category_id": "group11",
+      "category": "Штрафы, пошлины",
+      "logo_url": "http://cluster.skysend.ru:6721/image.php?provider=9600",
+      "website": "http://-",
+      "source_text": "-\n17.2. Фотографирование (ПВС г. Ростов-на-Дону)"
+    },
+    {
+      "name": "17.20. Организация экзамена по русскому языку для вид на жительство (г. Ростов-на-Дону)",
+      "category_id": "group11",
+      "category": "Штрафы, пошлины",
+      "logo_url": "",
+      "website": "http://-",
+      "source_text": "-\n17.20. Организация экзамена по русскому языку для вид на жительство (г. Ростов-на-Дону)"
+    },
+    {
+      "name": "17.3. Информационно-кольсультационное содействие по услугам миграции в МВД",
+      "category_id": "group11",
+      "category": "Штрафы, пошлины",
+      "logo_url": "http://cluster.skysend.ru:6721/image.php?provider=9653",
+      "website": "http://-",
+      "source_text": "-\n17.3. Информационно-кольсультационное содействие по услугам миграции в МВД"
+    },
+    {
+      "name": "17.33. Комплекс. обслуж. в целях передачи мед. док. в тер. орган МВД",
+      "category_id": "group11",
+      "category": "Штрафы, пошлины",
+      "logo_url": "http://cluster.skysend.ru:6721/image.php?provider=9705",
+      "website": "http://-",
+      "source_text": "-\n17.33. Комплекс. обслуж. в целях передачи мед. док. в тер. орган МВД"
+    },
+    {
+      "name": "17.8. Подготовка заявления о получении информации о наличии оснований для неразрешения въезда в РФ (г. Ростов-на-Дону)",
+      "category_id": "group11",
+      "category": "Штрафы, пошлины",
+      "logo_url": "http://cluster.skysend.ru:6721/image.php?provider=9593",
+      "website": "http://-",
+      "source_text": "-\n17.8. Подготовка заявления о получении информации о наличии оснований для неразрешения въезда в РФ (г. Ростов-на-Дону)"
+    },
+    {
+      "name": "4.2. Подготовка документов для постановки на миграционный учет (г. Ростов-на-Дону)",
+      "category_id": "group11",
+      "category": "Штрафы, пошлины",
+      "logo_url": "http://cluster.skysend.ru:6721/image.php?provider=9578",
+      "website": "http://-",
+      "source_text": "-\n4.2. Подготовка документов для постановки на миграционный учет (г. Ростов-на-Дону)"
+    },
+    {
+      "name": "7.4 Подготовка документов для оформления патента на трудовую деятельность (г. Ростов-на-Дону)",
+      "category_id": "group11",
+      "category": "Штрафы, пошлины",
+      "logo_url": "http://cluster.skysend.ru:6721/image.php?provider=9285",
+      "website": "http://-",
+      "source_text": "-\n7.4 Подготовка документов для оформления патента на трудовую деятельность (г. Ростов-на-Дону)"
+    },
+    {
+      "name": "9.2. Подготовка уведомления по трудовому договору с ин.гражд. (г. Ростов-на-Дону)",
+      "category_id": "group11",
+      "category": "Штрафы, пошлины",
+      "logo_url": "http://cluster.skysend.ru:6721/image.php?provider=9601",
+      "website": "http://-",
+      "source_text": "-\n9.2. Подготовка уведомления по трудовому договору с ин.гражд. (г. Ростов-на-Дону)"
+    },
+    {
+      "name": "Вид на жительство выдача/продление (ФМС РСО-Алания)",
+      "category_id": "group11",
+      "category": "Штрафы, пошлины",
+      "logo_url": "http://cluster.skysend.ru:6721/image.php?provider=8753",
+      "website": "http://",
+      "source_text": "78002002536\nВид на жительство выдача/продление (ФМС РСО-Алания)"
+    },
+    {
+      "name": "Виза для выезда и въезда в РФ, выдача/продление (ФМС РСО-Алания)",
+      "category_id": "group11",
+      "category": "Штрафы, пошлины",
+      "logo_url": "http://cluster.skysend.ru:6721/image.php?provider=8757",
+      "website": "http://",
+      "source_text": "78002002536\nВиза для выезда и въезда в РФ, выдача/продление (ФМС РСО-Алания)"
+    },
+    {
+      "name": "Виза для выезда из РФ, выдача/продление (ФМС РСО-Алания)",
+      "category_id": "group11",
+      "category": "Штрафы, пошлины",
+      "logo_url": "http://cluster.skysend.ru:6721/image.php?provider=8756",
+      "website": "http://",
+      "source_text": "78002002536\nВиза для выезда из РФ, выдача/продление (ФМС РСО-Алания)"
+    },
+    {
+      "name": "Виза для многократного пересечения границы РФ, выдача/продление (ФМС РСО-Алания)",
+      "category_id": "group11",
+      "category": "Штрафы, пошлины",
+      "logo_url": "http://cluster.skysend.ru:6721/image.php?provider=8758",
+      "website": "http://",
+      "source_text": "78002002536\nВиза для многократного пересечения границы РФ, выдача/продление (ФМС РСО-Алания)"
+    },
+    {
+      "name": "Внесение изменений в заграничный паспорт (ФМС РСО-Алания)",
+      "category_id": "group11",
+      "category": "Штрафы, пошлины",
+      "logo_url": "http://cluster.skysend.ru:6721/image.php?provider=8750",
+      "website": "http://",
+      "source_text": "78002002536\nВнесение изменений в заграничный паспорт (ФМС РСО-Алания)"
+    },
+    {
+      "name": "Выдача дубликата ИНН",
+      "category_id": "group11",
+      "category": "Штрафы, пошлины",
+      "logo_url": "http://cluster.skysend.ru:6721/image.php?provider=8318",
+      "website": "http://",
+      "source_text": "78002002536\nВыдача дубликата ИНН"
+    },
+    {
+      "name": "Выдача копии договоров по односторонним сделкам",
+      "category_id": "group11",
+      "category": "Штрафы, пошлины",
+      "logo_url": "http://cluster.skysend.ru:6721/image.php?provider=8313",
+      "website": "http://",
+      "source_text": "78002002536\nВыдача копии договоров по односторонним сделкам"
+    },
+    {
+      "name": "Выдача разрешения на установку рекламной конструкции",
+      "category_id": "group11",
+      "category": "Штрафы, пошлины",
+      "logo_url": "http://cluster.skysend.ru:6721/image.php?provider=8324",
+      "website": "http://",
+      "source_text": "78002002536\nВыдача разрешения на установку рекламной конструкции"
+    },
+    {
+      "name": "Выписка о содержании правоустанавливающих документов",
+      "category_id": "group11",
+      "category": "Штрафы, пошлины",
+      "logo_url": "http://cluster.skysend.ru:6721/image.php?provider=8314",
+      "website": "http://",
+      "source_text": "78002002536\nВыписка о содержании правоустанавливающих документов"
+    },
+    {
+      "name": "ГБУ РО \"Кожно-венерологический диспансер\". Патенты на работу",
+      "category_id": "group11",
+      "category": "Штрафы, пошлины",
+      "logo_url": "",
+      "website": "http://",
+      "source_text": "+78632627072\nГБУ РО \"Кожно-венерологический диспансер\". Патенты на работу"
+    },
+    {
+      "name": "ГБУ РО \"Кожно-венерологический диспансер\". Услуги иностр. гражданам (Граждане ЕАЭС, иностр. студенты)",
+      "category_id": "group11",
+      "category": "Штрафы, пошлины",
+      "logo_url": "",
+      "website": "http://",
+      "source_text": "+78632627072\nГБУ РО \"Кожно-венерологический диспансер\". Услуги иностр. гражданам (Граждане ЕАЭС, иностр. студенты)"
+    },
+    {
+      "name": "ГБУ РО \"Кожно-венерологический диспансер\". Услуги иностранным гражданам (РВП, ВНЖ, Гражданство)",
+      "category_id": "group11",
+      "category": "Штрафы, пошлины",
+      "logo_url": "",
+      "website": "http://",
+      "source_text": "+78632627072\nГБУ РО \"Кожно-венерологический диспансер\". Услуги иностранным гражданам (РВП, ВНЖ, Гражданство)"
+    },
+    {
+      "name": "ГБУ РО \"Наркологический диспансер\". Патенты на работу",
+      "category_id": "group11",
+      "category": "Штрафы, пошлины",
+      "logo_url": "",
+      "website": "http://",
+      "source_text": "+78632441544\nГБУ РО \"Наркологический диспансер\". Патенты на работу"
+    },
+    {
+      "name": "ГБУ РО \"Наркологический диспансер\". Услуги иностр. гражданам (Граждане ЕАЭС, иностр. студенты)",
+      "category_id": "group11",
+      "category": "Штрафы, пошлины",
+      "logo_url": "",
+      "website": "http://",
+      "source_text": "+78632441544\nГБУ РО \"Наркологический диспансер\". Услуги иностр. гражданам (Граждане ЕАЭС, иностр. студенты)"
+    },
+    {
+      "name": "ГБУ РО \"Наркологический диспансер\". Услуги иностранным гражданам (РВП, ВНЖ, Гражданство)",
+      "category_id": "group11",
+      "category": "Штрафы, пошлины",
+      "logo_url": "",
+      "website": "http://",
+      "source_text": "+78632441544\nГБУ РО \"Наркологический диспансер\". Услуги иностранным гражданам (РВП, ВНЖ, Гражданство)"
+    },
+    {
+      "name": "ГБУ РО \"ОКЦФП\". Патенты на работу",
+      "category_id": "group11",
+      "category": "Штрафы, пошлины",
+      "logo_url": "",
+      "website": "http://",
+      "source_text": "+78632333613\nГБУ РО \"ОКЦФП\". Патенты на работу"
+    },
+    {
+      "name": "ГБУ РО \"ОКЦФП\". Услуги иностр. гражданам (Граждане ЕАЭС, иностр. студенты)",
+      "category_id": "group11",
+      "category": "Штрафы, пошлины",
+      "logo_url": "",
+      "website": "http://",
+      "source_text": "+78632333613\nГБУ РО \"ОКЦФП\". Услуги иностр. гражданам (Граждане ЕАЭС, иностр. студенты)"
+    },
+    {
+      "name": "ГБУ РО \"ОКЦФП\". Услуги иностранным гражданам (РВП, ВНЖ, Гражданство)",
+      "category_id": "group11",
+      "category": "Штрафы, пошлины",
+      "logo_url": "",
+      "website": "http://",
+      "source_text": "+78632333613\nГБУ РО \"ОКЦФП\". Услуги иностранным гражданам (РВП, ВНЖ, Гражданство)"
+    },
+    {
+      "name": "ГИБДД. Штрафы за нарушение ПДД (Онлайн)",
+      "category_id": "group11",
+      "category": "Штрафы, пошлины",
+      "logo_url": "http://cluster.skysend.ru:6721/image.php?provider=4846",
+      "website": "http://",
+      "source_text": "+78002002536\nГИБДД. Штрафы за нарушение ПДД (Онлайн)"
+    },
+    {
+      "name": "Госпошлина ГИБДД (МРЭО 1 Динская)",
+      "category_id": "group11",
+      "category": "Штрафы, пошлины",
+      "logo_url": "http://cluster.skysend.ru:6721/image.php?provider=9748",
+      "website": "http://гибдд.рф",
+      "source_text": "гибдд.рф\nГоспошлина ГИБДД (МРЭО 1 Динская)"
+    },
+    {
+      "name": "Госпошлина ГИБДД (МРЭО 1 Краснодар)",
+      "category_id": "group11",
+      "category": "Штрафы, пошлины",
+      "logo_url": "http://cluster.skysend.ru:6721/image.php?provider=9735",
+      "website": "http://гибдд.рф",
+      "source_text": "гибдд.рф\nГоспошлина ГИБДД (МРЭО 1 Краснодар)"
+    },
+    {
+      "name": "Госпошлина ГИБДД (МРЭО 10 Ейск)",
+      "category_id": "group11",
+      "category": "Штрафы, пошлины",
+      "logo_url": "http://cluster.skysend.ru:6721/image.php?provider=9734",
+      "website": "http://гибдд.рф",
+      "source_text": "гибдд.рф\nГоспошлина ГИБДД (МРЭО 10 Ейск)"
+    },
+    {
+      "name": "Госпошлина ГИБДД (МРЭО 10 Старощербиновская)",
+      "category_id": "group11",
+      "category": "Штрафы, пошлины",
+      "logo_url": "http://cluster.skysend.ru:6721/image.php?provider=9767",
+      "website": "http://гибдд.рф",
+      "source_text": "гибдд.рф\nГоспошлина ГИБДД (МРЭО 10 Старощербиновская)"
+    },
+    {
+      "name": "Госпошлина ГИБДД (МРЭО 11 Крыловская)",
+      "category_id": "group11",
+      "category": "Штрафы, пошлины",
+      "logo_url": "http://cluster.skysend.ru:6721/image.php?provider=9752",
+      "website": "http://гибдд.рф",
+      "source_text": "гибдд.рф\nГоспошлина ГИБДД (МРЭО 11 Крыловская)"
+    },
+    {
+      "name": "Госпошлина ГИБДД (МРЭО 11 Кущевская)",
+      "category_id": "group11",
+      "category": "Штрафы, пошлины",
+      "logo_url": "http://cluster.skysend.ru:6721/image.php?provider=9754",
+      "website": "http://гибдд.рф",
+      "source_text": "гибдд.рф\nГоспошлина ГИБДД (МРЭО 11 Кущевская)"
+    },
+    {
+      "name": "Госпошлина ГИБДД (МРЭО 12 Белая Глина)",
+      "category_id": "group11",
+      "category": "Штрафы, пошлины",
+      "logo_url": "http://cluster.skysend.ru:6721/image.php?provider=9744",
+      "website": "http://гибдд.рф",
+      "source_text": "гибдд.рф\nГоспошлина ГИБДД (МРЭО 12 Белая Глина)"
+    },
+    {
+      "name": "Госпошлина ГИБДД (МРЭО 12 Новопокровск)",
+      "category_id": "group11",
+      "category": "Штрафы, пошлины",
+      "logo_url": "http://cluster.skysend.ru:6721/image.php?provider=9758",
+      "website": "http://гибдд.рф",
+      "source_text": "гибдд.рф\nГоспошлина ГИБДД (МРЭО 12 Новопокровск)"
+    },
+    {
+      "name": "Госпошлина ГИБДД (МРЭО 12 Тихорецк)",
+      "category_id": "group11",
+      "category": "Штрафы, пошлины",
+      "logo_url": "http://cluster.skysend.ru:6721/image.php?provider=9741",
+      "website": "http://гибдд.рф",
+      "source_text": "гибдд.рф\nГоспошлина ГИБДД (МРЭО 12 Тихорецк)"
+    },
+    {
+      "name": "Госпошлина ГИБДД (МРЭО 13 Выселки)",
+      "category_id": "group11",
+      "category": "Штрафы, пошлины",
+      "logo_url": "http://cluster.skysend.ru:6721/image.php?provider=9747",
+      "website": "http://гибдд.рф",
+      "source_text": "гибдд.рф\nГоспошлина ГИБДД (МРЭО 13 Выселки)"
+    },
+    {
+      "name": "Госпошлина ГИБДД (МРЭО 13 Кореновск)",
+      "category_id": "group11",
+      "category": "Штрафы, пошлины",
+      "logo_url": "http://cluster.skysend.ru:6721/image.php?provider=9750",
+      "website": "http://гибдд.рф",
+      "source_text": "гибдд.рф\nГоспошлина ГИБДД (МРЭО 13 Кореновск)"
+    },
+    {
+      "name": "Госпошлина ГИБДД (МРЭО 13 Усть-Лабинск)",
+      "category_id": "group11",
+      "category": "Штрафы, пошлины",
+      "logo_url": "http://cluster.skysend.ru:6721/image.php?provider=9766",
+      "website": "http://гибдд.рф",
+      "source_text": "гибдд.рф\nГоспошлина ГИБДД (МРЭО 13 Усть-Лабинск)"
+    },
+    {
+      "name": "Госпошлина ГИБДД (МРЭО 14 Кропоткин)",
+      "category_id": "group11",
+      "category": "Штрафы, пошлины",
+      "logo_url": "http://cluster.skysend.ru:6721/image.php?provider=9736",
+      "website": "http://гибдд.рф",
+      "source_text": "гибдд.рф\nГоспошлина ГИБДД (МРЭО 14 Кропоткин)"
+    },
+    {
+      "name": "Госпошлина ГИБДД (МРЭО 14 Тбилисская)",
+      "category_id": "group11",
+      "category": "Штрафы, пошлины",
+      "logo_url": "http://cluster.skysend.ru:6721/image.php?provider=9763",
+      "website": "http://гибдд.рф",
+      "source_text": "гибдд.рф\nГоспошлина ГИБДД (МРЭО 14 Тбилисская)"
+    },
+    {
+      "name": "Госпошлина ГИБДД (МРЭО 15 Курганинск)",
+      "category_id": "group11",
+      "category": "Штрафы, пошлины",
+      "logo_url": "http://cluster.skysend.ru:6721/image.php?provider=9753",
+      "website": "http://гибдд.рф",
+      "source_text": "гибдд.рф\nГоспошлина ГИБДД (МРЭО 15 Курганинск)"
+    },
+    {
+      "name": "Госпошлина ГИБДД (МРЭО 15 Лабинск)",
+      "category_id": "group11",
+      "category": "Штрафы, пошлины",
+      "logo_url": "http://cluster.skysend.ru:6721/image.php?provider=9737",
+      "website": "http://гибдд.рф",
+      "source_text": "гибдд.рф\nГоспошлина ГИБДД (МРЭО 15 Лабинск)"
+    },
+    {
+      "name": "Госпошлина ГИБДД (МРЭО 15 Мостовской)",
+      "category_id": "group11",
+      "category": "Штрафы, пошлины",
+      "logo_url": "http://cluster.skysend.ru:6721/image.php?provider=9756",
+      "website": "http://гибдд.рф",
+      "source_text": "гибдд.рф\nГоспошлина ГИБДД (МРЭО 15 Мостовской)"
+    },
+    {
+      "name": "Госпошлина ГИБДД (МРЭО 2 Сочи)",
+      "category_id": "group11",
+      "category": "Штрафы, пошлины",
+      "logo_url": "http://cluster.skysend.ru:6721/image.php?provider=9739",
+      "website": "http://гибдд.рф",
+      "source_text": "гибдд.рф\nГоспошлина ГИБДД (МРЭО 2 Сочи)"
+    },
+    {
+      "name": "Госпошлина ГИБДД (МРЭО 2 Туапсе)",
+      "category_id": "group11",
+      "category": "Штрафы, пошлины",
+      "logo_url": "http://cluster.skysend.ru:6721/image.php?provider=9740",
+      "website": "http://гибдд.рф",
+      "source_text": "гибдд.рф\nГоспошлина ГИБДД (МРЭО 2 Туапсе)"
+    },
+    {
+      "name": "Госпошлина ГИБДД (МРЭО 3 Анапа)",
+      "category_id": "group11",
+      "category": "Штрафы, пошлины",
+      "logo_url": "http://cluster.skysend.ru:6721/image.php?provider=9730",
+      "website": "http://гибдд.рф",
+      "source_text": "гибдд.рф\nГоспошлина ГИБДД (МРЭО 3 Анапа)"
+    },
+    {
+      "name": "Госпошлина ГИБДД (МРЭО 3 Геленджик)",
+      "category_id": "group11",
+      "category": "Штрафы, пошлины",
+      "logo_url": "http://cluster.skysend.ru:6721/image.php?provider=9733",
+      "website": "http://гибдд.рф",
+      "source_text": "гибдд.рф\nГоспошлина ГИБДД (МРЭО 3 Геленджик)"
+    },
+    {
+      "name": "Госпошлина ГИБДД (МРЭО 3 Новороссийск)",
+      "category_id": "group11",
+      "category": "Штрафы, пошлины",
+      "logo_url": "http://cluster.skysend.ru:6721/image.php?provider=9738",
+      "website": "http://гибдд.рф",
+      "source_text": "гибдд.рф\nГоспошлина ГИБДД (МРЭО 3 Новороссийск)"
+    },
+    {
+      "name": "Госпошлина ГИБДД (МРЭО 4 Абинск)",
+      "category_id": "group11",
+      "category": "Штрафы, пошлины",
+      "logo_url": "http://cluster.skysend.ru:6721/image.php?provider=9743",
+      "website": "http://гибдд.рф",
+      "source_text": "гибдд.рф\nГоспошлина ГИБДД (МРЭО 4 Абинск)"
+    },
+    {
+      "name": "Госпошлина ГИБДД (МРЭО 4 Крымск)",
+      "category_id": "group11",
+      "category": "Штрафы, пошлины",
+      "logo_url": "http://cluster.skysend.ru:6721/image.php?provider=9751",
+      "website": "http://гибдд.рф",
+      "source_text": "гибдд.рф\nГоспошлина ГИБДД (МРЭО 4 Крымск)"
+    },
+    {
+      "name": "Госпошлина ГИБДД (МРЭО 4 Северская)",
+      "category_id": "group11",
+      "category": "Штрафы, пошлины",
+      "logo_url": "http://cluster.skysend.ru:6721/image.php?provider=9761",
+      "website": "http://гибдд.рф",
+      "source_text": "гибдд.рф\nГоспошлина ГИБДД (МРЭО 4 Северская)"
+    },
+    {
+      "name": "Госпошлина ГИБДД (МРЭО 5 Славянск)",
+      "category_id": "group11",
+      "category": "Штрафы, пошлины",
+      "logo_url": "http://cluster.skysend.ru:6721/image.php?provider=9762",
+      "website": "http://гибдд.рф",
+      "source_text": "гибдд.рф\nГоспошлина ГИБДД (МРЭО 5 Славянск)"
+    },
+    {
+      "name": "Госпошлина ГИБДД (МРЭО 5 Темрюк)",
+      "category_id": "group11",
+      "category": "Штрафы, пошлины",
+      "logo_url": "http://cluster.skysend.ru:6721/image.php?provider=9764",
+      "website": "http://гибдд.рф",
+      "source_text": "гибдд.рф\nГоспошлина ГИБДД (МРЭО 5 Темрюк)"
+    },
+    {
+      "name": "Госпошлина ГИБДД (МРЭО 6 Апшеронск)",
+      "category_id": "group11",
+      "category": "Штрафы, пошлины",
+      "logo_url": "http://cluster.skysend.ru:6721/image.php?provider=9742",
+      "website": "http://гибдд.рф",
+      "source_text": "гибдд.рф\nГоспошлина ГИБДД (МРЭО 6 Апшеронск)"
+    },
+    {
+      "name": "Госпошлина ГИБДД (МРЭО 6 Белореченск)",
+      "category_id": "group11",
+      "category": "Штрафы, пошлины",
+      "logo_url": "http://cluster.skysend.ru:6721/image.php?provider=9732",
+      "website": "http://гибдд.рф",
+      "source_text": "гибдд.рф\nГоспошлина ГИБДД (МРЭО 6 Белореченск)"
+    },
+    {
+      "name": "Госпошлина ГИБДД (МРЭО 7 Армавир)",
+      "category_id": "group11",
+      "category": "Штрафы, пошлины",
+      "logo_url": "http://cluster.skysend.ru:6721/image.php?provider=9731",
+      "website": "http://гибдд.рф",
+      "source_text": "гибдд.рф\nГоспошлина ГИБДД (МРЭО 7 Армавир)"
+    },
+    {
+      "name": "Госпошлина ГИБДД (МРЭО 7 Новокубанск)",
+      "category_id": "group11",
+      "category": "Штрафы, пошлины",
+      "logo_url": "http://cluster.skysend.ru:6721/image.php?provider=9757",
+      "website": "http://гибдд.рф",
+      "source_text": "гибдд.рф\nГоспошлина ГИБДД (МРЭО 7 Новокубанск)"
+    },
+    {
+      "name": "Госпошлина ГИБДД (МРЭО 7 Отрадненская)",
+      "category_id": "group11",
+      "category": "Штрафы, пошлины",
+      "logo_url": "http://cluster.skysend.ru:6721/image.php?provider=9759",
+      "website": "http://гибдд.рф",
+      "source_text": "гибдд.рф\nГоспошлина ГИБДД (МРЭО 7 Отрадненская)"
+    },
+    {
+      "name": "Госпошлина ГИБДД (МРЭО 8 Приморско-Ахтарск)",
+      "category_id": "group11",
+      "category": "Штрафы, пошлины",
+      "logo_url": "http://cluster.skysend.ru:6721/image.php?provider=9760",
+      "website": "http://гибдд.рф",
+      "source_text": "гибдд.рф\nГоспошлина ГИБДД (МРЭО 8 Приморско-Ахтарск)"
+    },
+    {
+      "name": "Госпошлина ГИБДД (МРЭО 8 Тимашевск)",
+      "category_id": "group11",
+      "category": "Штрафы, пошлины",
+      "logo_url": "http://cluster.skysend.ru:6721/image.php?provider=9765",
+      "website": "http://гибдд.рф",
+      "source_text": "гибдд.рф\nГоспошлина ГИБДД (МРЭО 8 Тимашевск)"
+    },
+    {
+      "name": "Госпошлина ГИБДД (МРЭО 9 Брюховецк)",
+      "category_id": "group11",
+      "category": "Штрафы, пошлины",
+      "logo_url": "http://cluster.skysend.ru:6721/image.php?provider=9746",
+      "website": "http://гибдд.рф",
+      "source_text": "гибдд.рф\nГоспошлина ГИБДД (МРЭО 9 Брюховецк)"
+    },
+    {
+      "name": "Госпошлина ГИБДД (МРЭО 9 Каневская)",
+      "category_id": "group11",
+      "category": "Штрафы, пошлины",
+      "logo_url": "http://cluster.skysend.ru:6721/image.php?provider=9749",
+      "website": "http://гибдд.рф",
+      "source_text": "гибдд.рф\nГоспошлина ГИБДД (МРЭО 9 Каневская)"
+    },
+    {
+      "name": "Госпошлина ГИБДД (МРЭО 9 Ленинградская)",
+      "category_id": "group11",
+      "category": "Штрафы, пошлины",
+      "logo_url": "http://cluster.skysend.ru:6721/image.php?provider=9755",
+      "website": "http://гибдд.рф",
+      "source_text": "гибдд.рф\nГоспошлина ГИБДД (МРЭО 9 Ленинградская)"
+    },
+    {
+      "name": "Госпошлина ГИБДД (МРЭУ N2 г.Сочи)",
+      "category_id": "group11",
+      "category": "Штрафы, пошлины",
+      "logo_url": "http://cluster.skysend.ru:6721/image.php?provider=8662",
+      "website": "http://гувм.мвд.рф",
+      "source_text": "гувм.мвд.рф\nГоспошлина ГИБДД (МРЭУ N2 г.Сочи)"
+    },
+    {
+      "name": "Госпошлина ГИБДД г.Новосибирск",
+      "category_id": "group11",
+      "category": "Штрафы, пошлины",
+      "logo_url": "http://cluster.skysend.ru:6721/image.php?provider=8932",
+      "website": "http://гувм.мвд.рф",
+      "source_text": "гувм.мвд.рф\nГоспошлина ГИБДД г.Новосибирск"
+    },
+    {
+      "name": "Госпошлина ГИБДД Динской район. КБ Промсвязьбанк",
+      "category_id": "group11",
+      "category": "Штрафы, пошлины",
+      "logo_url": "http://cluster.skysend.ru:6721/image.php?provider=9596",
+      "website": "http://гувм.мвд.рф",
+      "source_text": "гувм.мвд.рф\nГоспошлина ГИБДД Динской район. КБ Промсвязьбанк"
+    },
+    {
+      "name": "Госпошлина ГИБДД Изобильный",
+      "category_id": "group11",
+      "category": "Штрафы, пошлины",
+      "logo_url": "http://cluster.skysend.ru:6721/image.php?provider=9420",
+      "website": "http://гувм.мвд.рф",
+      "source_text": "гувм.мвд.рф\n+7 (865) 474-71-53\nГоспошлина ГИБДД Изобильный"
+    },
+    {
+      "name": "Госпошлина ГИБДД Светлоград",
+      "category_id": "group11",
+      "category": "Штрафы, пошлины",
+      "logo_url": "http://cluster.skysend.ru:6721/image.php?provider=8214",
+      "website": "http://гувм.мвд.рф",
+      "source_text": "гувм.мвд.рф\n+7 (865) 474-71-53\nГоспошлина ГИБДД Светлоград"
+    },
+    {
+      "name": "Госпошлина ГИБДД. г. Орёл",
+      "category_id": "group11",
+      "category": "Штрафы, пошлины",
+      "logo_url": "http://cluster.skysend.ru:6721/image.php?provider=9655",
+      "website": "http://гувм.мвд.рф",
+      "source_text": "гувм.мвд.рф\nГоспошлина ГИБДД. г. Орёл"
+    },
+    {
+      "name": "Госпошлина ГИБДД. Курганинский район. КБ Промсвязьбанк",
+      "category_id": "group11",
+      "category": "Штрафы, пошлины",
+      "logo_url": "http://cluster.skysend.ru:6721/image.php?provider=9384",
+      "website": "http://гувм.мвд.рф",
+      "source_text": "гувм.мвд.рф\nГоспошлина ГИБДД. Курганинский район. КБ Промсвязьбанк"
+    },
+    {
+      "name": "Госпошлина ГИБДД. Лабинский район. КБ Промсвязьбанк",
+      "category_id": "group11",
+      "category": "Штрафы, пошлины",
+      "logo_url": "http://cluster.skysend.ru:6721/image.php?provider=8647",
+      "website": "http://гувм.мвд.рф",
+      "source_text": "гувм.мвд.рф\nГоспошлина ГИБДД. Лабинский район. КБ Промсвязьбанк"
+    },
+    {
+      "name": "Госпошлина ГИБДД. Республика Дагестан",
+      "category_id": "group11",
+      "category": "Штрафы, пошлины",
+      "logo_url": "http://cluster.skysend.ru:6721/image.php?provider=7826",
+      "website": "http://гувм.мвд.рф",
+      "source_text": "гувм.мвд.рф\nГоспошлина ГИБДД. Республика Дагестан"
+    },
+    {
+      "name": "Госпошлина ГИБДД. Чеченская республика",
+      "category_id": "group11",
+      "category": "Штрафы, пошлины",
+      "logo_url": "http://cluster.skysend.ru:6721/image.php?provider=7827",
+      "website": "http://гувм.мвд.рф",
+      "source_text": "гувм.мвд.рф\nГоспошлина ГИБДД. Чеченская республика"
+    },
+    {
+      "name": "Госпошлина за внесение изменений в загран.паспорт (г. Краснодар)",
+      "category_id": "group11",
+      "category": "Штрафы, пошлины",
+      "logo_url": "http://cluster.skysend.ru:6721/image.php?provider=9603",
+      "website": "http://",
+      "source_text": "78002002536\nГоспошлина за внесение изменений в загран.паспорт (г. Краснодар)"
+    },
+    {
+      "name": "Госпошлина за внесение сведений в единую автоматизированную информационную систему технического осмотра",
+      "category_id": "group11",
+      "category": "Штрафы, пошлины",
+      "logo_url": "http://cluster.skysend.ru:6721/image.php?provider=9815",
+      "website": "http://",
+      "source_text": "78002002536\nГоспошлина за внесение сведений в единую автоматизированную информационную систему технического осмотра"
+    },
+    {
+      "name": "Госпошлина за выдачу (обмен) паспорта РФ взамен утраченного",
+      "category_id": "group11",
+      "category": "Штрафы, пошлины",
+      "logo_url": "http://cluster.skysend.ru:6721/image.php?provider=8307",
+      "website": "http://",
+      "source_text": "78002002536\nГоспошлина за выдачу (обмен) паспорта РФ взамен утраченного"
+    },
+    {
+      "name": "Госпошлина за выдачу (обмен) паспорта РФ взамен утраченного (МФЦ по РСО-Алания)",
+      "category_id": "group11",
+      "category": "Штрафы, пошлины",
+      "logo_url": "http://cluster.skysend.ru:6721/image.php?provider=8596",
+      "website": "http://",
+      "source_text": "78002002536\nГоспошлина за выдачу (обмен) паспорта РФ взамен утраченного (МФЦ по РСО-Алания)"
+    },
+    {
+      "name": "Госпошлина за выдачу (обмен) паспорта РФ взамен утраченного (ФМС РСО-Алания)",
+      "category_id": "group11",
+      "category": "Штрафы, пошлины",
+      "logo_url": "http://cluster.skysend.ru:6721/image.php?provider=8745",
+      "website": "http://",
+      "source_text": "78002002536\nГоспошлина за выдачу (обмен) паспорта РФ взамен утраченного (ФМС РСО-Алания)"
+    },
+    {
+      "name": "Госпошлина за загран.паспорт - взрослый (г. Краснодар)",
+      "category_id": "group11",
+      "category": "Штрафы, пошлины",
+      "logo_url": "http://cluster.skysend.ru:6721/image.php?provider=9645",
+      "website": "http://",
+      "source_text": "78002002536\nГоспошлина за загран.паспорт - взрослый (г. Краснодар)"
+    },
+    {
+      "name": "Госпошлина за загран.паспорт - детский (г. Краснодар)",
+      "category_id": "group11",
+      "category": "Штрафы, пошлины",
+      "logo_url": "http://cluster.skysend.ru:6721/image.php?provider=9646",
+      "website": "http://",
+      "source_text": "78002002536\nГоспошлина за загран.паспорт - детский (г. Краснодар)"
+    },
+    {
+      "name": "Госпошлина за заграничный паспорт (МФЦ по РСО-Алания)",
+      "category_id": "group11",
+      "category": "Штрафы, пошлины",
+      "logo_url": "http://cluster.skysend.ru:6721/image.php?provider=8594",
+      "website": "http://",
+      "source_text": "78002002536\nГоспошлина за заграничный паспорт (МФЦ по РСО-Алания)"
+    },
+    {
+      "name": "Госпошлина за заграничный паспорт (ФМС РСО-Алания)",
+      "category_id": "group11",
+      "category": "Штрафы, пошлины",
+      "logo_url": "http://cluster.skysend.ru:6721/image.php?provider=8748",
+      "website": "http://",
+      "source_text": "78002002536\nГоспошлина за заграничный паспорт (ФМС РСО-Алания)"
+    },
+    {
+      "name": "Госпошлина за заграничный паспорт взрослый нового образца (ФМС РСО-Алания)",
+      "category_id": "group11",
+      "category": "Штрафы, пошлины",
+      "logo_url": "http://cluster.skysend.ru:6721/image.php?provider=8746",
+      "website": "http://",
+      "source_text": "78002002536\nГоспошлина за заграничный паспорт взрослый нового образца (ФМС РСО-Алания)"
+    },
+    {
+      "name": "Госпошлина за заграничный паспорт детский (МФЦ по РСО-Алания)",
+      "category_id": "group11",
+      "category": "Штрафы, пошлины",
+      "logo_url": "http://cluster.skysend.ru:6721/image.php?provider=8595",
+      "website": "http://",
+      "source_text": "78002002536\nГоспошлина за заграничный паспорт детский (МФЦ по РСО-Алания)"
+    },
+    {
+      "name": "Госпошлина за заграничный паспорт детский (ФМС РСО-Алания)",
+      "category_id": "group11",
+      "category": "Штрафы, пошлины",
+      "logo_url": "http://cluster.skysend.ru:6721/image.php?provider=8749",
+      "website": "http://",
+      "source_text": "78002002536\nГоспошлина за заграничный паспорт детский (ФМС РСО-Алания)"
+    },
+    {
+      "name": "Госпошлина за заграничный паспорт детский нового образца (ФМС РСО-Алания)",
+      "category_id": "group11",
+      "category": "Штрафы, пошлины",
+      "logo_url": "http://cluster.skysend.ru:6721/image.php?provider=8747",
+      "website": "http://",
+      "source_text": "78002002536\nГоспошлина за заграничный паспорт детский нового образца (ФМС РСО-Алания)"
+    },
+    {
+      "name": "Госпошлина за заграничный паспорт. г. Краснодар QR",
+      "category_id": "group11",
+      "category": "Штрафы, пошлины",
+      "logo_url": "http://cluster.skysend.ru:6721/image.php?provider=8308",
+      "website": "http://",
+      "source_text": "78002002536\nГоспошлина за заграничный паспорт. г. Краснодар QR"
+    },
+    {
+      "name": "Госпошлина за предоставление сведений из ЕГРН",
+      "category_id": "group11",
+      "category": "Штрафы, пошлины",
+      "logo_url": "http://cluster.skysend.ru:6721/image.php?provider=8312",
+      "website": "http://",
+      "source_text": "78002002536\nГоспошлина за предоставление сведений из ЕГРН"
+    },
+    {
+      "name": "Госпошлина за прием заявления о повторной выдаче свидетельства о регистрации брака",
+      "category_id": "group11",
+      "category": "Штрафы, пошлины",
+      "logo_url": "http://cluster.skysend.ru:6721/image.php?provider=8311",
+      "website": "http://",
+      "source_text": "78002002536\nГоспошлина за прием заявления о повторной выдаче свидетельства о регистрации брака"
+    },
+    {
+      "name": "Госпошлина за прием заявления о повторной выдаче свидетельства о регистрации брака (РСО-Алания)",
+      "category_id": "group11",
+      "category": "Штрафы, пошлины",
+      "logo_url": "http://cluster.skysend.ru:6721/image.php?provider=8638",
+      "website": "http://",
+      "source_text": "78002002536\nГоспошлина за прием заявления о повторной выдаче свидетельства о регистрации брака (РСО-Алания)"
+    },
+    {
+      "name": "Госпошлина за прием заявления о расторжении брака супругов (без общих детей)",
+      "category_id": "group11",
+      "category": "Штрафы, пошлины",
+      "logo_url": "http://cluster.skysend.ru:6721/image.php?provider=8310",
+      "website": "http://",
+      "source_text": "78002002536\nГоспошлина за прием заявления о расторжении брака супругов (без общих детей)"
+    },
+    {
+      "name": "Госпошлина за регистрацию иностранных граждан",
+      "category_id": "group11",
+      "category": "Штрафы, пошлины",
+      "logo_url": "http://cluster.skysend.ru:6721/image.php?provider=9709",
+      "website": "http://www.nalog.ru/",
+      "source_text": "www.nalog.ru/\n+78002002536\nГоспошлина за регистрацию иностранных граждан"
+    },
+    {
+      "name": "Госпошлина за регистрацию по месту жительства в РФ (ФМС РСО-Алания)",
+      "category_id": "group11",
+      "category": "Штрафы, пошлины",
+      "logo_url": "http://cluster.skysend.ru:6721/image.php?provider=8751",
+      "website": "http://",
+      "source_text": "78002002536\nГоспошлина за регистрацию по месту жительства в РФ (ФМС РСО-Алания)"
+    },
+    {
+      "name": "Госпошлина УФК (КБР) Вид на Жит-во",
+      "category_id": "group11",
+      "category": "Штрафы, пошлины",
+      "logo_url": "http://cluster.skysend.ru:6721/image.php?provider=9716",
+      "website": "http://",
+      "source_text": "78002002536\nГоспошлина УФК (КБР) Вид на Жит-во"
+    },
+    {
+      "name": "Госпошлина УФК (КБР) Виза многократная студенческая",
+      "category_id": "group11",
+      "category": "Штрафы, пошлины",
+      "logo_url": "http://cluster.skysend.ru:6721/image.php?provider=9721",
+      "website": "http://",
+      "source_text": "78002002536\nГоспошлина УФК (КБР) Виза многократная студенческая"
+    },
+    {
+      "name": "Госпошлина УФК (КБР) Виза на выезд",
+      "category_id": "group11",
+      "category": "Штрафы, пошлины",
+      "logo_url": "http://cluster.skysend.ru:6721/image.php?provider=9719",
+      "website": "http://",
+      "source_text": "78002002536\nГоспошлина УФК (КБР) Виза на выезд"
+    },
+    {
+      "name": "Госпошлина УФК (КБР) Виза на выезд-въезд",
+      "category_id": "group11",
+      "category": "Штрафы, пошлины",
+      "logo_url": "http://cluster.skysend.ru:6721/image.php?provider=9720",
+      "website": "http://",
+      "source_text": "78002002536\nГоспошлина УФК (КБР) Виза на выезд-въезд"
+    },
+    {
+      "name": "Госпошлина УФК (КБР) Внесение изменений в ЗП",
+      "category_id": "group11",
+      "category": "Штрафы, пошлины",
+      "logo_url": "http://cluster.skysend.ru:6721/image.php?provider=9714",
+      "website": "http://",
+      "source_text": "78002002536\nГоспошлина УФК (КБР) Внесение изменений в ЗП"
+    },
+    {
+      "name": "Госпошлина УФК (КБР) Гражданство",
+      "category_id": "group11",
+      "category": "Штрафы, пошлины",
+      "logo_url": "http://cluster.skysend.ru:6721/image.php?provider=9717",
+      "website": "http://",
+      "source_text": "78002002536\nГоспошлина УФК (КБР) Гражданство"
+    },
+    {
+      "name": "Госпошлина УФК (КБР) ЗП Нов. обр. детский",
+      "category_id": "group11",
+      "category": "Штрафы, пошлины",
+      "logo_url": "http://cluster.skysend.ru:6721/image.php?provider=9713",
+      "website": "http://",
+      "source_text": "78002002536\nГоспошлина УФК (КБР) ЗП Нов. обр. детский"
+    },
+    {
+      "name": "Госпошлина УФК (КБР) Патент",
+      "category_id": "group11",
+      "category": "Штрафы, пошлины",
+      "logo_url": "http://cluster.skysend.ru:6721/image.php?provider=9819",
+      "website": "http://",
+      "source_text": "78002002536\nГоспошлина УФК (КБР) Патент"
+    },
+    {
+      "name": "Госпошлина УФК (КБР) Приглашение",
+      "category_id": "group11",
+      "category": "Штрафы, пошлины",
+      "logo_url": "http://cluster.skysend.ru:6721/image.php?provider=9718",
+      "website": "http://",
+      "source_text": "78002002536\nГоспошлина УФК (КБР) Приглашение"
+    },
+    {
+      "name": "Госпошлина УФК (КБР) РВП",
+      "category_id": "group11",
+      "category": "Штрафы, пошлины",
+      "logo_url": "http://cluster.skysend.ru:6721/image.php?provider=9715",
+      "website": "http://",
+      "source_text": "78002002536\nГоспошлина УФК (КБР) РВП"
+    },
+    {
+      "name": "Госпошлины ГИБДД по РФ",
+      "category_id": "group11",
+      "category": "Штрафы, пошлины",
+      "logo_url": "http://cluster.skysend.ru:6721/image.php?provider=9604",
+      "website": "http://гувм.мвд.рф",
+      "source_text": "гувм.мвд.рф\nГоспошлины ГИБДД по РФ"
+    },
+    {
+      "name": "Госпошлины и налоги ФНС по РФ",
+      "category_id": "group11",
+      "category": "Штрафы, пошлины",
+      "logo_url": "http://cluster.skysend.ru:6721/image.php?provider=9669",
+      "website": "http://",
+      "source_text": "78002002536\nГоспошлины и налоги ФНС по РФ"
+    },
+    {
+      "name": "Госпошлины и штрафы ФМС по РФ",
+      "category_id": "group11",
+      "category": "Штрафы, пошлины",
+      "logo_url": "http://cluster.skysend.ru:6721/image.php?provider=9670",
+      "website": "http://",
+      "source_text": "78002002536\nГоспошлины и штрафы ФМС по РФ"
+    },
+    {
+      "name": "Государственная регистрация юридических лиц, ИП, хозяйств",
+      "category_id": "group11",
+      "category": "Штрафы, пошлины",
+      "logo_url": "http://cluster.skysend.ru:6721/image.php?provider=8319",
+      "website": "http://",
+      "source_text": "78002002536\nГосударственная регистрация юридических лиц, ИП, хозяйств"
+    },
+    {
+      "name": "Государственная регистрация юридических лиц, ИП, хозяйств (по РСО-Алания)",
+      "category_id": "group11",
+      "category": "Штрафы, пошлины",
+      "logo_url": "http://cluster.skysend.ru:6721/image.php?provider=8600",
+      "website": "http://",
+      "source_text": "78002002536\nГосударственная регистрация юридических лиц, ИП, хозяйств (по РСО-Алания)"
+    },
+    {
+      "name": "Гражданство РФ (ФМС РСО-Алания)",
+      "category_id": "group11",
+      "category": "Штрафы, пошлины",
+      "logo_url": "http://cluster.skysend.ru:6721/image.php?provider=8755",
+      "website": "http://",
+      "source_text": "78002002536\nГражданство РФ (ФМС РСО-Алания)"
+    },
+    {
+      "name": "Земельный налог. ИФНС по Пригородному району по РСО-Алания",
+      "category_id": "group11",
+      "category": "Штрафы, пошлины",
+      "logo_url": "http://cluster.skysend.ru:6721/image.php?provider=9542",
+      "website": "http://",
+      "source_text": "78002002536\nЗемельный налог. ИФНС по Пригородному району по РСО-Алания"
+    },
+    {
+      "name": "Имущественный налог. ИФНС по Пригородному району по РСО-Алания",
+      "category_id": "group11",
+      "category": "Штрафы, пошлины",
+      "logo_url": "http://cluster.skysend.ru:6721/image.php?provider=9543",
+      "website": "http://",
+      "source_text": "78002002536\nИмущественный налог. ИФНС по Пригородному району по РСО-Алания"
+    },
+    {
+      "name": "Имущественный налог. ИФНС по Пригородному району по РСО-Алания",
+      "category_id": "group11",
+      "category": "Штрафы, пошлины",
+      "logo_url": "",
+      "website": "http://",
+      "source_text": "78002002536\nИмущественный налог. ИФНС по Пригородному району по РСО-Алания"
+    },
+    {
+      "name": "НДФЛ. Фиксированные авансовые платежи иностранных граждан",
+      "category_id": "group11",
+      "category": "Штрафы, пошлины",
+      "logo_url": "http://cluster.skysend.ru:6721/image.php?provider=7063",
+      "website": "http://www.nalog.ru/",
+      "source_text": "www.nalog.ru/\n+78002002536\nНДФЛ. Фиксированные авансовые платежи иностранных граждан"
+    },
+    {
+      "name": "Оплата госпошлин по QR-коду. МФЦ Краснодар",
+      "category_id": "group11",
+      "category": "Штрафы, пошлины",
+      "logo_url": "http://cluster.skysend.ru:6721/image.php?provider=9291",
+      "website": "http://",
+      "source_text": "78002002536\nОплата госпошлин по QR-коду. МФЦ Краснодар"
+    },
+    {
+      "name": "Оплата государственных пошлин по УИН",
+      "category_id": "group11",
+      "category": "Штрафы, пошлины",
+      "logo_url": "http://cluster.skysend.ru:6721/image.php?provider=8973",
+      "website": "http://",
+      "source_text": "+78002002536\nОплата государственных пошлин по УИН"
+    },
+    {
+      "name": "Оплата налогов ФНС по ИНН налогоплательщика (Квитанция без УИН)",
+      "category_id": "group11",
+      "category": "Штрафы, пошлины",
+      "logo_url": "http://cluster.skysend.ru:6721/image.php?provider=9605",
+      "website": "http://",
+      "source_text": "Оплата налогов ФНС по ИНН налогоплательщика (Квитанция без УИН)"
+    },
+    {
+      "name": "Оплата налогов ФНС по УИН (индексу документа)",
+      "category_id": "group11",
+      "category": "Штрафы, пошлины",
+      "logo_url": "http://cluster.skysend.ru:6721/image.php?provider=8623",
+      "website": "http://",
+      "source_text": "+78002002536\nОплата налогов ФНС по УИН (индексу документа)"
+    },
+    {
+      "name": "Оплата пошлин по QR-коду",
+      "category_id": "group11",
+      "category": "Штрафы, пошлины",
+      "logo_url": "http://cluster.skysend.ru:6721/image.php?provider=9066",
+      "website": "http://",
+      "source_text": "Оплата пошлин по QR-коду"
+    },
+    {
+      "name": "Оплата штрафов по УИН",
+      "category_id": "group11",
+      "category": "Штрафы, пошлины",
+      "logo_url": "http://cluster.skysend.ru:6721/image.php?provider=9728",
+      "website": "http://",
+      "source_text": "+78002002536\nОплата штрафов по УИН"
+    },
+    {
+      "name": "Патент для работы иностранного гражданина (ФМС РСО-Алания)",
+      "category_id": "group11",
+      "category": "Штрафы, пошлины",
+      "logo_url": "http://cluster.skysend.ru:6721/image.php?provider=8759",
+      "website": "http://",
+      "source_text": "78002002536\nПатент для работы иностранного гражданина (ФМС РСО-Алания)"
+    },
+    {
+      "name": "Получение (замена) паспорта гражданина РФ (МФЦ по РСО-Алания)",
+      "category_id": "group11",
+      "category": "Штрафы, пошлины",
+      "logo_url": "http://cluster.skysend.ru:6721/image.php?provider=8597",
+      "website": "http://",
+      "source_text": "78002002536\nПолучение (замена) паспорта гражданина РФ (МФЦ по РСО-Алания)"
+    },
+    {
+      "name": "Получение (замена) паспорта гражданина РФ (ФМС РСО-Алания)",
+      "category_id": "group11",
+      "category": "Штрафы, пошлины",
+      "logo_url": "http://cluster.skysend.ru:6721/image.php?provider=8744",
+      "website": "http://",
+      "source_text": "78002002536\nПолучение (замена) паспорта гражданина РФ (ФМС РСО-Алания)"
+    },
+    {
+      "name": "Получение (замена) паспорта гражданина РФ г.Краснодар",
+      "category_id": "group11",
+      "category": "Штрафы, пошлины",
+      "logo_url": "http://cluster.skysend.ru:6721/image.php?provider=8306",
+      "website": "http://",
+      "source_text": "78002002536\nПолучение (замена) паспорта гражданина РФ г.Краснодар"
+    },
+    {
+      "name": "Получение разрешения на перевозку крупногабаритных и тяжеловесных грузов",
+      "category_id": "group11",
+      "category": "Штрафы, пошлины",
+      "logo_url": "http://cluster.skysend.ru:6721/image.php?provider=8354",
+      "website": "http://",
+      "source_text": "78002002536\nПолучение разрешения на перевозку крупногабаритных и тяжеловесных грузов"
+    },
+    {
+      "name": "Получение разрешения на перевозку опасных грузов",
+      "category_id": "group11",
+      "category": "Штрафы, пошлины",
+      "logo_url": "http://cluster.skysend.ru:6721/image.php?provider=8355",
+      "website": "http://",
+      "source_text": "78002002536\nПолучение разрешения на перевозку опасных грузов"
+    },
+    {
+      "name": "Пошлина ГИБДД Гусь-Хрустальный выдача национального ВУ",
+      "category_id": "group11",
+      "category": "Штрафы, пошлины",
+      "logo_url": "http://cluster.skysend.ru:6721/image.php?provider=9295",
+      "website": "http://гибдд.рф",
+      "source_text": "гибдд.рф\nПошлина ГИБДД Гусь-Хрустальный выдача национального ВУ"
+    },
+    {
+      "name": "Пошлина ГИБДД Жуковский Доплата",
+      "category_id": "group11",
+      "category": "Штрафы, пошлины",
+      "logo_url": "http://cluster.skysend.ru:6721/image.php?provider=9010",
+      "website": "http://гибдд.рф",
+      "source_text": "гибдд.рф\nПошлина ГИБДД Жуковский Доплата"
+    },
+    {
+      "name": "Пошлина ГИБДД Жуковский за внесение изменений без замены ПТС",
+      "category_id": "group11",
+      "category": "Штрафы, пошлины",
+      "logo_url": "http://cluster.skysend.ru:6721/image.php?provider=9005",
+      "website": "http://гибдд.рф",
+      "source_text": "гибдд.рф\nПошлина ГИБДД Жуковский за внесение изменений без замены ПТС"
+    },
+    {
+      "name": "Пошлина ГИБДД Жуковский за внесение изменений с заменой ПТС",
+      "category_id": "group11",
+      "category": "Штрафы, пошлины",
+      "logo_url": "http://cluster.skysend.ru:6721/image.php?provider=9006",
+      "website": "http://гибдд.рф",
+      "source_text": "гибдд.рф\nПошлина ГИБДД Жуковский за внесение изменений с заменой ПТС"
+    },
+    {
+      "name": "Пошлина ГИБДД Жуковский за выдачу гос. номеров",
+      "category_id": "group11",
+      "category": "Штрафы, пошлины",
+      "logo_url": "http://cluster.skysend.ru:6721/image.php?provider=9028",
+      "website": "http://гибдд.рф",
+      "source_text": "гибдд.рф\nПошлина ГИБДД Жуковский за выдачу гос. номеров"
+    },
+    {
+      "name": "Пошлина ГИБДД Жуковский за выдачу транзитных знаков на бумажной основе",
+      "category_id": "group11",
+      "category": "Штрафы, пошлины",
+      "logo_url": "http://cluster.skysend.ru:6721/image.php?provider=9007",
+      "website": "http://гибдд.рф",
+      "source_text": "гибдд.рф\nПошлина ГИБДД Жуковский за выдачу транзитных знаков на бумажной основе"
+    },
+    {
+      "name": "Пошлина ГИБДД Жуковский за замену выдачу бланка водительского удостоверения",
+      "category_id": "group11",
+      "category": "Штрафы, пошлины",
+      "logo_url": "http://cluster.skysend.ru:6721/image.php?provider=9009",
+      "website": "http://гибдд.рф",
+      "source_text": "гибдд.рф\nПошлина ГИБДД Жуковский за замену выдачу бланка водительского удостоверения"
+    },
+    {
+      "name": "Пошлина ГИБДД Жуковский за регистрацию авто без замены ПТС",
+      "category_id": "group11",
+      "category": "Штрафы, пошлины",
+      "logo_url": "http://cluster.skysend.ru:6721/image.php?provider=8981",
+      "website": "http://гибдд.рф",
+      "source_text": "гибдд.рф\nПошлина ГИБДД Жуковский за регистрацию авто без замены ПТС"
+    },
+    {
+      "name": "Пошлина ГИБДД Жуковский за регистрацию авто с заменой ПТС",
+      "category_id": "group11",
+      "category": "Штрафы, пошлины",
+      "logo_url": "http://cluster.skysend.ru:6721/image.php?provider=8987",
+      "website": "http://гибдд.рф",
+      "source_text": "гибдд.рф\nПошлина ГИБДД Жуковский за регистрацию авто с заменой ПТС"
+    },
+    {
+      "name": "Пошлина ГИБДД Жуковский за регистрацию мото без замены ПТС",
+      "category_id": "group11",
+      "category": "Штрафы, пошлины",
+      "logo_url": "http://cluster.skysend.ru:6721/image.php?provider=8993",
+      "website": "http://гибдд.рф",
+      "source_text": "гибдд.рф\nПошлина ГИБДД Жуковский за регистрацию мото без замены ПТС"
+    },
+    {
+      "name": "Пошлина ГИБДД Жуковский за регистрацию мото с заменой ПТС",
+      "category_id": "group11",
+      "category": "Штрафы, пошлины",
+      "logo_url": "http://cluster.skysend.ru:6721/image.php?provider=8994",
+      "website": "http://гибдд.рф",
+      "source_text": "гибдд.рф\nПошлина ГИБДД Жуковский за регистрацию мото с заменой ПТС"
+    },
+    {
+      "name": "Пошлина ГИБДД Жуковский за регистрацию прицепа без замены ПТС",
+      "category_id": "group11",
+      "category": "Штрафы, пошлины",
+      "logo_url": "http://cluster.skysend.ru:6721/image.php?provider=8999",
+      "website": "http://гибдд.рф",
+      "source_text": "гибдд.рф\nПошлина ГИБДД Жуковский за регистрацию прицепа без замены ПТС"
+    },
+    {
+      "name": "Пошлина ГИБДД Жуковский за регистрацию прицепа с заменой ПТС",
+      "category_id": "group11",
+      "category": "Штрафы, пошлины",
+      "logo_url": "http://cluster.skysend.ru:6721/image.php?provider=9000",
+      "website": "http://гибдд.рф",
+      "source_text": "гибдд.рф\nПошлина ГИБДД Жуковский за регистрацию прицепа с заменой ПТС"
+    },
+    {
+      "name": "Пошлина ГИБДД Жуковский за смену собственника авто без замены ПТС",
+      "category_id": "group11",
+      "category": "Штрафы, пошлины",
+      "logo_url": "http://cluster.skysend.ru:6721/image.php?provider=8989",
+      "website": "http://гибдд.рф",
+      "source_text": "гибдд.рф\nПошлина ГИБДД Жуковский за смену собственника авто без замены ПТС"
+    },
+    {
+      "name": "Пошлина ГИБДД Жуковский за смену собственника мото без замены ПТС",
+      "category_id": "group11",
+      "category": "Штрафы, пошлины",
+      "logo_url": "http://cluster.skysend.ru:6721/image.php?provider=8995",
+      "website": "http://гибдд.рф",
+      "source_text": "гибдд.рф\nПошлина ГИБДД Жуковский за смену собственника мото без замены ПТС"
+    },
+    {
+      "name": "Пошлина ГИБДД Жуковский за смену собственника мото с заменой ПТС",
+      "category_id": "group11",
+      "category": "Штрафы, пошлины",
+      "logo_url": "http://cluster.skysend.ru:6721/image.php?provider=8996",
+      "website": "http://гибдд.рф",
+      "source_text": "гибдд.рф\nПошлина ГИБДД Жуковский за смену собственника мото с заменой ПТС"
+    },
+    {
+      "name": "Пошлина ГИБДД Жуковский за смену собственника прицепа без замены ПТС",
+      "category_id": "group11",
+      "category": "Штрафы, пошлины",
+      "logo_url": "http://cluster.skysend.ru:6721/image.php?provider=9001",
+      "website": "http://гибдд.рф",
+      "source_text": "гибдд.рф\nПошлина ГИБДД Жуковский за смену собственника прицепа без замены ПТС"
+    },
+    {
+      "name": "Пошлина ГИБДД Жуковский за смену собственника прицепа с заменой ПТС",
+      "category_id": "group11",
+      "category": "Штрафы, пошлины",
+      "logo_url": "http://cluster.skysend.ru:6721/image.php?provider=9002",
+      "website": "http://гибдд.рф",
+      "source_text": "гибдд.рф\nПошлина ГИБДД Жуковский за смену собственника прицепа с заменой ПТС"
+    },
+    {
+      "name": "Пошлина ГИБДД Жуковский за смену собственника с заменой ПТС",
+      "category_id": "group11",
+      "category": "Штрафы, пошлины",
+      "logo_url": "http://cluster.skysend.ru:6721/image.php?provider=8990",
+      "website": "http://гибдд.рф",
+      "source_text": "гибдд.рф\nПошлина ГИБДД Жуковский за смену собственника с заменой ПТС"
+    },
+    {
+      "name": "Пошлина ГИБДД Жуковский за снятие авто за пределы РФ (бумажный транзит)",
+      "category_id": "group11",
+      "category": "Штрафы, пошлины",
+      "logo_url": "http://cluster.skysend.ru:6721/image.php?provider=8992",
+      "website": "http://гибдд.рф",
+      "source_text": "гибдд.рф\nПошлина ГИБДД Жуковский за снятие авто за пределы РФ (бумажный транзит)"
+    },
+    {
+      "name": "Пошлина ГИБДД Жуковский за снятие авто за пределы РФ (металлический транзит)",
+      "category_id": "group11",
+      "category": "Штрафы, пошлины",
+      "logo_url": "http://cluster.skysend.ru:6721/image.php?provider=8991",
+      "website": "http://гибдд.рф",
+      "source_text": "гибдд.рф\nПошлина ГИБДД Жуковский за снятие авто за пределы РФ (металлический транзит)"
+    },
+    {
+      "name": "Пошлина ГИБДД Жуковский за снятие за пределы РФ (бумажный транзит)",
+      "category_id": "group11",
+      "category": "Штрафы, пошлины",
+      "logo_url": "http://cluster.skysend.ru:6721/image.php?provider=8998",
+      "website": "http://гибдд.рф",
+      "source_text": "гибдд.рф\nПошлина ГИБДД Жуковский за снятие за пределы РФ (бумажный транзит)"
+    },
+    {
+      "name": "Пошлина ГИБДД Жуковский за снятие мото за пределы РФ (металлический транзит)",
+      "category_id": "group11",
+      "category": "Штрафы, пошлины",
+      "logo_url": "http://cluster.skysend.ru:6721/image.php?provider=8997",
+      "website": "http://гибдд.рф",
+      "source_text": "гибдд.рф\nПошлина ГИБДД Жуковский за снятие мото за пределы РФ (металлический транзит)"
+    },
+    {
+      "name": "Пошлина ГИБДД Жуковский за снятие прицепа за пределы РФ (бумажный транзит)",
+      "category_id": "group11",
+      "category": "Штрафы, пошлины",
+      "logo_url": "http://cluster.skysend.ru:6721/image.php?provider=9004",
+      "website": "http://гибдд.рф",
+      "source_text": "гибдд.рф\nПошлина ГИБДД Жуковский за снятие прицепа за пределы РФ (бумажный транзит)"
+    },
+    {
+      "name": "Пошлина ГИБДД Жуковский за снятие прицепа за пределы РФ (металлический транзит)",
+      "category_id": "group11",
+      "category": "Штрафы, пошлины",
+      "logo_url": "http://cluster.skysend.ru:6721/image.php?provider=9003",
+      "website": "http://гибдд.рф",
+      "source_text": "гибдд.рф\nПошлина ГИБДД Жуковский за снятие прицепа за пределы РФ (металлический транзит)"
+    },
+    {
+      "name": "Пошлина Гостехнадзор (ТПЛ)",
+      "category_id": "group11",
+      "category": "Штрафы, пошлины",
+      "logo_url": "http://cluster.skysend.ru:6721/image.php?provider=9177",
+      "website": "http://",
+      "source_text": "+78002002536\nПошлина Гостехнадзор (ТПЛ)"
+    },
+    {
+      "name": "Пошлина Гостехнадзор (ТПЛ) оплата по УИН",
+      "category_id": "group11",
+      "category": "Штрафы, пошлины",
+      "logo_url": "http://cluster.skysend.ru:6721/image.php?provider=9160",
+      "website": "http://",
+      "source_text": "+78002002536\nПошлина Гостехнадзор (ТПЛ) оплата по УИН"
+    },
+    {
+      "name": "Пошлина за вид на жительство (г. Ростов-на-Дону)",
+      "category_id": "group11",
+      "category": "Штрафы, пошлины",
+      "logo_url": "http://cluster.skysend.ru:6721/image.php?provider=9363",
+      "website": "http://",
+      "source_text": "Пошлина за вид на жительство (г. Ростов-на-Дону)"
+    },
+    {
+      "name": "Пошлина за выдачу водительского удостоверения",
+      "category_id": "group11",
+      "category": "Штрафы, пошлины",
+      "logo_url": "http://cluster.skysend.ru:6721/image.php?provider=5967",
+      "website": "http://",
+      "source_text": "78002002536\nПошлина за выдачу водительского удостоверения"
+    },
+    {
+      "name": "Пошлина за выдачу водительского удостоверения (через МФЦ по РСО-Алания)",
+      "category_id": "group11",
+      "category": "Штрафы, пошлины",
+      "logo_url": "http://cluster.skysend.ru:6721/image.php?provider=8598",
+      "website": "http://",
+      "source_text": "78002002536\nПошлина за выдачу водительского удостоверения (через МФЦ по РСО-Алания)"
+    },
+    {
+      "name": "Пошлина за выдачу ИГ или ЛБГ разрешения на временное проживание в РФ",
+      "category_id": "group11",
+      "category": "Штрафы, пошлины",
+      "logo_url": "http://cluster.skysend.ru:6721/image.php?provider=9317",
+      "website": "http://",
+      "source_text": "+78002002536\nПошлина за выдачу ИГ или ЛБГ разрешения на временное проживание в РФ"
+    },
+    {
+      "name": "Пошлина за выдачу или продление сроков действия вида на жительство ИГ или ЛБГ",
+      "category_id": "group11",
+      "category": "Штрафы, пошлины",
+      "logo_url": "http://cluster.skysend.ru:6721/image.php?provider=9318",
+      "website": "http://",
+      "source_text": "+78002002536\nПошлина за выдачу или продление сроков действия вида на жительство ИГ или ЛБГ"
+    },
+    {
+      "name": "Пошлина за выдачу международного водительского удостоверения",
+      "category_id": "group11",
+      "category": "Штрафы, пошлины",
+      "logo_url": "http://cluster.skysend.ru:6721/image.php?provider=8305",
+      "website": "http://",
+      "source_text": "78002002536\nПошлина за выдачу международного водительского удостоверения"
+    },
+    {
+      "name": "Пошлина за выдачу паспорта гражданина РФ взамен утраченного или пришедшего в негодность",
+      "category_id": "group11",
+      "category": "Штрафы, пошлины",
+      "logo_url": "http://cluster.skysend.ru:6721/image.php?provider=9319",
+      "website": "http://",
+      "source_text": "+78002002536\nПошлина за выдачу паспорта гражданина РФ взамен утраченного или пришедшего в негодность"
+    },
+    {
+      "name": "Пошлина за загранпаспорт нового поколения г. Ростов-на-Дону",
+      "category_id": "group11",
+      "category": "Штрафы, пошлины",
+      "logo_url": "http://cluster.skysend.ru:6721/image.php?provider=9316",
+      "website": "http://",
+      "source_text": "+78002002536\nПошлина за загранпаспорт нового поколения г. Ростов-на-Дону"
+    },
+    {
+      "name": "Пошлина за получение либо обмен паспорта гражданина РФ",
+      "category_id": "group11",
+      "category": "Штрафы, пошлины",
+      "logo_url": "http://cluster.skysend.ru:6721/image.php?provider=9320",
+      "website": "http://",
+      "source_text": "+78002002536\nПошлина за получение либо обмен паспорта гражданина РФ"
+    },
+    {
+      "name": "Пошлина за прием в гражданство РФ (г. Ростов-на-Дону)",
+      "category_id": "group11",
+      "category": "Штрафы, пошлины",
+      "logo_url": "http://cluster.skysend.ru:6721/image.php?provider=9286",
+      "website": "http://",
+      "source_text": "+78002002536\nПошлина за прием в гражданство РФ (г. Ростов-на-Дону)"
+    },
+    {
+      "name": "Пошлина за регистрацию ИГ или ЛБГ по месту жительства в РФ (г. Ростов-на-Дону)",
+      "category_id": "group11",
+      "category": "Штрафы, пошлины",
+      "logo_url": "http://cluster.skysend.ru:6721/image.php?provider=9290",
+      "website": "http://",
+      "source_text": "+78002002536\nПошлина за регистрацию ИГ или ЛБГ по месту жительства в РФ (г. Ростов-на-Дону)"
+    },
+    {
+      "name": "Пошлина приглашение на въезд в РФ (ФМС РСО-Алания)",
+      "category_id": "group11",
+      "category": "Штрафы, пошлины",
+      "logo_url": "http://cluster.skysend.ru:6721/image.php?provider=8760",
+      "website": "http://",
+      "source_text": "78002002536\nПошлина приглашение на въезд в РФ (ФМС РСО-Алания)"
+    },
+    {
+      "name": "Предоставление сведений из ЕГРЮЛ, ЕГРИП (по РСО-Алания)",
+      "category_id": "group11",
+      "category": "Штрафы, пошлины",
+      "logo_url": "http://cluster.skysend.ru:6721/image.php?provider=8602",
+      "website": "http://",
+      "source_text": "78002002536\nПредоставление сведений из ЕГРЮЛ, ЕГРИП (по РСО-Алания)"
+    },
+    {
+      "name": "Предоставление сведений из ЕГРЮЛ, ЕГРИП г. Краснодар",
+      "category_id": "group11",
+      "category": "Штрафы, пошлины",
+      "logo_url": "http://cluster.skysend.ru:6721/image.php?provider=8320",
+      "website": "http://",
+      "source_text": "78002002536\nПредоставление сведений из ЕГРЮЛ, ЕГРИП г. Краснодар"
+    },
+    {
+      "name": "Предоставление сведений из реестра дисквалифицированных лиц (по РСО-Алания)",
+      "category_id": "group11",
+      "category": "Штрафы, пошлины",
+      "logo_url": "http://cluster.skysend.ru:6721/image.php?provider=8601",
+      "website": "http://",
+      "source_text": "78002002536\nПредоставление сведений из реестра дисквалифицированных лиц (по РСО-Алания)"
+    },
+    {
+      "name": "Предоставление сведений из реестра дисквалифицированных лиц г. Краснодар",
+      "category_id": "group11",
+      "category": "Штрафы, пошлины",
+      "logo_url": "http://cluster.skysend.ru:6721/image.php?provider=8353",
+      "website": "http://",
+      "source_text": "78002002536\nПредоставление сведений из реестра дисквалифицированных лиц г. Краснодар"
+    },
+    {
+      "name": "Предоставление сведений системы градостроительной деятельности",
+      "category_id": "group11",
+      "category": "Штрафы, пошлины",
+      "logo_url": "http://cluster.skysend.ru:6721/image.php?provider=8317",
+      "website": "http://",
+      "source_text": "78002002536\nПредоставление сведений системы градостроительной деятельности"
+    },
+    {
+      "name": "Разрешение на временное проживание в РФ (ФМС РСО-Алания)",
+      "category_id": "group11",
+      "category": "Штрафы, пошлины",
+      "logo_url": "http://cluster.skysend.ru:6721/image.php?provider=8752",
+      "website": "http://",
+      "source_text": "78002002536\nРазрешение на временное проживание в РФ (ФМС РСО-Алания)"
+    },
+    {
+      "name": "Регистрация права Росреестр",
+      "category_id": "group11",
+      "category": "Штрафы, пошлины",
+      "logo_url": "http://cluster.skysend.ru:6721/image.php?provider=8315",
+      "website": "http://",
+      "source_text": "78002002536\nРегистрация права Росреестр"
+    },
+    {
+      "name": "Справки из архивов органов ЗАГС",
+      "category_id": "group11",
+      "category": "Штрафы, пошлины",
+      "logo_url": "http://cluster.skysend.ru:6721/image.php?provider=8323",
+      "website": "http://",
+      "source_text": "78002002536\nСправки из архивов органов ЗАГС"
+    },
+    {
+      "name": "Справки из архивов органов ЗАГС (РСО-Алания)",
+      "category_id": "group11",
+      "category": "Штрафы, пошлины",
+      "logo_url": "http://cluster.skysend.ru:6721/image.php?provider=8639",
+      "website": "http://",
+      "source_text": "78002002536\nСправки из архивов органов ЗАГС (РСО-Алания)"
+    },
+    {
+      "name": "Транспортный налог с физ.лиц (сумма платежа)",
+      "category_id": "group11",
+      "category": "Штрафы, пошлины",
+      "logo_url": "http://cluster.skysend.ru:6721/image.php?provider=7102",
+      "website": "http://www.nalog.ru/",
+      "source_text": "www.nalog.ru/\n+78002002536\nТранспортный налог с физ.лиц (сумма платежа)"
+    },
+    {
+      "name": "Транспортный налог. ИФНС по Пригородному району по РСО-Алания",
+      "category_id": "group11",
+      "category": "Штрафы, пошлины",
+      "logo_url": "http://cluster.skysend.ru:6721/image.php?provider=9510",
+      "website": "http://",
+      "source_text": "78002002536\nТранспортный налог. ИФНС по Пригородному району по РСО-Алания"
+    },
+    {
+      "name": "ФНС г. Ростов-на-Дону. Оплата НДФЛ для получения патента",
+      "category_id": "group11",
+      "category": "Штрафы, пошлины",
+      "logo_url": "http://cluster.skysend.ru:6721/image.php?provider=9706",
+      "website": "http://",
+      "source_text": "78002002536\nФНС г. Ростов-на-Дону. Оплата НДФЛ для получения патента"
+    },
+    {
+      "name": "ФНС по Пригородному району по РСО-Алания. Земельный налог",
+      "category_id": "group11",
+      "category": "Штрафы, пошлины",
+      "logo_url": "",
+      "website": "http://",
+      "source_text": "78002002536\nФНС по Пригородному району по РСО-Алания. Земельный налог"
+    },
+    {
+      "name": "Штраф УФМС (КБР) ст.19.16 КоАП РФ",
+      "category_id": "group11",
+      "category": "Штрафы, пошлины",
+      "logo_url": "http://cluster.skysend.ru:6721/image.php?provider=9722",
+      "website": "http://",
+      "source_text": "78002002536\nШтраф УФМС (КБР) ст.19.16 КоАП РФ"
+    },
+    {
+      "name": "Штрафы УФМС (г. Ростов-на-Дону)",
+      "category_id": "group11",
+      "category": "Штрафы, пошлины",
+      "logo_url": "http://cluster.skysend.ru:6721/image.php?provider=9654",
+      "website": "http://",
+      "source_text": "78002002536\nШтрафы УФМС (г. Ростов-на-Дону)"
+    },
+    {
+      "name": "Штрафы УФМС (КБР)",
+      "category_id": "group11",
+      "category": "Штрафы, пошлины",
+      "logo_url": "http://cluster.skysend.ru:6721/image.php?provider=9544",
+      "website": "http://",
+      "source_text": "78002002536\nШтрафы УФМС (КБР)"
+    },
+    {
+      "name": "Штрафы УФМС (РСО-Алания)",
+      "category_id": "group11",
+      "category": "Штрафы, пошлины",
+      "logo_url": "http://cluster.skysend.ru:6721/image.php?provider=8743",
+      "website": "http://",
+      "source_text": "78002002536\nШтрафы УФМС (РСО-Алания)"
+    },
+    {
+      "name": "AVON",
+      "category_id": "group12",
+      "category": "Другие услуги",
+      "logo_url": "http://cluster.skysend.ru:6721/image.php?provider=630",
+      "website": "http://www.avon.ru",
+      "source_text": "www.avon.ru\n88002002536\nAVON"
+    },
+    {
+      "name": "Faberlic",
+      "category_id": "group12",
+      "category": "Другие услуги",
+      "logo_url": "http://cluster.skysend.ru:6721/image.php?provider=644",
+      "website": "http://www.faberlic.ru",
+      "source_text": "www.faberlic.ru\nFaberlic"
+    },
+    {
+      "name": "Американо",
+      "category_id": "group12",
+      "category": "Другие услуги",
+      "logo_url": "http://cluster.skysend.ru:6721/image.php?provider=9142",
+      "website": "http://",
+      "source_text": "8 800 200-25-36\nАмерикано"
+    },
+    {
+      "name": "Армед-Юг ООО",
+      "category_id": "group12",
+      "category": "Другие услуги",
+      "logo_url": "http://cluster.skysend.ru:6721/image.php?provider=7961",
+      "website": "http://",
+      "source_text": "Армед-Юг ООО"
+    },
+    {
+      "name": "Горячий Шоколад",
+      "category_id": "group12",
+      "category": "Другие услуги",
+      "logo_url": "http://cluster.skysend.ru:6721/image.php?provider=9135",
+      "website": "http://",
+      "source_text": "8 800 200-25-36\nГорячий Шоколад"
+    },
+    {
+      "name": "Капучино",
+      "category_id": "group12",
+      "category": "Другие услуги",
+      "logo_url": "http://cluster.skysend.ru:6721/image.php?provider=9141",
+      "website": "http://",
+      "source_text": "8 800 200-25-36\nКапучино"
+    },
+    {
+      "name": "Кредитный брокер",
+      "category_id": "group12",
+      "category": "Другие услуги",
+      "logo_url": "http://cluster.skysend.ru:6721/image.php?provider=255",
+      "website": "http://",
+      "source_text": "+79885287272\nКредитный брокер"
+    },
+    {
+      "name": "Латте",
+      "category_id": "group12",
+      "category": "Другие услуги",
+      "logo_url": "http://cluster.skysend.ru:6721/image.php?provider=9140",
+      "website": "http://",
+      "source_text": "8 800 200-25-36\nЛатте"
+    },
+    {
+      "name": "Моккачино",
+      "category_id": "group12",
+      "category": "Другие услуги",
+      "logo_url": "http://cluster.skysend.ru:6721/image.php?provider=9139",
+      "website": "http://",
+      "source_text": "8 800 200-25-36\nМоккачино"
+    },
+    {
+      "name": "Партнер 10 (Симферополь)",
+      "category_id": "group12",
+      "category": "Другие услуги",
+      "logo_url": "http://cluster.skysend.ru:6721/image.php?provider=8008",
+      "website": "http://Отсутствует",
+      "source_text": "Отсутствует\n88002002536\nПартнер 10 (Симферополь)"
+    },
+    {
+      "name": "Партнер 11 (Севастополь)",
+      "category_id": "group12",
+      "category": "Другие услуги",
+      "logo_url": "http://cluster.skysend.ru:6721/image.php?provider=8007",
+      "website": "http://Отсутствует",
+      "source_text": "Отсутствует\n88002002536\nПартнер 11 (Севастополь)"
+    },
+    {
+      "name": "Такси \"22222\"  Ейск",
+      "category_id": "group12",
+      "category": "Другие услуги",
+      "logo_url": "http://cluster.skysend.ru:6721/image.php?provider=7629",
+      "website": "http://",
+      "source_text": "88002002536\nТакси \"22222\"  Ейск"
+    },
+    {
+      "name": "Такси \"22222\"  Крымск",
+      "category_id": "group12",
+      "category": "Другие услуги",
+      "logo_url": "http://cluster.skysend.ru:6721/image.php?provider=7503",
+      "website": "http://",
+      "source_text": "88002002536\nТакси \"22222\"  Крымск"
+    },
+    {
+      "name": "Такси \"24000\" Туапсе",
+      "category_id": "group12",
+      "category": "Другие услуги",
+      "logo_url": "http://cluster.skysend.ru:6721/image.php?provider=7626",
+      "website": "http://Отсутствует",
+      "source_text": "Отсутствует\n88002002536\nТакси \"24000\" Туапсе"
+    },
+    {
+      "name": "Такси \"2622226\" с. Лазаревское",
+      "category_id": "group12",
+      "category": "Другие услуги",
+      "logo_url": "http://cluster.skysend.ru:6721/image.php?provider=7623",
+      "website": "http://Отсутствует",
+      "source_text": "Отсутствует\n88002002536\nТакси \"2622226\" с. Лазаревское"
+    },
+    {
+      "name": "Такси \"44444\"  Славянск - на - Кубани",
+      "category_id": "group12",
+      "category": "Другие услуги",
+      "logo_url": "http://cluster.skysend.ru:6721/image.php?provider=7504",
+      "website": "http://",
+      "source_text": "Такси \"44444\"  Славянск - на - Кубани"
+    },
+    {
+      "name": "Такси \"55555\"  Тимашевск",
+      "category_id": "group12",
+      "category": "Другие услуги",
+      "logo_url": "http://cluster.skysend.ru:6721/image.php?provider=7630",
+      "website": "http://",
+      "source_text": "88002002536\nТакси \"55555\"  Тимашевск"
+    },
+    {
+      "name": "Такси \"55555\" Темрюк",
+      "category_id": "group12",
+      "category": "Другие услуги",
+      "logo_url": "http://cluster.skysend.ru:6721/image.php?provider=7505",
+      "website": "http://",
+      "source_text": "88002002536\nТакси \"55555\" Темрюк"
+    },
+    {
+      "name": "Такси \"55555\" Тихорецк",
+      "category_id": "group12",
+      "category": "Другие услуги",
+      "logo_url": "http://cluster.skysend.ru:6721/image.php?provider=7625",
+      "website": "http://Отсутствует",
+      "source_text": "Отсутствует\n88002002536\nТакси \"55555\" Тихорецк"
+    },
+    {
+      "name": "Такси \"70000\" Курганинск",
+      "category_id": "group12",
+      "category": "Другие услуги",
+      "logo_url": "http://cluster.skysend.ru:6721/image.php?provider=9008",
+      "website": "http://Отсутствует",
+      "source_text": "Отсутствует\n88002002536\nТакси \"70000\" Курганинск"
+    },
+    {
+      "name": "Такси 21111 г. Новошахтинск",
+      "category_id": "group12",
+      "category": "Другие услуги",
+      "logo_url": "http://cluster.skysend.ru:6721/image.php?provider=7508",
+      "website": "http://",
+      "source_text": "8 918 1366690\nТакси 21111 г. Новошахтинск"
+    },
+    {
+      "name": "Такси 240240 г. Шахты",
+      "category_id": "group12",
+      "category": "Другие услуги",
+      "logo_url": "http://cluster.skysend.ru:6721/image.php?provider=7687",
+      "website": "http://",
+      "source_text": "8 918 1366690\nТакси 240240 г. Шахты"
+    },
+    {
+      "name": "Такси 55555 г. Сальск",
+      "category_id": "group12",
+      "category": "Другие услуги",
+      "logo_url": "http://cluster.skysend.ru:6721/image.php?provider=7509",
+      "website": "http://",
+      "source_text": "8 918 1366690\nТакси 55555 г. Сальск"
+    },
+    {
+      "name": "Такси 72222 г. Каменск - Шахтинский",
+      "category_id": "group12",
+      "category": "Другие услуги",
+      "logo_url": "http://cluster.skysend.ru:6721/image.php?provider=7507",
+      "website": "http://",
+      "source_text": "8 918 1366690\nТакси 72222 г. Каменск - Шахтинский"
+    },
+    {
+      "name": "Такси 75866  г. Волгодонск",
+      "category_id": "group12",
+      "category": "Другие услуги",
+      "logo_url": "http://cluster.skysend.ru:6721/image.php?provider=7506",
+      "website": "http://",
+      "source_text": "8 918 1366690\nТакси 75866  г. Волгодонск"
+    },
+    {
+      "name": "Такси Пятерочка г. Гулькевичи",
+      "category_id": "group12",
+      "category": "Другие услуги",
+      "logo_url": "http://cluster.skysend.ru:6721/image.php?provider=674",
+      "website": "http://kropdiligans@mail.ru",
+      "source_text": "kropdiligans@mail.ru\n+79885235000\nТакси Пятерочка г. Гулькевичи"
+    },
+    {
+      "name": "Такси Сатурн Воронеж",
+      "category_id": "group12",
+      "category": "Другие услуги",
+      "logo_url": "http://cluster.skysend.ru:6721/image.php?provider=6869",
+      "website": "http://",
+      "source_text": "Такси Сатурн Воронеж"
+    },
+    {
+      "name": "Такси Союз Краснодар",
+      "category_id": "group12",
+      "category": "Другие услуги",
+      "logo_url": "http://cluster.skysend.ru:6721/image.php?provider=8455",
+      "website": "http://www.союз-такси.рф",
+      "source_text": "www.союз-такси.рф\n78002002536\nТакси Союз Краснодар"
+    },
+    {
+      "name": "Такси Союз Севастополь",
+      "category_id": "group12",
+      "category": "Другие услуги",
+      "logo_url": "http://cluster.skysend.ru:6721/image.php?provider=8476",
+      "website": "http://www.союз-такси.рф",
+      "source_text": "www.союз-такси.рф\n78002002536\nТакси Союз Севастополь"
+    },
+    {
+      "name": "Такси Союз Симферополь",
+      "category_id": "group12",
+      "category": "Другие услуги",
+      "logo_url": "http://cluster.skysend.ru:6721/image.php?provider=8474",
+      "website": "http://www.союз-такси.рф",
+      "source_text": "www.союз-такси.рф\n78002002536\nТакси Союз Симферополь"
+    },
+    {
+      "name": "Такси СРО МОАТП",
+      "category_id": "group12",
+      "category": "Другие услуги",
+      "logo_url": "http://cluster.skysend.ru:6721/image.php?provider=1400",
+      "website": "http://www.moatp.ru",
+      "source_text": "www.moatp.ru\n8-928-42-50-850\nТакси СРО МОАТП"
+    },
+    {
+      "name": "Центр бронирования туров ТБГ",
+      "category_id": "group12",
+      "category": "Другие услуги",
+      "logo_url": "http://cluster.skysend.ru:6721/image.php?provider=2268",
+      "website": "http://www.ecenter.travel/",
+      "source_text": "www.ecenter.travel/\n8-499-703-31-70\nЦентр бронирования туров ТБГ"
+    },
+    {
+      "name": "Чай",
+      "category_id": "group12",
+      "category": "Другие услуги",
+      "logo_url": "http://cluster.skysend.ru:6721/image.php?provider=9138",
+      "website": "http://",
+      "source_text": "8 800 200-25-36\nЧай"
+    },
+    {
+      "name": "Эспрессо",
+      "category_id": "group12",
+      "category": "Другие услуги",
+      "logo_url": "http://cluster.skysend.ru:6721/image.php?provider=9136",
+      "website": "http://",
+      "source_text": "8 800 200-25-36\nЭспрессо"
+    },
+    {
+      "name": "Юнипаркс двухкомпонентный ресурс",
+      "category_id": "group12",
+      "category": "Другие услуги",
+      "logo_url": "http://cluster.skysend.ru:6721/image.php?provider=2024",
+      "website": "http://нет",
+      "source_text": "нет\n89606124964\nЮнипаркс двухкомпонентный ресурс"
+    },
+    {
+      "name": "Юнипаркс дополнительные услуги",
+      "category_id": "group12",
+      "category": "Другие услуги",
+      "logo_url": "http://cluster.skysend.ru:6721/image.php?provider=2102",
+      "website": "http://",
+      "source_text": "89606124964\nЮнипаркс дополнительные услуги"
+    },
+    {
+      "name": "Юнипаркс комплексное обслуживание",
+      "category_id": "group12",
+      "category": "Другие услуги",
+      "logo_url": "http://cluster.skysend.ru:6721/image.php?provider=2100",
+      "website": "http://-",
+      "source_text": "-\n89606124964\nЮнипаркс комплексное обслуживание"
+    },
+    {
+      "name": "Юнипаркс платный проезд",
+      "category_id": "group12",
+      "category": "Другие услуги",
+      "logo_url": "http://cluster.skysend.ru:6721/image.php?provider=2101",
+      "website": "http://",
+      "source_text": "89606124964\nЮнипаркс платный проезд"
+    },
+    {
+      "name": "ВСК Страхование. Ростовский филиал",
+      "category_id": "group15",
+      "category": "Страхование",
+      "logo_url": "http://cluster.skysend.ru:6721/image.php?provider=9151",
+      "website": "http://",
+      "source_text": "+7(495)789-27-76\nВСК Страхование. Ростовский филиал"
+    },
+    {
+      "name": "Оплата страховой премии МСК \"АйАйСи\"",
+      "category_id": "group15",
+      "category": "Страхование",
+      "logo_url": "http://cluster.skysend.ru:6721/image.php?provider=8459",
+      "website": "http://",
+      "source_text": "Оплата страховой премии МСК \"АйАйСи\""
+    },
+    {
+      "name": "ЦСМТ \"ЗДОРОВЬЕ\". Добровольное медицинское страхование. Услуги сопровождения.",
+      "category_id": "group15",
+      "category": "Страхование",
+      "logo_url": "http://cluster.skysend.ru:6721/image.php?provider=8526",
+      "website": "http://",
+      "source_text": "+79913637310\nЦСМТ \"ЗДОРОВЬЕ\". Добровольное медицинское страхование. Услуги сопровождения."
+    },
+    {
+      "name": "ЦСМТ \"ЗДОРОВЬЕ\". Оказание услуг по договору",
+      "category_id": "group15",
+      "category": "Страхование",
+      "logo_url": "http://cluster.skysend.ru:6721/image.php?provider=9638",
+      "website": "http://",
+      "source_text": "+79913637310\nЦСМТ \"ЗДОРОВЬЕ\". Оказание услуг по договору"
+    },
+    {
+      "name": "ЦСМТ \"ЗДОРОВЬЕ\". Услуги иностр. гражданам (Граждане ЕАЭС, иностр. студенты)",
+      "category_id": "group15",
+      "category": "Страхование",
+      "logo_url": "",
+      "website": "http://",
+      "source_text": "+79913637310\nЦСМТ \"ЗДОРОВЬЕ\". Услуги иностр. гражданам (Граждане ЕАЭС, иностр. студенты)"
+    },
+    {
+      "name": "ЦСМТ \"ЗДОРОВЬЕ\". Услуги иностранным гражданам (РВП, ВНЖ, Гражданство)",
+      "category_id": "group15",
+      "category": "Страхование",
+      "logo_url": "",
+      "website": "http://",
+      "source_text": "+79913637310\nЦСМТ \"ЗДОРОВЬЕ\". Услуги иностранным гражданам (РВП, ВНЖ, Гражданство)"
+    },
+    {
+      "name": "Еммануил",
+      "category_id": "group16",
+      "category": "Добрые дела",
+      "logo_url": "http://cluster.skysend.ru:6721/image.php?provider=323",
+      "website": "http://www.emmanuil.tv",
+      "source_text": "www.emmanuil.tv\n+74999408678\nЕммануил"
+    }
+  ]
+}

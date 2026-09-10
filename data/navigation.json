@@ -1,0 +1,103 @@
+{
+  "primary": [
+    {
+      "label": "Партнёрам",
+      "href": "/partners/"
+    },
+    {
+      "label": "ПО",
+      "href": "/software/"
+    },
+    {
+      "label": "Оборудование",
+      "href": "/equipment/"
+    },
+    {
+      "label": "Провайдеры",
+      "href": "/providers/"
+    },
+    {
+      "label": "Поддержка",
+      "href": "/support/"
+    }
+  ],
+  "actions": [
+    {
+      "label": "Войти",
+      "href": "/connect/#existing"
+    },
+    {
+      "label": "Подключиться",
+      "href": "/connect/"
+    }
+  ],
+  "partners": [
+    {
+      "label": "Платёжным агентам",
+      "href": "/partners/agents/"
+    },
+    {
+      "label": "Провайдерам услуг",
+      "href": "/partners/providers/"
+    },
+    {
+      "label": "Поставщикам товаров",
+      "href": "/partners/suppliers/"
+    },
+    {
+      "label": "Торговым сетям",
+      "href": "/partners/retail/"
+    },
+    {
+      "label": "Представителям",
+      "href": "/partners/representatives/"
+    },
+    {
+      "label": "Шлюзовикам",
+      "href": "/partners/gateways/"
+    }
+  ],
+  "footer": [
+    {
+      "label": "ПО",
+      "href": "/software/"
+    },
+    {
+      "label": "Скачать",
+      "href": "/downloads/"
+    },
+    {
+      "label": "О системе",
+      "href": "/about/"
+    },
+    {
+      "label": "Контакты",
+      "href": "/contacts/"
+    },
+    {
+      "label": "Правила системы",
+      "href": "/system-rules/"
+    }
+  ],
+  "contact_defaults": {
+    "phone": "+7 (800) 555-25-36",
+    "phoneHref": "tel:+78005552536",
+    "officePhone": "+7 (861) 201-12-21",
+    "supportEmail": "support@inf-sys.ru",
+    "salesEmail": "sales@inf-sys.ru",
+    "telegram": "https://t.me/infsysgroup",
+    "addressText": "Адрес офиса уточняйте по телефону"
+  },
+  "external_accounts": {
+    "registration": {
+      "href": "https://cluster.skysend.ru:6716/#/",
+      "verification": "TLS verification failed during source audit"
+    },
+    "login": {
+      "href": "https://control.skysend.ru:6710",
+      "verification": "Source form action. DNS lookup failed during audit; GET login behavior not confirmed"
+    },
+    "source": "https://skysend.ru/exit.php?ml=1",
+    "fallback": "Use /connect/#existing with support channels; no password form or proxy for credentials in this site."
+  }
+}

@@ -1,0 +1,418 @@
+[
+  {
+    "label": "ПО ALLVEND",
+    "url": "https://skysend.ru/allvend.html"
+  },
+  {
+    "label": "Автопробег",
+    "url": "https://skysend.ru/autorally.html"
+  },
+  {
+    "label": "Партнерам",
+    "url": "https://skysend.ru/partners.html"
+  },
+  {
+    "label": "Платежным агентам",
+    "url": "https://skysend.ru/partners/agent/information.html"
+  },
+  {
+    "label": "Стабильная работа",
+    "url": "https://skysend.ru/partners/agent/stable-work.html"
+  },
+  {
+    "label": "Снижение расходов",
+    "url": "https://skysend.ru/partners/agent/cost-reduction.html"
+  },
+  {
+    "label": "Удаленное управление",
+    "url": "https://skysend.ru/partners/agent/remote-control.html"
+  },
+  {
+    "label": "Рост доходов",
+    "url": "https://skysend.ru/partners/agent/income.html"
+  },
+  {
+    "label": "Уникальные инновации",
+    "url": "https://skysend.ru/partners/agent/innovation.html"
+  },
+  {
+    "label": "Перевести терминалы",
+    "url": "https://skysend.ru/partners/agent/transfer-terminal.html"
+  },
+  {
+    "label": "Купить терминалы",
+    "url": "https://skysend.ru/partners/agent/buy-terminals.html"
+  },
+  {
+    "label": "Операторские точки",
+    "url": "https://skysend.ru/partners/agent/rma.html"
+  },
+  {
+    "label": "Установить сканер",
+    "url": "https://skysend.ru/partners/agent/fingerprint-scanner.html"
+  },
+  {
+    "label": "Провайдерам услуг",
+    "url": "https://skysend.ru/partners/providers/information.html"
+  },
+  {
+    "label": "Сеть приема платежей",
+    "url": "https://skysend.ru/partners/providers/payment-collection.html"
+  },
+  {
+    "label": "Бесплатное подключение",
+    "url": "https://skysend.ru/partners/providers/free-connection.html"
+  },
+  {
+    "label": "Защита данных",
+    "url": "https://skysend.ru/partners/providers/privacy-policy.html"
+  },
+  {
+    "label": "Высокая скорость",
+    "url": "https://skysend.ru/partners/providers/high-speed.html"
+  },
+  {
+    "label": "Автоматизация отчётности",
+    "url": "https://skysend.ru/partners/providers/automate-reporting.html"
+  },
+  {
+    "label": "Подключение к SkySend",
+    "url": "https://skysend.ru/partners/providers/connecting-to-skysend.html"
+  },
+  {
+    "label": "Подключение к Finger",
+    "url": "https://skysend.ru/partners/providers/connecting-to-finger.html"
+  },
+  {
+    "label": "Ключевое партнёрство",
+    "url": "https://skysend.ru/partners/providers/partnership.html"
+  },
+  {
+    "label": "Размещение терминалов",
+    "url": "https://skysend.ru/partners/providers/placing-terminals.html"
+  },
+  {
+    "label": "Поставщикам товаров",
+    "url": "https://skysend.ru/partners/suppliers/information.html"
+  },
+  {
+    "label": "Бесплатное подключение",
+    "url": "https://skysend.ru/partners/suppliers/freeconnection.html"
+  },
+  {
+    "label": "Сеть продаж товаров",
+    "url": "https://skysend.ru/partners/suppliers/sales-network-products.html"
+  },
+  {
+    "label": "Простота взаимодействия",
+    "url": "https://skysend.ru/partners/suppliers/ease-of-interaction.html"
+  },
+  {
+    "label": "Увеличение продаж",
+    "url": "https://skysend.ru/partners/suppliers/increase-sales.html"
+  },
+  {
+    "label": "Справочник товаров",
+    "url": "https://skysend.ru/partners/suppliers/directory-of-products.html"
+  },
+  {
+    "label": "Подключение к SkySend",
+    "url": "https://skysend.ru/partners/suppliers/connectingto-skysend.html"
+  },
+  {
+    "label": "Подключение к Finger",
+    "url": "https://skysend.ru/partners/suppliers/connectingto-finger.html"
+  },
+  {
+    "label": "Работа в кабинете",
+    "url": "https://skysend.ru/partners/suppliers/work-in-the-office.html"
+  },
+  {
+    "label": "Интеграция по XML",
+    "url": "https://skysend.ru/partners/suppliers/integration-in-xml.html"
+  },
+  {
+    "label": "Представителям",
+    "url": "https://skysend.ru/partners/representatives/predstavitelyam.html"
+  },
+  {
+    "label": "Статьи доходов",
+    "url": "https://skysend.ru/partners/representatives/items-of-income.html"
+  },
+  {
+    "label": "Дилерские скидки",
+    "url": "https://skysend.ru/partners/representatives/dealer-discounts.html"
+  },
+  {
+    "label": "Публикация информации",
+    "url": "https://skysend.ru/partners/representatives/publication-of-information.html"
+  },
+  {
+    "label": "Эксклюзивность в регионе",
+    "url": "https://skysend.ru/partners/representatives/exclusivity-in-the-region.html"
+  },
+  {
+    "label": "Подключение Участников",
+    "url": "https://skysend.ru/partners/representatives/connecting-players.html"
+  },
+  {
+    "label": "Касса в регионе",
+    "url": "https://skysend.ru/partners/representatives/cashier-in-the-region.html"
+  },
+  {
+    "label": "Запуск касс FPS",
+    "url": "https://skysend.ru/partners/representatives/running-banks-fps.html"
+  },
+  {
+    "label": "Освоение направлений",
+    "url": "https://skysend.ru/partners/representatives/mastering-directions.html"
+  },
+  {
+    "label": "Шлюзовикам",
+    "url": "https://skysend.ru/partners/gateway/information.html"
+  },
+  {
+    "label": "Высокое вознаграждение",
+    "url": "https://skysend.ru/partners/gateway/high-reward.html"
+  },
+  {
+    "label": "Круглосуточная поддержка",
+    "url": "https://skysend.ru/partners/gateway/round-the-clock-support.html"
+  },
+  {
+    "label": "Xml-протокол",
+    "url": "https://skysend.ru/partners/gateway/xml.html"
+  },
+  {
+    "label": "Высокая скорость",
+    "url": "https://skysend.ru/partners/gateway/highspeed.html"
+  },
+  {
+    "label": "Быстрое начало работы",
+    "url": "https://skysend.ru/partners/gateway/quick-start.html"
+  },
+  {
+    "label": "Подключить провайдеров",
+    "url": "https://skysend.ru/partners/gateway/connect-providers.html"
+  },
+  {
+    "label": "Купить терминалы",
+    "url": "https://skysend.ru/partners/gateway/buy-terminal.html"
+  },
+  {
+    "label": "Операторские точки",
+    "url": "https://skysend.ru/partners/gateway/operator-point.html"
+  },
+  {
+    "label": "Перевести терминалы",
+    "url": "https://skysend.ru/partners/gateway/translate-terminal.html"
+  },
+  {
+    "label": "Рекламодателям",
+    "url": "https://skysend.ru/partners/advertisers/information.html"
+  },
+  {
+    "label": "Видеореклама",
+    "url": "https://skysend.ru/partners/advertisers/videoadvertising.html"
+  },
+  {
+    "label": "Партнерство",
+    "url": "https://skysend.ru/partners/advertisers/partnerships.html"
+  },
+  {
+    "label": "Таргетинг",
+    "url": "https://skysend.ru/partners/advertisers/targeting.html"
+  },
+  {
+    "label": "Эффективность",
+    "url": "https://skysend.ru/partners/advertisers/efficiency.html"
+  },
+  {
+    "label": "Стоимость рекламы",
+    "url": "https://skysend.ru/partners/advertisers/price.html"
+  },
+  {
+    "label": "Статистика показов",
+    "url": "https://skysend.ru/partners/advertisers/statistics-shows.html"
+  },
+  {
+    "label": "Реклама на чеках",
+    "url": "https://skysend.ru/partners/advertisers/advertising-on-the-check.html"
+  },
+  {
+    "label": "Онлайн смс-рассылка",
+    "url": "https://skysend.ru/partners/advertisers/online-sms-delivery.html"
+  },
+  {
+    "label": "Купить",
+    "url": "https://skysend.ru/buy.html"
+  },
+  {
+    "label": "Платежные терминалы",
+    "url": "https://skysend.ru/buy/payment-terminals.html"
+  },
+  {
+    "label": "Комплектующие терминалов",
+    "url": "https://skysend.ru/buy/accessories.html"
+  },
+  {
+    "label": "Компьютерные комплектующие",
+    "url": "https://skysend.ru/buy/accessories/hardware.html"
+  },
+  {
+    "label": "Купюроприемники",
+    "url": "https://skysend.ru/buy/accessories/acceptor.html"
+  },
+  {
+    "label": "Модемы",
+    "url": "https://skysend.ru/buy/accessories/modems.html"
+  },
+  {
+    "label": "Принтеры",
+    "url": "https://skysend.ru/buy/accessories/printers.html"
+  },
+  {
+    "label": "Прочие комплектующие",
+    "url": "https://skysend.ru/buy/accessories/other-parts.html"
+  },
+  {
+    "label": "Сенсорные Экраны И Мониторы",
+    "url": "https://skysend.ru/buy/accessories/touch-screens-and-monitors.html"
+  },
+  {
+    "label": "Фискальные регистраторы",
+    "url": "https://skysend.ru/buy/accessories/fiscal-registrars.html"
+  },
+  {
+    "label": "Flash накопители",
+    "url": "https://skysend.ru/buy/flash-drives.html"
+  },
+  {
+    "label": "Сканеры отпечатка",
+    "url": "https://skysend.ru/buy/fingerprint.html"
+  },
+  {
+    "label": "Фискальные серверы",
+    "url": "https://skysend.ru/buy/fiscal-server.html"
+  },
+  {
+    "label": "Преимущества",
+    "url": "https://skysend.ru/benefits.html"
+  },
+  {
+    "label": "Высокое вознаграждение",
+    "url": "https://skysend.ru/benefits/highest-award.html"
+  },
+  {
+    "label": "Низкие расходы",
+    "url": "https://skysend.ru/benefits/lower-costs.html"
+  },
+  {
+    "label": "Стабильная работа",
+    "url": "https://skysend.ru/benefits/stable-job.html"
+  },
+  {
+    "label": "Уникальные инновации",
+    "url": "https://skysend.ru/benefits/exclusive-innovations.html"
+  },
+  {
+    "label": "Высокая скорость",
+    "url": "https://skysend.ru/benefits/the-high-speed.html"
+  },
+  {
+    "label": "Защита данных",
+    "url": "https://skysend.ru/benefits/protection-of-data.html"
+  },
+  {
+    "label": "Круглосуточная поддержка",
+    "url": "https://skysend.ru/benefits/online-support.html"
+  },
+  {
+    "label": "Программы",
+    "url": "https://skysend.ru/program.html"
+  },
+  {
+    "label": "Терминальное ПО",
+    "url": "https://skysend.ru/program/terminal-software.html"
+  },
+  {
+    "label": "РМА Windows / linux",
+    "url": "https://skysend.ru/program/rma-pc.html"
+  },
+  {
+    "label": "РМА Android",
+    "url": "https://skysend.ru/program/rma-android.html"
+  },
+  {
+    "label": "XML шлюз",
+    "url": "https://skysend.ru/program/xml-gateway.html"
+  },
+  {
+    "label": "ПО для POS-терминала",
+    "url": "https://skysend.ru/program/software-for-pos-terminal.html"
+  },
+  {
+    "label": "Приложение FINGER",
+    "url": "https://skysend.ru/program/finger.html"
+  },
+  {
+    "label": "Скачать",
+    "url": "https://skysend.ru/download.html"
+  },
+  {
+    "label": "О системе",
+    "url": "https://skysend.ru/about.html"
+  },
+  {
+    "label": "Наши цели",
+    "url": "https://skysend.ru/about/our-goals.html"
+  },
+  {
+    "label": "История",
+    "url": "https://skysend.ru/about/history.html"
+  },
+  {
+    "label": "Контакты",
+    "url": "https://skysend.ru/about/geografiy.html"
+  },
+  {
+    "label": "Провайдеры",
+    "url": "https://skysend.ru/about/providers.html"
+  },
+  {
+    "label": "Новости",
+    "url": "https://skysend.ru/about/news.html"
+  },
+  {
+    "label": "Поддержка",
+    "url": "https://skysend.ru/about/feedback.html"
+  },
+  {
+    "label": "Руководство",
+    "url": "https://skysend.ru/about/leaders.html"
+  },
+  {
+    "label": "Беляева Ольга Константиновна",
+    "url": "https://skysend.ru/about/leaders/belyaeva-olga-konstantinovna.html"
+  },
+  {
+    "label": "Лифанова Наталья Владимировна",
+    "url": "https://skysend.ru/about/leaders/lifanova-natalya-vladimirovna.html"
+  },
+  {
+    "label": "Степина Анна Анатольевна",
+    "url": "https://skysend.ru/about/leaders/stepina-anna-anatolevna.html"
+  },
+  {
+    "label": "Стародуб Игорь Владимирович",
+    "url": "https://skysend.ru/about/leaders/starodub-igor-vladimirovich.html"
+  },
+  {
+    "label": "Игнатьев Алексей Николаевич",
+    "url": "https://skysend.ru/about/leaders/ignatev-alexey-nikolaevich.html"
+  },
+  {
+    "label": "Вакансии",
+    "url": "https://skysend.ru/about/jobs.html"
+  }
+]

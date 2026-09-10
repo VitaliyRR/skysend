@@ -1,0 +1,36 @@
+[
+  {
+    "url": "https://skysend.ru/providers.php",
+    "status": 200,
+    "final_url": "https://skysend.ru/providers.php",
+    "bytes": 219470,
+    "content_type": "text/html"
+  },
+  {
+    "url": "https://skysend.ru/map.php",
+    "status": 200,
+    "final_url": "https://skysend.ru/map.php",
+    "bytes": 1324,
+    "content_type": "text/html"
+  },
+  {
+    "url": "https://cluster.skysend.ru:6716/agent.php",
+    "error": "HTTPSConnectionPool(host='cluster.skysend.ru', port=6716): Max retries exceeded with url: /agent.php (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1077)')))"
+  },
+  {
+    "url": "https://skysend.ru/exit.php?ml=1",
+    "status": 200,
+    "final_url": "https://skysend.ru/exit.php?ml=1",
+    "bytes": 3241,
+    "content_type": "text/html",
+    "html_path": "evidence/skysend/skysend.ru__exit.php_ml=1.html"
+  },
+  {
+    "url": "https://cluster.skysend.ru:6716/#/",
+    "error": "HTTPSConnectionPool(host='cluster.skysend.ru', port=6716): Max retries exceeded with url: / (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1077)')))"
+  },
+  {
+    "url": "https://control.skysend.ru:6710",
+    "error": "HTTPSConnectionPool(host='control.skysend.ru', port=6710): Max retries exceeded with url: / (Caused by NameResolutionError(\"HTTPSConnection(host='control.skysend.ru', port=6710): Failed to resolve 'control.skysend.ru' ([Errno 11001] getaddrinfo failed)\"))"
+  }
+]
