@@ -470,17 +470,6 @@ address {
 .home-provider__head {
   position: relative;
   max-width: 46rem;
-  padding-left: var(--ss-space-5);
-}
-
-.home-provider__head::before {
-  position: absolute;
-  top: 0.2rem;
-  bottom: 0.15rem;
-  left: 0;
-  width: 0.1875rem;
-  background: var(--ss-color-link);
-  content: "";
 }
 
 .home-provider__head h2 {
@@ -494,12 +483,6 @@ address {
   color: var(--ss-color-muted);
   font-size: var(--ss-font-body);
   line-height: var(--ss-line-body);
-}
-
-.home-provider__actions {
-  display: flex;
-  justify-content: flex-end;
-  margin-top: var(--ss-space-6);
 }
 
 .home-hero__visual {
@@ -1096,68 +1079,256 @@ address {
 
 .partner-grid {
   display: grid;
-  gap: var(--ss-space-4);
+  gap: 1px;
+  border: 1px solid var(--ss-color-line);
+  background: var(--ss-color-line);
 }
 
 .partner-tile {
   position: relative;
   display: grid;
-  min-height: 17rem;
-  grid-template-rows: 1fr auto;
+  min-height: 15.5rem;
+  grid-template-rows: auto 1fr;
   overflow: hidden;
-  border: 1px solid var(--ss-color-line);
-  border-radius: var(--ss-radius-panel);
-  background: #fff;
+  border: 0;
+  border-radius: 0;
+  background: var(--partner-copy-bg, #fff);
   color: inherit;
+  isolation: isolate;
   text-decoration: none;
+  transition: box-shadow var(--ss-duration-feedback) var(--ss-ease-feedback);
+  --partner-copy-bg: #fff;
+  --partner-graphic-bg: #f3f5f6;
+  --partner-hover: var(--ss-color-link);
+  --pi-panel: #fff;
+  --pi-ink: #111315;
+  --pi-muted: #7d858d;
+  --pi-line: #c8ced3;
+  --pi-accent: #0072bc;
+  --pi-core: #111315;
+  --pi-core-ink: #fff;
 }
 
-.partner-tile__media,
-.partner-tile__logos {
+.partner-tile--agents,
+.partner-tile--gateways {
+  color: #fff;
+  --partner-copy-bg: #111315;
+  --partner-graphic-bg: #111315;
+  --partner-hover: #69c4ff;
+  --pi-panel: #1d2227;
+  --pi-ink: #f7f8f9;
+  --pi-muted: #99a2aa;
+  --pi-line: #46515a;
+  --pi-accent: #38aef5;
+  --pi-core: #f7f8f9;
+  --pi-core-ink: #111315;
+}
+
+.partner-tile--providers {
+  --partner-graphic-bg: #edf4f8;
+}
+
+.partner-tile--suppliers {
+  --partner-graphic-bg: #f5f5f1;
+}
+
+.partner-tile--retail {
+  --partner-graphic-bg: #eef1f3;
+}
+
+.partner-tile--representatives {
+  --partner-graphic-bg: #f2f3f5;
+}
+
+.partner-tile__graphic {
   display: grid;
-  min-height: 11rem;
+  min-height: 10.25rem;
   place-items: center;
   overflow: hidden;
-  padding: var(--ss-space-5);
-  background: var(--ss-color-surface);
+  padding: var(--ss-space-3) var(--ss-space-4) var(--ss-space-5);
+  background: var(--partner-graphic-bg);
 }
 
-.partner-tile__image {
+.partner-infographic {
   width: 100%;
-  height: 9rem;
-  object-fit: contain;
+  max-width: 24rem;
+  height: auto;
+  overflow: visible;
   transition: transform var(--ss-duration-feedback) var(--ss-ease-feedback);
 }
 
-.partner-tile__logos {
-  grid-template-columns: repeat(2, minmax(0, 1fr));
-  gap: var(--ss-space-2);
+.partner-infographic .pi-line,
+.partner-infographic .pi-core-line,
+.partner-infographic .pi-check,
+.partner-infographic .pi-grid {
+  fill: none;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  vector-effect: non-scaling-stroke;
 }
 
-.partner-tile__logo {
-  width: 100%;
-  height: 4rem;
-  object-fit: contain;
+.partner-infographic .pi-line {
+  stroke: var(--pi-line);
+  stroke-width: 1.5;
+}
+
+.partner-infographic .pi-line--strong {
+  stroke: var(--pi-ink);
+  stroke-width: 2;
+}
+
+.partner-infographic .pi-flow {
+  stroke: var(--pi-accent);
+  stroke-dasharray: 6 6;
+  stroke-width: 2;
+  transition: stroke-dashoffset var(--ss-duration-feedback) var(--ss-ease-feedback);
+}
+
+.partner-infographic .pi-panel {
+  fill: var(--pi-panel);
+  stroke: var(--pi-line);
+  stroke-width: 1.5;
+  vector-effect: non-scaling-stroke;
+}
+
+.partner-infographic .pi-core,
+.partner-infographic .pi-core-panel {
+  fill: var(--pi-core);
+  stroke: var(--pi-core);
+  stroke-width: 1.5;
+  vector-effect: non-scaling-stroke;
+}
+
+.partner-infographic .pi-core-line {
+  stroke: var(--pi-core-ink);
+  stroke-width: 2;
+}
+
+.partner-infographic .pi-ink,
+.partner-infographic .pi-node {
+  fill: var(--pi-ink);
+}
+
+.partner-infographic .pi-muted,
+.partner-infographic .pi-muted-fill {
+  fill: var(--pi-muted);
+}
+
+.partner-infographic .pi-accent {
+  fill: var(--pi-accent);
+}
+
+.partner-infographic .pi-token,
+.partner-infographic .pi-added {
+  fill: var(--pi-panel);
+  stroke: var(--pi-accent);
+  stroke-width: 1.5;
+  vector-effect: non-scaling-stroke;
+}
+
+.partner-infographic .pi-added {
+  stroke: var(--pi-ink);
+  stroke-dasharray: 3 3;
+}
+
+.partner-infographic .pi-check {
+  stroke: var(--pi-core-ink);
+  stroke-width: 3;
+}
+
+.partner-infographic .pi-pin,
+.partner-infographic .pi-code {
+  fill: var(--pi-core-ink);
+}
+
+.partner-infographic .pi-arrow {
+  fill: none;
+  stroke: var(--pi-accent);
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  stroke-width: 2;
+  vector-effect: non-scaling-stroke;
+}
+
+.partner-infographic .pi-grid {
+  stroke: var(--pi-line);
+  stroke-width: 1;
+  opacity: 0.55;
+}
+
+.partner-infographic text {
+  font-family: var(--ss-font-sans);
+  text-anchor: middle;
+}
+
+.partner-infographic .pi-label {
+  fill: var(--pi-muted);
+  font-size: 9px;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+}
+
+.partner-infographic .pi-label--ink {
+  fill: var(--pi-ink);
+}
+
+.partner-infographic .pi-label--inverse {
+  fill: var(--pi-core-ink);
+}
+
+.partner-infographic .pi-currency {
+  fill: var(--pi-ink);
+  font-size: 12px;
+  font-weight: 700;
+}
+
+.partner-infographic .pi-code {
+  font-size: 18px;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+}
+
+.partner-infographic .pi-action {
+  transform-box: fill-box;
+  transform-origin: center;
+  transition: transform var(--ss-duration-feedback) var(--ss-ease-feedback);
 }
 
 .partner-tile__copy {
   display: grid;
-  min-height: 6rem;
+  min-height: 5.25rem;
   grid-template-columns: minmax(0, 1fr) auto;
-  align-items: end;
+  align-items: start;
   gap: var(--ss-space-4);
   padding: var(--ss-space-5);
+  background: var(--partner-copy-bg);
 }
 
 .partner-tile strong {
-  max-width: 16ch;
-  font-size: var(--ss-font-h3);
+  max-width: 18ch;
+  font-size: 1.25rem;
   line-height: var(--ss-line-h3);
 }
 
 .partner-tile__arrow {
-  color: var(--ss-color-link);
+  color: var(--pi-accent);
   font-weight: 700;
+  transition: color var(--ss-duration-feedback) var(--ss-ease-feedback),
+    transform var(--ss-duration-feedback) var(--ss-ease-feedback);
+}
+
+.partner-tile:focus-visible {
+  z-index: 1;
+  outline: 3px solid var(--ss-color-link);
+  outline-offset: -3px;
+}
+
+.partner-tile:focus-visible strong {
+  color: var(--partner-hover);
+}
+
+.partner-tile:focus-visible .partner-tile__arrow {
+  transform: translate(0.1875rem, -0.1875rem);
 }
 
 .software-grid {
@@ -1913,18 +2084,40 @@ address {
   .nav-dropdown summary:hover,
   .header-login:hover,
   .route-row:hover strong,
-  .category-row:hover strong,
-  .partner-tile:hover strong {
+  .category-row:hover strong {
     color: var(--ss-color-link);
+  }
+
+  .partner-tile:hover {
+    box-shadow: inset 0 0 0 1px #aeb4ba;
+  }
+
+  .partner-tile:hover strong {
+    color: var(--partner-hover);
   }
 
   .media-open:hover img {
     transform: scale(1.035);
   }
 
-  .partner-tile:hover .partner-tile__image,
   .product-duo__item:hover .product-duo__image {
     transform: scale(1.025);
+  }
+
+  .partner-tile:hover .partner-infographic {
+    transform: translateY(-0.1875rem);
+  }
+
+  .partner-tile:hover .pi-flow {
+    stroke-dashoffset: -12;
+  }
+
+  .partner-tile:hover .pi-action {
+    transform: translateX(0.25rem);
+  }
+
+  .partner-tile:hover .pi-action--reverse {
+    transform: translateX(-0.25rem);
   }
 
   .software-card:hover .software-card__arrow,
@@ -1932,6 +2125,10 @@ address {
   .category-row:hover > span:last-child,
   .partner-tile:hover .partner-tile__arrow {
     color: var(--ss-color-link-hover);
+  }
+
+  .partner-tile:hover .partner-tile__arrow {
+    transform: translate(0.1875rem, -0.1875rem);
   }
 }
 
@@ -2070,6 +2267,19 @@ address {
 
   .partner-grid {
     grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .partner-tile {
+    min-height: 18.5rem;
+  }
+
+  .partner-tile__copy {
+    min-height: 6rem;
+  }
+
+  .partner-tile__graphic {
+    min-height: 12.5rem;
+    padding: var(--ss-space-3) var(--ss-space-5) var(--ss-space-6);
   }
 
   .product-duo {
@@ -2341,10 +2551,6 @@ address {
 
   .process-list {
     grid-template-columns: repeat(3, 1fr);
-  }
-
-  .partner-grid {
-    grid-template-columns: repeat(3, minmax(0, 1fr));
   }
 
   .software-grid {

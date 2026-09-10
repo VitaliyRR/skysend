@@ -442,25 +442,102 @@ def contact_panel(section, page_path: str) -> str:
     )
 
 
+def partner_infographic(kind: str) -> str:
+    diagrams = {
+        "agents": (
+            '<path class="pi-line" d="M82 38h78M82 95h78M82 152h78M160 38v114M160 95h88"/>'
+            '<path class="pi-line pi-flow" d="M98 38h62M98 95h150M98 152h62"/>'
+            '<g class="pi-device"><rect class="pi-panel" x="22" y="18" width="60" height="40" rx="3"/>'
+            '<rect class="pi-ink" x="30" y="26" width="44" height="24" rx="1"/><path class="pi-line" d="M46 64h12m-6-6v6"/></g>'
+            '<g class="pi-device"><rect class="pi-panel" x="32" y="68" width="40" height="54" rx="4"/>'
+            '<rect class="pi-ink" x="39" y="76" width="26" height="34" rx="1"/><circle class="pi-muted" cx="52" cy="116" r="2"/></g>'
+            '<g class="pi-device"><rect class="pi-panel" x="22" y="132" width="60" height="40" rx="3"/>'
+            '<path class="pi-line" d="M32 144h40M32 151h25M32 158h33"/></g>'
+            '<g><circle class="pi-token" cx="112" cy="38" r="13"/><text class="pi-currency" x="112" y="42">₽</text>'
+            '<circle class="pi-token" cx="112" cy="95" r="13"/><text class="pi-currency" x="112" y="99">₽</text>'
+            '<circle class="pi-token" cx="112" cy="152" r="13"/><text class="pi-currency" x="112" y="156">₽</text></g>'
+            '<g class="pi-action"><circle class="pi-core" cx="248" cy="95" r="31"/>'
+            '<path class="pi-check" d="m234 95 9 9 19-21"/></g>'
+            '<g><rect class="pi-panel" x="294" y="57" width="44" height="76" rx="3"/>'
+            '<path class="pi-line" d="M303 72h26M303 82h20M303 104h26M303 114h17"/>'
+            '<text class="pi-label" x="316" y="97">ЧЕК</text></g>'
+        ),
+        "providers": (
+            '<path class="pi-line" d="M48 42h78M48 95h78M48 148h78M212 42h38M212 95h38M212 148h38"/>'
+            '<path class="pi-line pi-flow" d="M48 42h54l24 53h86l38-53M48 95h202M48 148h54l24-53m86 0 38 53"/>'
+            '<g><circle class="pi-token" cx="35" cy="42" r="14"/><text class="pi-currency" x="35" y="46">₽</text>'
+            '<circle class="pi-token" cx="35" cy="95" r="14"/><text class="pi-currency" x="35" y="99">₽</text>'
+            '<circle class="pi-token" cx="35" cy="148" r="14"/><text class="pi-currency" x="35" y="152">₽</text></g>'
+            '<g class="pi-action"><rect class="pi-core-panel" x="126" y="54" width="86" height="82" rx="5"/>'
+            '<circle class="pi-accent" cx="169" cy="79" r="9"/><path class="pi-core-line" d="M148 104h42M154 115h30"/>'
+            '<text class="pi-label pi-label--inverse" x="169" y="130">SKYSEND</text></g>'
+            '<g><rect class="pi-panel" x="250" y="22" width="88" height="40" rx="3"/><text class="pi-label pi-label--ink" x="294" y="46">СВЯЗЬ</text>'
+            '<rect class="pi-panel" x="250" y="75" width="88" height="40" rx="3"/><text class="pi-label pi-label--ink" x="294" y="99">ТВ</text>'
+            '<rect class="pi-panel" x="250" y="128" width="88" height="40" rx="3"/><text class="pi-label pi-label--ink" x="294" y="152">ЖКХ</text></g>'
+        ),
+        "suppliers": (
+            '<path class="pi-line pi-flow" d="M48 88h264"/><path class="pi-arrow" d="m92 83 10 5-10 5m76-10 10 5-10 5m76-10 10 5-10 5"/>'
+            '<g><rect class="pi-panel" x="18" y="45" width="62" height="78" rx="4"/><path class="pi-line" d="M31 62h36M31 72h28M31 82h33"/>'
+            '<text class="pi-label pi-label--ink" x="49" y="145">КАТАЛОГ</text></g>'
+            '<g><rect class="pi-panel" x="104" y="45" width="62" height="78" rx="4"/>'
+            '<rect class="pi-muted-fill" x="119" y="61" width="13" height="13"/><rect class="pi-muted-fill" x="139" y="61" width="13" height="13"/>'
+            '<rect class="pi-muted-fill" x="119" y="81" width="13" height="13"/><rect class="pi-accent" x="139" y="81" width="13" height="13"/>'
+            '<text class="pi-label pi-label--ink" x="135" y="145">ТОВАРЫ</text></g>'
+            '<g><rect class="pi-panel" x="190" y="45" width="62" height="78" rx="4"/><path class="pi-line pi-line--strong" d="m206 72 15-9 15 9v24l-15 9-15-9zM206 72l15 9 15-9m-15 9v24"/>'
+            '<text class="pi-label pi-label--ink" x="221" y="145">ЗАКАЗ</text></g>'
+            '<g class="pi-action"><rect class="pi-core-panel" x="276" y="45" width="62" height="78" rx="4"/>'
+            '<circle class="pi-accent" cx="307" cy="82" r="18"/><path class="pi-check" d="m298 82 6 6 13-15"/>'
+            '<text class="pi-label pi-label--ink" x="307" y="145">ОПЛАТА</text></g>'
+        ),
+        "retail": (
+            '<path class="pi-line pi-flow" d="M60 78v24h120m0 0V78m0 24h120V78M180 102v22"/>'
+            '<g><path class="pi-panel" d="M22 42h76v36H22z"/><path class="pi-ink" d="M18 42h84L92 26H28z"/><path class="pi-accent" d="M28 49h12v12H28zm24 0h12v12H52zm24 0h12v12H76z"/></g>'
+            '<g><path class="pi-panel" d="M142 42h76v36h-76z"/><path class="pi-ink" d="M138 42h84l-10-16h-64z"/><path class="pi-accent" d="M148 49h12v12h-12zm24 0h12v12h-12zm24 0h12v12h-12z"/></g>'
+            '<g><path class="pi-panel" d="M262 42h76v36h-76z"/><path class="pi-ink" d="M258 42h84l-10-16h-64z"/><path class="pi-accent" d="M268 49h12v12h-12zm24 0h12v12h-12zm24 0h12v12h-12z"/></g>'
+            '<g class="pi-action"><rect class="pi-core-panel" x="121" y="124" width="118" height="48" rx="4"/>'
+            '<path class="pi-core-line" d="M138 140h45M138 151h68"/><circle class="pi-accent" cx="218" cy="146" r="9"/>'
+            '<text class="pi-label pi-label--inverse" x="180" y="165">УПРАВЛЕНИЕ СЕТЬЮ</text></g>'
+        ),
+        "representatives": (
+            '<path class="pi-grid" d="M20 48h320M20 95h320M20 142h320M70 18v154M125 18v154M180 18v154M235 18v154M290 18v154"/>'
+            '<path class="pi-line pi-flow" d="M180 95 72 48m108 47L76 145m104-50 101-55M180 95l105 54m-105-54 5 76"/>'
+            '<g><circle class="pi-node" cx="72" cy="48" r="12"/><circle class="pi-node" cx="76" cy="145" r="12"/>'
+            '<circle class="pi-node" cx="281" cy="40" r="12"/><circle class="pi-node" cx="285" cy="149" r="12"/><circle class="pi-node" cx="185" cy="171" r="12"/></g>'
+            '<g class="pi-action"><circle class="pi-core" cx="180" cy="95" r="34"/>'
+            '<path class="pi-pin" d="M180 72c-10 0-18 8-18 18 0 14 18 29 18 29s18-15 18-29c0-10-8-18-18-18zm0 25a7 7 0 1 1 0-14 7 7 0 0 1 0 14z"/>'
+            '<text class="pi-label pi-label--ink" x="180" y="142">РЕГИОН</text></g>'
+            '<g><circle class="pi-added" cx="324" cy="95" r="15"/><path class="pi-line pi-line--strong" d="M318 95h12m-6-6v12"/></g>'
+        ),
+        "gateways": (
+            '<path class="pi-line pi-flow" d="M108 70h142M252 120H110"/><path class="pi-arrow pi-action" d="m238 63 14 7-14 7"/>'
+            '<path class="pi-arrow pi-action pi-action--reverse" d="m122 113-14 7 14 7"/>'
+            '<g><rect class="pi-panel" x="18" y="48" width="90" height="94" rx="4"/><path class="pi-line pi-line--strong" d="m42 78-12 12 12 12m42-24 12 12-12 12M67 70 54 110"/>'
+            '<text class="pi-label pi-label--ink" x="63" y="130">ВАША СИСТЕМА</text></g>'
+            '<g><path class="pi-core-panel" d="M145 42h70v106h-70z"/><path class="pi-accent" d="M197 42h18v18z"/>'
+            '<text class="pi-code" x="180" y="101">XML</text></g>'
+            '<g><rect class="pi-panel" x="252" y="48" width="90" height="94" rx="4"/><circle class="pi-accent" cx="297" cy="80" r="12"/>'
+            '<path class="pi-line" d="M273 106h48M280 117h34"/><text class="pi-label pi-label--ink" x="297" y="132">SKYSEND</text></g>'
+            '<text class="pi-label" x="180" y="63">ЗАПРОС</text><text class="pi-label" x="180" y="137">ОТВЕТ</text>'
+        ),
+    }
+    if kind not in diagrams:
+        raise ValueError(f"Unknown partner infographic: {kind}")
+    return (
+        f'<span class="partner-tile__graphic partner-tile__graphic--{e(kind)}" aria-hidden="true">'
+        f'<svg class="partner-infographic partner-infographic--{e(kind)}" viewBox="0 0 360 190" '
+        f'focusable="false">{diagrams[kind]}</svg></span>'
+    )
+
+
 def partner_routes() -> str:
     tiles = []
     for item in NAVIGATION["partners"]:
-        visual = item.get("visual", "")
-        if visual == "provider-logos":
-            logo_items = PROVIDER_WALL.get("items", [])[:4]
-            media = '<span class="partner-tile__logos" aria-hidden="true">' + "".join(
-                image_tag(row["path"], "", css="partner-tile__logo") for row in logo_items
-            ) + "</span>"
-        else:
-            media = (
-                '<span class="partner-tile__media">'
-                f'{image_tag(visual, item.get("visual_alt", ""), css="partner-tile__image")}</span>'
-                if visual else ""
-            )
+        kind = item.get("infographic", "")
         tiles.append(
-            f'<a class="partner-tile" href="{e(item["href"])}">'
-            f'{media}<span class="partner-tile__copy"><strong>{e(item["label"])}</strong>'
-            '<span class="partner-tile__arrow" aria-hidden="true">↗</span></span></a>'
+            f'<a class="partner-tile partner-tile--{e(kind)}" href="{e(item["href"])}">'
+            f'<span class="partner-tile__copy"><strong>{e(item["label"])}</strong>'
+            '<span class="partner-tile__arrow" aria-hidden="true">↗</span></span>'
+            f'{partner_infographic(kind)}</a>'
         )
     return f'<nav class="partner-grid" aria-label="Направления для партнёров">{"".join(tiles)}</nav>'
 
@@ -769,13 +846,12 @@ def home_hero(section, providers) -> str:
     return (
         '<section class="home-hero home-hero--provider-led" id="hero"><div class="home-hero__shell">'
         '<div class="home-hero__copy">'
-        f'<h1>{e(section["title"])}</h1>{action_links(section.get("cta", []), primary_first=True)}</div>'
+        f'<h1>{e(section["title"])}</h1></div>'
         f'<section class="home-provider" id="{e(providers["id"])}" aria-labelledby="home-provider-title">'
         '<div class="home-provider__head">'
         f'<h2 id="home-provider-title">{e(providers["title"])}</h2>'
         f'{section_copy(providers, include_links=False)}</div>'
         f'{home_provider_wall()}'
-        f'{action_links(providers.get("cta", []), css="home-provider__actions")}'
         '</section></div></section>'
     )
 

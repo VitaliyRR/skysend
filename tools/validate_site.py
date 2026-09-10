@@ -268,6 +268,12 @@ def main() -> int:
         fail(errors, "visible enlarge controls must not be rendered")
     if 'id="support"' in home_text:
         fail(errors, "home support section must be removed")
+    if re.search(r'<a\b', home_hero):
+        fail(errors, "home hero must not contain action links")
+    if "Подключиться" in home_hero or "Открыть каталог" in home_hero:
+        fail(errors, "home hero still contains a removed action label")
+    if ".home-provider__head::before" in css_text:
+        fail(errors, "home provider heading must not render the blue accent bar")
     if "media-object--terminal-product" in home_hero:
         fail(errors, "home hero must not contain a payment terminal")
     if "home-hero--provider-led" not in home_hero:
@@ -315,10 +321,27 @@ def main() -> int:
     for label in ("Загрузка справочника товаров", "Формирование заказов", "Оплата заказов"):
         if label not in home_commerce:
             fail(errors, f"SkyMarket feature missing: {label}")
-    if home_partners.count('class="partner-tile"') != 6:
+    if home_partners.count('class="partner-tile partner-tile--') != 6:
         fail(errors, "home partners section must contain six clickable tiles")
-    if home_partners.count("<img") < 9:
-        fail(errors, "home partner tiles must include subject-specific visuals")
+    if home_partners.count('<svg class="partner-infographic ') != 6:
+        fail(errors, "home partner tiles must contain six inline infographics")
+    if "<img" in home_partners:
+        fail(errors, "home partner infographics must not fall back to unrelated images")
+    expected_partner_tiles = (
+        ("agents", "/partners/agents/", "Платёжным агентам"),
+        ("providers", "/partners/providers/", "Провайдерам услуг"),
+        ("suppliers", "/partners/suppliers/", "Поставщикам товаров"),
+        ("retail", "/partners/retail/", "Торговым сетям"),
+        ("representatives", "/partners/representatives/", "Представителям"),
+        ("gateways", "/partners/gateways/", "Шлюзовикам"),
+    )
+    for kind, href, label in expected_partner_tiles:
+        if home_partners.count(f"partner-tile--{kind}") != 1:
+            fail(errors, f"home partner tile is missing its infographic type: {kind}")
+        if home_partners.count(f"partner-infographic--{kind}") != 1:
+            fail(errors, f"home partner infographic is missing: {kind}")
+        if f'href="{href}"' not in home_partners or f"<strong>{label}</strong>" not in home_partners:
+            fail(errors, f"home partner route is incomplete: {label}")
     for label in ("FastPay Beauty II", "FastPay Simple", "Сенсорная панель", "Потребляемая мощность"):
         if label not in home_equipment:
             fail(errors, f"home equipment showcase missing: {label}")

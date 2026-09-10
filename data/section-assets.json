@@ -261,15 +261,8 @@
       "note": "Оригинальный знак ALLVEND в SVG viewport с удалёнными пустыми полями исходного PNG."
     },
     "partner-routes": {
-      "kind": "navigation",
-      "paths": [
-        "assets/icons/arrow-right.svg",
-        "assets/originals/RMA_win_lin.png",
-        "assets/diagrams/supplier-exchange.svg",
-        "assets/originals/beautyII4.png",
-        "assets/diagrams/payment-network.svg",
-        "assets/diagrams/xml-flow.svg"
-      ],
+      "kind": "html",
+      "paths": [],
       "alt": "",
       "max_css_width": 640,
       "export_widths": [
@@ -278,7 +271,7 @@
         1280
       ],
       "fit": "contain",
-      "note": "Шесть ссылок из navigation.json. Каждая плитка использует связанный с направлением продукт, экран или схему; плитка провайдеров собирается из оригинальных логотипов."
+      "note": "Шесть ссылок из navigation.json с шестью code-native inline-SVG инфографиками: приём платежей, подключение услуг, каталог и заказ, торговая сеть, региональная сеть и XML-шлюз."
     },
     "contact-panel": {
       "kind": "html-and-svg",

@@ -35,38 +35,32 @@
     {
       "label": "Платёжным агентам",
       "href": "/partners/agents/",
-      "visual": "assets/originals/RMA_win_lin.png",
-      "visual_alt": "Рабочее место платёжного агента"
+      "infographic": "agents"
     },
     {
       "label": "Провайдерам услуг",
       "href": "/partners/providers/",
-      "visual": "provider-logos",
-      "visual_alt": "Логотипы провайдеров SkySend"
+      "infographic": "providers"
     },
     {
       "label": "Поставщикам товаров",
       "href": "/partners/suppliers/",
-      "visual": "assets/diagrams/supplier-exchange.svg",
-      "visual_alt": "Обмен справочником товаров и заказами"
+      "infographic": "suppliers"
     },
     {
       "label": "Торговым сетям",
       "href": "/partners/retail/",
-      "visual": "assets/originals/beautyII4.png",
-      "visual_alt": "Терминал самообслуживания в торговой точке"
+      "infographic": "retail"
     },
     {
       "label": "Представителям",
       "href": "/partners/representatives/",
-      "visual": "assets/diagrams/payment-network.svg",
-      "visual_alt": "Сеть приёма платежей SkySend"
+      "infographic": "representatives"
     },
     {
       "label": "Шлюзовикам",
       "href": "/partners/gateways/",
-      "visual": "assets/diagrams/xml-flow.svg",
-      "visual_alt": "Подключение по XML-протоколу"
+      "infographic": "gateways"
     }
   ],
   "software": [
