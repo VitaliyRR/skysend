@@ -51,10 +51,6 @@
       ],
       "path": "/equipment/payment-terminals/fastpay-beauty-ii/",
       "specification_caption": "Комплектацию и условия поставки уточняйте у менеджера.",
-      "cta": {
-        "label": "Обсудить оборудование",
-        "href": "/contacts/"
-      },
       "image_urls": [
         "https://skysend.ru/images/stories/virtuemart/product/beautyII4.png"
       ],
@@ -79,7 +75,8 @@
             "text": "Высота корпуса 145 см."
           }
         ]
-      }
+      },
+      "canonical_href": "/equipment/#fastpay-beauty-ii"
     },
     {
       "slug": "fastpay-simple",
@@ -136,10 +133,6 @@
       ],
       "path": "/equipment/payment-terminals/fastpay-simple/",
       "specification_caption": "Комплектацию и условия поставки уточняйте у менеджера.",
-      "cta": {
-        "label": "Обсудить оборудование",
-        "href": "/contacts/"
-      },
       "image_urls": [
         "https://skysend.ru/images/stories/virtuemart/product/FastPay Simple.png"
       ],
@@ -164,7 +157,8 @@
             "text": "Ширина корпуса 50 см."
           }
         ]
-      }
+      },
+      "canonical_href": "/equipment/#fastpay-simple"
     }
   ],
   "categories": [

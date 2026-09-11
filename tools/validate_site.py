@@ -24,6 +24,9 @@ ROUTE_ALIASES = {
     "/software/": "/software/terminal/",
     "/software/rma-desktop/": "/software/rma/",
     "/software/rma-android/": "/software/rma/",
+    "/equipment/payment-terminals/": "/equipment/#terminals",
+    "/equipment/payment-terminals/fastpay-beauty-ii/": "/equipment/#fastpay-beauty-ii",
+    "/equipment/payment-terminals/fastpay-simple/": "/equipment/#fastpay-simple",
 }
 
 
@@ -47,7 +50,7 @@ class PageParser(HTMLParser):
             self.ids.append(values["id"])
         if tag == "a" and values.get("href"):
             self.links.append(values["href"])
-        if tag in {"img", "script", "link", "source"}:
+        if tag in {"img", "image", "script", "link", "source"}:
             source = values.get("src") or values.get("href") or values.get("srcset")
             if source:
                 self.assets.append(source.split()[0])
@@ -449,7 +452,7 @@ def main() -> int:
             fail(errors, f"{route}: removed partner navigation or eyebrow is still rendered")
     expected_scenes = {
         'agents': {'cost-reduction':'agent-maintenance','remote-control':'agent-remote','innovation':'agent-innovation'},
-        'providers': {'payment-collection':'provider-payment-points','connecting-to-skysend':'provider-connection','privacy-policy':'provider-data-security','high-speed':'provider-processing','automate-reporting':'provider-reporting','connecting-to-finger':'provider-finger','partnership':'provider-preprocessing','placing-terminals':'provider-office-terminal'},
+        'providers': {'payment-collection':'provider-payment-points','connecting-to-skysend':'provider-connection','privacy-policy':'provider-data-security','high-speed':'provider-processing','automate-reporting':'provider-reporting','partnership':'provider-preprocessing','placing-terminals':'provider-office-terminal'},
         'suppliers': {'sales-network-products':'supplier-sales-channels','directory-of-products':'supplier-catalog','work-in-the-office':'supplier-order-management','integration-in-xml':'supplier-xml','ease-of-interaction':'supplier-sync','freeconnection':'supplier-connection'},
         'retail': {'orders':'retail-orders','management':'retail-management','deployment':'retail-deployment'},
         'representatives': {'cashier-in-the-region':'representative-cashdesk','exclusivity-in-the-region':'representative-region','mastering-directions':'representative-directions','connecting-players':'representative-participants'},
@@ -480,13 +483,39 @@ def main() -> int:
         if f'href="{old}"' in home_text:
             fail(errors, f'software navigation still links to old RMA route: {old}')
 
-    for route, height in [
-        ("/equipment/payment-terminals/fastpay-beauty-ii/", "145 см"),
-        ("/equipment/payment-terminals/fastpay-simple/", "144 см"),
-    ]:
-        page_text = html_path_for_route(route).read_text(encoding="utf-8")
-        if "dimension--height" not in page_text or height not in page_text or "Ширина" not in page_text:
-            fail(errors, f"{route}: missing factual width/height treatment")
+    equipment_text = html_path_for_route('/equipment/').read_text(encoding='utf-8')
+    equipment_main = re.search(r'<main\b.*?</main>', equipment_text, flags=re.S).group(0)
+    equipment = json.loads((DATA/'equipment-content.json').read_text(encoding='utf-8'))
+    for product in equipment['products']:
+        markup = section_markup(html_path_for_route('/equipment/'), product['slug'])
+        if 'dimension--height' not in markup or markup.count('<figure') != 1:
+            fail(errors, f"equipment {product['slug']}: expected one real product photo with dimensions")
+        for value in [v for pair in product['facts'] for v in pair] + product['base_configuration'] + product['source_limits']:
+            if html.escape(value, quote=True) not in markup:
+                fail(errors, f"equipment {product['slug']}: missing product information {value}")
+        if f'href="{product["path"]}"' in public_text:
+            fail(errors, f"equipment still links to removed product page: {product['path']}")
+    if 'class="eyebrow"' in equipment_main or 'Обсудить оборудование' in equipment_main:
+        fail(errors, 'equipment still contains removed eyebrow or contact module')
+
+    transfer = section_markup(html_path_for_route('/partners/agents/'), 'transfer-terminal')
+    if transfer.count('<figure') != 1 or section_markup(html_path_for_route('/partners/agents/'), 'buy-terminals'):
+        fail(errors, 'agent terminal selection must be one merged block with one photo')
+    finger_provider = section_markup(html_path_for_route('/partners/providers/'), 'connecting-to-finger')
+    if 'logotip_finger.png' not in finger_provider or 'data-scene=' in finger_provider:
+        fail(errors, 'provider FINGER section must use the authentic logo')
+    for route, removed, picture in [('/software/xml/', 'exchange', 'xml-flow.svg'),('/software/pos/', 'features', 'pos-capabilities.svg')]:
+        markup = html_path_for_route(route).read_text(encoding='utf-8')
+        if section_markup(html_path_for_route(route), removed) or markup.count(picture) != 1:
+            fail(errors, f'{route}: merged content must have one main illustration')
+        if f'id="{removed}"' not in markup:
+            fail(errors, f'{route}: lost compatibility anchor {removed}')
+    support = html_path_for_route('/support/').read_text(encoding='utf-8')
+    if section_markup(html_path_for_route('/support/'), 'questions'):
+        fail(errors, 'support must not repeat the contact section')
+    for href in ('tel:+78005552536','mailto:support@inf-sys.ru','https://t.me/infsysgroup'):
+        if support.count(f'href="{href}"') != 1:
+            fail(errors, f'support contact must appear once: {href}')
 
     forbidden_copy = [
         r"Это не просто",
@@ -501,6 +530,7 @@ def main() -> int:
         r"Исходные материалы описывают",
         r"из исходн(?:ых материалов|ой страницы)",
         r"из материалов (?:SkySend|действующего сайта)",
+        r"Интерфейс ПО SkySend",
     ]
     for pattern in forbidden_copy:
         if re.search(pattern, public_text, flags=re.I):
@@ -513,7 +543,6 @@ def main() -> int:
     manifest = json.loads((DIST / "build-manifest.json").read_text(encoding="utf-8"))
     finger_text = html_path_for_route("/software/finger/").read_text(encoding="utf-8")
     for phrase in (
-        "бескомиссионный онлайн-кошелёк",
         "Отсутствие комиссии за оплату услуг",
         "Отсутствие платы за содержание счёта кошелька",
         "Простота регистрации и работы",
@@ -524,6 +553,11 @@ def main() -> int:
     ):
         if phrase not in finger_text:
             fail(errors, f"FINGER page missing source content: {phrase}")
+    for removed in ('access','install'):
+        if section_markup(html_path_for_route('/software/finger/'), removed) or f'id="{removed}"' not in finger_text:
+            fail(errors, f'FINGER must merge {removed} and preserve its anchor')
+    if finger_text.count('logotip_finger.png') != 1 or finger_text.count('href="https://www.fingerps.com/"') != 1:
+        fail(errors, 'FINGER must contain one logo and one wallet link')
 
     allvend_text = html_path_for_route("/software/allvend/").read_text(encoding="utf-8")
     for section_id in ("audiences", "capabilities", "interface", "payments", "orders", "infokiosk", "cashdesk", "management", "network", "fastsys", "materials"):
@@ -531,8 +565,10 @@ def main() -> int:
             fail(errors, f"ALLVEND page missing section: {section_id}")
     if "allvend-infokiosk.svg" not in allvend_text:
         fail(errors, "ALLVEND infokiosk must use the source-screen composition")
+    if 'data-scene="allvend-orders"' not in section_markup(html_path_for_route('/software/allvend/'), 'orders'):
+        fail(errors, 'ALLVEND orders must use the new order workflow graphic')
 
-    expected = {"routes": 40, "provider_rows": 600, "download_rows": 72, "redirects": 157, "gone": 13}
+    expected = {"routes": 37, "provider_rows": 600, "download_rows": 72, "redirects": 163, "gone": 13}
     for key, value in expected.items():
         if manifest.get(key) != value:
             fail(errors, f"manifest {key}: expected {value}, got {manifest.get(key)}")

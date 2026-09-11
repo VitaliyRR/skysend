@@ -169,22 +169,38 @@
     {
       "path": "/equipment/",
       "title": "Оборудование",
-      "lead": "Платёжные терминалы и комплектующие.",
+      "lead": "Платёжные терминалы и комплектующие SkySend.",
       "sections": [
         {
-          "id": "terminals",
-          "title": "Платёжные терминалы",
-          "body": "",
-          "visual_id": "equipment-catalog",
+          "id": "fastpay-beauty-ii",
+          "title": "FastPay Beauty II",
+          "body": "Киоск для помещений. Используется как информационный терминал, терминал заказа товаров, касса оплаты заказов и услуг или платёжный терминал.",
+          "anchor_aliases": [
+            "terminals",
+            "fastpay-beauty-1"
+          ],
+          "visual_id": "equipment-details",
+          "product_slug": "fastpay-beauty-ii",
           "source_urls": [
-            "https://skysend.ru/buy/payment-terminals.html"
+            "https://skysend.ru/buy/payment-terminals/fastpay-beauty-1-detail.html"
           ],
           "links": [],
           "motion_alias": "none",
-          "collection": {
-            "file": "data/equipment-content.json",
-            "display": "Named product photographs and exact source characteristics. No unverified price/stock."
-          }
+          "visual_description": "Настоящее фото модели, таблица всех характеристик, базовая комплектация и условия поставки. Всё содержимое доступно сразу на странице оборудования."
+        },
+        {
+          "id": "fastpay-simple",
+          "title": "FastPay Simple",
+          "body": "Платёжный терминал для помещений с сенсорным экраном. Поставляется с предустановленным программным обеспечением.",
+          "anchor_aliases": [],
+          "visual_id": "equipment-details",
+          "product_slug": "fastpay-simple",
+          "source_urls": [
+            "https://skysend.ru/buy/payment-terminals/fastpay-simple-detail.html"
+          ],
+          "links": [],
+          "motion_alias": "none",
+          "visual_description": "Настоящее фото модели, таблица всех характеристик, базовая комплектация и условия поставки. Всё содержимое доступно сразу на странице оборудования."
         },
         {
           "id": "accessories",
@@ -200,23 +216,6 @@
             "file": "data/equipment-content.json",
             "display": "Category rows; one exact source product per row, preserve used-part flags."
           }
-        },
-        {
-          "id": "contact",
-          "title": "Обсудить оборудование",
-          "body": "Свяжитесь с SkySend по вопросам оборудования.",
-          "visual_id": "contact-panel",
-          "source_urls": [
-            "https://skysend.ru/about/geografiy.html"
-          ],
-          "links": [
-            {
-              "label": "Контакты",
-              "href": "/contacts/"
-            }
-          ],
-          "motion_alias": "none",
-          "collection": null
         }
       ]
     },

@@ -20,6 +20,7 @@ from urllib.parse import quote, unquote, urlparse
 
 from partner_art import render_partner_art
 from partner_scenes import render_partner_scene
+from partner_diagrams import render_partner_diagram
 
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -34,6 +35,9 @@ ROUTE_ALIASES = {
     "/software/": "/software/terminal/",
     "/software/rma-desktop/": "/software/rma/",
     "/software/rma-android/": "/software/rma/",
+    "/equipment/payment-terminals/": "/equipment/#terminals",
+    "/equipment/payment-terminals/fastpay-beauty-ii/": "/equipment/#fastpay-beauty-ii",
+    "/equipment/payment-terminals/fastpay-simple/": "/equipment/#fastpay-simple",
 }
 
 
@@ -564,7 +568,7 @@ def product_cards() -> str:
             f'<article class="product-card"><div class="product-card__visual">{image}</div>'
             f'<div class="product-card__copy"><small>Платёжный терминал</small><h3>{e(product["title"])}</h3>'
             f'<p>{e(product["lead"])}</p><p class="product-card__facts">{e(facts)}</p>'
-            f'<a class="text-link" href="{e(product["path"])}">Характеристики <span aria-hidden="true">↗</span></a></div></article>'
+            f'<a class="text-link" href="{e(product["canonical_href"])}">Характеристики <span aria-hidden="true">↗</span></a></div></article>'
         )
     return f'<div class="product-grid">{"".join(cards)}</div>'
 
@@ -607,7 +611,7 @@ def product_duo() -> str:
     cards = []
     for product in EQUIPMENT["products"]:
         cards.append(
-            f'<a class="product-duo__item" href="{e(product["path"])}">'
+            f'<a class="product-duo__item" href="{e(product["canonical_href"])}">'
             '<span class="product-duo__visual">'
             f'{image_tag(image_map[product["slug"]], product["title"], css="product-duo__image")}</span>'
             f'<span class="product-duo__copy"><strong>{e(product["title"])}</strong>'
@@ -620,7 +624,7 @@ def render_media(visual_id: str, section, page_path: str, *, eager: bool = False
     if not visual_id:
         return ""
     if visual_id == "partner-scene":
-        return render_partner_scene(section["scene_id"], section["id"])
+        return render_partner_diagram(section["scene_id"], section["id"]) or render_partner_scene(section["scene_id"], section["id"])
     if visual_id == "provider-logos":
         return provider_wall()
     if visual_id == "html-feature-list":
@@ -655,8 +659,6 @@ def render_media(visual_id: str, section, page_path: str, *, eager: bool = False
     if not paths or binding.get("kind") == "reference-only":
         return ""
     caption = section.get("caption")
-    if visual_id in {"terminal-screen", "rma-desktop", "rma-android"}:
-        caption = caption or "Интерфейс ПО SkySend"
     lightbox = not page_path.startswith("/partners/") and visual_id in {"terminal-screen", "rma-desktop", "rma-android", "interface-variants", "allvend-infokiosk", "infokiosk-screen"}
     if binding.get("kind") in {"svg", "html-and-svg"}:
         return picture_figure(paths, binding.get("alt", ""), caption=caption, lightbox=lightbox)
@@ -699,6 +701,8 @@ def alias_anchors(section) -> str:
 
 def render_section(section, page_path: str, index: int) -> str:
     visual_id = section_visual_id(section)
+    if visual_id == "equipment-details":
+        return render_equipment_inline(section)
     dark = visual_id == "terminal-screen" and page_path == "/"
     full = (
         visual_id in {"software-catalog", "provider-catalog", "equipment-catalog", "download-list", "partner-routes"}
@@ -784,7 +788,7 @@ def page_hero(page) -> str:
             f'<a href="#{e(section["id"])}">{e(section["title"])}</a>' for section in sections
         )
         jumps = f'<nav class="jump-nav" aria-label="Разделы страницы">{links}</nav>'
-    eyebrow = '' if is_partner else f'<p class="eyebrow">{e(family_label(page["path"]))}</p>'
+    eyebrow = '' if is_partner or page['path'] in {'/equipment/', '/support/'} else f'<p class="eyebrow">{e(family_label(page["path"]))}</p>'
     return (
         '<section class="page-hero"><div class="page-hero__shell">'
         f'{eyebrow}<h1>{e(page["title"])}</h1>'
@@ -806,27 +810,6 @@ def software_detail_hero(page, section) -> str:
         f'<div class="detail-hero__visual">{visual}</div></div></section>'
     )
 
-
-def product_detail_hero(product, image_path: str) -> str:
-    facts = dict(product.get("facts", []))
-    visual = figure_image(
-        image_path,
-        product["title"],
-        eager=True,
-        css="product-hero__image",
-    )
-    dimensions = (
-        '<div class="dimensioned-product">'
-        f'{visual}<span class="dimension dimension--height"><small>Высота</small><strong>{e(facts.get("Высота"))}</strong></span>'
-        f'<span class="dimension dimension--width"><small>Ширина</small><strong>{e(facts.get("Ширина"))}</strong></span></div>'
-    )
-    return (
-        '<section class="product-hero"><div class="product-hero__shell">'
-        '<div class="product-hero__copy"><p class="eyebrow">Оборудование</p>'
-        f'<h1>{e(product["title"])}</h1><p>{e(product["lead"])}</p>'
-        f'{action_links([product["cta"]], primary_first=True)}</div>'
-        f'<div class="product-hero__visual">{dimensions}</div></div></section>'
-    )
 
 
 def header(path: str) -> str:
@@ -892,20 +875,23 @@ def header(path: str) -> str:
     )
 
 
-def footer() -> str:
+def footer(path: str = "") -> str:
     contacts = NAVIGATION["contact_defaults"]
     nav_links = "".join(
         f'<a href="{e(item["href"])}">{e(item["label"])}</a>' for item in NAVIGATION["footer"]
+    )
+    address = '' if path == '/support/' else (
+        '<address><small>Связаться</small>'
+        f'<a href="{e(contacts["phoneHref"])}">{e(contacts["phone"])}</a>'
+        f'<a href="mailto:{e(contacts["supportEmail"])}">{e(contacts["supportEmail"])}</a>'
+        f'<a href="{e(contacts["telegram"])}" target="_blank" rel="noopener noreferrer">Telegram @infsysgroup</a></address>'
     )
     return (
         '<footer class="site-footer"><div class="site-footer__shell">'
         '<div class="site-footer__brand"><img src="/assets/brand/skysend-logo.svg" width="100" height="64" alt="SkySend">'
         '<p>Система приёма платежей и программное обеспечение для устройств самообслуживания.</p></div>'
         f'<nav aria-label="Разделы сайта">{nav_links}</nav>'
-        '<address><small>Связаться</small>'
-        f'<a href="{e(contacts["phoneHref"])}">{e(contacts["phone"])}</a>'
-        f'<a href="mailto:{e(contacts["supportEmail"])}">{e(contacts["supportEmail"])}</a>'
-        f'<a href="{e(contacts["telegram"])}" target="_blank" rel="noopener noreferrer">Telegram @infsysgroup</a></address>'
+        f'{address}'
         '</div><div class="site-footer__bottom"><span>ООО «СкайСенд»</span>'
         '</div></footer>'
     )
@@ -950,7 +936,7 @@ def document(title: str, path: str, main: str, *, description: str = "") -> str:
 <body data-path="{e(path)}">
   {header(path)}
   <main id="main" tabindex="-1">{main}</main>
-  {footer()}
+  {footer(path)}
   {media_dialog()}
   <script src="/static/app.js" defer></script>
 </body>
@@ -1039,7 +1025,7 @@ def render_equipment_category(category) -> str:
     lead = "Платёжные терминалы и комплектующие. Цены и наличие уточняйте у менеджера."
     page = {"path": path, "title": category["title"], "lead": lead, "sections": []}
     rows = []
-    detail_paths = {product["slug"]: product["path"] for product in EQUIPMENT["products"]}
+    detail_paths = {product["slug"]: product["canonical_href"] for product in EQUIPMENT["products"]}
     for row in category.get("rows", []):
         image_path = local_equipment_image(row)
         visual = image_tag(image_path, row["name"], css="catalog-item__image") if image_path else '<span class="catalog-item__placeholder" aria-hidden="true">SS</span>'
@@ -1060,24 +1046,31 @@ def render_equipment_category(category) -> str:
     return document(category["title"], path, body, description=lead)
 
 
-def render_equipment_product(product) -> str:
-    path = product["path"]
+def render_equipment_inline(section) -> str:
+    product = next(item for item in EQUIPMENT['products'] if item['slug'] == section['product_slug'])
     image_path = "assets/originals/beautyII4.png" if product["slug"] == "fastpay-beauty-ii" else "assets/originals/FastPay Simple.png"
     facts = "".join(f'<tr><th scope="row">{e(label)}</th><td>{e(value)}</td></tr>' for label, value in product["facts"])
     config = "".join(f'<li>{e(item)}</li>' for item in product["base_configuration"])
     limits = "".join(f'<li>{e(item)}</li>' for item in product.get("source_limits", []))
-    body = product_detail_hero(product, image_path)
-    body += (
-        '<section class="product-detail"><div class="product-detail__shell product-detail__shell--spec">'
-        f'<div class="product-detail__spec"><h2>Характеристики</h2><table><tbody>{facts}</tbody></table>'
-        f'<p class="caption">{e(product["specification_caption"])}</p></div></div></section>'
-        '<section class="evidence-section"><div class="section-shell"><div class="evidence-section__copy">'
-        '<h2>Базовая комплектация</h2>'
-        f'{action_links([product["cta"]])}</div><div class="evidence-section__visual"><ul class="spec-list">{config}</ul></div></div></section>'
-        '<section class="product-notes"><div><h2>Комплектация и размеры</h2>'
-        f'<ul>{limits}</ul></div></section>'
+    measurements = dict(product['facts'])
+    visual = (
+        '<div class="dimensioned-product">'
+        f'{figure_image(image_path,product["title"],css="product-hero__image")}'
+        f'<span class="dimension dimension--height"><small>Высота</small><strong>{e(measurements["Высота"])}</strong></span>'
+        f'<span class="dimension dimension--width"><small>Ширина</small><strong>{e(measurements["Ширина"])}</strong></span></div>'
     )
-    return document(product["title"], path, body, description=product["lead"])
+    return (
+        f'{alias_anchors(section)}<section class="equipment-product" id="{e(section["id"])}">'
+        '<div class="equipment-product__shell">'
+        f'<header><h2>{e(product["title"])}</h2><p>{e(product["lead"])}</p></header>'
+        '<div class="equipment-product__overview">'
+        f'<div class="equipment-product__visual">{visual}</div>'
+        f'<div class="equipment-product__facts"><h3>Характеристики</h3><table><tbody>{facts}</tbody></table></div></div>'
+        '<div class="equipment-product__details">'
+        f'<div><h3>Базовая комплектация</h3><ul class="spec-list">{config}</ul></div>'
+        f'<div><h3>Комплектация и поставка</h3><ul class="spec-list">{limits}</ul><p class="caption">{e(product["specification_caption"])}</p></div>'
+        '</div></div></section>'
+    )
 
 
 def error_page(status: int) -> str:
@@ -1109,7 +1102,7 @@ def copy_production_assets() -> set[str]:
     copied.add("assets/design-tokens.css")
 
     originals = {
-        "beautyII4.png", "FastPay Simple.png", "RMA_android.jpg", "RMA_win_lin.png", "logotip_finger.png",
+        "beautyII4.png", "FastPay Simple.png", "RMA_android.jpg", "RMA_win_lin.png", "logotip_finger.png", "logotip_skymarket_3x1.png",
         "scaner.png", "17.png", "17bu.png", "apro.png", "atx_300.png", "CashCode_MVU_bu.png",
         "CashCode_MVU.png", "CashCode_SM.png", "CashCode_SM8.png", "ddr3.png", "fiskalniy-server.png",
         "ide.png", "keetouch.png", "mini_itx.png", "pay.png", "siemens.png", "term.png",
@@ -1211,16 +1204,12 @@ def build() -> dict:
         output.write_text(render_content_page(page), encoding="utf-8")
         canonical_paths.append(page["path"])
     for category in EQUIPMENT["categories"]:
+        if category['path'] == '/equipment/payment-terminals/':
+            continue
         output = route_output(category["path"])
         output.parent.mkdir(parents=True, exist_ok=True)
         output.write_text(render_equipment_category(category), encoding="utf-8")
         canonical_paths.append(category["path"])
-    for product in EQUIPMENT["products"]:
-        output = route_output(product["path"])
-        output.parent.mkdir(parents=True, exist_ok=True)
-        output.write_text(render_equipment_product(product), encoding="utf-8")
-        canonical_paths.append(product["path"])
-
     for alias, target in ROUTE_ALIASES.items():
         output = route_output(alias)
         output.parent.mkdir(parents=True, exist_ok=True)

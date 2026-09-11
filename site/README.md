@@ -9,9 +9,9 @@ python tools/validate_site.py
 python -m http.server 4173 --directory dist
 ```
 
-The build creates 40 canonical routes and 46 HTML files including the 404, 410,
-and four redirect-only documents. It publishes 72 download records, the local provider catalogue,
-the sitemap, 157 legacy redirects, and 13 gone routes. Only the curated
+The build creates 37 canonical routes and 46 HTML files including the 404, 410,
+and seven redirect-only documents. It publishes 72 download records, the local provider catalogue,
+the sitemap, 163 legacy redirects, and 13 gone routes. Only the curated
 production assets are copied into `dist/`.
 
 `site/partner_art.py` contains the six geometric SVG navigation pictograms for
@@ -28,4 +28,6 @@ External registration and account URLs are disabled by default because their
 TLS/DNS checks failed during the source audit. See `deploy/README.md` for the
 release gate and Nginx rollout notes.
 
-`site/partner_scenes.py` renders subject illustrations in 27 partner sections. Partner pages omit local links and jump navigation; representative contact fields are plain text in the final section. `/software/rma/` combines Windows, Linux and Android with nine downloads and redirects from both previous detail URLs.
+`site/partner_diagrams.py` renders 22 partner workflows and the ALLVEND ordering workflow using authentic assets and licensed symbols. Four retained scenes use `site/partner_scenes.py`; FINGER uses its real brand mark. Partner pages omit local links and jump navigation; representative contact fields are plain text in the final section. `/software/rma/` combines Windows, Linux and Android with nine downloads and redirects from both previous detail URLs.
+
+All terminal information is on `/equipment/`; old model/category URLs redirect to section anchors. XML, POS and FINGER descriptions are consolidated, and support has one contact section. Lucide symbols and their license are under `assets/icons/process/`.

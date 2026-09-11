@@ -4,10 +4,10 @@
   "status": "pass",
   "checks": {
     "json_files": 20,
-    "svg_files": 28,
-    "asset_sha256_checked": 644,
+    "svg_files": 53,
+    "asset_sha256_checked": 669,
     "curated_pages": 26,
-    "curated_sections": 126,
+    "curated_sections": 120,
     "primary_motion_aliases": [
       "none",
       "section-reveal",
@@ -17,7 +17,7 @@
     ],
     "audited_menu_pages": 125,
     "providers": 600,
-    "migration_rows": 171
+    "migration_rows": 177
   },
   "errors": [],
   "warnings": [],

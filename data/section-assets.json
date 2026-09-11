@@ -433,7 +433,22 @@
         1280
       ],
       "fit": "contain",
-      "note": "Предметные inline-SVG композиции из site/partner_scenes.py. scene_id выбирает рисунок по смыслу модуля. Стеклянный материал и геометрические формы развивают стиль плиток главной. Иллюстрации дополняют текст без вымышленных экранов, показателей и мелких подписей."
+      "note": "Предметные схемы действий из site/partner_diagrams.py: реальные фотографии терминалов и узлов, фирменные знаки и лицензированные символы Lucide. Сцены без вымышленных экранов и показателей. Сохранённые четыре иллюстрации из partner_scenes.py не изменены."
+    },
+    "equipment-details": {
+      "kind": "html",
+      "paths": [
+        "data/equipment-content.json"
+      ],
+      "alt": "",
+      "max_css_width": 1280,
+      "export_widths": [
+        360,
+        720,
+        1280
+      ],
+      "fit": "contain",
+      "note": "Полная спецификация product_slug в странице оборудования. Отдельная страница модели не создаётся."
     }
   },
   "policy": "Only resolved bindings and approved manifest items enter production. Never recursively publish assets/, evidence/ or data/ as a public directory.",

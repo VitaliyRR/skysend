@@ -62,7 +62,7 @@ https://skysend.ru/partners/advertisers/statistics-shows.html,,410,exclude,"Ак
 https://skysend.ru/partners/advertisers/advertising-on-the-check.html,,410,exclude,"Акция, промо-кампания или рекламный раздел исключён по заданию"
 https://skysend.ru/partners/advertisers/online-sms-delivery.html,,410,exclude,"Акция, промо-кампания или рекламный раздел исключён по заданию"
 https://skysend.ru/buy.html,/equipment/,301,adapt,Сохранить смысл; очистить оформление и промо
-https://skysend.ru/buy/payment-terminals.html,/equipment/payment-terminals/,301,adapt,Сохранить смысл; очистить оформление и промо
+https://skysend.ru/buy/payment-terminals.html,/equipment/#terminals,301,adapt,Сохранить смысл; очистить оформление и промо
 https://skysend.ru/buy/accessories.html,/equipment/accessories/,301,adapt,Сохранить смысл; очистить оформление и промо
 https://skysend.ru/buy/accessories/hardware.html,/equipment/accessories/hardware/,301,adapt,Сохранить смысл; очистить оформление и промо
 https://skysend.ru/buy/accessories/acceptor.html,/equipment/accessories/acceptor/,301,adapt,Сохранить смысл; очистить оформление и промо
@@ -122,8 +122,8 @@ https://skysend.ru/download/8.html,/downloads/,301,consolidate,"Единый р�
 https://skysend.ru/download/9.html,/downloads/,301,consolidate,"Единый реестр 122 материалов, фильтры; убрать промо, проверить версии и ссылки"
 https://skysend.ru/download/10.html,/downloads/,301,consolidate,"Единый реестр 122 материалов, фильтры; убрать промо, проверить версии и ссылки"
 https://skysend.ru/download/11.html,/downloads/,301,consolidate,"Единый реестр 122 материалов, фильтры; убрать промо, проверить версии и ссылки"
-https://skysend.ru/buy/payment-terminals/fastpay-beauty-1-detail.html,/equipment/payment-terminals/fastpay-beauty-ii/,301,adapt_product,Точная карточка товара: характеристики и комплектация; цены только в evidence
-https://skysend.ru/buy/payment-terminals/fastpay-simple-detail.html,/equipment/payment-terminals/fastpay-simple/,301,adapt_product,Точная карточка товара: характеристики и комплектация; цены только в evidence
+https://skysend.ru/buy/payment-terminals/fastpay-beauty-1-detail.html,/equipment/#fastpay-beauty-ii,301,adapt_product,Точная карточка товара: характеристики и комплектация; цены только в evidence
+https://skysend.ru/buy/payment-terminals/fastpay-simple-detail.html,/equipment/#fastpay-simple,301,adapt_product,Точная карточка товара: характеристики и комплектация; цены только в evidence
 https://skysend.ru/buy/accessories/hardware/motherboard-with-integrated-processor-intel-detail.html,/equipment/accessories/hardware/#motherboard-with-integrated-processor-intel,301,category_row,Сохраняется строка исходного каталога; отдельная непроверенная карточка не создаётся
 https://skysend.ru/buy/accessories/hardware/ram-memory-module-ddr3-detail.html,/equipment/accessories/hardware/#ram-memory-module-ddr3,301,category_row,Сохраняется строка исходного каталога; отдельная непроверенная карточка не создаётся
 https://skysend.ru/buy/accessories/hardware/power-supply-atx-300w-detail.html,/equipment/accessories/hardware/#power-supply-atx-300w,301,category_row,Сохраняется строка исходного каталога; отдельная непроверенная карточка не создаётся
@@ -170,3 +170,9 @@ https://skysend.ru/software/rma-desktop,/software/rma/,301,merge,"РМА для 
 https://skysend.ru/software/rma-desktop/,/software/rma/,301,merge,"РМА для Windows, Linux и Android объединено на одной странице."
 https://skysend.ru/software/rma-android,/software/rma/,301,merge,"РМА для Windows, Linux и Android объединено на одной странице."
 https://skysend.ru/software/rma-android/,/software/rma/,301,merge,"РМА для Windows, Linux и Android объединено на одной странице."
+https://skysend.ru/equipment/payment-terminals/fastpay-beauty-ii,/equipment/#fastpay-beauty-ii,301,merge,Полные характеристики терминалов перенесены на страницу оборудования.
+https://skysend.ru/equipment/payment-terminals/fastpay-beauty-ii/,/equipment/#fastpay-beauty-ii,301,merge,Полные характеристики терминалов перенесены на страницу оборудования.
+https://skysend.ru/equipment/payment-terminals/fastpay-simple,/equipment/#fastpay-simple,301,merge,Полные характеристики терминалов перенесены на страницу оборудования.
+https://skysend.ru/equipment/payment-terminals/fastpay-simple/,/equipment/#fastpay-simple,301,merge,Полные характеристики терминалов перенесены на страницу оборудования.
+https://skysend.ru/equipment/payment-terminals,/equipment/#terminals,301,merge,Полные характеристики терминалов перенесены на страницу оборудования.
+https://skysend.ru/equipment/payment-terminals/,/equipment/#terminals,301,merge,Полные характеристики терминалов перенесены на страницу оборудования.

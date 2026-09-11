@@ -37,7 +37,7 @@ python -m http.server 4173 --directory dist
 
 | Данные | Назначение |
 |---|---|
-| [site-content.json](data/site-content.json) | Главная и 6 страниц ПО, 38 секций с текстом, источником, визуалом, мобильной версией и анимацией |
+| [site-content.json](data/site-content.json) | Главная и 6 страниц ПО, 34 секции с текстом, источником, визуалом, мобильной версией и анимацией |
 | [secondary-content.json](data/secondary-content.json) | Партнёрские и служебные страницы, готовые тексты и состояния |
 | [equipment-content.json](data/equipment-content.json) | Две реальные модели терминалов и их исходные характеристики |
 | [utility-content.json](data/utility-content.json) | Индексы ПО и оборудования, каталог провайдеров, загрузки и страница правил |
