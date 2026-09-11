@@ -355,19 +355,17 @@
       "note": "Концептуальная схема, не карта фактических адресов и серверов."
     },
     "pos-product": {
-      "kind": "svg",
+      "kind": "image",
       "paths": [
-        "assets/diagrams/pos-capabilities.svg"
+        "assets/ready/shtrih-mobilepay-pro.jpg"
       ],
-      "alt": "Штрих-Mobile Pay PRO: аккумулятор и GPRS-модем",
-      "max_css_width": 640,
+      "alt": "POS-терминал Штрих-Mobile Pay PRO со встроенным принтером чеков",
+      "max_css_width": 550,
       "export_widths": [
-        360,
-        720,
-        1280
+        550
       ],
       "fit": "contain",
-      "note": "Условная схема возможностей. Фото POS отсутствует в источнике; не подставлять другую модель."
+      "note": "Подлинное фото точной модели, исходный JPEG 550×460. Обязательная подпись-ссылка «Фото: Smartcode» на https://smartcode.ru/. Не подставлять другую модель и не увеличивать выше исходного размера."
     },
     "finger-product": {
       "kind": "svg",
@@ -443,7 +441,11 @@
         "assets/ready/editorial/xml-catalogue.webp",
         "assets/diagrams/interface-customization.svg",
         "assets/originals/logotip_finger.png",
-        "assets/originals/logotip_skymarket_3x1.png"
+        "assets/originals/logotip_skymarket_3x1.png",
+        "data/workflow-visuals.json",
+        "assets/originals/RMA_win_lin.png",
+        "assets/originals/FastPay Simple.png",
+        "assets/icons/process/server.svg"
       ],
       "alt": "",
       "max_css_width": 640,
@@ -453,7 +455,7 @@
         1280
       ],
       "fit": "contain",
-      "note": "Предметные изображения выбираются в site/partner_editorial.py прежде прежних схем. В десяти отмеченных пользователем блоках схемы заменены полностью. Остальные схемы используют непрозрачные поверхности. Оригинальные знаки и варианты экрана размещаются отдельно. Контекстная иллюстрация не доказывает конфигурацию или местонахождение оборудования."
+      "note": "В первую очередь функциональные HTML-композиции из data/workflow-visuals.json: действия кабинета, два канала оплаты, обмен каталогом, распределённый процессинг и варианты запуска. Для остальных сцен сохраняются утверждённые предметные иллюстрации и точные схемы. Никаких подставных интерфейсов или показателей."
     },
     "equipment-details": {
       "kind": "html",

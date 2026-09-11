@@ -5,10 +5,10 @@
   "note": "originals are byte-preserved source assets; approved-original denotes design suitability, not proof of current product/service availability. Evidence paths must never enter production bundle. Provider logos fetched from source-declared public HTTP endpoint; local copies avoid mixed content.",
   "counts": {
     "ready_copies": 1,
-    "entries": 1022,
-    "verified_downloads": 645,
+    "entries": 1023,
+    "verified_downloads": 646,
     "derived_vectors": 23,
-    "production_approved": 638,
+    "production_approved": 639,
     "source_with_review": 3,
     "failed": 0,
     "generated_editorial": 18
@@ -23282,6 +23282,32 @@
       "actual_mime": "image/webp",
       "image_format": "WEBP",
       "quality_notes": "Контекстная иллюстрация, созданная встроенным imagegen. Не документальная фотография объекта SkySend; не использовать как спецификацию оборудования. Промпт и исходник: data/editorial-artwork.json."
+    },
+    {
+      "id": "asset-pos-mobilepay-pro-photo",
+      "source_url": "https://nchelny.smartcode.ru/uploads/items/image/source/17195.jpg",
+      "source_pages": [
+        "https://nchelny.smartcode.ru/kassovoe_i_torgovoe_oborudovanie/kontrolnokassovaya_tehnika/platedjnye_resheniya/shtrih-mobile_pay_pro"
+      ],
+      "asset_type": "product-photo",
+      "path": "assets/ready/shtrih-mobilepay-pro.jpg",
+      "width": 550,
+      "height": 460,
+      "bytes": 121142,
+      "sha256": "cd55d01af8440e06a3445e2964cda62d757ebfec8434b71b4e4e553a72213eef",
+      "retrieved_date": "2026-09-11",
+      "download_status": "verified",
+      "production_status": "approved-original",
+      "recommended_section": "/software/pos/#overview",
+      "quality_notes": "Подлинное фото Штрих-Mobile Pay PRO с карточки этой модели Smartcode. Не увеличивать шире 550 CSS px. Использование со ссылкой на главную Smartcode по условию сайта: «Копирование текстов или изображений с сайта smartcode.ru без письменного разрешения администрации или гиперссылки на главную страницу запрещено». В подписи обязательна ссылка https://smartcode.ru/. Исходный JPEG сохранён без изменений.",
+      "image_format": "JPEG",
+      "actual_mime": "image/jpeg",
+      "extension_mismatch": false,
+      "attribution": {
+        "label": "Фото: Smartcode",
+        "url": "https://smartcode.ru/",
+        "terms_source": "https://nchelny.smartcode.ru/kassovoe_i_torgovoe_oborudovanie/kontrolnokassovaya_tehnika/platedjnye_resheniya/shtrih-mobile_pay_pro"
+      }
     }
   ]
 }

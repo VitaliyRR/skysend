@@ -1,0 +1,84 @@
+{
+  "version": 1,
+  "policy": "Functional diagrams of source-described capabilities. These are not screenshots or simulated product interfaces. No sample accounts, balances, payment statuses or invented metrics.",
+  "scenes": {
+    "agent-remote": {
+      "type": "management",
+      "title": "Личный кабинет SkySend",
+      "target": "Терминал SkySend",
+      "controls": ["Комиссии и наценки", "Уведомления", "Порядок кнопок"],
+      "observe": ["Платежи и средства", "Инкассации", "Работа терминала"],
+      "source": "/partners/agents/#remote-control"
+    },
+    "provider-payment-points": {
+      "type": "payment-channels",
+      "title": "Ваша услуга",
+      "fields": ["Название", "Описание", "Оплата"],
+      "channels": ["Терминалы SkySend", "Кошелёк FINGER"],
+      "source": "/partners/providers/#payment-collection"
+    },
+    "provider-processing": {
+      "type": "processing",
+      "title": "Поток платежей",
+      "distribution": "Распределение нагрузки",
+      "locations": ["Дата-центр", "Другой дата-центр"],
+      "link": "IPsec",
+      "sync": "Синхронизация данных",
+      "source": "/partners/providers/#high-speed"
+    },
+    "supplier-sales-channels": {
+      "type": "sales",
+      "title": "Покупатель выбирает канал",
+      "channels": ["Терминал SkySend", "FINGER"],
+      "steps": ["Выбор магазина", "Фото и описание товара", "Оформление заказа"],
+      "source": "/partners/suppliers/#sales-network-products"
+    },
+    "supplier-xml": {
+      "type": "exchange",
+      "title": "XML",
+      "origin": "Ваша система",
+      "lanes": [
+        {"label": "Каталог", "direction": "right"},
+        {"label": "Заказы", "direction": "left"},
+        {"label": "Принятие заказа", "direction": "right"},
+        {"label": "Данные доставки", "direction": "both"}
+      ],
+      "source": "/partners/suppliers/#integration-in-xml"
+    },
+    "supplier-sync": {
+      "type": "catalogue-sync",
+      "title": "Один каталог для двух каналов",
+      "origins": ["Кабинет SkyMarket", "Ваш сервер · XML"],
+      "changes": "Фото · Цена · Описание · Сроки доставки",
+      "channels": ["Терминалы SkySend", "FINGER"],
+      "source": "/partners/suppliers/#ease-of-interaction"
+    },
+    "retail-management": {
+      "type": "management",
+      "title": "Онлайн-кабинет",
+      "target": "Точки сети",
+      "network": true,
+      "controls": ["Комиссии и наценки", "Оформление экранов"],
+      "observe": ["Обороты и инкассации", "Устройства и платежи", "Финансовые отчёты"],
+      "source": "/partners/retail/#management"
+    },
+    "retail-deployment": {
+      "type": "alternatives",
+      "title": "Сеть на ALLVEND",
+      "choices": [
+        {"action": "Приобрести", "label": "Собственные устройства"},
+        {"action": "Перевести", "label": "Устройства партнёров на ALLVEND"},
+        {"action": "Разместить", "label": "Оборудование группы компаний"}
+      ],
+      "source": "/partners/retail/#deployment"
+    },
+    "gateway-operator-point": {
+      "type": "operator",
+      "title": "Приём платежей через РМА",
+      "platforms": ["Windows", "Linux", "Android"],
+      "caption": "Рабочее место агента",
+      "secondary": "Существующие терминалы также можно перевести на SkySend",
+      "source": "/partners/gateways/#operator-point"
+    }
+  }
+}

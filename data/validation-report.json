@@ -3,9 +3,9 @@
   "scope": "Artifact integrity, editorial consistency, and generated frontend source data",
   "status": "pass",
   "checks": {
-    "json_files": 21,
+    "json_files": 22,
     "svg_files": 53,
-    "asset_sha256_checked": 687,
+    "asset_sha256_checked": 688,
     "curated_pages": 26,
     "curated_sections": 120,
     "primary_motion_aliases": [

@@ -22,6 +22,7 @@ from partner_art import render_partner_art
 from partner_scenes import render_partner_scene
 from partner_diagrams import render_partner_diagram
 from partner_editorial import render_partner_editorial
+from workflow_visuals import render_workflow_visual
 
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -625,7 +626,8 @@ def render_media(visual_id: str, section, page_path: str, *, eager: bool = False
     if not visual_id:
         return ""
     if visual_id == "partner-scene":
-        return (render_partner_editorial(section["scene_id"])
+        return (render_workflow_visual(section["scene_id"])
+                or render_partner_editorial(section["scene_id"])
                 or render_partner_diagram(section["scene_id"], section["id"])
                 or render_partner_scene(section["scene_id"], section["id"]))
     if visual_id == "provider-logos":
@@ -662,6 +664,14 @@ def render_media(visual_id: str, section, page_path: str, *, eager: bool = False
     if not paths or binding.get("kind") == "reference-only":
         return ""
     caption = section.get("caption")
+    if visual_id == "pos-product":
+        return (
+            '<figure class="media-figure media-figure--pos">'
+            f'{image_tag(paths[0], binding["alt"], css="media-object", eager=eager)}'
+            '<figcaption class="media-credit">Фото: '
+            '<a href="https://smartcode.ru/" target="_blank" rel="noopener noreferrer">Smartcode</a>'
+            '</figcaption></figure>'
+        )
     lightbox = not page_path.startswith("/partners/") and visual_id in {"terminal-screen", "rma-desktop", "rma-android", "interface-variants", "allvend-infokiosk", "infokiosk-screen"}
     if binding.get("kind") in {"svg", "html-and-svg"}:
         return picture_figure(paths, binding.get("alt", ""), caption=caption, lightbox=lightbox)
@@ -711,7 +721,8 @@ def render_section(section, page_path: str, index: int) -> str:
         visual_id in {"software-catalog", "provider-catalog", "equipment-catalog", "download-list", "partner-routes"}
         or (page_path == "/" and section.get("id") == "equipment")
     )
-    reverse = index % 2 == 1 and not full and not (page_path == "/" and section.get("id") == "providers")
+    reverse = (index % 2 == 1 and not full and section.get("layout") != "copy-left"
+               and not (page_path == "/" and section.get("id") == "providers"))
     motion = section.get("motion_alias") or section.get("motion") or "none"
     safe_reveal_visuals = {
         "fastpay-product", "commerce-flow", "supplier-exchange",
@@ -725,6 +736,8 @@ def render_section(section, page_path: str, index: int) -> str:
         and visual_id in safe_reveal_visuals
     )
     classes = ["evidence-section"]
+    if section.get("layout") == "copy-left":
+        classes.append("evidence-section--copy-left")
     if dark:
         classes.append("evidence-section--dark")
     if full:
@@ -795,8 +808,9 @@ def page_hero(page) -> str:
     return (
         '<section class="page-hero"><div class="page-hero__shell">'
         f'{eyebrow}<h1>{e(page["title"])}</h1>'
-        f'<p class="page-hero__lead">{e(page.get("lead", ""))}</p>{action_links(cta, primary_first=True)}'
-        f'{jumps}</div></section>'
+        + (f'<p class="page-hero__lead">{e(page["lead"])}</p>' if page.get('lead') else '')
+        + action_links(cta, primary_first=True)
+        + f'{jumps}</div></section>'
     )
 
 
@@ -1055,12 +1069,9 @@ def render_equipment_inline(section) -> str:
     facts = "".join(f'<tr><th scope="row">{e(label)}</th><td>{e(value)}</td></tr>' for label, value in product["facts"])
     config = "".join(f'<li>{e(item)}</li>' for item in product["base_configuration"])
     limits = "".join(f'<li>{e(item)}</li>' for item in product.get("source_limits", []))
-    measurements = dict(product['facts'])
     visual = (
-        '<div class="dimensioned-product">'
-        f'{figure_image(image_path,product["title"],css="product-hero__image")}'
-        f'<span class="dimension dimension--height"><small>Высота</small><strong>{e(measurements["Высота"])}</strong></span>'
-        f'<span class="dimension dimension--width"><small>Ширина</small><strong>{e(measurements["Ширина"])}</strong></span></div>'
+        '<div class="equipment-product__image-stage">'
+        f'{figure_image(image_path,product["title"],css="product-hero__image")}</div>'
     )
     return (
         f'{alias_anchors(section)}<section class="equipment-product" id="{e(section["id"])}">'

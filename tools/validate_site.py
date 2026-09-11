@@ -461,26 +461,47 @@ def main() -> int:
         'suppliers': {'sales-network-products':'supplier-sales-channels','directory-of-products':'supplier-catalog','work-in-the-office':'supplier-order-management','integration-in-xml':'supplier-xml','ease-of-interaction':'supplier-sync','freeconnection':'supplier-connection'},
         'retail': {'orders':'retail-orders','management':'retail-management','deployment':'retail-deployment'},
         'representatives': {'cashier-in-the-region':'representative-cashdesk','exclusivity-in-the-region':'representative-region','mastering-directions':'representative-directions','connecting-players':'representative-participants'},
-        'gateways': {'quick-start':'gateway-steps','highspeed':'gateway-processing','high-reward':'gateway-operations'},
+        'gateways': {'quick-start':'gateway-steps','highspeed':'gateway-processing','high-reward':'gateway-operations','operator-point':'gateway-operator-point'},
     }
     for kind, sections in expected_scenes.items():
         for section_id, scene_id in sections.items():
             markup = section_markup(html_path_for_route(f'/partners/{kind}/'), section_id)
-            if f'data-scene="{scene_id}"' not in markup or not re.search(r'<(?:svg|img)\b', markup):
+            if f'data-scene="{scene_id}"' not in markup or not re.search(r'<(?:svg|img)\b|class="workflow-visual', markup):
                 fail(errors, f"{kind}#{section_id}: missing subject illustration {scene_id}")
             if 'feature-list' in markup or 'process-node' in markup:
                 fail(errors, f"{kind}#{section_id}: side list was not replaced")
     editorial_replacements = {
-        'agents': ('cost-reduction', 'remote-control', 'innovation'),
-        'providers': ('high-speed', 'placing-terminals'),
-        'suppliers': ('sales-network-products', 'integration-in-xml', 'ease-of-interaction'),
-        'retail': ('orders', 'deployment'),
+        'agents': ('cost-reduction', 'innovation'),
+        'providers': ('placing-terminals',),
+        'retail': ('orders',),
     }
     for kind, sections in editorial_replacements.items():
         for section_id in sections:
             markup = section_markup(html_path_for_route(f'/partners/{kind}/'), section_id)
             if 'class="partner-editorial' not in markup or '<svg' in markup:
                 fail(errors, f"{kind}#{section_id}: old schematic must be replaced by editorial imagery")
+    workflow_sections = {
+        'agents': ('remote-control',),
+        'providers': ('payment-collection', 'high-speed'),
+        'suppliers': ('sales-network-products', 'integration-in-xml', 'ease-of-interaction'),
+        'retail': ('management', 'deployment'),
+        'gateways': ('highspeed', 'operator-point'),
+    }
+    for kind, sections in workflow_sections.items():
+        for section_id in sections:
+            markup = section_markup(html_path_for_route(f'/partners/{kind}/'), section_id)
+            if 'class="workflow-visual' not in markup or 'class="partner-editorial' in markup:
+                fail(errors, f'{kind}#{section_id}: expected a diagram of the described process')
+    exchange = section_markup(html_path_for_route('/partners/suppliers/'), 'integration-in-xml')
+    for label, direction in [('Каталог', 'right'), ('Заказы', 'left'), ('Принятие заказа', 'right'), ('Данные доставки', 'both')]:
+        if f'class="flow-lane flow-lane--{direction}"><span>{label}</span>' not in exchange:
+            fail(errors, f'SkyMarket XML exchange has an incorrect direction: {label}')
+    operator = section_markup(html_path_for_route('/partners/gateways/'), 'operator-point')
+    if 'RMA_win_lin.png' not in operator or any(x not in operator for x in ('Windows', 'Linux', 'Android')):
+        fail(errors, 'gateway operator section must illustrate the original RMA and its platforms')
+    gateways = html_path_for_route('/partners/gateways/').read_text(encoding='utf-8')
+    if 'Подключите собственную предпроцессинговую систему' in gateways:
+        fail(errors, 'gateways removed introduction is still rendered')
     representatives = html_path_for_route('/partners/representatives/').read_text(encoding='utf-8')
     section_ids = re.findall(r'<section\b[^>]*id="([^"]+)"', representatives)
     if section_ids[-1] != 'publication-of-information':
@@ -504,8 +525,8 @@ def main() -> int:
     equipment = json.loads((DATA/'equipment-content.json').read_text(encoding='utf-8'))
     for product in equipment['products']:
         markup = section_markup(html_path_for_route('/equipment/'), product['slug'])
-        if 'dimension--height' not in markup or markup.count('<figure') != 1:
-            fail(errors, f"equipment {product['slug']}: expected one real product photo with dimensions")
+        if 'class="dimension' in markup or markup.count('<figure') != 1:
+            fail(errors, f"equipment {product['slug']}: expected one real photo without dimension annotations")
         for value in [v for pair in product['facts'] for v in pair] + product['base_configuration'] + product['source_limits']:
             if html.escape(value, quote=True) not in markup:
                 fail(errors, f"equipment {product['slug']}: missing product information {value}")
@@ -520,12 +541,26 @@ def main() -> int:
     finger_provider = section_markup(html_path_for_route('/partners/providers/'), 'connecting-to-finger')
     if 'logotip_finger.png' not in finger_provider or 'data-scene=' in finger_provider:
         fail(errors, 'provider FINGER section must use the authentic logo')
-    for route, removed, picture in [('/software/xml/', 'exchange', 'xml-flow.svg'),('/software/pos/', 'features', 'pos-capabilities.svg')]:
+    for route, removed, picture in [('/software/xml/', 'exchange', 'xml-flow.svg'),('/software/pos/', 'features', 'shtrih-mobilepay-pro.jpg')]:
         markup = html_path_for_route(route).read_text(encoding='utf-8')
         if section_markup(html_path_for_route(route), removed) or markup.count(picture) != 1:
             fail(errors, f'{route}: merged content must have one main illustration')
         if f'id="{removed}"' not in markup:
             fail(errors, f'{route}: lost compatibility anchor {removed}')
+    pos = section_markup(html_path_for_route('/software/pos/'), 'overview')
+    if 'href="https://smartcode.ru/"' not in pos or 'pos-capabilities.svg' in pos:
+        fail(errors, 'POS must show the authentic product photo with its required attribution')
+    for route, section_id in [('/software/finger/', 'advantages'), ('/software/allvend/', 'audiences')]:
+        markup = section_markup(html_path_for_route(route), section_id)
+        if 'evidence-section--copy-left' not in markup or 'evidence-section--reverse' in markup:
+            fail(errors, f'{route}#{section_id}: heading must be left and list right')
+    allvend_tasks = section_markup(html_path_for_route('/software/allvend/'), 'audiences')
+    for label in ('Оплата услуг', 'Заказ и оплата товаров', 'Информационный киоск', 'Приём наличных', 'Удалённое управление'):
+        if label not in allvend_tasks:
+            fail(errors, f'ALLVEND is missing its source-backed task: {label}')
+    for label in ('Торговые сети', 'Финансовые организации', 'Государственные учреждения'):
+        if label in allvend_tasks:
+            fail(errors, f'ALLVEND still uses a sector in place of a task: {label}')
     support = html_path_for_route('/support/').read_text(encoding='utf-8')
     if section_markup(html_path_for_route('/support/'), 'questions'):
         fail(errors, 'support must not repeat the contact section')
