@@ -69,12 +69,8 @@
       "href": "/software/terminal/"
     },
     {
-      "label": "РМА Windows / Linux",
-      "href": "/software/rma-desktop/"
-    },
-    {
-      "label": "РМА Android",
-      "href": "/software/rma-android/"
+      "label": "РМА Windows / Linux / Android",
+      "href": "/software/rma/"
     },
     {
       "label": "XML-шлюз",

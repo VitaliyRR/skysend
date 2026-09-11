@@ -22,6 +22,8 @@ EXPECT_EXTERNAL_ACCOUNTS = os.environ.get("SKYSEND_EXTERNAL_ACCOUNTS_VERIFIED") 
 ROUTE_ALIASES = {
     "/partners/": "/partners/agents/",
     "/software/": "/software/terminal/",
+    "/software/rma-desktop/": "/software/rma/",
+    "/software/rma-android/": "/software/rma/",
 }
 
 
@@ -342,14 +344,11 @@ def main() -> int:
             fail(errors, f"home partner infographic is missing: {kind}")
         if f'href="{href}"' not in home_partners or f"<strong>{label}</strong>" not in home_partners:
             fail(errors, f"home partner route is incomplete: {label}")
-    for label in (
-        "FastPay Beauty II", "FastPay Simple", "Сенсорная панель 17″",
-        "4 сценария работы", "Комплектация под задачу", "доступны как опции",
-        "ПО предустановлено", "Приём наличных", "CashCode MVU1024 (б/у)",
-        "Монитор в комплектации б/у.",
-    ):
+    for label in ("FastPay Beauty II", "FastPay Simple"):
         if label not in home_equipment:
             fail(errors, f"home equipment showcase missing: {label}")
+    if '<dl' in home_equipment or 'Для помещений' in home_equipment or 'product-duo__lead' in home_equipment:
+        fail(errors, "home equipment must only show the two models without specifications or indoor label")
     if ">Оборудование<" in home_equipment:
         fail(errors, "home equipment section must not contain the generic equipment link")
     for alias, target in ROUTE_ALIASES.items():
@@ -372,8 +371,7 @@ def main() -> int:
 
     software_titles = {
         "/software/terminal/": "Терминальное ПО",
-        "/software/rma-desktop/": "ПО приёма платежей для кассира",
-        "/software/rma-android/": "ПО приёма платежей для смартфонов",
+        "/software/rma/": "РМА для Windows, Linux и Android",
         "/software/xml/": "Подключение по XML-протоколу",
         "/software/pos/": "Программное обеспечение для POS-терминала",
         "/software/finger/": "Приложение FINGER для смартфонов",
@@ -394,14 +392,13 @@ def main() -> int:
             "Скачивание логов терминала usb-накопителем",
             "Эксплуатация терминала",
         ],
-        ("/software/rma-desktop/", "start"): [
+        ("/software/rma/", "materials"): [
             'Приложение "Рабочее место Агента для ОС Windows"',
             "Приложение «Рабочее место Агента» для Windows, EXE",
             "Приложение для РМА для 64-битной версии OS Linux",
+            "Инструкция по установке и эксплуатации РМА Windows",
             "Установка и эксплуатация РМА Windows",
             "Установка и эксплуатация РМА Linux",
-        ],
-        ("/software/rma-android/", "start"): [
             "Программа приема платежей на Android",
             "Установка и настройка ALLVEND для Android",
             "Приложение приема платежей для Android",
@@ -443,10 +440,45 @@ def main() -> int:
         if actual_titles != expected_titles:
             fail(errors, f"{route}#{section_id}: downloads expected {expected_titles}, got {actual_titles}")
 
-    report_markup = section_markup(html_path_for_route("/partners/providers/"), "automate-reporting")
-    for label in ["Период отчёта", "Реестр платежей", "Выгрузка в систему учёта", "Сверка отчётности"]:
-        if label not in report_markup:
-            fail(errors, f"provider reporting visual missing field: {label}")
+    for kind, route, label in expected_partner_tiles:
+        markup = html_path_for_route(route).read_text(encoding="utf-8")
+        main_markup = re.search(r'<main\b.*?</main>', markup, flags=re.S).group(0)
+        if re.search(r'<a\b', main_markup):
+            fail(errors, f"{route}: partner content must not contain hyperlinks")
+        if 'jump-nav' in main_markup or 'Обсудить подключение' in main_markup or '>Партнёрам<' in main_markup:
+            fail(errors, f"{route}: removed partner navigation or eyebrow is still rendered")
+    expected_scenes = {
+        'agents': {'cost-reduction':'agent-maintenance','remote-control':'agent-remote','innovation':'agent-innovation'},
+        'providers': {'payment-collection':'provider-payment-points','connecting-to-skysend':'provider-connection','privacy-policy':'provider-data-security','high-speed':'provider-processing','automate-reporting':'provider-reporting','connecting-to-finger':'provider-finger','partnership':'provider-preprocessing','placing-terminals':'provider-office-terminal'},
+        'suppliers': {'sales-network-products':'supplier-sales-channels','directory-of-products':'supplier-catalog','work-in-the-office':'supplier-order-management','integration-in-xml':'supplier-xml','ease-of-interaction':'supplier-sync','freeconnection':'supplier-connection'},
+        'retail': {'orders':'retail-orders','management':'retail-management','deployment':'retail-deployment'},
+        'representatives': {'cashier-in-the-region':'representative-cashdesk','exclusivity-in-the-region':'representative-region','mastering-directions':'representative-directions','connecting-players':'representative-participants'},
+        'gateways': {'quick-start':'gateway-steps','highspeed':'gateway-processing','high-reward':'gateway-operations'},
+    }
+    for kind, sections in expected_scenes.items():
+        for section_id, scene_id in sections.items():
+            markup = section_markup(html_path_for_route(f'/partners/{kind}/'), section_id)
+            if f'data-scene="{scene_id}"' not in markup or '<svg' not in markup:
+                fail(errors, f"{kind}#{section_id}: missing subject illustration {scene_id}")
+            if 'feature-list' in markup or 'process-node' in markup:
+                fail(errors, f"{kind}#{section_id}: side list was not replaced")
+    representatives = html_path_for_route('/partners/representatives/').read_text(encoding='utf-8')
+    section_ids = re.findall(r'<section\b[^>]*id="([^"]+)"', representatives)
+    if section_ids[-1] != 'publication-of-information':
+        fail(errors, 'representative contacts must be the last section')
+    contact = section_markup(html_path_for_route('/partners/representatives/'), 'publication-of-information')
+    for value in ('+7 (861) 201-12-21','+7 (800) 555-25-36','sales@inf-sys.ru','support@inf-sys.ru','@infsysgroup'):
+        if value not in contact:
+            fail(errors, f'representative contact is missing: {value}')
+    if section_markup(html_path_for_route('/partners/gateways/'), 'round-the-clock-support'):
+        fail(errors, 'gateways support section must be removed')
+    rma = html_path_for_route('/software/rma/').read_text(encoding='utf-8')
+    for visual in ('media-object--rma-desktop','media-object--rma-android'):
+        if visual not in rma:
+            fail(errors, f'combined RMA is missing screenshot: {visual}')
+    for old in ('/software/rma-desktop/','/software/rma-android/'):
+        if f'href="{old}"' in home_text:
+            fail(errors, f'software navigation still links to old RMA route: {old}')
 
     for route, height in [
         ("/equipment/payment-terminals/fastpay-beauty-ii/", "145 см"),
@@ -463,6 +495,12 @@ def main() -> int:
         r"автопробег",
         r"Предложение Рекламодателям",
         r"Как увеличить доходность терминалов",
+        r"В исходном (?:описании|каталоге)",
+        r"Исходный сайт (?:описывает|предусматривает)",
+        r"На исходном сайте",
+        r"Исходные материалы описывают",
+        r"из исходн(?:ых материалов|ой страницы)",
+        r"из материалов (?:SkySend|действующего сайта)",
     ]
     for pattern in forbidden_copy:
         if re.search(pattern, public_text, flags=re.I):
@@ -494,7 +532,7 @@ def main() -> int:
     if "allvend-infokiosk.svg" not in allvend_text:
         fail(errors, "ALLVEND infokiosk must use the source-screen composition")
 
-    expected = {"routes": 41, "provider_rows": 600, "download_rows": 71, "redirects": 153, "gone": 13}
+    expected = {"routes": 40, "provider_rows": 600, "download_rows": 72, "redirects": 157, "gone": 13}
     for key, value in expected.items():
         if manifest.get(key) != value:
             fail(errors, f"manifest {key}: expected {value}, got {manifest.get(key)}")

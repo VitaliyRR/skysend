@@ -19,6 +19,7 @@ from pathlib import Path
 from urllib.parse import quote, unquote, urlparse
 
 from partner_art import render_partner_art
+from partner_scenes import render_partner_scene
 
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -31,6 +32,8 @@ EXTERNAL_ACCOUNTS_VERIFIED = os.environ.get("SKYSEND_EXTERNAL_ACCOUNTS_VERIFIED"
 ROUTE_ALIASES = {
     "/partners/": "/partners/agents/",
     "/software/": "/software/terminal/",
+    "/software/rma-desktop/": "/software/rma/",
+    "/software/rma-android/": "/software/rma/",
 }
 
 
@@ -71,18 +74,6 @@ DOWNLOAD_BY_ID = {item["id"]: item for item in DOWNLOADS["items"]}
 EXPLICIT_DOWNLOAD_ITEMS = {
     ("/software/terminal/", "flash"): ("terminal-a65a6fe49e", "terminal-2dd1aa405f"),
     ("/software/pos/", "start"): ("pos-9484f696f3",),
-    ("/software/rma-desktop/", "start"): (
-        "rma-b6571ae893",
-        "rma-43db850c95",
-        "rma-31138d54eb",
-        "rma-5a93447b3a",
-        "rma-5a8f6e28ea",
-    ),
-    ("/software/rma-android/", "start"): (
-        "rma-android-ce621f1edb",
-        "rma-android-0000f786b3",
-        "rma-android-2cb9964a52",
-    ),
     ("/software/xml/", "protocol"): (
         "xml-f638411134",
         "xml-c6c9ba2e03",
@@ -371,6 +362,10 @@ def process_visual(section) -> str:
 
 def contact_panel(section, page_path: str) -> str:
     contacts = NAVIGATION["contact_defaults"]
+    if page_path.startswith("/partners/"):
+        fields = section.get("contact_fields", [])
+        rows = ''.join(f'<div><dt>{e(item["label"])}</dt><dd>{e(item["value"])}</dd></div>' for item in fields)
+        return f'<dl class="partner-contacts">{rows}</dl>' if rows else ''
     if page_path == "/about/" and section.get("id") == "information":
         rows = []
         for item in section.get("links", []):
@@ -387,10 +382,6 @@ def contact_panel(section, page_path: str) -> str:
         {"label": "@infsysgroup", "href": contacts["telegram"]},
     ]
     special_links = {
-        ("/partners/representatives/", "publication-of-information"): [
-            {"label": contacts["officePhone"], "href": "tel:+78612011221"},
-            {"label": "Контакты центрального офиса", "href": "/contacts/"},
-        ],
         ("/about/careers/", "resume"): [
             {"label": contacts["officePhone"], "href": "tel:+78612011221"},
         ],
@@ -400,7 +391,6 @@ def contact_panel(section, page_path: str) -> str:
             {"label": "Все контакты", "href": "/contacts/"},
         ],
         ("/", "support"): [support_links[0], support_links[2]],
-        ("/partners/gateways/", "round-the-clock-support"): support_links,
         ("/providers/", "support"): support_links,
         ("/connect/", "existing"): support_links,
     }
@@ -491,7 +481,7 @@ def download_rows(items, *, compact: bool = False) -> str:
             elif item.get("status") == "reachable_head":
                 state = "Источник доступен на дату проверки"
             else:
-                state = "Ссылка из материалов SkySend"
+                state = "Внешняя ссылка"
         else:
             fallback = item.get("fallback") or {}
             action = f'<a class="download-row__action" href="{e(fallback.get("href", "/support/"))}">Поддержка →</a>'
@@ -512,7 +502,7 @@ def download_rows(items, *, compact: bool = False) -> str:
 def section_downloads(section, page_path: str):
     if page_path == "/downloads/":
         return DOWNLOAD_BY_GROUP.get(section.get("id"), [])
-    item_ids = EXPLICIT_DOWNLOAD_ITEMS.get((page_path, section.get("id")), ())
+    item_ids = section.get("download_ids") or EXPLICIT_DOWNLOAD_ITEMS.get((page_path, section.get("id")), ())
     if item_ids:
         return [DOWNLOAD_BY_ID[item_id] for item_id in item_ids]
     collection = section.get("collection") or {}
@@ -616,19 +606,12 @@ def product_duo() -> str:
     }
     cards = []
     for product in EQUIPMENT["products"]:
-        showcase = product["showcase"]
-        highlights = "".join(
-            f'<div><dt>{e(item["title"])}</dt><dd>{e(item["text"])}</dd></div>'
-            for item in showcase["highlights"]
-        )
         cards.append(
             f'<a class="product-duo__item" href="{e(product["path"])}">'
             '<span class="product-duo__visual">'
             f'{image_tag(image_map[product["slug"]], product["title"], css="product-duo__image")}</span>'
-            '<span class="product-duo__copy"><small>Для помещений</small>'
-            f'<strong>{e(product["title"])}</strong><span class="product-duo__lead">{e(showcase["lead"])}</span>'
-            f'<dl class="product-duo__highlights">{highlights}</dl>'
-            '<span class="product-duo__link">Все характеристики и комплектация ↗</span></span></a>'
+            f'<span class="product-duo__copy"><strong>{e(product["title"])}</strong>'
+            '<span class="product-duo__link">Подробнее ↗</span></span></a>'
         )
     return f'<div class="product-duo">{"".join(cards)}</div>'
 
@@ -636,6 +619,8 @@ def product_duo() -> str:
 def render_media(visual_id: str, section, page_path: str, *, eager: bool = False) -> str:
     if not visual_id:
         return ""
+    if visual_id == "partner-scene":
+        return render_partner_scene(section["scene_id"], section["id"])
     if visual_id == "provider-logos":
         return provider_wall()
     if visual_id == "html-feature-list":
@@ -672,7 +657,7 @@ def render_media(visual_id: str, section, page_path: str, *, eager: bool = False
     caption = section.get("caption")
     if visual_id in {"terminal-screen", "rma-desktop", "rma-android"}:
         caption = caption or "Интерфейс ПО SkySend"
-    lightbox = visual_id in {"terminal-screen", "rma-desktop", "rma-android", "interface-variants", "allvend-infokiosk", "infokiosk-screen"}
+    lightbox = not page_path.startswith("/partners/") and visual_id in {"terminal-screen", "rma-desktop", "rma-android", "interface-variants", "allvend-infokiosk", "infokiosk-screen"}
     if binding.get("kind") in {"svg", "html-and-svg"}:
         return picture_figure(paths, binding.get("alt", ""), caption=caption, lightbox=lightbox)
     return figure_image(
@@ -747,7 +732,7 @@ def render_section(section, page_path: str, index: int) -> str:
     section_body = (
         '<div class="evidence-section__copy">'
         f'<h2>{e(section.get("title"))}</h2>'
-        f'{section_copy(section, include_links=not (page_path == "/about/" and section.get("id") == "information"))}</div>'
+        f'{section_copy(section, include_links=not page_path.startswith("/partners/") and not (page_path == "/about/" and section.get("id") == "information"))}</div>'
     )
     if media:
         section_body += f'<div class="evidence-section__visual">{media}</div>'
@@ -788,17 +773,21 @@ def family_label(path: str) -> str:
 
 
 def page_hero(page) -> str:
+    is_partner = page["path"].startswith("/partners/")
     cta = [page["primary_cta"]] if page.get("primary_cta") else []
+    if is_partner:
+        cta = []
     sections = page.get("sections", [])
     jumps = ""
-    if len(sections) > 3:
+    if len(sections) > 3 and not is_partner:
         links = "".join(
             f'<a href="#{e(section["id"])}">{e(section["title"])}</a>' for section in sections
         )
         jumps = f'<nav class="jump-nav" aria-label="Разделы страницы">{links}</nav>'
+    eyebrow = '' if is_partner else f'<p class="eyebrow">{e(family_label(page["path"]))}</p>'
     return (
         '<section class="page-hero"><div class="page-hero__shell">'
-        f'<p class="eyebrow">{e(family_label(page["path"]))}</p><h1>{e(page["title"])}</h1>'
+        f'{eyebrow}<h1>{e(page["title"])}</h1>'
         f'<p class="page-hero__lead">{e(page.get("lead", ""))}</p>{action_links(cta, primary_first=True)}'
         f'{jumps}</div></section>'
     )
@@ -918,7 +907,7 @@ def footer() -> str:
         f'<a href="mailto:{e(contacts["supportEmail"])}">{e(contacts["supportEmail"])}</a>'
         f'<a href="{e(contacts["telegram"])}" target="_blank" rel="noopener noreferrer">Telegram @infsysgroup</a></address>'
         '</div><div class="site-footer__bottom"><span>ООО «СкайСенд»</span>'
-        '<span>Информация и файлы собраны из материалов SkySend</span></div></footer>'
+        '</div></footer>'
     )
 
 
@@ -929,7 +918,7 @@ def media_dialog() -> str:
         '<button class="icon-button icon-button--light" type="button" data-lightbox-close aria-label="Закрыть изображение">'
         '<img src="/assets/icons/close.svg" width="24" height="24" alt=""></button></div>'
         '<div class="media-dialog__viewport"><img data-lightbox-image alt=""></div>'
-        '<p class="media-dialog__caption" data-lightbox-caption>Экран из материалов действующего сайта. Внешний вид зависит от версии и настроек ПО.</p>'
+        '<p class="media-dialog__caption" data-lightbox-caption>Внешний вид зависит от версии и настроек ПО.</p>'
         '</dialog>'
     )
 
@@ -1047,7 +1036,7 @@ def provider_catalog_section(section) -> str:
 
 def render_equipment_category(category) -> str:
     path = category["path"]
-    lead = "Модели и комплектующие из материалов SkySend. Цены и наличие уточняйте у менеджера."
+    lead = "Платёжные терминалы и комплектующие. Цены и наличие уточняйте у менеджера."
     page = {"path": path, "title": category["title"], "lead": lead, "sections": []}
     rows = []
     detail_paths = {product["slug"]: product["path"] for product in EQUIPMENT["products"]}
@@ -1083,9 +1072,9 @@ def render_equipment_product(product) -> str:
         f'<div class="product-detail__spec"><h2>Характеристики</h2><table><tbody>{facts}</tbody></table>'
         f'<p class="caption">{e(product["specification_caption"])}</p></div></div></section>'
         '<section class="evidence-section"><div class="section-shell"><div class="evidence-section__copy">'
-        '<h2>Базовая комплектация</h2><p>Перечень из материалов SkySend.</p>'
+        '<h2>Базовая комплектация</h2>'
         f'{action_links([product["cta"]])}</div><div class="evidence-section__visual"><ul class="spec-list">{config}</ul></div></div></section>'
-        '<section class="product-notes"><div><h2>Уточнения по исходным данным</h2>'
+        '<section class="product-notes"><div><h2>Комплектация и размеры</h2>'
         f'<ul>{limits}</ul></div></section>'
     )
     return document(product["title"], path, body, description=product["lead"])

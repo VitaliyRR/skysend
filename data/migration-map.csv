@@ -44,7 +44,7 @@ https://skysend.ru/partners/representatives/running-banks-fps.html,/partners/rep
 https://skysend.ru/partners/representatives/mastering-directions.html,/partners/representatives/#mastering-directions,301,adapt,Сохранить смысл; очистить оформление и промо
 https://skysend.ru/partners/gateway/information.html,/partners/gateways/,301,adapt,Сохранить смысл; очистить оформление и промо
 https://skysend.ru/partners/gateway/high-reward.html,/partners/gateways/#high-reward,301,adapt,Убрать обещания процентов/скидок; сохранить только проверяемый механизм/формат работы
-https://skysend.ru/partners/gateway/round-the-clock-support.html,/partners/gateways/#round-the-clock-support,301,adapt,Сохранить смысл; очистить оформление и промо
+https://skysend.ru/partners/gateway/round-the-clock-support.html,/support/,301,adapt,Сохранить смысл; очистить оформление и промо
 https://skysend.ru/partners/gateway/xml.html,/partners/gateways/#xml,301,adapt,Сохранить смысл; очистить оформление и промо
 https://skysend.ru/partners/gateway/highspeed.html,/partners/gateways/#highspeed,301,adapt,Сохранить смысл; очистить оформление и промо
 https://skysend.ru/partners/gateway/quick-start.html,/partners/gateways/#quick-start,301,adapt,Сохранить смысл; очистить оформление и промо
@@ -84,8 +84,8 @@ https://skysend.ru/benefits/protection-of-data.html,/partners/providers/#privacy
 https://skysend.ru/benefits/online-support.html,/support/,301,consolidate,Дублирующую статью объединить с профильной секцией; снять абсолютные обещания
 https://skysend.ru/program.html,/software/terminal/,301,adapt,Индекс ПО заменён выпадающим меню; старый адрес ведёт к терминальному ПО
 https://skysend.ru/program/terminal-software.html,/software/terminal/,301,adapt,Сохранить смысл; очистить оформление и промо
-https://skysend.ru/program/rma-pc.html,/software/rma-desktop/,301,adapt,Сохранить смысл; очистить оформление и промо
-https://skysend.ru/program/rma-android.html,/software/rma-android/,301,adapt,Сохранить смысл; очистить оформление и промо
+https://skysend.ru/program/rma-pc.html,/software/rma/,301,adapt,Сохранить смысл; очистить оформление и промо
+https://skysend.ru/program/rma-android.html,/software/rma/,301,adapt,Сохранить смысл; очистить оформление и промо
 https://skysend.ru/program/xml-gateway.html,/software/xml/,301,adapt,Сохранить смысл; очистить оформление и промо
 https://skysend.ru/program/software-for-pos-terminal.html,/software/pos/,301,adapt,Сохранить смысл; очистить оформление и промо
 https://skysend.ru/program/finger.html,/software/finger/,301,adapt,Сохранить смысл; очистить оформление и промо
@@ -156,13 +156,17 @@ https://skysend.ru/allvend,/software/allvend/,301,redirect,Вариант ста
 https://skysend.ru/allvend/,/software/allvend/,301,redirect,Вариант старого адреса без расширения ведёт на страницу продукта
 https://skysend.ru/program/terminal-software,/software/terminal/,301,redirect,Вариант старого адреса без расширения ведёт на страницу продукта
 https://skysend.ru/program/terminal-software/,/software/terminal/,301,redirect,Вариант старого адреса без расширения ведёт на страницу продукта
-https://skysend.ru/program/rma-pc,/software/rma-desktop/,301,redirect,Вариант старого адреса без расширения ведёт на страницу продукта
-https://skysend.ru/program/rma-pc/,/software/rma-desktop/,301,redirect,Вариант старого адреса без расширения ведёт на страницу продукта
-https://skysend.ru/program/rma-android,/software/rma-android/,301,redirect,Вариант старого адреса без расширения ведёт на страницу продукта
-https://skysend.ru/program/rma-android/,/software/rma-android/,301,redirect,Вариант старого адреса без расширения ведёт на страницу продукта
+https://skysend.ru/program/rma-pc,/software/rma/,301,redirect,Вариант старого адреса без расширения ведёт на страницу продукта
+https://skysend.ru/program/rma-pc/,/software/rma/,301,redirect,Вариант старого адреса без расширения ведёт на страницу продукта
+https://skysend.ru/program/rma-android,/software/rma/,301,redirect,Вариант старого адреса без расширения ведёт на страницу продукта
+https://skysend.ru/program/rma-android/,/software/rma/,301,redirect,Вариант старого адреса без расширения ведёт на страницу продукта
 https://skysend.ru/program/xml-gateway,/software/xml/,301,redirect,Вариант старого адреса без расширения ведёт на страницу продукта
 https://skysend.ru/program/xml-gateway/,/software/xml/,301,redirect,Вариант старого адреса без расширения ведёт на страницу продукта
 https://skysend.ru/program/software-for-pos-terminal,/software/pos/,301,redirect,Вариант старого адреса без расширения ведёт на страницу продукта
 https://skysend.ru/program/software-for-pos-terminal/,/software/pos/,301,redirect,Вариант старого адреса без расширения ведёт на страницу продукта
 https://skysend.ru/program/finger,/software/finger/,301,redirect,Вариант старого адреса без расширения ведёт на страницу продукта
 https://skysend.ru/program/finger/,/software/finger/,301,redirect,Вариант старого адреса без расширения ведёт на страницу продукта
+https://skysend.ru/software/rma-desktop,/software/rma/,301,merge,"РМА для Windows, Linux и Android объединено на одной странице."
+https://skysend.ru/software/rma-desktop/,/software/rma/,301,merge,"РМА для Windows, Linux и Android объединено на одной странице."
+https://skysend.ru/software/rma-android,/software/rma/,301,merge,"РМА для Windows, Linux и Android объединено на одной странице."
+https://skysend.ru/software/rma-android/,/software/rma/,301,merge,"РМА для Windows, Linux и Android объединено на одной странице."

@@ -93,7 +93,7 @@
 /partners/gateway/information.html /partners/gateways/ 301
 /partners/gateway/operator-point.html /partners/gateways/#operator-point 301
 /partners/gateway/quick-start.html /partners/gateways/#quick-start 301
-/partners/gateway/round-the-clock-support.html /partners/gateways/#round-the-clock-support 301
+/partners/gateway/round-the-clock-support.html /support/ 301
 /partners/gateway/translate-terminal.html /partners/gateways/#translate-terminal 301
 /partners/gateway/xml.html /partners/gateways/#xml 301
 /partners/providers/automate-reporting.html /partners/providers/#automate-reporting 301
@@ -132,12 +132,12 @@
 /program/finger /software/finger/ 301
 /program/finger.html /software/finger/ 301
 /program/finger/ /software/finger/ 301
-/program/rma-android /software/rma-android/ 301
-/program/rma-android.html /software/rma-android/ 301
-/program/rma-android/ /software/rma-android/ 301
-/program/rma-pc /software/rma-desktop/ 301
-/program/rma-pc.html /software/rma-desktop/ 301
-/program/rma-pc/ /software/rma-desktop/ 301
+/program/rma-android /software/rma/ 301
+/program/rma-android.html /software/rma/ 301
+/program/rma-android/ /software/rma/ 301
+/program/rma-pc /software/rma/ 301
+/program/rma-pc.html /software/rma/ 301
+/program/rma-pc/ /software/rma/ 301
 /program/software-for-pos-terminal /software/pos/ 301
 /program/software-for-pos-terminal.html /software/pos/ 301
 /program/software-for-pos-terminal/ /software/pos/ 301
@@ -150,4 +150,8 @@
 /skanery-otpechatka.html /equipment/fingerprint/#skanery-otpechatka.html 301
 /software /software/terminal/ 301
 /software/ /software/terminal/ 301
+/software/rma-android /software/rma/ 301
+/software/rma-android/ /software/rma/ 301
+/software/rma-desktop /software/rma/ 301
+/software/rma-desktop/ /software/rma/ 301
 /trading.html /partners/retail/ 301

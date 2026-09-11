@@ -47,7 +47,7 @@ location / {
 
 Copy `deploy/legacy-locations.inc` to
 `/etc/nginx/snippets/skysend-legacy-locations.inc`. The generated file contains
-153 exact `301` rules and 13 exact `410` rules. Its targets are already absolute
+157 exact `301` rules and 13 exact `410` rules. Its targets are already absolute
 canonical URLs. The public software navigation is a dropdown of seven detail
 routes; `/software`, `/software/` and the old general `/program` addresses
 redirect to `/software/terminal/` rather than serving a software index.
@@ -61,8 +61,8 @@ python site/build.py
 python tools/validate_site.py
 ```
 
-The expected production manifest contains 41 canonical routes, 45 HTML files
-(including two redirect-only index documents), 71 download records, 153 redirects
+The expected production manifest contains 40 canonical routes, 46 HTML files
+(including four redirect-only documents), 72 download records, 157 redirects
 and 13 gone routes. Treat any different
 count as a release failure until the content sources, migration map and generated
 Nginx/static redirect files agree.

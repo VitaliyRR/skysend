@@ -90,7 +90,7 @@
         image.src = control.dataset.lightboxSrc || "";
         image.alt = control.dataset.lightboxAlt || "";
         title.textContent = label;
-        caption.textContent = `${label}. Экран из материалов действующего сайта. Внешний вид зависит от версии и настроек ПО.`;
+        caption.textContent = `${label}. Внешний вид зависит от версии и настроек ПО.`;
         dialog.showModal();
         document.body.classList.add("dialog-open");
         close.focus();

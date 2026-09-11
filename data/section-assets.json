@@ -14,7 +14,7 @@
         1280
       ],
       "fit": "contain",
-      "note": "HTML индекс семи страниц ПО; title/path, первый абзац и первый media из software-detail."
+      "note": "HTML индекс шести страниц ПО; title/path, первый абзац и первый media из software-detail."
     },
     "provider-catalog": {
       "kind": "data",
@@ -421,6 +421,19 @@
       ],
       "fit": "contain",
       "note": "Исходные векторные пути и цвета, скорректирован только viewBox."
+    },
+    "partner-scene": {
+      "kind": "html",
+      "paths": [],
+      "alt": "",
+      "max_css_width": 640,
+      "export_widths": [
+        360,
+        720,
+        1280
+      ],
+      "fit": "contain",
+      "note": "Предметные inline-SVG композиции из site/partner_scenes.py. scene_id выбирает рисунок по смыслу модуля. Стеклянный материал и геометрические формы развивают стиль плиток главной. Иллюстрации дополняют текст без вымышленных экранов, показателей и мелких подписей."
     }
   },
   "policy": "Only resolved bindings and approved manifest items enter production. Never recursively publish assets/, evidence/ or data/ as a public directory.",

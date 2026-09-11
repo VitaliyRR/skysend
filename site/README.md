@@ -9,9 +9,9 @@ python tools/validate_site.py
 python -m http.server 4173 --directory dist
 ```
 
-The build creates 41 canonical routes and 45 HTML files including the 404, 410,
-and two redirect-only index documents. It publishes 71 download records, the local provider catalogue,
-the sitemap, 153 legacy redirects, and 13 gone routes. Only the curated
+The build creates 40 canonical routes and 46 HTML files including the 404, 410,
+and four redirect-only documents. It publishes 72 download records, the local provider catalogue,
+the sitemap, 157 legacy redirects, and 13 gone routes. Only the curated
 production assets are copied into `dist/`.
 
 `site/partner_art.py` contains the six geometric SVG navigation pictograms for
@@ -27,3 +27,5 @@ source-based content.
 External registration and account URLs are disabled by default because their
 TLS/DNS checks failed during the source audit. See `deploy/README.md` for the
 release gate and Nginx rollout notes.
+
+`site/partner_scenes.py` renders subject illustrations in 27 partner sections. Partner pages omit local links and jump navigation; representative contact fields are plain text in the final section. `/software/rma/` combines Windows, Linux and Android with nine downloads and redirects from both previous detail URLs.

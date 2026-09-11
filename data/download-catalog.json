@@ -1,9 +1,9 @@
 {
   "schema_version": "1.0",
-  "audit_date": "2026-09-10",
+  "audit_date": "2026-09-11",
   "source_file": "data/downloads-source.json",
   "source_rows": 127,
-  "included_items": 71,
+  "included_items": 72,
   "excluded_rows": 56,
   "duplicate_rows_merged": 0,
   "scope": "ПО, инструкции, технические и системные документы. Акции, цены, рекламные предложения и обещания роста доходов исключены.",
@@ -2304,6 +2304,46 @@
       "status": "source_link_unverified",
       "version_policy": "Не обозначать архивную версию как актуальную и не заявлять совместимость с текущими ОС без проверки.",
       "content_review": "Отбор по исходному названию и URL; содержимое бинарных файлов не скачивалось и не проверялось."
+    },
+    {
+      "id": "rma-e24362622c",
+      "group": "rma",
+      "kind": "instruction",
+      "source_title": "Инструкция по установке и эксплуатации РМА Windows (.pdf 2.6 Mb)",
+      "display_title": "Инструкция по установке и эксплуатации РМА Windows",
+      "source_page": "https://skysend.ru/program/rma-pc.html",
+      "direct_file_url": "https://ftp.isg.dev/docs/instruction_setup_awp_windows.pdf",
+      "target_url": "https://ftp.isg.dev/docs/instruction_setup_awp_windows.pdf",
+      "link_kind": "file",
+      "source_links": [
+        "ftp://ftp.isg.dev//docs/instruction_setup_awp_windows.pdf",
+        "https://ftp.isg.dev/docs/instruction_setup_awp_windows.pdf"
+      ],
+      "source_occurrences": [
+        {
+          "title": "Инструкция по установке и эксплуатации РМА Windows (.pdf 2.6 Mb)",
+          "page": "https://skysend.ru/program/rma-pc.html"
+        }
+      ],
+      "source_flags": [
+        "recovered_from_source_audit"
+      ],
+      "source_size_text": "2.6 Mb",
+      "format_from_url": "pdf",
+      "status": "reachable_head",
+      "version_policy": "Не обозначать архивную версию как актуальную и не заявлять совместимость с текущими ОС без проверки.",
+      "content_review": "Исходный HTML program__rma-pc.html содержит отдельную инструкцию Windows на ftp.isg.dev. Она отличается адресом и размером от instruction_rma_w.pdf; сохранена отдельной записью. Содержимое PDF не скачивалось и не сравнивалось.",
+      "check": {
+        "checked_at": "2026-09-11T07:43:43.233771+00:00",
+        "method": "HEAD",
+        "body_downloaded": false,
+        "status": "reachable_head",
+        "http_status": 200,
+        "final_url": "https://ftp.isg.dev/docs/instruction_setup_awp_windows.pdf",
+        "content_type": "application/pdf",
+        "content_length_header": "2550862",
+        "note": "HEAD подтверждает ответ сервера, но не целостность файла, версию или совместимость ПО."
+      }
     }
   ],
   "excluded_records": [
