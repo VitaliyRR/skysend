@@ -21,6 +21,7 @@ from urllib.parse import quote, unquote, urlparse
 from partner_art import render_partner_art
 from partner_scenes import render_partner_scene
 from partner_diagrams import render_partner_diagram
+from partner_editorial import render_partner_editorial
 
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -624,7 +625,9 @@ def render_media(visual_id: str, section, page_path: str, *, eager: bool = False
     if not visual_id:
         return ""
     if visual_id == "partner-scene":
-        return render_partner_diagram(section["scene_id"], section["id"]) or render_partner_scene(section["scene_id"], section["id"])
+        return (render_partner_editorial(section["scene_id"])
+                or render_partner_diagram(section["scene_id"], section["id"])
+                or render_partner_scene(section["scene_id"], section["id"]))
     if visual_id == "provider-logos":
         return provider_wall()
     if visual_id == "html-feature-list":
@@ -750,10 +753,10 @@ def home_hero(section, providers) -> str:
     return (
         '<section class="home-hero home-hero--provider-led" id="hero"><div class="home-hero__shell">'
         '<div class="home-hero__copy">'
-        f'<h1>{e(section["title"])}</h1></div>'
+        f'<h1>{e(section["title"])}</h1>'
+        f'<h2 class="home-hero__provider-title" id="home-provider-title">{e(providers["title"])}</h2></div>'
         f'<section class="home-provider" id="{e(providers["id"])}" aria-labelledby="home-provider-title">'
         '<div class="home-provider__head">'
-        f'<h2 id="home-provider-title">{e(providers["title"])}</h2>'
         f'{section_copy(providers, include_links=False)}</div>'
         f'{home_provider_wall()}'
         '</section></div></section>'

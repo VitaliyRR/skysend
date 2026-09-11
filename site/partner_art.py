@@ -124,26 +124,18 @@ DRAWINGS = {
 
 
 def render_partner_art(kind: str) -> str:
-    if kind not in DRAWINGS:
+    from partner_editorial import artwork_image
+    images = {
+        'agents': 'terminal-maintenance',
+        'providers': 'provider-office',
+        'suppliers': 'supplier-goods',
+        'retail': 'retail-checkout',
+        'representatives': 'regional-presence',
+        'gateways': 'payment-processing',
+    }
+    if kind not in images:
         raise ValueError(f"Unknown partner illustration: {kind}")
-    key = escape(kind, quote=True)
-    prefix = f"partner-{key}"
-    definitions = f'''
-      <defs>
-        <linearGradient id="{prefix}-glass" x1="0" y1="0" x2="1" y2="1">
-          <stop stop-color="#fff" stop-opacity=".93"/>
-          <stop offset=".46" stop-color="#e3f3fc" stop-opacity=".62"/>
-          <stop offset="1" stop-color="#a3c7dc" stop-opacity=".38"/>
-        </linearGradient>
-        <linearGradient id="{prefix}-blue" x1="0" y1="0" x2="1" y2="1">
-          <stop stop-color="#249fd5"/>
-          <stop offset="1" stop-color="#006caa"/>
-        </linearGradient>
-      </defs>'''
-    return (
-        f'<span class="partner-tile__graphic partner-tile__graphic--{key}" aria-hidden="true">'
-        f'<svg class="partner-infographic partner-infographic--{key}" '
-        f'viewBox="0 0 360 240" focusable="false" '
-        f'style="--pg-glass:url(#{prefix}-glass);--pg-blue:url(#{prefix}-blue)">'
-        f'{definitions}{DRAWINGS[kind]}</svg></span>'
-    )
+    return (f'<span class="partner-tile__graphic partner-tile__graphic--{escape(kind)}" aria-hidden="true">'
+            + artwork_image(images[kind], css='partner-tile__image',
+                            sizes='(min-width: 64rem) 30vw, (min-width: 48rem) 46vw, 100vw')
+            + '</span>')

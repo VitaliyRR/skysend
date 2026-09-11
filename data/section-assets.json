@@ -262,7 +262,14 @@
     },
     "partner-routes": {
       "kind": "html",
-      "paths": [],
+      "paths": [
+        "assets/ready/editorial/terminal-maintenance.webp",
+        "assets/ready/editorial/provider-office.webp",
+        "assets/ready/editorial/supplier-goods.webp",
+        "assets/ready/editorial/retail-checkout.webp",
+        "assets/ready/editorial/regional-presence.webp",
+        "assets/ready/editorial/payment-processing.webp"
+      ],
       "alt": "",
       "max_css_width": 640,
       "export_widths": [
@@ -271,7 +278,7 @@
         1280
       ],
       "fit": "contain",
-      "note": "Шесть ссылок из navigation.json. Геометрические inline-SVG пиктограммы из site/partner_art.py обозначают партнёрские направления; это иллюстрации, а не изображения новых моделей оборудования. По запросу пользователя плитки и отдельные грани оформлены в стеклянном стиле. В SVG нет мелких текстовых подписей."
+      "note": "Шесть предметных изображений в непрозрачных плитках. Названия и ссылки из navigation.json; рендер partner_art.py. Без стеклянных граней, схем и декоративных бликов."
     },
     "contact-panel": {
       "kind": "html-and-svg",
@@ -424,7 +431,20 @@
     },
     "partner-scene": {
       "kind": "html",
-      "paths": [],
+      "paths": [
+        "data/editorial-artwork.json",
+        "assets/ready/editorial/catalogue-updates.webp",
+        "assets/ready/editorial/payment-processing.webp",
+        "assets/ready/editorial/provider-office.webp",
+        "assets/ready/editorial/remote-management.webp",
+        "assets/ready/editorial/retail-checkout.webp",
+        "assets/ready/editorial/supplier-goods.webp",
+        "assets/ready/editorial/terminal-maintenance.webp",
+        "assets/ready/editorial/xml-catalogue.webp",
+        "assets/diagrams/interface-customization.svg",
+        "assets/originals/logotip_finger.png",
+        "assets/originals/logotip_skymarket_3x1.png"
+      ],
       "alt": "",
       "max_css_width": 640,
       "export_widths": [
@@ -433,7 +453,7 @@
         1280
       ],
       "fit": "contain",
-      "note": "Предметные схемы действий из site/partner_diagrams.py: реальные фотографии терминалов и узлов, фирменные знаки и лицензированные символы Lucide. Сцены без вымышленных экранов и показателей. Сохранённые четыре иллюстрации из partner_scenes.py не изменены."
+      "note": "Предметные изображения выбираются в site/partner_editorial.py прежде прежних схем. В десяти отмеченных пользователем блоках схемы заменены полностью. Остальные схемы используют непрозрачные поверхности. Оригинальные знаки и варианты экрана размещаются отдельно. Контекстная иллюстрация не доказывает конфигурацию или местонахождение оборудования."
     },
     "equipment-details": {
       "kind": "html",

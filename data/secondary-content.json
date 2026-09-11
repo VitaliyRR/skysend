@@ -41,7 +41,7 @@
             "https://skysend.ru/partners/agent/cost-reduction.html"
           ],
           "visual_id": "partner-scene",
-          "visual_description": "Настоящие фотографии терминала, купюроприёмника CashCode и модема Siemens. Связи указывают на обслуживаемые узлы; отдельный знак обновления относится к ПО. Функциональная схема на светлой стеклянной подложке; иллюстрация не имитирует интерфейс ПО.",
+          "visual_description": "Терминал SkySend и купюроприёмник на сервисном столе. Предметная контекстная иллюстрация assets/ready/editorial/terminal-maintenance.webp на непрозрачной поверхности; полный кадр 3:2, без стеклянных карточек и стрелок. Происхождение и промпт: data/editorial-artwork.json.",
           "motion": "Однократное появление содержимого секции ниже первого экрана. Все числа, easing, desktop/mobile и reduced-motion брать из data/motion-spec.json: contentAliases.section-reveal.",
           "links": [],
           "motion_alias": "section-reveal",
@@ -60,7 +60,7 @@
             "https://skysend.ru/partners/agent/remote-control.html"
           ],
           "visual_id": "partner-scene",
-          "visual_description": "Кабинет SkySend связан с реальным терминалом: настройка передаётся на устройство, сведения о платежах возвращаются в кабинет. Функциональная схема на светлой стеклянной подложке; иллюстрация не имитирует интерфейс ПО.",
+          "visual_description": "Рабочее место с ноутбуком и терминалом SkySend. Предметная контекстная иллюстрация assets/ready/editorial/remote-management.webp на непрозрачной поверхности; полный кадр 3:2, без стеклянных карточек и стрелок. Происхождение и промпт: data/editorial-artwork.json.",
           "motion": "Однократное появление содержимого секции ниже первого экрана. Все числа, easing, desktop/mobile и reduced-motion брать из data/motion-spec.json: contentAliases.section-reveal.",
           "links": [],
           "motion_alias": "section-reveal",
@@ -77,7 +77,7 @@
             "https://skysend.ru/partners/agent/innovation.html"
           ],
           "visual_id": "partner-scene",
-          "visual_description": "Оригинальные знаки FINGER и SkyMarket рядом с символом настройки экрана. Функциональная схема на светлой стеклянной подложке; иллюстрация не имитирует интерфейс ПО.",
+          "visual_description": "Исходные варианты оформления экрана из interface-customization.svg; под ними оригинальные знаки SkyMarket и FINGER на белой полосе. Без значка настроек и стеклянных плашек.",
           "motion": "Однократное появление содержимого секции ниже первого экрана. Все числа, easing, desktop/mobile и reduced-motion брать из data/motion-spec.json: contentAliases.section-reveal.",
           "links": [],
           "motion_alias": "section-reveal",
@@ -157,7 +157,7 @@
             "https://skysend.ru/partners/providers/connecting-to-skysend.html"
           ],
           "visual_id": "partner-scene",
-          "visual_description": "Услуги провайдера доступны через два канала: настоящий терминал и FINGER. Функциональная схема на светлой стеклянной подложке; иллюстрация не имитирует интерфейс ПО.",
+          "visual_description": "Услуги провайдера доступны через два канала: настоящий терминал и FINGER. Функциональная схема на непрозрачной светлой подложке; иллюстрация не имитирует интерфейс ПО.",
           "motion": "Содержимое доступно сразу в конечном состоянии. Тайминги и reduced-motion брать из data/motion-spec.json.",
           "links": [],
           "motion_alias": "none",
@@ -176,7 +176,7 @@
             "https://skysend.ru/partners/providers/free-connection.html"
           ],
           "visual_id": "partner-scene",
-          "visual_description": "Договор, настройка обмена и проверка платежей: последовательная схема подключения. Функциональная схема на светлой стеклянной подложке; иллюстрация не имитирует интерфейс ПО.",
+          "visual_description": "Договор, настройка обмена и проверка платежей: последовательная схема подключения. Функциональная схема на непрозрачной светлой подложке; иллюстрация не имитирует интерфейс ПО.",
           "motion": "Однократное появление иллюстрации и текста секции без движения отдельных предметов. Тайминги и reduced-motion брать из data/motion-spec.json.",
           "links": [],
           "motion_alias": "section-reveal",
@@ -210,7 +210,7 @@
             "https://skysend.ru/partners/providers/high-speed.html"
           ],
           "visual_id": "partner-scene",
-          "visual_description": "Два центра данных принимают платежи и синхронизируются по IPsec. Фронтальные серверные символы, без вымышленных показателей. Функциональная схема на светлой стеклянной подложке; иллюстрация не имитирует интерфейс ПО.",
+          "visual_description": "Две серверные стойки с сетевым оборудованием. Предметная контекстная иллюстрация assets/ready/editorial/payment-processing.webp на непрозрачной поверхности; полный кадр 3:2, без стеклянных карточек и стрелок. Происхождение и промпт: data/editorial-artwork.json.",
           "motion": "Однократное появление иллюстрации и текста секции без движения отдельных предметов. Тайминги и reduced-motion брать из data/motion-spec.json.",
           "links": [],
           "motion_alias": "section-reveal",
@@ -260,7 +260,7 @@
             "https://skysend.ru/partners/providers/partnership.html"
           ],
           "visual_id": "partner-scene",
-          "visual_description": "Платёжные агенты взаимодействуют с провайдером через SkySend. Договоры и расчёты отнесены к центральному узлу. Функциональная схема на светлой стеклянной подложке; иллюстрация не имитирует интерфейс ПО.",
+          "visual_description": "Платёжные агенты взаимодействуют с провайдером через SkySend. Договоры и расчёты отнесены к центральному узлу. Функциональная схема на непрозрачной светлой подложке; иллюстрация не имитирует интерфейс ПО.",
           "motion": "Однократное появление иллюстрации и текста секции без движения отдельных предметов. Тайминги и reduced-motion брать из data/motion-spec.json.",
           "links": [],
           "motion_alias": "section-reveal",
@@ -277,7 +277,7 @@
             "https://skysend.ru/partners/providers/placing-terminals.html"
           ],
           "visual_id": "partner-scene",
-          "visual_description": "Настоящий терминал в контексте офиса обслуживания. Два предусмотренных формата: собственное устройство и размещение по договору аренды. Функциональная схема на светлой стеклянной подложке; иллюстрация не имитирует интерфейс ПО.",
+          "visual_description": "Терминал SkySend рядом со стойкой обслуживания. Предметная контекстная иллюстрация assets/ready/editorial/provider-office.webp на непрозрачной поверхности; полный кадр 3:2, без стеклянных карточек и стрелок. Происхождение и промпт: data/editorial-artwork.json.",
           "motion": "Однократное появление иллюстрации и текста секции без движения отдельных предметов. Тайминги и reduced-motion брать из data/motion-spec.json.",
           "links": [],
           "motion_alias": "section-reveal",
@@ -315,7 +315,7 @@
             "https://skysend.ru/partners/suppliers/directory-of-products.html"
           ],
           "visual_id": "partner-scene",
-          "visual_description": "Оригинальный знак SkyMarket соединён с реальным терминалом и фирменным знаком FINGER. Функциональная схема на светлой стеклянной подложке; иллюстрация не имитирует интерфейс ПО.",
+          "visual_description": "Товары, подготовленные к отправке покупателю. Предметная контекстная иллюстрация assets/ready/editorial/supplier-goods.webp на непрозрачной поверхности; полный кадр 3:2, без стеклянных карточек и стрелок. Происхождение и промпт: data/editorial-artwork.json. Под изображением оригинальные знаки SkyMarket и FINGER.",
           "motion": "Содержимое доступно сразу в конечном состоянии. Тайминги и reduced-motion брать из data/motion-spec.json.",
           "links": [],
           "motion_alias": "none",
@@ -349,7 +349,7 @@
             "https://skysend.ru/partners/suppliers/work-in-the-office.html"
           ],
           "visual_id": "partner-scene",
-          "visual_description": "Приём заказа, подготовка товаров и доставка показаны последовательно с помощью функциональных символов. Функциональная схема на светлой стеклянной подложке; иллюстрация не имитирует интерфейс ПО.",
+          "visual_description": "Приём заказа, подготовка товаров и доставка показаны последовательно с помощью функциональных символов. Функциональная схема на непрозрачной светлой подложке; иллюстрация не имитирует интерфейс ПО.",
           "motion": "Однократное появление иллюстрации и текста секции без движения отдельных предметов. Тайминги и reduced-motion брать из data/motion-spec.json.",
           "links": [],
           "motion_alias": "section-reveal",
@@ -366,7 +366,7 @@
             "https://skysend.ru/partners/suppliers/integration-in-xml.html"
           ],
           "visual_id": "partner-scene",
-          "visual_description": "Каталог передаётся от системы поставщика к SkyMarket, заказы возвращаются в систему поставщика. Связи подписаны, направления различимы. Функциональная схема на светлой стеклянной подложке; иллюстрация не имитирует интерфейс ПО.",
+          "visual_description": "Каталог и XML рядом с сервером обмена данными. Предметная контекстная иллюстрация assets/ready/editorial/xml-catalogue.webp на непрозрачной поверхности; полный кадр 3:2, без стеклянных карточек и стрелок. Происхождение и промпт: data/editorial-artwork.json.",
           "motion": "Однократное появление иллюстрации и текста секции без движения отдельных предметов. Тайминги и reduced-motion брать из data/motion-spec.json.",
           "links": [],
           "motion_alias": "section-reveal",
@@ -385,7 +385,7 @@
             "https://skysend.ru/partners/suppliers/integration-in-xml.html"
           ],
           "visual_id": "partner-scene",
-          "visual_description": "Обновление каталога SkyMarket передаётся одновременно на терминалы и в FINGER. Функциональная схема на светлой стеклянной подложке; иллюстрация не имитирует интерфейс ПО.",
+          "visual_description": "Один товар и его фотографии для общего каталога. Предметная контекстная иллюстрация assets/ready/editorial/catalogue-updates.webp на непрозрачной поверхности; полный кадр 3:2, без стеклянных карточек и стрелок. Происхождение и промпт: data/editorial-artwork.json.",
           "motion": "Однократное появление иллюстрации и текста секции без движения отдельных предметов. Тайминги и reduced-motion брать из data/motion-spec.json.",
           "links": [],
           "motion_alias": "section-reveal",
@@ -404,7 +404,7 @@
             "https://skysend.ru/partners/suppliers/work-in-the-office.html"
           ],
           "visual_id": "partner-scene",
-          "visual_description": "Договор и доступ, загрузка каталога, начало продаж в SkyMarket. Функциональная схема на светлой стеклянной подложке; иллюстрация не имитирует интерфейс ПО.",
+          "visual_description": "Договор и доступ, загрузка каталога, начало продаж в SkyMarket. Функциональная схема на непрозрачной светлой подложке; иллюстрация не имитирует интерфейс ПО.",
           "motion": "Однократное появление иллюстрации и текста секции без движения отдельных предметов. Тайминги и reduced-motion брать из data/motion-spec.json.",
           "links": [],
           "motion_alias": "section-reveal",
@@ -436,7 +436,7 @@
             "https://skysend.ru/partners/representatives/connecting-players.html"
           ],
           "visual_id": "partner-scene",
-          "visual_description": "Представитель подключает агентов, провайдеров и поставщиков. У каждого направления свой функциональный символ или реальное устройство. Функциональная схема на светлой стеклянной подложке; иллюстрация не имитирует интерфейс ПО.",
+          "visual_description": "Представитель подключает агентов, провайдеров и поставщиков. У каждого направления свой функциональный символ или реальное устройство. Функциональная схема на непрозрачной светлой подложке; иллюстрация не имитирует интерфейс ПО.",
           "motion": "Содержимое доступно сразу в конечном состоянии. Все числа, easing, desktop/mobile и reduced-motion брать из data/motion-spec.json: contentAliases.none.",
           "links": [],
           "motion_alias": "none",
@@ -455,7 +455,7 @@
             "https://skysend.ru/partners/representatives/mastering-directions.html"
           ],
           "visual_id": "partner-scene",
-          "visual_description": "Пять направлений показаны отдельными символами: подключение, сервис, инкассация, оборудование и региональная касса. Функциональная схема на светлой стеклянной подложке; иллюстрация не имитирует интерфейс ПО.",
+          "visual_description": "Пять направлений показаны отдельными символами: подключение, сервис, инкассация, оборудование и региональная касса. Функциональная схема на непрозрачной светлой подложке; иллюстрация не имитирует интерфейс ПО.",
           "motion": "Однократное появление содержимого секции ниже первого экрана. Все числа, easing, desktop/mobile и reduced-motion брать из data/motion-spec.json: contentAliases.section-reveal.",
           "links": [],
           "motion_alias": "section-reveal",
@@ -472,7 +472,7 @@
             "https://skysend.ru/partners/representatives/exclusivity-in-the-region.html"
           ],
           "visual_id": "partner-scene",
-          "visual_description": "Представительство связано с точками внутри условной границы региона. Схема не изображает вымышленную географическую карту. Функциональная схема на светлой стеклянной подложке; иллюстрация не имитирует интерфейс ПО.",
+          "visual_description": "Представительство связано с точками внутри условной границы региона. Схема не изображает вымышленную географическую карту. Функциональная схема на непрозрачной светлой подложке; иллюстрация не имитирует интерфейс ПО.",
           "motion": "Однократное появление содержимого секции ниже первого экрана. Все числа, easing, desktop/mobile и reduced-motion брать из data/motion-spec.json: contentAliases.section-reveal.",
           "links": [],
           "motion_alias": "section-reveal",
@@ -505,7 +505,7 @@
             "https://skysend.ru/partners/representatives/cashier-in-the-region.html"
           ],
           "visual_id": "partner-scene",
-          "visual_description": "Аванс агента проходит через региональную кассу и пополняет счёт в SkySend. Функциональная схема на светлой стеклянной подложке; иллюстрация не имитирует интерфейс ПО.",
+          "visual_description": "Аванс агента проходит через региональную кассу и пополняет счёт в SkySend. Функциональная схема на непрозрачной светлой подложке; иллюстрация не имитирует интерфейс ПО.",
           "motion": "Однократное появление содержимого секции ниже первого экрана. Все числа, easing, desktop/mobile и reduced-motion брать из data/motion-spec.json: contentAliases.section-reveal.",
           "links": [],
           "motion_alias": "section-reveal",
@@ -606,7 +606,7 @@
             "https://skysend.ru/partners/gateway/quick-start.html"
           ],
           "visual_id": "partner-scene",
-          "visual_description": "Договор, интеграция XML и проверка платежей. Функциональная схема на светлой стеклянной подложке; иллюстрация не имитирует интерфейс ПО.",
+          "visual_description": "Договор, интеграция XML и проверка платежей. Функциональная схема на непрозрачной светлой подложке; иллюстрация не имитирует интерфейс ПО.",
           "motion": "Однократное появление содержимого секции ниже первого экрана. Все числа, easing, desktop/mobile и reduced-motion брать из data/motion-spec.json: contentAliases.section-reveal.",
           "links": [],
           "motion_alias": "section-reveal",
@@ -639,7 +639,7 @@
             "https://skysend.ru/partners/gateway/highspeed.html"
           ],
           "visual_id": "partner-scene",
-          "visual_description": "Серверы в разных центрах данных получают платежи и синхронизируются по IPsec. Функциональная схема на светлой стеклянной подложке; иллюстрация не имитирует интерфейс ПО.",
+          "visual_description": "Серверное оборудование для распределённой обработки. Предметная контекстная иллюстрация assets/ready/editorial/payment-processing.webp на непрозрачной поверхности; полный кадр 3:2, без стеклянных карточек и стрелок. Происхождение и промпт: data/editorial-artwork.json.",
           "motion": "Однократное появление содержимого секции ниже первого экрана. Все числа, easing, desktop/mobile и reduced-motion брать из data/motion-spec.json: contentAliases.section-reveal.",
           "links": [],
           "motion_alias": "section-reveal",
@@ -737,7 +737,7 @@
             "https://skysend.ru/allvend.html"
           ],
           "visual_id": "partner-scene",
-          "visual_description": "Каталог, заказ и оплата показаны одной последовательностью. Функциональная схема на светлой стеклянной подложке; иллюстрация не имитирует интерфейс ПО.",
+          "visual_description": "Товары в корзине, принтер чека и платёжное устройство. Предметная контекстная иллюстрация assets/ready/editorial/retail-checkout.webp на непрозрачной поверхности; полный кадр 3:2, без стеклянных карточек и стрелок. Происхождение и промпт: data/editorial-artwork.json.",
           "motion": "Один раз показать порядок статичных шагов; не имитировать выполнение заказа или платежа. Все числа, easing, desktop/mobile и reduced-motion брать из data/motion-spec.json: contentAliases.process-step.",
           "links": [],
           "motion_alias": "process-step",
@@ -786,7 +786,7 @@
             "https://skysend.ru/allvend.html"
           ],
           "visual_id": "partner-scene",
-          "visual_description": "Единый кабинет сети связан с торговыми точками. Функциональная схема на светлой стеклянной подложке; иллюстрация не имитирует интерфейс ПО.",
+          "visual_description": "Единый кабинет сети связан с торговыми точками. Функциональная схема на непрозрачной светлой подложке; иллюстрация не имитирует интерфейс ПО.",
           "motion": "Однократное появление содержимого секции ниже первого экрана. Все числа, easing, desktop/mobile и reduced-motion брать из data/motion-spec.json: contentAliases.section-reveal.",
           "links": [],
           "motion_alias": "section-reveal",
@@ -803,7 +803,7 @@
             "https://skysend.ru/allvend.html"
           ],
           "visual_id": "partner-scene",
-          "visual_description": "Реальная фотография терминала и три варианта запуска: приобрести устройство, перевести на ALLVEND или разместить оборудование. Функциональная схема на светлой стеклянной подложке; иллюстрация не имитирует интерфейс ПО.",
+          "visual_description": "Размещение терминала в точке обслуживания. Предметная контекстная иллюстрация assets/ready/editorial/provider-office.webp на непрозрачной поверхности; полный кадр 3:2, без стеклянных карточек и стрелок. Происхождение и промпт: data/editorial-artwork.json.",
           "motion": "Однократное появление содержимого секции ниже первого экрана. Все числа, easing, desktop/mobile и reduced-motion брать из data/motion-spec.json: contentAliases.section-reveal.",
           "links": [],
           "motion_alias": "section-reveal",

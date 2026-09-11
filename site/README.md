@@ -14,9 +14,7 @@ and seven redirect-only documents. It publishes 72 download records, the local p
 the sitemap, 163 legacy redirects, and 13 gone routes. Only the curated
 production assets are copied into `dist/`.
 
-`site/partner_art.py` contains the six geometric SVG navigation pictograms for
-the home partner tiles. Their glass surfaces and responsive layout are defined
-in `site/static/styles.css`; labels and destinations remain in `data/navigation.json`.
+`site/partner_art.py` renders six navigation tiles with large subject images on opaque white surfaces. `site/partner_editorial.py` selects contextual editorial pictures for partner modules; exact prompts, sources and responsive exports are recorded in `data/editorial-artwork.json`. Source PNGs stay under `design/editorial-sources/` and are not published. Original product specification photos and brand marks are retained.
 
 `/software/` and `/partners/` are not public canonical pages. The header exposes
 their detail routes in dropdowns, while the index URLs use static fallback
@@ -28,6 +26,6 @@ External registration and account URLs are disabled by default because their
 TLS/DNS checks failed during the source audit. See `deploy/README.md` for the
 release gate and Nginx rollout notes.
 
-`site/partner_diagrams.py` renders 22 partner workflows and the ALLVEND ordering workflow using authentic assets and licensed symbols. Four retained scenes use `site/partner_scenes.py`; FINGER uses its real brand mark. Partner pages omit local links and jump navigation; representative contact fields are plain text in the final section. `/software/rma/` combines Windows, Linux and Android with nine downloads and redirects from both previous detail URLs.
+Unchanged workflows use `site/partner_diagrams.py` and four retained scenes use `site/partner_scenes.py`, on opaque surfaces; FINGER uses its real brand mark. Partner pages omit local links and jump navigation; representative contact fields are plain text in the final section. `/software/rma/` combines Windows, Linux and Android with nine downloads and redirects from both previous detail URLs.
 
 All terminal information is on `/equipment/`; old model/category URLs redirect to section anchors. XML, POS and FINGER descriptions are consolidated, and support has one contact section. Lucide symbols and their license are under `assets/icons/process/`.

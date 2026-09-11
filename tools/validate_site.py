@@ -285,6 +285,11 @@ def main() -> int:
         fail(errors, "home hero must use the approved provider-led composition")
     if 'id="providers"' not in home_hero:
         fail(errors, "home providers must be integrated into the hero")
+    hero_copy = home_hero.split('<div class="home-hero__copy">', 1)[-1].split('</div>', 1)[0]
+    if not re.search(r'</h1>\s*<h2[^>]+id="home-provider-title"', hero_copy):
+        fail(errors, "provider heading must immediately follow the main heading in the left column")
+    if 'id="home-provider-title"' in home_providers:
+        fail(errors, "provider heading must not be repeated above the logo rows")
     if len(re.findall(r'class="provider-row"', home_providers)) != 3:
         fail(errors, "home provider showcase must contain three labelled rows")
     if len(re.findall(r'class="provider-strip__item"', home_providers)) != 15:
@@ -328,10 +333,10 @@ def main() -> int:
             fail(errors, f"SkyMarket feature missing: {label}")
     if home_partners.count('class="partner-tile partner-tile--') != 6:
         fail(errors, "home partners section must contain six clickable tiles")
-    if home_partners.count('<svg class="partner-infographic ') != 6:
-        fail(errors, "home partner tiles must contain six inline infographics")
-    if "<img" in home_partners:
-        fail(errors, "home partner infographics must not fall back to unrelated images")
+    if home_partners.count('<img class="partner-tile__image"') != 6:
+        fail(errors, "home partner tiles must contain six subject images")
+    if '<svg' in home_partners or 'backdrop-filter' in css_text:
+        fail(errors, "home partner tiles must not use the old glass illustrations")
     expected_partner_tiles = (
         ("agents", "/partners/agents/", "Платёжным агентам"),
         ("providers", "/partners/providers/", "Провайдерам услуг"),
@@ -343,7 +348,7 @@ def main() -> int:
     for kind, href, label in expected_partner_tiles:
         if home_partners.count(f"partner-tile--{kind}") != 1:
             fail(errors, f"home partner tile is missing its infographic type: {kind}")
-        if home_partners.count(f"partner-infographic--{kind}") != 1:
+        if home_partners.count(f"partner-tile__graphic--{kind}") != 1:
             fail(errors, f"home partner infographic is missing: {kind}")
         if f'href="{href}"' not in home_partners or f"<strong>{label}</strong>" not in home_partners:
             fail(errors, f"home partner route is incomplete: {label}")
@@ -461,10 +466,21 @@ def main() -> int:
     for kind, sections in expected_scenes.items():
         for section_id, scene_id in sections.items():
             markup = section_markup(html_path_for_route(f'/partners/{kind}/'), section_id)
-            if f'data-scene="{scene_id}"' not in markup or '<svg' not in markup:
+            if f'data-scene="{scene_id}"' not in markup or not re.search(r'<(?:svg|img)\b', markup):
                 fail(errors, f"{kind}#{section_id}: missing subject illustration {scene_id}")
             if 'feature-list' in markup or 'process-node' in markup:
                 fail(errors, f"{kind}#{section_id}: side list was not replaced")
+    editorial_replacements = {
+        'agents': ('cost-reduction', 'remote-control', 'innovation'),
+        'providers': ('high-speed', 'placing-terminals'),
+        'suppliers': ('sales-network-products', 'integration-in-xml', 'ease-of-interaction'),
+        'retail': ('orders', 'deployment'),
+    }
+    for kind, sections in editorial_replacements.items():
+        for section_id in sections:
+            markup = section_markup(html_path_for_route(f'/partners/{kind}/'), section_id)
+            if 'class="partner-editorial' not in markup or '<svg' in markup:
+                fail(errors, f"{kind}#{section_id}: old schematic must be replaced by editorial imagery")
     representatives = html_path_for_route('/partners/representatives/').read_text(encoding='utf-8')
     section_ids = re.findall(r'<section\b[^>]*id="([^"]+)"', representatives)
     if section_ids[-1] != 'publication-of-information':
