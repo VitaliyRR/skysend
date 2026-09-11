@@ -919,7 +919,7 @@ address {
   place-items: center;
   border-right: 1px solid var(--ss-color-line);
   padding: var(--ss-space-2);
-  background: #fff;
+  background: transparent;
 }
 
 .provider-strip__item:nth-child(4) {
@@ -940,6 +940,11 @@ address {
   width: min(100%, 6.25rem);
   max-height: 4.75rem;
   object-fit: contain;
+}
+
+/* Only Tricolor has a white image matte; retain the other marks and their brand fields. */
+.provider-strip__image[src$="/provider-258.png"] {
+  mix-blend-mode: multiply;
 }
 
 .feature-list {
